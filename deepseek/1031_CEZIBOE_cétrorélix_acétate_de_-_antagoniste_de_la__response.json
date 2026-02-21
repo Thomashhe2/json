@@ -1,0 +1,720 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19884",
+  "evaluation_id": "CT-19884",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19884_CEZIBOE_PIS_INS_AvisDef_CT19884.pdf",
+        "type": "CT",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19884_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "indication"
+      ],
+      "routing_hint": "Résumé décisionnel",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19884_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "demandeur",
+        "presentations",
+        "code_ATC"
+      ],
+      "routing_hint": "Métadonnées produit",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19884_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication"
+      ],
+      "routing_hint": "Description indication AMM",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19884_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs"
+      ],
+      "routing_hint": "Tableau comparateurs",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19884_seg_05",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Service Médical Rendu",
+      "expected_fields": [
+        "smr"
+      ],
+      "routing_hint": "Conclusion SMR",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19884_seg_06",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr"
+      ],
+      "routing_hint": "Conclusion ASMR",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19884_produit_CEZIBOE",
+      "evaluation_id": "CT-19884",
+      "produit_nom_commercial": "CEZIBOE",
+      "dci": "cétrorélix",
+      "code_cis": "Non renseigné",
+      "presentations": [
+        {
+          "presentation_id": "CT-19884_pres_01",
+          "produit_id": "CT-19884_produit_CEZIBOE",
+          "dosage_concentration": "0,25 mg",
+          "forme_pharmaceutique": "solution injectable en seringue pré-remplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "code_cip13": "34009 302 195 0 8",
+          "taille_conditionnement": "1 mL en seringue pré-remplie (verre). Boîte de 1",
+          "evidence": [
+            {
+              "field": "code_cip13",
+              "f": "F1",
+              "p": 4,
+              "s": "Présentat",
+              "t": "CIP : 34009 302 195 0 8",
+              "m": "manual",
+              "c": 1.0
+            }
+          ]
+        }
+      ],
+      "titulaire_amm": "FERRING SAS",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER",
+          "t": "CEZIBOE 0,25 mg",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER",
+          "t": "cétrorélix",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 4,
+          "s": "Demandeur",
+          "t": "FERRING SAS",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19884",
+      "Num_avis": "CT-19884",
+      "produit_nom": "CEZIBOE 0,25 mg solution injectable en seringue pré-remplie",
+      "dci": "cétrorélix",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable en seringue pré-remplie",
+      "dosage": "0,25 mg",
+      "indication": "Prévention de l’ovulation prématurée chez les patientes incluses dans un protocole de stimulation ovarienne contrôlée, suivie de prélèvement d’ovocytes et de techniques de reproduction assistée.",
+      "classe_ATC": "H01CC02",
+      "pathologie": "Infertilité féminine / assistance médicale à la procréation",
+      "maladie_rare": false,
+      "ligne_traitement": "traitement de première intention",
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Endocrinologie",
+      "aire_therapeutique_niveau_2": "Reproduction",
+      "aire_therapeutique_niveau_3": "Stimulation ovarienne",
+      "source_aire_therapeutique": "Déduit ATC H01CC02",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "L’infertilité entraîne une perturbation de la qualité de vie chez les personnes souhaitant concevoir un enfant. L’ovulation prématurée conduit à l’échec d’une stimulation ovarienne contrôlée.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Endocrinologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Pour rappel, dans son avis du 7 octobre 2015, la Commission a octroyé à CETROTIDE (cétrorélix) un service médical rendu (SMR) important dans l’indication.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-20",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "L’infertilité entraîne une perturbation de la qualité de vie chez les personnes souhaitant concevoir un enfant.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Femmes incluses dans un protocole de stimulation ovarienne contrôlée",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : CETROTIDE, ORGALUTRAN, DECAPEPTYL, SYNAREL",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Indication",
+          "t": "Prévention de l’ovulation prématurée chez les patientes incluses dans un protocole de stimulation ovarienne contrôlée, suivie de prélèvement d’ovocytes et de techniques de reproduction assistée.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 5,
+          "s": "Code ATC",
+          "t": "H01CC02 Antagoniste de la GnRH",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 3,
+          "s": "Conclusions",
+          "t": "Il s’agit d’un traitement de première intention.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "Service M",
+          "t": "L’infertilité entraîne une perturbation de la qualité de vie chez les personnes souhaitant concevoir un enfant. L’ovulation prématurée conduit à l’échec d’une stimulation ovarienne contrôlée.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 4,
+          "s": "Calendrier",
+          "t": "Date d’examen et d’adoption : 20 juillet 2022",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 3,
+          "s": "Service M",
+          "t": "L’infertilité entraîne une perturbation de la qualité de vie chez les personnes souhaitant concevoir un enfant.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "type_population_cible",
+          "f": "F1",
+          "p": 1,
+          "s": "L’essentie",
+          "t": "patientes incluses dans un protocole de stimulation ovarienne contrôlée",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "pertinence_concurrence_therapeutique",
+          "f": "F1",
+          "p": 2,
+          "s": "Comparate",
+          "t": "Comparateurs cliniquement pertinents (CCP) : CETROTIDE, ORGALUTRAN, DECAPEPTYL, SYNAREL",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19884_essai_etudes_cliniques",
+      "evaluation_id": "CT-19884",
+      "nom_essai": "Études cliniques de cétrorélix (non spécifiées)",
+      "nct_number": "Non renseigné",
+      "design": "Non renseigné",
+      "population_cible": "Patientnes incluses dans un protocole de stimulation ovarienne contrôlée",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Non renseigné",
+      "QoL_flag": false,
+      "niveau_preuve": "Non renseigné",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non renseigné",
+      "randomisation_flag": null,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 1,
+          "s": "Dans les",
+          "t": "Dans les études cliniques, cétrorélix a été associé à la gonadotrophine de femme ménopausée (HMG).",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 1,
+          "s": "L’essentie",
+          "t": "patientes incluses dans un protocole de stimulation ovarienne contrôlée",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19884_compHAS_01",
+      "evaluation_id": "CT-19884",
+      "nom_comparateur_HAS": "CETROTIDE 0,25 mg, poudre et solvant pour solution injectable (cétrorélix)",
+      "type_comparateur": "Médicament de référence",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Antagoniste_GnRH",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "CETROTIDE",
+          "t": "CETROTIDE 0,25 mg, poudre et solvant pour solution injectable (cétrorélix)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19884_compHAS_02",
+      "evaluation_id": "CT-19884",
+      "nom_comparateur_HAS": "ORGALUTRAN 0,25 mg/0,5 mL, solution injectable et ses génériques (ganirelix)",
+      "type_comparateur": "Médicament actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Antagoniste_GnRH",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "ORGALUTR",
+          "t": "ORGALUTRAN 0,25 mg/0,5 mL, solution injectable et ses génériques (ganirelix)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19884_compHAS_03",
+      "evaluation_id": "CT-19884",
+      "nom_comparateur_HAS": "DECAPEPTYL 0,1 mg, poudre et solvant pour solution injectable SC / DECAPEPTYL LP 3 mg, poudre et solvant pour suspension injectable (IM) forme à libération prolongée sur 28 jours (triptoréline)",
+      "type_comparateur": "Médicament actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Agoniste_GnRH",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "DECAPEPTY",
+          "t": "DECAPEPTYL 0,1 mg, poudre et solvant pour solution injectable SC / DECAPEPTYL LP 3 mg, poudre et solvant pour suspension injectable (IM) forme à libération prolongée sur 28 jours (triptoréline)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19884_compHAS_04",
+      "evaluation_id": "CT-19884",
+      "nom_comparateur_HAS": "SYNAREL 0,2 mg/dose solution pour pulvérisation nasale (acétate de nafaréline)",
+      "type_comparateur": "Médicament actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Agoniste_GnRH",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "SYNAREL",
+          "t": "SYNAREL 0,2 mg/dose solution pour pulvérisation nasale (acétate de nafaréline)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [],
+  "Données_Contexte": {
+    "contexte_id": "CT-19884_ctx",
+    "evaluation_id": "CT-19884",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2020-12-15",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "s": "AMM",
+        "t": "Date initiale (procédure d’octroi) : 15/12/2020 (procédure décentralisée)",
+        "m": "manual",
+        "c": 1.0
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19884",
+    "texte_brut": "[Contenu du document fourni]",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19884_smrasmr_01",
+      "evaluation_id": "CT-19884",
+      "indication_precise": "Prévention de l’ovulation prématurée chez les patientes incluses dans un protocole de stimulation ovarienne contrôlée, suivie de prélèvement d’ovocytes et de techniques de reproduction assistée.",
+      "smr": "la Commission considère que le service médical rendu par CEZIBOE 0,25 mg (cétrorélix) est important dans l’indication de l’AMM.",
+      "asmr": "CEZIBOE (cétrorélix) est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport au médicament de référence.",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Le rapport efficacité/effets indésirables est important. Il existe des alternatives médicamenteuses.",
+      "population_cible_indication": "Les patientes incluses dans un protocole de stimulation ovarienne contrôlée",
+      "ligne_traitement_indication": "traitement de première intention",
+      "comparateurs_references_indication": "CETROTIDE (cétrorélix)",
+      "comparateur_id_HAS": "CT-19884_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 4,
+          "s": "Compte ten",
+          "t": "la Commission considère que le service médical rendu par CEZIBOE 0,25 mg (cétrorélix) est important dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 4,
+          "s": "Améliorati",
+          "t": "CEZIBOE (cétrorélix) est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport au médicament de référence.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19884_event_AMM_01",
+      "evaluation_id": "CT-19884",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2020-12-15",
+      "detail_brut": "Date initiale (procédure d’octroi) : 15/12/2020 (procédure décentralisée)",
+      "source_doc": "F1",
+      "detail_type_specifique": "procédure décentralisée",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "AMM",
+          "t": "Date initiale (procédure d’octroi) : 15/12/2020 (procédure décentralisée)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19884_event_CT_01",
+      "evaluation_id": "CT-19884",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-20",
+      "detail_brut": "Date d’examen et d’adoption : 20 juillet 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adopté par la Commission de la transparence",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Calendrier",
+          "t": "Date d’examen et d’adoption : 20 juillet 2022",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19884",
+    "delai_amm_ct_jours": 582,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19884",
+    "is_orphan": false,
+    "classe_ATC_l2": "H01C",
+    "aire_therapeutique": "Endocrinologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": null,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

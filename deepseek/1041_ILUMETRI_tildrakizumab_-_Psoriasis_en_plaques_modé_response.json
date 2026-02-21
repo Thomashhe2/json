@@ -1,0 +1,862 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19880",
+  "evaluation_id": "CT-19880",
+  "extraction_date": "2022-07-11",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19880_ILUMETRI+200+mg_PIS_AvisDef_CT19880.pdf",
+        "type": "CT",
+        "page_count": 4
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19880_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "indication_precise"
+      ],
+      "routing_hint": "Synthèse de l'avis",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19880_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "type_avis_enum",
+        "date_AMM_ema",
+        "statut_reglementaire_ema"
+      ],
+      "routing_hint": "Contexte de l'évaluation",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19880_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication_precise"
+      ],
+      "routing_hint": "Indication thérapeutique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19880_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Comparateurs identifiés par la HAS",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19880_seg_05",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission / Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr_enum",
+        "smr",
+        "ligne_traitement",
+        "gravite_patho"
+      ],
+      "routing_hint": "Conclusion sur le SMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19880_seg_06",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr_enum",
+        "asmr"
+      ],
+      "routing_hint": "Conclusion sur l'ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19880_seg_07",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible",
+        "population_cible_nombre"
+      ],
+      "routing_hint": "Population cible estimée",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19880_seg_08",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "date_AMM_ema",
+        "conditions_prescription",
+        "code_ATC"
+      ],
+      "routing_hint": "Informations réglementaires",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19880_prod_ILUMETRI_200mg",
+      "evaluation_id": "CT-19880",
+      "nom_commercial": "ILUMETRI",
+      "dci": "tildrakizumab",
+      "forme_pharmaceutique": "Solution injectable en seringue préremplie",
+      "dosage": "200 mg",
+      "code_cip13": "34009 302 541 7 2",
+      "titulaire_amm": "ALMIRALL SAS",
+      "code_ATC": "L04AC17",
+      "statut_prescription": "Médicament à prescription initiale hospitalière (PIH)",
+      "prescription_reservee_specialistes": "Spécialiste en dermatologie ou en médecine interne",
+      "renouvellement_limite_specialistes": "Spécialiste en dermatologie ou en médecine interne",
+      "medicament_exception": true,
+      "liste": "I",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "ILUMETRI",
+          "t": "ILUMETRI 200 mg, Solution injectable en seringue préremplie",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 2,
+          "s": "tildrakiz",
+          "t": "tildrakizumab ILUMETRI 200 mg",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 4,
+          "s": "ILUMETRI",
+          "t": "CIP : 34009 302 541 7 2",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 4,
+          "s": "Demandeu",
+          "t": "ALMIRALL SAS",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "code_ATC",
+          "f": "F1",
+          "p": 4,
+          "s": "Code ATC",
+          "t": "L04AC17",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "statut_prescription",
+          "f": "F1",
+          "p": 4,
+          "s": "Médicame",
+          "t": "Médicament à prescription initiale hospitalière (PIH)",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "prescription_reservee_specialistes",
+          "f": "F1",
+          "p": 4,
+          "s": "Médicame",
+          "t": "Médicament de prescription réservée à certains médecins spécialistes (PRS) : Spécialiste en dermatologie ou en médecine interne.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "renouvellement_limite_specialistes",
+          "f": "F1",
+          "p": 4,
+          "s": "Renouvell",
+          "t": "Renouvellement de la prescription limité à certains professionnels de santé : Spécialiste en dermatologie ou en médecine interne.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "medicament_exception",
+          "f": "F1",
+          "p": 4,
+          "s": "Médicame",
+          "t": "Médicament d’exception",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "liste",
+          "f": "F1",
+          "p": 4,
+          "s": "Liste I",
+          "t": "Liste I",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19880",
+      "Num_avis": "CT-19880",
+      "produit_nom": "ILUMETRI 200 mg, Solution injectable en seringue préremplie",
+      "dci": "tildrakizumab",
+      "type_avis": "Mise à disposition d’une nouvelle présentation",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Solution injectable en seringue préremplie",
+      "dosage": "200 mg",
+      "indication": "Traitement du psoriasis en plaques modéré à sévère chez l’adulte qui nécessite un traitement systémique.",
+      "classe_ATC": "L04AC17",
+      "pathologie": "Psoriasis en plaques modéré à sévère",
+      "maladie_rare": false,
+      "ligne_traitement": "2ème ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec (efficacité insuffisante, contre-indication ou intolérance) à une 1ère ligne de traitement systémique non biologique (méthotrexate, ciclosporine ou acitrétine) et éventuellement à la photothérapie.",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Dermatologie",
+      "aire_therapeutique_niveau_2": "Psoriasis",
+      "aire_therapeutique_niveau_3": "Psoriasis en plaques modéré à sévère",
+      "source_aire_therapeutique": "Déduit ATC L04AC17 et indication",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le psoriasis est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "adulte",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Pour rappel, dans son avis du 3 juin 2020, la Commission a considéré que le service médical rendu par ILUMETRI 100 mg (tildrakizumab), solution injectable en seringue préremplie était important uniquement dans le traitement du psoriasis en plaques chronique sévère de l’adulte défini par : − un échec (réponse insuffisante, contre-indication ou intolérance) à au moins deux traitements parmi les traitements systémiques non biologiques et la photothérapie − et une forme étendue et/ou un retentissement psychosocial important. En conclusion de la réévaluation, le 11 juillet 2022, de plusieurs médicaments biologiques indiqués dans le traitement du psoriasis en plaques, dont ILUMETRI (tildrakizumab), la Commission a considéré que désormais ILUMETRI (tildrakizumab) apporte un service médical important dans l’ensemble de l’indication de l’AMM.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Il existe de nombreuses alternatives thérapeutiques.",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-11",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Le psoriasis est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "adulte",
+      "pertinence_concurrence_therapeutique": "Il existe de nombreuses alternatives thérapeutiques.",
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 2,
+          "s": "Mise à d",
+          "t": "Mise à disposition d’une nouvelle présentation",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Traitemen",
+          "t": "Traitement du psoriasis en plaques modéré à sévère chez l’adulte qui nécessite un traitement systémique.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 3,
+          "s": "Ces spéci",
+          "t": "Ces spécialités sont des traitements systémiques de 2ème ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec (efficacité insuffisante, contre-indication ou intolérance) à une 1ère ligne de traitement systémique non biologique (méthotrexate, ciclosporine ou acitrétine) et éventuellement à la photothérapie.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "Le psoria",
+          "t": "Le psoriasis est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 2,
+          "s": "Pour rapp",
+          "t": "Pour rappel, dans son avis du 3 juin 2020, la Commission a considéré que le service médical rendu par ILUMETRI 100 mg (tildrakizumab), solution injectable en seringue préremplie était important uniquement dans le traitement du psoriasis en plaques chronique sévère de l’adulte défini par : − un échec (réponse insuffisante, contre-indication ou intolérance) à au moins deux traitements parmi les traitements systémiques non biologiques et la photothérapie − et une forme étendue et/ou un retentissement psychosocial important. En conclusion de la réévaluation, le 11 juillet 2022, de plusieurs médicaments biologiques indiqués dans le traitement du psoriasis en plaques, dont ILUMETRI (tildrakizumab), la Commission a considéré que désormais ILUMETRI (tildrakizumab) apporte un service médical important dans l’ensemble de l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "concurrence_therapeutique_recente",
+          "f": "F1",
+          "p": 3,
+          "s": "Il existe",
+          "t": "Il existe de nombreuses alternatives thérapeutiques.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 2,
+          "s": "Adopté pa",
+          "t": "Adopté par la Commission de la transparence le 11 juillet 2022",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 3,
+          "s": "Le psoria",
+          "t": "Le psoriasis est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19880_compHAS_01",
+      "evaluation_id": "CT-19880",
+      "nom_comparateur_HAS": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés dans la réévaluation des médicaments biologiques indiqués dans le traitement du psoriasis en plaques de l’adulte.",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Immunologie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Les compa",
+          "t": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés dans la réévaluation des médicaments biologiques indiqués dans le traitement du psoriasis en plaques de l’adulte. (cf. avis de la Commission de la Transparence du 29 juin 2022).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19880_arg_CT_1",
+      "evaluation_id": "CT-19880",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "Ce nouveau dosage (200 mg) est conforme au RCP et peut apporter une plus grande efficacité chez des patients ayant certaines caractéristiques (ex: charge de morbidité élevée, poids corporel ≥ 90 kg).",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ce nouveau dosage est conforme aux mentions du RCP dans la rubrique « Posologie et mode d’administration », qui précisent qu’une dose de 200 mg peut apporter une plus grande efficacité chez des patients ayant certaines caractéristiques (par exemple une charge de morbidité élevée, un poids corporel ≥ 90 kg).",
+      "page_source": "Page 2",
+      "section_source": "Contexte",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Ce nouvea",
+          "t": "Ce nouveau dosage est conforme aux mentions du RCP dans la rubrique « Posologie et mode d’administration », qui précisent qu’une dose de 200 mg peut apporter une plus grande efficacité chez des patients ayant certaines caractéristiques (par exemple une charge de morbidité élevée, un poids corporel ≥ 90 kg).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19880_arg_CT_2",
+      "evaluation_id": "CT-19880",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Le psoriasis en plaques modéré à sévère a un retentissement important sur la qualité de vie. Le traitement est de 2ème ligne après échec des traitements systémiques non biologiques et photothérapie.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le psoriasis est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie. Ces spécialités sont des traitements systémiques de 2ème ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec (efficacité insuffisante, contre-indication ou intolérance) à une 1ère ligne de traitement systémique non biologique (méthotrexate, ciclosporine ou acitrétine) et éventuellement à la photothérapie.",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Le psoria",
+          "t": "Le psoriasis est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie. Ces spécialités sont des traitements systémiques de 2ème ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec (efficacité insuffisante, contre-indication ou intolérance) à une 1ère ligne de traitement systémique non biologique (méthotrexate, ciclosporine ou acitrétine) et éventuellement à la photothérapie.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19880_arg_CT_3",
+      "evaluation_id": "CT-19880",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "Le rapport efficacité/effets indésirables est important.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le rapport efficacité/effets indésirables est important.",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Le rappor",
+          "t": "Le rapport efficacité/effets indésirables est important.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19880_arg_CT_4",
+      "evaluation_id": "CT-19880",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "Il existe de nombreuses alternatives thérapeutiques.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Il existe de nombreuses alternatives thérapeutiques.",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Il existe",
+          "t": "Il existe de nombreuses alternatives thérapeutiques.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19880_arg_CT_5",
+      "evaluation_id": "CT-19880",
+      "source_argument": "CT",
+      "categorie_argument": "Économique",
+      "description": "ILUMETRI (tildrakizumab) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport à la présentation déjà inscrite.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "ILUMETRI (tildrakizumab) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport à la présentation déjà inscrite.",
+      "page_source": "Page 3",
+      "section_source": "Intérêt de santé publique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "ILUMETRI",
+          "t": "ILUMETRI (tildrakizumab) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport à la présentation déjà inscrite.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19880_ctx",
+    "evaluation_id": "CT-19880",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-04-25",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "L’introduction dans la stratégie thérapeutique de cette présentation en complément de gamme de ILUMETRI 100 mg, solution injectable en seringue préremplie (tildrakizumab) n’est pas de nature à modifier la population cible déjà estimée par la Commission (cf. avis de la Commission de la Transparence d’ILUMETRI 100mg du 11 juillet 2022). Celle-ci a été estimée à environ 77 350 patients.",
+    "population_cible_nombre": 77350,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Avis de la Commission de la Transparence d’ILUMETRI 100mg du 11 juillet 2022",
+    "incertitude_population": "Faible",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "contexte_evaluation": "Complément de gamme - pas d'essais nouveaux",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 2,
+        "s": "Cette spé",
+        "t": "Cette spécialité a obtenu une autorisation de mise sur le marché le 25 avril 2022 (procédure centralisée)",
+        "m": "manual",
+        "c": 0.98
+      },
+      {
+        "field": "population_cible_france",
+        "f": "F1",
+        "p": 3,
+        "s": "L’introdu",
+        "t": "L’introduction dans la stratégie thérapeutique de cette présentation en complément de gamme de ILUMETRI 100 mg, solution injectable en seringue préremplie (tildrakizumab) n’est pas de nature à modifier la population cible déjà estimée par la Commission (cf. avis de la Commission de la Transparence d’ILUMETRI 100mg du 11 juillet 2022). Celle-ci a été estimée à environ 77 350 patients.",
+        "m": "manual",
+        "c": 0.98
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19880",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19880_smrasmr_01",
+      "evaluation_id": "CT-19880",
+      "indication_precise": "Traitement du psoriasis en plaques modéré à sévère chez l’adulte qui nécessite un traitement systémique.",
+      "smr": "La Commission considère que le service médical rendu par ILUMETRI (tildrakizumab), solution injectable en seringue préremplie, est important dans l’indication de l’AMM.",
+      "asmr": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités remboursables aux assurés sociaux et sur la liste des spécialités agréées à l’usage des collectivités dans l’indication et aux posologies de l’AMM. ➔ Taux de remboursement proposé : 65 %",
+      "population_cible_indication": "Adultes avec psoriasis en plaques modéré à sévère nécessitant un traitement systémique",
+      "ligne_traitement_indication": "2ème ligne après échec des traitements systémiques non biologiques et photothérapie",
+      "comparateurs_references_indication": "Non renseigné",
+      "comparateur_id_HAS": "CT-19880_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "adulte"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commis",
+          "t": "La Commission considère que le service médical rendu par ILUMETRI (tildrakizumab), solution injectable en seringue préremplie, est important dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 3,
+          "s": "Cette spé",
+          "t": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "justification_decisionnelle",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commis",
+          "t": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités remboursables aux assurés sociaux et sur la liste des spécialités agréées à l’usage des collectivités dans l’indication et aux posologies de l’AMM. ➔ Taux de remboursement proposé : 65 %",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19880_poso_01",
+      "evaluation_id": "CT-19880",
+      "smr_asmr_id": "CT-19880_smrasmr_01",
+      "indication": "Traitement du psoriasis en plaques modéré à sévère chez l’adulte qui nécessite un traitement systémique.",
+      "population_cible": "Adultes",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Ce nouveau dosage est conforme aux mentions du RCP dans la rubrique « Posologie et mode d’administration », qui précisent qu’une dose de 200 mg peut apporter une plus grande efficacité chez des patients ayant certaines caractéristiques (par exemple une charge de morbidité élevée, un poids corporel ≥ 90 kg).",
+      "phases": [],
+      "ajustements_poso_brut": "Non renseigné",
+      "commentaires": "Non renseigné",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 2,
+          "s": "Ce nouvea",
+          "t": "Ce nouveau dosage est conforme aux mentions du RCP dans la rubrique « Posologie et mode d’administration », qui précisent qu’une dose de 200 mg peut apporter une plus grande efficacité chez des patients ayant certaines caractéristiques (par exemple une charge de morbidité élevée, un poids corporel ≥ 90 kg).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19880_event_AMM_01",
+      "evaluation_id": "CT-19880",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-04-25",
+      "detail_brut": "Cette spécialité a obtenu une autorisation de mise sur le marché le 25 avril 2022 (procédure centralisée) dans le traitement du psoriasis en plaques modéré à sévère chez l’adulte qui nécessite un traitement systémique.",
+      "source_doc": "Avis CT",
+      "detail_type_specifique": "Extension de gamme : ajout de la présentation de 200 mg, solution injectable en seringue préremplie",
+      "acteurs_impliques": [
+        "ALMIRALL SAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Cette spé",
+          "t": "Cette spécialité a obtenu une autorisation de mise sur le marché le 25 avril 2022 (procédure centralisée)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19880_event_CT_01",
+      "evaluation_id": "CT-19880",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-11",
+      "detail_brut": "Adopté par la Commission de la transparence le 11 juillet 2022",
+      "source_doc": "Avis CT",
+      "detail_type_specifique": "Adoption de l'avis",
+      "acteurs_impliques": [
+        "Commission de la transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Adopté pa",
+          "t": "Adopté par la Commission de la transparence le 11 juillet 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19880_event_CT_02",
+      "evaluation_id": "CT-19880",
+      "event_type": "DOSSIER_DEPOT_HAS",
+      "event_date": "2022-06-10",
+      "detail_brut": "Date de validation administrative* : 10 juin 2022",
+      "source_doc": "Avis CT",
+      "detail_type_specifique": "Validation administrative",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Date de v",
+          "t": "Date de validation administrative* : 10 juin 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19880",
+    "delai_amm_ct_jours": 77,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19880",
+    "is_orphan": false,
+    "classe_ATC_l2": "L04",
+    "aire_therapeutique": "Dermatologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

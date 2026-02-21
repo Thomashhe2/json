@@ -1,0 +1,1540 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19544",
+  "evaluation_id": "CT-19544",
+  "extraction_date": "2022-02-02",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-02-02",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19544_RIZMOIC_PIC_INS_AvisDef_CT19544.pdf",
+        "type": "CT",
+        "page_count": 45
+      },
+      "F2": {
+        "file_name": "trans_1_rizmoic_02022022_transcription_ct_19544.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 9
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19544_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "progres",
+        "place_strategie"
+      ],
+      "routing_hint": "Introduction",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_02",
+      "section_label_normalise": "MOTIF_EXAMEN",
+      "section_label_brut": "Motif de l’examen",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "indication",
+        "smr",
+        "asmr",
+        "isp",
+        "place_strategie",
+        "population_cible"
+      ],
+      "routing_hint": "Contexte évaluation",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 200,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication_precise"
+      ],
+      "routing_hint": "Indication AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_04",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 400,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "dose",
+        "populations_particulieres",
+        "mode_administration"
+      ],
+      "routing_hint": "Posologie recommandée",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_05",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 600,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "description_besoin",
+        "alternatives_disponibles"
+      ],
+      "routing_hint": "Contexte clinique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_06",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_medicaments",
+        "comparateurs_non_medicamenteux"
+      ],
+      "routing_hint": "Comparateurs HAS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_07",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 42,
+      "char_start": 0,
+      "char_end": 10000,
+      "heading_text": "Analyse des données disponibles",
+      "expected_fields": [
+        "essais_cliniques",
+        "resultats_efficacite",
+        "qualite_vie",
+        "tolerance"
+      ],
+      "routing_hint": "Données cliniques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_08",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 42,
+      "page_end": 43,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "description_place",
+        "comparateurs_references"
+      ],
+      "routing_hint": "Conclusion place",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_09",
+      "section_label_normalise": "CONCLUSIONS_CT",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 43,
+      "page_end": 45,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "population_cible",
+        "avis_inscription"
+      ],
+      "routing_hint": "Décision finale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_1",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence - Avertissement",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [],
+      "routing_hint": "Métadonnées et avertissement sur la transcription",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_2",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence - Présentation dossier",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Examen inscription : RIZMOIC",
+      "expected_fields": [],
+      "routing_hint": "Présentation du dossier par le chef de projet HAS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_3",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence - Interventions experts",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Interventions Pr Bigard et Dr Blondon",
+      "expected_fields": [],
+      "routing_hint": "Interventions des experts sur les études et la place thérapeutique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19544_seg_4",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence - Débats et votes",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Débats, questions et vote",
+      "expected_fields": [],
+      "routing_hint": "Débats entre membres, questions et vote final",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "RIZMOIC",
+      "dci": "naldémédine",
+      "titulaire_amm": "SHIONOGI",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "RIZMOIC",
+          "t": "RIZMOIC 200 microgrammes, comprimés pelliculés",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "naldémédine",
+          "t": "naldémédine",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 49,
+          "s": "SHIONOGI",
+          "t": "Demandeur SHIONOGI",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19544",
+      "Num_avis": "CT-19544",
+      "produit_nom": "RIZMOIC",
+      "dci": "naldémédine",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimés pelliculés",
+      "dosage": "200 microgrammes",
+      "indication": "Traitement de la constipation induite par les opioïdes (CIO) chez les patients adultes ayant été traités préalablement par un laxatif",
+      "classe_ATC": "A06AH05",
+      "pathologie": "constipation induite par les opioïdes",
+      "maladie_rare": false,
+      "ligne_traitement": "1ère intention",
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "patients adultes ayant été traités préalablement par un laxatif",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Gastro-entérologie",
+      "aire_therapeutique_niveau_2": "Constipation",
+      "aire_therapeutique_niveau_3": "Constipation induite par les opioïdes",
+      "source_aire_therapeutique": "Déduit indication",
+      "design_etude": "Etudes de phase III randomisées double-aveugle",
+      "niveau_preuve_brut": "Données de phase III",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Partiellement couvert par les médicaments disponibles",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "smr": "FAIBLE",
+      "smr_enum": "Faible",
+      "asmr": "ASMR V",
+      "asmr_enum": "V",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Première évaluation",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": 22,
+      "nb_voix_pour": 22,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-02-02",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR FAIBLE",
+          "t": "SMR FAIBLE",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 3,
+          "s": "ASMR V",
+          "t": "ASMR V",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 4,
+          "s": "Indication",
+          "t": "Traitement de la constipation induite par les opioïdes (CIO) chez les patients adultes ayant été traités préalablement par un laxatif",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 49,
+          "s": "Code ATC",
+          "t": "Code ATC A06AH05",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19544_essai_COMPOSE1",
+      "evaluation_id": "CT-19544",
+      "nom_essai": "COMPOSE-1",
+      "nct_number": "NCT01965158",
+      "design": "Phase III, randomisée, double-aveugle",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Patients adultes ayant des douleurs chroniques non-cancéreuses et constipation induite par les opioïdes",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": 274,
+      "nb_patient_comparateur": 273,
+      "resultat_global": "Supériorité significative vs placebo",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 3,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 3,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "dose d'opioïde"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 3,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": 80,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 1,
+      "nb_patients_inclus": "547",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 9,
+          "s": "COMPOSE-1",
+          "t": "COMPOSE-1 (N = 547)",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 13,
+          "s": "274 patients",
+          "t": "274 patients dans le groupe naldémédine",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19544_essai_COMPOSE2",
+      "evaluation_id": "CT-19544",
+      "nom_essai": "COMPOSE-2",
+      "nct_number": "NCT01993940",
+      "design": "Phase III, randomisée, double-aveugle",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Patients adultes ayant des douleurs chroniques non-cancéreuses et constipation induite par les opioïdes",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": 277,
+      "nb_patient_comparateur": 276,
+      "resultat_global": "Supériorité significative vs placebo",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 3,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 3,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "dose d'opioïde"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 3,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": 80,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 1,
+      "nb_patients_inclus": "553",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 9,
+          "s": "COMPOSE-2",
+          "t": "COMPOSE-2 (N = 553)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19544_essai_COMPOSE3",
+      "evaluation_id": "CT-19544",
+      "nom_essai": "COMPOSE-3",
+      "nct_number": "NCT01965652",
+      "design": "Phase III, randomisée, double-aveugle, tolérance à long terme",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Patients adultes ayant des douleurs chroniques non-cancéreuses et constipation induite par les opioïdes",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": 621,
+      "nb_patient_comparateur": 620,
+      "resultat_global": "Profil de tolérance acceptable",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "dose d'opioïde"
+      ],
+      "population_analyse_principale": "Safety population",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": 80,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 1,
+      "nb_patients_inclus": "1240",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 9,
+          "s": "COMPOSE-3",
+          "t": "COMPOSE-3 (N = 1 240)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19544_essai_COMPOSE4",
+      "evaluation_id": "CT-19544",
+      "nom_essai": "COMPOSE-4",
+      "nct_number": "JAPIC-CTI-132340",
+      "design": "Phase III, randomisée, double-aveugle",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Patients adultes ayant des douleurs d'origine cancéreuse et constipation induite par les opioïdes",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": 97,
+      "nb_patient_comparateur": 96,
+      "resultat_global": "Supériorité significative vs placebo",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 0.5,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.5,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 0.5,
+      "maturite_donnees": "Matures",
+      "age_min_num": 20,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "193",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 9,
+          "s": "COMPOSE-4",
+          "t": "COMPOSE-4 (N = 193)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19544_essai_COMPOSE1_crit_repondeurs",
+      "essai_id": "CT-19544_essai_COMPOSE1",
+      "evaluation_id": "CT-19544",
+      "nom_critere": "Pourcentage de répondeurs en termes de selles spontanées",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Chi2",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "47,6%",
+      "valeur_groupe_comparateur": "34,6%",
+      "gain_absolu": "13,0%",
+      "gain_absolu_num": 13.0,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[4,8 ; 21,3]",
+      "IC95_low_num": 4.8,
+      "IC95_high_num": 21.3,
+      "p_value": "p = 0,002",
+      "p_value_num": 0.002,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 16,
+          "s": "130 (47,6)",
+          "t": "130 (47,6)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19544_essai_COMPOSE2_crit_repondeurs",
+      "essai_id": "CT-19544_essai_COMPOSE2",
+      "evaluation_id": "CT-19544",
+      "nom_critere": "Pourcentage de répondeurs en termes de selles spontanées",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Chi2",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "52,5%",
+      "valeur_groupe_comparateur": "33,6%",
+      "gain_absolu": "18,9%",
+      "gain_absolu_num": 18.9,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[10,8 ; 27,0]",
+      "IC95_low_num": 10.8,
+      "IC95_high_num": 27.0,
+      "p_value": "p < 0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 16,
+          "s": "145 (52,5)",
+          "t": "145 (52,5)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19544_essai_COMPOSE4_crit_repondeurs",
+      "essai_id": "CT-19544_essai_COMPOSE4",
+      "evaluation_id": "CT-19544",
+      "nom_critere": "Pourcentage de répondeurs en termes de selles spontanées",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Chi2",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "71,1%",
+      "valeur_groupe_comparateur": "34,4%",
+      "gain_absolu": "36,8%",
+      "gain_absolu_num": 36.8,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[23,7 ; 49,9]",
+      "IC95_low_num": 23.7,
+      "IC95_high_num": 49.9,
+      "p_value": "p < 0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 24,
+          "s": "71,1%",
+          "t": "71,1% dans le groupe naldémédine",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19544_essai_COMPOSE1_tol",
+      "evaluation_id": "CT-19544",
+      "essai_id": "CT-19544_essai_COMPOSE1",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19544_essai_COMPOSE3_tol",
+      "evaluation_id": "CT-19544",
+      "essai_id": "CT-19544_essai_COMPOSE3",
+      "ae_total_pct": 68.4,
+      "ae_total_pct_comparateur": 72.1,
+      "sae_pct": 9.7,
+      "sae_pct_comparateur": 11.8,
+      "discontinuations_ae_pct": 6.3,
+      "discontinuations_ae_pct_comparateur": 5.8,
+      "deaths_ae_n": 4,
+      "deaths_ae_n_comparateur": 4,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": true,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Douleurs abdominales",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 8.2,
+          "incidence_pct_comparateur": 3.1,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 11.0,
+          "incidence_pct_comparateur": 5.3,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "3-4",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "sae_pct",
+          "f": "F1",
+          "p": 33,
+          "s": "9,7%",
+          "t": "9,7% dans le groupe naldémédine",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19544_essai_COMPOSE1_comp_01",
+      "essai_id": "CT-19544_essai_COMPOSE1",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non applicable",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 9,
+          "s": "placebo",
+          "t": "comparaison au placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19544_essai_COMPOSE2_comp_01",
+      "essai_id": "CT-19544_essai_COMPOSE2",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non applicable",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 9,
+          "s": "placebo",
+          "t": "comparaison au placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19544_essai_COMPOSE3_comp_01",
+      "essai_id": "CT-19544_essai_COMPOSE3",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non applicable",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 9,
+          "s": "placebo",
+          "t": "comparaison au placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19544_essai_COMPOSE4_comp_01",
+      "essai_id": "CT-19544_essai_COMPOSE4",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non applicable",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 9,
+          "s": "placebo",
+          "t": "comparaison au placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19544_compHAS_01",
+      "evaluation_id": "CT-19544",
+      "nom_comparateur_HAS": "MOVENTIG (naloxégol)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Alternative dans la stratégie",
+      "famille_comparateur": "Antagoniste_opioïde",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "MOVENTIG",
+          "t": "MOVENTIG (naloxégol par voie orale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19544_compHAS_02",
+      "evaluation_id": "CT-19544",
+      "nom_comparateur_HAS": "RELISTOR (méthylnaltrexone bromure)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Alternative dans la stratégie",
+      "famille_comparateur": "Antagoniste_opioïde",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "RELISTOR",
+          "t": "RELISTOR (méthylnaltrexone bromure)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19544_arg_TRANS_1",
+      "evaluation_id": "CT-19544",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Neutre",
+      "description": "Efficacité démontrée vs placebo dans les études COMPOSE, avec un gain modeste d'environ 1 selle/semaine chez les patients non cancéreux et 2,5 selles/semaine chez les cancéreux.",
+      "extrait_textuel": "Quand on les met sous ce traitement pendant 12 semaines, on va gagner une selle. Ce n'est pas formidable.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Bigard",
+      "moment_debat": "Intervention expert",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 5",
+      "section_source": "Interventions experts",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19544",
+          "t": "Quand on les met sous ce traitement pendant 12 semaines, on va gagner une selle. Ce n'est pas formidable.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19544_arg_TRANS_2",
+      "evaluation_id": "CT-19544",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "Données disponibles pour deux populations distinctes : patients avec douleurs non cancéreuses (états-Unis) et patients cancéreux (Japon), mais transposabilité limitée.",
+      "extrait_textuel": "L'étude sur les populations des douleurs chroniques non-cancéreuses s'est faite essentiellement aux États-Unis. C'est une population très particulière.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr Bigard",
+      "moment_debat": "Intervention expert",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 5",
+      "section_source": "Interventions experts",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19544",
+          "t": "L'étude sur les populations des douleurs chroniques non-cancéreuses s'est faite essentiellement aux États-Unis. C'est une population très particulière.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19544_arg_TRANS_3",
+      "evaluation_id": "CT-19544",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "RIZMOIC a un dossier plus complet que MOVENTIG (inclut des patients cancéreux), mais efficacité similaire; pas de comparaison directe entre les médicaments.",
+      "extrait_textuel": "Le dossier est meilleur que le dossier précédent, le dossier MOVENTIG, mais il démontre la même chose.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Bigard",
+      "moment_debat": "Intervention expert",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 6",
+      "section_source": "Interventions experts",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19544",
+          "t": "Le dossier est meilleur que le dossier précédent, le dossier MOVENTIG, mais il démontre la même chose.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19544_arg_TRANS_4",
+      "evaluation_id": "CT-19544",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "RELISTOR a un SMR important et ASMR IV en soins palliatifs, mais RIZMOIC et MOVENTIG ont des SMR faibles et ASMR V; justification basée sur la population et la voie d'administration.",
+      "extrait_textuel": "Le RELISTOR est souvent assez mal classé dans les recommandations internationales. En France, on n'a du RELISTOR que par voie sous-cutanée, donc c'est différent.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Bigard",
+      "moment_debat": "Intervention expert",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 7",
+      "section_source": "Débats et votes",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19544",
+          "t": "Le RELISTOR est souvent assez mal classé dans les recommandations internationales. En France, on n'a du RELISTOR que par voie sous-cutanée, donc c'est différent.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19544_arg_TRANS_5",
+      "evaluation_id": "CT-19544",
+      "source_argument": "TRANS",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "description": "Manque de données robustes sur la qualité de vie et données manquantes importantes dans les études.",
+      "extrait_textuel": "On manque aussi de données de qualité de vie, ce qui est fondamental dans ce type d'études.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Dr Blondon",
+      "moment_debat": "Intervention expert",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 8",
+      "section_source": "Débats et votes",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19544",
+          "t": "On manque aussi de données de qualité de vie, ce qui est fondamental dans ce type d'études.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19544_arg_TRANS_6",
+      "evaluation_id": "CT-19544",
+      "source_argument": "TRANS",
+      "categorie_argument": "Procédural",
+      "direction_argument": "Neutre",
+      "description": "Vote de la commission : 22 voix pour absence d'ISP, 22 voix pour SMR faible, 22 voix pour ASMR V.",
+      "extrait_textuel": "Nous avons 22 voix pour l'absence d'ISP, 22 voix pour un SMR faible, 22 voix pour une ASMR V.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Mme Gattulli",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Page 9",
+      "section_source": "Débats et votes",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "CT-19544",
+          "t": "Nous avons 22 voix pour l'absence d'ISP, 22 voix pour un SMR faible, 22 voix pour une ASMR V.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19544_ctx",
+    "evaluation_id": "CT-19544",
+    "ISP": "Pas d’impact supplémentaire attendu sur la santé publique",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2019-02-18",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Etats-Unis",
+      "Royaume-Uni",
+      "Allemagne",
+      "Espagne",
+      "Italie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Etats-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Approximativement 801 480 patients",
+    "population_cible_nombre": 801480,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Extrapolation",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": 801480,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 4,
+        "s": "18/02/2019",
+        "t": "L’AMM a été octroyée selon la procédure européenne centralisée en date du 18/02/2019",
+        "m": "manual",
+        "c": 0.98
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19544",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19544_smrasmr_01",
+      "evaluation_id": "CT-19544",
+      "indication_precise": "Traitement de la constipation induite par les opioïdes (CIO) chez les patients adultes ayant été traités préalablement par un laxatif",
+      "smr": "FAIBLE",
+      "asmr": "ASMR V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Non renseigné",
+      "population_cible_indication": "Patients adultes atteints d'une constipation induite par les opioïdes ayant été préalablement traités par laxatifs",
+      "ligne_traitement_indication": "1ère intention",
+      "comparateurs_references_indication": "MOVENTIG, RELISTOR",
+      "comparateur_id_HAS": [
+        "CT-19544_compHAS_01",
+        "CT-19544_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "niveau_confiance_annotation": 4,
+      "annotateur": "auto",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR FAIBLE",
+          "t": "SMR FAIBLE",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19544_poso_01",
+      "evaluation_id": "CT-19544",
+      "smr_asmr_id": "CT-19544_smrasmr_01",
+      "indication": "Traitement de la constipation induite par les opioïdes (CIO) chez les patients adultes ayant été traités préalablement par un laxatif",
+      "population_cible": "Patients adultes",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "200 microgrammes une fois par jour",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "200",
+            "unite_dose": "microgrammes"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 1
+          },
+          "voie_administration": "orale",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Aucun ajustement posologique n’est nécessaire chez les patients âgés de plus de 65 ans. Insuffisance rénale et hépatique légère/modérée sans ajustement.",
+      "commentaires": "Peut être pris à tout moment de la journée, avec ou sans laxatif.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "200 microgrammes",
+          "t": "La dose recommandée de naldémédine est de 200 microgrammes (un comprimé) une fois par jour",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19544_event_AMM_01",
+      "evaluation_id": "CT-19544",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2019-02-18",
+      "detail_brut": "AMM octroyée selon la procédure européenne centralisée",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [
+        "EMA",
+        "SHIONOGI"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "18/02/2019",
+          "t": "L’AMM a été octroyée selon la procédure européenne centralisée en date du 18/02/2019",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19544_event_CT_01",
+      "evaluation_id": "CT-19544",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-02-02",
+      "detail_brut": "Avis adopté par la Commission de la Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis définitif",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "02 FEVRIER 2022",
+          "t": "AVIS 02 FEVRIER 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19544",
+    "delai_amm_ct_jours": 1080,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19544",
+    "is_orphan": false,
+    "classe_ATC_l2": "A06",
+    "aire_therapeutique": "Gastro-entérologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 4,
+    "n_rct": 4,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 13.0,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": 9.7,
+    "discontinuations_pct_num": 6.3,
+    "critere_principal_description": "Pourcentage de répondeurs en termes de selles spontanées",
+    "p_value_log10": 2.69897,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 1,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19544",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19544_essai_COMPOSE1",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19544",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19544_essai_COMPOSE2",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19544",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19544_essai_COMPOSE3",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19544",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19544_essai_COMPOSE4",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL_HAS_CRIT",
+      "src_id": "CT-19544_essai_COMPOSE1",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19544_essai_COMPOSE1_crit_repondeurs",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL_HAS_CRIT",
+      "src_id": "CT-19544_essai_COMPOSE2",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19544_essai_COMPOSE2_crit_repondeurs",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL_HAS_CRIT",
+      "src_id": "CT-19544_essai_COMPOSE4",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19544_essai_COMPOSE4_crit_repondeurs",
+      "label": "TRIAL_HAS_CRIT"
+    }
+  ],
+  "Annotation_View": []
+}

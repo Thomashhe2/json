@@ -1,0 +1,955 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19771",
+  "evaluation_id": "CT-19771",
+  "extraction_date": "2022-07-06",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19771_IMETH_PIS_INS_Avisdéf_CT19771.pdf",
+        "type": "CT",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19771_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "indication"
+      ],
+      "routing_hint": "Synthèse initiale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19771_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "type_avis",
+        "historique_Has_produit"
+      ],
+      "routing_hint": "Contexte de l'évaluation",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19771_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "indication"
+      ],
+      "routing_hint": "Indications thérapeutiques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19771_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Comparateurs identifiés par la HAS",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19771_seg_05",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission - Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr",
+        "smr_enum",
+        "gravite_patho"
+      ],
+      "routing_hint": "Conclusions SMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19771_seg_06",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr",
+        "asmr_enum"
+      ],
+      "routing_hint": "Conclusions ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19771_seg_07",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible",
+        "population_cible_nombre"
+      ],
+      "routing_hint": "Estimation population",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19771_seg_08",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "date_AMM",
+        "classe_ATC",
+        "presentations"
+      ],
+      "routing_hint": "Infos admin et réglementaires",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19771_prod_IMETH",
+      "evaluation_id": "CT-19771",
+      "nom_commercial": "IMETH",
+      "dci": "méthotrexate",
+      "forme": "Solution injectable en seringue préremplie",
+      "dosage": "25mg/mL",
+      "code_cip13": "34009 300 164 6 6",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "LABORATOIRE NORDIC PHARMA",
+      "statut_amm": "AMM standard",
+      "date_amm": "2015-06-05",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 5,
+          "s": "IMETH 25",
+          "t": "IMETH 25 mg/ml, solution injectable en seringue préremplie − boîte de 4 (CIP : 34009 300 164 6 6)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19771_prod_LANTAREL",
+      "evaluation_id": "CT-19771",
+      "nom_commercial": "LANTAREL",
+      "dci": "méthotrexate",
+      "forme": "Solution injectable en seringue préremplie",
+      "dosage": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "statut_amm": "Non commercialisé en France",
+      "date_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "IMETH (mé",
+          "t": "IMETH (méthotrexate) est médicament hybride de LANTAREL (méthotrexate), solution injectable en seringue préremplie (non commercialisé en France).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19771_prod_METOJECT",
+      "evaluation_id": "CT-19771",
+      "nom_commercial": "METOJECT",
+      "dci": "méthotrexate",
+      "forme": "Solution injectable en stylo prérempli",
+      "dosage": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "statut_amm": "Non renseigné",
+      "date_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "L’indicat",
+          "t": "L’indication est la même que celle de METOJECT (méthotrexate), solution injectable en stylo prérempli, et à celle des médicaments hybrides de cette spécialité (METHOTREXATE ACCORD et IZIXATE).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19771_prod_METHOTREXATE_ACCORD",
+      "evaluation_id": "CT-19771",
+      "nom_commercial": "METHOTREXATE ACCORD",
+      "dci": "méthotrexate",
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "statut_amm": "Non renseigné",
+      "date_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "L’indicat",
+          "t": "L’indication est la même que celle de METOJECT (méthotrexate), solution injectable en stylo prérempli, et à celle des médicaments hybrides de cette spécialité (METHOTREXATE ACCORD et IZIXATE).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19771_prod_IZIXATE",
+      "evaluation_id": "CT-19771",
+      "nom_commercial": "IZIXATE",
+      "dci": "méthotrexate",
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "statut_amm": "Non renseigné",
+      "date_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "L’indicat",
+          "t": "L’indication est la même que celle de METOJECT (méthotrexate), solution injectable en stylo prérempli, et à celle des médicaments hybrides de cette spécialité (METHOTREXATE ACCORD et IZIXATE).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19771_prod_NORDIMET",
+      "evaluation_id": "CT-19771",
+      "nom_commercial": "NORDIMET",
+      "dci": "méthotrexate",
+      "forme": "Solution injectable en stylo prérempli",
+      "dosage": "25 mg/ml",
+      "code_cip13": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "statut_amm": "Non renseigné",
+      "date_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "Par ailleurs",
+          "t": "Par ailleurs, le laboratoire demande l’inscription en ville et à l’hôpital d’une autre spécialité de NORDIMET 25 mg/ml, solution injectable en stylo prérempli (méthotrexate), également dans le traitement de la maladie de Crohn",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19771",
+      "Num_avis": "CT-19771",
+      "produit_nom": "IMETH 25mg/mL, Solution injectable en seringue préremplie",
+      "dci": "méthotrexate",
+      "type_avis": "Extension d’indication de IMETH 25 mg/mL, solution injectable en seringue préremplie (méthotrexate) pour inscription sur la liste des spécialités remboursables",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Solution injectable en seringue préremplie",
+      "dosage": "25mg/mL",
+      "indication": "traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association aux corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines.",
+      "classe_ATC": "L04AX03",
+      "pathologie": "Maladie de Crohn",
+      "maladie_rare": false,
+      "ligne_traitement": "traitement de 2ème intention des formes légères à modérées",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "patients adultes réfractaires ou intolérants aux thiopurines",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Maladies inflammatoires",
+      "aire_therapeutique_niveau_3": "Maladie de Crohn",
+      "source_aire_therapeutique": "Déduit ATC L04AX03 et pathologie",
+      "design_etude": "Meta-analyse (Nielsen et al. 2020) évaluant l'efficacité du méthotrexate en association ou en monothérapie pour induire et maintenir une rémission clinique",
+      "niveau_preuve_brut": "Meta-analyse avec limites méthodologiques (hétérogénéité des voies d’administration, des doses)",
+      "niveau_preuve_interprete": "Meta_analyse",
+      "besoin_medical_brut": "Il existe des alternatives pour la prise en charge des patients réfractaires ou intolérantes aux thiopurines",
+      "besoin_medical_interprete": "Couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "adultes",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Meta_analyse",
+      "gravite_patho": "La maladie de Crohn est une maladie inflammatoire chronique intestinale. Elle évolue par poussées entrecoupées de rémissions. Il s’agit d’une pathologie invalidante qui peut entraîner une dégradation marquée de la qualité de vie.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "patients adultes réfractaires ou intolérants aux thiopurines",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour les autres spécialités à base de méthotrexate listées dans le contexte et déjà évaluées par la Commission.",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Pour rappel, ces spécialités ont fait l’objet d’un avis favorable de la Commission de la Transparence pour une demande d’inscription dans cette extension d’indication avec un SMR modéré et une ASMR V dans la stratégie de prise en charge de la maladie de Crohn (avis de la Commission de la Transparence de METOJECT du 6 novembre 2019, avis de la Commission de la Transparence METHOTREXATE ACCORD du 18 novembre 2020, avis de la Commission de la Transparence IZIXATE du 9 février 2022).",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-06",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Il s’agit",
+          "t": "Il s’agit d’une demande d’extension d’indication de IMETH 25 mg/mL, solution injectable en seringue préremplie (méthotrexate) pour inscription sur la liste des spécialités remboursables aux assurés sociaux et sur la liste des spécialités agréées à l’usage des collectivités dans l’indication « traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association aux corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines. »",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 5,
+          "s": "Code ATC",
+          "t": "Code ATC L04AX03",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 5,
+          "s": "Date d’ex",
+          "t": "Date d’examen et d’adoption : 6 juillet 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19771_essai_meta_analyse_Nielsen_2020",
+      "evaluation_id": "CT-19771",
+      "nom_essai": "Nielsen et al. 2020",
+      "nct_number": "Non renseigné",
+      "design": "Meta-analyse",
+      "design_enum": "Meta_analyse",
+      "population_cible": "patients atteints de maladie de Crohn",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Non renseigné",
+      "QoL_flag": false,
+      "niveau_preuve": "Meta-analyse",
+      "pooling_flag": true,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": null,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 2,
+          "s": "Le labora",
+          "t": "Le laboratoire a présenté les résultats d’une nouvelle méta-analyse (Nielsen et al. 2020) qui a évalué l’efficacité du méthotrexate en association ou en monothérapie pour induire et maintenir une rémission clinique chez des patients atteints de maladie de Crohn.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19771_essai_meta_analyse_Nielsen_2020_crit_remission_clinique",
+      "evaluation_id": "CT-19771",
+      "essai_id": "CT-19771_essai_meta_analyse_Nielsen_2020",
+      "nom_critere": "rémission clinique",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "Non renseigné",
+      "hierarchie_critere": "Non renseigné",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Non renseigné",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "Autre",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Compte tenu de l’absence de nouveaux essais randomisés pris en compte et des limites méthodologiques de la méta-analyse (hétérogénéité des voies d’administration, des doses), les résultats ne sont pas de nature à modifier les précédentes conclusions de la Commission.",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 2,
+          "s": "Le labora",
+          "t": "Le laboratoire a présenté les résultats d’une nouvelle méta-analyse (Nielsen et al. 2020) qui a évalué l’efficacité du méthotrexate en association ou en monothérapie pour induire et maintenir une rémission clinique chez des patients atteints de maladie de Crohn.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19771_essai_meta_analyse_Nielsen_2020_tol",
+      "evaluation_id": "CT-19771",
+      "essai_id": "CT-19771_essai_meta_analyse_Nielsen_2020",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19771_compHAS_01",
+      "evaluation_id": "CT-19771",
+      "nom_comparateur_HAS": "METOJECT (méthotrexate), solution injectable en stylo prérempli",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Immunologie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "L’indicat",
+          "t": "L’indication est la même que celle de METOJECT (méthotrexate), solution injectable en stylo prérempli, et à celle des médicaments hybrides de cette spécialité (METHOTREXATE ACCORD et IZIXATE).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19771_compHAS_02",
+      "evaluation_id": "CT-19771",
+      "nom_comparateur_HAS": "METHOTREXATE ACCORD (méthotrexate)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Immunologie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "L’indicat",
+          "t": "L’indication est la même que celle de METOJECT (méthotrexate), solution injectable en stylo prérempli, et à celle des médicaments hybrides de cette spécialité (METHOTREXATE ACCORD et IZIXATE).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19771_compHAS_03",
+      "evaluation_id": "CT-19771",
+      "nom_comparateur_HAS": "IZIXATE (méthotrexate)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Immunologie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "L’indicat",
+          "t": "L’indication est la même que celle de METOJECT (méthotrexate), solution injectable en stylo prérempli, et à celle des médicaments hybrides de cette spécialité (METHOTREXATE ACCORD et IZIXATE).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [],
+  "Données_Contexte": {
+    "contexte_id": "CT-19771_ctx",
+    "evaluation_id": "CT-19771",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2015-06-05",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": 25311,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Données labo",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "s": "AMM Date",
+        "t": "Date initiale (procédure de reconnaissance mutuelle) : 5 juin 2015",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "population_cible_nombre",
+        "f": "F1",
+        "p": 4,
+        "s": "Elle a é",
+        "t": "Elle a été estimée au maximum à 25 311 patients.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19771",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19771_smrasmr_01",
+      "evaluation_id": "CT-19771",
+      "indication_precise": "traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines",
+      "smr": "La Commission considère que le service médical rendu par IMETH (méthotrexate) est modéré dans les formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines.",
+      "smr_enum": "Modéré",
+      "asmr": "IMETH (méthotrexate) n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres spécialités à base de méthotrexate déjà inscrites dans cette extension d’indication (maladie de Crohn).",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Pas de progrès dans la prise en charge de la maladie de Crohn. Rapport efficacité/effets indésirables méthotrexate par voie SC dans le traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association aux corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines est modéré. Il existe des alternatives pour la prise en charge des patients réfractaires ou intolérantes aux thiopurines.",
+      "population_cible_indication": "patients adultes réfractaires ou intolérants aux thiopurines",
+      "ligne_traitement_indication": "2ème intention",
+      "comparateurs_references_indication": "METOJECT, METHOTREXATE ACCORD, IZIXATE",
+      "comparateur_id_HAS": [
+        "CT-19771_compHAS_01",
+        "CT-19771_compHAS_02",
+        "CT-19771_compHAS_03"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commis",
+          "t": "La Commission considère que le service médical rendu par IMETH (méthotrexate) est modéré dans les formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 4,
+          "s": "IMETH (mé",
+          "t": "IMETH (méthotrexate) n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres spécialités à base de méthotrexate déjà inscrites dans cette extension d’indication (maladie de Crohn).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19771_event_AMM_01",
+      "evaluation_id": "CT-19771",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2015-06-05",
+      "detail_brut": "Date initiale (procédure de reconnaissance mutuelle) : 5 juin 2015",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM initiale",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "AMM Date",
+          "t": "Date initiale (procédure de reconnaissance mutuelle) : 5 juin 2015",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19771_event_AMM_02",
+      "evaluation_id": "CT-19771",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2017-06-28",
+      "detail_brut": "Date des rectificatifs et teneur : 28/06/2017 : Extension d’indication dans la maladie de Crohn",
+      "source_doc": "F1",
+      "detail_type_specifique": "Extension d'indication maladie de Crohn",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Date des",
+          "t": "Date des rectificatifs et teneur : 28/06/2017 : Extension d’indication dans la maladie de Crohn",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19771_event_CT_01",
+      "evaluation_id": "CT-19771",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-06",
+      "detail_brut": "Date d’examen et d’adoption : 6 juillet 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption avis CT",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Date d’ex",
+          "t": "Date d’examen et d’adoption : 6 juillet 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19771_event_VALID_01",
+      "evaluation_id": "CT-19771",
+      "event_type": "AUTRE",
+      "event_date": "2022-03-04",
+      "detail_brut": "Date de validation administrative* : 4 mars 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Validation administrative",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Date de v",
+          "t": "Date de validation administrative* : 4 mars 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19771",
+    "delai_amm_ct_jours": 2578,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19771",
+    "is_orphan": false,
+    "classe_ATC_l2": "L04",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "rémission clinique",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19771_essai_meta_analyse_Nielsen_2020",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19771_essai_meta_analyse_Nielsen_2020",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19771_essai_meta_analyse_Nielsen_2020_crit_remission_clinique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19771_essai_meta_analyse_Nielsen_2020",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19771_essai_meta_analyse_Nielsen_2020_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "COMP_HAS",
+      "tgt_id": "CT-19771_compHAS_01",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "COMP_HAS",
+      "tgt_id": "CT-19771_compHAS_02",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "COMP_HAS",
+      "tgt_id": "CT-19771_compHAS_03",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "SMR_ASMR",
+      "tgt_id": "CT-19771_smrasmr_01",
+      "label": "EVAL_HAS_SMR_ASMR"
+    }
+  ],
+  "Annotation_View": []
+}
