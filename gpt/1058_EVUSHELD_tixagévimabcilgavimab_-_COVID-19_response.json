@@ -1,0 +1,4282 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19833",
+  "evaluation_id": "CT-19833",
+  "extraction_date": "2022-06-15",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-15",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19833_HAS_Evusheld_AvisDef.pdf",
+        "type": "CT",
+        "page_count": 32
+      },
+      "F2": {
+        "file_name": "Avis_Economique_EVUSHELD_ASTAZENECA_30-08-2022.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 30
+      },
+      "F3": {
+        "file_name": "CT-19833_TRANSCRIPTION_XEVUDY_RONAPREVE_EVUSHELD.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 19
+      },
+      "F4": {
+        "file_name": "EVUSHELD_CEESP_Transcription_20220719.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 32
+      },
+      "F5": {
+        "file_name": "CT-ECO-EVUSHELD-2022.pdf",
+        "type": "ECO",
+        "page_count": 100
+      },
+      "F6": {
+        "file_name": "ECO-EVUSHELD-20220830.pdf",
+        "type": "ECO",
+        "page_count": 100
+      },
+      "F7": {
+        "file_name": "EVUSHELD_avis_economique_2022.pdf",
+        "type": "ECO",
+        "page_count": 100
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "F1_S1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse et avis final",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 4000,
+      "heading_text": "Synthèse et avis de la Commission",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "besoin_medical",
+        "populations_cible",
+        "arguments"
+      ],
+      "routing_hint": "principale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "F1_S2",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication et contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 9,
+      "char_start": 4001,
+      "char_end": 8000,
+      "heading_text": "Indication thérapeutique, contexte épidémiologique et stratégique",
+      "expected_fields": [
+        "indication",
+        "population_cible",
+        "besoin_medical"
+      ],
+      "routing_hint": "indication",
+      "label_confidence": 0.93
+    },
+    {
+      "segment_id": "F1_S3",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Essais cliniques et données d'efficacité",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 22,
+      "char_start": 8001,
+      "char_end": 28000,
+      "heading_text": "Données d'essais cliniques PROVENT et STORMCHASER",
+      "expected_fields": [
+        "essais_cliniques",
+        "critères_jugement",
+        "resultats"
+      ],
+      "routing_hint": "essais",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "F1_S4",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance et effets indésirables",
+      "template_detecte": "CT_modern",
+      "page_start": 22,
+      "page_end": 23,
+      "char_start": 28001,
+      "char_end": 31000,
+      "heading_text": "Profil de tolérance",
+      "expected_fields": [
+        "tolérance",
+        "EI",
+        "EIG"
+      ],
+      "routing_hint": "tolérance",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "F1_S5",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 18,
+      "page_end": 20,
+      "char_start": 25000,
+      "char_end": 28000,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs"
+      ],
+      "routing_hint": "comparateurs",
+      "label_confidence": 0.94
+    },
+    {
+      "segment_id": "F1_S6",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 11,
+      "char_start": 7000,
+      "char_end": 9500,
+      "heading_text": "Posologie et mode d'administration",
+      "expected_fields": [
+        "posologie"
+      ],
+      "routing_hint": "posologie",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "F1_S7",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoins médicaux et contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 13,
+      "char_start": 9000,
+      "char_end": 12000,
+      "heading_text": "Besoins médicaux et facteurs de risque",
+      "expected_fields": [
+        "besoin_medical",
+        "population_risque"
+      ],
+      "routing_hint": "besoin",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "F1_S8",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Arguments et discussion",
+      "template_detecte": "CT_modern",
+      "page_start": 20,
+      "page_end": 29,
+      "char_start": 27000,
+      "char_end": 32000,
+      "heading_text": "Motifs d’évaluation et conclusion de la Commission",
+      "expected_fields": [
+        "arguments",
+        "conclusions",
+        "votes"
+      ],
+      "routing_hint": "discussion",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "F1_S9",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 29,
+      "page_end": 31,
+      "char_start": 32001,
+      "char_end": 34000,
+      "heading_text": "Informations réglementaires",
+      "expected_fields": [
+        "autorisation",
+        "prescription",
+        "statut"
+      ],
+      "routing_hint": "administratives",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "F1_S10",
+      "section_label_normalise": "ANNEXES",
+      "section_label_brut": "Annexes techniques",
+      "template_detecte": "CT_modern",
+      "page_start": 31,
+      "page_end": 32,
+      "char_start": 34001,
+      "char_end": 36000,
+      "heading_text": "Annexes pharmacodynamiques",
+      "expected_fields": [
+        "pharmacodynamique",
+        "résistance",
+        "neutralisation"
+      ],
+      "routing_hint": "annexes",
+      "label_confidence": 0.88
+    },
+    {
+      "segment_id": "CT-551_seg_001",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Avis en phase contradictoire – Avis économique EVUSHELD (ASTRAZENECA) - ECO-EFFI 551",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 30,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Débat séance HAS 30 août 2022",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "Mercrie18",
+      "section_label_normalise": "TRANSCRIPTION_SEANCE",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD  – Examen – Inscription (CT)",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 19,
+      "char_start": 0,
+      "char_end": 10000,
+      "heading_text": "Séance 18 mai 2022",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Votes_Commission_Transcription",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "Partie_1",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion initiale et présentation",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 3800,
+      "heading_text": "Présentation du dossier EVUSHELD"
+    },
+    {
+      "segment_id": "Partie_2",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Analyse critique contexte épidémiologique, populations",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": 3801,
+      "char_end": 7600,
+      "heading_text": "Analyse critique des données et contexte"
+    },
+    {
+      "segment_id": "Partie_3",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion sur la vaccination, transposabilité et peuplement",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 7,
+      "char_start": 7601,
+      "char_end": 11000,
+      "heading_text": "Débat approfondi sur la vaccination et transposabilité"
+    },
+    {
+      "segment_id": "Partie_4",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Modélisation économique, qualité de vie et analyses de sensibilité",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 10,
+      "char_start": 11001,
+      "char_end": 15500,
+      "heading_text": "Discussion sur modèle économique et qualité de vie"
+    },
+    {
+      "segment_id": "Partie_5",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Analyse du taux d'infection, source données, incertitudes",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 10,
+      "page_end": 12,
+      "char_start": 15501,
+      "char_end": 19000,
+      "heading_text": "Données épidémiologiques et modélisation taux d'infection"
+    },
+    {
+      "segment_id": "Partie_6",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Modélisation des réinfections, retraitements et scénario sensibilité",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 12,
+      "page_end": 14,
+      "char_start": 19001,
+      "char_end": 22000,
+      "heading_text": "Modélisation des événements à long terme et hypothèses"
+    },
+    {
+      "segment_id": "Partie_7",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Qualité de vie, désutilités, analyses de sensibilité déterministes",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 14,
+      "page_end": 16,
+      "char_start": 22001,
+      "char_end": 25000,
+      "heading_text": "Qualité de vie et limites des analyses de sensibilité"
+    },
+    {
+      "segment_id": "Partie_8",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Résumé des réserves, modèle impact budgétaire",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 16,
+      "page_end": 18,
+      "char_start": 25001,
+      "char_end": 28000,
+      "heading_text": "Synthèse des réserves et modèle budgétaire"
+    },
+    {
+      "segment_id": "Partie_9",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Conclusions efficiences et incertitudes majeures",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 18,
+      "page_end": 19,
+      "char_start": 28001,
+      "char_end": 30000,
+      "heading_text": "Conclusions sur efficiences et limites des données"
+    },
+    {
+      "segment_id": "Partie_10",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Impact budgétaire détaillé, population cible et discussion",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 19,
+      "page_end": 21,
+      "char_start": 30001,
+      "char_end": 33500,
+      "heading_text": "Analyse détaillée impact budgétaire et débat"
+    },
+    {
+      "segment_id": "Partie_11",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion sur définition population et hypothèses sur part de marché",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 21,
+      "page_end": 22,
+      "char_start": 33501,
+      "char_end": 35000,
+      "heading_text": "Discussion population et part de marché"
+    },
+    {
+      "segment_id": "Partie_12",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Synthèse rapporteurs, échanges sur incertitudes, avis industriel",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 22,
+      "page_end": 24,
+      "char_start": 35001,
+      "char_end": 38000,
+      "heading_text": "Synthèse rapporteurs, avis et incertitudes"
+    },
+    {
+      "segment_id": "Partie_13",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion sur formulation réserves, impacts sur décision",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 24,
+      "page_end": 26,
+      "char_start": 38001,
+      "char_end": 41000,
+      "heading_text": "Discussion formulations réserves et impacts"
+    },
+    {
+      "segment_id": "Partie_14",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat sur incertitude globale majeure, stock d'État et collecte données",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 26,
+      "page_end": 29,
+      "char_start": 41001,
+      "char_end": 46000,
+      "heading_text": "Débat incertitude, stock d'État, collecte données"
+    },
+    {
+      "segment_id": "Partie_15",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Suite débat collecte données, critères cliniques, et propositions",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 29,
+      "page_end": 31,
+      "char_start": 46001,
+      "char_end": 50000,
+      "heading_text": "Collecte données complémentaires et adaptations"
+    },
+    {
+      "segment_id": "Partie_16",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Modalités de collecte données, incertitudes, négociations",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 31,
+      "page_end": 32,
+      "char_start": 50001,
+      "char_end": 52000,
+      "heading_text": "Discussion incertitude et doctrine méthodologique"
+    },
+    {
+      "segment_id": "Partie_17",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote final CEESP pour EVUSHELD",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 32,
+      "page_end": 32,
+      "char_start": 52001,
+      "char_end": 52500,
+      "heading_text": "Vote final de la CEESP"
+    },
+    {
+      "segment_id": "ECO-EVUSHELD-20220830_0001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse et conclusion",
+      "template_detecte": "ECO",
+      "page_start": 3,
+      "page_end": 9
+    },
+    {
+      "segment_id": "ECO-EVUSHELD-20220830_0002",
+      "section_label_normalise": "ANALYSES_MEDICO_ECONOMIQUES",
+      "section_label_brut": "Analyse d'efficience et impact budgétaire",
+      "template_detecte": "ECO",
+      "page_start": 10,
+      "page_end": 60
+    },
+    {
+      "segment_id": "ECO-EVUSHELD-20220830_0003",
+      "section_label_normalise": "IMPACT_BUDGETAIRE",
+      "section_label_brut": "Analyse d'impact budgétaire",
+      "template_detecte": "ECO",
+      "page_start": 61,
+      "page_end": 85
+    },
+    {
+      "segment_id": "ECO-EVUSHELD-20220830_0004",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Arguments et discussions CEESP",
+      "template_detecte": "ECO",
+      "page_start": 3,
+      "page_end": 12
+    },
+    {
+      "id": "F1_1",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte administratif",
+      "template_detecte": "ECO",
+      "page_start": 11,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Contexte administratif",
+      "expected_fields": [
+        "indication",
+        "laboratoire",
+        "domaine_therapeutique",
+        "motif_examen"
+      ],
+      "routing_hint": "INFORMATIONS_ADMINISTRATIVES",
+      "label_confidence": 0.95
+    },
+    {
+      "id": "F1_2",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication et contexte clinique",
+      "template_detecte": "ECO",
+      "page_start": 12,
+      "page_end": 14,
+      "char_start": 2001,
+      "char_end": 4000,
+      "heading_text": "Indication et contexte clinique",
+      "expected_fields": [
+        "indication",
+        "population_cible",
+        "lieu_traitement"
+      ],
+      "routing_hint": "INDICATIONS_THERAPEUTIQUES",
+      "label_confidence": 0.9
+    },
+    {
+      "id": "F1_3",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Essais cliniques en cours",
+      "template_detecte": "ECO",
+      "page_start": 13,
+      "page_end": 15,
+      "char_start": 4001,
+      "char_end": 6000,
+      "heading_text": "Essais cliniques en cours",
+      "expected_fields": [
+        "essais_cliniques"
+      ],
+      "routing_hint": "ETUDES",
+      "label_confidence": 0.9
+    },
+    {
+      "id": "F1_4",
+      "section_label_normalise": "ANALYSES_MEDICO_ECONOMIQUES",
+      "section_label_brut": "Avis économique CEESP",
+      "template_detecte": "ECO",
+      "page_start": 4,
+      "page_end": 35,
+      "char_start": 6001,
+      "char_end": 35000,
+      "heading_text": "Avis économique CEESP",
+      "expected_fields": [
+        "analyses_medico_economiques",
+        "impact_budgetaire",
+        "avis_ceesp",
+        "reservations_economiques"
+      ],
+      "routing_hint": "ANALYSES_MEDICO_ECONOMIQUES",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "id": "CT-19833_prod_01",
+      "evaluation_id": "CT-19833",
+      "nom_commercial": "EVUSHELD",
+      "dci": "tixagévimab/cilgavimab",
+      "formulation": "solution injectable",
+      "dosage": "150 mg/150 mg",
+      "cip": "34009 302 542 6 4",
+      "produit_nom_commercial": "XEVUDY",
+      "titulaire_amm": "Non renseigné",
+      "presentations": [],
+      "evidence": []
+    },
+    {
+      "produit_id": "CT-ECO-EVUSHELD-2022_prod_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "produit_nom_commercial": "EVUSHELD",
+      "dci": "tixagevimab/cilgavimab",
+      "forme_pharmaceutique": "solution injectable",
+      "dosage": "300 mg / dose",
+      "titulaire_amm": "AstraZeneca",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 4,
+          "s": "ÉVALUER ",
+          "t": "EVUSHELD (tixagevimab/cilgavimab)",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "EVUSHELD",
+      "dci": "tixagevimab/cilgavimab",
+      "forme_pharmaceutique": "Solution injectable",
+      "dosage": "300 mg",
+      "classe_ATC": "J05AXE (anticorps monoclonaux anti-SARS-CoV-2)",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire": "AstraZeneca",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER  ",
+          "t": "EVUSHELD (tixagevimab/cilgavimab)",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire",
+          "f": "F1",
+          "p": 11,
+          "s": "Tableau 3",
+          "t": "Laboratoire AstraZeneca.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19833",
+      "Num_avis": "CT-19833",
+      "produit_nom": "EVUSHELD",
+      "dci": "tixagévimab/cilgavimab",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable",
+      "dosage": "150 mg/150 mg",
+      "indication": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et adolescents âgés de 12 ans et plus pesant au moins 40 kg, ayant un déficit de l’immunité lié à une pathologie ou à des traitements et faiblement ou non répondeurs après un schéma vaccinal complet conformément aux recommandations en vigueur OU non éligibles à la vaccination et qui sont à haut risque de développer une forme sévère de COVID-19.",
+      "classe_ATC": "J06BD03",
+      "pathologie": "COVID-19",
+      "maladie_rare": false,
+      "ligne_traitement": "1L",
+      "sous_groupe_population": "Patients immunodéprimés, patients non répondeurs ou faiblement répondeurs à la vaccination, patients non éligibles à la vaccination",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Prévention des infections",
+      "aire_therapeutique_niveau_3": "Prophylaxie COVID-19",
+      "source_aire_therapeutique": "Texte avis page 2",
+      "design_etude": "Études PROVENT et STORMCHASER (phase III randomisées, multicentriques, double aveugle, contrôlées versus placebo)",
+      "design_enum": "Phase_III_RCT_DB",
+      "niveau_preuve_brut": "Données issues d'études randomisées de phase III",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Le besoin médical est insuffisamment couvert dans la prophylaxie pré-exposition pour des patients immunodéprimés faiblement ou non répondeurs et non éligibles à la vaccination à haut risque.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes et adolescents âgés de 12 ans et plus pesant au moins 40 kg",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Autorisation d’accès précoce obtenue en décembre 2021, AMM européenne en mars 2022",
+      "historique_ASMR_comparateurs": "Ronapreve n’est plus recommandée en prophylaxie dans le contexte du variant Omicron en raison de la perte totale d’activité",
+      "concurrence_therapeutique_recente": "Perte totale d’activité de certains anticorps monoclonaux face au variant Omicron",
+      "vote_unanimite": false,
+      "nb_votants": 22,
+      "nb_voix_pour": 21,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "date_evaluation": "2022-06-15",
+      "gravite_patho": "Grave",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents ≥ 12 ans",
+      "pertinence_concurrence_therapeutique": "Comparateurs pertinents limités compte tenu du contexte du variant Omicron",
+      "evidence": [
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 3,
+          "s": "Toutefois",
+          "t": "Le besoin médical est insuffisamment couvert dans la prophylaxie pré-exposition chez les adultes et adolescents...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "design_enum",
+          "f": "F1",
+          "p": 20,
+          "s": "Il s’agit d’une étude de phase III",
+          "t": "étude clinique PROVENT, contrôlée versus placebo, multicentrique, randomisée, en double aveugle",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 31,
+          "s": "Avis version définitive",
+          "t": "15 juin 2022",
+          "m": "rule",
+          "c": 0.9
+        }
+      ],
+      "transcription_textuelle": "Transcription complète de la séance du 18 mai 2022 avec débats sur l'inscription des produits XEVUDY, RONAPREVE, et EVUSHELD.",
+      "extraits_arguments": [
+        "Les trois médicaments peuvent rendre des services médicaux importants sous réserve de l'adéquation de leur efficacité avec les variants en circulation.",
+        "EVUSHELD est le médicament le plus en capacité d'agir contre le variant BA.2.",
+        "Les études cliniques ont été menées avant la circulation du variant Omicron et dans des populations différentes de celles concernées actuellement.",
+        "Nécessité de suivre en temps réel et anticipé l'activité in vitro et les phénomènes d'émergence de résistance.",
+        "Nécessité d'une information régulière aux prescripteurs sur l'évolution de l'efficacité des produits.",
+        "La population cible concernée inclut les sujets immunodéprimés sévères ou peu/résistant à la vaccination.",
+        "Difficultés à évaluer précisément le SMR/ASMR en raison des incertitudes liées aux variants et aux populations non représentées dans les essais.",
+        "La commission a voté pour un SMR important et une ASMR III pour EVUSHELD en prophylaxie préexposition."
+      ]
+    },
+    {
+      "evaluation_id": "CT-551",
+      "Num_avis": "CT-551",
+      "smr": "Non renseigné",
+      "smr_enum": "Non renseigné",
+      "asmr": "Non renseigné",
+      "asmr_enum": "Non renseigné",
+      "produit_nom": "EVUSHELD",
+      "date_evaluation": "2022-08-30",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": []
+    },
+    {
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "Num_avis": "CT-CEESP-EVUSHELD-20220719",
+      "produit_nom": "EVUSHELD (association tixagevimab/cilgavimab)",
+      "dci": "Non renseigné",
+      "type_avis": "Réinscription",
+      "type_avis_enum": "Reinscription",
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "indication": "Prophylaxie préexposition Covid-19 chez adultes et adolescents ≥12 ans et ≥40 kg",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Covid-19",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Non renseigné",
+      "gravite_patho": "Grave",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents âgés de 12 ans et plus pesant au moins 40 kg",
+      "besoin_medical_brut": "La CEESP souligne un besoin médical élevé, pandémie Covid-19 sévère, patients immunodéprimés à haut risque",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "≥ 12 ans",
+      "biomarqueur_requis": "Aucun",
+      "design_etude": "Étude pivot PROVENT, phase 3 randomisée en double aveugle, placebo, 5197 sujets",
+      "design_enum": "Phase_III_RCT_DB",
+      "niveau_preuve_brut": "Données d'étude pivot PROVENT, phase 3, randomisée, multicentrique, double aveugle",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": true,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Perte d'efficacité des anticorps monoclonaux rivaux sur variants Omicron",
+      "vote_unanimite": true,
+      "nb_votants": 22,
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-07-19",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP – ",
+          "t": "Mardi 19 juillet 2022",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 32,
+          "s": "Vote final",
+          "t": "Résultat du vote : Favorable : 22 voix",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "nb_votants",
+          "f": "F1",
+          "p": 32,
+          "s": "Vote final",
+          "t": "Résultat du vote : Favorable : 22 voix",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "nb_voix_pour",
+          "f": "F1",
+          "p": 32,
+          "s": "Vote final",
+          "t": "Résultat du vote : Favorable : 22 voix",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "perte_de_chance_citee",
+          "f": "F1",
+          "p": 6,
+          "s": "Évolution",
+          "t": "le fait que la différence entre patients vaccinés et non vaccinés peut entraîner une réserve car l'efficacité pourrait être différente",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "design_etude",
+          "f": "F1",
+          "p": 3,
+          "s": "Étude pivot",
+          "t": "L’étude PROVENT de phase 3, randomisée, multicentrique, en double aveugle, comparative versus le placebo, menée chez 5 197 sujets adultes.",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "niveau_preuve_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "L’étude PROVENT",
+          "t": "L’étude PROVENT de phase 3, randomisée, multicentrique, en double aveugle...",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 25,
+          "s": "besoin médical",
+          "t": "La CEESP souligne un besoin médical élevé dans cette population de patients immunodéprimés à haut risque de forme sévère de Covid-19",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "concurrence_therapeutique_recente",
+          "f": "F1",
+          "p": 4,
+          "s": "Options thérapeutiques",
+          "t": "l'absence de médicament efficace en raison de la prédominance du variant Omicron, notamment la perte d'efficacité du RONAPREVE",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "gravite_patho_enum",
+          "f": "F1",
+          "p": 25,
+          "s": "grave",
+          "t": "Le profil de patients à haut risque de forme sévère indique la gravité du Covid-19",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "Num_avis": "CT-ECO-EVUSHELD-2022",
+      "produit_nom": "EVUSHELD",
+      "dci": "tixagevimab/cilgavimab",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable",
+      "dosage": "300 mg / dose",
+      "indication": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et les adolescents âgés de 12 ans et plus pesant au moins 40 kg présentant un déficit immunitaire ou non éligibles à la vaccination et à haut risque de forme sévère",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "COVID-19",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Non renseigné",
+      "smr": "La Commission de la CEESP considère que le service médical rendu est important dans l’indication",
+      "smr_enum": "Important",
+      "asmr": "La Commission de la CEESP considère que le produit apporte une amélioration du service médical rendu modérée (ASMR III)",
+      "asmr_enum": "III",
+      "besoin_medical_brut": "Population insuffisamment couverte par la vaccination, à haut risque de forme sévère",
+      "besoin_medical_interprete": "Non_couvert",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Prophylaxie pré-exposition COVID-19",
+      "source_aire_therapeutique": "Déduit du contexte",
+      "design_etude": "Phase III, étude randomisée en double aveugle, multicentrique, contrôlée versus placebo",
+      "niveau_preuve_brut": "Phase III randomisée en double aveugle",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes et adolescents ≥12 ans pesant ≥40 kg",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Première inscription demandée à la HAS pour EVUSHELD dans l’indication ciblée",
+      "historique_ASMR_comparateurs": "Aucun comparateur actif recommandé dans l’indication",
+      "concurrence_therapeutique_recente": "Le produit est disponible en accès précoce mais non commercialisé, aucun médicament alternatif spécifique disponible",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-08-30",
+      "extraits_arguments": [],
+      "gravite_patho": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents ≥ 12 ans",
+      "pertinence_concurrence_therapeutique": "Absence de traitement curatif efficace et absence de médicament alternatif spécifique disponible",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "1.1.Avis",
+          "t": "La Commission considère que le service médical rendu est important dans l’indication",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "1.1.Avis",
+          "t": "La Commission considère que le produit apporte une amélioration du service médical rendu modérée (ASMR III)",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 8,
+          "s": "1.1.Avis",
+          "t": "L’indication concerne une population immunodéprimée avec un besoin médical important non couvert par les traitements existants",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "Num_avis": "ECO-EVUSHELD-20220830",
+      "produit_nom": "EVUSHELD",
+      "dci": "tixagevimab/cilgavimab",
+      "type_avis": "Inscription",
+      "forme": "Injectable",
+      "dosage": "300 mg",
+      "indication": "En prophylaxie pré-exposition de la COVID-19 chez les adultes et les adolescents (≥12 ans, ≥40 kg) immunodéprimés insuffisamment ou non répondeurs à la vaccination ou non éligibles à la vaccination et à haut risque de forme sévère",
+      "classe_ATC": "J05AXE",
+      "pathologie": "COVID-19",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Patients immunodéprimés sévères",
+      "smr": "La Commission considère que le service médical rendu est important dans l’indication pour laquelle la demande est faite.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que l'amélioration du service médical rendu apportée par EVUSHELD est modérée (ASMR III) dans la stratégie thérapeutique.",
+      "asmr_enum": "III",
+      "besoin_medical_brut": "Besoin médical important en prophylaxie pré-exposition de la COVID-19 chez patients immunodéprimés sévères et insuffisamment protégés par vaccination.",
+      "besoin_medical_interprete": "Non_couvert",
+      "date_evaluation": "2022-08-30",
+      "gravite_patho": "COVID-19 est une pathologie grave, avec risque élevé de forme sévère chez les patients immunodéprimés.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents ≥12 ans, ≥40 kg immunodéprimés sévères",
+      "biomarqueur_requis": "Aucun",
+      "design_etude": "Étude de phase III multicentrique, randomisée, en double aveugle, contrôlée versus placebo (essai PROVENT).",
+      "design_enum": "Phase_III_RCT_DB",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes et adolescents de 12 ans et plus, poids au moins 40 kg",
+      "type_avis_enum": "Inscription",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Traitement dont l'activité contre les variants BA.4/BA.5 est réduite mais encore utile",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu est important",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "La Commission",
+          "t": "La Commission considère que l'amélioration du service médical rendu apportée par EVUSHELD est modérée (ASMR III)",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "evaluation_id": "CT-EVUSHELD",
+      "Num_avis": "CT-EVUSHELD",
+      "produit_nom": "EVUSHELD (tixagevimab/cilgavimab)",
+      "dci": "Non renseigné",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "Association injectable",
+      "dosage": "300 mg/300 mg (tixagevimab/cilgavimab)",
+      "indication": "Prophylaxie pré-exposition de la COVID-19 chez adultes et adolescents",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Infectiologie",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Adultes et adolescents âgés de 12 ans et plus pesant au moins 40 kg à risque sévère",
+      "smr": "La Commission considère que le service médical rendu est important dans l'indication pour laquelle l'inscription est demandée.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que le produit apporte une amélioration du service médical rendu modérée (ASMR III).",
+      "asmr_enum": "III",
+      "besoin_medical_brut": "Le besoin médical dans la population immunodéprimée insuffisamment ou non répondeuse à la vaccination est important et insuffisamment couvert par les traitements actuels.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes et adolescents de 12 ans et plus pesant au moins 40 kg",
+      "biomarqueur_requis": "Aucun",
+      "design_etude": "Phase III randomisé, multicentrique, en double aveugle, contrôlé placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "niveau_preuve_brut": "Données de phase III, essai clinique PROVENT",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Première inscription au remboursement en prophylaxie pré-exposition COVID-19",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Absence de traitements alternatifs efficaces en prophylaxie pré-exposition pour la population ciblée",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-08-30",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Grave",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents ≥ 12 ans",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement non pertinents actuellement en raison de la perte d'activité face au variant Omicron",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "Avis Eco",
+          "t": "La Commission considère que le service médical rendu est important dans l'indication...",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "Avis Eco",
+          "t": "La Commission considère que le produit apporte une amélioration du service médical rendu modérée (ASMR III).",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "Avis CEES",
+          "t": "Le besoin médical dans la population immunodéprimée insuffisamment ou non répondeuse à la vaccination est important et insuffisamment couvert par les traitements actuels.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19833_essai_PROVENT",
+      "evaluation_id": "CT-19833",
+      "essai_nom": "PROVENT",
+      "nct_number": "NCT04625725",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "population_cible": "Adultes et adolescents ≥ 18 ans sans antécédents d'infection ni vaccination COVID-19",
+      "comparateur_utilise": "Placebo (solution saline)",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 3341,
+      "nb_patient_comparateur": 1731,
+      "resultat_global": "Réduction de l’incidence des infections symptomatiques de 76,73% jusqu'à 183 jours",
+      "QoL_flag": false,
+      "niveau_preuve": "Données issues d'études randomisées de phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 4.5,
+      "maturite_donnees": "Intermédiaires",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": true,
+      "date_cutoff_donnees": "2021-11-19",
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "evidences": [],
+      "evidence": [
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 20,
+          "s": "étude PROVENT",
+          "t": "placebo (solution saline pour injection 0,9 %)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "phase",
+          "f": "F1",
+          "p": 20,
+          "s": "étude PROVENT",
+          "t": "étude de phase III multicentrique, randomisée, double aveugle",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 20,
+          "s": "PROVENT",
+          "t": "3341 patients âgés de 18 ans et plus",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "nb_patient_comparateur",
+          "f": "F1",
+          "p": 20,
+          "s": "PROVENT",
+          "t": "1731 patients dans le groupe placebo",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "date_cutoff_donnees",
+          "f": "F1",
+          "p": 21,
+          "s": "PROVENT",
+          "t": "mise à jour des données le 19/11/2021",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19833_essai_STORMCHASER",
+      "evaluation_id": "CT-19833",
+      "essai_nom": "STORMCHASER",
+      "nct_number": "NCT05074433",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "population_cible": "Patients adultes récemment exposés au SARS-CoV-2 (< 8 jours)",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Pas de différence statistiquement significative sur la prophylaxie post-exposition",
+      "QoL_flag": false,
+      "niveau_preuve": "Données issues d'études randomisées de phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "maturite_donnees": "Préliminaires",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 21,
+          "s": "étude STORM",
+          "t": "étude STORMCHASER n’a pas permis de mettre en évidence de différence statistiquement significative sur la survenue de cas de maladie COVID-19 symptomatique",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "essai_nom": "PROVENT",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 6,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Adultes, sujets à haut risque non vaccinés",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 2595,
+      "nb_patient_comparateur": 2602,
+      "resultat_global": "Réduction du risque relatif de Covid-19 symptomatique de 83% après 6 mois",
+      "QoL_flag": false,
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 50,
+      "nb_patients_inclus": "5 197 sujets",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "mai 2021",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 3,
+          "s": "PROVENT",
+          "t": "L’étude PROVENT de phase 3, randomisée, multicentrique, en double aveugle, menée chez 5 197 sujets adultes.",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 4,
+          "s": "Population d'analyse",
+          "t": "La population analysée dans PROVENT était adulte, non vaccinée et à haut risque d'infection",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 3,
+          "s": "Étude pivot",
+          "t": "Étude PROVENT phase 3 randomisée double aveugle versus placebo",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 3,
+          "s": "Nombre patients traitement",
+          "t": "2595 patients ont reçu EVUSHELD",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "nb_patient_comparateur",
+          "f": "F1",
+          "p": 3,
+          "s": "Nombre patients comparateur",
+          "t": "2602 patients ont reçu le placebo",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 3,
+          "s": "Résultat principal",
+          "t": "Réduction du risque relatif de Covid-19 symptomatique de 83% après 6 mois",
+          "m": "manual",
+          "c": 1
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "essai_nom": "PROVENT",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Âge",
+        "Comorbidités",
+        "Vaccination"
+      ],
+      "population_cible": "Adultes et adolescents de 12 ans et plus pesant au moins 40 kg, à risque élevé de COVID-19 sévère et insuffisamment ou non répondeurs à la vaccination",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Efficacité démontrée en prophylaxie pré-exposition de la COVID-19 (réduction du risque d'infection symptomatique de 83%)",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III randomisée en double aveugle",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_donnees": "Matures",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 16,
+          "s": "Caractéri",
+          "t": "L’essai PROVENT est une étude de phase III, multicentrique, randomisée, en double aveugle",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "essai_id": "ECO-EVUSHELD-20220830_essai_PROVENT",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "essai_nom": "PROVENT",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Âge",
+        "Sexe",
+        "Comorbidités"
+      ],
+      "population_cible": "Adultes et adolescents ≥12 ans, ≥40 kg, immunodéprimés insuffisamment ou non répondeurs à la vaccination",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 3441,
+      "nb_patient_comparateur": 1731,
+      "resultat_global": "Réduction du risque relatif d'infection symptomatique de 83% par rapport au placebo",
+      "QoL_flag": true,
+      "niveau_preuve": "Matures",
+      "pooling_flag": false,
+      "population_dedoublee": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.5,
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 16,
+          "s": "Tableau 7",
+          "t": "Essai PROVENT : étude de phase III multicentrique, randomisée, double aveugle, contrôlée versus placebo.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 18,
+          "s": "Tableau 7",
+          "t": "Le bras tixagévimab/cilgavimab comptait 3 441 patients.",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-EVUSHELD_essai_PROVENT",
+      "evaluation_id": "CT-EVUSHELD",
+      "essai_nom": "PROVENT",
+      "nct_number": "Non renseigné",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Adultes et adolescents (≥12 ans) immunodéprimés à haut risque de COVID-19",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": "3441",
+      "nb_patient_comparateur": "1731",
+      "resultat_global": "Efficacité démontrée pour la réduction du risque d'infection symptomatique COVID-19 (RRR 83%)",
+      "QoL_flag": true,
+      "niveau_preuve": "Matures",
+      "pooling_flag": false,
+      "population_dedoublee": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [
+        "EQ-5D-5L",
+        "EQ-5D-3L"
+      ],
+      "qol_resultats_brut": "Recours à des scores d'utilité issus de la littérature",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 4,
+          "s": "PROVENT",
+          "t": "L’essai PROVENT est une étude de phase III, double aveugle, randomisée",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 4,
+          "s": "Populati",
+          "t": "Adultes et adolescents (âgés de 12 ans et plus pesant au moins 40 kg) à haut risque d'infection sévère de COVID-19",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 4,
+          "s": "Comparat",
+          "t": "Placebo contrôlant le traitement standard",
+          "m": "manual",
+          "c": 0.94
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 4,
+          "s": "3441 patients traités",
+          "t": "Nombre de patients dans le groupe tixagévimab/cilgavimab : 3441",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "nb_patient_comparateur",
+          "f": "F1",
+          "p": 4,
+          "s": "1731 patients placebo",
+          "t": "Nombre de patients dans le groupe placebo : 1731",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 5,
+          "s": "Efficacité de EVUSHELD",
+          "t": "L’essai a démontré une réduction relative du risque d'infection symptomatique de 83% par rapport au placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19833_essai_PROVENT_crit_Infection_symptomatique",
+      "essai_id": "CT-19833_essai_PROVENT",
+      "evaluation_id": "CT-19833",
+      "nom_critere": "Incidence des infections symptomatiques au SARS-CoV-2 virologiquement confirmées",
+      "type_critere_enum": "Symptomatique",
+      "nature_critere": "Clinique",
+      "unite_mesure": "Pourcentage",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "critere_co_primaire_groupe": null,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "description": "Réduction relative du risque d’infections symptomatiques d’environ 77% vs placebo (IC95% [46,05 ; 89,96])",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 20,
+          "s": "étude PROVENT",
+          "t": "réduction relative du risque de 76,73 % ; IC95% : [46,05 ; 89,96] ; p < 0,001",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT_crit_infection_symptomatique",
+      "essai_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "nom_critere": "Infection symptomatique à SARS-CoV-2",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Pourcentage (%)",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Réduction du risque relatif de 83% d'infection symptomatique après 6 mois",
+      "valeur_groupe_comparateur": "Placebo",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "83% réduction du risque relatif",
+      "gain_relatif_num": 83.0,
+      "HR_RR_OR": "RR = 0,17",
+      "HR_RR_OR_num": 0.17,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "RR",
+      "type_effet": "RR",
+      "significativite_statistique": null,
+      "critere_atteint": true,
+      "degre_signification": "Non renseigné",
+      "pertinence_clinique": "Modérée",
+      "commentaire_has_resultat": "Réduction du risque relatif significative à six mois, mais contexte vaccinal absent et circulation de variants.",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 3,
+          "s": "Critère principal",
+          "t": "Critère principal : infection symptomatique covid avant 6 mois, réduction du risque relatif d'environ 83 %",
+          "m": "manual",
+          "c": 1
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT_crit_infection_symptomatique",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "essai_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "nom_critere": "Infection symptomatique",
+      "nature_critere": "Dur",
+      "unite_mesure": "% patients infectés",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non renseigné",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Âge",
+        "Comorbidités",
+        "Vaccination"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "0,3% (11/3441)",
+      "valeur_groupe_comparateur": "1,8% (31/1731)",
+      "gain_absolu": "Réduction du risque relatif de 83%",
+      "gain_absolu_num": 83,
+      "gain_relatif": "Réduction du risque relatif de 83%",
+      "gain_relatif_num": 83.0,
+      "HR_RR_OR": "RRR = 0,17 (IC95% [0,08 ; 0,34])",
+      "HR_RR_OR_num": 0.17,
+      "IC95": "[0,08 ; 0,34]",
+      "IC95_low_num": 0.08,
+      "IC95_high_num": 0.34,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "L’essai PROVENT a démontré une réduction de 83% du risque d’infection symptomatique, statistiquement significative et cliniquement majeure.",
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 19,
+          "s": "Résultats d",
+          "t": "11 sur 3441 patients (0,3%) infectés dans le groupe traité par tixagévimab/cilgavimab",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "valeur_groupe_comparateur",
+          "f": "F1",
+          "p": 19,
+          "s": "Résultats d",
+          "t": "31 sur 1731 patients (1,8%) infectés dans le groupe placebo",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Résultats d",
+          "t": "p < 0,001",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "critere_id": "ECO-EVUSHELD-20220830_essai_PROVENT_crit_Infection_symptomatique",
+      "essai_id": "ECO-EVUSHELD-20220830_essai_PROVENT",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "critere_nom": "Infection symptomatique",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "Pourcentage",
+      "hierarchie_critere": "Principal_primaire",
+      "primaire_ou_secondaire": "Primaire",
+      "p_value": "p < 0,001",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 18,
+          "s": "Tableau 7",
+          "t": "Réduction du risque relatif d'infection symptomatique de 83% par rapport au placebo (p < 0,001).",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-EVUSHELD_essai_PROVENT_crit_infection_symptomatique",
+      "evaluation_id": "CT-EVUSHELD",
+      "essai_id": "CT-EVUSHELD_essai_PROVENT",
+      "critere_nom": "Infection symptomatique de la COVID-19",
+      "nature_critere": "Dur",
+      "unite_mesure": "Réduction relative du risque (RRR)"
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19833_essai_PROVENT_tol",
+      "evaluation_id": "CT-19833",
+      "essai_id": "CT-19833_essai_PROVENT",
+      "EI_graves": "L’incidence des événements indésirables graves a été comparable entre groupes : 1,4 % vs 1,3 % ; un seul événement grave possiblement lié au traitement : thrombose de l’artère mésentérique.",
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Réactions au site d’injection",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 1.3,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles.ei_terme",
+              "f": "F1",
+              "p": 22,
+              "s": "profil to",
+              "t": "Les effets indésirables les plus fréquemment rapportés ont été les réactions au site d’injection (1,3 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Hypersensibilité",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 1.0,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles.ei_terme",
+              "f": "F1",
+              "p": 22,
+              "s": "profil to",
+              "t": "hypersensibilité (1,0 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "deces_detailles": [],
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 22,
+          "s": "profil to",
+          "t": "Les taux d'événements indésirables graves ont été comparables : 1,4 % vs 1,3 %",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-ECO-EVUSHELD-2022_tol_PROVENT",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "essai_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves": "Effets indésirables graves grade 3-4 ont été capturés dans l’étude PROVENT sans données détaillées chiffrées.",
+      "EI_frequents": "Les effets indésirables graves énumérés comprennent insuffisance cardiaque congestive, cellulite, maladie pulmonaire obstructive chronique, fatigue, céphalée, hypertension, nausée, néphrolithiase, sepsis.",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Insuffisance cardiaque congestive",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.85,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Insuffisance cardiaque congestive 1,85% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Cellulite",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.85,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Cellulite 1,85% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Maladie pulmonaire obstructive chronique",
+          "grade": "3-4",
+          "incidence_pct_traitement": 2.78,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Maladie pulmonaire obstructive chronique 2,78% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Fatigue",
+          "grade": "3-4",
+          "incidence_pct_traitement": 2.78,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Fatigue 2,78% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Céphalée",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.85,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Céphalée 1,85% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Hypertension",
+          "grade": "3-4",
+          "incidence_pct_traitement": 2.31,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Hypertension 2,31% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Nausée",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.85,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Nausée 1,85% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Néphrolithiase",
+          "grade": "3-4",
+          "incidence_pct_traitement": 2.31,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Néphrolithiase 2,31% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Sepsis",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.85,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 45,
+              "s": "Tableau",
+              "t": "Sepsis 1,85% de fréquence",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [],
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 44,
+          "s": "Tableau",
+          "t": "Effets indésirables graves grade 3-4 ont été capturés dans l’étude PROVENT sans données détaillées chiffrées.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19833_essai_PROVENT_comp_01",
+      "essai_id": "CT-19833_essai_PROVENT",
+      "nom_comparateur": "Placebo (solution saline)",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 20,
+          "s": "étude PROVENT",
+          "t": "Le groupe placebo a reçu une solution saline pour injection 0,9 %",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19833_essai_STORMCHASER_comp_01",
+      "essai_id": "CT-19833_essai_STORMCHASER",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 21,
+          "s": "étude STORM",
+          "t": "étude STORMCHASER, randomisée, multicentrique en double aveugle versus placebo",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT_comp_01",
+      "essai_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateur",
+          "t": "Placebo dans étude PROVENT",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT_comp_01",
+      "essai_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "nom_comparateur": "Placebo",
+      "comparateur_type": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 16,
+          "s": "Caractéri",
+          "t": "Comparateur placebo dans l’étude PROVENT",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "comparateur_id": "ECO-EVUSHELD-20220830_essai_PROVENT_comp_01",
+      "essai_id": "ECO-EVUSHELD-20220830_essai_PROVENT",
+      "nom_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 16,
+          "s": "Tableau 7",
+          "t": "Comparateur : placebo dans l'essai PROVENT.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-EVUSHELD_essai_PROVENT_comp_01",
+      "essai_id": "CT-EVUSHELD_essai_PROVENT",
+      "nom_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo"
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19833_compHAS_01",
+      "evaluation_id": "CT-19833",
+      "nom_comparateur_HAS": "RONAPREVE (casirivimab/imdevimab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 18,
+          "s": "comparateurs",
+          "t": "RONAPREVE (casirivimab/imdevimab) ne peut être retenu comme comparateur en raison de la perte totale d’activité envers le variant Omicron",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-ECO-EVUSHELD-2022_compHAS_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "nom_comparateur_HAS": "Prise en charge standard seule",
+      "type_comparateur": "Aucun",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 16,
+          "s": "Stratégie comparateur",
+          "t": "Prise en charge standard seule sans traitement prophylactique",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "comparateur_id": "ECO-EVUSHELD-20220830_compHAS_01",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "nom_comparateur_HAS": "Prise en charge standard seule (gestes barrières, absence de traitement prophylactique)",
+      "type_comparateur": "BSC",
+      "famille_comparateur": "BSC",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 15,
+          "s": "Analyse critique",
+          "t": "Comparateur : prise en charge standard seule, y compris gestes barrières et absence de traitement prophylactique.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-EVUSHELD_compHAS_01",
+      "evaluation_id": "CT-EVUSHELD",
+      "nom_comparateur_HAS": "Prise en charge standard seule (gestes barrières, absence prophylaxie)",
+      "type_comparateur": "BSC",
+      "famille_comparateur": "BSC"
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19833_arg_CT_1",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "description": "L'étude PROVENT a démontré une réduction relative d'environ 77% des infections symptomatiques COVID-19 jusqu'à 183 jours chez les patients traités par EVUSHELD par rapport au placebo.",
+      "extrait_textuel": "Dans la population ITT, l’incidence des infections symptomatiques au SARS-CoV-2 virologiquement confirmées est de 0,2 % dans le groupe tixagévimab/cilgavimab contre 1,0 % dans le groupe placebo, soit une réduction relative du risque de 76,73 % ; p < 0,001.",
+      "page_source": "Page 21",
+      "section_source": "Essais cliniques",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 21,
+          "s": "Dans la population ITT",
+          "t": "réduction relative du risque de 76,73 % ; p < 0,001",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_2",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Le profil de tolérance d’EVUSHELD est favorable avec des effets indésirables principalement locaux (réactions au site d’injection) et hypersensibilité rares, et peu d’événements indésirables graves liés au traitement.",
+      "extrait_textuel": "Les effets indésirables les plus fréquents ont été les réactions au site d’injection (1,3 %) et l’hypersensibilité (1,0 %). Un seul EIG possiblement relié au traitement : thrombose artère mésentérique.",
+      "page_source": "Page 22",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 22,
+          "s": "Les effets indésirables",
+          "t": "réactions au site d’injection (1,3 %), hypersensibilité (1,0 %)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_3",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "description": "Le besoin médical en prophylaxie pré-exposition est insuffisamment couvert, particulièrement chez les patients immunodéprimés faiblement ou non répondeurs et chez ceux non éligibles à la vaccination à haut risque de forme sévère de COVID-19.",
+      "extrait_textuel": "Le besoin médical peut être considéré comme insuffisamment couvert en prévention des infections à SARS-CoV-2 chez des patients non répondeurs ou faiblement répondeurs après un schéma vaccinal complet...",
+      "page_source": "Page 3",
+      "section_source": "Synthèse et avis final",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Le besoin médical",
+          "t": "Le besoin médical est insuffisamment couvert en prévention des infections à SARS-CoV-2",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_4",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "EVUSHELD est une option thérapeutique dans la prophylaxie pré-exposition de la COVID-19 chez les patients immunodéprimés, sous réserve de la sensibilité du variant circulant au traitement.",
+      "extrait_textuel": "La Commission considère qu’EVUSHELD pourrait constituer une option thérapeutique dans la prophylaxie pré-exposition de la COVID-19 chez les adultes et adolescents ayant un déficit de l’immunité, sous réserve de la sensibilité de la souche de SARS-CoV-2.",
+      "page_source": "Page 4",
+      "section_source": "Place dans la stratégie",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "La Commission considère qu’EVUSHELD",
+          "t": "EVUSHELD pourrait constituer une option thérapeutique... sous réserve de la sensibilité",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_5",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "RONAPREVE ne constitue pas un comparateur pertinent dans le contexte du variant Omicron à cause de sa perte totale d’activité neutralisante.",
+      "extrait_textuel": "Dans le contexte du variant Omicron, RONAPREVE (casirivimab/imdevimab) ne peut être retenu comme comparateur cliniquement pertinent en raison d’une perte totale d’activité neutralisante.",
+      "page_source": "Page 19",
+      "section_source": "Comparateurs cliniquement pertinents",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 19,
+          "s": "Dans le contexte du variant Omicron",
+          "t": "RONAPREVE ne peut être retenu comme comparateur en raison d’une perte totale d’activité",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_6",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "description": "Absence de données cliniques spécifiques sur les patients immunodéprimés sévères et sur l’efficacité face au variant Omicron et ses sous-lignages limite l’interprétation des résultats.",
+      "extrait_textuel": "Aucune étude clinique n’est disponible chez les sujets immunodéprimés sévères et il n’y a pas de données d’efficacité clinique sur le variant Omicron, ce qui crée des incertitudes sur la transposabilité des données.",
+      "page_source": "Page 21",
+      "section_source": "Discussion et limites",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 21,
+          "s": "Aucune nouvelle donnée",
+          "t": "Aucune nouvelle donnée d’efficacité n’a été fournie... absence d’efficacité clinique sur Omicron",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_7",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "L’immunisation passive par anticorps monoclonaux est complémentaire à la vaccination, notamment pour les patients non ou faiblement répondeurs, en prophylaxie pré-exposition.",
+      "extrait_textuel": "Dans ce contexte, l’immunisation passive par anticorps monoclonaux neutralisant la protéine de spicule est une option thérapeutique complémentaire à la vaccination pour lutter contre la COVID-19 chez les patients à risque.",
+      "page_source": "Page 25",
+      "section_source": "Place dans la stratégie",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 25,
+          "s": "Dans ce contexte, l’immunisation passive",
+          "t": "option thérapeutique complémentaire à la vaccination chez les patients non répondants ou faiblement répondants",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_8",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "La population cible est estimée entre 100 000 et 350 000 personnes qui sont immunodéprimées faiblement/non répondeurs ou non éligibles à la vaccination et à haut risque de COVID-19 sévère.",
+      "extrait_textuel": "La population cible de patients pouvant bénéficier d’EVUSHELD est estimée entre 100 000 et 350 000 personnes selon les différentes estimations HAS et COSV.",
+      "page_source": "Page 28-29",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 29,
+          "s": "La population cible de patients",
+          "t": "population cible estimée entre 100 000 et 350 000 personnes",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_CT_9",
+      "evaluation_id": "CT-19833",
+      "source_argument": "CT",
+      "categorie_argument": "Autre",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "description": "La Commission recommande une mise à jour régulière des recommandations nationales pour s’adapter à l’évolution épidémiologique et à la sensibilité des variants aux traitements disponibles.",
+      "extrait_textuel": "La Commission souhaite une actualisation régulière des recommandations nationales afin d’adapter la stratégie de prise en charge de la COVID-19 selon les données sur la sensibilité des variants circulants.",
+      "page_source": "Page 3",
+      "section_source": "Synthèse et avis final",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commission souhaite une actualisation régulière",
+          "t": "actualisation régulière des recommandations nationales afin d’adapter la stratégie selon la sensibilité des variants",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_1",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "L'analyse critique souligne une réserve mineure non levée concernant la validation externe du taux d'infection recalculé pour le bras EVUSHELD, avec un taux d'infection réel plus élevé que dans le modèle.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Le taux d'infection dans le modèle est de 1,31 %, alors que dans l'étude de Bertrand et al il est de 5,3 % pour des patients ayant reçu EVUSHELD en vie réelle; cette différence remet en question le caractère conservateur du taux modélisé.",
+      "page_source": "Page 3-7",
+      "section_source": "Avis économique CEESP - Réserves méthodologiques",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "CEESP D",
+          "t": "le taux d'infection est de 1,31 %, alors que dans l'étude de Bertrand et al ... est de 5,3 %",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_2",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "Le laboratoire souhaite fusionner deux réserves importantes sur l'origine des données et la méthode de calcul du taux d'infection, argumentant que les deux critères portent sur un même paramètre et l'impossibilité de faire autrement.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "L'industriel considère que les deux réserves concernent un seul paramètre, le choix d'avoir utilisé une source externe, et qu'ils n'avaient pas la possibilité de faire autrement.",
+      "page_source": "Page 6-8",
+      "section_source": "Avis économique CEESP - Réserves méthodologiques",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "CEESP D",
+          "t": "Il considèrent que la deuxième critique est une conséquence unique du premier choix et qu'ils n'avaient pas la possibilité de faire autrement.",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_3",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "La Commission rejette la fusion des deux réserves estimant qu'elles portent sur des thématiques différentes : la source de données et la méthode de calcul utilisée.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Selon nous, il s’agit de deux thématiques différentes : une réserve appliquée à une source de données et une autre à une méthode de calcul employée par l'industriel.",
+      "page_source": "Page 7-9",
+      "section_source": "Avis économique CEESP - Réserves méthodologiques",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "CEESP D",
+          "t": "Pour vous donner nos arguments : selon nous, il s’agit de deux thématiques différentes...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_4",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Méthodologie",
+      "description": "La méthode de recalcul du taux d'infection dans le bras EVUSHELD fondée sur la réduction du risque relatif de l’essai appliquée à une source externe n'est pas considérée recevable du fait d'un défaut de transposabilité des populations.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "Au regard du défaut de transposabilité des caractéristiques des populations, la méthode de recalcul du taux d'infection... n'est pas recevable.",
+      "page_source": "Page 10-12",
+      "section_source": "Avis économique CEESP - Réserves méthodologiques",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "CEESP D",
+          "t": "La méthode de recalcul... fondée sur la réduction du risque relatif... n'est pas recevable.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_5",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Analyse_sensibilité",
+      "description": "Les analyses de sensibilité déterministes ont été critiquées pour ne pas inclure le taux d'infection observé dans PROVENT, reclassées en réserve mineure à la suite.",
+      "direction_argument": "Modéré",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Le taux d'infection associé à la stratégie de prise en charge standard issu de PROVENT n'a pas été testé en analyse de sensibilité de scénario.",
+      "page_source": "Page 11-13",
+      "section_source": "Avis économique CEESP - Analyses de sensibilité",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "CEESP D",
+          "t": "le taux d'infection associé à la stratégie prise en charge standard issu de PROVENT n'a pas été testé...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_6",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Hypothèses_modélisation",
+      "description": "L'absence de prise en compte d'une possible réinfection ou primo-infection après six mois est une hypothèse simplificatrice importante, source d'incertitude majeure pour la modélisation.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "L'absence de modélisation d'une possible primo-infection ou réinfection après six mois n'est pas cohérente avec l'histoire naturelle de la pathologie et introduit une forte incertitude.",
+      "page_source": "Page 13-16",
+      "section_source": "Avis économique CEESP - Réserves modélisation",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "CEESP D",
+          "t": "l'absence de modélisation d'une possible primo-infection ou réinfection après six mois n'est pas cohérente...",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_7",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Hypothèses_modélisation",
+      "description": "Le non-prévu de retraitement après six mois est une réserve importante concernant les modalités de traitement cohérentes avec le RCP, avec un doublement des coûts testé sans impact sur le ratio.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "L'absence de prise en compte des retraitements par EVUSHELD après six mois n'est pas cohérente avec les modalités prévues dans le RCP, et a été testée via un scénario de doublement des coûts.",
+      "page_source": "Page 18-20",
+      "section_source": "Avis économique CEESP - Réserves modélisation",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "CEESP D",
+          "t": "absence de prise en compte des retraitements par EVUSHELD après six mois n'est pas cohérente avec les modalités de traitement.",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_8",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_de_vie",
+      "description": "Une réserve importante sur la plausibilité clinique et la cohérence méthodologique des scores d'utilité liés aux symptômes longs de la COVID est maintenue malgré les analyses de sensibilité fournies.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "La réserve porte sur le manque de plausibilité clinique des désutilités associées aux symptômes longs, avec une utilisation partielle des données Demoule et al non correctement appliquée.",
+      "page_source": "Page 23-27",
+      "section_source": "Avis économique CEESP - Qualité de vie",
+      "intervenant": "Chef de projet SEESP",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 25,
+          "s": "CEESP D",
+          "t": "le score obtenu est inférieur à d'autres états, ce qui ne paraît pas vraisemblable",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_9",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "description": "Discussion sur la prise en compte des contributions d'associations de patients uniquement dans le cadre d'accès précoce, sans contribution formelle dans le dossier en droit commun, proposition d'inclure cette mention dans l'avis.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Il a été proposé d'ajouter dans l'avis qu'il y a eu des contributions de patients dans le cadre des accès précoces mais pas dans le dossier en droit commun.",
+      "page_source": "Page 29-30",
+      "section_source": "Délibération",
+      "intervenant": "Mme Polton",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 29,
+          "s": "Dernières pages",
+          "t": "Il a été proposé de mentionner des contributions dans le cadre des accès précoces mais pas dans le droit commun.",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-551_arg_TRANS_10",
+      "evaluation_id": "CT-551",
+      "source_argument": "TRANS",
+      "categorie_argument": "Vote",
+      "description": "Le vote a été favorable avec 20 voix pour et 1 abstention au terme de la séance d'évaluation.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Résultat du vote : Favorable : 20 voix, Abstention : 1 voix. L'avis est adopté.",
+      "page_source": "Page 30",
+      "section_source": "Vote",
+      "intervenant": "Président",
+      "moment_debat": "Clôture séance",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "Clôture S",
+          "t": "Résultat du vote : Favorable : 20 voix, Abstention : 1 voix. L'avis est adopté.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_01",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Les trois médicaments Covid-19 sont considérés par le groupe MAbTher comme rendant un service médical important malgré les incertitudes liées aux variants.",
+      "extrait_textuel": "L’ensemble des membres du groupe MAbTher considère... que ces trois médicaments peuvent encore rendre des services médicaux importants sous réserve de l’adéquation de leur efficacité avec les variants en circulation.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Brigitte Autran",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Brigitte",
+          "t": "L’ensemble des membres du groupe MAbTher considère la chose suivante : ... ces trois médicaments peuvent encore rendre des services médicaux importants sous réserve de l’adéquation de leur efficacité avec les variants en circulation.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_02",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "EVUSHELD est le médicament le plus efficace contre le variant Omicron BA.2 dans le contexte actuel.",
+      "extrait_textuel": "Aujourd’hui, c’est l’EVUSHELD qui est le plus en capacité d’agir sur le BA.2.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Brigitte Autran",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Brigitte",
+          "t": "Aujourd’hui, c’est l’EVUSHELD qui est le plus en capacité d’agir sur le BA.2.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_03",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "description": "Les études cliniques traduisant l’efficacité ont été conduites avant l’émergence du variant Omicron et sur des populations différentes des patients immunodéprimés actuels.",
+      "extrait_textuel": "Les études ont été conduites avant l’ère de l’Omicron et sur des populations avec des facteurs de risque métaboliques, pas les immunodéprimés non répondeurs à la vaccination concernés actuellement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Guillaume Martin-Blondel",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Guillau",
+          "t": "Ces études ont été conduites avant l’ère de l’Omicron et on ne peut qu’extrapoler les résultats...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_04",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Un des freins de limitation de l’EVUSHELD est l’absence de données suffisantes concernant les risques de cardiopathie ischémique, nécessitant une surveillance rigoureuse.",
+      "extrait_textuel": "Un des freins de limitation de l’EVUSHELD reste les données de sécurité concernant les risques de cardiopathies sur des terrains de cardiopathie ischémique.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Bernard Castan",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Bernard ",
+          "t": "Un des freins de limitation de l’EVUSHELD reste les données de sécurité concernant les risques de cardiopathies...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_05",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "La commission considère nécessaire de conserver ces anticorps monoclonaux comme options thérapeutiques futures face à l’évolution des variants.",
+      "extrait_textuel": "Nous devons absolument garder accessibles ces stratégies thérapeutiques car l’avenir fera en sorte que l’on en ait besoin.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Guillaume Martin-Blondel",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Guillau",
+          "t": "Le clinicien est convaincu qu’il faut garder accessibles ces stratégies thérapeutiques.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_06",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "La définition précise de la population cible concerne essentiellement les patients immunodéprimés sévères ou peu/résistant à la vaccination, âgés, ou présentant comorbidités spécifiques.",
+      "extrait_textuel": "Population cible immunodéprimés sévères, transplantés, patients sous immunosuppresseurs dont rituximab, patients de plus de 80 ans, obèses, BPCO, diabétiques...",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Sylvie Chevret et chefs de projet",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 13,
+          "s": "Sylvie C",
+          "t": "Les patients ayant 80 ans ou plus, immunodéprimés, ou à risque de complications sont la population cible.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_07",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "La sélection des anticorps et antiviraux précoces reste difficile notamment pour les généralistes, notamment pour les patients vaccinés âgés à risque.",
+      "extrait_textuel": "Pour PAXLOVID, ce n’est pas clair pour les généralistes, surtout patients âgés vaccinés à risque.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "François Lacoin",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 16,
+          "s": "François L",
+          "t": "Problème d’accès pour généralistes et clarté sur les patients vaccinés âgés à risque.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_08",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Innovation",
+      "direction_argument": "Favorable",
+      "description": "Nécessité d’un suivi académique global des anticorps monoclonaux concernant l’émergence de résistances.",
+      "extrait_textuel": "Il serait essentiel que tous ces anticorps soient intégrés dans une étude académique de suivi notamment sur l’émergence de risque de résistance.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pierre Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 19,
+          "s": "Pierre C",
+          "t": "La commission souhaite que tous anticorps soient intégrés dans un suivi académique de résistance.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19833_arg_TRANS_09",
+      "evaluation_id": "CT-19833",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "EVUSHELD en prophylaxie préexposition justifié par activité sur le variant BA.2 avec SMR important et ASMR III.",
+      "extrait_textuel": "EVUSHELD est actif sur BA.2, la prophylaxie préexposition est justifiée avec reconnaissance d’un ISP, un SMR important et une ASMR III.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pierre Cochat / Sophie Kelley",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 19,
+          "s": "Pierre C",
+          "t": "Vote 21 voix pour un alignement SMR important et ASMR III pour EVUSHELD en prophylaxie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_1",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "description": "L’étude PROVENT montre une réduction relative du risque de Covid symptomatique de 83% à 6 mois, mais les patients vaccinés n'ont pas été inclus, limitant la transposabilité actuelle.",
+      "extrait_textuel": "Le critère de jugement principal était la survenue d’une infection symptomatique au Covid avant J183, soit 6 mois. En termes de résultats, après un suivi médian de 6 mois, il y a une réduction du risque relatif de développer la Covid symptomatique de près de 83 % avec une injection d’EVUSHELD par rapport au placebo.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Critère principal",
+          "t": "réduction du risque relatif de développer la Covid symptomatique de près de 83 %",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_2",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Défavorable",
+      "description": "Les différences entre la population de l’essai PROVENT (non vaccinés, plus jeunes, moins comorbides) et la population cible vaccinée et immunodéprimée soulèvent une incertitude majeure sur la transposabilité des résultats cliniques.",
+      "extrait_textuel": "Les données de l’accès précoce suggèrent que les patients sont plus âgés et ont plus de comorbidités que les patients de l’essai PROVENT. Aucun patient n’était vacciné dans l’essai PROVENT alors que la quasi-totalité des patients de l’accès précoce le sont.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Transposabilité",
+          "t": "Les données de l’accès précoce suggèrent que les patients sont plus âgés et ont plus de comorbidités que les patients de l’essai PROVENT.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_3",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Réserves_méthodologiques",
+      "direction_argument": "Défavorable",
+      "description": "L’utilisation non recevable d’un taux d’infection recalculé basé sur des données externes et la réduction du risque relatif de l’essai crée une forte incertitude méthodologique sur l’évaluation économique.",
+      "extrait_textuel": "La méthode de recalcul du taux d’infection dans le bras EVUSHELD n’est pas recevable dans la mesure où il n’est pas possible de considérer que l’effet du traitement est indépendant du risque basal de faire une infection à 6 mois.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Réserves méthodologiques",
+          "t": "La méthode de recalcul du taux d’infection dans le bras EVUSHELD n’est pas recevable",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_4",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Réserves_méthodologiques",
+      "direction_argument": "Défavorable",
+      "description": "Le modèle économique ne prévoit pas la réinfection ou traitement répété au-delà de 6 mois, ce qui est incohérent avec l’histoire naturelle du Covid-19, générant de l’incertitude sur les projections à 5 ans.",
+      "extrait_textuel": "Après 6 mois, pas de primoinfection ni de réinfection modélisée malgré le fait que cela soit probable dans le réel, ce qui introduit une forte incertitude.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Modèle économique",
+          "t": "Après 6 mois, pas de primoinfection ni de réinfection modélisée...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_5",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_de_vie",
+      "direction_argument": "Défavorable",
+      "description": "Estimation disparate et peu plausible de la désutilité liée aux symptômes longs du Covid notamment après soins intensifs, générant une réserve importante.",
+      "extrait_textuel": "La désutilité des symptômes longs après passage en soins intensifs est évaluée inférieure à celle après hospitalisation complète, ce qui est peu plausible cliniquement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "Qualité de vie",
+          "t": "La désutilité des symptômes longs après passage en soins intensifs est évaluée inférieure à celle après hospitalisation complète.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_6",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Analyses_sensibilité",
+      "direction_argument": "Défavorable",
+      "description": "L’analyse de sensibilité déterministe utilise des variations arbitraires trop étroites sur les taux d’infection, ne couvrant pas la réalité, ce qui limite la robustesse des conclusions.",
+      "extrait_textuel": "Les analyses font varier le taux d’infection de plus ou moins 10% seulement, insuffisant pour couvrir toute l’incertitude.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "Analyses de sensibilité",
+          "t": "Les analyses font varier le taux d’infection de plus ou moins 10% uniquement.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_7",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Impact_budgétaire",
+      "direction_argument": "Neutre",
+      "description": "L’impact budgétaire est estimé majoritairement lié aux coûts d’acquisition du produit ; les économies liées à la réduction de la covid et du covid long sont minimes (3,4%).",
+      "extrait_textuel": "L’impact budgétaire est essentiellement constitué par le coût d’achat, représentant 92 %, avec des économies potentielles de 3,4 % liées à la prise en charge de la Covid et du Covid long.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "Impact budgétaire",
+          "t": "Le coût d’acquisition représente 92 % de l’impact budgétaire.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-CEESP-EVUSHELD-20220719_arg_TRANS_8",
+      "evaluation_id": "CT-CEESP-EVUSHELD-20220719",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Défavorable",
+      "description": "Le taux de pénétration de marché estimé (20%) pourrait être sous-estimé en l’absence d’alternatives, ce qui pourrait générer une perte de chance importante pour la population cible.",
+      "extrait_textuel": "Le taux de pénétration d’EVUSHELD sur le marché en année 1 de 20 % pourrait être mésestimé compte tenu du contexte clinique actuel et de l’absence de compétiteur dans l’indication visée.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 32,
+          "s": "Vote final",
+          "t": "taux de pénétration d’EVUSHELD sur le marché en année 1 de 20 %",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CT_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "L’essai PROVENT a montré une réduction significative de 83% du risque d’infection symptomatique à la COVID-19 en prophylaxie pré-exposition chez une population adulte et adolescente.",
+      "extrait_textuel": "Le groupe traité par tixagévimab/cilgavimab a présenté un taux d’infection symptomatique de 0,3 % contre 1,8 % dans le groupe placebo, soit une réduction relative du risque de 83 %.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 19",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "Résultats d",
+          "t": "Taux d’infection symptomatique 0,3 % vs 1,8 %, réduction 83 %",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CT_02",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Majeur",
+      "description": "La réduction du risque d’infection symptomatique apporte un bénéfice important dans la stratégie de prophylaxie pré-exposition de la COVID-19, pour une population à haut risque immunodéprimée.",
+      "extrait_textuel": "Cette réduction du risque d’infection symptomatique observée dans l’essai apporte une réponse adaptée aux patients immunodéprimés insuffisamment protégés par la vaccination.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 19",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "Efficacité observée chez patients immunodéprimés",
+          "t": "Réduction du risque d’infection symptomatique observée dans l’essai apporte une réponse adaptée",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CT_03",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance dans l’essai PROVENT est acceptable sans données détaillées sur les décès liés au traitement.",
+      "extrait_textuel": "Les effets indésirables graves de grade 3-4 ont été capturés dans l’étude PROVENT sans données détaillées chiffrées et sans décès rapportés liés au traitement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 44-45",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 44,
+          "s": "Tableau",
+          "t": "Effets indésirables graves grade 3-4 capturés sans données détaillées",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CT_04",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "La population ciblée est à haut risque de forme sévère de COVID-19 avec un besoin médical important non couvert par la vaccination.",
+      "extrait_textuel": "La demande de remboursement concerne les patients présentant un déficit immunitaire et insuffisamment ou non répondeurs après vaccination.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Contexte",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "1.1. Avis",
+          "t": "Demande concerne patients déficits immunitaires insuffisamment ou non répondeurs post vaccination",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CEESP_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CEESP",
+      "categorie_argument": "Efficience",
+      "direction_argument": "Défavorable",
+      "description": "L’évaluation économique ne démontre pas l’efficience du tixagevimab/cilgavimab, en raison d’une incertitude majeure notamment liée aux hypothèses de modélisation et à l’évolution rapide du contexte épidémiologique.",
+      "extrait_textuel": "La Commission conclut que l’évaluation économique déposée par l’industriel ne permet pas de démontrer l’efficience en raison d’une incertitude globale majeure liée à la modélisation et à l’évolution rapide des variants.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "page_source": "Pages 6-8",
+      "section_source": "Avis économique CEESP",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "1.1.2.",
+          "t": "La Commission conclut que l’évaluation économique déposée... ne permet pas de démontrer l’efficience…",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CEESP_02",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CEESP",
+      "categorie_argument": "Impact_budgétaire",
+      "direction_argument": "Défavorable",
+      "description": "L’impact budgétaire est important avec une augmentation des dépenses de près de 270% à 1 an, principalement liée aux coûts d’acquisition du médicament.",
+      "extrait_textuel": "L’impact budgétaire de la mise à disposition de tixagevimab/cilgavimab est estimé à environ une hausse des dépenses de 270% à 1 an, majoritairement constituée par les coûts d’acquisition (92%).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Pages 7-8",
+      "section_source": "Avis économique CEESP",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "1.1.3.",
+          "t": "L’impact budgétaire est estimé à une hausse des dépenses de 270%, constituée à 92% par les coûts d’acquisition",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-ECO-EVUSHELD-2022_arg_CEESP_03",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "source_argument": "CEESP",
+      "categorie_argument": "Réserves_méthodologiques",
+      "direction_argument": "Défavorable",
+      "description": "La CEESP a identifié plusieurs réserves majeures affectant la modélisation : population simulée peu représentative, absence prise en compte des réinfections, méthode d’estimation du taux d’infection contestée, et limites dans l’estimation des coûts et utilité.",
+      "extrait_textuel": "Les réserves majeures portent notamment sur la transposabilité de la population simulée, sur l’absence de modélisation des réinfections, et sur des hypothèses méthodologiques contestées.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "page_source": "Pages 9-11",
+      "section_source": "Avis économique CEESP - Réserves",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Tableau",
+          "t": "Les réserves majeures portent notamment sur la transposabilité de la population simulée, sur l’absence de modélisation des réinfections...",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "ECO-EVUSHELD-20220830_arg_CEESP_01",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "source_argument": "CEESP",
+      "categorie_argument": "Efficience",
+      "description": "L'analyse économique déposée par l’industriel ne permet pas de démontrer l’efficience de tixagévimab/cilgavimab dans l’indication demandée, en raison d’une incertitude globale majeure liée notamment à l’évolution rapide du contexte épidémiologique et aux sources de données.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "La Commission de l’évaluation économique et de santé publique conclut que l’évaluation économique déposée par l’industriel ne permet pas de démontrer l’efficience de tixagévimab/cilgavimab ... en raison d’une incertitude globale majeure.",
+      "page_source": "Pages 7-8",
+      "section_source": "Avis économique CEESP",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Avis écon",
+          "t": "La Commission de l’évaluation économique et de santé publique conclut que l’évaluation économique déposée par l’industriel ne permet pas de démontrer l’efficience de tixagévimab/cilgavimab ... en raison d’une incertitude globale majeure.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "ECO-EVUSHELD-20220830_arg_CEESP_02",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "source_argument": "CEESP",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "La CEESP émet plusieurs réserves importantes et majeures concernant la modélisation de l'efficience et des données utilisées, notamment la transposabilité de la population, l'absence de prise en compte des primo-infections et retraitements, ainsi que les méthodes d'estimation du taux d'infection symptomatique.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "La méthode sur laquelle repose l’analyse coût-résultat soulève 6 réserves importantes et 5 réserves mineures, incluant la transposabilité de la population simulée, l’absence de prise en compte des primo-infections ou retraitements, et la méthode de recalcul du taux d’infection symptomatique qui n’est pas recevable.",
+      "page_source": "Pages 5-6",
+      "section_source": "Avis économique CEESP - Réserves",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Avis écon",
+          "t": "La méthode sur laquelle repose l’analyse coût-résultat soulève 6 réserves importantes et 5 réserves mineures, incluant la transposabilité de la population simulée, l’absence de prise en compte des primo-infections ou retraitements, et la méthode de recalcul du taux d’infection symptomatique qui n’est pas recevable.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "ECO-EVUSHELD-20220830_arg_CEESP_03",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "source_argument": "CEESP",
+      "categorie_argument": "Impact_budgétaire",
+      "description": "L’impact budgétaire à 1 an est évalué à environ X euros, représentant une augmentation notable des dépenses de l’assurance maladie principalement liée au coût d’acquisition du médicament.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Au prix retenu dans le modèle, l’impact budgétaire est estimé à environ X euros à 1 an, soit une augmentation des dépenses de l’assurance maladie de près de 270%, principalement du fait du coût d’acquisition représentant 92% de l’impact.",
+      "page_source": "Page 7",
+      "section_source": "Avis économique CEESP",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Avis écon",
+          "t": "Au prix retenu dans le modèle, l’impact budgétaire est estimé à environ X euros à 1 an, soit une augmentation des dépenses de l’assurance maladie de près de 270%, principalement du fait du coût d’acquisition représentant 92% de l’impact.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-EVUSHELD_arg_CT_01",
+      "evaluation_id": "CT-EVUSHELD",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "La phase III PROVENT a démontré une réduction relative du risque d'infection symptomatique de 83% chez les patients immunodéprimés traités par tixagévimab/cilgavimab versus placebo.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "L’essai PROVENT a démontré une réduction relative du risque d'infection symptomatique de 83%, p < 0.001, chez les patients immunodéprimés traités par tixagévimab/cilgavimab par rapport au placebo.",
+      "page_source": "Page 5",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Efficac",
+          "t": "L’essai PROVENT a démontré une réduction relative du risque d'infection symptomatique de 83%",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-EVUSHELD_arg_CT_02",
+      "evaluation_id": "CT-EVUSHELD",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "Le profil de tolérance acceptable avec des effets indésirables graves rares et un taux faible d'évènements indésirables graves de grade 3-4 dans l’essai PROVENT.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "Les effets indésirables graves de grade 3 et 4 observés dans l’essai PROVENT incluent insuffisance cardiaque congestive 1,85 %, cellulite 1,85 %, maladie pulmonaire obstructive chronique 2,78 %, fatigue 2,78 %, céphalée 1,85 %, hypertension 2,31 %, nausée 1,85 %, néphrolithiase 2,31 %, sepsis 1,85 %.",
+      "page_source": "Page 45",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 45,
+          "s": "Effets i",
+          "t": "Les effets indésirables graves de grade 3 et 4 observés dans l’essai PROVENT incluent insuffisance cardiaque congestive 1,85 %",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-EVUSHELD_arg_CT_03",
+      "evaluation_id": "CT-EVUSHELD",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Le besoin médical chez les patients immunodéprimés non répondeurs à la vaccination est considéré comme important et insuffisamment couvert, justifiant l’utilisation d’EVUSHELD.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le besoin médical dans la population immunodéprimée insuffisamment ou non répondeuse à la vaccination est important et insuffisamment couvert par les traitements actuels.",
+      "page_source": "Page 4",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Besoin m",
+          "t": "Le besoin médical dans la population immunodéprimée insuffisamment ou non répondeuse à la vaccination est important",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-EVUSHELD_arg_CEESP_01",
+      "evaluation_id": "CT-EVUSHELD",
+      "source_argument": "CEESP",
+      "categorie_argument": "Efficience",
+      "description": "Le Ratio Différentiel Coût Résultat (RDCR) est estimé à 325 066 €/QALY, avec une incertitude globale majeure sur l’efficience de tixagévimab/cilgavimab dans l’indication demandée.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "La Commission de l’évaluation économique souligne que le RDCR estimé à 325 066 €/QALY est entouré d’une incertitude globale majeure, ne permettant pas de démontrer l’efficience du tixagévimab/cilgavimab.",
+      "page_source": "Page 8",
+      "section_source": "Avis économique CEESP",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Avis économ",
+          "t": "La Commission de l’évaluation économique souligne que le RDCR estimé à 325 066 €/QALY est entouré d’une incertitude globale majeure",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-EVUSHELD_arg_CEESP_02",
+      "evaluation_id": "CT-EVUSHELD",
+      "source_argument": "CEESP",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "La CEESP identifie des réserves majeures sur la méthodologie, notamment sur la transposabilité de la population simulée à la population française et la non prise en compte des réinfections après 6 mois.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "Des réserves majeures ont été émises sur la méthodologie, notamment la transposabilité de la population simulée à la population française et l’absence de prise en compte des réinfections après 6 mois.",
+      "page_source": "Page 6",
+      "section_source": "Réserves",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Réserves m",
+          "t": "Des réserves majeures ont été émises sur la méthodologie, notamment la transposabilité de la population simulée à la population française",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-EVUSHELD_arg_CEESP_03",
+      "evaluation_id": "CT-EVUSHELD",
+      "source_argument": "CEESP",
+      "categorie_argument": "Impact_budgétaire",
+      "description": "L’impact budgétaire annuel est estimé à environ 270% d’augmentation des dépenses de l’assurance maladie, principalement dû aux coûts d’acquisition du médicament.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "L’impact budgétaire à 1 an représente près de 270% d’augmentation des dépenses de l’assurance maladie, majoritairement porté par les coûts d’acquisition du tixagévimab/cilgavimab.",
+      "page_source": "Page 7",
+      "section_source": "Impact budgétaire",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Impact bu",
+          "t": "L’impact budgétaire à 1 an représente près de 270% d’augmentation des dépenses de l’assurance maladie",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19833_ctx",
+    "evaluation_id": "CT-19833",
+    "ISP": "EVUSHELD est susceptible d’avoir un impact sur la santé publique",
+    "ISP_flag": true,
+    "ISP_categorie": "Important",
+    "type_acces_precoce_enum": "Acces_precoce_pre_AMM",
+    "date_debut_acces_precoce": "2021-12-10",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": 4547,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-03-25",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2021-12-09",
+        "reference": "Emergency Use Authorization",
+        "evidence": [
+          {
+            "field": "evaluation_internationale",
+            "f": "F1",
+            "p": 19,
+            "s": "AMM EUA",
+            "t": "EVUSHELD dispose d’une emergency use authorization (EUA) aux États-Unis depuis le 9 décembre 2021",
+            "m": "rule",
+            "c": 0.95
+          }
+        ]
+      },
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Restricted",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Pays-Bas",
+        "organisme": "Non renseigné",
+        "decision": "Restricted",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Espagne",
+        "organisme": "Non renseigné",
+        "decision": "Restricted",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Italie",
+        "organisme": "Non renseigné",
+        "decision": "Restricted",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 5,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "III",
+    "type_critère_justification": "Nouvelles données cliniques",
+    "valeur_critère": "Réduction relative du risque d'environ 77%, p<0,001",
+    "impact_décision": "Maintien ASMR III",
+    "estimation_mesure_impact": "Environ 77% de réduction de l'incidence d'infections symptomatiques",
+    "evidence": [
+      {
+        "field": "ISP_categorie",
+        "f": "F1",
+        "p": 3,
+        "s": "EVUSHELD",
+        "t": "EVUSHELD (tixagévimab/cilgavimab) est susceptible d’avoir un impact sur la santé publique.",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "date_debut_acces_precoce",
+        "f": "F1",
+        "p": 3,
+        "s": "EVUSHELD",
+        "t": "autorisation d’accès précoce octroyée le 10/12/2021.",
+        "m": "rule",
+        "c": 0.9
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 6,
+        "s": "AMM européenne",
+        "t": "AMM européenne obtenue le 25 mars 2022.",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "evaluation_internationale",
+        "f": "F1",
+        "p": 19,
+        "s": "AMM EUA",
+        "t": "EVUSHELD dispose d’une emergency use authorization aux États-Unis depuis le 9 décembre 2021.",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "SMR_apres_audition_enum",
+        "f": "F1",
+        "p": 26,
+        "s": "La Commission considère",
+        "t": "La Commission considère que le service médical rendu par EVUSHELD est important dans l’indication...",
+        "m": "rule",
+        "c": 0.98
+      },
+      {
+        "field": "ASMR_après_audition_enum",
+        "f": "F1",
+        "p": 27,
+        "s": "la Commission de la Transparence considère",
+        "t": "la Commission considère que la spécialité EVUSHELD apporte une amélioration du service médical rendu modérée (ASMR III)...",
+        "m": "rule",
+        "c": 0.98
+      }
+    ]
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19833_smrasmr_01",
+      "evaluation_id": "CT-19833",
+      "indication_precise": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et adolescents (≥12 ans, ≥40kg) avec déficit d’immunité et réponse vaccinale insuffisante ou non éligible à la vaccination",
+      "smr": "La Commission considère que le service médical rendu est important dans l’indication de l’AMM en cas de souche de SARS-CoV-2 sensible au traitement.",
+      "smr_enum": "Important",
+      "asmr": "La Commission de la Transparence considère que la spécialité EVUSHELD apporte une amélioration du service médical rendu modérée (ASMR III).",
+      "asmr_enum": "III",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "III",
+      "justification_decisionnelle": "Amélioration clinique démontrée par réduction significative des infections symptomatiques confirmées et bonne tolérance, mais absence de données sur efficacité Omicron et très haut risque.",
+      "population_cible_indication": "Adultes et adolescents ≥ 12 ans pesant ≥ 40 kg avec déficit immunitaire et non répondeurs ou non éligibles à la vaccination.",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": "RONAPREVE (casirivimab/imdevimab)",
+      "comparateur_id_HAS": "CT-19833_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes et adolescents ≥ 12 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 26,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu est important dans l’indication...",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 27,
+          "s": "la Commission de la Transparence",
+          "t": "la Commission considère que la spécialité EVUSHELD apporte une amélioration du service médical rendu modérée (ASMR III)",
+          "m": "rule",
+          "c": 0.97
+        }
+      ],
+      "asmr_revendique_enum": "III"
+    },
+    {
+      "smr_asmr_id": "CT-ECO-EVUSHELD-2022_smrasmr_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "indication_precise": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et les adolescents âgés de 12 ans et plus pesant au moins 40 kg à haut risque avec déficit immunitaire",
+      "smr": "Le service médical rendu est important dans l’indication",
+      "smr_enum": "Important",
+      "asmr": "Le produit apporte une amélioration du service médical rendu modérée (ASMR III) dans cette indication",
+      "asmr_enum": "III",
+      "smr_revendique": "Important",
+      "asmr_revendique": "Modérée (III)",
+      "justification_decisionnelle": "La commission souligne l’importante incertitude économique affectant la démonstration de l’efficience, malgré un service médical rendu important et une amélioration modérée.",
+      "population_cible_indication": "Adultes et adolescents ≥ 12 ans pesant ≥ 40 kg avec déficit immunitaire ou non éligibles à la vaccination",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": "Prise en charge standard seule",
+      "comparateur_id_HAS": "CT-ECO-EVUSHELD-2022_compHAS_01",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "1.1.Avis",
+          "t": "Le service médical rendu est important dans l’indication",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "1.1.Avis",
+          "t": "Le produit apporte une amélioration du service médical rendu modérée (ASMR III)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "justification_decisionnelle",
+          "f": "F1",
+          "p": 8,
+          "s": "1.1.Avis",
+          "t": "La commission souligne l’importante incertitude économique affectant la démonstration de l’efficience",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "smr_asmr_id": "ECO-EVUSHELD-20220830_smrasmr_01",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "indication_precise": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et adolescents ≥12 ans, ≥40 kg, immunodéprimés insuffisants ou non répondeurs ou non éligibles à la vaccination et à haut risque de forme sévère",
+      "smr": "La Commission considère que le service médical rendu est important dans l’indication.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que l'amélioration du service médical rendu apportée par EVUSHELD est modérée (ASMR III).",
+      "asmr_enum": "III",
+      "smr_revendique": "Important",
+      "asmr_revendique": "III",
+      "justification_decisionnelle": "L’analyse économique déposée ne permet pas de démontrer l’efficience du produit du fait d’une incertitude majeure. La population cible est comprise entre 100 000 et 350 000 patients, avec un impact budgétaire important estimé à 270% d’augmentation des dépenses.",
+      "population_cible_indication": "100 000 à 350 000 patients immunodéprimés sévères",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "Prise en charge standard seule (absence traitement prophylactique)",
+        "Placebo (essai PROVENT)"
+      ],
+      "comparateur_id_HAS": [
+        "ECO-EVUSHELD-20220830_compHAS_01"
+      ],
+      "evidence": []
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19833_poso_01",
+      "evaluation_id": "CT-19833",
+      "smr_asmr_id": "CT-19833_smrasmr_01",
+      "indication": "Prophylaxie pré-exposition de la COVID-19 chez adultes et adolescents (≥12 ans, ≥40kg) avec déficit immunitaire et réponse vaccinale insuffisante ou non éligible",
+      "population_cible": "Adultes et adolescents âgés de 12 ans et plus, pesant au moins 40 kg",
+      "posologie_source": "renvoi_RCP",
+      "posologie_resumee_brut": "Dose recommandée : 150 mg de tixagévimab et 150 mg de cilgavimab, administrés consécutivement par deux injections intramusculaires distinctes. Aucune donnée sur administration répétée. Ajustements non nécessaires pour insuffisance rénale, hépatique, ou patients âgés.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 150,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "Non renseigné",
+            "dose_days_in_cycle": [],
+            "interval_days": null
+          },
+          "voie_administration": "Intramusculaire",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Aucun ajustement posologique nécessaire selon le RCP.",
+      "commentaires": "Respecter le résumé des caractéristiques du produit (RCP) et le plan de gestion des risques (PGR).",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 9,
+          "s": "Administration",
+          "t": "La dose recommandée chez les adultes et les adolescents âgés de 12 ans et plus pesant au moins 40 kg est de 150 mg de tixagévimab et 150 mg de cilgavimab, administrés consécutivement sous forme de deux injections intramusculaires distinctes.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "ajustements_poso_brut",
+          "f": "F1",
+          "p": 9,
+          "s": "Aucun ajustement",
+          "t": "Aucun ajustement posologique n’est nécessaire chez les patients âgés, insuffisants rénaux ou hépatiques (voir rubrique 5.2 du RCP).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "posologie_id": "CT-ECO-EVUSHELD-2022_poso_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "smr_asmr_id": "CT-ECO-EVUSHELD-2022_smrasmr_01",
+      "indication": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et adolescents âgés de 12 ans et plus pesant au moins 40 kg",
+      "population_cible": "Adultes et adolescents ≥ 12 ans pesant ≥ 40 kg avec déficit immunitaire ou non éligibles à la vaccination",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Administration intra-musculaire de 300 mg (150 mg de tixagévimab et 150 mg de cilgavimab) en deux points d’injection distincts, renouvelable tous les 6 mois. Posologie recommandée à 600 mg (doublée) pour les sous-variants Omicron.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 300,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [],
+            "interval_days": 180
+          },
+          "voie_administration": "intramusculaire",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Augmentation de la posologie à 600 mg recommandée par l’ANSM le 24 mars 2022.",
+      "commentaires": "Renouvellement possible tous les 6 mois en raison de la durée de protection estimée.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 11,
+          "s": "Traitement",
+          "t": "Administration intra-musculaire à 300 mg par injection, renouvelable tous les 6 mois",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "ajustements_poso_brut",
+          "f": "F1",
+          "p": 11,
+          "s": "Traitement",
+          "t": "Dose plus élevée à 600 mg recommandée par l’ANSM le 24 mars 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "posologie_id": "ECO-EVUSHELD-20220830_poso_01",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "smr_asmr_id": "ECO-EVUSHELD-20220830_smrasmr_01",
+      "indication": "Prophylaxie pré-exposition de la COVID-19 chez les adultes et adolescents ≥12 ans, ≥40 kg, immunodéprimés sévères",
+      "population_cible": "Adultes et adolescents ≥12 ans, ≥40 kg immunodéprimés sévères",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Injection intra-musculaire de 300 mg (150 mg tixagévimab et 150 mg cilgavimab) en 2 points d’injection. Répétée tous les 6 mois. Dose plus élevée à 600 mg recommandée selon RCP depuis mars 2022.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 300,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [
+              180
+            ],
+            "interval_days": 180
+          },
+          "voie_administration": "intra-musculaire",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Le RCP actualisé du 24 mars 2022 recommande un doublement de dose à 600 mg pour compenser la réduction d’activité sur les variants Omicron.",
+      "commentaires": "Posologie ajustée suite à l’évolution du contexte épidémiologique.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 11,
+          "s": "Tableau 3",
+          "t": "Le RCP actualisé précise qu’une dose plus élevée à 600 mg (300 mg tixagévimab et 300 mg cilgavimab) est recommandée.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19833_event_ACCES_PRECOCE_01",
+      "evaluation_id": "CT-19833",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2021-12-10",
+      "detail_brut": "Début accès précoce donné le 10/12/2021",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_debut_acces_precoce",
+          "f": "F1",
+          "p": 3,
+          "s": "autorisation d’accès",
+          "t": "accès précoce octroyé le 10/12/2021",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19833_event_AMM_EMA_01",
+      "evaluation_id": "CT-19833",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-03-25",
+      "detail_brut": "Obtention AMM européenne le 25 mars 2022",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_AMM_ema",
+          "f": "F1",
+          "p": 6,
+          "s": "AMM européenne",
+          "t": "AMM européenne obtenue le 25 mars 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19833_event_PUBLICATION_AVIS_01",
+      "evaluation_id": "CT-19833",
+      "event_type": "PUBLICATION_AVIS_CT",
+      "event_date": "2022-06-15",
+      "detail_brut": "Publication avis Commission de la Transparence 15 juin 2022",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 31,
+          "s": "Avis version définitive",
+          "t": "15 juin 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-ECO-EVUSHELD-2022_event_AMM_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-03-25",
+      "detail_brut": "Autorisation de mise sur le marché centralisée en prophylaxie pré-exposition de la COVID-19",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Avis CEESP",
+          "t": "AMM obtenue le 25 mars 2022 en procédure centralisée",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-ECO-EVUSHELD-2022_event_ACCES_01",
+      "evaluation_id": "CT-ECO-EVUSHELD-2022",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2021-12-09",
+      "detail_brut": "Début de l’accès précoce tixagevimab/cilgavimab",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Avis CEESP",
+          "t": "Accès précoce octroyé le 09/12/2021",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "event_id": "ECO-EVUSHELD-20220830_event_ACCES_PRECOCE_DEBUT_01",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2021-12-09",
+      "detail_brut": "Début de l'accès précoce octroyé par le 09/12/2021",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 10,
+          "s": "Accès préc",
+          "t": "accès précoce, octroyé le 09/12/2021",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "ECO-EVUSHELD-20220830_event_ACCES_PRECOCE_MODIFICATION_01",
+      "evaluation_id": "ECO-EVUSHELD-20220830",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2022-03-18",
+      "detail_brut": "Modification de l’indication dans le cadre de l’accès précoce le 18/03/2022",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 11,
+          "s": "Accès préc",
+          "t": "indication modifiée le 18/03/2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19833",
+    "delai_amm_ct_jours": 82,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19833",
+    "is_orphan": false,
+    "classe_ATC_l2": "Anticorps monoclonaux antiviraux",
+    "aire_therapeutique": "Infectiologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 2,
+    "n_rct": 2,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 0.23,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": 4.5,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Incidence des infections symptomatiques au SARS-CoV-2 virologiquement confirmées",
+    "p_value_log10": 3.05,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": null,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": []
+  },
+  "Relations": [
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19833",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19833_essai_PROVENT",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19833",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19833_essai_STORMCHASER",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19833_essai_PROVENT",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19833_essai_PROVENT_crit_Infection_symptomatique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19833_essai_PROVENT",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19833_essai_PROVENT_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19833_essai_STORMCHASER",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19833_essai_STORMCHASER_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19833",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19833_compHAS_01",
+      "label": "EVAL_HAS_ECO"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-CEESP-EVUSHELD-20220719",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT_crit_infection_symptomatique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-CEESP-EVUSHELD-20220719_essai_PROVENT_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-CEESP-EVUSHELD-20220719",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-CEESP-EVUSHELD-20220719_tol_general",
+      "label": "EVAL_HAS_TOL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-ECO-EVUSHELD-2022",
+      "tgt_type": "essai",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "tgt_type": "critere",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT_crit_infection_symptomatique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-ECO-EVUSHELD-2022",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_compHAS_01",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-ECO-EVUSHELD-2022_essai_PROVENT",
+      "tgt_type": "tolérance",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_tol_PROVENT",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-ECO-EVUSHELD-2022",
+      "tgt_type": "eco",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_eco",
+      "label": "EVAL_HAS_ECO"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-ECO-EVUSHELD-2022",
+      "tgt_type": "arg",
+      "tgt_id": "CT-ECO-EVUSHELD-2022_arg_CT_01",
+      "label": "EVAL_HAS_VOTE"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "ECO-EVUSHELD-20220830",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "ECO-EVUSHELD-20220830_essai_PROVENT",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "ECO-EVUSHELD-20220830_essai_PROVENT",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "ECO-EVUSHELD-20220830_essai_PROVENT_crit_Infection_symptomatique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "ECO-EVUSHELD-20220830_essai_PROVENT",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "ECO-EVUSHELD-20220830_essai_PROVENT_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "ECO-EVUSHELD-20220830",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "ECO-EVUSHELD-20220830_compHAS_01",
+      "label": "EVAL_HAS_ECO"
+    }
+  ],
+  "Annotation_View": [],
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19833",
+    "texte_brut": "Avis HAS complet EVUSHELD tixagévimab/cilgavimab solution injectable 150 mg/150 mg pour prophylaxie pré-exposition de la COVID-19 chez adultes et adolescents ≥ 12 ans ≥ 40kg avec déficit immunitaire ou non éligibles à vaccination à haut risque. Dosage recommandé 150 mg + 150 mg IM. Études PROVENT, STORMCHASER, efficacité sur infections symptomatiques, bonne tolérance..."
+  },
+  "Contribution_Patients": {
+    "evaluation_id": "CT-ECO-EVUSHELD-2022",
+    "contribution_presente": false,
+    "contribution_id": "CT-ECO-EVUSHELD-2022_contrib_01",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  },
+  "Comparaison_Alternatives": [
+    {
+      "evaluation_id": "CT-EVUSHELD",
+      "description": "Comparaison économique entre l’association tixagévimab/cilgavimab et la prise en charge standard seule (mesures barrières, absence d’autres prophylaxies).",
+      "comparateurs": [
+        "Prise en charge standard seule"
+      ],
+      "resultats": "Le ratio différentiel coût-résultat (RDCR) est estimé à 325 066 €/QALY pour tixagévimab/cilgavimab par rapport à la prise en charge standard seule, avec une incertitude majeure sur l’efficience.",
+      "evidence": [
+        {
+          "field": "Comparaison_Alternatives",
+          "f": "F1",
+          "p": 8,
+          "s": "Avis économique",
+          "t": "Le ratio différentiel coût-résultat (RDCR) est estimé à 325 066 €/QALY pour tixagévimab/cilgavimab",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Impact_Budgetaire": {
+    "evaluation_id": "CT-EVUSHELD",
+    "impact_budgetaire_prevu": "L’impact budgétaire de la mise à disposition de tixagévimab/cilgavimab est estimé à environ 270 % d’augmentation des dépenses de l’assurance maladie à 1 an.",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": 3,
+    "hypothese_population_cible": 350000,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [
+      "Incertitude importante sur l’évolution du contexte épidémiologique",
+      "Méthodologie de recalcul du taux d’infection symptomatique contestée",
+      "Hypothèses sur le retraitement et la fréquence de retraitement simplifiées"
+    ],
+    "reserves_majeures": true,
+    "evidence": [
+      {
+        "field": "impact_budgetaire_prevu",
+        "f": "F1",
+        "p": 7,
+        "s": "Impact bud",
+        "t": "L’impact budgétaire de la mise à disposition de tixagévimab/cilgavimab est estimé à environ 270 % d’augmentation des dépenses de l’assurance maladie à 1 an.",
+        "m": "manual",
+        "c": 0.98
+      }
+    ]
+  }
+}

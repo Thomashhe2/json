@@ -1,0 +1,1704 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19759",
+  "evaluation_id": "CT-19759",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19759_LIBTAYO_AVIS_CT.pdf",
+        "type": "CT",
+        "page_count": 21
+      },
+      "F2": {
+        "file_name": "TRANSCRIPTION_PARTIES_1-4.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 7
+      },
+      "F3": {
+        "file_name": "CT-19759_Libtayo_Audition_ExtensionIndication.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 14
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "segment1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 3600,
+      "heading_text": "ÉVALUER LES TECHNOLOGIES DE SANTÉ - AVIS SUR LES MEDICAMENTS",
+      "expected_fields": [
+        "Identifiants_Produits_Liaison",
+        "Evaluations_HAS",
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Tolérance",
+        "Comparateurs_Essai",
+        "Arguments_Decisionnels",
+        "SMR_ASMR_Par_Indication",
+        "Posologie_Par_Indication",
+        "Données_Contexte"
+      ],
+      "routing_hint": "Racine extraction",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "segment2",
+      "section_label_normalise": "CONTEXTES",
+      "section_label_brut": "Contexte et Incidences",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 9,
+      "char_start": 3601,
+      "char_end": 7200,
+      "heading_text": "Contexte et informations complémentaires",
+      "expected_fields": [
+        "BESOIN_MEDICAL",
+        "COMPARATEURS_PERTINENTS",
+        "Place_dans_la_strategie"
+      ],
+      "routing_hint": "Contextualisation",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "segment3",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles - Études cliniques",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 14,
+      "char_start": 7201,
+      "char_end": 12000,
+      "heading_text": "Étude 1620, phase II non comparative",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Resultats_Efficacite",
+        "Tolérance"
+      ],
+      "routing_hint": "Analyse étude principale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "segment4",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 17,
+      "page_end": 20,
+      "char_start": 12001,
+      "char_end": 16800,
+      "heading_text": "Conclusion SMR et ASMR",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication",
+        "Arguments_Decisionnels",
+        "POPULATION_CIBLE"
+      ],
+      "routing_hint": "Décision finale",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "segment5",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 20,
+      "page_end": 21,
+      "char_start": 16801,
+      "char_end": 18000,
+      "heading_text": "Informations administratives",
+      "expected_fields": [
+        "Informations_administratives"
+      ],
+      "routing_hint": "Admin et réglementaire",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "seg0001",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription intégrale Commission de Transparence",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Examen extension d’indication : LIBTAYO 350 mg (CBCla ou CBCm)",
+      "expected_fields": [
+        "Interventions_Experts",
+        "Arguments_Decisionnels",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANS",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "Seg0001",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription complète de la séance CT 14-09-2022",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 14,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Commission Transparence - LIBTAYO 350 mg - Audition - Extension d'indication",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "transcription",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "LIBTAYO",
+      "dci": "cémiplimab",
+      "titulaire_amm": "SANOFI-AVENTIS FRANCE",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution à diluer pour perfusion",
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "350 mg",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER",
+          "t": "Avis sur les MEDICAMENTS cémiplimab LIBTAYO 350 mg solution pour à diluer pour perfusion",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 20,
+          "s": "Informations",
+          "t": "Demandeur SANOFI-AVENTIS FRANCE",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19759",
+      "Num_avis": "CT-19759",
+      "produit_nom": "LIBTAYO",
+      "dci": "cémiplimab",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "solution à diluer pour perfusion",
+      "dosage": "350 mg",
+      "indication": "Traitement des patients adultes atteints d’un carcinome basocellulaire localement avancé ou métastatique ayant progressé ou présentant une intolérance à un inhibiteur de la voie Hedgehog",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Carcinome basocellulaire localement avancé ou métastatique",
+      "maladie_rare": false,
+      "ligne_traitement": "deuxième intention",
+      "ligne_traitement_enum": "2L",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie_solide",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Texte avis page 4",
+      "design_etude": "Phase II non comparative, multicentrique",
+      "niveau_preuve_brut": "Phase II non comparative",
+      "niveau_preuve_interprete": "Phase_II",
+      "besoin_medical_brut": "Il y a un besoin non couvert pour les malades atteints de carcinome basocellulaire localement avancé ou métastatique progressif ou intolérant aux inhibiteurs de la voie Hedgehog.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_II_single_arm",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "LIBTAYO dispose d’AMM dans d’autres indications: carcinome épidermoïde cutané et cancer bronchopulmonaire non à petites cellules.",
+      "historique_ASMR_comparateurs": "ASMR V dans les autres indications",
+      "concurrence_therapeutique_recente": "Absence de traitement approprié en deuxième ligne pour patient intolérant ou en échec aux inhibiteurs Hedgehog",
+      "vote_unanimite": false,
+      "nb_votants": 18,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 1,
+      "nb_abstentions": 4,
+      "date_evaluation": "2022-09-14",
+      "gravite_patho": "Le carcinome basocellulaire localement avancé ou métastatique est une maladie grave engageant le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Pas d’alternative médicamenteuse pertinente en cas d’échec ou d’intolérance aux inhibiteurs de la voie Hedgehog.",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Motif de",
+          "t": "Extension d’indication",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Besoin m",
+          "t": "Il y a un besoin non couvert pour les malades atteints de CBCla ou de CBCm.",
+          "m": "manual",
+          "c": 0.97
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 4,
+          "s": "Place du",
+          "t": "LIBTAYO est un traitement de deuxième intention",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "niveau_preuve_brut",
+          "f": "F1",
+          "p": 9,
+          "s": "étude 1620",
+          "t": "Phase II non comparative",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 18,
+          "s": "Consi",
+          "t": "Le carcinome basocellulaire localement avancé ou métastatique est une maladie grave qui engage le pronostic vital.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "transcription_textuelle": "Transcription complète disponible",
+      "extraits_arguments": [],
+      "sous_groupe_population": "Patients adultes avec progression ou intolérance aux inhibiteurs Hedgehog (vismodegib ou sonidegib)"
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19759_essai_1620",
+      "evaluation_id": "CT-19759",
+      "essai_nom": "Étude 1620",
+      "nct_number": "NCT03132636",
+      "design": "Phase_II_single_arm",
+      "design_enum": "Phase_II_single_arm",
+      "phase": "II",
+      "population_cible": "Patients adultes atteints de carcinome basocellulaire localement avancé ou métastatique progressant ou intolérant aux inhibiteurs de la voie Hedgehog",
+      "comparateur_utilise": "Aucun",
+      "comparateur_type_enum": "Aucun",
+      "nb_patient_traitement": 138,
+      "nb_patient_comparateur": 0,
+      "resultat_global": "Non comparative, analyse d'efficacité via taux de réponse globale",
+      "qol_flag": false,
+      "niveau_preuve": "Phase II non comparative",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 14.8,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": 18,
+      "age_max_num": 90,
+      "ligne_traitement_essai_enum": "2L",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 9,
+          "s": "Analyse ",
+          "t": "Une étude (étude 1620) de phase II non comparative a été fournie",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 9,
+          "s": "Analyse ",
+          "t": "Clinicaltrials.gov NCT03132636",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 13,
+          "s": "Effectif",
+          "t": "Cohorte 1 (54 patients) et cohorte 2 (84 patients), total 138 patients",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "population_dédoublée": false,
+      "maturite_donnees": "Intermédiaires",
+      "date_cutoff_donnees": "Non renseigné",
+      "nb_patients_inclus": "138 patients (54 métastatiques, 84 localement avancés)",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": []
+    },
+    {
+      "essai_id": "CT-19759_essai_RGN1620",
+      "evaluation_id": "CT-19759",
+      "essai_nom": "RGN1620",
+      "design": "Phase_II_single_arm",
+      "phase": "II",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Patients adultes atteints de carcinome basocellulaire localement avancé ou métastatique en échec/ou intolérance aux inhibiteurs de la voie Hedgehog",
+      "comparateur_utilise": "Aucun",
+      "comparateur_type_enum": "Aucun",
+      "nb_patient_traitement": 138,
+      "nb_patient_comparateur": 0,
+      "resultat_global": "Taux de réponse globale évalué à 24,1 % dans la cohorte métastatique et 28,6 % dans la cohorte localement avancée",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase_II",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "Cette AMM s",
+          "t": "Cette AMM s'appuie sur une étude de phase II non comparative, nommée 1620",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 3,
+          "s": "Elle a comporté",
+          "t": "54 patients dans la cohorte métastatique et 84 patients dans la cohorte localement avancée",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement_essai_enum",
+          "f": "F1",
+          "p": 2,
+          "s": "Le laboratoire s",
+          "t": "L’AMM place le produit en deuxième intention",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19759_essai_1620_crit_ORR",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "critere_nom": "Taux de réponse objective (ORR)",
+      "type_critere": "Substitutif",
+      "type_critere_enum": "ORR",
+      "primaire_ou_secondaire": "Primaire",
+      "unite_mesure": "Pourcentage (%)",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 11,
+          "s": "Critère ",
+          "t": "Critère de jugement principal : taux de réponse objective (ORR), meilleure réponse complète ou partielle confirmée",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19759_essai_1620_crit_ORR_inv",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "critere_nom": "ORR confirmée par investigateur",
+      "type_critere": "Substitutif",
+      "type_critere_enum": "ORR",
+      "primaire_ou_secondaire": "Secondaire",
+      "unite_mesure": "Pourcentage (%)",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 14,
+          "s": "Résultats ",
+          "t": "Critère secondaire : taux de réponse objective évalué par l'investigateur",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19759_essai_1620_crit_DOR",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "critere_nom": "Durée de la réponse (DOR)",
+      "type_critere": "Intermédiaire",
+      "type_critere_enum": "DOR",
+      "primaire_ou_secondaire": "Secondaire",
+      "unite_mesure": "Mois",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "Critères",
+          "t": "Durée de la réponse : temps entre meilleure réponse confirmée et progression ou décès",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19759_essai_1620_crit_PFS",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "critere_nom": "Survie sans progression (PFS)",
+      "type_critere": "Intermédiaire",
+      "type_critere_enum": "PFS",
+      "primaire_ou_secondaire": "Secondaire",
+      "unite_mesure": "Mois",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "Critères",
+          "t": "Survie sans progression : temps entre début traitement et progression ou décès",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19759_essai_1620_crit_OS",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "critere_nom": "Survie globale (OS)",
+      "type_critere": "Dur",
+      "type_critere_enum": "OS",
+      "primaire_ou_secondaire": "Secondaire",
+      "unite_mesure": "Mois",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "Critères",
+          "t": "Survie globale : temps entre début traitement et décès toutes causes",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19759_essai_1620_crit_dDCR",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "critere_nom": "Taux de contrôle durable de la maladie (dDCR)",
+      "type_critere": "Substitutif",
+      "type_critere_enum": "ORR",
+      "primaire_ou_secondaire": "Secondaire",
+      "unite_mesure": "Pourcentage (%)",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "Critères",
+          "t": "Taux de contrôle durable de la maladie défini comme réponse sans progression ≥27 semaines",
+          "m": "manual",
+          "c": 0.94
+        }
+      ],
+      "nature_critere": "Dur",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non renseigné",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "24 % de réponse pour métastatiques, 28 % pour localement avancés",
+      "valeur_groupe_comparateur": "Non applicable",
+      "gain_absolu": "Non applicable",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non applicable",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "Non applicable",
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": "Modérée",
+      "critere_atteint": null,
+      "degre_signification": null,
+      "pertinence_clinique": "Modérée",
+      "commentaire_has_resultat": "Le taux de réponse a été retenu comme critère principal pour ce traitement en impasse thérapeutique."
+    },
+    {
+      "critere_id": "CT-19759_essai_RGN1620_crit_ORR",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_RGN1620",
+      "critere_nom": "Taux de réponse globale",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "24,1 % (cohorte métastatique) ; 28,6 % (cohorte localement avancé)",
+      "valeur_groupe_comparateur": "Non applicable",
+      "gain_absolu": "Non applicable",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non applicable",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non significatif",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "significativite_clinique_interpretee": "Incertaine",
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Modérée",
+      "commentaire_has_resultat": "Le taux de réponse globale n'est pas statistiquement significatif par rapport aux valeurs historiques postulées",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "Cette AMM s",
+          "t": "Le taux de réponse globale ... a été de 24,1 % dans la cohorte métastatique et de 28,6 % dans la cohorte localement avancé",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 3,
+          "s": "Cette AMM s",
+          "t": "Ces valeurs, les 24 % et les 28 %, ne sont pas statistiquement significatives par rapport aux valeurs historiques",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19759_essai_1620_tol",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_1620",
+      "ae_total_pct": null,
+      "sae_pct": null,
+      "discontinuations_ae_pct": null,
+      "deaths_ae_n": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves": "Des effets indésirables graves rapportés chez environ 30% des patients, principalement immunologiques.",
+      "EI_frequents": "Réactions liées à la perfusion et réactions allergiques de grade 2 ou plus",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Effets indésirables d’origine immunologique",
+          "grade": "≥3",
+          "incidence_pct_traitement": 11.9,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 14,
+              "s": "Données i",
+              "t": "EI d’origine immunologique de grade 3 ou plus observés chez 9,3% CBCm et 11,9% CBCla",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [],
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "2021-08-02",
+          "description": "Signal EMA PRAC pour cystite non infectieuse immuno-médiée incluant LIBTAYO",
+          "mesures_prises": "Mise à jour du RCP incluant cystite non infectieuse",
+          "impact_evaluation": "Non renseigné",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 15,
+              "s": "Données P",
+              "t": "Recommandation PRAC du 2 août 2021 concernant cystite non infectieuse immuno-médiée",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "deces": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 14,
+          "s": "Tolérance",
+          "t": "Un EI de grades ≥3 a été rapporté chez 42,6% des patients CBCm et 51,2% des patients CBCla",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "discontinuations_ae_pct",
+          "f": "F1",
+          "p": 14,
+          "s": "Tolérance",
+          "t": "Les arrêts de traitement pour événements indésirables ont concerné 7,4% des patients CBCm et 16,7% des patients CBCla",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-19759_essai_RGN1620_tol",
+      "evaluation_id": "CT-19759",
+      "essai_id": "CT-19759_essai_RGN1620",
+      "ae_total_pct": null,
+      "sae_pct": null,
+      "discontinuations_ae_pct": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves": "Évènements de grade supérieur ou égale à 3 rapportés chez 42,6 % des patients métastatiques et 51,2 % localement avancés. Arrêts traitement pour EI 7,4 % (métastatique) et 16,7 % (localement avancé). Évènements immunologiques grade 3 jusqu'à 13,1 %.",
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Évènement immunologique",
+          "grade": "3",
+          "incidence_pct_traitement": 13.1,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 4,
+              "s": "Pour les résult",
+              "t": "évènements indésirables d'intérêt particulier connus sous anti-PD-L1 les plus fréquents ont été un évènement d'origine immunologique de grade 3 au plus, notés, avec fréquence jusqu'à 13,1 %",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_graves_detailles": [],
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "EI_frequents": "Evènements immunologiques grade 3 les plus fréquents, fréquence entre 9,3 et 13,1 %",
+      "deces": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 4,
+          "s": "Pour les résult",
+          "t": "Les évènements de grade supérieur ou égale à 3 ont été rapportés chez 42,6 % des patients de la cohorte métastatique, et 51,2 % dans la cohorte localement avancé",
+          "m": "manual",
+          "c": 0.96
+        },
+        {
+          "field": "discontinuations_ae_pct",
+          "f": "F1",
+          "p": 4,
+          "s": "En termes de",
+          "t": "les arrêts de traitement pour évènements indésirables ont concerné 7,4 % des patients de la cohorte métastatique et 16,7 % de la cohorte localement avancé",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19759_essai_1620_comp_01",
+      "essai_id": "CT-19759_essai_1620",
+      "nom_comparateur": "Soins de support",
+      "comparateur_type_enum": "BSC",
+      "comparateur_standard_soin": "Soins de support",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 8,
+          "s": "Comparate",
+          "t": "Comparateur pertinent : Soins de support",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19759_compHAS_01",
+      "evaluation_id": "CT-19759",
+      "nom_comparateur_HAS": "Inhibiteurs de la voie Hedgehog (Vismodegib, Sonidegib)",
+      "type_comparateur": "Therapie_ciblee",
+      "comparateur_standard_soin": "Inhibiteur Hedgehog",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Place du",
+          "t": "Traitement de première intention avec inhibiteurs de la voie Sonic Hedgehog : Vismodegib et Sonidegib",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19759_compHAS_02",
+      "evaluation_id": "CT-19759",
+      "nom_comparateur_HAS": "Chimiothérapie",
+      "type_comparateur": "Chimiotherapie",
+      "comparateur_standard_soin": "Chimiothérapie",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Place du",
+          "t": "La chimiothérapie est très peu efficace et mal tolérée chez les patients les plus âgés",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19759_arg_CT_01",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin non couvert pour les patients atteints de carcinome basocellulaire localement avancé ou métastatique ayant progressé ou intolérants aux inhibiteurs Hedgehog.",
+      "extrait_textuel": "Il y a un besoin non couvert pour les malades atteints de CBCla ou de CBCm.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 7",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Besoin m",
+          "t": "Il y a un besoin non couvert pour les malades atteints de CBCla ou de CBCm.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_CT_02",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Modéré",
+      "description": "Taux de réponse objective chez environ un patient sur quatre dans une étude phase II non comparative.",
+      "extrait_textuel": "Le taux de réponse global (ORR) évalué par un comité indépendant a été de 24,1% dans la cohorte CBCm et de 28,6% dans la cohorte CBCla, non statistiquement significativement différents des valeurs historiques.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 13-14",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Résultats ",
+          "t": "ORR 24,1% (CBCm), 28,6% (CBCla), non statistiquement significatif vs historique.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_CT_03",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Tolérance marquée par des événements indésirables graves chez un patient sur deux et arrêts traitement respectifs de 7,4% et 16,7%.",
+      "extrait_textuel": "Des événements indésirables de grades ≥3 ont été rapportés chez 42,6% des patients CBCm et 51,2% des patients CBCla; arrêts traitement pour EI: 7,4% CBCm, 16,7% CBCla.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 14-15",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "Tolérance",
+          "t": "EI grades ≥3 rapportés chez 42,6% CBCm, 51,2% CBCla, arrêts traitement 7,4% et 16,7%.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_CT_04",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "LIBTAYO est un traitement de deuxième intention après progression ou intolérance aux inhibiteurs Hedgehog, sans traitement médicamenteux alternatif clinique pertinent.",
+      "extrait_textuel": "LIBTAYO est un traitement de deuxième intention indiqué pour les patients progressés ou intolérants aux inhibiteurs Hedgehog. Pas d’alternative médicamenteuse pertinente.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 8",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Comparate",
+          "t": "Pas de traitement médicamenteux cliniquement pertinent en deuxième intention.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_CT_05",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Neutre",
+      "description": "Service médical rendu modéré et absence d’amélioration du service médical rendu (ASMR V) dans l’indication évaluée.",
+      "extrait_textuel": "La Commission considère que le service médical rendu est modéré et que LIBTAYO n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 18-19",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 18,
+          "s": "Conclusions",
+          "t": "Le service médical rendu est modéré dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "La Commission",
+          "t": "LIBTAYO n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_CT_06",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "La gravité de la maladie et le faible nombre de patients éligibles justifient une prise en charge pour ce besoin non couvert.",
+      "extrait_textuel": "Le carcinome basocellulaire localement avancé ou métastatique est une maladie grave avec un besoin médical non couvert.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 18",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 18,
+          "s": "Conclusions",
+          "t": "Carcinome basocellulaire localement avancé ou métastatique est une maladie grave qui engage le pronostic vital.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_CT_07",
+      "evaluation_id": "CT-19759",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Défavorable",
+      "description": "Absence d’étude comparative avec soins de support, rendant difficile la quantification de l’impact clinique réel.",
+      "extrait_textuel": "Faute d’étude comparative aux alternatives comme les soins de support, l’impact sur la morbidité est difficile à quantifier.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "page_source": "Page 16",
+      "section_source": "Résumé & discussion",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "Résumé &",
+          "t": "Faute de comparaison aux alternatives qui peuvent être des soins de support, l’impact sur la morbidité est difficile à quantifier.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_1",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "description": "Le cémiplimab répond à un besoin non couvert dans des situations dramatiques de carcinome basocellulaire sans alternative après inhibiteurs Sonic-Hedgehog, avec un taux de réponse objective de 24 à 28%.",
+      "extrait_textuel": "Nous avons un besoin non couvert pour ces patients rares basocellulaires localement avancés ou métastatiques, en échec de nos traitements par inhibiteur Sonic-Hedgehog... Le taux de réponse objective est de 24 % pour les métastatiques, 28 % pour les localement avancés.",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Nous avons un",
+          "t": "Nous avons un besoin non couvert pour ces patients rares basocellulaires localement avancés ou métastatiques, en échec de nos traitements par inhibiteur Sonic-Hedgehog.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Les métastatiques",
+          "t": "Les métastatiques, le taux de réponse objective est de 24 %, un peu plus élevé pour les localement avancés, 28 %.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_2",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Profil de tolérance connu du cémiplimab, effets immunomédiés classiques, six décès survenus non liés au traitement mais à d’autres facteurs, principalement l’âge.",
+      "extrait_textuel": "Sur la tolérance, on a exactement ce qu’on connaît avec la cémiplimab. C’est un inhibiteur de PD1. On a des effets immunomédiés... Six malades sont décédés pendant la durée de l’étude, mais aucun n’est décédé à cause du cémiplimab, mais à cause d’autres facteurs, notamment l’âge chez les patients âgés.",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Sur la tolérance",
+          "t": "Six malades sont décédés pendant la durée de l’étude, mais aucun n’est décédé à cause du cémiplimab, mais à cause d’autres facteurs, notamment l’âge.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_3",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "L’étude est de phase II non comparative, données non robustes et absence de comparateur direct, mais réponses cliniques chez patients en impasse thérapeutique.",
+      "extrait_textuel": "C’est un dossier qui n’est pas très robuste, mais qui répond à un besoin non couvert, avec une démonstration d’une efficacité chez un certain nombre de patients...",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "C’est un dossier qui n’est pas",
+          "t": "C’est un dossier qui n’est pas très robuste, mais qui répond à un besoin non couvert, avec une démonstration d’une efficacité chez un certain nombre de patients...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_4",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Le cémiplimab offre une alternative thérapeutique plus tolérable par rapport aux inhibiteurs Sonic-Hedgehog, important pour des patients âgés avec effets indésirables limitants.",
+      "extrait_textuel": "La tolérance du cémiplimab n’a rien à voir en termes de facilité d’utilisation et d’administration par rapport aux inhibiteurs de Sonic-Hedgehog.",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentations_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "comme second",
+          "t": "La tolérance du cémiplimab n’a rien à voir en termes de facilité d’utilisation et d’administration par rapport aux inhibiteurs de Sonic-Hedgehog.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_5",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Controverse sur la significativité statistique du taux de réponse, certaines évaluations indiquent que critères ne sont pas pleinement atteints.",
+      "extrait_textuel": "Mme le Pr CHEVRET indique que les tests statistiques pour le taux de réponse ne sont pas significatifs, pas de démonstration définitive.",
+      "intervenant": "Pr CHEVRET",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Une question de",
+          "t": "Je veux juste faire un commentaire. Pour moi, ce n’est pas démontré parce qu’ils ont posé des hypothèses de départ pour justifier les calculs d’effectif... les tests ne sont pas significatifs.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_6",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Question clinique sur la pertinence des réponses partielles : impact sur la possibilité d'opérer les patients incertain, le critère d'opérabilité est flou.",
+      "extrait_textuel": "J’avais aussi une question sur la significativité clinique d’avoir 20 % de réponses partielles. Tu as dit plusieurs fois que cela permettrait éventuellement d’opérer les patients, mais les bénéfices cliniques ne sont pas super évidents.",
+      "intervenant": "Dr LENGLINÉ",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "J’avais aussi une",
+          "t": "J’avais aussi une question sur la significativité clinique d’avoir 20 % de réponses partielles... les bénéfices cliniques ne sont pas super évidents.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_7",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Reconnaissance que les données sont faibles, mais ce traitement pourrait bénéficier à certains patients, notamment ceux qui pourraient devenir opérables.",
+      "extrait_textuel": "C’est sûr que cette notion d’opérabilité, je la développe parce que c’est ce qu’on fait dans les maladies courantes. Je suis d’accord avec toi que cela aurait été bien que l’essai le démontre. J’en reconnais, on est tout à fait d’accord. Le dossier est faiblard.",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "C’est sûr que",
+          "t": "C’est sûr que cette notion d’opérabilité... Le dossier est faiblard.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_8",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Arrêts de traitements pour évènements indésirables observés, notamment 7,4% en métastatique et 16,7% localement avancé, pouvant impacter la gestion clinique.",
+      "extrait_textuel": "Les arrêts de traitement pour événements indésirables ont concerné 7,4 % des patients métastatiques et 16,7 % des localement avancés.",
+      "intervenant": "Un chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "En termes d",
+          "t": "Les arrêts de traitement pour évènements indésirables ont concerné 7,4 % des patients de la cohorte métastatique et 16,7 % de la cohorte localement avancé.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": [
+    {
+      "contexte_id": "CT-19759_ctx",
+      "evaluation_id": "CT-19759",
+      "ISP": "Non renseigné",
+      "ISP_flag": false,
+      "ISP_categorie": "Pas_ISP",
+      "acces_precoce": "Non renseigné",
+      "date_debut_acces_precoce": "Non renseigné",
+      "date_fin_acces_precoce": "Non renseigné",
+      "duree_acces_precoce_mois": null,
+      "nombre_patients_acces_precoce": null,
+      "conditions_arret_acces_precoce": "Non renseigné",
+      "statut_reglementaire_ema": "AMM_standard",
+      "date_AMM_ema": "2021-06-21",
+      "date_avis_chmp": "Non renseigné",
+      "innovation_therapeutique_ema": null,
+      "designation_orpheline_ema": false,
+      "prime_ema": false,
+      "obligations_post_amm": [],
+      "nb_obligations_post_amm": 0,
+      "echeance_reexamen_amm": "Non renseigné",
+      "evaluation_internationale": "Oui",
+      "pays_evaluations": [
+        "États-Unis (FDA)",
+        "Royaume-Uni",
+        "Allemagne",
+        "Belgique",
+        "Pays-Bas"
+      ],
+      "decisions_internationales": [
+        {
+          "pays": "États-Unis",
+          "organisme": "FDA",
+          "decision": "Recommended",
+          "date_decision": "2021-02-10",
+          "reference": "Approbation FDA 10 février 2021",
+          "evidence": [
+            {
+              "field": "decisions_internationales",
+              "f": "F1",
+              "p": 9,
+              "s": "AMM aux ",
+              "t": "Aux Etats-Unis, la FDA a approuvé LIBTAYO le 10 février 2021 pour carcinome basocellulaire localement avancé après échec Hedgehog.",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "nb_decisions_internationales": 1,
+      "population_cible_france": "Entre 100 et 230 patients par an atteints de carcinome basocellulaire avancé métastatique ou localement avancé non éligibles à chirurgie ou radiothérapie après progression ou intolérance aux inhibiteurs Hedgehog.",
+      "population_cible_nombre": null,
+      "population_cible_intervalle": [
+        100,
+        230
+      ],
+      "source_estimation_population": "Registres français et extrapolation",
+      "incertitude_population": "Modérée",
+      "suivi_post_inscription": false,
+      "nature_suivi_post_inscription": "Non renseigné",
+      "delai_suivi_mois": null,
+      "delai_suivi_justification": "Non renseigné",
+      "conditions_suivi": "Non renseigné",
+      "echeance_suivi": "Non renseigné",
+      "impact_si_non_realise": "Non renseigné",
+      "delai_soumission_dossier": "2022-02-21",
+      "delai_complement_demande": false,
+      "dates_complement_demande": [],
+      "delai_audition": true,
+      "date_audition": "2022-09-14",
+      "SMR_avant_audition_enum": "Non renseigné",
+      "SMR_apres_audition_enum": "Modéré",
+      "ASMR_avant_audition_enum": "Non renseigné",
+      "ASMR_après_audition_enum": "V",
+      "type_critère_justification": "Critère principal : taux de réponse globale non significatif statistiquement par rapport aux valeurs historiques",
+      "valeur_critère": "24-28%",
+      "impact_décision": "Maintien SMR modéré et ASMR V sans progrès",
+      "estimation_mesure_impact": "Non renseigné",
+      "evidence": [
+        {
+          "field": "date_audition",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté p",
+          "t": "Adopté par la Commission de la transparence le 14 septembre 2022",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "SMR_apres_audition_enum",
+          "f": "F1",
+          "p": 18,
+          "s": "Conclusions",
+          "t": "La Commission considère que le service médical rendu est modéré",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "ASMR_après_audition_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "La Commission",
+          "t": "LIBTAYO n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "type_critère_justification",
+          "f": "F1",
+          "p": 13,
+          "s": "Critère ",
+          "t": "Test statistique non concluant par rapport aux valeurs historiques retenues",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19759_smrasmr_01",
+      "evaluation_id": "CT-19759",
+      "indication_precise": "Traitement de patients adultes atteints d’un carcinome basocellulaire localement avancé ou métastatique ayant progressé ou intolérance aux inhibiteurs Hedgehog",
+      "smr": "La Commission considère que le service médical rendu est modéré dans l’indication de l’AMM.",
+      "smr_enum": "Modéré",
+      "asmr": "LIBTAYO n’apporte pas d’amélioration du service médical rendu (ASMR V) dans le traitement des patients adultes atteints d’un carcinome basocellulaire localement avancé ou métastatique.",
+      "asmr_enum": "V",
+      "smr_revendique": "SMR important",
+      "asmr_revendique": "Non_renseigné",
+      "justification_decisionnelle": "Basé sur un taux de réponse objective de 24-28% sans signification statistique et absence de données comparatives, avec un profil de tolérance marqué par des EI graves.",
+      "population_cible_indication": "Entre 100 et 230 patients par an.",
+      "ligne_traitement_indication": "Deuxième intention",
+      "comparateurs_references_indication": [
+        "Inhibiteurs de la voie Hedgehog (Vismodegib, Sonidegib)",
+        "Chimiothérapie",
+        "Soins de support"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19759_compHAS_01",
+        "CT-19759_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Localement_avancé",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Faible",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 18,
+          "s": "Conclusions",
+          "t": "La Commission considère que le service médical rendu est modéré dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "La Commission",
+          "t": "LIBTAYO n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19759_poso_01",
+      "evaluation_id": "CT-19759",
+      "smr_asmr_id": "CT-19759_smrasmr_01",
+      "indication": "Traitement carcinome basocellulaire localement avancé ou métastatique",
+      "population_cible": "Adultes",
+      "posologie_source": "renvoi_RCP",
+      "posologie_resumee_brut": "Dose recommandée : 350 mg toutes les 3 semaines administrée par perfusion intraveineuse de 30 minutes. Le traitement est poursuivi jusqu'à progression ou toxicité inacceptable. Pas de réduction de dose, ajustement possible par interruption ou report.",
+      "phases": [
+        {
+          "phase_nom": "Traitement continu",
+          "cycle_length_days": 21,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 350,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxs",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 21
+          },
+          "voie_administration": "Intraveineuse",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Aucune réduction de dose recommandée. Possibilité de reporter ou interrompre le traitement en fonction de la tolérance.",
+      "commentaires": "Ne pas administrer dans la même tubulure d’autres médicaments. Utiliser filtre stérile avec perfusion de 30 minutes.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "Posologie",
+          "t": "La dose recommandée est de 350 mg de cémiplimab, administrée toutes les 3 semaines (Q3S) par perfusion intraveineuse de 30 minutes.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19759_event_DOSSIER_DEPOT_HAS_01",
+      "evaluation_id": "CT-19759",
+      "event_type": "DOSSIER_DEPOT_HAS",
+      "event_date": "2022-02-21",
+      "detail_brut": "Date de validation administrative du dossier HAS",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 20,
+          "s": "Calendrie",
+          "t": "Date de validation administrative: 21 février 2022",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19759_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-19759",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Date d'adoption de la décision par la Commission de la transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 20,
+          "s": "Calendrie",
+          "t": "Date d’adoption : 29 juin 2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19759_event_AUDITION_LABO_01",
+      "evaluation_id": "CT-19759",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-09-14",
+      "detail_brut": "Date d'audition du laboratoire SANOFI-AVENTIS FRANCE",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 20,
+          "s": "Calendrie",
+          "t": "Date d’audition du laboratoire : 14 septembre 2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": [
+    {
+      "evaluation_id": "CT-19759",
+      "delai_eval_depuis_chmp_jours": null,
+      "delai_eval_depuis_amm_ema_jours": 373,
+      "delai_eval_depuis_transcription_jours": null,
+      "delai_eval_depuis_evenement_initial_jours": null,
+      "complement_demande_mentionne": false,
+      "audition_realisee": true,
+      "evidence": [
+        {
+          "field": "delai_eval_depuis_amm_ema_jours",
+          "f": "F1",
+          "p": 20,
+          "s": "Calendrie",
+          "t": "AMM EMA 21/06/2021 ; adoption CT 29/06/2022 : délai 373 j",
+          "m": "manual",
+          "c": 0.96
+        },
+        {
+          "field": "audition_realisee",
+          "f": "F1",
+          "p": 20,
+          "s": "Calendrie",
+          "t": "Audition laboratoire le 14/09/2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Features_Modele": {
+    "evaluation_id": "CT-19759",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie_solide",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 14.8,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Taux de réponse objective (ORR)",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19759",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19759_essai_1620",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_ORR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_ORR_inv",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_DOR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_PFS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_OS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_dDCR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19759_essai_1620_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-19759_essai_1620_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19759",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19759_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19759",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19759_compHAS_02",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19759",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19759_essai_1620",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_ORR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_DOR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19759_essai_1620",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19759_essai_1620_crit_PFS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19759",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19759_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": [],
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19759",
+    "texte_brut": "Mercredi 15 juin 2022 ... Présentation du dossier LIBTAYO avec demande d’inscription en extension d’indication pour carcinome basocellulaire localement avancé ou métastatique après échec d’inhibiteurs Sonic-Hedgehog. L’étude 1620, phase II non comparative, inclut 138 patients, taux de réponse objective entre 24% et 28%. Tolérance connue du cémiplimab, effets immunomédiés, 6 décès non liés au traitement. Discussion sur la robustesse des données, absence de comparateur direct, pertinence clinique des réponses partielles et operabilité. Vote : SMR modéré et ASMR V retenus.",
+    "embedding": []
+  }
+}

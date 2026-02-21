@@ -1,0 +1,813 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19852",
+  "evaluation_id": "CT-19852",
+  "extraction_date": "2022-06-15",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-15",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19852.pdf",
+        "type": "CT",
+        "page_count": 6
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19852_seg_0001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel, Quel progrès ?, Contexte, Indications, Comparateurs",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 3380,
+      "heading_text": "Évaluer les technologies de santé - Avis sur les médicaments thiamazole",
+      "expected_fields": [
+        "Comparateurs_HAS",
+        "Arguments_Decisionnels",
+        "SMR_ASMR_Par_Indication"
+      ],
+      "routing_hint": "Extraction standard CT",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19852_seg_0002",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 3381,
+      "char_end": 6200,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication",
+        "Arguments_Decisionnels",
+        "Evaluations_HAS"
+      ],
+      "routing_hint": "Extract SMR, ASMR and decision arguments",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19852_seg_0003",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 6000,
+      "char_end": 7100,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "Identifiants_Produits_Liaison",
+        "Evaluations_HAS"
+      ],
+      "routing_hint": "Extract identification and regulatory info",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19852",
+      "produit_nom_commercial": "THIAMAZOLE UNI-PHARMA 5 mg",
+      "dci": "thiamazole",
+      "forme_pharmaceutique": "Comprimé sécable",
+      "dosage": "5 mg",
+      "presentations": [
+        {
+          "description": "100 comprimés sous plaquettes (PVC/Aluminium)",
+          "code_cip": "34009 301 921 1 5"
+        },
+        {
+          "description": "125 comprimés sous plaquettes (PVC/Aluminium)",
+          "code_cip": "34009 301 921 2 2"
+        }
+      ],
+      "titulaire_amm": "EURODEP PHARMA",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER l",
+          "t": "thiamazole THIAMAZOLE UNI-PHARMA 5 mg, Comprimé sécable",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER l",
+          "t": "thiamazole THIAMAZOLE UNI-PHARMA 5 mg",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dosage",
+          "f": "F1",
+          "p": 5,
+          "s": "Informations",
+          "t": "THIAMAZOLE UNI-PHARMA 5 mg",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "forme_pharmaceutique",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER l",
+          "t": "Comprimé sécable",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "presentations",
+          "f": "F1",
+          "p": 5,
+          "s": "Informations",
+          "t": "100 comprimés sous plaquettes (PVC/Aluminium) (CIP : 34009 301 921 1 5)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "presentations",
+          "f": "F1",
+          "p": 5,
+          "s": "Informations",
+          "t": "125 comprimés sous plaquettes (PVC/Aluminium) (CIP : 34009 301 921 2 2)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 5,
+          "s": "Informations",
+          "t": "Demandeur EURODEP PHARMA",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19852",
+      "Num_avis": "CT-19852",
+      "produit_nom": "THIAMAZOLE UNI-PHARMA 5 mg",
+      "dci": "thiamazole",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "Comprimé sécable",
+      "dosage": "5 mg",
+      "indication": "Traitement de l’hyperthyroïdie (thyrotoxicose) chez l’adulte, l’adolescent et l’enfant dès l’âge de 3 ans",
+      "classe_ATC": "H03BB02",
+      "pathologie": "Hyperthyroïdie (thyrotoxicose)",
+      "maladie_rare": false,
+      "ligne_traitement": "1ère intention",
+      "ligne_traitement_enum": "1L",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Endocrinologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Déduit ATC H03BB02",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Endocrinologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Enfants dès 3 ans, adolescents, adultes",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "THIAMAZOLE 5 mg HEXAL est spécialité référence. THYROZOL 5 mg a un SMR important et ASMR V (absence d'amélioration).",
+      "historique_ASMR_comparateurs": "ASMR V attribuée à THYROZOL 5 mg lors des avis précédents (2009 et 2019).",
+      "concurrence_therapeutique_recente": "Autres antithyroïdiens de synthèse disponibles : carbimazole, propylthiouracil, benzylthiouracile, iode radioactif, chirurgie.",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-15",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "L’hyperthyroïdie peut être responsable de complications cardiaques, psychiatriques et d’altération de l’état général, pouvant engager le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes, adolescents, enfants dès 3 ans",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : THYROZOL (médicament de référence), carbimazole, propylthiouracile, benzylthiouracile, chirurgie, iode radioactif.",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER l",
+          "t": "THIAMAZOLE UNI-PHARMA 5 mg (thiamazole)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "s": "Indication",
+          "t": "Traitement de l’hyperthyroïdie (thyrotoxicose) chez l’adulte, l’adolescent et l’enfant dès l’âge de 3 ans.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "Il s’agit d’un traitement de première intention des hyperthyroïdies.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "L’hyperthyroïdie peut être responsable de complications (cardiaques, psychiatriques, altération de l’état général) susceptibles d’engager le pronostic vital.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte ",
+          "t": "THYROZOL 5 mg (thiamazole) a un service médical rendu important mais ASMR V ; conclusions maintenues en 2019.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "historique_ASMR_comparateurs",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte ",
+          "t": "Avis de la Commission 13 mai 2009 et 12 juin 2019 ASMR V pour THYROZOL 5 mg.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-19852_tol_principal",
+    "evaluation_id": "CT-19852",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "EI_graves": "Non renseigné",
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19852_compHAS_01",
+      "evaluation_id": "CT-19852",
+      "nom_comparateur_HAS": "THYROZOL 5 mg, comprimé pelliculé (Thiamazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs",
+          "t": "THYROZOL 5 mg (thiamazole), comprimé pelliculé",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19852_compHAS_02",
+      "evaluation_id": "CT-19852",
+      "nom_comparateur_HAS": "NEO-MERCAZOLE 5 mg, comprimé (carbamizole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs",
+          "t": "NEO-MERCAZOLE 5 mg, comprimé (carbamizole)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19852_compHAS_03",
+      "evaluation_id": "CT-19852",
+      "nom_comparateur_HAS": "PROPYLEX 50 mg, comprimé (propylthiouracile)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs",
+          "t": "PROPYLEX 50 mg, comprimé (propylthiouracile)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19852_compHAS_04",
+      "evaluation_id": "CT-19852",
+      "nom_comparateur_HAS": "BASDENE 25 mg, comprimé (benzylthiouracile)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs",
+          "t": "BASDENE 25 mg, comprimé (benzylthiouracile)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19852_compHAS_05",
+      "evaluation_id": "CT-19852",
+      "nom_comparateur_HAS": "Chirurgie",
+      "type_comparateur": "Autre",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs",
+          "t": "comparateurs non médicamenteux : chirurgie",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19852_compHAS_06",
+      "evaluation_id": "CT-19852",
+      "nom_comparateur_HAS": "Iode radioactif (I-131)",
+      "type_comparateur": "Autre",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs",
+          "t": "comparateurs non médicamenteux : iode radioactif (I-131)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19852_arg_CT_01",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "L'hyperthyroïdie est une pathologie grave pouvant entraîner des complications engageant le pronostic vital.",
+      "extrait_textuel": "L’hyperthyroïdie peut être responsable de complications (cardiaques, psychiatriques, altération de l’état général) susceptibles d’engager le pronostic vital.",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "L’hyperthyroïdie peut être responsable de complications (cardiaques, psychiatriques, altération de l’état général)...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_02",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Le rapport efficacité/effets indésirables est important pour THIAMAZOLE UNI-PHARMA 5 mg.",
+      "extrait_textuel": "Le rapport efficacité/effets indésirables est important.",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "Le rapport efficacité/effets indésirables est important.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_03",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Des alternatives thérapeutiques existent dont THYROZOL (même principe actif), carbimazole, propylthiouracile, benzylthiouracile, ainsi que chirurgie et iode radioactif.",
+      "extrait_textuel": "Il existe des alternatives médicamenteuses et non médicamenteuses: THYROZOL, carbimazole, propylthiouracile, benzylthiouracile, iode radioactif (I-131) et chirurgie.",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "Il existe des alternatives thérapeutiques médicamenteuses : THYROZOL, carbimazole, propylthiouracile, benzylthiouracile, ainsi que alternatives non médicamenteuses : iode radioactif (I-131) et chirurgie.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_04",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "La Commission considère que le service médical rendu par THIAMAZOLE UNI-PHARMA est important.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par THIAMAZOLE UNI-PHARMA 5 mg est important dans l’indication de l’AMM.",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "La Commission considère que le service médical rendu par THIAMAZOLE UNI-PHARMA 5 mg est important dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_05",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "THIAMAZOLE UNI-PHARMA est un eurogénérique qui n'apporte pas d'amélioration du service médical rendu (ASMR V) par rapport aux antithyroïdiens de synthèse disponibles.",
+      "extrait_textuel": "Cette spécialité est un eurogénérique qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres antithyroïdiens de synthèse disponibles.",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "Cette spécialité est un eurogénérique qui n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_06",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "La population cible est constituée d'adultes, adolescents et enfants dès 3 ans avec hyperthyroïdie, estimée à environ 1 250 200 patients en 2022.",
+      "extrait_textuel": "La population cible de THIAMAZOLE UNI-PHARMA 5 mg correspond aux adultes, adolescents et aux enfants de 3 ans et plus ayant une hyperthyroïdie. Estimation max 1 250 200 patients.",
+      "page_source": "Page 4-5",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "population cible correspond aux adultes, adolescents et enfants de 3 ans et plus ayant une hyperthyroïdie. Estimation max 1 250 200 patients.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_07",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Le conditionnement en 5 mg est adapté à la prescription mais la Commission recommande des conditionnements à 10 mg et 20 mg pour faciliter l’adaptation de la posologie en initiation.",
+      "extrait_textuel": "La Commission recommande la mise à disposition de conditionnements à 10 mg et 20 mg afin de faciliter l’adaptation de la posologie, notamment pour les doses d’initiation du traitement.",
+      "page_source": "Page 5",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Recommand",
+          "t": "Commission recommande disponibilités conditionnements 10 mg et 20 mg pour adaptation posologie.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19852_arg_CT_08",
+      "evaluation_id": "CT-19852",
+      "source_argument": "CT",
+      "categorie_argument": "Économique",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Le THIAMAZOLE UNI-PHARMA 5 mg n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+      "extrait_textuel": "THIAMAZOLE UNI-PHARMA 5 mg (thiamazole) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "THIAMAZOLE UNI-PHARMA 5 mg n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19852_ctx",
+    "evaluation_id": "CT-19852",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "2022-06-15",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19852",
+    "texte_brut": "CT-19852 Avis de la Commission de la transparence sur THIAMAZOLE UNI-PHARMA 5 mg, Comprimé sécable, juin 2022. Indiqué dans le traitement de l’hyperthyroïdie chez adultes, adolescents et enfants dès 3 ans. Demande inscription liste remboursables, eurogénérique. SMR important, ASMR V, traitement 1ère intention. Alternatives : THYROZOL, carbimazole, propylthiouracile, benzylthiouracile, chirurgie, iode radioactif...",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19852_smrasmr_01",
+      "evaluation_id": "CT-19852",
+      "indication_precise": "Traitement de l’hyperthyroïdie (thyrotoxicose) chez l’adulte, l’adolescent et l’enfant dès l’âge de 3 ans",
+      "smr": "La Commission considère que le service médical rendu par THIAMAZOLE UNI-PHARMA 5 mg est important dans l’indication de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Il s’agit d’un eurogénérique n’apportant pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres antithyroïdiens de synthèse disponibles.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Traitement à visée curative. Rapport efficacité/effets indésirables important. Alternatives thérapeutiques médicamenteuses et non médicamenteuses disponibles. Traitement première intention. Pas d'impact supplémentaire sur santé publique.",
+      "population_cible_indication": "Adultes, adolescents, enfants dès 3 ans hyperthyroïdie",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": [
+        "THYROZOL 5 mg (thiamazole)",
+        "NEO-MERCAZOLE (carbamizole)",
+        "PROPYLEX (propylthiouracile)",
+        "BASDENE (benzylthiouracile)",
+        "Chirurgie",
+        "Iode radioactif (I-131)"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19852_compHAS_01",
+        "CT-19852_compHAS_02",
+        "CT-19852_compHAS_03",
+        "CT-19852_compHAS_04",
+        "CT-19852_compHAS_05",
+        "CT-19852_compHAS_06"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Enfants dès 3 ans et plus"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "La Commission considère que le service médical rendu par THIAMAZOLE UNI-PHARMA 5 mg est important",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusi",
+          "t": "Cette spécialité est un eurogénérique qui n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19852_event_AMM_01",
+      "evaluation_id": "CT-19852",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2019-10-31",
+      "detail_brut": "AMM octroyée en France par procédure décentralisée le 31 octobre 2019",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "L’AMM a été octroyée en France par procédure décentralisée le 31 octobre 2019",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19852_event_ADOPT_CT_01",
+      "evaluation_id": "CT-19852",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-15",
+      "detail_brut": "Avis adopté par la Commission de la transparence le 15 juin 2022",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER ",
+          "t": "Adopté par la Commission de la transparence le 15 juin 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19852",
+    "delai_amm_ct_jours": 985,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19852",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Endocrinologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": [],
+    "evidence": []
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

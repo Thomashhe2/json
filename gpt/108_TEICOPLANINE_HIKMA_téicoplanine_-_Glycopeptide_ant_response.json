@@ -1,0 +1,650 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-21542",
+  "evaluation_id": "CT-21542",
+  "extraction_date": "2025-08-27",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-08-27",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-21542_TEICOPLANINE_HIKMA.pdf",
+        "type": "CT",
+        "page_count": 4
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-21542_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l’avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 1300,
+      "heading_text": "Synthèse de l’avis",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication"
+      ],
+      "routing_hint": "Synthese",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21542_seg_02",
+      "section_label_normalise": "DONNEES_CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 4000,
+      "heading_text": "Contexte et indication",
+      "expected_fields": [
+        "Données_Contexte",
+        "Evaluations_HAS"
+      ],
+      "routing_hint": "Contexte",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21542_seg_03",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission de la Transparence",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 4001,
+      "char_end": 5300,
+      "heading_text": "Conclusions",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Conclusions",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21542_seg_04",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1100,
+      "heading_text": "Amélioration SMR",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication"
+      ],
+      "routing_hint": "ASMR",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "TEICOPLANINE HIKMA 100 mg",
+      "dci": "téicoplanine",
+      "numero_cis": "Non renseigné",
+      "numero_cip13": "34009 303 236 1 8",
+      "forme_pharmaceutique": "poudre pour solution injectable/pour perfusion ou solution buvable",
+      "dosage": "100 mg",
+      "titulaire_amm": "HIKMA FRANCE",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • TEI",
+          "t": "HAS • TEICOPLANINE HIKMA 100 mg, poudre pour solution injectable/pour perfusion ou solution buvable",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "numero_cip13",
+          "f": "F1",
+          "p": 2,
+          "s": "TEICOPLANINE H",
+          "t": "1 flacon de poudre en verre (CIP : 34009 303 236 1 8)",
+          "m": "regex",
+          "c": 0.99
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 2,
+          "s": "Laborat",
+          "t": "Laboratoire HIKMA FRANCE (Exploitant)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21542",
+      "Num_avis": "CT-21542",
+      "produit_nom": "TEICOPLANINE HIKMA 100 mg, poudre pour solution injectable/pour perfusion ou solution buvable",
+      "dci": "téicoplanine",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "poudre pour solution injectable/pour perfusion ou solution buvable",
+      "dosage": "100 mg",
+      "indication": "Traitement parentéral des infections compliquées de la peau et des tissus mous, infections ostéoarticulaires, pneumonies nosocomiales et communautaires, infections urinaires compliquées, endocardite infectieuse, péritonite dialyse péritonéale continue ambulatoire, bactériémie associée, alternative orale pour diarrhées et colites à Clostridium difficile",
+      "classe_ATC": "J01XA02",
+      "pathologie": "Infections bactériennes graves",
+      "maladie_rare": false,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Antibiotique glycopeptides",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Déduit ATC J01XA02",
+      "design_etude": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "gravite_patho": "Les infections concernées sont graves, pouvant engager le pronostic vital",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adulte / Adolescent / Enfant / Nourrissons / Nouveau-nés",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Spécialités TEICOPLANINE HIKMA 200 mg et 400 mg évaluées précédemment dont service médical rendu important",
+      "historique_ASMR_comparateurs": "Pas de progrès par rapport aux spécialités téicoplanine déjà inscrites",
+      "concurrence_therapeutique_recente": "Existence d’alternatives thérapeutiques",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2025-08-27",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "smr": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg est important dans les indications de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+      "asmr_enum": "V",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "Considé",
+          "t": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg (téicoplanine), poudre ... est important",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "Considé",
+          "t": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg (téicoplanine), poudre ... est important",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 4,
+          "s": "Cette s",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Cette s",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • TEI",
+          "t": "TEICOPLANINE HIKMA 100 mg, poudre pour solution injectable/pour perfusion ou solution buvable",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-21542_tol_01",
+    "evaluation_id": "CT-21542",
+    "essai_id": "Non renseigné",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Non renseigné",
+    "EI_frequents": "Non renseigné",
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21542_compHAS_01",
+      "evaluation_id": "CT-21542",
+      "nom_comparateur_HAS": "Autres spécialités à base de téicoplanine et autres antibiotiques recommandés dans les indications de l'AMM",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Compar",
+          "t": "Les comparateurs cliniquement pertinents de TEICOPLANINE HIKMA 100 mg sont nombreux et comprennent des spécialités princeps et génériques, ainsi que d'autres antibiotiques recommandés dans les indications.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21542_arg_CT_01",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "TEICOPLANINE HIKMA 100 mg est un médicament de seconde intention avec plusieurs alternatives thérapeutiques existantes.",
+      "extrait_textuel": "Il existe des alternatives thérapeutiques. Il s’agit d’un traitement de seconde intention.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission de la Transparence",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Considérant",
+          "t": "Il existe des alternatives thérapeutiques. Il s’agit d’un traitement de seconde intention.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21542_arg_CT_02",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Service médical rendu",
+      "direction_argument": "Favorable",
+      "description": "Le service médical rendu par TEICOPLANINE HIKMA 100 mg est jugé important dans les indications de l'AMM.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg est important dans les indications de l’AMM.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission de la Transparence",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Considérant l’ensemble",
+          "t": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg (téicoplanine)... est important",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21542_arg_CT_03",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "Les comparateurs cliniquement pertinents incluent d’autres spécialités princeps et génériques de téicoplanine ainsi que d’autres antibiotiques recommandés.",
+      "extrait_textuel": "Les comparateurs cliniquement pertinents de TEICOPLANINE HIKMA 100 mg incluent les spécialités princeps, génériques et autres antibiotiques recommandés.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission de la Transparence",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Les comparateurs",
+          "t": "Les comparateurs cliniquement pertinents de TEICOPLANINE HIKMA 100 mg (téicoplanine)... comprennent des spécialités princeps et génériques, ainsi que d’autres antibiotiques recommandés.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21542_arg_CT_04",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "TEICOPLANINE HIKMA 100 mg est adapté aux conditions de prescription selon indication, posologie et durée de traitement.",
+      "extrait_textuel": "Il est adapté aux conditions de prescription selon l’indication, la posologie et la durée de traitement.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Il est ad",
+          "t": "Il est adapté aux conditions de prescription selon l’indication, la posologie et la durée de traitement.",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21542_arg_CT_05",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Amélioration_SMR",
+      "direction_argument": "Défavorable",
+      "description": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+      "extrait_textuel": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Cette s",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21542_arg_CT_06",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "L’introduction de TEICOPLANINE HIKMA 100 mg dans les indications de l’AMM n’entraîne pas de modification de la population cible traitée par téicoplanine.",
+      "extrait_textuel": "L’introduction de TEICOPLANINE HIKMA 100 mg dans la stratégie thérapeutique des infections concernées par les indications de l’AMM n’est pas de nature à modifier la population cible des patients relevant d’un traitement par téicoplanine.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "L’introd",
+          "t": "L’introduction de TEICOPLANINE HIKMA 100 mg (téicoplanine), poudre ... n’est pas de nature à modifier la population cible des patients relevant d’un traitement par téicoplanine.",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21542_arg_CT_07",
+      "evaluation_id": "CT-21542",
+      "source_argument": "CT",
+      "categorie_argument": "Décision",
+      "direction_argument": "Favorable",
+      "description": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à l’usage des collectivités dans les indications et posologies de l’AMM.",
+      "extrait_textuel": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à l’usage des collectivités dans les indications et aux posologies de l’AMM.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission de la Transparence",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commiss",
+          "t": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à l’usage des collectivités...",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21542_ctx",
+    "evaluation_id": "CT-21542",
+    "ISP": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "2025-08-27",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Maintien SMR Important et ASMR V",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21542",
+    "texte_brut": "HAS • TEICOPLANINE HIKMA 100 mg, poudre pour solution injectable/pour perfusion ou solution buvable, juillet 2025.\nAvis favorable au remboursement dans les indications de l’AMM. Pas de progrès par rapport aux spécialités à base de téicoplanine.\nIndications : infections graves, traitement parentéral et oral en alternative. Hybride de TARGOCID dont l’AMM a été abrogée.\nLa Commission évalue comme important le SMR, sans amélioration du service médical rendu (ASMR V).\nAdapté aux conditions prescription, traitement de seconde intention. Comparateurs multiples.\nAvis adopté le 27 août 2025.",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21542_smrasmr_01",
+      "evaluation_id": "CT-21542",
+      "indication_precise": "Traitement des infections graves mentionnées dans l’AMM de TEICOPLANINE HIKMA 100 mg",
+      "smr": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg est important dans les indications de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Pas de progrès thérapeutique par rapport aux spécialités déjà inscrites. Traitement de seconde intention. Alternatives disponibles.",
+      "population_cible_indication": "Adulte / Adolescent / Enfant / Nourrissons / Nouveau-nés",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": [
+        "spécialités princeps et génériques téicoplanine",
+        "autres antibiotiques recommandés"
+      ],
+      "comparateur_id_HAS": "CT-21542_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Tous âges"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "Considérant",
+          "t": "La Commission considère que le service médical rendu par TEICOPLANINE HIKMA 100 mg (téicoplanine)... est important",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Cette s",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de téicoplanine déjà inscrites.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-21542_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-21542",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2025-08-27",
+      "detail_brut": "Adoption de l'avis par la Commission de la Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis adopté",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adoption",
+          "t": "Adopté par la Commission de la transparence le 27 août 2025",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21542_event_AMM_01",
+      "evaluation_id": "CT-21542",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2025-07-03",
+      "detail_brut": "Autorisation de mise sur le marché 03/07/2025",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM procédure décentralisée",
+      "acteurs_impliques": [
+        "ANSM",
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "AMM (Aut",
+          "t": "AMM 03/07/2025 (procédure décentralisée).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21542",
+    "delai_amm_ct_jours": 55,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": 0,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-21542",
+    "is_orphan": false,
+    "classe_ATC_l2": "Antibiotique glycopeptides",
+    "aire_therapeutique": "Infectiologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2025,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": {}
+}

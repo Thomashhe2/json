@@ -1,0 +1,1726 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-21257",
+  "evaluation_id": "CT-21257",
+  "extraction_date": "2025-09-02",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-09-02",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "101_CT-21257_BUCCOLAM_AVIS_CT.pdf",
+        "type": "CT",
+        "page_count": 17
+      },
+      "F2": {
+        "file_name": "TRANSCRIPTION_CT-21257.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 10
+      },
+      "F3": {
+        "file_name": "TRANSCRIPTION_PARTIES_1_12.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 19
+      },
+      "F4": {
+        "file_name": "CONTRIB_CT-21257_Questionnaire_Association_Patients.pdf",
+        "type": "CONTRIB",
+        "page_count": 23
+      },
+      "F5": {
+        "file_name": "CT-21257_Contribution_EFAPPE.pdf",
+        "type": "CONTRIB",
+        "page_count": 22
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-21257_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l’avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 2700,
+      "heading_text": "Synthèse de l'avis",
+      "expected_fields": [
+        "smr_asmr_id",
+        "smr",
+        "asmr",
+        "smr_enum",
+        "asmr_enum",
+        "posologie_id",
+        "posologie",
+        "arguments_decisionnels"
+      ],
+      "routing_hint": "Synthèse",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-21257_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 2701,
+      "char_end": 5600,
+      "heading_text": "Contexte et Informations administratives",
+      "expected_fields": [
+        "produit_nom_commercial",
+        "dci",
+        "titulaire_amm",
+        "presentations",
+        "date_amm",
+        "conditions_prescription",
+        "type_avis_enum"
+      ],
+      "routing_hint": "Admin",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21257_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications thérapeutiques",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 5601,
+      "char_end": 8500,
+      "heading_text": "Indications thérapeutiques",
+      "expected_fields": [
+        "indication",
+        "populations_cibles"
+      ],
+      "routing_hint": "Indication",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-21257_seg_04",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Données cliniques",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 11,
+      "char_start": 8501,
+      "char_end": 13700,
+      "heading_text": "Données cliniques",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Comparateurs_Essai"
+      ],
+      "routing_hint": "Essais cliniques",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-21257_seg_05",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 12,
+      "page_end": 14,
+      "char_start": 13701,
+      "char_end": 16800,
+      "heading_text": "Profil de tolérance",
+      "expected_fields": [
+        "Tolérance"
+      ],
+      "routing_hint": "Tolérance",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-21257_seg_06",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place du médicament dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 14,
+      "page_end": 15,
+      "char_start": 16801,
+      "char_end": 18200,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "place_med",
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Place thérapeutique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21257_seg_07",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 15,
+      "page_end": 16,
+      "char_start": 18201,
+      "char_end": 19800,
+      "heading_text": "Service Médical Rendu",
+      "expected_fields": [
+        "smr_asmr_id",
+        "smr",
+        "smr_enum",
+        "asmr",
+        "asmr_enum"
+      ],
+      "routing_hint": "SMR_ASMR",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-21257_seg_08",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 16,
+      "page_end": 16,
+      "char_start": 19801,
+      "char_end": 20200,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr_texte",
+        "asmr_enum"
+      ],
+      "routing_hint": "ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21257_seg_09",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 16,
+      "page_end": 17,
+      "char_start": 20201,
+      "char_end": 21000,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible",
+        "estimation_population_num"
+      ],
+      "routing_hint": "Population cible",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-21257_seg_10",
+      "section_label_normalise": "POSITIONS_RECOMMANDATIONS",
+      "section_label_brut": "Recommandations et demande de données",
+      "template_detecte": "CT_modern",
+      "page_start": 17,
+      "page_end": 17,
+      "char_start": 21001,
+      "char_end": 21300,
+      "heading_text": "Autres recommandations",
+      "expected_fields": [
+        "demande_donnees",
+        "recommandations"
+      ],
+      "routing_hint": "Recommandations",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg00001",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription Commission Transparence BUCCOLAM",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": 15000,
+      "heading_text": "Commission de Transparence - BUCCOLAM 10 mg Extension indication",
+      "expected_fields": [],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT21257_8bc793f",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription intégrale",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 19,
+      "char_start": 0,
+      "char_end": 60000,
+      "heading_text": "Transcription audition CT Buccolam 2025-09-02",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT21257_Contr_Intro",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Introduction",
+      "template_detecte": "CONTRIB",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 2600,
+      "heading_text": "Introduction",
+      "expected_fields": [
+        "contribution_presente",
+        "association.nom_association",
+        "association.type_structure",
+        "association.site_internet",
+        "methodologie.methode_recueil",
+        "methodologie.description_methode",
+        "impacts_maladie.description_impacts_patients",
+        "impacts_maladie.symptomes_principaux",
+        "impacts_maladie.impacts_psychologiques",
+        "impacts_maladie.impacts_proches_aidants",
+        "traitements_actuels.traitements_disponibles",
+        "traitements_actuels.avantages",
+        "traitements_actuels.inconvenients",
+        "traitements_actuels.besoins_non_couverts",
+        "evaluation_medicament.experience_avec_medicament",
+        "evaluation_medicament.avantages_constates",
+        "evaluation_medicament.inconvenients_constates",
+        "evaluation_medicament.attentes_principales",
+        "evaluation_medicament.craintes_principales",
+        "indication_demandee.indication_adequate",
+        "indication_demandee.commentaires",
+        "position_association.position_generale",
+        "position_association.justification",
+        "position_association.arguments_principaux",
+        "synthese_contribution",
+        "demande_audition"
+      ],
+      "routing_hint": "full extraction",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21257_seg_0001",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives",
+      "template_detecte": "CONTRIB",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 5500,
+      "heading_text": "Informations administratives (contact, financement) destinées à la HAS.",
+      "expected_fields": [
+        "association.nom_association",
+        "association.type_structure",
+        "association.site_internet"
+      ],
+      "routing_hint": "association_informations",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-21257_seg_0002",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Médicament sur lequel porte cette contribution",
+      "template_detecte": "CONTRIB",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "Médicament sur lequel porte cette contribution",
+      "expected_fields": [
+        "medicament.nom_commercial",
+        "medicament.dci",
+        "indication.libelle",
+        "indication.evaluation_type"
+      ],
+      "routing_hint": "medicament_indication",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-21257_seg_0003",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "1.1. Impacts de la maladie sur la qualité de vie",
+      "template_detecte": "CONTRIB",
+      "page_start": 7,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": 15000,
+      "heading_text": "1.1.1 Impacts de la maladie sur les patients et proches-aidants",
+      "expected_fields": [
+        "impacts_maladie.description_impacts_patients",
+        "impacts_maladie.symptomes_principaux",
+        "impacts_maladie.impacts_proches_aidants"
+      ],
+      "routing_hint": "impacts_maladie_patients_aidants",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21257_seg_0004",
+      "section_label_normalise": "TRAITEMENTS_ACTUELS",
+      "section_label_brut": "1.2. Les traitements actuellement disponibles",
+      "template_detecte": "CONTRIB",
+      "page_start": 11,
+      "page_end": 13,
+      "char_start": 0,
+      "char_end": 6500,
+      "heading_text": "1.2. Les traitements actuellement disponibles (en dehors du médicament évalué)",
+      "expected_fields": [
+        "traitements_actuels.traitements_disponibles",
+        "traitements_actuels.avantages",
+        "traitements_actuels.inconvenients",
+        "traitements_actuels.besoins_non_couverts"
+      ],
+      "routing_hint": "traitements_actuels",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-21257_seg_0005",
+      "section_label_normalise": "EVALUATION_MEDICAMENT",
+      "section_label_brut": "1.3. Le médicament évalué",
+      "template_detecte": "CONTRIB",
+      "page_start": 13,
+      "page_end": 17,
+      "char_start": 0,
+      "char_end": 13000,
+      "heading_text": "1.3. Le médicament évalué - expériences et attentes",
+      "expected_fields": [
+        "evaluation_medicament.experience_avec_medicament",
+        "evaluation_medicament.avantages_constates",
+        "evaluation_medicament.inconvenients_constates",
+        "evaluation_medicament.attentes_principales",
+        "evaluation_medicament.craintes_principales",
+        "indication_demandee.indication_adequate",
+        "indication_demandee.commentaires"
+      ],
+      "routing_hint": "evaluation_medicament",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21257_seg_0006",
+      "section_label_normalise": "DEMANDE_AUDITION",
+      "section_label_brut": "3. Questionnaire – Partie C : Demande d’audition",
+      "template_detecte": "CONTRIB",
+      "page_start": 18,
+      "page_end": 18,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Demande d'audition",
+      "expected_fields": [
+        "demande_audition"
+      ],
+      "routing_hint": "demande_audition",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-21257_seg_0007",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "4. Questionnaire – Partie D : Synthèse",
+      "template_detecte": "CONTRIB",
+      "page_start": 19,
+      "page_end": 19,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "Synthèse de la contribution",
+      "expected_fields": [
+        "position_association.position_generale",
+        "position_association.justification",
+        "position_association.arguments_principaux",
+        "synthese_contribution"
+      ],
+      "routing_hint": "synthese_contribution",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21257_seg_0008",
+      "section_label_normalise": "METHODES",
+      "section_label_brut": "6. Questionnaire – Partie F : Méthodes",
+      "template_detecte": "CONTRIB",
+      "page_start": 21,
+      "page_end": 22,
+      "char_start": 0,
+      "char_end": 5000,
+      "heading_text": "Méthodes utilisées pour renseigner ce questionnaire",
+      "expected_fields": [
+        "methodologie.methode_recueil",
+        "methodologie.description_methode",
+        "methodologie.nb_patients_consultes",
+        "methodologie.temps_redaction_heures"
+      ],
+      "routing_hint": "methodologie",
+      "label_confidence": 0.94
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21257",
+      "Num_avis": "CT-21257",
+      "produit_nom": "BUCCOLAM",
+      "dci": "midazolam",
+      "type_avis": "Avis sur les médicaments",
+      "type_avis_enum": "Extension_indication",
+      "forme": "solution buccale",
+      "dosage": "10 mg",
+      "indication": "Traitement des crises convulsives aiguës prolongées chez les adultes",
+      "classe_ATC": "N05CD08",
+      "pathologie": "Épilepsie",
+      "maladie_rare": false,
+      "ligne_traitement": "1ère intention",
+      "sous_groupe_population": "Adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Neurologie",
+      "aire_therapeutique_niveau_2": "Epilepsie",
+      "aire_therapeutique_niveau_3": "Traitement des crises convulsives aiguës prolongées",
+      "source_aire_therapeutique": "Texte avis page 4",
+      "design_etude": "Pharmacocinétique comparative et modélisation populationnelle ; extrapolation pédiatrie-adulte.",
+      "niveau_preuve_brut": "Données cliniques limitées chez l’adulte, étude pharmacocinétique, données pédiatriques extrapolées.",
+      "niveau_preuve_interprete": "Observationnel_retrospectif",
+      "besoin_medical_brut": "Le besoin médical est donc actuellement partiellement couvert dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Neurologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "10 ans et plus",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "BUCCOLAM a déjà été évalué par la Commission dans la population pédiatrique et a obtenu un SMR important avec ASMR mineure (IV). Le renouvellement d'inscription en 2017 a confirmé le SMR important.",
+      "historique_ASMR_comparateurs": "ASMR IV lors de l’évaluation pédiatrique en 2012, confirmée en 2017.",
+      "concurrence_therapeutique_recente": "Aucun médicament buccal pour adultes avec AMM spécifique ; benzodiazépines injectables ou rectales sont alternatives.",
+      "vote_unanimite": true,
+      "nb_votants": 16,
+      "nb_voix_pour": 16,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2025-09-02",
+      "transcription_textuelle": "Transcription complète des débats sur extension indication BUCCOLAM 10 mg chez l’adulte.",
+      "extraits_arguments": [
+        "Avis favorable au remboursement dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+        "BUCCOLAM est une alternative en première intention aux autres benzodiazépines dans cette indication.",
+        "La Commission note que BUCCOLAM n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+        "Le profil de tolérance chez l’adulte est considéré identique à celui des enfants.",
+        "Le besoin médical est partiellement couvert, notamment du fait de l’absence de forme buccale autorisée pour adultes.",
+        "Population cible estimée à 345 000 patients adultes épileptiques."
+      ],
+      "gravite_patho": "Les crises épileptiques sont des symptômes hétérogènes ; les crises prolongées peuvent engager le pronostic vital, notamment l’état de mal épileptique.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes atteints de crises convulsives aiguës prolongées",
+      "pertinence_concurrence_therapeutique": "Les benzodiazépines injectables et rectales sont disponibles mais la forme buccale propose une meilleure administration ambulatoire et préhospitalière.",
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • BUC",
+          "t": "Avis favorable au remboursement dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 8,
+          "s": "Le besoin",
+          "t": "Le besoin médical est donc actuellement partiellement couvert dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 17,
+          "s": "Cette étud",
+          "t": "La population cible est estimée à 345 000 patients.",
+          "m": "rule",
+          "c": 0.92
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 4,
+          "s": "La CT a déjà évalué",
+          "t": "La CT a déjà évalué BUCCOLAM dans cette même indication pédiatrique avec SMR important, ASMR mineure (IV).",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 6,
+          "s": "Les crises partielles",
+          "t": "Les crises prolongées et l'état de mal épileptique peuvent engager le pronostic vital.",
+          "m": "rule",
+          "c": 0.93
+        }
+      ],
+      "ligne_traitement_enum": "Non renseigné"
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-21257_essai_LESVIBUCCO",
+      "evaluation_id": "CT-21257",
+      "essai_nom": "LESVIBUCCO/23/BQ-3",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_retrospectif",
+      "design_enum": "Observationnel_retrospectif",
+      "population_cible": "Adultes sains à jeun",
+      "comparateur_utilise": "Midazolam IM (HYPNOVEL)",
+      "nb_patient_traitement": 22,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Bioéquivalence non établie entre dose buccale de 15 mg et IM 10 mg.",
+      "QoL_flag": false,
+      "niveau_preuve": "Observationnel",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non renseigné",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": false,
+      "magnitude_effet_categorie": "Non_significatif",
+      "maturite_pct": null,
+      "nb_patients_inclus": "22",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 9,
+          "s": "L’évaluation",
+          "t": "une étude de biodisponibilité relative (LESVIBUCCO/23/BQ-3 – EU trial : 2023-504903-10-00 - non publiée)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-21257_essai_01",
+      "evaluation_id": "CT-21257",
+      "essai_nom": "Étude clinique adulte divers",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_retrospectif",
+      "design_enum": "Observationnel_retrospectif",
+      "population_cible": "Adultes épileptiques atteints de crises convulsives prolongées",
+      "comparateur_utilise": "Diazépam rectal, Lorazépam IV",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Données extrapolées de la population pédiatrique et études non randomisées, absence d'études comparatives en adulte.",
+      "QoL_flag": false,
+      "niveau_preuve": "Non renseigné",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non renseigné",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": false,
+      "magnitude_effet_categorie": "Non_significatif",
+      "maturite_pct": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": []
+    }
+  ],
+  "Critères_Jugement": [],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-21257_essai_LESVIBUCCO_tol",
+      "evaluation_id": "CT-21257",
+      "essai_id": "CT-21257_essai_LESVIBUCCO",
+      "EI_graves": "Les principaux effets indésirables rapportés sont ceux typiques des benzodiazépines: somnolence, hypotonie, hypotension, dépression respiratoire, nausées et vomissements.",
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Somnolence",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Dépression respiratoire",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 5.0,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Hypotonie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Hypotension",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Nausées et vomissements",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "ANSM",
+          "date_signal": "2018-01",
+          "description": "Avertissement sur risque d’inhalation/ingestion du capuchon de seringues pré-remplies",
+          "mesures_prises": "Rappel de lots, carnet de suivi des crises, guide d’administration avec instructions.",
+          "impact_evaluation": "Pas de modification du profil de tolérance",
+          "evidence": [
+            {
+              "field": "signal_securite_flag",
+              "f": "F1",
+              "p": 13,
+              "s": "Depuis la",
+              "t": "En janvier 2018, lettre aux professionnels de santé diffusée pour avertir d’un défaut du capuchon de seringues pré-remplies.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents": "Somnolence, dépression respiratoire (jusqu'à 5%), hypotonie, hypotension, nausées et vomissements sont les EI fréquents signalés.",
+      "deces": "Aucun décès lié au médicament rapporté au cours de la période de pharmacovigilance analysée.",
+      "signal_securite": "Signal de risque d’inhalation/ingestion capuchon seringues pré-remplies identifié par ANSM, mesures de minimisation déployées.",
+      "signal_ansm_flag": true,
+      "evidence": [
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 11,
+          "s": "LEs données",
+          "t": "Les principaux effets indésirables du produit sont ceux des benzodiazépines : somnolence, hypotonie, hypotension, dépression respiratoire, nausées et vomissements.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "EI_frequents_detailles.hazards",
+          "f": "F1",
+          "p": 11,
+          "s": "Le profil",
+          "t": "Une dépression respiratoire survient à une fréquence allant jusqu’à 5 %",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "signal_securite_flag",
+          "f": "F1",
+          "p": 13,
+          "s": "Depuis la",
+          "t": "En janvier 2018, lettre aux professionnels de santé a été diffusée concernant un éventuel défaut des seringues.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21257_compHAS_01",
+      "evaluation_id": "CT-21257",
+      "nom_comparateur_HAS": "Diazépam injectable IV ou intrarectal",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Traitement_actif",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "Les autres ",
+          "t": "Les autres benzodiazépines recommandées pour l’adulte sont le diazépam injectable IV ou par voie rectale.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21257_compHAS_02",
+      "evaluation_id": "CT-21257",
+      "nom_comparateur_HAS": "Clonazépam injectable IV ou IM",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Traitement_actif",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "Les autres ",
+          "t": "Clonazépam injectable IV ou IM est également recommandé en première intention.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21257_compHAS_03",
+      "evaluation_id": "CT-21257",
+      "nom_comparateur_HAS": "Midazolam injectable IV ou IM",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Traitement_actif",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "Les autres ",
+          "t": "Les génériques à base de midazolam injectable IV ou IM sont des comparateurs pertinents.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21257_arg_CT_01",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "L’efficacité de BUCCOLAM est extrapolée de la population pédiatrique où elle est démontrée sur le traitement des crises convulsives aiguës prolongées.",
+      "extrait_textuel": "L’efficacité chez l’adulte repose sur l’extrapolation des résultats d’efficacité observés dans la population pédiatrique et des données de pharmacocinétique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Pages 1-10",
+      "section_source": "Synthèse de l'avis",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "Synthèse",
+          "t": "L’efficacité chez l’adulte reposant sur l’extrapolation des résultats d’efficacité observés dans la population pédiatrique...",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_02",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "BUCCOLAM est une alternative en première intention aux benzodiazépines injectables pour les crises convulsives aiguës prolongées chez l’adulte.",
+      "extrait_textuel": "La spécialité BUCCOLAM (midazolam) 10 mg solution buccale est une alternative en première intention aux autres benzodiazépines disponibles dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 1",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "La spécialité BUCCOLAM (midazolam) 10 mg solution buccale est une alternative en première intention aux autres benzodiazépines disponibles...",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_03",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance chez l’adulte est considéré comme similaire à celui des enfants, avec des effets indésirables typiques des benzodiazépines.",
+      "extrait_textuel": "Le profil de tolérance chez les adultes a été considéré comme identique à celui observé chez les enfants.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 2",
+      "section_source": "Profil de tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "Synthèse",
+          "t": "Le profil de tolérance connu du midazolam, celui chez les adultes ayant été considéré comme étant identique à celui observé chez les enfants.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_04",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le besoin médical est partiellement couvert : absence de forme buccale autorisée chez adulte pour crise convulsive prolongée justifie l’intérêt du médicament.",
+      "extrait_textuel": "Le besoin médical est partiellement couvert dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 8",
+      "section_source": "Couverture du besoin médical",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Couverture",
+          "t": "Le besoin médical est donc actuellement partiellement couvert dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_05",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Service Médical Rendu",
+      "direction_argument": "Favorable",
+      "description": "La Commission juge le service médical rendu important dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+      "extrait_textuel": "la Commission considère que le service médical rendu par BUCCOLAM (midazolam) 10 mg, solution buccale, est important dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 15",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 15,
+          "s": "la Commission",
+          "t": "la Commission considère que le service médical rendu par BUCCOLAM (midazolam) 10 mg, solution buccale, est important",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_06",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Amélioration_SMR",
+      "direction_argument": "Défavorable",
+      "description": "BUCCOLAM n'apporte pas d'amélioration du service médical rendu (ASMR V) du fait de l'absence de données comparatives chez l'adulte et efficacité extrapolée pédiatrique.",
+      "extrait_textuel": "la Commission considère que BUCCOLAM (midazolam) 10 mg, solution buccale n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique actuelle.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 2",
+      "section_source": "Amélioration du service médical rendu",
+      "evidence": [
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 2,
+          "s": "Compte tenu",
+          "t": "la Commission considère que BUCCOLAM (midazolam) 10 mg, solution buccale n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_07",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Aucun nouveau signal de tolérance n’a été rapporté dans les PSUR récents entre 2019 et 2022 ; le profil reste conforme aux benzodiazépines classiques.",
+      "extrait_textuel": "Le laboratoire a transmis les informations issues des PSUR couvrant la période du 10 septembre 2019 au 09 septembre 2022. Aucun nouveau signal n’a été rapporté durant cette période.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 13",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "Tolérance",
+          "f": "F1",
+          "p": 13,
+          "s": "Le laboratoire",
+          "t": "Le laboratoire a transmis les informations issues des PSUR couvrant la période du 10 septembre 2019 au 09 septembre 2022. Aucun nouveau signal n’a été rapporté durant cette période.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CT_08",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Favorable",
+      "description": "La forme buccale de BUCCOLAM facilite l'administration en ambulatoire comparé aux formes injectables de benzodiazépines pour le traitement d'urgence.",
+      "extrait_textuel": "L’administration par voie buccale étant plus appropriée au traitement ambulatoire par rapport aux voies d’administration des autres benzodiazépines disponibles.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 2",
+      "section_source": "Amélioration du service médical rendu",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "Compte tenu",
+          "t": "de l’administration par voie buccale étant plus appropriée au traitement ambulatoire par rapport aux voies d’administration des autres benzodiazépines disponibles.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_01",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "L'association Alliance syndrome de Dravet souligne l'importance du besoin médical en épilepsie sévère avec crises prolongées, fréquentes et pharmaco-résistantes, impactant patients et aidants.",
+      "extrait_textuel": "L’impact sur les patients c’est une épilepsie sévère, pharmacorésistante, crises fréquentes, prolongées et imprévisibles nécessitant des traitements d’urgence difficiles à administrer.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Mme PICKAERT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "C’est une",
+          "t": "L’impact sur les patients c’est une épilepsie sévère, pharmacorésistante, crises fréquentes, prolongées et imprévisibles qui nécessitent des traitements d’urgence parfois difficiles à administrer",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_02",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Favorable",
+      "description": "BUCCOLAM offre un mode d’administration buccal plus confortable et facile que la voie intrarectale, utile en situation d’urgence, favorisant récupération rapide.",
+      "extrait_textuel": "Mode d’administration buccal plus confortable et adapté que la voie intrarectale notamment en cas d’urgence dans les lieux publics ; demi-vie plus courte que VALIUM intrarectal.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Mme PICKAERT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Les avantages",
+          "t": "Mode d’administration buccal plus confortable, demi-vie plus courte, moins de somnolence avec effets secondaires atténués par rapport au VALIUM intrarectal",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_03",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Modéré",
+      "description": "Usage pédiatrique établi, mais données cliniques adultes très limitées, absence d’essais cliniques randomisés à l’adulte, extrapolation basée sur pharmacocinétique.",
+      "extrait_textuel": "Les études cliniques chez l’adulte sont limitées, principalement pharmacocinétique et extrapolation des données pédiatriques ; absence d’études randomisées adultes.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Dr TRINH DUC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Comme on",
+          "t": "Le développement est atypique, pas d’études cliniques adultes, pharmacocinétique limitée, extrapolation pédiatrie-adulte",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_04",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Tolérance du midazolam similaire à celle du diazepam, dépression respiratoire possible ; mises en garde ajoutées pour sujets à risque (plus de 60 ans, insuffisants respiratoires).",
+      "extrait_textuel": "Tolérance du midazolam buccal similaire à diazepam, mention de dépression respiratoire ; ajout de mises en garde pour patients âgés et insuffisants respiratoires.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Cheffe de projet",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Le profil",
+          "t": "Le profil de tolérance est bien connu, dépression respiratoire possible ; rubriques 4.4 RCP ajout mises en garde",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_05",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le besoin d’un traitement d’urgence plus facile à administrer en ambulatoire est souligné, en particulier dans les structures psychiatriques où l’usage intrarectal est difficile.",
+      "extrait_textuel": "Besoin important dans établissements psychiatriques pour éviter recours urgences, voie buccale préférée car plus facile que intrarectal ou injections IV/IM stressantes.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Dr ETIENNE",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Merci de votre",
+          "t": "Prise en charge des crises fréquentes en établissement psychiatrique où l’usage intrarectal fatigant et stressant, voie buccale plus utilisée",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_06",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Mitigé",
+      "description": "Débat sur efficacité et praticité entre voies buccale et intranasale ; voie intranasale plus intuitive mais formulation non développée officiellement.",
+      "extrait_textuel": "Débat sur administration buccale vs intranasale : buccale facile, bouche fermée, mais intranasale plus intuitive ; formulation intranasale non développée en laboratoire.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Dr BLONDON et Dr TRINH DUC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "Oui, effectivement",
+          "t": "Voie intranasale est plus intuitive mais pas de formulation commerciale ; buccale administration bonne bouche fermée",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_07",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Discussion sur place clinique limitée chez l’adulte compte tenu de la nature des crises et des alternatives disponibles.",
+      "extrait_textuel": "Place de BUCCOLAM limitée chez adultes par nature crises, fréquence, alternatives existantes ; peu d’effet de classe attendu.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Dr TRINH DUC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Cela m’interroge",
+          "t": "Place assez limitée chez adultes, pharmacocinétique seule donnée adulte, peu d’effet différenciateur réel",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_08",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Votes_Commission_Transcription",
+      "direction_argument": "Favorable",
+      "description": "Vote à l’unanimité pour SMR important, ASMR V, pas d’ISP pour BUCCOLAM chez l’adulte.",
+      "extrait_textuel": "Vous étiez 16 votants et vous avez voté à l’unanimité pour pas d’ISP, SMR important et ASMR V.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Président CLANET",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 10,
+          "s": "Il est proc",
+          "t": "Vous étiez 16 votants et vous avez voté à l’unanimité pour pas d’ISP, SMR important et ASMR V.",
+          "m": "rule",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_09",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Décision",
+      "direction_argument": "Neutre",
+      "description": "La Commission a voté à l’unanimité pour le maintien de l’ASMR V et du périmètre d’indication conforme à l’AMM.",
+      "extrait_textuel": "Vous étiez 18 votants et c'est un maintien à l'unanimité.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Mme LUZIO",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 18,
+          "s": "Mme LUZIO",
+          "t": "Vous étiez 18 votants et c'est un maintien à l'unanimité.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CONTRIB_1",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "L’association Alliance Syndrome de Dravet souligne les difficultés majeures du vécu des patients face à une épilepsie pharmaco-résistante, un handicap lourd et des crises convulsives prolongées fréquentes, avec un besoin non couvert de traitements efficaces et mieux adaptés.",
+      "extrait_textuel": "Le syndrome de Dravet est une maladie génétique rare caractérisée par une épilepsie sévère pharmaco-résistante, plusieurs crises prolongées imprévisibles générant un handicap lourd et risque de décès prématuré.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Alliance Syndrome de Dravet",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 10,
+          "s": "impacts",
+          "t": "Le syndrome de Dravet est une maladie génétique rare caractérisée par une épilepsie sévère pharmaco-résistante...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CONTRIB_2",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Traitement",
+      "direction_argument": "Favorable",
+      "description": "Le Buccolam, administré par voie buccale, est perçu comme un traitement d’urgence plus adapté que l’administration intra-rectale du Valium, notamment en raison de sa facilité d’usage et de sa demi-vie plus courte permettant une récupération plus rapide des patients.",
+      "extrait_textuel": "Le mode d'administration (buccal vs intra-rectal) est plus confortable, tant pour la personne malade que pour celle qui administre le traitement.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Alliance Syndrome de Dravet",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "evaluation_medicament.avantages_constates",
+          "f": "F1",
+          "p": 14,
+          "s": "avantages",
+          "t": "Le mode d'administration (buccal vs intra-rectal) est plus confortable, tant pour la personne malade que pour celle qui administre le traitement...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CONTRIB_3",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Traitement",
+      "direction_argument": "Défavorable",
+      "description": "L’administration intra-rectale du Valium présente des contraintes importantes limitant l’usage hors milieu hospitalier et générant une somnolence importante impactant la qualité de vie des patients et de leurs aidants.",
+      "extrait_textuel": "L'administration du Valium par voie intra-rectale présente des contraintes importantes... peut entraîner une somnolence importante, affectant la vigilance et la qualité de vie du patient.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Alliance Syndrome de Dravet",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "traitements_actuels.inconvenients",
+          "f": "F1",
+          "p": 12,
+          "s": "inconvenients",
+          "t": "L'administration du Valium par voie intra-rectale présente des contraintes importantes... somnolence majeure",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CONTRIB_4",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "L’association souligne le besoin urgent d’un traitement d’urgence efficace, simple à administrer dans toutes circonstances, avec une action rapide et une récupération rapide afin d’améliorer la qualité de vie des patients et des aidants.",
+      "extrait_textuel": "Les besoins thérapeutiques non couverts les plus importants sont : un traitement d’urgence efficace, facile à administrer, avec une action rapide et une récupération optimale pour le patient.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Alliance Syndrome de Dravet",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "traitements_actuels.besoins_non_couverts",
+          "f": "F1",
+          "p": 21,
+          "s": "besoins",
+          "t": "Les besoins thérapeutiques non couverts les plus importants sont : un traitement d’urgence efficace, facile à administrer...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_CONTRIB_5",
+      "evaluation_id": "CT-21257",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Position_association",
+      "direction_argument": "Favorable",
+      "description": "L’association souhaite être auditionnée et son représentant a une connaissance globale des besoins fondamentaux des familles, portant la voix des patients et aidants en faveur d’une prise en charge adaptée.",
+      "extrait_textuel": "Souhaitez-vous être auditionné ? Oui. Anne-Emmanuel est maman et chargée de mission de l’association. Elle a une vue globale des demandes et des besoins des familles.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Anne-Emmanuel Leiber",
+      "moment_debat": null,
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "demande_audition",
+          "f": "F1",
+          "p": 20,
+          "s": "audition",
+          "t": "Souhaitez-vous être auditionné ? Oui. Anne-Emmanuel est maman et chargée de mission...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21257_ctx",
+    "evaluation_id": "CT-21257",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2011-09-05",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Italie",
+      "Espagne",
+      "Belgique",
+      "Allemagne",
+      "Royaume-Uni"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Royaume-Uni",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 2,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "2025-09-02",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21257",
+    "texte_brut": "BUCCOLAM 10 mg solution buccale - Avis HAS Septembre 2025 ..."
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21257_smrasmr_01",
+      "evaluation_id": "CT-21257",
+      "indication_precise": "Traitement des crises convulsives aiguës prolongées chez les adultes",
+      "smr": "La Commission considère que le service médical rendu par BUCCOLAM 10 mg, solution buccale, est important dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que BUCCOLAM n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+      "asmr_enum": "V",
+      "smr_revendique": "ASMR IV en pédiatrie",
+      "asmr_revendique": "Non_renseigné",
+      "justification_decisionnelle": "L’efficacité extrapolée de la population pédiatrique, profil de tolérance similaire chez adulte, absence d’études comparatives chez adulte, administration buccale facilitante mais sans preuve formelle d'amélioration des soins, absence d’impact supplémentaire sur la santé publique.",
+      "population_cible_indication": "Adultes avec crises convulsives aiguës prolongées",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": [
+        "Diazépam injectable IV ou intrarectal",
+        "Clonazépam injectable IV ou IM",
+        "Midazolam injectable IV ou IM"
+      ],
+      "comparateur_id_HAS": [
+        "CT-21257_compHAS_01",
+        "CT-21257_compHAS_02",
+        "CT-21257_compHAS_03"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 15,
+          "s": "la Commiss",
+          "t": "La Commission considère que le service médical rendu par BUCCOLAM 10 mg, solution buccale, est important dans le traitement des crises convulsives aiguës prolongées chez les adultes.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 2,
+          "s": "Compte te",
+          "t": "la Commission considère que BUCCOLAM 10 mg, solution buccale n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "asmr_revendique_enum": "Non renseigné"
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-21257_poso_01",
+      "evaluation_id": "CT-21257",
+      "smr_asmr_id": "CT-21257_smrasmr_01",
+      "indication": "Traitement des crises convulsives aiguës prolongées chez les adultes",
+      "population_cible": "Adultes avec diagnostic d'épilepsie confirmé",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose habituelle chez l’adulte : 10 mg une seule dose buccale. Administration uniquement après diagnostic d’épilepsie et pas en répétition sans avis médical. Adultes >60 ans et patients à risque respiratoire doivent être prudents.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "BUCCOLAM ",
+          "t": "La dose habituelle indiquée chez l’adulte est de 10 mg. Les accompagnants ne doivent administrer qu’une seule dose de midazolam.",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "Il convient",
+          "t": "Chez les patients à partir de 60 ans et les patients à haut risque, la prudence est requise et des doses plus faibles peuvent être nécessaires.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-21257_event_AMM_01",
+      "evaluation_id": "CT-21257",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2011-09-05",
+      "detail_brut": "Date initiale AMM 05/09/2011 (usage pédiatrique spécifique PUMA).",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Date initial",
+          "t": "Date initiale (procédure centralisée) : 05/09/2011",
+          "m": "rule",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21257_event_EXT_IND_01",
+      "evaluation_id": "CT-21257",
+      "event_type": "EXTENSION_INDICATION_ADOPTE",
+      "event_date": "2024-10-21",
+      "detail_brut": "Extension d’indication chez l’adulte approuvée le 21/10/2024.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Date des",
+          "t": "Date des rectificatifs et teneur : 21/10/2024 : extension d’indication chez adulte",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21257_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-21257",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2025-09-02",
+      "detail_brut": "Adopté par la Commission de la transparence le 2 septembre 2025.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté p",
+          "t": "Adopté par la Commission de la transparence le 2 septembre 2025",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21257_event_AUDITION_01",
+      "evaluation_id": "CT-21257",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2025-09-02",
+      "detail_brut": "Date d'audition du laboratoire et adoption de l’avis définitif le 2 septembre 2025.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Date d'au",
+          "t": "Date d’audition du laboratoire et d’adoption de l’avis définitif : 2 septembre 2025",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21257_event_TRANS_01",
+      "evaluation_id": "CT-21257",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2025-06-25",
+      "detail_brut": "Séance Commission de la Transparence sur BUCCOLAM extension indication adulte",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "Timeline_Evenements",
+          "f": "F1",
+          "p": 1,
+          "s": "Commission",
+          "t": "Mercredi 25 juin 2025 Commission de Transparence Examen extension d’indication BUCCOLAM",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21257",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": 0,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-21257",
+    "is_orphan": false,
+    "classe_ATC_l2": "N05CD",
+    "aire_therapeutique": "Neurologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 2,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2025,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": []
+  },
+  "Relations": [],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-21257",
+    "contribution_presente": false,
+    "contribution_id": "CT-21257_contrib_1",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  }
+}

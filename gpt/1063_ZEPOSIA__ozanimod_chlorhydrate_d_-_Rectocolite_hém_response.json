@@ -1,0 +1,1899 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19676",
+  "evaluation_id": "CT-19676",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19676.pdf",
+        "type": "CT",
+        "page_count": 63
+      },
+      "F2": {
+        "file_name": "TRANSCRIPTION_CT-19676_ZEPOSIA_Observations_Extension_indication.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 6
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19676_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l'avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 14,
+      "char_start": 0,
+      "char_end": 15000,
+      "heading_text": "Résumé et contexte",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Comparateurs_Essai",
+        "Tolérance",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Essais puis efficacité puis tolérance",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19676_seg_02",
+      "section_label_normalise": "ESSAIS",
+      "section_label_brut": "Etudes cliniques",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 44,
+      "char_start": 15001,
+      "char_end": 52000,
+      "heading_text": "Présentation des essais cliniques TRUENORTH et TOUCHSTONE",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Tolérance",
+        "Comparateurs_Essai"
+      ],
+      "routing_hint": "Efficacité, tolérance, critères jugements",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19676_seg_03",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 42,
+      "page_end": 54,
+      "char_start": 52001,
+      "char_end": 63000,
+      "heading_text": "Données de tolérance issues des études cliniques et PGR",
+      "expected_fields": [
+        "Tolérance"
+      ],
+      "routing_hint": "Synthèse tolérance",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19676_seg_04",
+      "section_label_normalise": "SMR_ASMR_PAR_INDICATION",
+      "section_label_brut": "Conclusions Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 59,
+      "page_end": 61,
+      "char_start": 63001,
+      "char_end": 65000,
+      "heading_text": "Conclusions globales SMR / ASMR",
+      "expected_fields": [
+        "SMR_ASMR"
+      ],
+      "routing_hint": "Conclusions administration",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19676_seg_05",
+      "section_label_normalise": "POSOLOGIE_PAR_INDICATION",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 4000,
+      "char_end": 9000,
+      "heading_text": "Posologie détaillée",
+      "expected_fields": [
+        "Posologie"
+      ],
+      "routing_hint": "Posologie extraction",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19676_seg_06",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion et argumentaire",
+      "template_detecte": "CT_modern",
+      "page_start": 55,
+      "page_end": 59,
+      "char_start": 65001,
+      "char_end": 70000,
+      "heading_text": "Débat et arguments Commission de la Transparence",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Arguments extraits",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19676_seg_07",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 61,
+      "page_end": 63,
+      "char_start": 70001,
+      "char_end": 75000,
+      "heading_text": "Données réglementaires, AMM, codex",
+      "expected_fields": [
+        "INFORMATIONS_ADMINISTRATIVES"
+      ],
+      "routing_hint": "Données administratives",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT19676_seg01",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "ZEPOSIA - Observations – Extension d’indication",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 8300,
+      "heading_text": "Discussion et débats commission"
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "ZEPOSIA",
+      "dci": "ozanimod",
+      "titulaire_amm": "Celgene SAS",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "gélule",
+          "forme_pharma_enum": "Capsule_gélule",
+          "dosage_concentration": "0,23 mg + 0,46 mg",
+          "code_cip13": "34009 302 091 6 5"
+        },
+        {
+          "forme_pharmaceutique": "gélule",
+          "forme_pharma_enum": "Capsule_gélule",
+          "dosage_concentration": "0,92 mg",
+          "code_cip13": "34009 302 082 9 8"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ZEPOSIA ",
+          "t": "ozanimod ZEPOSIA 0,23 mg + 0,46 mg, gélule ZEPOSIA 0,92 mg, gélule",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 61,
+          "s": "Celgene ",
+          "t": "Celgene SAS",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19676",
+      "Num_avis": "CT-19676",
+      "produit_nom": "ZEPOSIA",
+      "dci": "ozanimod",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "gélule",
+      "dosage": "0,92 mg",
+      "indication": "Traitement de la rectocolite hémorragique active modérée à sévère chez les patients adultes ayant présenté une réponse inadéquate, une perte de réponse ou une intolérance à un traitement conventionnel ou à un agent biologique",
+      "classe_ATC": "L04AA38",
+      "pathologie": "Rectocolite hémorragique",
+      "maladie_rare": false,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Rectocolite hémorragique active modérée à sévère",
+      "source_aire_therapeutique": "Déduit ATC L04AA38",
+      "design_etude": "Étude de phase III, de supériorité, contrôlée, comparative versus placebo, randomisée, double-aveugle, groupe parallèle et multicentrique",
+      "niveau_preuve_brut": "Phase III randomisée contrôlée contre placebo",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Insuffisant pour justifier d’une prise en charge par la solidarité nationale dans cette extension d’indication.",
+      "besoin_medical_interprete": "Non_couvert",
+      "gravite_patho": "La RCH est une maladie inflammatoire chronique intestinale qui entraîne une dégradation marquée de la qualité de vie et expose à des complications graves.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes ayant une forme active modérée à sévère de rectocolite hémorragique",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "ligne_traitement": "Deuxième ligne après échec des traitements conventionnels",
+      "ligne_traitement_enum": "2L",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "ZEPOSIA a été évalué dans le traitement de la sclérose en plaques récurrente-rémittente mais n'a pas montré d'amélioration du service médical rendu pour cette indication.",
+      "historique_ASMR_comparateurs": "ZEPOSIA n'a pas démontré d'amélioration du service médical rendu par rapport aux comparateurs cliniquement pertinents dans la RCH.",
+      "concurrence_therapeutique_recente": "Il existe des alternatives cliniquement pertinentes comme les anti-TNFα, védolizumab, tofacitinib et ustekinumab.",
+      "vote_unanimite": false,
+      "nb_votants": 14,
+      "nb_voix_pour": 3,
+      "nb_voix_contre": 11,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-06-29",
+      "evidence": [
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR",
+          "t": "Insuffisant pour justifier d’une prise en charge par la solidarité nationale dans cette extension d’indication.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR",
+          "t": "Insuffisant pour justifier d’une prise en charge par la solidarité nationale dans cette extension d’indication.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 2,
+          "s": "Place de ",
+          "t": "En 2ème ligne du traitement d’une RCH active, modérée à sévère, chez les adultes ayant eu une réponse inadéquate au traitement conventionnel",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement_enum",
+          "f": "F1",
+          "p": 2,
+          "s": "Place de ",
+          "t": "En 2ème ligne du traitement d’une RCH active, modérée à sévère, chez les adultes ayant eu une réponse inadéquate au traitement conventionnel",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 60,
+          "s": "Ces spécial",
+          "t": "la Commission considère que le service médical rendu est insuffisant dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 60,
+          "s": "Ces spécial",
+          "t": "ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "transcription_textuelle": "Transcription complète disponible mentionnant débats et échanges sur le dossier ZEPOSIA lors de la CT du 29 juin 2022",
+      "extraits_arguments": [
+        "Le besoin médical est insuffisamment couvert en 3ème ligne dans la RCH",
+        "Le dossier clinique présenté ne démontre pas de place démontrée en stratégie thérapeutique",
+        "STELARA bénéficie d’un dossier plus robuste avec un SMR important octroyé",
+        "Ozanimod (ZEPOSIA) ne montre pas un rapport efficacité/effets indésirables établi en 3ème ligne",
+        "Les membres soulignent l’absence de comparaison directe et un manque de démonstration probante",
+        "Le vote a été unanime pour maintien de l'avis défavorable"
+      ],
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents incluent anti-TNF, védolizumab, ustékinumab, tofacitinib"
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "evaluation_id": "CT-19676",
+      "essai_nom": "TRUENORTH",
+      "nct_number": "NCT02435992",
+      "design": "Phase_III_RCT_DB",
+      "population_cible": "Patients adultes atteints de rectocolite hémorragique active modérée à sévère",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 429,
+      "nb_patient_comparateur": 216,
+      "resultat_global": "Superiority of ozanimod over placebo demonstrated for clinical remission at week 10 induction and week 52 maintenance",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III randomisée contrôlée contre placebo",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "2:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Utilisation de corticoïdes à l'inclusion",
+        "Utilisation antérieure d'anti-TNF"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2020-03-27",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": 18,
+      "age_max_num": 75,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 80.0,
+      "qol_instruments": [
+        "EQ-5D",
+        "SF-36",
+        "WPAI"
+      ],
+      "qol_resultats_brut": "Amélioration plus importante des scores SF-36 (mentale et physique) et EQ-5D totaux à 10 semaines par rapport à l'inclusion dans le groupe ozanimod 1 mg que dans le groupe placebo.",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 2,
+      "nb_patients_inclus": "645 dans la cohorte 1, 367 dans la cohorte 2",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "mai 2019",
+      "nb_analyses_intermediaire": 1,
+      "date_analyses_intermediares_mois": [
+        "M12"
+      ],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 11,
+          "s": "référence",
+          "t": "Référence Sandborn WJ, et al. N Engl J Med 2021;385:1280-1291",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 11,
+          "s": "étude est divisée",
+          "t": "Étude de phase III, de supériorité, contrôlée, comparative versus placebo, randomisée, double-aveugle",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 17,
+          "s": "Total de 645",
+          "t": "645 patients randomisés dans la cohorte 1 : 429 dans le groupe ozanimod",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_comparateur",
+          "f": "F1",
+          "p": 17,
+          "s": "Total de 645",
+          "t": "216 dans le groupe placebo",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "maturite_donnees",
+          "f": "F1",
+          "p": 11,
+          "s": "Date d’extraction",
+          "t": "Intermédiaire (données extraites au 27/03/2020)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement_essai_enum",
+          "f": "F1",
+          "p": 2,
+          "s": "Place dans",
+          "t": "En 2ème ligne du traitement d’une RCH active, modérée à sévère, chez les adultes ayant eu une réponse inadéquate au traitement conventionnel",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19676_essai_TOUCHSTONE",
+      "evaluation_id": "CT-19676",
+      "essai_nom": "TOUCHSTONE",
+      "nct_number": "NCT01647516",
+      "design": "Phase_II_RCT",
+      "population_cible": "Patients adultes atteints de rectocolite hémorragique modérée à sévère",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 67,
+      "nb_patient_comparateur": 65,
+      "resultat_global": "Supériorité d'ozanimod 1 mg par rapport au placebo en rémission clinique à 8 semaines",
+      "QoL_flag": true,
+      "niveau_preuve": "Étude de phase II, randomisée, contrôlée, double-aveugle",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 8,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 7,
+      "phase": "II",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Utilisation antérieure d’anti-TNF"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2015-03-10",
+      "duree_suivi_prevu_mois": 8,
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": 18,
+      "age_max_num": 75,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "qol_instruments": [
+        "Score Mayo",
+        "Score Mayo à 4 composants"
+      ],
+      "qol_resultats_brut": "Supériorité d'ozanimod sur placebo en rémission clinique à la 8ème semaine.",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 1,
+      "nb_patients_inclus": "199",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "mars 2015",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 25,
+          "s": "Référence",
+          "t": "Sandborn WJ, et al. N Engl J Med 2016;374:1754-62",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 25,
+          "s": "Étude de phase II",
+          "t": "Étude de phase II, de supériorité, contrôlée versus placebo, randomisée, double-aveugle",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 27,
+          "s": "Parmi les 199",
+          "t": "67 patients dans le groupe ozanimod 1 mg",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_comparateur",
+          "f": "F1",
+          "p": 27,
+          "s": "Parmi les 199",
+          "t": "65 patients dans le groupe placebo",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19676_essai_TRUENORTH_crit_remission_clinique",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "nom_critere": "Rémission clinique (score Mayo 3 composants)",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Primaire",
+      "unite_mesure": "percentage",
+      "p_value": "p < 0,0001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "gain_absolu": "12,4 %",
+      "gain_absolu_num": 12.4,
+      "HR_RR_OR": "OR = 3,59 (IC95% [1,94 ; 6,64])",
+      "HR_RR_OR_num": 3.59,
+      "IC95": "[1,94 ; 6,64]",
+      "IC95_low_num": 1.94,
+      "IC95_high_num": 6.64,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 1",
+          "t": "p<0,0001",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19676_essai_TRUENORTH_crit_reponse_clinique",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "nom_critere": "Réponse clinique (score Mayo 3 composants)",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "unite_mesure": "percentage",
+      "p_value": "p < 0,0001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "gain_absolu": "21,9 %",
+      "gain_absolu_num": 21.9,
+      "HR_RR_OR": "OR = 2,67 (IC95% [1,86 ; 3,84])",
+      "HR_RR_OR_num": 2.67,
+      "IC95": "[1,86 ; 3,84]",
+      "IC95_low_num": 1.86,
+      "IC95_high_num": 3.84,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 2",
+          "t": "p<0,0001",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19676_essai_TRUENORTH_crit_amelioration_endoscopique",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "nom_critere": "Amélioration endoscopique",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "unite_mesure": "percentage",
+      "p_value": "p < 0,0001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "gain_absolu": "15,7 %",
+      "gain_absolu_num": 15.7,
+      "HR_RR_OR": "OR = 2,88 (IC95% [1,80 ; 4,59])",
+      "HR_RR_OR_num": 2.88,
+      "IC95": "[1,80 ; 4,59]",
+      "IC95_low_num": 1.8,
+      "IC95_high_num": 4.59,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 3",
+          "t": "p<0,0001",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19676_essai_TRUENORTH_crit_cicatrisation_mucueuse",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "nom_critere": "Cicatrisation muqueuse",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "unite_mesure": "percentage",
+      "p_value": "p < 0,001",
+      "p_value_num": 0.001,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "gain_absolu": "8,9 %",
+      "gain_absolu_num": 8.9,
+      "HR_RR_OR": "OR = 3,77 (IC95% [1,76 ; 8,07])",
+      "HR_RR_OR_num": 3.77,
+      "IC95": "[1,76 ; 8,07]",
+      "IC95_low_num": 1.76,
+      "IC95_high_num": 8.07,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 4",
+          "t": "p<0,001",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19676_essai_TRUENORTH_crit_remission_clinique_sous_groupe_non_naf",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "nom_critere": "Rémission clinique (sous-groupe patients non-naïfs de traitement biologique)",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Exploratoire",
+      "unite_mesure": "percentage",
+      "p_value": "p = 0,1947",
+      "p_value_num": 0.1947,
+      "significativite_statistique": false,
+      "significativite_clinique_interpretee": "Absente",
+      "gain_absolu": "5,4 %",
+      "gain_absolu_num": 5.4,
+      "HR_RR_OR": "OR = 2,15 (IC95% non précisé)",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 20,
+          "s": "Paragraphe 2",
+          "t": "Aucune différence significative pour la rémission clinique chez les patients non naïfs (p=0,1947)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19676_essai_TRUENORTH_tol",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "ae_total_pct": 40.1,
+      "ae_total_pct_comparateur": 38.0,
+      "sae_pct": 3.3,
+      "sae_pct_comparateur": 1.9,
+      "discontinuations_ae_pct": 3.3,
+      "discontinuations_ae_pct_comparateur": 3.2,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Poussées de RCH",
+          "grade": "3-4",
+          "incidence_pct_traitement": 0.7,
+          "incidence_pct_comparateur": 0.9,
+          "n_patients_traitement": 3,
+          "n_patients_comparateur": 2,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "Les poussées de RCH chez trois patients (0,7 %) du groupe ozanimod 1 mg et deux (0,9 %) du groupe placebo",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Céphalées",
+          "grade": "3-4",
+          "incidence_pct_traitement": 0.7,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 3,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "Les céphalées chez trois patients (0,7 %) du groupe ozanimod",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Anémie",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": 5.6,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "anémies (4,2 % et 5,6 % dans les groupes ozanimod 1 mg et placebo respectivement)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Anémie",
+          "grade": "1-2",
+          "incidence_pct_traitement": 4.2,
+          "incidence_pct_comparateur": 5.6,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "anémies (4,2 % et 5,6 % dans les groupes ozanimod 1 mg et placebo respectivement)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Rhinopharyngite",
+          "grade": "1-2",
+          "incidence_pct_traitement": 3.5,
+          "incidence_pct_comparateur": 1.4,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "rhinopharyngites (3,5 % et 1,4 % dans les groupes ozanimod 1 mg et placebo respectivement)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Céphalées",
+          "grade": "1-2",
+          "incidence_pct_traitement": 3.3,
+          "incidence_pct_comparateur": 1.9,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "céphalées (3,3 % et 1,9 % dans les groupes ozanimod 1 mg et placebo respectivement)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Nausées",
+          "grade": "1-2",
+          "incidence_pct_traitement": 2.8,
+          "incidence_pct_comparateur": 1.4,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 43,
+              "s": "tol\u0000ranc",
+              "t": "nausées (2,8 % et 1,4 % dans les groupes ozanimod 1 mg et placebo respectivement)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "ei_grade_max": "3",
+      "EI_graves": "Au cours de la phase d’induction, les EIG les plus fréquents ont été les poussées de RCH, céphalées et anémie.",
+      "EI_frequents": "Au cours de la phase d’induction, les EI fréquents ont été les anémies, rhinopharyngites, céphalées et nausées.",
+      "deces": "Aucun décès au cours de la phase d’induction.",
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "2021-10-18",
+          "description": "Infections opportunistes graves, incluant la leuco encéphalopathie multifocale progressive (LEMP) classifié comme risque important identifié",
+          "mesures_prises": "Plan de gestion des risques (PGR) incluant surveillance sur LEMP et infections opportunistes",
+          "impact_evaluation": "Prise en compte dans avis HAS",
+          "evidence": [
+            {
+              "field": "signal_securite_flag",
+              "f": "F1",
+              "p": 41,
+              "s": "PGR Ozanimod",
+              "t": "le risque « Infections opportunistes graves, incluant la leuco encéphalopathie multifocale progressive » a été reclassifié en risque important identifié",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "tolerance_id": "CT-19676_essai_TOUCHSTONE_tol",
+      "evaluation_id": "CT-19676",
+      "essai_id": "CT-19676_essai_TOUCHSTONE",
+      "ae_total_pct": 25.4,
+      "ae_total_pct_comparateur": 32.3,
+      "sae_pct": 3.0,
+      "sae_pct_comparateur": 6.2,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Poussées de RCH",
+          "grade": "3-4",
+          "incidence_pct_traitement": 3.0,
+          "incidence_pct_comparateur": 3.1,
+          "n_patients_traitement": 2,
+          "n_patients_comparateur": 2,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 46,
+              "s": "toléranc",
+              "t": "Deux cas de poussées de RCH (3 %) dans le groupe ozanimod 1 mg et 3 (4,6 %) dans le groupe placebo",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Anémie",
+          "grade": "1-2",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": 6.2,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 46,
+              "s": "toléranc",
+              "t": "Anémie 6,2 % dans le groupe placebo",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "ei_grade_max": "3",
+      "EI_graves": "Événements graves principalement les poussées de RCH.",
+      "EI_frequents": "Anémie restant un EI fréquent.",
+      "deces": "Aucun décès rapporté durant l’étude TOUCHSTONE.",
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "evidence": []
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19676_essai_TRUENORTH_comp_01",
+      "essai_id": "CT-19676_essai_TRUENORTH",
+      "nom_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "comparateur_type_enum",
+          "f": "F1",
+          "p": 11,
+          "s": "comparateur",
+          "t": "comparative versus placebo",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19676_essai_TOUCHSTONE_comp_01",
+      "essai_id": "CT-19676_essai_TOUCHSTONE",
+      "nom_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "comparateur_type_enum",
+          "f": "F1",
+          "p": 25,
+          "s": "comparateur",
+          "t": "comparative versus placebo",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19676_compHAS_01",
+      "evaluation_id": "CT-19676",
+      "nom_comparateur_HAS": "HUMIRA (adalimumab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Thérapie ciblée",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "HUMIRA ",
+          "t": "HUMIRA (adalimumab) est un anti-TNFα recommandé en 2ème ligne",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19676_compHAS_02",
+      "evaluation_id": "CT-19676",
+      "nom_comparateur_HAS": "REMICADE (infliximab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Thérapie_ciblee",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "REMICADE",
+          "t": "REMICADE (infliximab) est un anti-TNFα recommandé en 2ème ligne",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19676_compHAS_03",
+      "evaluation_id": "CT-19676",
+      "nom_comparateur_HAS": "SIMPONI (golimumab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Thérapie_ciblee",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "SIMPONI",
+          "t": "SIMPONI (golimumab) est un anti-TNFα recommandé en 2ème ligne",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19676_compHAS_04",
+      "evaluation_id": "CT-19676",
+      "nom_comparateur_HAS": "ENTYVIO (védolizumab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Thérapie_ciblee",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "ENTYVIO",
+          "t": "ENTYVIO (védolizumab) est recommandé en 2ème ligne",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19676_compHAS_05",
+      "evaluation_id": "CT-19676",
+      "nom_comparateur_HAS": "XELJANZ (tofacitinib)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Therapie_ciblee",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "XELJANZ",
+          "t": "XELJANZ (tofacitinib) doit être utilisé comme traitement de 3ème ligne",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19676_compHAS_06",
+      "evaluation_id": "CT-19676",
+      "nom_comparateur_HAS": "STELARA (ustekinumab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Therapie_ciblee",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "STELARA",
+          "t": "STELARA (ustekinumab) est recommandé en 3ème ligne",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19676_arg_CT_01",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "L'étude pivot TRUENORTH a démontré une supériorité statistiquement significative d’ozanimod 1 mg par rapport au placebo en termes de rémission clinique à 10 et 52 semaines chez des patients adultes atteints de RCH active modérée à sévère.",
+      "extrait_textuel": "La proportion de patients en rémission clinique à la semaine 10 a été de 18,4 % dans le groupe ozanimod et de 6,0 % dans le groupe placebo, avec un OR = 3,59 (p < 0,0001). À la semaine 52, cette proportion était de 37,0 % pour ozanimod versus 18,5 % pour placebo (OR = 2,76, p < 0,0001).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Pages 18-23",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 1",
+          "t": "18,4 % vs 6,0 % en rémission clinique (p<0,0001)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_CT_02",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Les critères secondaires de la phase d’induction (réponse clinique, amélioration endoscopique, cicatrisation muqueuse) ont montré des différences significatives en faveur d’ozanimod versus placebo dans l’étude TRUENORTH.",
+      "extrait_textuel": "En phase d’induction, la réponse clinique a été observée chez 47,8 % des patients sous ozanimod contre 25,9 % sous placebo, avec un p < 0,0001. L’amélioration endoscopique et la cicatrisation muqueuse étaient également significativement supérieures avec ozanimod (p < 0,0001 et p < 0,001 respectivement).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Pages 19-20",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 2",
+          "t": "p<0,0001 pour réponse clinique, amélioration endoscopique et cicatrisation",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_CT_03",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Défavorable",
+      "description": "Dans le sous-groupe des patients non-naïfs de traitement biologique, aucune différence significative n’a été observée pour la rémission clinique à 10 semaines entre ozanimod et placebo dans l’étude TRUENORTH.",
+      "extrait_textuel": "Chez les patients non-naïfs de traitement biologique, la rémission clinique à la semaine 10 n’était pas statistiquement différente entre ozanimod (10 %) et placebo (4,6 %) (p = 0,1947).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 20",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 20,
+          "s": "Sous-groupe",
+          "t": "Pas de différence significative en rémission clinique chez patients non-naïfs (p=0,1947)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_CT_04",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Défavorable",
+      "description": "Le besoin médical est insuffisamment couvert dans l'extension d'indication pour ZEPOSIA dans la RCH, notamment en 2ème et 3ème lignes de traitement.",
+      "extrait_textuel": "Insuffisant pour justifier d’une prise en charge par la solidarité nationale dans cette extension d’indication.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "SMR",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR",
+          "t": "Insuffisant pour justifier d’une prise en charge par la solidarité nationale dans cette extension d’indication.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_CT_05",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance d’ozanimod est globalement comparable à celui observé dans la sclérose en plaques, avec des EI fréquents tels que l’anémie, les rhinopharyngites, les céphalées et les nausées.",
+      "extrait_textuel": "Les effets indésirables les plus fréquemment rapportés (> 5 %) sont les anémies, rhinopharyngite, augmentation ALAT et GGT, céphalées et nausées.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Pages 43-47",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 43,
+          "s": "tolérance",
+          "t": "Les anémies, rhinopharyngites, céphalées et nausées sont les EI les plus fréquents.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_CT_06",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Un risque accru d’infections opportunistes graves, notamment la leuco-encéphalopathie multifocale progressive (LEMP), est identifié comme risque important lié à ozanimod.",
+      "extrait_textuel": "Le risque “Infections opportunistes graves, incluant la leuco-encéphalopathie multifocale progressive (LEMP)” a été reclassifié de risque potentiel important à risque important identifié.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 41",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 41,
+          "s": "PGR Ozanimod",
+          "t": "le risque « Infections opportunistes graves, incluant la leuco encéphalopathie multifocale progressive » a été reclassifié en risque important identifié",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_CT_07",
+      "evaluation_id": "CT-19676",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Défavorable",
+      "description": "La place de l’ozanimod dans la stratégie thérapeutique de la RCH n’est pas établie, en raison d'un effet modeste face aux traitements existants (anti-TNF, védolizumab, ustekinumab, tofacitinib).",
+      "extrait_textuel": "La Commission considère que la place de l’ozanimod dans la stratégie thérapeutique de la RCH chez l’adulte n’a pas été établie.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Pages 2-3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "Place de",
+          "t": "La Commission considère que la place de l’ozanimod dans la stratégie thérapeutique de la RCH chez l’adulte n’a pas été établie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_1",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Argument soulignant l’importance du besoin médical non couvert en 3ème ligne pour les patients atteints de rectocolite hémorragique réfractaire.",
+      "extrait_textuel": "Le premier point est la contribution du Professeur Peyrin-Biroulet, qui explique que chez les patients en échec des anti-TNF, du védolizumab, de l’ustékinumab et du tofacitinib, la colectomie est indiquée...",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Le premier",
+          "t": "contribution du Professeur Peyrin-Biroulet, chef du service gastroentérologie",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_2",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Défavorable",
+      "description": "Argument comparant le dossier de ZEPOSIA à celui de STELARA et soulignant la supériorité méthodologique et clinique du dossier STELARA.",
+      "extrait_textuel": "Le dossier de STELARA était meilleur que celui de ZEPOSIA pour plusieurs raisons... STELARA a mieux démontré son efficacité à l’induction et au maintien de la rémission.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Le dossier de",
+          "t": "Le dossier de STELARA était meilleur que celui de ZEPOSIA",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_3",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Mention des incertitudes sur la tolérance du tofacitinib et absence de démonstration de sécurité favorable pour ozanimod.",
+      "extrait_textuel": "L’ozanimod était le plus mal placé pour la survenue des effets indésirables graves, avec infections zostériennes et événements cardiovasculaires transitoires.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "L’ozanimod était",
+          "t": "ozanimod était le plus mal placé pour la survenue des effets indésirables graves",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_4",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Défavorable",
+      "description": "Avis expert estimant que ZEPOSIA n’a pas de place démontrée dans la stratégie thérapeutique actuelle de la RCH 3ème ligne et que sa non-disponibilité ne constitue pas une perte de chance.",
+      "extrait_textuel": "Il n’était pas possible de positionner ce produit dans la stratégie thérapeutique compte tenu des résultats disponibles... service médical rendu potentiellement insuffisant.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Professeur Bigard",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Il n’était",
+          "t": "Il n’était pas possible de positionner ce produit dans la stratégie thérapeutique",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_5",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Un membre de la commission souligne initialement son avis favorable en raison du besoin médical non couvert et de l’effet démontré dans une étude même si avec méthodologie moins forte.",
+      "extrait_textuel": "J’étais plutôt favorable au fait que l’on prenne ce médicament... besoin insuffisamment couvert dans la rectocolite grave avec perte d’efficacité des traitements existants.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Hugues Blondon",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "J’étais plutôt",
+          "t": "J’étais plutôt favorable... le besoin est insuffisamment couvert",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_6",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Défavorable",
+      "description": "Argument insistant sur la nécessité de comparer les nouveaux traitements aux deux classes actives reconnues (anti-TNF et védolizumab) pour trouver une place en stratégie.",
+      "extrait_textuel": "Tous les nouveaux entrants devraient se comparer à l’un ou l’autre des médicaments anti-TNF ou védolizumab qui sont désormais incontournables.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Hugues Blondon",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Tous les nouveaux",
+          "t": "Tous les nouveaux entrants devraient se comparer à l’un ou l’autre de ces médicaments",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_7",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Rappel qu’une place restreinte pourrait éventuellement exister en 3ème ligne uniquement si les autres traitements ne sont pas administrables, mais population concernée incertaine.",
+      "extrait_textuel": "Peut-être une toute petite place en troisième ligne lorsque les autres traitements ne sont pas administrables, mais incertitude sur l’existence de cette population.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Hugues Blondon",
+      "moment_debat": "Délibération",
+      "impact_decision": "Sans_impact_apparent",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Peut-être une",
+          "t": "une toute petite place en troisième ligne... incertitude population",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19676_arg_TRANS_8",
+      "evaluation_id": "CT-19676",
+      "source_argument": "TRANS",
+      "categorie_argument": "Vote",
+      "direction_argument": "Neutre",
+      "description": "Vote unanime de la commission pour le maintien de l’avis défavorable sur ZEPOSIA dans l’extension d’indication.",
+      "extrait_textuel": "Nous avons 20 votants pour ce vote et 20 voix pour le maintien.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Sophie Kelley",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Nous avons 20",
+          "t": "20 votants pour ce vote et 20 voix pour le maintien",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19676_ctx",
+    "evaluation_id": "CT-19676",
+    "ISP": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2020-05-20",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [
+      "PASS ORION pour l’indication sclérose en plaques et le suivi à long terme de l’étude RPC01-3001 dans le cadre du PGR",
+      "Mesures post-AMM concernant les nitrosamines"
+    ],
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Royaume-Uni",
+      "Allemagne",
+      "Pays-Bas",
+      "Belgique",
+      "Espagne",
+      "Italie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2020-03-25",
+        "reference": "AMM US pour UC modérée à sévère",
+        "evidence": [
+          {
+            "field": "decisions_internationales",
+            "f": "F1",
+            "p": 11,
+            "s": "AMM US",
+            "t": "ZEPOSIA dispose d’une AMM aux Etats-Unis pour UC modérée à sévère",
+            "m": "manual",
+            "c": 0.95
+          }
+        ]
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Insuffisant",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Nouvelles données cliniques",
+    "valeur_critère": "Rémission clinique p<0,0001",
+    "impact_décision": "Maintien SMR Insuffisant et ASMR V",
+    "estimation_mesure_impact": "Gain absolu de 12,4 % en rémission clinique à 10 semaines",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19676",
+    "texte_brut": "Avis du 29 juin 2022 - HAS\nZEPOSIA (ozanimod)...\nSynthèse, études TRUENORTH et TOUCHSTONE, tolérance, place dans stratégie, conclusions."
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19676_smrasmr_01",
+      "evaluation_id": "CT-19676",
+      "indication_precise": "Traitement de la rectocolite hémorragique active modérée à sévère chez les patients adultes ayant présenté une réponse inadéquate, une perte de réponse ou une intolérance à un traitement conventionnel ou à un agent biologique",
+      "smr": "La Commission considère que le service médical rendu est insuffisant dans l’indication de l’AMM.",
+      "smr_enum": "Insuffisant",
+      "asmr": "Ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V).",
+      "asmr_enum": "V",
+      "smr_revendique": "SMR important revendiqué par le laboratoire",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "La Commission estime que l'efficacité d’ozanimod est modeste et qu'elle ne se différencie pas des alternatives existantes. Le profil de tolérance est comparable aux autres traitements. La place dans la stratégie thérapeutique n'a pas été établie.",
+      "population_cible_indication": "Adultes ayant une forme active modérée à sévère de rectocolite hémorragique",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": [
+        "Anti-TNFα (infliximab, adalimumab, golimumab)",
+        "Védolizumab (ENTYVIO)",
+        "Ustekinumab (STELARA)",
+        "Tofacitinib (XELJANZ)"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19676_compHAS_01",
+        "CT-19676_compHAS_02",
+        "CT-19676_compHAS_03",
+        "CT-19676_compHAS_04",
+        "CT-19676_compHAS_05",
+        "CT-19676_compHAS_06"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Réfractaire",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 60,
+          "s": "la Commission",
+          "t": "la Commission considère que le service médical rendu est insuffisant dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 60,
+          "s": "ces spécialités",
+          "t": "ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "asmr_revendique_enum": "Non_précisé"
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19676_poso_01",
+      "evaluation_id": "CT-19676",
+      "smr_asmr_id": "CT-19676_smrasmr_01",
+      "indication": "Traitement de la rectocolite hémorragique active modérée à sévère chez les patients adultes ayant présenté une réponse inadéquate, une perte de réponse ou une intolérance à un traitement conventionnel ou à un agent biologique",
+      "population_cible": "Adultes",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose recommandée de 0,92 mg d’ozanimod une fois par jour après schéma initial d’escalade de dose de 7 jours.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "Schéma initial dose progressive",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "interval_days": 1
+          },
+          "voie_administration": "orale",
+          "expected_phase_duration_days": 7
+        },
+        {
+          "phase_nom": "Entretien",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 0.92,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "interval_days": 1
+          },
+          "voie_administration": "orale",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Aucun ajustement nécessaire chez les insuffisants rénaux et hépatiques légers/modérés. Contre-indiqué en insuffisance hépatique sévère.",
+      "commentaires": "Schéma d’escalade de dose est obligatoire au début du traitement.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "Le traitement",
+          "t": "La dose recommandée est de 0,92 mg d’ozanimod une fois par jour. Le schéma d’escalade de dose initiale est obligatoire (7 jours).",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "ajustements_poso_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "adultes âgé",
+          "t": "Aucun ajustement de la dose n’est nécessaire chez les patients présentant une insuffisance rénale ou une insuffisance hépatique légère/modérée. Contre-indiqué en cas d’insuffisance hépatique sévère.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19676_event_AMM_01",
+      "evaluation_id": "CT-19676",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2020-05-20",
+      "detail_brut": "AMM européenne initiale",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "ZEPOSIA",
+          "t": "la spécialité a obtenu l’AMM européenne par procédure centralisée le 20/05/2020",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19676_event_EXT_IND_01",
+      "evaluation_id": "CT-19676",
+      "event_type": "EXTENSION_INDICATION_ADOPTE",
+      "event_date": "2021-12-28",
+      "detail_brut": "Extension d’indication AMM en RCH",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "Extension",
+          "t": "Extension d’indication AMM obtenue le 28/12/2021",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19676_event_CT_01",
+      "evaluation_id": "CT-19676",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Adoption de l’avis Commission Transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 60,
+          "s": "la Commission",
+          "t": "la Commission adopte son avis le 29/06/2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19676",
+    "delai_amm_ct_jours": 755,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19676",
+    "is_orphan": false,
+    "classe_ATC_l2": "Immunosuppressants",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": true,
+    "n_essais": 2,
+    "n_rct": 2,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 12.4,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": 3.3,
+    "discontinuations_pct_num": 3.3,
+    "critere_principal_description": "Rémission clinique (score Mayo 3 composants)",
+    "p_value_log10": 3.02,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 14,
+    "voix_pour_pct": 21.4,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19676_essai_TRUENORTH",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19676_essai_TOUCHSTONE",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TRUENORTH",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TRUENORTH_crit_remission_clinique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TRUENORTH",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TRUENORTH_crit_reponse_clinique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TRUENORTH",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TRUENORTH_crit_amelioration_endoscopique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TRUENORTH",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TRUENORTH_crit_cicatrisation_mucueuse",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TRUENORTH",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TRUENORTH_crit_remission_clinique_sous_groupe_non_naf",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TOUCHSTONE",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TOUCHSTONE_crit_remission_clinique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TOUCHSTONE",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TOUCHSTONE_crit_reponse_clinique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TOUCHSTONE",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19676_essai_TOUCHSTONE_crit_cicatrisation_mucueuse",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TRUENORTH",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_essai_TRUENORTH_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19676_essai_TOUCHSTONE",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_essai_TOUCHSTONE_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_compHAS_02",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_compHAS_03",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_compHAS_04",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_compHAS_05",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19676",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19676_compHAS_06",
+      "label": "EVAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": []
+}

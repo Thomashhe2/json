@@ -1,0 +1,1657 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19727",
+  "evaluation_id": "CT-19727",
+  "extraction_date": "2022-06-08",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-08",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19727_AVIS_TECEOS_CT.pdf",
+        "type": "CT",
+        "page_count": 15
+      },
+      "F2": {
+        "file_name": "TRANSCRIPTION_Parties1-14_CT-19727.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 24
+      },
+      "F3": {
+        "file_name": "Non renseigné",
+        "type": "CONTRIB",
+        "page_count": null
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19727_seg_1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l'avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 3500,
+      "heading_text": "Avis Version Définitive",
+      "expected_fields": [],
+      "routing_hint": "Synthese",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19727_seg_2",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical et contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 7,
+      "char_start": 3501,
+      "char_end": 7000,
+      "heading_text": "Besoin médical diagnostic amylose à transthyrétine",
+      "expected_fields": [],
+      "routing_hint": "Besoin medical",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19727_seg_3",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Etudes et données cliniques",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 11,
+      "char_start": 7001,
+      "char_end": 12500,
+      "heading_text": "Analyse des données disponibles",
+      "expected_fields": [],
+      "routing_hint": "Etudes",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19727_seg_4",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance et sécurité",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 13,
+      "char_start": 12501,
+      "char_end": 15000,
+      "heading_text": "Tolérance",
+      "expected_fields": [],
+      "routing_hint": "Tolerence",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19727_seg_5",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie diagnostique",
+      "template_detecte": "CT_modern",
+      "page_start": 13,
+      "page_end": 14,
+      "char_start": 15001,
+      "char_end": 16000,
+      "heading_text": "Place dans la stratégie diagnostique",
+      "expected_fields": [],
+      "routing_hint": "Strategie",
+      "label_confidence": 0.94
+    },
+    {
+      "segment_id": "CT-19727_seg_6",
+      "section_label_normalise": "SMR_ASMR_PAR_INDICATION",
+      "section_label_brut": "Conclusions et avis de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 14,
+      "page_end": 15,
+      "char_start": 16001,
+      "char_end": 16500,
+      "heading_text": "Conclusions",
+      "expected_fields": [],
+      "routing_hint": "Conclusions",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19727_seg_7",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations réglementaires et administratives",
+      "template_detecte": "CT_modern",
+      "page_start": 15,
+      "page_end": 15,
+      "char_start": 16501,
+      "char_end": 17000,
+      "heading_text": "Informations administratives",
+      "expected_fields": [],
+      "routing_hint": "Infos admin",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "8d5a3f04",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat et discussions",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 24,
+      "char_start": 0,
+      "char_end": 30000,
+      "heading_text": "Discussion et débats sur extension indication TECEOS 13 MG"
+    },
+    {
+      "segment_id": "seg_001",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Contribution des associations de patients et d’usagers",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 15,
+      "char_start": 0,
+      "char_end": 15000,
+      "heading_text": "Contribution de l'association contre l'amylose cardiaque",
+      "expected_fields": [
+        "association",
+        "methodologie",
+        "impacts_maladie",
+        "traitements_actuels",
+        "evaluation_medicament",
+        "indication_demandee",
+        "position_association",
+        "synthese_contribution"
+      ],
+      "routing_hint": "Extraction contribution patients",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19727",
+      "produit_nom_commercial": "TECEOS",
+      "dci": "Butédronate",
+      "forme_pharmaceutique": "trousse pour préparation radiopharmaceutique",
+      "dosage_concentration": "13 mg",
+      "code_cip13": "34009 560 980 0 2",
+      "titulaire_amm": "CIS bio international",
+      "liste_concernee": "Collectivités (CSP L.5123-2)",
+      "statut_prescription": "Liste I, Médicament réservé à l’usage hospitalier",
+      "restriction_utilisation": "Produits radiopharmaceutiques réservés aux personnes qualifiées autorisées",
+      "code_ATC": "V09BA04",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 15,
+          "s": "TECEOS 13",
+          "t": "TECEOS 13 mg trousse pour préparation radiopharmaceutique",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS - Di",
+          "t": "Butédronate",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 15,
+          "s": "Condition",
+          "t": "Conditionnement 1 (CIP : 34009 560 980 0 2)",
+          "m": "regex",
+          "c": 0.9
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 15,
+          "s": "Demandeur",
+          "t": "CIS bio international",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "liste_concernee",
+          "f": "F1",
+          "p": 15,
+          "s": "Liste conc",
+          "t": "Collectivités (CSP L.5123-2)",
+          "m": "rule",
+          "c": 0.92
+        },
+        {
+          "field": "statut_prescription",
+          "f": "F1",
+          "p": 15,
+          "s": "Conditions",
+          "t": "Liste I - Médicament réservé à l’usage hospitalier",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "code_ATC",
+          "f": "F1",
+          "p": 15,
+          "s": "Code ATC",
+          "t": "V09BA04",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19727",
+      "Num_avis": "CT-19727",
+      "produit_nom": "TECEOS",
+      "dci": "Butédronate",
+      "type_avis": "Extension_indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Tronche pour préparation radiopharmaceutique",
+      "dosage": "13 mg",
+      "indication": "scintigraphie cardiaque pour le diagnostic de l’amylose cardiaque à transthyrétine (ATTR) après exclusion de l’amylose cardiaque à chaînes légères (AL)",
+      "classe_ATC": "V09BA04",
+      "pathologie": "Amylose cardiaque à transthyrétine (ATTR)",
+      "maladie_rare": true,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Patients suspectés d'amylose à transthyrétine après exclusion AL",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Cardiologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Diagnostic amylose cardiaque ATTR",
+      "source_aire_therapeutique": "Texte avis page 1-15",
+      "design_etude": "Non renseigné",
+      "design_enum": "Observationnel_retrospectif",
+      "niveau_preuve_brut": "Données majoritairement observationnelles et rétrospectives, études de performance diagnostique",
+      "niveau_preuve_interprete": "Observationnel_limite",
+      "besoin_medical_brut": "Le besoin médical est partiellement couvert, mais persiste un besoin de moyens non invasifs avec de meilleures performances diagnostiques.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "gravite_patho": "L’amylose à transthyrétine de type sauvage ou héréditaire avec cardiomyopathie est une maladie rare, grave et d’évolution fatale.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes suspectés d’amylose cardiaque ATTR, après exclusion d’amylose AL",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Tests immunofixation sérique et urinaire et dosage chaînes légères libres du sérum",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Avis d’inscription initiale en 1998 sur scintigraphie osseuse. Extension indication diagnostique ATTR en 2022.",
+      "historique_ASMR_comparateurs": "ASMR V (absence d’amélioration du service médical rendu) sur la base de comparateurs hors AMM.",
+      "concurrence_therapeutique_recente": "Présence de radiotraceurs marqués au technétium-99 métastable hors AMM utilisés en pratique courante (OSTEOCIS, Technescan HDP, Technescan PYP).",
+      "vote_unanimite": false,
+      "nb_votants": 33,
+      "nb_voix_pour": 20,
+      "nb_voix_contre": 13,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-06-08",
+      "transcription_textuelle": "Transcription complète de la séance du 8 juin 2022 à la HAS sur l’extension d’indication de TECEOS 13 MG pour la scintigraphie cardiaque chez les patients suspects d’amylose ATTR après exclusion de l’amylose AL.",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS - Di",
+          "t": "Avis favorable au remboursement en scintigraphie cardiaque pour le diagnostic de l’amylose cardiaque à transthyrétine (ATTR)",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin ",
+          "t": "Le besoin médical dans le diagnostic de l’amylose à transthyrétine est partiellement couvert...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin ",
+          "t": "Le besoin médical dans le diagnostic de l’amylose à transthyrétine est partiellement couvert...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 14,
+          "s": "La Commission",
+          "t": "L’amylose à transthyrétine de type sauvage ou héréditaire avec une cardiomyopathie est une maladie rare, grave et d’évolution fatale.",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "gravite_patho_enum",
+          "f": "F1",
+          "p": 14,
+          "s": "La Commission",
+          "t": "L’amylose à transthyrétine ... maladie rare, grave et d’évolution fatale.",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "biomarqueur_requis",
+          "f": "F1",
+          "p": 3,
+          "s": "Place de ",
+          "t": "après exclusion de l’amylose cardiaque à chaînes légères (AL) (par immunofixation sérique et urinaire et dosage des chaînes légères libres du sérum)",
+          "m": "rule",
+          "c": 0.94
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 4,
+          "s": "Dans l’avis d’inscription",
+          "t": "Avis d’inscription de TECEOS (butédronate) du 02/12/1998",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis ",
+          "t": "08 JUIN 2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ],
+      "pathologie_categorie_enum": "Cardiologie",
+      "pertinence_concurrence_therapeutique": "Comparaison principalement à la biopsie endomyocardique. Les autres traceurs osseux ne disposent pas de dossiers d’AMM pour scintigraphie cardiaque."
+    },
+    {
+      "evaluation_id": "Non renseigné",
+      "Num_avis": "Non renseigné",
+      "produit_nom": "Non renseigné",
+      "dci": "Non renseigné",
+      "type_avis": "Non renseigné",
+      "type_avis_enum": null,
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "indication": "Non renseigné",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Non renseigné",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Non renseigné",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": null,
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": null,
+      "pathologie_categorie_enum": null,
+      "age_restriction_flag": null,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": null,
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2017-09-01",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Non renseigné",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19727_essai_De_Haro-Del_Moral_2012",
+      "evaluation_id": "CT-19727",
+      "essai_nom": "De Haro-Del Moral et Al. 2012",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel",
+      "design_enum": "Observationnel_retrospectif",
+      "population_cible": "Patients suspectés d’amylose cardiaque avec insuffisance cardiaque et transplantation à Madrid 1996-2011",
+      "comparateur_utilise": "Biopsie endomyocardique",
+      "nb_patient_traitement": 19,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Sensibilité et spécificité de 100% pour différencier AL et ATTR.",
+      "QoL_flag": false,
+      "niveau_preuve": "Observationnel, rétrospectif, monocentrique",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "2011-10-01",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": null,
+      "nb_patients_inclus": "19",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "2011-10",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 9,
+          "s": "7.1.1 Et",
+          "t": "Il s’agit d’une étude rétrospective monocentrique chez des patients suspectés d’avoir une amylose cardiaque, suivis pour insuffisance cardiaque et transplantation dans le service de cardiologie de Madrid de 1996 à octobre 2011.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 9,
+          "s": "7.1.1 Et",
+          "t": "Les performances diagnostiques ont été établies pour 19 patients",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19727_essai_Gillmore_2016",
+      "evaluation_id": "CT-19727",
+      "essai_nom": "Gillmore et Al. 2016",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel",
+      "design_enum": "Observationnel_retrospectif",
+      "population_cible": "Patients suspectés ou diagnostiqués d’amylose cardiaque suivis dans centres spécialisés en Europe et États-Unis",
+      "comparateur_utilise": "Biopsie endomyocardique",
+      "nb_patient_traitement": 374,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Sensibilité 99% et spécificité 68% pour grade 1-3; sensibilité 91% et spécificité 87% pour grade 2-3",
+      "QoL_flag": false,
+      "niveau_preuve": "Observationnel, rétrospectif, multicentrique",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "nb_patients_inclus": "374",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 9,
+          "s": "7.1.1 Et",
+          "t": "Etude multicentrique rétrospective sur patients suspectés ou diagnostiqués d’amylose cardiaque...",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 9,
+          "s": "7.1.1 Et",
+          "t": "Performances diagnostiques évaluées sur 374 patients",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19727_essai_Moore_2017",
+      "evaluation_id": "CT-19727",
+      "essai_nom": "Moore et Al. 2017",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel",
+      "design_enum": "Observationnel_prospectif",
+      "population_cible": "Patients avec diagnostic confirmé ATTR et AL dans centre australien",
+      "comparateur_utilise": "Biopsie endomyocardique",
+      "nb_patient_traitement": 13,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Sensibilité 100 %, spécificité 88 % pour diagnostic ATTR",
+      "QoL_flag": false,
+      "niveau_preuve": "Observationnel, prospectif, monocentrique",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "nb_patients_inclus": "13",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 10,
+          "s": "7.1.1 Et",
+          "t": "Il s’agit d’une étude prospective monocentrique chez des patients avec diagnostic confirmé ATTR et AL en Australie.",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19727_essai_De_Haro-Del_Moral_2012_crit_performance_diagnostique",
+      "essai_id": "CT-19727_essai_De_Haro-Del_Moral_2012",
+      "evaluation_id": "CT-19727",
+      "critere_nom": "Performance diagnostique scintigraphie au 99mTc-DPD",
+      "type_critere_enum": "Autre",
+      "nature_critere": "Dur",
+      "unite_mesure": "Sensibilité, spécificité, VPP, VPN en %",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Sensibilité 100 % (IC95% [93,75%-100%]) ; spécificité 100 % (IC95% [95,45%-100%]) ; VPP 100 % ; VPN 100 %",
+      "valeur_groupe_comparateur": "Non applicable, comparateur biopsie",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "critere_atteint": true,
+      "degre_signification": "Non renseigné",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Sensibilité et spécificité parfaites dans cette étude monocentrique pour distinguer amylose AL vs ATTR",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 9,
+          "s": "7.1.1 Et",
+          "t": "La sensibilité a été de 100 % (IC95%, [93,75%-100%]), la spécificité de 100 % (IC95%, [95,45%-100%])",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19727_essai_Gillmore_2016_crit_performance_diagnostique",
+      "essai_id": "CT-19727_essai_Gillmore_2016",
+      "evaluation_id": "CT-19727",
+      "critere_nom": "Performance diagnostique scintigraphie 99mTc-DPD/PYP/HMDP",
+      "type_critere_enum": "Autre",
+      "nature_critere": "Dur",
+      "unite_mesure": "Sensibilité et spécificité en %",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Sensibilité 99% (IC95% [97%-100%]), spécificité 68% (IC95% [59%-77%]) pour grade 1-3; sens 91%, spéc 87% pour grade 2-3",
+      "valeur_groupe_comparateur": "Non applicable (biopsie)",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "critere_atteint": true,
+      "degre_signification": "Non renseigné",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Performance diagnostique variable selon seuil retenu, sensibilité élevée, spécificité plus modérée.",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 9,
+          "s": "7.1.1 Et",
+          "t": "Sensibilité 99 % (IC95%, [97%-100%]), spécificité 68 % (IC95%, [59%-77%])",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19727_essai_Moore_2017_crit_performance_diagnostique",
+      "essai_id": "CT-19727_essai_Moore_2017",
+      "evaluation_id": "CT-19727",
+      "critere_nom": "Performance diagnostique scintigraphie au 99mTc-DPD",
+      "type_critere_enum": "Autre",
+      "nature_critere": "Dur",
+      "unite_mesure": "Sensibilité et spécificité en %",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Sensibilité 100 %, spécificité 88 %",
+      "valeur_groupe_comparateur": "Non applicable",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "critere_atteint": true,
+      "degre_signification": "Non renseigné",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Sensibilité parfaite, spécificité élevée dans une étude prospective monocentrique.",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 10,
+          "s": "7.1.1 Et",
+          "t": "Sensibilité a été de 100 % et spécificité de 88 %",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": {
+    "tolerance_id": "CT-19727_tol_01",
+    "evaluation_id": "CT-19727",
+    "essai_id": "Non applicable",
+    "EI_graves": "Hypersensibilité, carcinogénèse, anomalies congénitales potentiellement liées aux rayonnements ionisants.",
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [
+      {
+        "ei_terme": "Hypersensibilité",
+        "grade": "Non renseigné",
+        "incidence_pct_traitement": null,
+        "incidence_pct_comparateur": null,
+        "n_patients_traitement": null,
+        "n_patients_comparateur": null,
+        "issue": "Non renseigné",
+        "delai_apparition_median_jours": null,
+        "evidence": [
+          {
+            "field": "EI_graves",
+            "f": "F1",
+            "p": 11,
+            "s": "Résumé d",
+            "t": "Risques importants identifiés : hypersensibilité",
+            "m": "rule",
+            "c": 0.95
+          }
+        ]
+      }
+    ],
+    "EI_frequents_detailles": [
+      {
+        "ei_terme": "Bouffées de chaleur, nausées, éruption cutanée, prurit",
+        "grade": "Tous grades",
+        "incidence_pct_traitement": null,
+        "incidence_pct_comparateur": null,
+        "evidence": [
+          {
+            "field": "EI_frequents_detailles",
+            "f": "F1",
+            "p": 11,
+            "s": "Les types ",
+            "t": "Affections du système immunitaire : hypersensibilité (bouffées de chaleur, nausées, éruption cutanée, prurit)",
+            "m": "rule",
+            "c": 0.95
+          }
+        ]
+      }
+    ],
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "EI_frequents": "Eruptions cutanées, prurit, bouffées de chaleur, nausées, extrêmement rares.",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": [
+      {
+        "field": "EI_graves",
+        "f": "F1",
+        "p": 11,
+        "s": "Résumé d",
+        "t": "Risques importants identifiés : hypersensibilité",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "EI_frequents",
+        "f": "F1",
+        "p": 11,
+        "s": "Les types ",
+        "t": "Affections du système immunitaire : hypersensibilité (bouffées de chaleur, nausées, éruption cutanée, prurit)",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "signal_securite_flag",
+        "f": "F1",
+        "p": 11,
+        "s": "Résumé d",
+        "t": "Aucun signal de tolérance identifié",
+        "m": "rule",
+        "c": 0.95
+      }
+    ]
+  },
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19727_compHAS_01",
+      "evaluation_id": "CT-19727",
+      "nom_comparateur_HAS": "OSTEOCIS (oxidronate (HDP) de sodium)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "Les spéciali",
+          "t": "OSTEOCIS (oxidronate (HDP) de sodium) utilisé hors-AMM en scintigraphie cardiaque pour diagnostic ATTR",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19727_compHAS_02",
+      "evaluation_id": "CT-19727",
+      "nom_comparateur_HAS": "Technescan HDP (oxidronate de sodium)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "Les spéciali",
+          "t": "Technescan HDP (oxidronate de sodium) utilisé hors-AMM en scintigraphie cardiaque pour diagnostic ATTR",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19727_compHAS_03",
+      "evaluation_id": "CT-19727",
+      "nom_comparateur_HAS": "Technescan PYP (chlorure stanneux/pyrophosphate de sodium)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "Les spéciali",
+          "t": "Technescan PYP (chlorure stanneux /pyrophosphate de sodium) utilisé hors-AMM en scintigraphie cardiaque pour diagnostic ATTR",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19727_compHAS_01",
+      "evaluation_id": "CT-19727",
+      "nom_comparateur_HAS": "OSTEOCIS (oxidronate (HDP) de sodium)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19727_compHAS_02",
+      "evaluation_id": "CT-19727",
+      "nom_comparateur_HAS": "Technescan HDP (oxidronate de sodium)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19727_compHAS_03",
+      "evaluation_id": "CT-19727",
+      "nom_comparateur_HAS": "Technescan PYP (chlorure stanneux /pyrophosphate de sodium)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19727_arg_CT_01",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "Les études de performance diagnostique (De Haro-Del Moral 2012, Gillmore 2016, Moore 2017) montrent une sensibilité élevée (80.7-100%) et spécificité variable (53-100%) pour la scintigraphie au 99mTc-DPD dans le diagnostic de l’amylose cardiaque ATTR.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "\"Les performances diagnostiques ... sensibilité variant de 80,7 % à 93 % et la spécificité de 53 % à 100 %\"",
+      "page_source": "Pages 9-12",
+      "section_source": "Analyse des données disponibles",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "07.1 Perf",
+          "t": "Les performances diagnostiques ... sensibilité variant de 80,7 % à 93 % et la spécificité de 53 % à 100 %",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_02",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "Le profil de tolérance de TECEOS est acceptable, avec des effets indésirables rares, principalement hypersensibilité. La dose efficace induit une faible probabilité d'effets liés aux radiations ionisantes.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "\"Le résumé des risques inclut hypersensibilité, carcinogénèse possible, mais très rare hypersensibilité...La dose efficace est de 3,6 mSv, probabilité faible d’effets.\"",
+      "page_source": "Pages 11-12",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Résumé d",
+          "t": "Risques importants identifiés : hypersensibilité, carcinogénèse et troubles héréditaires liés à l’exposition aux rayonnements ionisants",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_03",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "TECEOS est équivalent aux radiotraceurs hors AMM (OSTEOCIS, Technescan HDP, Technescan PYP) utilisés en scintigraphie myocardique pour le diagnostic de l’amylose ATTR, sans avantage diagnostique démontré, et la scintigraphie présente l’avantage d’être non invasive par rapport à la biopsie endomyocardique.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "\"TECEOS n’apporte pas d’amélioration du service médical rendu (ASMR V) comparé aux autres phosphonates; la scintigraphie est non invasive vs biopsie.\"",
+      "page_source": "Pages 7-8, 13",
+      "section_source": "Comparateurs & Place dans stratégie",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "05.1 Méd",
+          "t": "TECEOS (butédronate) n'apporte pas d'amélioration du service médical rendu (ASMR V) comparé à OSTEOCIS...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Place de ",
+          "t": "Comparativement à la biopsie... la scintigraphie myocardique est non invasive...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_04",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Le besoin médical dans le diagnostic de l’amylose à transthyrétine est partiellement couvert par les techniques existantes, mais persiste un besoin de tests non invasifs avec de meilleures performances diagnostiques.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "\"Le besoin médical dans le diagnostic de l’amylose à transthyrétine est partiellement couvert car il persiste un besoin à disposer de nouveaux moyens non invasifs avec performance diagnostique améliorée.\"",
+      "page_source": "Page 7",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin ",
+          "t": "Le besoin médical dans le diagnostic de l’amylose à transthyrétine est partiellement couvert...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_05",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Service_Medical_Rendu",
+      "description": "L’Inter-Commission considère que le service médical rendu par TECEOS est important dans l’indication selon AMM.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "\"L’Inter-Commission considère que le service médical rendu par TECEOS (butédronate) est important dans l’indication de l’AMM.\"",
+      "page_source": "Page 14",
+      "section_source": "Conclusions",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "09 CONCLU",
+          "t": "L’Inter-Commission considère que le service médical rendu par TECEOS (butédronate) est important dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_06",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Amelioration_SMR",
+      "description": "TECEOS n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux phosphonates utilisés hors AMM en scintigraphie myocardique.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "\"Compte-tenu de l’absence de démonstration probante, TECEOS n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à OSTEOCIS, Technescan HDP et Technescan PYP.\"",
+      "page_source": "Page 8",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "06 INFORM",
+          "t": "Compte tenu de l’absence de démonstration probante ... ASMR V par rapport à OSTEOCIS...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_07",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "TECEOS a une place au même titre que les autres phosphonates radiomarqués au technétium-99 pour scintigraphie cardiaque dans la stratégie diagnostique après échographie et exclusion amylose AL.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "\"TECEOS a une place dans la stratégie diagnostique, au même titre que les autres phosphonates radiomarqués au technétium-99 métastable lorsqu’une scintigraphie cardiaque est recommandée.\"",
+      "page_source": "Pages 2 et 13",
+      "section_source": "Place dans la stratégie",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Place du ",
+          "t": "TECEOS (butédronate) a une place dans la stratégie diagnostique, au même titre que les autres phosphonates...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_CT_08",
+      "evaluation_id": "CT-19727",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "La scintigraphie myocardique est non invasive, non douloureuse et sans complications contrairement à la biopsie endomyocardique, réservée aux cas douteux.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "\"Comparativement à la biopsie endomyocardique, la scintigraphie myocardique est non invasive, non douloureuse et ne comporte pas de complications indésirables.\"",
+      "page_source": "Pages 2 et 13",
+      "section_source": "Place dans la stratégie",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Place de ",
+          "t": "Comparativement à la biopsie... scintigraphie myocardique non invasive pour le patient...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_1",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "La scintigraphie osseuse biphosphonate est un examen non invasif avec haute sensibilité (91%) et spécificité (87%) pour le diagnostic d’amylose cardiaque ATTR, avec valeur prédictive positive de 100% en l’absence de protéines monoclonales.",
+      "extrait_textuel": "Les performances de la scintigraphie osseuse versus la biopsie sont résumées sur ce tableau...Les sensibilités et spécificités pour les diagnostics de l’amylose étaient respectivement de 88 et 87 %. En ne considérant que les patients avec amylose ATTR... les performances étaient voisines, 91 et 87 %. Sans protéines monoclonales détectables, valeur prédictive positive de 100 %",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr DAUBERT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Inter-com",
+          "t": "Les sensibilités et spécificités pour les diagnostics de l’amylose étaient respectivement de 88 et 87 %",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_2",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Les recommandations internationales (ACC-AHA) publiées récemment recommandent fortement la scintigraphie osseuse aux biphosphonates chez les patients avec forte suspicion clinique d’amylose cardiaque et absence de chaîne légère monoclonale.",
+      "extrait_textuel": "Les recommandations internationales accordent aujourd’hui une place centrale à la scintigraphie osseuse au Technescan...Les guidelines ACC-AHA viennent d’être publiés...forte recommandation que la scintigraphie osseuse doit être réalisée pour confirmer le diagnostic...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr DAUBERT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Inter-commission",
+          "t": "Les recommandations internationales accordent aujourd’hui une place centrale à la scintigraphie osseuse au Technescan pour le diagnostic de la cardiomyopathie amyloïde ATTR",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_3",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Mitigé",
+      "description": "La biopsie endomyocardique reste la référence mais est invasive, risquée et difficilement réalisable chez les patients âgés et fragiles, tandis que la scintigraphie osseuse est non invasive et bien tolérée.",
+      "extrait_textuel": "On continue à utiliser la biopsie endomyocardique très largement... mais... pour les cœurs non symphysés, on sait que le muscle cardiaque est fragile... C’est difficile... Il n’est plus éthique de lancer des études comparatives prospectives vis-à-vis de la biopsie...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr DAUBERT",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "Inter-commission",
+          "t": "C’est pour cela qu’aujourd’hui, je pense qu’il n’est plus éthique de lancer des études comparatives en prospectif vis-à-vis de la biopsie endomyocardique.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_4",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le diagnostic non invasif via scintigraphie osseuse répond à un besoin médical important compte tenu de la gravité de l’amylose cardiaque ATTR et de la complexité de la biopsie.",
+      "extrait_textuel": "Mme le Pr GUDULEC : Maladie cardiaque grave, nécessité de diagnostic non invasif rapide et fiable. La Commission considère que le service médical rendu est important.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr GUDULEC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 24,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu est important dans cette indication",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_5",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "L’adoption de la scintigraphie osseuse est susceptible d’augmenter le nombre de diagnostics et permet à plus de patients d’être traités, ce qui constitue un progrès clinique.",
+      "extrait_textuel": "M. le Pr ROUZET : Cette stratégie a permis une explosion du nombre de diagnostics... Cela permettra d’offrir un traitement potentiellement en nombre de patients beaucoup plus important.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr ROUZET",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Inter-comm",
+          "t": "Depuis que cette stratégie a été adoptée, on constate que le nombre de patients identifiés est en franche augmentation",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_6",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "Il n’existe pas de comparaison directe rigoureuse entre les différents biphosphonates utilisés en scintigraphie osseuse pour le diagnostic d’amylose cardiaque ATTR.",
+      "extrait_textuel": "Le Pr Daubert : Je n’ai pas vu dans la littérature d’études prospectives qui comparaient les performances respectives des différents biphosphonates.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Pr DAUBERT",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Inter-commission",
+          "t": "Je n’ai surtout pas vu dans la littérature de comparaison directe avec le comparateur retenu pour l’AMM, c’est-à-dire la biopsie endomyocardique.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_7",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Mitigé",
+      "description": "Discussion sur le comparateur pertinent : scintigraphie osseuse (autres biphosphonates sans AMM dans indication) vs biopsie endomyocardique (référence historique mais invasive et à risque).",
+      "extrait_textuel": "Mme le Pr GUDULEC : Difficulté à choisir le comparateur. Pr Daubert propose biopsie endomyocardique; d’autres suggèrent scintigraphie osseuse générale.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr GUDULEC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 20,
+          "s": "Inter-com",
+          "t": "Le cardiologue pense que le comparateur, c’est la biopsie et les méthodologistes disent que c’est la scintigraphie.",
+          "m": "manual",
+          "c": 0.91
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19727_arg_TRANS_8",
+      "evaluation_id": "CT-19727",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Le vote final de la commission retient la scintigraphie osseuse comme comparateur pertinent, avec un SMR important, ASMR V et absence d’ISP.",
+      "extrait_textuel": "Mme le Pr GUDULEC : Nous prenons le comparateur scintigraphie osseuse. Vote : SMR important, ASMR V, pas d’ISP.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr GUDULEC",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 24,
+          "s": "La Commission",
+          "t": "On a 33 votants : 33 voix pour un SMR important, 33 voix pour une ASMR V versus la scintigraphie",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19727_ctx",
+    "evaluation_id": "CT-19727",
+    "ISP": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "SMR_apres_audition_enum",
+        "f": "F1",
+        "p": 14,
+        "s": "09 CONCLU",
+        "t": "L’Inter-Commission considère que le service médical rendu par TECEOS (butédronate) est important dans l’indication de l’AMM.",
+        "m": "rule",
+        "c": 0.98
+      },
+      {
+        "field": "ASMR_après_audition_enum",
+        "f": "F1",
+        "p": 8,
+        "s": "Compte t",
+        "t": "TECEOS (butédronate) n’apporte pas d’amélioration du service médical rendu (ASMR V)...",
+        "m": "rule",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19727",
+    "texte_brut": "HAS - Direction de l'évaluation et de l'accès à l'innovation\nAvis version définitive\n... (texte complet autant que donné dans le pdf)",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19727_smrasmr_01",
+      "evaluation_id": "CT-19727",
+      "indication_precise": "scintigraphie cardiaque pour le diagnostic de l’amylose cardiaque à transthyrétine (ATTR) après exclusion de l’amylose cardiaque à chaînes légères (AL)",
+      "smr": "La Commission considère que le service médical rendu par TECEOS (butédronate) est important dans l’indication de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Compte-tenu de l’absence de démonstration probante, TECEOS (butédronate) n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres phosphonates.",
+      "asmr_enum": "V",
+      "smr_revendique": "SMR important",
+      "asmr_revendique": "II",
+      "justification_decisionnelle": "Les données disponibles ne permettent pas de conclure à un avantage diagnostique de TECEOS par rapport aux autres radiotraceurs hors AMM. Le diagnostic non invasif améliore la prise en charge par rapport à la biopsie. Le service médical rendu est important mais sans amélioration apportée.",
+      "population_cible_indication": "Patients suspectés d’amylose ATTR après exclusion amylose AL",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": "OSTEOCIS, Technescan HDP, Technescan PYP",
+      "comparateur_id_HAS": [
+        "CT-19727_compHAS_01",
+        "CT-19727_compHAS_02",
+        "CT-19727_compHAS_03"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Tests immunofixation sérique et urinaire et dosage chaînes légères libres du sérum",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 14,
+          "s": "09 CONCLU",
+          "t": "L’Inter-Commission considère que le service médical rendu par TECEOS ... est important",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "Compte t",
+          "t": "TECEOS (butédronate) n’apporte pas d’amélioration ... (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19727_poso_01",
+      "evaluation_id": "CT-19727",
+      "smr_asmr_id": "CT-19727_smrasmr_01",
+      "indication": "Diagnostic scintigraphie cardiaque de l’amylose cardiaque à transthyrétine (ATTR)",
+      "population_cible": "Adultes suspectés après exclusion amylose AL",
+      "posologie_source": "renvoi_RCP",
+      "posologie_resumee_brut": "Conformément au RCP",
+      "phases": [],
+      "ajustements_poso_brut": "Non renseigné",
+      "commentaires": "La posologie précise est détaillée dans le RCP.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "03 POSOL",
+          "t": "Cf. RCP",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19727",
+    "delai_amm_ct_jours": null,
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19727",
+    "is_orphan": true,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Cardiologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 3,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Performance diagnostique scintigraphie au 99mTc-DPD",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19727",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19727_essai_De_Haro-Del_Moral_2012",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19727",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19727_essai_Gillmore_2016",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19727",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19727_essai_Moore_2017",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19727_essai_De_Haro-Del_Moral_2012",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19727_essai_De_Haro-Del_Moral_2012_crit_performance_diagnostique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19727_essai_Gillmore_2016",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19727_essai_Gillmore_2016_crit_performance_diagnostique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19727_essai_Moore_2017",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19727_essai_Moore_2017_crit_performance_diagnostique",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19727",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19727_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19727",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19727_compHAS_02",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19727",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19727_compHAS_03",
+      "label": "EVAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19727",
+    "contribution_presente": false,
+    "contribution_id": "CT-19727_contrib_1",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  }
+}

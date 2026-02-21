@@ -1,0 +1,967 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-21290",
+  "evaluation_id": "CT-21290",
+  "extraction_date": "2025-12-17",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-12-17",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-21290_HAS_LOMEXIN_TERLOMEXIN.pdf",
+        "type": "CT",
+        "page_count": 6
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT21290_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l’avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 1800,
+      "heading_text": "Synthèse de l’avis",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "smr",
+        "asmr",
+        "argumentation"
+      ],
+      "routing_hint": "Synthèse",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT21290_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 1801,
+      "char_end": 5300,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "produit_nom",
+        "dci",
+        "presentations",
+        "titulaire",
+        "demandeur",
+        "motif_demande",
+        "indications",
+        "date_amm_initiale",
+        "condition_prescription"
+      ],
+      "routing_hint": "Informations produit",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT21290_03",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Données cliniques et études",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 5301,
+      "char_end": 7500,
+      "heading_text": "Données cliniques",
+      "expected_fields": [
+        "essais_cliniques",
+        "populations_essais",
+        "critères_jugement",
+        "résultats_efficacité",
+        "tolérance"
+      ],
+      "routing_hint": "Essais cliniques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT21290_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 7501,
+      "char_end": 12500,
+      "heading_text": "Comparateurs pertinents",
+      "expected_fields": [
+        "comparateurs_HAS",
+        "comparateurs_essai"
+      ],
+      "routing_hint": "Comparateurs",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT21290_05",
+      "section_label_normalise": "SMR_ASMR_PAR_INDICATION",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 12501,
+      "char_end": 15400,
+      "heading_text": "Conclusions de la Commission de la Transparence",
+      "expected_fields": [
+        "smr",
+        "smr_enum",
+        "asmr",
+        "asmr_enum",
+        "avis_favorable"
+      ],
+      "routing_hint": "Conclusions",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT21290_06",
+      "section_label_normalise": "ANNEXES",
+      "section_label_brut": "Annexe - Liste comparateurs",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 15401,
+      "char_end": 19000,
+      "heading_text": "Annexe - Tableaux comparateurs",
+      "expected_fields": [
+        "comparateurs_HAS",
+        "comparateurs_essai"
+      ],
+      "routing_hint": "Annexes",
+      "label_confidence": 0.93
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "code_cip": "34009 333 830 8 4",
+      "code_cis": "Non renseigné",
+      "laboratoire": "EFFIK",
+      "dci": "fenticonazole",
+      "forme_pharmaceutique": "crème",
+      "dosage": "2 %",
+      "presentation": "tube aluminium verni de 15 g",
+      "nom_commercial": "LOMEXIN 2 %",
+      "evaluation_id": "CT-21290",
+      "evidence": [
+        {
+          "field": "code_cip",
+          "f": "F1",
+          "p": 2,
+          "s": "fenticon",
+          "t": "1 tube(s) aluminium verni de 15 g (CIP : 34009 333 830 8 4)",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "code_cip": "34009 337 834 8 8",
+      "code_cis": "Non renseigné",
+      "laboratoire": "EFFIK",
+      "dci": "fenticonazole",
+      "forme_pharmaceutique": "capsule molle vaginale",
+      "dosage": "600 mg",
+      "presentation": "plaquette thermoformée PVC PVDC aluminium de 1 capsule",
+      "nom_commercial": "LOMEXIN 600 mg",
+      "evaluation_id": "CT-21290",
+      "evidence": [
+        {
+          "field": "code_cip",
+          "f": "F1",
+          "p": 2,
+          "s": "fenticon",
+          "t": "plaquette(s) thermoformée(s) PVC PVDC aluminium de 1 capsule(s) (CIP : 34009 337 834 8 8)",
+          "m": "regex",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "code_cip": "34009 337 833 1 0",
+      "code_cis": "Non renseigné",
+      "laboratoire": "EFFIK",
+      "dci": "fenticonazole",
+      "forme_pharmaceutique": "capsule molle vaginale",
+      "dosage": "200 mg",
+      "presentation": "plaquette thermoformée PVC PVDC aluminium de 3 capsules",
+      "nom_commercial": "TERLOMEXIN 200 mg",
+      "evaluation_id": "CT-21290",
+      "evidence": [
+        {
+          "field": "code_cip",
+          "f": "F1",
+          "p": 2,
+          "s": "fenticon",
+          "t": "plaquette(s) thermoformée(s) PVC PVDC aluminium de 3 capsule(s) (CIP : 34009 337 833 1 0)",
+          "m": "regex",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21290",
+      "Num_avis": "CT-21290",
+      "produit_nom": "LOMEXIN 600 mg et 2 %, TERLOMEXIN 200 mg, capsule molle vaginale et crème",
+      "dci": "fenticonazole",
+      "type_avis": "Demande de radiation",
+      "type_avis_enum": "Réexamen",
+      "forme": "capsule molle vaginale, crème",
+      "dosage": "600 mg, 2 %, 200 mg",
+      "indication": "Traitement des candidoses, dermatophyties, Pityriasis versicolor, candidoses génitales",
+      "classe_ATC": "D01AC12 (crème), G01AF12 (capsule molle vaginale)",
+      "pathologie": "Candidoses, dermatophyties, Pityriasis versicolor, candidoses génitales",
+      "maladie_rare": false,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Dermatologie / Gynécologie",
+      "aire_therapeutique_niveau_3": "Traitement des mycoses cutanéo-muqueuses et génitales",
+      "source_aire_therapeutique": "Déduit ATC D01AC12 et G01AF12",
+      "design_etude": "Aucune nouvelle donnée clinique significative - étude de cohorte rétrospective EFEMERIS (2004-2018)",
+      "niveau_preuve_brut": "Pas de nouvelles données cliniques pertinentes depuis le dernier avis CT de 2016",
+      "niveau_preuve_interprete": "Observationnel_retrospectif",
+      "besoin_medical_brut": "Besoin médical couvert par des alternatives remboursables",
+      "besoin_medical_interprete": "Couvert",
+      "gravite_patho": "Affections cutanées et génitales de gravité faible à modérée",
+      "gravite_patho_enum": [
+        "Faible"
+      ],
+      "type_population_cible": "Femmes adultes présentant candidoses, dermatophyties, Pityriasis versicolor, candidoses génitales",
+      "pertinence_concurrence_therapeutique": "Comparateurs remboursables multiples disponibles",
+      "date_evaluation": "2025-12-17",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Service médical rendu modéré octroyé en 2016 ; demande de radiation en 2025",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Plusieurs traitements antifongiques topiques et vaginaux remboursables demeurent",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [
+        "Pas de nouvelles données cliniques significatives fournies par le laboratoire",
+        "Demande de radiation de la liste des spécialités remboursables aux assurés sociaux",
+        "Pour la crème LOMEXIN 2 %, indications validées : candidoses, dermatophyties, Pityriasis versicolor",
+        "Pour capsules molles vaginale LOMEXIN 600 mg et TERLOMEXIN 200 mg : candidoses génitales surinfectées ou non par bactéries Gram +",
+        "Alternatives remboursables disponibles et listées en annexes"
+      ],
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "Adopté par la Commission de la transparence le 17 décembre 2025",
+          "m": "rule",
+          "c": 1.0
+        },
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "Demande de radiation",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "Les alternatives remboursables sont présentées en Annexe 4",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "niveau_preuve_interprete",
+          "f": "F1",
+          "p": 3,
+          "s": "Données cliniques",
+          "t": "étude de cohorte rétrospective menée à partir de la base de données française EFEMERIS (2004-2018)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-21290_tol_01",
+    "evaluation_id": "CT-21290",
+    "EI_graves": "Aucune nouvelle donnée clinique significative de tolérance n’a été fournie depuis 2016.",
+    "sae_pct": null,
+    "discontinuations_ae_pct": null,
+    "deaths_ae_n": null,
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "evidence": [
+      {
+        "field": "EI_graves",
+        "f": "F1",
+        "p": 3,
+        "s": "Données c",
+        "t": "Au total, le laboratoire n’a fourni aucune nouvelle donnée clinique significative.",
+        "m": "rule",
+        "c": 0.98
+      }
+    ]
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21290_compHAS_01",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "AMYCOR 1% crème (bifonazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Tableau 1",
+          "t": "AMYCOR, 1% crème (bifonazole)... Traitement local des mycoses cutanéo-muqueuses ... modéré SMR",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_02",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "KETODERM 2% et ses génériques (kétoconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Tableau 1",
+          "t": "KETODERM 2%, crème et ses génériques (kétoconazole)... traitement topique ... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_03",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "MONAZOL® 2% crème (sertaconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Tableau 1",
+          "t": "MONAZOL® 2% crème (sertaconazole)... traitement local des infections cutanéomuqueuses ... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_04",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "MYCOSTER 1 % solution et crème, poudre (ciclopirox olamine)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Tableau 1",
+          "t": "MYCOSTER 1 %, solution, crème, poudre et ses génériques (ciclopirox olamine)... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_05",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "PEVARYL 1 %, crème et génériques (éconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Tableau 1",
+          "t": "PEVARYL 1 %, crème et ses génériques (éconazole)... traitement des candidoses et dermatophyties ... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_06",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "FAZOL, crème (isoconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Tableau 1",
+          "t": "FAZOL crème (isoconazole)... traitement des candidoses et dermatophyties ... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_07",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "TROSYD, crème dermatologique (tioconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 1",
+          "t": "TROSYD crème dermatologique (tioconazole)... traitement des mycoses cutanées ... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_08",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "FONX 1 %, crème (Oxiconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique topique",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 1",
+          "t": "FONX 1 %, crème (Oxiconazole)... traitement candidoses, dermatophytoses ... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_09",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "MONAZOL, ovule (sertaconazole) et génériques",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique vaginal",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 2",
+          "t": "MONAZOL ovule (sertaconazole)... traitement local infections à Candida muqueuse vaginale... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_10",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "GYNO-PEVARYL LP 150 mg ovule et génériques (éconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique vaginal",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 2",
+          "t": "GYNO-PEVARYL LP 150 mg ovule (éconazole)... traitement local mycoses vulvo-vaginales... SMR modéré",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_11",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "GYNO-PEVARYL 150 mg ovule (éconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique vaginal",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 2",
+          "t": "GYNO-PEVARYL 150 mg ovule (éconazole)... traitement local mycoses vaginales... SMR modéré",
+          "m": "table",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_12",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "GYNO TROSYD 300 mg ovule (tioconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antifongique vaginal",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 2",
+          "t": "GYNO TROSYD 300 mg ovule (tioconazole)... traitement local mycoses vaginales... SMR modéré",
+          "m": "table",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_13",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "POLYGYNAX capsule vaginale (sulfate de néomycine, polymyxine B, nystatine)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antibiothérapie locale",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Tableau 2",
+          "t": "POLYGYNAX capsule vaginale... traitement vaginites bactériennes et candidoses... SMR faible",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_14",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "POLYGYNAX VIRGO capsule vaginale (sulfate de néomycine, polymyxine B, nystatine)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Antibiothérapie locale",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21290_arg_CT_01",
+      "evaluation_id": "CT-21290",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Neutre",
+      "description": "Aucune nouvelle donnée clinique significative d’efficacité n’a été fournie depuis la dernière évaluation de la Commission en 2016.",
+      "extrait_textuel": "Au total, le laboratoire n’a fourni aucune nouvelle donnée clinique significative.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Données c",
+          "t": "Au total, le laboratoire n’a fourni aucune nouvelle donnée clinique significative.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21290_arg_CT_02",
+      "evaluation_id": "CT-21290",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "La Commission maintient un service médical rendu modéré, constatant la pertinence des indications validées pour LOMEXIN et TERLOMEXIN dans les candidoses et dermatophyties.",
+      "extrait_textuel": "Avis favorable au maintien des conclusions précédentes de la Commission dans : les candidoses, dermatophyties, et Pityriasis versicolor pour LOMEXIN 2 % crème ; candidoses génitales pour LOMEXIN 600 mg et TERLOMEXIN 200 mg. ",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "Avis favorable au maintien des conclusions précédentes de la Commission pour les présentations concernées...",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21290_arg_CT_03",
+      "evaluation_id": "CT-21290",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Les demandes concernent la radiation des spécialités de la liste des spécialités remboursables pour commercialisation en non remboursable, compte tenu des alternatives remboursables disponibles.",
+      "extrait_textuel": "Il s’agit d’une demande de radiation de la liste des spécialités remboursables aux assurés sociaux ... Les alternatives remboursables sont présentées en Annexe 4.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "Les alternatives remboursables sont présentées en Annexe 4.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21290_arg_CT_04",
+      "evaluation_id": "CT-21290",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le laboratoire n’a pas fourni de nouvelles données significatives sur la tolérance depuis la dernière évaluation.",
+      "extrait_textuel": "Au total, le laboratoire n’a fourni aucune nouvelle donnée clinique significative.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Données c",
+          "t": "Au total, le laboratoire n’a fourni aucune nouvelle donnée clinique significative.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21290_arg_CT_05",
+      "evaluation_id": "CT-21290",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "De nombreux comparateurs cliniquement pertinents et remboursables sont disponibles pour les indications visées, favorisant la place des alternatives dans la stratégie thérapeutique.",
+      "extrait_textuel": "Alternatives remboursables comparables listées en annexes, notamment AMYCOR, KETODERM, MONAZOL, MYCOSTER, PEVARYL, FAZOL, TROSYD, FONX...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Annexe ",
+          "t": "Alternatives remboursables comparables listées en annexes, notamment AMYCOR, KETODERM, MONAZOL...",
+          "m": "table",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21290_ctx",
+    "evaluation_id": "CT-21290",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Modéré",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Maintien du SMR modéré et ASMR V",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21290",
+    "texte_brut": "Avis de la Commission de la transparence sur les spécialités LOMEXIN 600 mg et 2 %, TERLOMEXIN 200 mg, capsule molle vaginale et crème datant décembre 2025. Demande de radiation pour ces spécialités, notamment pour commercialisation en non remboursable. La Commission conclut que les nouvelles données cliniques ne modifient pas sa dernière appréciation (avis du 21/09/2016). Une étude de cohorte rétrospective EFEMERIS 2004-2018 a été présentée sans nouvelles données significatives. Plusieurs comparateurs sont encore remboursables. Le SMR est maintenu à modéré, sans ASMR apportée.",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21290_smrasmr_01",
+      "evaluation_id": "CT-21290",
+      "indication_precise": "Candidoses, dermatophyties, et Pityriasis versicolor pour LOMEXIN 2 % crème",
+      "smr": "Service médical rendu modéré",
+      "smr_enum": "Modéré",
+      "asmr": "Aucune amélioration du service médical rendu apportée (ASMR V)",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non_renseigné",
+      "justification_decisionnelle": "Pas de nouvelles données cliniques modifiant l’évaluation précédente, alternatives remboursables disponibles.",
+      "population_cible_indication": "Patients atteints de candidoses, dermatophyties, Pityriasis versicolor",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "AMYCOR 1% crème",
+        "KETODERM 2% crème et génériques",
+        "MONAZOL 2% crème",
+        "MYCOSTER 1% solution, crème, poudre",
+        "PEVARYL 1% crème et génériques",
+        "FAZOL crème",
+        "TROSYD crème",
+        "FONX 1% crème"
+      ],
+      "comparateur_id_HAS": [
+        "CT-21290_compHAS_01",
+        "CT-21290_compHAS_02",
+        "CT-21290_compHAS_03",
+        "CT-21290_compHAS_04",
+        "CT-21290_compHAS_05",
+        "CT-21290_compHAS_06",
+        "CT-21290_compHAS_07",
+        "CT-21290_compHAS_08"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "La Commission considère que le service médical rendu est modéré",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 5,
+          "s": "Conclusions",
+          "t": "Ces spécialités n'apportent pas d'ASMR (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "smr_asmr_id": "CT-21290_smrasmr_02",
+      "evaluation_id": "CT-21290",
+      "indication_precise": "Candidoses génitales (vulvo-vaginite, cervicite) surinfectées ou non par des bactéries Gram + pour LOMEXIN 600 mg et TERLOMEXIN 200 mg capsules molles vaginales",
+      "smr": "Service médical rendu modéré",
+      "smr_enum": "Modéré",
+      "asmr": "Aucune amélioration du service médical rendu apportée (ASMR V)",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non_renseigné",
+      "justification_decisionnelle": "Maintien du SMR modéré en absence de nouvelles données cliniques significatives.",
+      "population_cible_indication": "Femmes adultes atteintes de candidoses génitales",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "MONAZOL ovule",
+        "GYNO-PEVARYL LP 150 mg ovule et génériques",
+        "GYNO-PEVARYL 150 mg ovule",
+        "GYNO TROSYD 300 mg ovule",
+        "POLYGYNAX capsule vaginale",
+        "POLYGYNAX VIRGO capsule vaginale"
+      ],
+      "comparateur_id_HAS": [
+        "CT-21290_compHAS_09",
+        "CT-21290_compHAS_10",
+        "CT-21290_compHAS_11",
+        "CT-21290_compHAS_12",
+        "CT-21290_compHAS_13",
+        "CT-21290_compHAS_14"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "La Commission considère que le service médical rendu est modéré",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 5,
+          "s": "Conclusions",
+          "t": "Ces spécialités n'apportent pas d'ASMR (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-21290_event_CT_01",
+      "evaluation_id": "CT-21290",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2025-12-17",
+      "detail_brut": "Adopté par la Commission de la transparence le 17 décembre 2025",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "Adopté par la Commission de la transparence le 17 décembre 2025",
+          "m": "rule",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21290",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_flag_incomplet": false,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-21290",
+    "is_orphan": false,
+    "classe_ATC_l2": "Antifongiques topiques",
+    "aire_therapeutique": "Infectiologie",
+    "type_avis_enum": "Réexamen",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2025,
+    "trimestre_ct": 4,
+    "template_ere": "CT_modern",
+    "missingness_indicators": []
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

@@ -1,0 +1,701 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19877",
+  "evaluation_id": "CT-19877",
+  "extraction_date": "2022-07-06",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-06",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19877.pdf",
+        "type": "CT",
+        "page_count": 6
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT19877_0001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel, Quel progrès, Contexte, Indication, Comparateurs cliniquement pertinents, Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 3200,
+      "heading_text": "ÉVALUER LES TECHNOLOGIES DE SANTÉ - AVIS SUR LES MEDICAMENTS"
+    },
+    {
+      "segment_id": "CT19877_0002",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Composition qualitative et quantitative, Posologie et mode d'administration, Mises en garde spéciales",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 3201,
+      "char_end": 6700,
+      "heading_text": "Annexe : modifications de RCP - AMM"
+    },
+    {
+      "segment_id": "CT19877_0003",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Titulaire, numéros d'autorisation de mise sur le marché, emballage",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "char_start": 6701,
+      "char_end": 7200,
+      "heading_text": "Informations administratives"
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "code_cis": "Non renseigné",
+      "cip13": "34009 302 444 1 8",
+      "code_atc": "R05DB09",
+      "dci": "Citrate d’oxéladine",
+      "produit_nom": "PAXELADINE 0,2 % Sirop",
+      "dosage": "0,2 %",
+      "forme": "Sirop",
+      "presentation": "Flacon de 100 mL"
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19877",
+      "Num_avis": "CT-19877",
+      "produit_nom": "PAXELADINE 0,2 % Sirop",
+      "dci": "Citrate d’oxéladine",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "Sirop",
+      "dosage": "0,2 %",
+      "indication": "Traitement symptomatique des toux non productives gênantes.",
+      "classe_ATC": "R05DB09",
+      "pathologie": "Toux non productive gêante",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": null,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Pneumologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Traitement des toux non productives gênantes",
+      "source_aire_therapeutique": "Texte avis page 2",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adulte et enfant de plus de 30 mois et de plus de 15 kg",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "PAXELADINE 0,2 % sirop en flacon de 125 mL a un SMR faible octroyé en 2012.",
+      "historique_ASMR_comparateurs": "ASMR V pour la nouvelle présentation (flacon 100 mL) qui ne présente pas de progrès par rapport à l'ancienne présentation (flacon 125 mL).",
+      "concurrence_therapeutique_recente": "Existence d'alternatives antitussifs non opiacés pour le traitement symptomatique des toux non productives gênantes.",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-06",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [
+        "Avis favorable au remboursement dans le traitement des toux non productives gênantes.",
+        "Pas de progrès de la nouvelle présentation PAXELADINE 0,2% sirop en flacon de 100 mL par rapport à la présentation existante en flacon de 125 mL.",
+        "Service médical rendu faible dans cette indication.",
+        "Avis favorable à l'inscription au taux de remboursement proposé de 15 %.",
+        "Population cible inchangée par rapport à la présentation précédente."
+      ],
+      "gravite_patho": "La toux non productive gênante ne présente aucun caractère de gravité.",
+      "gravite_patho_enum": [
+        "Faible"
+      ],
+      "type_population_cible": "Adulte et enfant de plus de 30 mois et plus de 15 kg",
+      "pertinence_concurrence_therapeutique": "Existence d'alternatives médicamenteuses : antitussifs non opiacés.",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 2,
+          "s": "ÉVALUER ",
+          "t": "PAXELADINE 0,2 % Sirop",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 2,
+          "s": "ÉVALUER ",
+          "t": "Citrate d’oxéladine",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté p",
+          "t": "Adopté par la Commission de la transparence le 6 juillet 2022",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu par PAXELADINE (citrate d’oxéladine) est FAIBLE dans le traitement symptomatique des toux non productives gênantes.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commission",
+          "t": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "evaluation_id": "CT-19877",
+    "tolerance_id": "CT-19877_tol_01",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Non renseigné",
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19877_compHAS_01",
+      "evaluation_id": "CT-19877",
+      "nom_comparateur_HAS": "Antitussifs centraux non opiacés",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Les compar",
+          "t": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour la présentation PAXELADINE 0,2% sirop, 125 mL (antitussifs centraux non opiacés)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19877_arg_CT_1",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "Avis favorable au remboursement pour le traitement des toux non productives gênantes basé sur les données existantes sans nouvelle donnée clinique majeure.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Avis favorable au remboursement dans le traitement des toux non productives gênantes.",
+      "page_source": "Page 2",
+      "section_source": "L’essentiel",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "L’essentiel",
+          "t": "Avis favorable au remboursement dans le traitement des toux non productives gênantes.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_2",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "La nouvelle présentation ne présente pas de progrès clinique ou d'amélioration du service médical rendu par rapport à la présentation précédente.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Pas de progrès de la nouvelle présentation par rapport à la présentation déjà disponible en flacon de 125 mL.",
+      "page_source": "Page 2",
+      "section_source": "Quel progrès ?",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "Quel progrès",
+          "t": "Pas de progrès de la nouvelle présentation PAXELADINE 0,2% (citrate d’oxéladine), sirop en flacon de 100 mL par rapport à la présentation déjà disponible en flacon de 125 mL.",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_3",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Service_medical_rendu",
+      "description": "Le service médical rendu par PAXELADINE 0,2 % sirop est considéré faible dans le traitement symptomatique des toux non productives gênantes.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission considère que le service médical rendu par PAXELADINE (citrate d’oxéladine) est FAIBLE dans le traitement symptomatique des toux non productives gênantes.",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu par PAXELADINE (citrate d’oxéladine) est FAIBLE dans le traitement symptomatique des toux non productives gênantes.",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_4",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "PAXELADINE 0,2 % sirop est un médicament d’appoint symptomatique parmi les alternatives médicamenteuses dans le traitement des toux non productives gênantes.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La spécialité PAXELADINE 0,2% sirop est un médicament d’appoint du traitement symptomatique des toux non productives gênantes.",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Conclusions",
+          "t": "La spécialité PAXELADINE 0,2% (citrate d’oxéladine) sirop est un médicament d’appoint du traitement symptomatique des toux non productives gênantes.",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_5",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "La nouvelle présentation ne modifie pas la population cible ni la stratégie thérapeutique, le besoin médical reste inchangé.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "L’introduction de ce complément de gamme dans la stratégie thérapeutique ... n’est pas de nature à modifier la population cible déjà estimée par la Commission.",
+      "page_source": "Page 3",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Population",
+          "t": "L’introduction de ce complément de gamme dans la stratégie thérapeutique du traitement symptomatique des toux non productives gênantes n’est pas de nature à modifier la population cible déjà estimée par la Commission.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_6",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "Contient du saccharose et de faibles quantités d’éthanol, contre-indiqué chez l’enfant de moins de 30 mois et chez les patients présentant certaines intolérances.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ce médicament ne doit pas être administré chez l’enfant de moins de 30 mois. Contient du saccharose et de l’éthanol, utilisation déconseillée en cas d’intolérance au fructose ou déficit en sucrase/isomaltase.",
+      "page_source": "Pages 5-6",
+      "section_source": "Mises en garde spéciales et précautions d'emploi",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Mises en",
+          "t": "Ce médicament ne doit pas être administré chez l’enfant de moins de 30 mois en l’absence de données étayant l’efficacité et la sécurité dans cette tranche d’âge.",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Mises en",
+          "t": "Ce médicament contient du saccharose. Son utilisation est déconseillée chez les patients présentant une intolérance au fructose, un syndrome de malabsorption du glucose et du galactose ou un déficit en sucrase/isomaltase.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Mises en",
+          "t": "Ce médicament contient de faibles quantités d'éthanol (alcool), 24 mg par dose de 5 ml et 12 mg par dose de 2,5 ml.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_7",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Service_medical_rendu",
+      "description": "Le service médical rendu correspond à un médicament symptomatique d’appoint, avec un rapport efficacité/effets indésirables modeste, sans caractère de gravité de la pathologie traitée.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le rapport efficacité/effets indésirables de cette spécialité dans cette indication est modeste. La toux non productive gênante ne présente aucun caractère de gravité.",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Service ",
+          "t": "La toux non productive gênante ne présente aucun caractère de gravité.",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Service ",
+          "t": "Le rapport efficacité/effets indésirables de cette spécialité dans cette indication est modeste.",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19877_arg_CT_8",
+      "evaluation_id": "CT-19877",
+      "source_argument": "CT",
+      "categorie_argument": "Amélioration_SMR",
+      "description": "La nouvelle présentation est considérée comme un complément de gamme sans amélioration du service médical rendu (ASMR V).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Améliora",
+          "t": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19877_ctx",
+    "evaluation_id": "CT-19877",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "1996-09-20",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Faible",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 4,
+        "s": "AMM en v",
+        "t": "Date initiale (AMM nationale) : 20 septembre 1996",
+        "m": "rule",
+        "c": 0.9
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 4,
+        "s": "AMM en v",
+        "t": "rectificatifs et teneur : 22 août 2021 (ajout de la forme flacon de 100 mL)",
+        "m": "rule",
+        "c": 0.9
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19877",
+    "texte_brut": "Avis sur PAXELADINE 0,2 % sirop, nouvelle présentation flacon 100 mL. Avis favorable au remboursement dans le traitement des toux non productives gênantes. Pas de progrès clinique par rapport à la présentation 125 mL. Service médical rendu faible. ASMR V. Posologie réservée à adultes et enfants > 30 mois et > 15 kg. Contient saccharose et éthanol. Contre-indiqué chez enfants < 30 mois et patients avec intolérance au fructose.\nComposition : 0,2 g citrate d’oxéladine pour 100 mL. Cuillères doseuses 2,5 mL et 5 mL contenant respectivement 5 mg et 10 mg de citrate d’oxéladine.\nTolérance acceptable, précautions d’emploi mentionnées. Titulaire : IPSEN CONSUMER HEALTHCARE.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19877_smrasmr_01",
+      "evaluation_id": "CT-19877",
+      "indication_precise": "Traitement symptomatique des toux non productives gênantes.",
+      "smr": "La Commission considère que le service médical rendu par PAXELADINE est faible dans l'indication.",
+      "smr_enum": "Faible",
+      "asmr": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Absence de caractère de gravité de la toux, rapport efficacité/effets indésirables modeste, existence d'alternatives, complément de gamme sans progrès.",
+      "population_cible_indication": "Adulte et enfant de plus de 30 mois et plus de 15 kg",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "Antitussifs centraux non opiacés"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19877_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "≥ 30 mois"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Faible",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commiss",
+          "t": "La Commission considère que le service médical rendu par PAXELADINE (citrate d’oxéladine) est FAIBLE dans le traitement symptomatique des toux non productives gênantes.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commiss",
+          "t": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la présentation déjà inscrite.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19877_poso_01",
+      "evaluation_id": "CT-19877",
+      "smr_asmr_id": "CT-19877_smrasmr_01",
+      "indication": "Traitement symptomatique des toux non productives gênantes.",
+      "population_cible": "Adulte et enfant de plus de 30 mois et plus de 15 kg",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Le traitement doit être court (quelques jours) et limité aux horaires où survient la toux. Pour enfant 15-20 kg : 2,5 ml (5 mg citrate) 3-4 fois/jour max. Pour enfant 20-30 kg : 5 ml (10 mg citrate) 2-3 fois/jour max. Pour enfant 30-50 kg : 5 ml, 3-5 fois/jour max. Adulte : 5 ml, 5 fois/jour max. Conditionnement avec cuillère doseuse graduée 2,5 ml et 5 ml ou gobelet doseur.",
+      "phases": [],
+      "ajustements_poso_brut": "Non renseigné",
+      "commentaires": "Respecter la limite d'âge et poids, ne pas dépasser nombre maximal de prises quotidiennes.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "4.2. Pos",
+          "t": "RESERVE A L’ADULTE ET A L’ENFANT DE PLUS DE 30 MOIS ET DE PLUS DE 15 KG. Le traitement symptomatique doit être court ... 5 prises par jour.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19877_event_AMM_01",
+      "evaluation_id": "CT-19877",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "1996-09-20",
+      "detail_brut": "Date initiale AMM nationale",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "AMM en v",
+          "t": "Date initiale (AMM nationale) : 20 septembre 1996",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19877_event_AMM_02",
+      "evaluation_id": "CT-19877",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-08-22",
+      "detail_brut": "Rectificatif ajout forme flacon 100 mL",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "AMM en v",
+          "t": "Date des rectificatifs et teneur : 22 août 2021",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19877_event_CT_01",
+      "evaluation_id": "CT-19877",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-06",
+      "detail_brut": "Adoption de l'avis Commission de la transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté pa",
+          "t": "Adopté par la Commission de la transparence le 6 juillet 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19877",
+    "delai_amm_ct_jours": 9365,
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19877",
+    "is_orphan": false,
+    "classe_ATC_l2": "Antitussif",
+    "aire_therapeutique": "Pneumologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": {}
+}

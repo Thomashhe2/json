@@ -1,0 +1,1579 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19811",
+  "evaluation_id": "CT-19811",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19811_ULTOMIRIS_AvisCT_2022.pdf",
+        "type": "CT",
+        "page_count": 33
+      },
+      "F2": {
+        "file_name": "CT-19811_Transcription_ULTOMIRIS_ExtIndication.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 8
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "F1_S1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse / Sommaire",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 15000,
+      "heading_text": "Synthèse, Contexte, Indications, Posologie",
+      "expected_fields": [
+        "essais",
+        "comparateurs",
+        "tolérance",
+        "smr_asmr"
+      ],
+      "routing_hint": "extraction_prioritaire",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "F1_S2",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Essais cliniques et analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 21,
+      "char_start": 15001,
+      "char_end": 45000,
+      "heading_text": "Essais cliniques, efficacité, tolérance",
+      "expected_fields": [
+        "essais_cliniques",
+        "critères_jugement",
+        "tolérance",
+        "résultats_efficacite"
+      ],
+      "routing_hint": "extraction_prioritaire",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "F1_S3",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion, Conclusions, Recommandations",
+      "template_detecte": "CT_modern",
+      "page_start": 22,
+      "page_end": 33,
+      "char_start": 45001,
+      "char_end": 61500,
+      "heading_text": "Conclusions, avis, recommandations",
+      "expected_fields": [
+        "smr_asmr",
+        "arguments_decisionnels",
+        "votes_commission"
+      ],
+      "routing_hint": "extraction_prioritaire",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "F3_seg_20220629_0001",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription séance HAS 29/06/2022",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 12000,
+      "heading_text": "Commission de Transparence ULTOMIRIS extension indication",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANS",
+      "label_confidence": 1
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "ULTOMIRIS",
+      "dci": "ravulizumab",
+      "titulaire_amm": "ALEXION Pharma France",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "Solution à diluer pour perfusion",
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "100 mg/mL",
+          "code_cip13": "34009 550 823 8"
+        },
+        {
+          "forme_pharmaceutique": "Solution à diluer pour perfusion",
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "100 mg/mL",
+          "code_cip13": "34009 550 823 7"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 33,
+          "s": "ULTOMIRIS",
+          "t": "ULTOMIRIS solution à diluer 100 mg/mL",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 33,
+          "s": "ALEXION P",
+          "t": "Demandeur ALEXION Pharma France",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19811",
+      "Num_avis": "CT-19811",
+      "produit_nom": "ULTOMIRIS",
+      "dci": "ravulizumab",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Solution à diluer pour perfusion",
+      "dosage": "100 mg/mL",
+      "indication": "Traitement de l'hémoglobinurie paroxystique nocturne (HPN) chez les patients pédiatriques pesant 10 kg ou plus présentant une hémolyse avec appareil symptomatique et stables sous eculizumab depuis au moins 6 mois",
+      "classe_ATC": "L04AA43",
+      "pathologie": "Hémoglobinurie paroxystique nocturne",
+      "maladie_rare": true,
+      "ligne_traitement": "1ère intention",
+      "sous_groupe_population": "Patients pédiatriques pesant 10 kg ou plus",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Traitement de l'hémoglobinurie paroxystique nocturne",
+      "source_aire_therapeutique": "Texte avis page 1-3",
+      "design_etude": "Études de phase III, multicentriques, randomisées en ouvert",
+      "niveau_preuve_brut": "Phase III randomisé ouvert, non comparatif pédiatrique, études comparatives adultes",
+      "niveau_preuve_interprete": "Phase_III_RCT_ouvert",
+      "besoin_medical_brut": "Le besoin médical est partiellement couvert par l'eculizumab; un besoin subsiste pour un traitement améliorant le parcours de soins, la tolérance et la qualité de vie.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Patients pédiatriques pesant 10 kg ou plus, âgés de 9 à 17 ans inclus dans l'étude",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "ULTOMIRIS déjà inscrit chez l'adulte pour la HPN, avec SMR important et ASMR IV",
+      "historique_ASMR_comparateurs": "ASMR IV attribué par rapport à SOLIRIS (eculizumab)",
+      "concurrence_therapeutique_recente": "SOLIRIS (eculizumab) est concurrent direct, seul autre inhibiteur du complément agréé",
+      "vote_unanimite": false,
+      "nb_votants": 21,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 8,
+      "date_evaluation": "2022-06-29",
+      "gravite_patho": "L'hémoglobinurie paroxystique nocturne est une maladie rare, grave, avec complications thromboemboliques fréquentes et pronostic vital engagé.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Enfants et adolescents pesant ≥ 10 kg",
+      "pertinence_concurrence_therapeutique": "Comparateur principal : SOLIRIS (eculizumab), seule alternative médicamenteuse actuellement agréée",
+      "evidence": [
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 9,
+          "s": "Le besoin",
+          "t": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "La Commission considère",
+          "t": "La Commission considère que le service médical rendu par ULTOMIRIS (ravulizumab) est important dans le traitement de l’hémoglobinurie paroxystique nocturne (HPN) chez les patients pédiatriques pesant 10 kg ou plus",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "la Commission de la transparence considère",
+          "t": "la Commission de la transparence considère que ULTOMIRIS (ravulizumab)... apporte une amélioration du service médical rendu mineure (ASMR IV)",
+          "m": "rule",
+          "c": 0.99
+        }
+      ],
+      "ligne_traitement_enum": null,
+      "transcription_textuelle": "Examen extension d’indication d’ULTOMIRIS chez sujets pédiatriques HPN stables sous SOLIRIS. Étude pharmacocinétique phase 3 non comparative avec 13 patients, pas d’inclusion <30 kg. Débat sur ASMR IV ou V, alignement adulte retenu par vote commission.",
+      "extraits_arguments": [
+        "Étude phase 3 pharmacocinétique ouverte non comparative en pédiatrie avec 13 patients HPN stables sous éculizumab",
+        "ULTOMIRIS administration moins fréquente que SOLIRIS, mais perfusions plus longues",
+        "Commission débat qualité des données pédiatriques, peu de patients <30 kg inclus",
+        "Position de la majorité de la Commission de s’aligner sur évaluation adulte malgré données limitées",
+        "Vote commission : 13 pour alignement ASMR adulte, 8 abstentions"
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "evaluation_id": "CT-19811",
+      "essai_nom": "ALXN1210-PNH-304",
+      "nct_number": "NCT03406507",
+      "design": "Phase_III_RCT_ouvert",
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Enfants et adolescents âgés de 9 à 17 ans ayant une hémoglobinurie paroxystique nocturne, pesant ≥10 kg, naïfs ou préalablement traités par eculizumab",
+      "comparateur_utilise": "Aucun (étude monobras, non comparative)",
+      "nb_patient_traitement": 13,
+      "nb_patient_comparateur": 0,
+      "resultat_global": "Profil de pharmacocinétique et pharmacodynamique favorable, efficacité exploratoire, tolérance acceptable",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III non comparative chez pédiatrie",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": 9,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non_significatif",
+      "maturite_pct": null,
+      "nb_patients_inclus": "13",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "France",
+          "nb_patients": "1",
+          "pourcentage": null
+        }
+      ],
+      "date_fin_inclusion": "2020-03",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "qol_instruments": [
+        "FACIT-Fatigue pédiatrique"
+      ],
+      "qol_resultats_brut": "Variation relative positive légère du score FACIT-Fatigue, non concluante",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 16,
+          "s": "Étude AL",
+          "t": "Étude ALXN1210-PNH-304, phase III non comparative pédiatrique, NCT03406507, 13 patients",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "evaluation_id": "CT-19811",
+      "essai_nom": "ALXN1210-PNH-301",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_ouvert",
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Adultes atteints d'HPN naïfs d'inhibiteur du complément",
+      "comparateur_utilise": "eculizumab (SOLIRIS)",
+      "nb_patient_traitement": 125,
+      "nb_patient_comparateur": 121,
+      "resultat_global": "Efficacité non inférieure au comparateur sur critère principal (absence recours transfusion, contrôle LDH)",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III randomisé ouvert adulte",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": 100,
+      "nb_patients_inclus": "246",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "qol_instruments": [
+        "FACIT-Fatigue"
+      ],
+      "qol_resultats_brut": "Score FACIT-Fatigue non inférieur à eculizumab, dans une étude en ouvert",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 15,
+          "s": "Deux études",
+          "t": "Etude phase III randomisée ouverte ALXN1210-PNH-301 chez adultes naïfs d'inhibiteur",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-302",
+      "evaluation_id": "CT-19811",
+      "essai_nom": "ALXN1210-PNH-302",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_ouvert",
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Adultes cliniquement stables sous eculizumab depuis au moins 6 mois",
+      "comparateur_utilise": "eculizumab (SOLIRIS)",
+      "nb_patient_traitement": 97,
+      "nb_patient_comparateur": 98,
+      "resultat_global": "Efficacité non inférieure à eculizumab sur critère principal LDH, diminution nombre perfusions",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III randomisé ouvert adulte",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Maintenance",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": 100,
+      "nb_patients_inclus": "195",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "qol_instruments": [
+        "FACIT-Fatigue"
+      ],
+      "qol_resultats_brut": "Score FACIT-Fatigue non inférieur à eculizumab",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 15,
+          "s": "Étude phase III chez patients stables",
+          "t": "Etude ALXN1210-PNH-302 chez patients adultes cliniquement stables sous eculizumab",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19811_essai_01",
+      "evaluation_id": "CT-19811",
+      "essai_nom": "Étude principale (nom non spécifié)",
+      "design": "Phase 3 ouverte non comparative",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "population_cible": "Enfants et adolescents avec HPN, 9-17 ans, 13 patients inclus, 5 naïfs et 8 prétraités par éculizumab",
+      "comparateur_utilise": "Non applicable",
+      "comparateur_type_enum": "Aucun",
+      "nb_patient_traitement": 13,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Pharmacocinétique et pharmacodynamie satisfaisantes, inhibition complète de complément C5 maintenue 26 semaines, absence d’épisode hémolytique",
+      "QoL_flag": true,
+      "niveau_preuve": "Données pharmacodynamiques/pharmacocinétiques",
+      "pooling_flag": false,
+      "population_dedoublée": null,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non applicable",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 6,
+      "maturite_donnees": "Préliminaires",
+      "age_min_num": 9,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": null,
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [
+        "Score de fatigue"
+      ],
+      "qol_resultats_brut": "Résultats exploratoires basés sur un score de fatigue",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "13",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "Étude de",
+          "t": "étude de phase 3 multicentrique en ouvert, non comparative, monobras, réalisée chez des enfants et adolescents avec HPN",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 3,
+          "s": "Cette étude a inclus 13 patients",
+          "t": "Cette étude a inclus 13 patients de 9 à 17 ans",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 3,
+          "s": "enfants et adolescents qui avaient une HPN, qui étaient soit naïfs de traitement, ou prétraités par éculizumab",
+          "t": "enfants et adolescents qui avaient une HPN, naïfs ou prétraités par éculizumab",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 4,
+          "s": "inhibition immédiate, complète et maintenue de la voie terminale",
+          "t": "Une inhibition immédiate, complète et maintenue de la voie terminale du complément a été observée, sans épisodes hémolytiques",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "qol_instruments",
+          "f": "F1",
+          "p": 4,
+          "s": "score de fatigue",
+          "t": "Les critères de qualité de vie étaient basés sur un score de fatigue",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19811_essai_ALXN1210-PNH-301_crit_AbsenceTransfusion",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "evaluation_id": "CT-19811",
+      "nom_critere": "Absence de recours à la transfusion",
+      "type_critere_enum": "Symptomatique",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "Non renseigné",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 15,
+          "s": "absence de recours",
+          "t": "absence de recours à la transfusion : 74,2% pour ravulizumab versus 66,7% pour eculizumab",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19811_essai_ALXN1210-PNH-301_crit_LDH_norm",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "evaluation_id": "CT-19811",
+      "nom_critere": "Normalisation du taux de LDH",
+      "type_critere_enum": "Biomarqueur",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "Non renseigné",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 15,
+          "s": "normalisation du taux de LDH",
+          "t": "taux de LDH normalisé : OR 1.23 IC95% [0,82 ; 1,84]",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19811_essai_ALXN1210-PNH-302_crit_LDH_variation",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-302",
+      "evaluation_id": "CT-19811",
+      "nom_critere": "Variation relative du taux de LDH",
+      "type_critere_enum": "Biomarqueur",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "Non renseigné",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 15,
+          "s": "variation relative du taux de LDH",
+          "t": "Variation relative de LDH : -0.93% ravulizumab vs +8.66% eculizumab, différence -9.58%",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19811_essai_ALXN1210-PNH-304_crit_PK_PK",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "evaluation_id": "CT-19811",
+      "nom_critere": "Paramètres pharmacocinétiques",
+      "type_critere_enum": "Biomarqueur",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "Non renseigné",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": null,
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 20,
+          "s": "concentrations sériques",
+          "t": "Concentrations sériques du ravulizumab à l’état d’équilibre atteintes immédiatement après la première dose et maintenues 26 semaines",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19811_essai_ALXN1210-PNH-304_crit_PD",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "evaluation_id": "CT-19811",
+      "nom_critere": "Paramètres pharmacodynamiques",
+      "type_critere_enum": "Biomarqueur",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "Non renseigné",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": null,
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 20,
+          "s": "inhibition complète",
+          "t": "Inhibition immédiate, complète et maintenue de la voie terminale du complément durant 26 semaines",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19811_essai_01_crit_PkPd",
+      "evaluation_id": "CT-19811",
+      "essai_id": "CT-19811_essai_01",
+      "nom_critere": "Paramètres pharmacocinétique et pharmacodynamique",
+      "type_critere_enum": "Biomarqueur",
+      "nature_critere": "Exploratoire",
+      "unite_mesure": "Concentration sérique et inhibition complément",
+      "primaire_ou_secondaire": "Primaire",
+      "p_value": "Non renseigné",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": null,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 3,
+          "s": "paramètres de pharmacocinétique et de pharmacodynamie",
+          "t": "Les critères de jugement principaux sont des paramètres de pharmacocinétique et pharmacodynamie",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19811_essai_ALXN1210-PNH-304_tol",
+      "evaluation_id": "CT-19811",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "ae_total_pct": null,
+      "sae_pct": null,
+      "discontinuations_ae_pct": null,
+      "deaths_ae_n": 0,
+      "ei_graves_detailles": [
+        {
+          "ei_terme": "Septicémie liée au dispositif médical (cathéter)",
+          "grade": "≥3",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 0,
+          "issue": "En cours",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "ei_graves_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "un patient naïf de traitement",
+              "t": "un patient naïf de traitement a présenté septicémie liée au dispositif médical (cathéter)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Infection staphylococcique",
+          "grade": "≥3",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 0,
+          "issue": "En cours",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "ei_graves_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "un patient naïf",
+              "t": "un patient naïf a présenté infection staphylococcique",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Syndrome de défaillance multiviscérale",
+          "grade": "≥3",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 0,
+          "issue": "En cours",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "ei_graves_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "un patient naïf",
+              "t": "un patient naïf a présenté syndrome de défaillance multiviscérale",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Choc septique",
+          "grade": "≥3",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 0,
+          "issue": "En cours",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "ei_graves_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "un patient naïf",
+              "t": "un patient naïf a présenté choc septique",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Thrombose liée au dispositif médical (cathéter)",
+          "grade": "≥3",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 0,
+          "issue": "En cours",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "ei_graves_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "un patient naïf",
+              "t": "un patient naïf a présenté thrombose liée au dispositif médical",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "ei_frequents_detailles": [
+        {
+          "ei_terme": "Infections des voies respiratoires supérieures",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 84.6,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "ei_frequents_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "EI les plus fréquents",
+              "t": "Les EI les plus fréquemment rapportés appartenaient au SOC « Infections et infestations » (11 patients, 84,6 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Affections gastro-intestinales (douleurs abdominales, rhinopharyngite)",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 46.2,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "ei_frequents_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "EI les plus fréquents",
+              "t": "EI les plus fréquemment rapportés appartenaient au SOC « Affections gastro-intestinales » (6 patients, 46,2 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "sae_data_available": true,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves": "3 patients ont présenté des événements indésirables graves (EI grave) dont un lié au dispositif médical; aucun décès ni abandon liés aux EI",
+      "EI_frequents": "Infections voies respiratoires supérieures (84,6 %) et affections gastro-intestinales (46,2 %)",
+      "deces": "Aucun décès lié au traitement reporté",
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 23,
+          "s": "Données issues des études",
+          "t": "Lors de l’étude ALXN1210-PNH-304, 3 patients ont présenté des EI graves, aucun lié au médicament",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 23,
+          "s": "EI fréquents principaux",
+          "t": "Les EI les plus fréquents appartenaient aux SOC infections des voies respiratoires supérieures (84,6 %) et affections gastro-intestinales (46,2 %)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19811_essai_ALXN1210-PNH-301_comp_01",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "nom_comparateur": "eculizumab (SOLIRIS)",
+      "comparateur_type_enum": "Traitement_actif",
+      "comparateur_standard_soin": "Traitement actif de référence",
+      "evidence": [
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 15,
+          "s": "Deux études",
+          "t": "Comparaison avec eculizumab (SOLIRIS) dans études adultes",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19811_essai_ALXN1210-PNH-302_comp_01",
+      "essai_id": "CT-19811_essai_ALXN1210-PNH-302",
+      "nom_comparateur": "eculizumab (SOLIRIS)",
+      "comparateur_type_enum": "Traitement_actif",
+      "comparateur_standard_soin": "Traitement actif de référence",
+      "evidence": [
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 15,
+          "s": "Étude phase III chez patients stables",
+          "t": "Comparaison avec eculizumab (SOLIRIS) chez patients stables",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19811_compHAS_01",
+      "evaluation_id": "CT-19811",
+      "nom_comparateur_HAS": "eculizumab (SOLIRIS)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "Comparateurs cl",
+          "t": "Le comparateur cliniquement pertinent d’ULTOMIRIS est SOLIRIS (eculizumab)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19811_arg_CT_1",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Ravulizumab a montré une efficacité non inférieure à l’eculizumab sur le contrôle de l’hémolyse et le besoin transfusionnel chez les adultes et en relais chez pédiatriques.",
+      "extrait_textuel": "ULTOMIRIS (ravulizumab) est un inhibiteur du complément qui a démontré une efficacité non-inférieure à celle de SOLIRIS (eculizumab) en termes de contrôle de l’hémolyse et de besoin transfusionnel chez les patients adultes et en relais chez patients pédiatriques.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 3-4",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "ULTOMIRIS (ravu",
+          "t": "ULTOMIRIS (ravulizumab) est un inhibiteur du complément qui a démontré une efficacité non-inférieure à cellede SOLIRIS (eculizumab)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_2",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Chez l’enfant et l’adolescent, l’étude ALXN1210-PNH-304 a montré des résultats pharmacocinétiques et pharmacodynamiques comparables à ceux chez l’adulte.",
+      "extrait_textuel": "Chez l’enfant et l’adolescent, les résultats de l’étude de pharmacocinétique et de pharmacodynamie réalisée dans cette population avec le ravulizumab suggèrent un profil d’efficacité et de tolérance comparable à celui décrit chez l’adulte.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "page_source": "Page 3, 26",
+      "section_source": "Efficacité, Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "pharmacocinétique et",
+          "t": "les résultats de l’étude de pharmacocinétique et de pharmacodynamie réalisée dans cette population avec le ravulizumab suggèrent un profil d’efficacité...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_3",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance du ravulizumab pédiatrique est comparable à celui observé chez l’adulte avec absence d’infection à méningocoque rapportée dans l'étude pédiatrique.",
+      "extrait_textuel": "Les données de tolérance de l’étude ALXN1210-PNH-304 suggèrent un profil de sécurité du ravulizumab comparable à celui rapporté chez l’adulte. Aucune infection à méningocoque n’a été rapportée chez les 13 patients pédiatriques.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 21-23",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 21,
+          "s": "Tolérance générale",
+          "t": "Les données de tolérance de l’étude ALXN1210-PNH-304 suggèrent un profil de sécurité du ravulizumab comparable à celui rapporté chez l’adulte",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_4",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Il existe un besoin médical partiellement couvert par les alternatives actuelles, notamment chez les enfants atteints d’HPN pour améliorer le parcours de soins.",
+      "extrait_textuel": "Le besoin médical est actuellement partiellement couvert par l’eculizumab (SOLIRIS), mais persiste chez les enfants pour un médicament offrant un meilleur parcours de soins.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 9, 27",
+      "section_source": "Besoin médical, Synthèse",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "besoin médical",
+          "t": "Le besoin médical est actuellement partiellement couvert par l’eculizumab (SOLIRIS)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_5",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "ULTOMIRIS (ravulizumab) présente l’avantage d’une perfusion toutes les 8 semaines, permettant une amélioration des conditions de soins comparée à SOLIRIS (eculizumab).",
+      "extrait_textuel": "Le schéma d’administration d’ULTOMIRIS présente l’avantage d’une fréquence d’administration espacée avec une perfusion toutes les 8 semaines, améliorant les conditions de soin des patients.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 3, 29",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "schéma d’administration",
+          "t": "fréquence d’administration espacée avec une perfusion toutes les 8 semaines",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_6",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Aucun bénéfice démontré d’ULTOMIRIS par rapport à SOLIRIS en termes d’efficacité, tolérance, notamment sur le risque thromboembolique.",
+      "extrait_textuel": "Il n’y a à ce jour aucun bénéfice démontré d’ULTOMIRIS par rapport à SOLIRIS en termes d’efficacité ou de tolérance, notamment sur le risque de survenue d’événements thromboemboliques.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 3-4",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "bénéfice démontré",
+          "t": "Il n’y a à ce jour aucun bénéfice démontré d’ULTOMIRIS par rapport à SOLIRIS en termes d’efficacité ou de tolérance",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_7",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Une vaccination obligatoire antiméningoccoccique et une antibioprophylaxie sont recommandées pour la prévention des infections associées au mécanisme d’action.",
+      "extrait_textuel": "La CT rappelle que la prescription doit être associée à la vaccination contre le méningocoque par le vaccin ACYW et B, ainsi qu'à une antibioprophylaxie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3, 6, 31",
+      "section_source": "Place dans la stratégie thérapeutique, Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "La CT rappelle que",
+          "t": "La prescription doit être associée à la vaccination contre le méningocoque par le vaccin ACYW et B",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_CT_8",
+      "evaluation_id": "CT-19811",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Favorable",
+      "description": "La population cible pédiatrique est estimée à 71 patients en France, calculée à partir de la prévalence et données impactantes du registre international.",
+      "extrait_textuel": "La population cible d’ULTOMIRIS (ravulizumab) est estimée à un maximum de 71 patients pédiatriques en France en 2022.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 5, 32, 33",
+      "section_source": "Population cible, Synthèse",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 33,
+          "s": "population cible",
+          "t": "La population cible d’ULTOMIRIS est estimée au maximum à 71 patients",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_TRANS_01",
+      "evaluation_id": "CT-19811",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "description": "L'étude de phase 3 chez 13 enfants et adolescents atteints d’HPN montre une bonne inhibition de la voie terminale du complément sans épisodes hémolytiques, avec maintien des concentrations de ravulizumab 26 semaines.",
+      "extrait_textuel": "Une inhibition immédiate, complète et maintenue de la voie terminale du complément pendant la période d’évaluation de 26 semaines a été observée et il n’y a eu aucun épisode hémolytique dans l’étude.",
+      "intervenant": "Chef de Projet",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "ULTOMIRIS ",
+          "t": "inhibition immédiate, complète et maintenue ... aucun épisode hémolytique",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_TRANS_02",
+      "evaluation_id": "CT-19811",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "ULTOMIRIS permet des perfusions toutes les 8 semaines au lieu de toutes les 2 semaines pour SOLIRIS, améliorant le parcours patient malgré des perfusions plus longues.",
+      "extrait_textuel": "C’est un produit très similaire à celui qui était utilisé jusqu’alors, SOLIRIS, simplement cela permet des injections moins fréquentes toutes les huit semaines, mais qui sont des perfusions plus longues.",
+      "intervenant": "Étienne Lengliné",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "perfusion toutes les huit semaines",
+          "t": "permet des injections moins fréquentes, toutes les huit semaines, mais des perfusions plus longues",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_TRANS_03",
+      "evaluation_id": "CT-19811",
+      "source_argument": "TRANS",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "description": "Le dossier pédiatrique est très limité avec seulement 13 patients dont seulement 2 pesant moins de 40 kg, aucune inclusion < 30 kg, données pharmacocinétiques extrapolées.",
+      "extrait_textuel": "Dossier présenté est vraiment d’une pauvreté redoutable. 13 patients étudiés, 11 pesaient plus de 40 kg, aucun <30 kg inclus.",
+      "intervenant": "Patrick Niaudet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "pauvreté dossier",
+          "t": "dossier présenté est vraiment d’une pauvreté redoutable ... 13 patients, 11 plus de 40 kg",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_TRANS_04",
+      "evaluation_id": "CT-19811",
+      "source_argument": "TRANS",
+      "categorie_argument": "Position_population",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Incertitudes sur la représentativité des enfants <30 kg et rareté de la pathologie à ce poids, justifiant une réflexion sur le minimum requis pour une étude pédiatrique suffisante.",
+      "extrait_textuel": "Les enfants de moins de 30 kilogrammes existent, mais c’est rarissime. Nécessité de réflexion sur minimum de données pédiatriques suffisant.",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "moins de 30 kg",
+          "t": "Les enfants de moins de 30 kilogrammes existent-ils ? ... c’est rarissime",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_TRANS_05",
+      "evaluation_id": "CT-19811",
+      "source_argument": "TRANS",
+      "categorie_argument": "Décision_vote",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "La Commission a voté pour un alignement de l’évaluation pédiatrique sur celle de l’adulte, avec 13 voix pour et 8 abstentions.",
+      "extrait_textuel": "Nous avons 21 votants. 13 voix pour et 8 abstentions. C’est donc un alignement sur l’adulte.",
+      "intervenant": "Sophie Kelley",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "vote pour alignement",
+          "t": "21 votants, 13 voix pour et 8 abstentions, alignement sur l’adulte",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19811_arg_TRANS_06",
+      "evaluation_id": "CT-19811",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "L’association HPN France-Aplasie Médullaire souligne l’adaptation du traitement proposé aux attentes des patients en termes d’efficacité, tolérance et qualité de vie, notamment grâce à l’espacement des consultations.",
+      "extrait_textuel": "Le médicament apporte une réponse adaptée aux attentes du patient en efficacité, tolérance et amélioration de la qualité de vie, grâce à l’espacement des consultations.",
+      "intervenant": "Fatiha Barka",
+      "moment_debat": "Intervention_association",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "association patients",
+          "t": "réponse adaptée aux attentes du patient ... espacement des consultations à huit semaines",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19811_ctx",
+    "evaluation_id": "CT-19811",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-09-01",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": true,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis",
+      "Allemagne",
+      "Autriche",
+      "Danemark",
+      "Espagne",
+      "Finlande",
+      "Islande",
+      "Luxembourg",
+      "Royaume-Uni",
+      "Suède"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Pharmacocinétique et pharmacodynamie",
+    "valeur_critère": "Population pédiatrique réduite n=13, non comparative",
+    "impact_décision": "Maintien SMR Important, classement ASMR IV",
+    "estimation_mesure_impact": "Amélioration partielle du besoin médical, impact morbi-mortalité non démontré",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19811",
+    "texte_brut": "Extrait complet du document Avis CT-19811 ULTOMIRIS ravulizumab juin 2022",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19811_smrasmr_01",
+      "evaluation_id": "CT-19811",
+      "indication_precise": "Traitement de l'hémoglobinurie paroxystique nocturne (HPN) chez les patients pédiatriques pesant 10 kg ou plus présentant une hémolyse avec symptômes cliniques et stables sous eculizumab depuis au moins 6 mois",
+      "smr": "La Commission considère que le service médical rendu par ULTOMIRIS (ravulizumab) est important dans le traitement de l'hémoglobinurie paroxystique nocturne (HPN) chez les patients pédiatriques pesant 10 kg ou plus.",
+      "smr_enum": "Important",
+      "asmr": "La Commission de la transparence considère qu’ULTOMIRIS (ravulizumab), apporte une amélioration du service médical rendu mineure (ASMR IV) par rapport à SOLIRIS (eculizumab) chez les patients pédiatriques.",
+      "asmr_enum": "IV",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "IV",
+      "justification_decisionnelle": "Basée sur les données limitées mais indiquant une efficacité et tolérance comparables à l’adulte, gain organisationnel des soins avec administration espacée toutes les 8 semaines, et absence de bénéfice démontré sur efficacité ou tolérance finaux comparés à eculizumab.",
+      "population_cible_indication": "Patients pédiatriques pesant 10 kg ou plus avec HPN",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": "eculizumab (SOLIRIS)",
+      "comparateur_id_HAS": "CT-19811_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Pédiatrique"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Faible",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "La Commission considère",
+          "t": "La Commission considère que le service médical rendu par ULTOMIRIS (ravulizumab) est important dans le traitement...",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "commission de la t",
+          "t": "La Commission de la transparence considère qu’ULTOMIRIS (ravulizumab) apporte une amélioration du service médical rendu mineure (ASMR IV)",
+          "m": "rule",
+          "c": 0.98
+        }
+      ],
+      "asmr_revendique_enum": "Non_renseigné"
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19811_poso_01",
+      "evaluation_id": "CT-19811",
+      "smr_asmr_id": "CT-19811_smrasmr_01",
+      "indication": "Traitement de l'hémoglobinurie paroxystique nocturne pédiatrique",
+      "population_cible": "Patients pédiatriques pesant 10 kg ou plus",
+      "posologie_source": "renvoi_RCP",
+      "posologie_resumee_brut": "Cf. RCP. Dose de charge suivie de doses d’entretien toutes les 8 semaines avec posologie adaptée au poids. Posologie détaillée selon intervalles poids dans le RCP.",
+      "phases": [],
+      "ajustements_poso_brut": "Ajustements selon poids pédiatrique. Posology adaptée spécialement aux patients ≥10 kg.",
+      "commentaires": "Posologie adaptée à la population pédiatrique avec fréquence espacée des perfusions.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 8,
+          "s": "Cf. RCP",
+          "t": "Posologie : Cf. RCP",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19811_event_AMM_01",
+      "evaluation_id": "CT-19811",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-09-01",
+      "detail_brut": "Extension d’indication pédiatrique dans l’HPN. AMM européenne.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 7,
+          "s": "AMM pédiatrique",
+          "t": "ULTOMIRIS a obtenu l’AMM dans cette extension d’indication pédiatrique le 1er septembre 2021.",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19811_event_CT_01",
+      "evaluation_id": "CT-19811",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Adoption par la Commission de la transparence de l'avis favorable à l’extension d'indication ULTOMIRIS pédiatrique dans l’HPN.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adoption par",
+          "t": "Adopté par la Commission de la transparence le 29 juin 2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19811_event_TRANS_01",
+      "evaluation_id": "CT-19811",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2022-06-29",
+      "detail_brut": "Session transcription HAS pour évaluation extension indication ULTOMIRIS",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "Timeline_Evenements",
+          "f": "F1",
+          "p": 1,
+          "s": "Commission",
+          "t": "Mercredi 29 juin 2022 Commission de Transparence ULTOMIRIS",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19811_event_AUDITION_01",
+      "evaluation_id": "CT-19811",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-06-29",
+      "detail_brut": "Audition laboratoire et discussions avec experts",
+      "source_doc": "F1",
+      "evidence": []
+    },
+    {
+      "event_id": "CT-19811_event_VOTE_01",
+      "evaluation_id": "CT-19811",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Vote de la Commission pour alignement sur ASMR adulte (13 voix pour, 8 abstentions)",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "Timeline_Evenements",
+          "f": "F1",
+          "p": 8,
+          "s": "Vote par",
+          "t": "21 votants pour ce vote. 13 voix pour et 8 abstentions. C’est donc un alignement sur l’adulte.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19811",
+    "delai_amm_ct_jours": 637,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19811",
+    "is_orphan": true,
+    "classe_ATC_l2": "Immunosuppresseurs",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 3,
+    "n_rct": 3,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": 6,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Absence de recours à la transfusion",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19811",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19811",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19811",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-302",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-301_crit_AbsenceTransfusion",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-301_crit_LDH_norm",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-302",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-302_crit_LDH_variation",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-304_crit_PK_PK",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-304",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-304_crit_PD",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-301",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-301_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "essai",
+      "src_id": "CT-19811_essai_ALXN1210-PNH-302",
+      "tgt_type": "comparateur",
+      "tgt_id": "CT-19811_essai_ALXN1210-PNH-302_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19811",
+      "tgt_type": "comparateur_has",
+      "tgt_id": "CT-19811_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": []
+}

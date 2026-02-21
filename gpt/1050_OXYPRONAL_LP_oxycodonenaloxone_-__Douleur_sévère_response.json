@@ -1,0 +1,657 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19790",
+  "evaluation_id": "CT-19790",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19790.pdf",
+        "type": "CT",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CT_2018_old",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19790_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "ÉVALUER LES TECHNOLOGIES DE SANTÉ - AVIS SUR LES MEDICAMENTS oxycodone/naloxone OXYPRONAL LP",
+      "template_detecte": "CT_2018_old",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 3500,
+      "heading_text": "Synthèse et contexte"
+    },
+    {
+      "segment_id": "CT-19790_seg_02",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission de la transparence",
+      "template_detecte": "CT_2018_old",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 3501,
+      "char_end": 10500,
+      "heading_text": "Conclusion SMR et ASMR"
+    },
+    {
+      "segment_id": "CT-19790_seg_03",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_2018_old",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 10501,
+      "char_end": 12900,
+      "heading_text": "Informations administratives"
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "code_CIP13": "34009 302 415 8 5",
+      "code_CIS": "Non renseigné",
+      "evaluation_id": "CT-19790",
+      "produit_nom": "OXYPRONAL LP 5 mg/2,5 mg",
+      "evidence": [
+        {
+          "field": "code_CIP13",
+          "f": "F1",
+          "p": 5,
+          "s": "OXYPRON",
+          "t": "Boîte de 28 comprimés (CIP : 34009 302 415 8 5)",
+          "m": "regex",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "code_CIP13": "34009 302 416 0 8",
+      "code_CIS": "Non renseigné",
+      "evaluation_id": "CT-19790",
+      "produit_nom": "OXYPRONAL LP 10 mg/5 mg",
+      "evidence": [
+        {
+          "field": "code_CIP13",
+          "f": "F1",
+          "p": 5,
+          "s": "OXYPRON",
+          "t": "Boîte de 28 comprimés (CIP : 34009 302 416 0 8)",
+          "m": "regex",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "code_CIP13": "34009 302 416 1 5",
+      "code_CIS": "Non renseigné",
+      "evaluation_id": "CT-19790",
+      "produit_nom": "OXYPRONAL LP 20 mg/10 mg",
+      "evidence": [
+        {
+          "field": "code_CIP13",
+          "f": "F1",
+          "p": 5,
+          "s": "OXYPRON",
+          "t": "Boîte de 28 comprimés (CIP : 34009 302 416 1 5)",
+          "m": "regex",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "code_CIP13": "34009 302 416 2 2",
+      "code_CIS": "Non renseigné",
+      "evaluation_id": "CT-19790",
+      "produit_nom": "OXYPRONAL LP 30 mg/15 mg",
+      "evidence": [
+        {
+          "field": "code_CIP13",
+          "f": "F1",
+          "p": 5,
+          "s": "OXYPRON",
+          "t": "Boîte de 28 comprimés (CIP : 34009 302 416 2 2)",
+          "m": "regex",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "code_CIP13": "34009 302 416 3 9",
+      "code_CIS": "Non renseigné",
+      "evaluation_id": "CT-19790",
+      "produit_nom": "OXYPRONAL LP 40 mg/20 mg",
+      "evidence": [
+        {
+          "field": "code_CIP13",
+          "f": "F1",
+          "p": 5,
+          "s": "OXYPRON",
+          "t": "Boîte de 28 comprimés (CIP : 34009 302 416 3 9)",
+          "m": "regex",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19790",
+      "Num_avis": "CT-19790",
+      "produit_nom": "OXYPRONAL LP (chlorhydrate d’oxycodone / chlorhydrate de naloxone)",
+      "dci": "Oxycodone / naloxone",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimés à libération prolongée",
+      "dosage": "5 mg/2,5 mg à 40 mg/20 mg",
+      "indication": "Douleur sévère d’origine cancéreuse et douleurs intenses et/ou rebelles rencontrées dans l’arthrose (genou/hanche) et lombalgie chronique non cancéreuse, en dernier recours",
+      "classe_ATC": "N02AA55",
+      "pathologie": "Douleur sévère cancéreuse et douleurs rebelles non cancéreuses",
+      "maladie_rare": false,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Non renseigné",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le besoin médical est insuffisamment couvert, en particulier la prise en charge des douleurs sévères rebelles et constipation induite par opioïdes",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes uniquement",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Génériques de TARGINACT dont AMM archivée ; OXSYNIA LP inscrits avec SMR faibles",
+      "historique_ASMR_comparateurs": "ASMR V pour génériques oxycodone/naloxone déjà inscrits",
+      "concurrence_therapeutique_recente": "Existence de nombreux opioïdes forts et autres antalgiques disponibles",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-29",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les douleurs sévères d’origine cancéreuse impactent sévèrement la qualité de vie, les douleurs chroniques intenses rebelles non cancéreuses peuvent conduire à un handicap majeur.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Nombreuses alternatives thérapeutiques médicamenteuses disponibles, y compris opioïdes forts.",
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER L",
+          "t": "Avis favorable au remboursement dans : douleur sévère d’origine cancéreuse ...",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER L",
+          "t": "oxycodone/naloxone",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "benevole",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "douleurs sévères d’origine cancéreuse et non cancéreuse retranchées ...",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 5,
+          "s": "OXYPRON",
+          "t": "Adopté par la Commission de la transparence le 29 juin 2022",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "Non renseigné",
+    "evaluation_id": "CT-19790",
+    "essai_id": "Non renseigné",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Non renseigné",
+    "EI_graves_detailles": [],
+    "EI_frequents": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19790_compHAS_01",
+      "evaluation_id": "CT-19790",
+      "nom_comparateur_HAS": "TARGINACT",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Opioïdes forts",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "Ces spécialités sont des génériques de TARGINACT 5mg/2,5 mg, 10 mg/5 mg...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19790_compHAS_02",
+      "evaluation_id": "CT-19790",
+      "nom_comparateur_HAS": "OXSYNIA LP",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Opioïdes forts",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "Les spécialités OXSYNIA LP (oxycodone/naloxone) 2,5 mg/1,25 mg ... sont inscrites sur la liste depuis le 31/10/2018.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19790_arg_CT_01",
+      "evaluation_id": "CT-19790",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Les douleurs sévères d’origine cancéreuse impactent très fortement la qualité de vie, réduisant les activités quotidiennes et altérant sommeil, humeur et relations sociales. La constipation induite par opioïdes est un effet limitant le traitement.",
+      "extrait_textuel": "Les douleurs sévères d’origine cancéreuse non contrôlées retentissent de façon majeure sur la qualité de vie du patient ... La constipation est un effet indésirable très fréquent des traitements opioïdes...",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Conclusions",
+          "t": "Les douleurs sévères d’origine cancéreuse non contrôlées retentissent de façon majeure sur la qualité de vie du patient...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19790_arg_CT_02",
+      "evaluation_id": "CT-19790",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "OXYPRONAL LP est symptomatique avec rapport efficacité/effets indésirables important dans la douleur cancéreuse mais modeste en douleur chronique non cancéreuse, avec de nombreuses alternatives existantes.",
+      "extrait_textuel": "OXYPRONAL LP est un médicament à visée symptomatique ... rapport efficacité/effets indésirables est important dans le traitement de la douleur sévère d’origine cancéreuse, modeste dans la douleur chronique non cancéreuse.",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Conclusions",
+          "t": "OXYPRONAL LP est un médicament à visée symptomatique ... important dans le traitement de la douleur sévère d’origine cancéreuse, modeste dans le traitement de la douleur sévère non cancéreuse ...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19790_arg_CT_03",
+      "evaluation_id": "CT-19790",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "OXYPRONAL LP est une option thérapeutique en cas de constipation induite par opioïde malgré prise en charge optimale, et en dernier recours pour douleurs intenses arthrose et lombalgie chronique chez patients non candidats à chirurgie.",
+      "extrait_textuel": "OXYPRONAL LP est une option thérapeutique en cas de constipation induite par un opioïde malgré une prise en charge optimale ... comme traitement de dernier recours ... chez des patients non candidats à une chirurgie de remplacement prothétique.",
+      "page_source": "Page 3",
+      "section_source": "Place dans la stratégie",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Conclusions",
+          "t": "OXYPRONAL LP est une option thérapeutique en cas de constipation induite par un opioïde malgré une prise en charge optimale ... chez des patients non candidats ...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19790_arg_CT_04",
+      "evaluation_id": "CT-19790",
+      "source_argument": "CT",
+      "categorie_argument": "Service_médical_rendu",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Le service médical rendu est faible dans la douleur sévère cancéreuse et dans les douleurs rebelles arthrose et lombalgie, et insuffisant dans toutes les autres douleurs chroniques non cancéreuses.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par OXYPRONAL est faible dans la douleur sévère d’origine cancéreuse, faible dans la prise en charge des douleurs intenses et/ou rebelles dans arthrose et lombalgie chronique, insuffisant dans toutes les autres situations de douleurs chroniques non cancéreuses.",
+      "page_source": "Pages 3-4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "La Commission considère que le service médical rendu par OXYPRONAL est faible dans la douleur sévère d’origine cancéreuse, faible dans la prise en charge des douleurs intenses ...",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19790_arg_CT_05",
+      "evaluation_id": "CT-19790",
+      "source_argument": "CT",
+      "categorie_argument": "Amélioration_SMR",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "OXYPRONAL LP est un générique qui n'apporte pas d'amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base d’oxycodone/naloxone déjà inscrites.",
+      "extrait_textuel": "Ces spécialités sont des génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base d’oxycodone/naloxone déjà inscrites.",
+      "page_source": "Page 4",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Amélior",
+          "t": "Ces spécialités sont des génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V)...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19790_ctx",
+    "evaluation_id": "CT-19790",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "2021-11-17",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19790",
+    "texte_brut": "Avis CT OXYPRONAL LP 5 mg/2,5 mg ... 40 mg/20 mg.",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19790_smrasmr_01",
+      "evaluation_id": "CT-19790",
+      "indication_precise": "Douleur sévère d’origine cancéreuse",
+      "smr": "faible dans la douleur sévère d’origine cancéreuse",
+      "smr_enum": "Faible",
+      "asmr": "ASMR V",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Douleur sévère d’origine cancéreuse avec impact majeur qualité vie ; constipation fréquente limitant traitement ; efficacité modeste mais bénéfice important rapport bénéfice/risque.",
+      "population_cible_indication": "Adultes",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "TARGINACT",
+        "OXSYNIA LP"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19790_compHAS_01",
+        "CT-19790_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "La Commission considère que le service médical rendu par OXYPRONAL est faible dans la douleur sévère d’origine cancéreuse",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Améliorat",
+          "t": "ces spécialités sont des génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "smr_asmr_id": "CT-19790_smrasmr_02",
+      "evaluation_id": "CT-19790",
+      "indication_precise": "Douleurs intenses et/ou rebelles dans arthrose genou ou hanche et lombalgie chronique",
+      "smr": "faible dans la prise en charge des douleurs intenses et/ou rebelles rencontrées dans l’arthrose et lombalgie chronique",
+      "smr_enum": "Faible",
+      "asmr": "ASMR V",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Traitement de dernier recours ; place très limitée ; absence données tolérance long terme ; bénéfice faible rapport risque/efficacité.",
+      "population_cible_indication": "Adultes non candidats à chirurgie prothétique",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "TARGINACT",
+        "OXSYNIA LP"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19790_compHAS_01",
+        "CT-19790_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Faible",
+      "asmr_revendique_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusions",
+          "t": "faible dans la prise en charge des douleurs intenses et/ou rebelles rencontrées dans l’arthrose du genou ou de la hanche et dans la lombalgie chronique",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19790_event_AMM_01",
+      "evaluation_id": "CT-19790",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-11-17",
+      "detail_brut": "Date initiale AMM (procédure décentralisée)",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_AMM_ema",
+          "f": "F1",
+          "p": 5,
+          "s": "Informations",
+          "t": "Date initiale (procédure décentralisée) : 17/11/2021",
+          "m": "regex",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19790_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-19790",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Adoption par la Commission de la transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 5,
+          "s": "Informations",
+          "t": "Adopté par la Commission de la transparence le 29 juin 2022",
+          "m": "regex",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19790",
+    "delai_amm_ct_jours": 586,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19790",
+    "is_orphan": false,
+    "classe_ATC_l2": "N02AA",
+    "aire_therapeutique": "Autre",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

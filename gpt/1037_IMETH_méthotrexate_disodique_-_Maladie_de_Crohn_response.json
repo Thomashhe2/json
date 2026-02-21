@@ -1,0 +1,693 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19771",
+  "evaluation_id": "CT-19771",
+  "extraction_date": "2022-07-06",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-06",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19771_IMETH_25mg_mL_solution_injectable_seringue_preremplie.pdf",
+        "type": "CT",
+        "page_count": 7
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19771_seg_1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Évaluer les technologies de santé - Avis sur le méthotrexate IMETH 25mg/mL",
+      "expected_fields": [
+        "SMR_ASMR",
+        "Conclusions",
+        "Indications"
+      ],
+      "routing_hint": "extraction_avis",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19771_seg_2",
+      "section_label_normalise": "DONNEES_CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 1501,
+      "char_end": 3000,
+      "heading_text": "Contexte de la demande",
+      "expected_fields": [
+        "demandeurs",
+        "historique",
+        "indications",
+        "comparateurs"
+      ],
+      "routing_hint": "extraction_contexte",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19771_seg_3",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 3001,
+      "char_end": 3500,
+      "heading_text": "Indication thérapeutique d’IMETH",
+      "expected_fields": [
+        "indications_precises"
+      ],
+      "routing_hint": "extraction_indications",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19771_seg_4",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 3501,
+      "char_end": 4000,
+      "heading_text": "Évaluation du Service Médical Rendu de IMETH",
+      "expected_fields": [
+        "smr",
+        "smr_enum",
+        "place_strategique"
+      ],
+      "routing_hint": "extraction_smr_asmr",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19771_seg_5",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 4001,
+      "char_end": 4300,
+      "heading_text": "Amélioration du service médical rendu (ASMR)",
+      "expected_fields": [
+        "asmr",
+        "asmr_enum"
+      ],
+      "routing_hint": "extraction_asmr",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19771_seg_6",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 4301,
+      "char_end": 4700,
+      "heading_text": "Population cible estimée",
+      "expected_fields": [
+        "population_cible",
+        "population_cible_nombre"
+      ],
+      "routing_hint": "extraction_population",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19771_seg_7",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 4701,
+      "char_end": 5400,
+      "heading_text": "Données administratives",
+      "expected_fields": [
+        "titulaire_amm",
+        "date_amm",
+        "code_ATC",
+        "prescriptions"
+      ],
+      "routing_hint": "extraction_admin",
+      "label_confidence": 0.96
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19771_prod_01",
+      "evaluation_id": "CT-19771",
+      "nom": "IMETH 25mg/mL",
+      "forme": "Solution injectable en seringue préremplie",
+      "dosage": "25 mg/mL",
+      "code_CIP13": "34009 300 164 6 6",
+      "titulaire": "Laboratoire Nordic Pharma"
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19771",
+      "Num_avis": "CT-19771",
+      "produit_nom": "IMETH 25mg/mL",
+      "dci": "méthotrexate",
+      "type_avis": "Extension_indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Solution injectable en seringue préremplie",
+      "dosage": "25 mg/mL",
+      "indication": "Traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines",
+      "classe_ATC": "L04AX03",
+      "pathologie": "Maladie de Crohn",
+      "maladie_rare": false,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Déduit ATC L04AX03",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "IMETH est hybride de LANTAREL, non commercialisé en France. Même indication que METOJECT, METHOTREXATE ACCORD, IZIXATE déjà évalués.",
+      "historique_ASMR_comparateurs": "ASMR V pour l’ensemble des spécialités à base de méthotrexate dans cette indication.",
+      "concurrence_therapeutique_recente": "Existence d’alternatives comme anti-TNF dans les formes modérées de la maladie de Crohn.",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2021-07-06",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "La maladie de Crohn est une maladie inflammatoire chronique intestinale invalidante, évoluant par poussées entrecoupées de rémissions, entraînant une dégradation de la qualité de vie.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Alternatives existantes comme anti-TNF et autres traitements chez patients réfractaires ou intolérants aux thiopurines.",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER L",
+          "t": "Avis sur les MEDICAMENTS méthotrexate IMETH 25mg/mL, Solution injectable en seringue préremplie",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER L",
+          "t": "méthotrexate",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "Traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 7,
+          "s": "Code ATC",
+          "t": "L04AX03",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "IMETH est médicament hybride de LANTAREL (méthotrexate), solution injectable en seringue préremplie (non commercialisé en France). L’indication est la même que METOJECT, METHOTREXATE ACCORD et IZIXATE déjà évalués.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 4,
+          "s": "Service ",
+          "t": "La maladie de Crohn est une maladie inflammatoire chronique intestinale. Elle évolue par poussées entrecoupées de rémissions. Il s’agit d’une pathologie invalidante qui peut entraîner une dégradation marquée de la qualité de vie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-19771_tol_01",
+    "evaluation_id": "CT-19771",
+    "essai_id": "Non renseigné",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Non renseigné",
+    "EI_frequents": "Non renseigné",
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "ei_grade_max": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19771_compHAS_01",
+      "evaluation_id": "CT-19771",
+      "nom_comparateur_HAS": "Anti-thiopurines",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "patients adultes réfractaires ou intolérants aux thiopurines",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19771_compHAS_02",
+      "evaluation_id": "CT-19771",
+      "nom_comparateur_HAS": "Anti-TNF",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Service ",
+          "t": "dans les formes modérées, la prescription d’un anti-TNF est aussi envisageable.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19771_arg_CT_01",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "Absence de nouvelles données cliniques spécifiques à IMETH depuis l'avis en 2019 sur METOJECT ; méta-analyse récente avec limites méthodologiques ne modifie pas les conclusions antérieures.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Depuis l’avis rendu pour METOJECT en 2019, aucune nouvelle donnée clinique n’est présentée pour IMETH. Une méta-analyse récente (Nielsen et al. 2020) ne modifie pas les conclusions de la Commission.",
+      "page_source": "Page 2",
+      "section_source": "Contexte",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "une nouvelle méta-analyse (Nielsen et al. 2020) a évalué l’efficacité du méthotrexate ... les résultats ne sont pas de nature à modifier les précédentes conclusions",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19771_arg_CT_02",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Service_Médical_Rendu",
+      "description": "IMETH est un traitement symptomatique avec un SMR modéré dans les formes légères à modérées de la maladie de Crohn chez adultes réfractaires ou intolérants aux thiopurines.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission considère que le service médical rendu par IMETH est modéré dans les formes légères à modérées de la maladie de Crohn.",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Service ",
+          "t": "La Commission considère que le service médical rendu par IMETH est modéré",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19771_arg_CT_03",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Amélioration_SMR",
+      "description": "IMETH n’apporte pas d’amélioration du service médical rendu par rapport aux autres spécialités à base de méthotrexate (ASMR V).",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "IMETH n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres spécialités de méthotrexate.",
+      "page_source": "Page 5",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 5,
+          "s": "Améliora",
+          "t": "IMETH n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19771_arg_CT_04",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "IMETH est un traitement de deuxième intention dans les formes légères à modérées de la maladie de Crohn, en particulier chez les patients réfractaires ou intolérants aux thiopurines et corticodépendants.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "IMETH est un traitement de 2ème intention chez l’adulte réfractaire ou intolérant aux thiopurines et corticodépendant.",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Service ",
+          "t": "IMETH est un traitement de 2ème intention des formes légères à modérées, chez l’adulte réfractaire ou intolérant aux thiopurines et corticodépendant.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19771_arg_CT_05",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "description": "La population cible est estimée au maximum à 25 311 patients adultes atteints de formes légères à modérées de la maladie de Crohn, mais ce chiffre est vraisemblablement surestimé.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Population cible estimée à 25 311 patients, mais probablement surestimée du fait de la disponibilité de traitements anti-TNF.",
+      "page_source": "Page 5",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "population_cible_nombre",
+          "f": "F1",
+          "p": 5,
+          "s": "Population",
+          "t": "population cible déjà évaluée à un maximum de 25 311 patients. Néanmoins, cette population est vraisemblablement surestimée car anti-TNF reste une option.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19771_arg_CT_06",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour les autres spécialités à base de méthotrexate déjà évaluées et inscrites pour la maladie de Crohn.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les comparateurs pertinents sont les mêmes que ceux des autres spécialités de méthotrexate déjà évaluées par la Commission.",
+      "page_source": "Page 2",
+      "section_source": "Comparateurs cliniquement pertinents",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour les autres spécialités à base de méthotrexate listées dans le contexte et déjà évaluées",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19771_arg_CT_07",
+      "evaluation_id": "CT-19771",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Alternatives thérapeutiques existent pour les patients réfractaires ou intolérants aux thiopurines, notamment les anti-TNF dans formes modérées.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Il existe des alternatives pour la prise en charge des patients réfractaires ou intolérantes aux thiopurines. Dans les formes modérées, anti-TNF envisageables.",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Service ",
+          "t": "Il existe des alternatives pour la prise en charge des patients réfractaires ou intolérantes aux thiopurines",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19771_ctx",
+    "evaluation_id": "CT-19771",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "2015-06-05",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Modéré",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19771",
+    "texte_brut": "ÉVALUER LES TECHNOLOGIES DE SANTÉ\nAVIS SUR LES\nMEDICAMENTS\nméthotrexate\nIMETH 25mg/mL,...(texte complet concaténé des 3 parties)",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19771_smrasmr_01",
+      "evaluation_id": "CT-19771",
+      "indication_precise": "Traitement des formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines.",
+      "smr": "La Commission considère que le service médical rendu par IMETH (méthotrexate) est modéré dans les formes légères à modérées de la maladie de Crohn, utilisé seul ou en association avec des corticostéroïdes, chez les patients adultes réfractaires ou intolérants aux thiopurines.",
+      "smr_enum": "Modéré",
+      "asmr": "IMETH (méthotrexate) n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres spécialités à base de méthotrexate déjà inscrites dans cette extension d’indication.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Absence de nouvelles données cliniques probantes, résultats similaires aux autres spécialités de méthotrexate, alternatives thérapeutiques disponibles notamment anti-TNF.",
+      "population_cible_indication": "Adultes réfractaires ou intolérants aux thiopurines souffrant de formes légères à modérées de maladie de Crohn",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": [
+        "Anti-thiopurines",
+        "Anti-TNF"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19771_compHAS_01",
+        "CT-19771_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Réfractaire",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Service ",
+          "t": "La Commission considère que le service médical rendu par IMETH est modéré",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 5,
+          "s": "Améliora",
+          "t": "IMETH n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19771_event_EXT_IND_DEPOT_01",
+      "evaluation_id": "CT-19771",
+      "event_type": "EXTENSION_INDICATION_DEPOT",
+      "event_date": "2021-06-05",
+      "detail_brut": "Demande d'extension d’indication déposée pour IMETH 25 mg/mL",
+      "source_doc": "F1",
+      "evidence": []
+    },
+    {
+      "event_id": "CT-19771_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-19771",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2021-07-06",
+      "detail_brut": "Adoption de l'avis par la Commission de la transparence",
+      "source_doc": "F1",
+      "evidence": []
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19771",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19771",
+    "is_orphan": false,
+    "classe_ATC_l2": "L04AX",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2021,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": []
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19771_compHAS_01",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19771",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19771_compHAS_02",
+      "label": "EVAL_HAS_TRIAL"
+    }
+  ],
+  "Annotation_View": []
+}
