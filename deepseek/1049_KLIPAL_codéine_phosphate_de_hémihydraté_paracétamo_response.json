@@ -1,0 +1,775 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19795",
+  "evaluation_id": "CT-19795",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19795_KLIPAL_PIS_INS_AvisDéf_CT19795.pdf",
+        "type": "CT",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19795_seg_1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "indication"
+      ],
+      "routing_hint": "Conclusion",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_2",
+      "section_label_normalise": "CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "type_avis",
+        "historique_Has_produit"
+      ],
+      "routing_hint": "Contexte",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_3",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication"
+      ],
+      "routing_hint": "Indication",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_4",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Comparateurs",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_5",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr_enum",
+        "justification_decisionnelle"
+      ],
+      "routing_hint": "SMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_6",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr_enum"
+      ],
+      "routing_hint": "ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_7",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible"
+      ],
+      "routing_hint": "Population",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19795_seg_8",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "presentations",
+        "demandeur",
+        "classe_ATC"
+      ],
+      "routing_hint": "Admin",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19795_produit_KLIPAL300",
+      "evaluation_id": "CT-19795",
+      "nom_commercial": "KLIPAL 300mg/25mg, comprimé",
+      "dci": "paracétamol, phosphate de codéine",
+      "code_cip13": "34009 302 048 7 0",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "PIERRE FABRE MEDICAMENT",
+      "evidence": []
+    },
+    {
+      "produit_id": "CT-19795_produit_KLIPAL600",
+      "evaluation_id": "CT-19795",
+      "nom_commercial": "KLIPAL 600mg/50mg, comprimé",
+      "dci": "paracétamol, phosphate de codéine",
+      "code_cip13": "34009 302 048 8 7",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "PIERRE FABRE MEDICAMENT",
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19795",
+      "Num_avis": "CT-19795",
+      "produit_nom": "KLIPAL 300mg/25mg, comprimé, KLIPAL 600mg/50mg, comprimé",
+      "dci": "paracétamol, phosphate de codéine",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimé",
+      "dosage": "300mg/25mg, 600mg/50mg",
+      "indication": "chez les patients âgés de plus de 15 ans pour le traitement des douleurs aiguës d’intensité modérée qui ne peuvent pas être soulagées par d’autres antalgiques comme le paracétamol ou l’ibuprofène (seul)",
+      "classe_ATC": "N02BE51",
+      "pathologie": "Douleur aiguë d'intensité modérée",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": null,
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Système nerveux",
+      "aire_therapeutique_niveau_2": "Analgésiques",
+      "aire_therapeutique_niveau_3": "Analgésiques et antipyrétiques",
+      "source_aire_therapeutique": "Déduit ATC N02BE51",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": null,
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "> 15 ans",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "KLIPAL CODEINE 300 mg/25 mg et KLIPAL CODEINE 600 mg/50 mg, comprimés déjà inscrites (avis du 21 septembre 2016, CT-13759) avec SMR important sauf populations spécifiques",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-29",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Toute douleur impose à la fois la recherche et le traitement de sa cause. Les douleurs d’intensité modérée peuvent entraîner une dégradation marquée de la qualité de vie.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Patients âgés de plus de 15 ans",
+      "pertinence_concurrence_therapeutique": "Les comparateurs cliniquement pertinents de KLIPAL sont nombreux et comprennent les spécialités princeps et génériques à base de paracétamol et de codéine ainsi que les autres antalgiques recommandés dans l’indication.",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Indicatio",
+          "t": "chez les patients âgés de plus de 15 ans pour le traitement des douleurs aiguës d’intensité modérée qui ne peuvent pas être soulagées par d’autres antalgiques comme le paracétamol ou l’ibuprofène (seul)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 5,
+          "s": "Code ATC",
+          "t": "N02BE51",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 5,
+          "s": "Date d’ex",
+          "t": "Date d’examen et d’adoption : 29/06/2022",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 2,
+          "s": "Toute dou",
+          "t": "Toute douleur impose à la fois la recherche et le traitement de sa cause. Les douleurs d’intensité modérée peuvent entraîner une dégradation marquée de la qualité de vie.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "type_population_cible",
+          "f": "F1",
+          "p": 2,
+          "s": "chez les ",
+          "t": "chez les patients âgés de plus de 15 ans",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "pertinence_concurrence_therapeutique",
+          "f": "F1",
+          "p": 2,
+          "s": "Comparate",
+          "t": "Les comparateurs cliniquement pertinents de KLIPAL (paracétamol, phosphate de codéine) 300mg/25mg et 600mg/50mg, comprimés sont nombreux et comprennent les spécialités princeps et génériques à base de paracétamol et de codéine ainsi que les autres antalgiques recommandés dans l’indication.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19795_compHAS_01",
+      "evaluation_id": "CT-19795",
+      "nom_comparateur_HAS": "spécialités princeps et génériques à base de paracétamol et de codéine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analgésiques",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Comparate",
+          "t": "Les comparateurs cliniquement pertinents de KLIPAL (paracétamol, phosphate de codéine) 300mg/25mg et 600mg/50mg, comprimés sont nombreux et comprennent les spécialités princeps et génériques à base de paracétamol et de codéine ainsi que les autres antalgiques recommandés dans l’indication.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19795_compHAS_02",
+      "evaluation_id": "CT-19795",
+      "nom_comparateur_HAS": "autres antalgiques recommandés dans l’indication",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analgésiques",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Comparate",
+          "t": "Les comparateurs cliniquement pertinents de KLIPAL (paracétamol, phosphate de codéine) 300mg/25mg et 600mg/50mg, comprimés sont nombreux et comprennent les spécialités princeps et génériques à base de paracétamol et de codéine ainsi que les autres antalgiques recommandés dans l’indication.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19795_arg_CT_1",
+      "evaluation_id": "CT-19795",
+      "source_argument": "CT",
+      "categorie_argument": "SMR",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "SMR important dans l'indication de l'AMM sauf populations spécifiques (enfants <12 ans, femmes allaitantes, etc.)",
+      "extrait_textuel": "La Commission considère que le service médical rendu par KLIPAL (paracétamol, phosphate de codéine) est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquelles il est insuffisant",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commis",
+          "t": "La Commission considère que le service médical rendu par KLIPAL (paracétamol, phosphate de codéine) est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquelles il est insuffisant",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19795_arg_CT_2",
+      "evaluation_id": "CT-19795",
+      "source_argument": "CT",
+      "categorie_argument": "ASMR",
+      "direction_argument": "Neutre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Pas de progrès par rapport aux présentations déjà inscrites (ASMR V)",
+      "extrait_textuel": "Ces spécialités sont un complément de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "page_source": "Page 3",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "Ces spécial",
+          "t": "Ces spécialités sont un complément de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19795_arg_CT_3",
+      "evaluation_id": "CT-19795",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Risque d'effets indésirables graves notamment de dépression respiratoire dans certaines populations",
+      "extrait_textuel": "Le rapport efficacité/effets indésirables est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquels il est défavorable compte tenu du risque d’effets indésirables graves notamment de dépression respiratoire",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "Le rapport",
+          "t": "Le rapport efficacité/effets indésirables est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquels il est défavorable compte tenu du risque d’effets indésirables graves notamment de dépression respiratoire",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19795_arg_CT_4",
+      "evaluation_id": "CT-19795",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Chez l’adulte, ces spécialités restent un médicament de première ou de deuxième intention. Chez l’enfant et l’adolescent de 12 à 18 ans, il s’agit d’un médicament de deuxième intention",
+      "extrait_textuel": "Chez l’adulte, ces spécialités restent un médicament de première ou de deuxième intention. Chez l’enfant et l’adolescent de 12 à 18 ans, il s’agit d’un médicament de deuxième intention",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "Chez l’adul",
+          "t": "Chez l’adulte, ces spécialités restent un médicament de première ou de deuxième intention. Chez l’enfant et l’adolescent de 12 à 18 ans, il s’agit d’un médicament de deuxième intention",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19795_arg_CT_5",
+      "evaluation_id": "CT-19795",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Les douleurs d’intensité modérée peuvent entraîner une dégradation marquée de la qualité de vie",
+      "extrait_textuel": "Les douleurs d’intensité modérée peuvent entraîner une dégradation marquée de la qualité de vie",
+      "page_source": "Page 2",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 2,
+          "s": "Toute dou",
+          "t": "Les douleurs d’intensité modérée peuvent entraîner une dégradation marquée de la qualité de vie",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19795_ctx",
+    "evaluation_id": "CT-19795",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "type_acces_precoce_enum": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2020-04-17",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "contexte_evaluation": "Demande d'inscription en remplacement des spécialités KLIPAL CODEINE déjà inscrites (changement de composition excipiendaire). Complément de gamme - pas d'essais nouveaux.",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "s": "Date init",
+        "t": "Date initiale (procédure décentralisée) : 17/04/2020",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "contexte_evaluation",
+        "f": "F1",
+        "p": 2,
+        "s": "Il s’agit",
+        "t": "Il s’agit d’une demande d’inscription sur la liste des spécialités remboursables aux assurés sociaux et sur la liste des spécialités agréées à l’usage des collectivités des spécialités KLIPAL (paracétamol, phosphate de codéine) 300mg/25mg et 600mg/50mg, comprimés1, en remplacement des spécialités KLIPAL CODEINE (paracétamol, phosphate de codéine) 300 mg/25 mg et 600 mg/50 mg, comprimés2, déjà inscrites (changement de composition excipiendaire).",
+        "m": "manual",
+        "c": 0.95
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19795",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19795_smrasmr_01",
+      "evaluation_id": "CT-19795",
+      "indication_precise": "chez les patients âgés de plus de 15 ans pour le traitement des douleurs aiguës d’intensité modérée qui ne peuvent pas être soulagées par d’autres antalgiques comme le paracétamol ou l’ibuprofène (seul)",
+      "smr": "La Commission considère que le service médical rendu par KLIPAL (paracétamol, phosphate de codéine) est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquelles il est insuffisant : l’enfant de moins de 12 ans, la femme allaitante, les patients connus pour être métaboliseurs ultra rapides du CYP2D6, les patients de moins de 18 ans après amygdalectomie et/ou adénoïdectomie dans le cadre d’un syndrome d’apnée obstructive du sommeil.",
+      "smr_enum": "Important",
+      "asmr": "Ces spécialités sont un complément de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Le rapport efficacité/effets indésirables est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquels il est défavorable compte tenu du risque d’effets indésirables graves notamment de dépression respiratoire : l’enfant de moins de 12 ans, la femme allaitante, les patients connus pour être métaboliseurs ultra rapides du CYP2D6, les patients ayant une fonction respiratoire altérée en particulier ceux âgés de moins de 18 ans ayant subi une amygdalectomie et/ou adénoïdectomie dans le cadre du traitement d’un syndrome d’apnée obstructive du sommeil. Il existe de nombreuses alternatives thérapeutiques. Chez l’adulte, ces spécialités restent un médicament de première ou de deuxième intention. Chez l’enfant et l’adolescent de 12 à 18 ans, il s’agit d’un médicament de deuxième intention.",
+      "population_cible_indication": "Patients âgés de plus de 15 ans",
+      "ligne_traitement_indication": "Première ou deuxième intention chez l'adulte, deuxième intention chez l'enfant et l'adolescent de 12 à 18 ans",
+      "comparateurs_references_indication": "spécialités princeps et génériques à base de paracétamol et de codéine, autres antalgiques recommandés dans l’indication",
+      "comparateur_id_HAS": [
+        "CT-19795_compHAS_01",
+        "CT-19795_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Variable",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "> 15 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Non renseigné",
+      "niveau_confiance_annotation": 4,
+      "annotateur": "auto",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commis",
+          "t": "La Commission considère que le service médical rendu par KLIPAL (paracétamol, phosphate de codéine) est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquelles il est insuffisant",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 3,
+          "s": "Ces spécial",
+          "t": "Ces spécialités sont un complément de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "justification_decisionnelle",
+          "f": "F1",
+          "p": 3,
+          "s": "Le rapport",
+          "t": "Le rapport efficacité/effets indésirables est important dans l’indication de l’AMM excepté dans les populations suivantes pour lesquels il est défavorable compte tenu du risque d’effets indésirables graves notamment de dépression respiratoire",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19795_event_AMM_01",
+      "evaluation_id": "CT-19795",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2020-04-17",
+      "detail_brut": "Date initiale (procédure décentralisée) : 17/04/2020",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM initiale",
+      "acteurs_impliques": [
+        "PIERRE FABRE MEDICAMENT"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Date init",
+          "t": "Date initiale (procédure décentralisée) : 17/04/2020",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19795_event_CT_01",
+      "evaluation_id": "CT-19795",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Date d’examen et d’adoption : 29/06/2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption avis CT",
+      "acteurs_impliques": [
+        "Commission de la transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Date d’ex",
+          "t": "Date d’examen et d’adoption : 29/06/2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19795",
+    "delai_amm_ct_jours": 803,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19795",
+    "is_orphan": false,
+    "classe_ATC_l2": "N02",
+    "aire_therapeutique": "Analgésiques",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19795",
+      "tgt_type": "PRODUIT",
+      "tgt_id": "CT-19795_produit_KLIPAL300",
+      "label": "EVAL_HAS_PRODUIT"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19795",
+      "tgt_type": "PRODUIT",
+      "tgt_id": "CT-19795_produit_KLIPAL600",
+      "label": "EVAL_HAS_PRODUIT"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19795",
+      "tgt_type": "SMR_ASMR",
+      "tgt_id": "CT-19795_smrasmr_01",
+      "label": "EVAL_HAS_SMR_ASMR"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19795",
+      "tgt_type": "COMPARATEUR_HAS",
+      "tgt_id": "CT-19795_compHAS_01",
+      "label": "EVAL_HAS_COMPARATEUR"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19795",
+      "tgt_type": "COMPARATEUR_HAS",
+      "tgt_id": "CT-19795_compHAS_02",
+      "label": "EVAL_HAS_COMPARATEUR"
+    }
+  ],
+  "Annotation_View": []
+}

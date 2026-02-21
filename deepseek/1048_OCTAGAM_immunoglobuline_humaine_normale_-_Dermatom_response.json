@@ -1,0 +1,1689 @@
+{
+  "schema_version": "3.3.5-production",
+  "doc_id": "CT-19687",
+  "evaluation_id": "CT-19687",
+  "extraction_date": "2022-05-18",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-05-18",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19687_OCTAGAM_Dermatomyosite_PIC_EIT_avisdéf_CT19687.pdf",
+        "type": "CT",
+        "page_count": 31
+      },
+      "F2": {
+        "file_name": "trans_1_octagam_18052022_transcription_ct19687.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 16
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "seg_1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Avis version définitive",
+      "expected_fields": [
+        "smr_asmr",
+        "avis_favorable"
+      ],
+      "routing_hint": "Première page avec synthèse",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_2",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "indication_precise"
+      ],
+      "routing_hint": "Détails de l'indication évaluée",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_3",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "SMR et ASMR",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "SMR et ASMR",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum"
+      ],
+      "routing_hint": "Conclusion sur le SMR et ASMR",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_4",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "posologie_resumee_brut"
+      ],
+      "routing_hint": "Posologie pour la dermatomyosite",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_5",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "BESOIN MEDICAL",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "BESOIN MEDICAL",
+      "expected_fields": [
+        "besoin_medical_brut"
+      ],
+      "routing_hint": "Contexte de la maladie et prise en charge",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_6",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Liste des comparateurs identifiés par la HAS",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_7",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "ANALYSE DES DONNEES DISPONIBLES",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 25,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "ANALYSE DES DONNEES DISPONIBLES",
+      "expected_fields": [
+        "essais_cliniques",
+        "criteres_jugement",
+        "resultats_efficacite"
+      ],
+      "routing_hint": "Détails de l'étude ProDERM et résultats",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_8",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 17,
+      "page_end": 23,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Tolérance",
+      "expected_fields": [
+        "EI_graves",
+        "EI_frequents"
+      ],
+      "routing_hint": "Données de tolérance de l'étude ProDERM et RCP",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_9",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 24,
+      "page_end": 27,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "expected_fields": [
+        "ligne_traitement",
+        "population_cible"
+      ],
+      "routing_hint": "Positionnement du traitement dans la stratégie",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_10",
+      "section_label_normalise": "CONCLUSIONS_DE_LA_COMMISSION",
+      "section_label_brut": "CONCLUSIONS DE LA COMMISSION",
+      "template_detecte": "CT_modern",
+      "page_start": 25,
+      "page_end": 29,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr_asmr",
+        "arguments_decisionnels"
+      ],
+      "routing_hint": "Conclusions finales et décision",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19687_seg_01",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 1/16",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "AVERTISSEMENT et début de séance",
+      "expected_fields": [
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Méta et introduction",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19687_seg_02",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 2/16 à 7/16",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "Présentation du dossier par le chef de projet et exposé de l'expert Éric Mensi",
+      "expected_fields": [
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Exposé initial sur la dermatomyosite, l'étude ProDERM, efficacité, tolérance, population",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19687_seg_03",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 8/16 à 13/16",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 13,
+      "char_start": 0,
+      "char_end": 4000,
+      "heading_text": "Questions des membres de la CT et réponses de l'expert",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Débat sur durée traitement, sérologie, risque thrombo, comparateurs, critères jugement, épargne cortisonique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19687_seg_04",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 14/16 à 16/16",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 14,
+      "page_end": 16,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Délibération et vote de la commission",
+      "expected_fields": [
+        "Votes_Commission_Transcription",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Discussion sur positionnement, ASMR, vote final",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19687_produit_01",
+      "evaluation_id": "CT-19687",
+      "produit_nom_commercial": "OCTAGAM 100 mg/ml",
+      "dci": "Immunoglobuline humaine normale",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Octapharma",
+      "presentations": [
+        {
+          "code_cip13": "34009 576 182 1 6",
+          "forme_pharmaceutique": "solution pour perfusion",
+          "dosage_concentration": "100 mg/ml",
+          "conditionnement": "1 flacon de 20 ml"
+        },
+        {
+          "code_cip13": "34009 576 183 8 4",
+          "forme_pharmaceutique": "solution pour perfusion",
+          "dosage_concentration": "100 mg/ml",
+          "conditionnement": "1 flacon de 50 ml"
+        },
+        {
+          "code_cip13": "34009 576 184 4 5",
+          "forme_pharmaceutique": "solution pour perfusion",
+          "dosage_concentration": "100 mg/ml",
+          "conditionnement": "1 flacon de 100 ml"
+        },
+        {
+          "code_cip13": "34009 576 185 0 6",
+          "forme_pharmaceutique": "solution pour perfusion",
+          "dosage_concentration": "100 mg/ml",
+          "conditionnement": "1 flacon de 200 ml"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "OCTAGAM",
+          "t": "Immunoglobuline humaine normale OCTAGAM 100 mg/ml, solution pour perfusion",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19687",
+      "Num_avis": "CT-19687",
+      "produit_nom": "OCTAGAM 100 mg/ml",
+      "dci": "Immunoglobuline humaine normale",
+      "type_avis": "Extension d'indication",
+      "forme": "solution pour perfusion",
+      "dosage": "100 mg/ml",
+      "indication": "Dermatomyosite active traitée par des médicaments immunosuppresseurs, y compris des corticoïdes, ou en cas d'intolérance à ces médicaments ou de contre-indications de ces médicaments",
+      "classe_ATC": "J06BA02",
+      "pathologie": "Dermatomyosite",
+      "maladie_rare": true,
+      "ligne_traitement": "Traitement de 2e ligne ou plus",
+      "sous_groupe_population": "Adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Maladies auto-immunes",
+      "aire_therapeutique_niveau_3": "Dermatomyosite",
+      "source_aire_therapeutique": "Texte avis",
+      "design_etude": "Etude de phase III de supériorité versus placebo, randomisée, en double-aveugle, en groupes parallèles et multicentrique",
+      "niveau_preuve_brut": "Etude de phase III randomisée vs placebo",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la dermatomyosite active de l'adulte, notamment en cas d'échec (réponse insuffisante, contre-indication ou intolérance) des corticoïdes et des immunosuppresseurs.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Phase_III_RCT_DB",
+      "type_avis_enum": "Extension_indication",
+      "gravite_patho": "La dermatomyosite est une maladie auto-immune rare caractérisée par une atteinte inflammatoire non-infectieuse des muscles et de la peau associée à une vasculopathie. Elle se caractérise principalement par des atteintes cutanées et musculaires pouvant conduire à un handicap et une altération de la qualité de vie. Par ailleurs, elle peut se compliquer par des atteintes extra-musculaires et extra-cutanées, telles que des atteintes articulaires, cardiaques et respiratoires, y compris une atteinte des muscles pulmonaires, ces dernières représentant une cause majeure de mortalité.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-05-18",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "L’essentiel",
+          "t": "Avis favorable au remboursement dans le traitement de la dermatomyosite active traitée par des médicaments immunosuppresseurs, y compris des corticoïdes, ou en cas d’intolérance à ces médicaments ou de contre-indications de ces médicaments.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 3,
+          "s": "Motif de l",
+          "t": "Extension d'indication",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19687_essai_ProDERM",
+      "evaluation_id": "CT-19687",
+      "essai_nom": "ProDERM",
+      "nct_number": "NCT02728752",
+      "design": "Etude de phase III de supériorité versus placebo, randomisée, en double-aveugle, en groupes parallèles, multicentrique",
+      "population_cible": "Adultes ≥ 18 ans avec dermatomyosite active, recevant un traitement systémique standard (corticoïdes et/ou immunosuppresseurs) ou en échec/intolérant",
+      "comparateur_utilise": "Placebo (chlorure de sodium 0,9%)",
+      "nb_patient_traitement": 47,
+      "nb_patient_comparateur": 48,
+      "resultat_global": "Supériorité démontrée pour le critère principal",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "score Global Disease Activity (léger, modéré, sévère)"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 16,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": 80,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [
+        "SF-36v2"
+      ],
+      "qol_resultats_brut": "Amélioration des scores SF-36 mais données exploratoires",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 1,
+      "nb_patients_inclus": "95",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "05/11/2019",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 10,
+          "s": "Etude ProD",
+          "t": "Etude ProDERM",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19687_essai_ProDERM_crit_principal",
+      "evaluation_id": "CT-19687",
+      "essai_id": "CT-19687_essai_ProDERM",
+      "nom_critere": "Pourcentage de patients répondeurs à la semaine 16",
+      "nature_critere": "Composite",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Cochran-Mantel-Haenszel",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "78,2%",
+      "valeur_groupe_comparateur": "43,75%",
+      "gain_absolu": "34,97%",
+      "gain_absolu_num": 34.97,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[16,70 ; 53,24]",
+      "IC95_low_num": 16.7,
+      "IC95_high_num": 53.24,
+      "p_value": "p = 0,0008",
+      "p_value_num": 0.0008,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "La Commission de la Transparence considère que l'amélioration est cliniquement pertinente.",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 12,
+          "s": "Critère de j",
+          "t": "Pourcentage de patients répondeurs à la semaine 16 par rapport à l’inclusion, défini par une amélioration ≥ 20 points du score total d’amélioration (Total Improvement Score ou TIS) et en l’absence de détérioration confirmée lors de 2 visites consécutives (incluant la semaine 16).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19687_essai_ProDERM_crit_TIS_amélioration_modérée",
+      "evaluation_id": "CT-19687",
+      "essai_id": "CT-19687_essai_ProDERM",
+      "nom_critere": "Amélioration modérée du TIS (≥ 40 points)",
+      "nature_critere": "Composite",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "68,1%",
+      "valeur_groupe_comparateur": "22,9%",
+      "gain_absolu": "45,2%",
+      "gain_absolu_num": 45.2,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": null,
+      "critere_atteint": null,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 17,
+          "s": "Parmi les c",
+          "t": "amélioration modérée du TIS (≥ 40) : 68,1 % dans le groupe OCTAGAM 10 % et de 22,9 % dans le groupe placebo",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19687_essai_ProDERM_crit_CDASI",
+      "evaluation_id": "CT-19687",
+      "essai_id": "CT-19687_essai_ProDERM",
+      "nom_critere": "Variation du score CDASI modifié (activité)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "ANCOVA",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "-10,3",
+      "valeur_groupe_comparateur": "-2,3",
+      "gain_absolu": "-8,0",
+      "gain_absolu_num": -8.0,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": null,
+      "critere_atteint": null,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 17,
+          "s": "Variation mo",
+          "t": "Variation du score total d’activité (0 à 100) à S16 : -10,3 dans le groupe OCTAGAM 10 % et -2,3 dans le groupe placebo.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19687_essai_ProDERM_tol",
+      "evaluation_id": "CT-19687",
+      "essai_id": "CT-19687_essai_ProDERM",
+      "ae_total_pct": 80.8,
+      "ae_total_pct_comparateur": 58.3,
+      "sae_pct": 5.8,
+      "sae_pct_comparateur": 4.2,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Embollie pulmonaire",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Thrombose veineuse profonde",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 40.4,
+          "incidence_pct_comparateur": 8.3,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Fièvre",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 17.3,
+          "incidence_pct_comparateur": 6.3,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 13.5,
+          "incidence_pct_comparateur": 4.2,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "RCP",
+          "date_signal": "Non renseigné",
+          "description": "Risques thromboemboliques, méningite aseptique, réactions d'hypersensibilité, insuffisance rénale",
+          "mesures_prises": "Surveillance étroite, adaptation vitesse perfusion",
+          "impact_evaluation": "Pris en compte dans l'évaluation",
+          "evidence": []
+        }
+      ],
+      "signal_ansm_flag": false,
+      "EI_graves": "Evénements thromboemboliques (embollie pulmonaire, thrombose veineuse profonde), méningite aseptique, réactions d'hypersensibilité, insuffisance rénale",
+      "EI_frequents": "Céphalées, fièvre, nausées, vomissements, myalgie",
+      "deces": "Non renseigné",
+      "signal_securite": "Risques importants identifiés dans le PGR : événements thromboemboliques, méningite aseptique, réactions d'hypersensibilité, insuffisance rénale, interférence avec tests glycémie, hémolyse.",
+      "evidence": [
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 18,
+          "s": "Les EI le",
+          "t": "Les EI les plus fréquents dans le groupe OCTAGAM 10 % ont été des céphalées (40,4 % versus 8,3 % dans le groupe placebo), de la fièvre (17,3 % versus 6,3 %), des nausées (13,5 % versus 4,2 %), des vomissements (7,7 % versus 0,0 %) et une myalgie (5,8 % versus 0,0 %).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19687_essai_ProDERM_comp_01",
+      "essai_id": "CT-19687_essai_ProDERM",
+      "nom_comparateur": "Placebo (chlorure de sodium 0,9%)",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 11,
+          "s": "Groupe place",
+          "t": "Groupe placebo : chlorure de sodium 0,9 % administré par voie IV",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19687_compHAS_01",
+      "evaluation_id": "CT-19687",
+      "nom_comparateur_HAS": "Autres immunoglobulines humaines normales (CLAIRYG, FLEBOGAMMA, GAMMAGARD, GAMUNEX, KIOVIG, PRIVIGEN)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "autres spéci",
+          "t": "autres spécialités à base d’immunoglobuline humaine normale : CLAIRYG (LFB Biomédicament) FLEBOGAMMA (Grifols France) GAMMAGARD (Takeda France SAS) GAMUNEX (Grifols France) KIOVIG (Takeda France SAS) PRIVIGEN (CSL Behring SA).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19687_compHAS_02",
+      "evaluation_id": "CT-19687",
+      "nom_comparateur_HAS": "Rituximab (MABTHERA)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "rituximab (M",
+          "t": "rituximab (MABTHERA, Roche SAS), immunoglobuline glycosylée recombinante murine / humaine (Anticorps monoclonal).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19687_compHAS_03",
+      "evaluation_id": "CT-19687",
+      "nom_comparateur_HAS": "Echanges plasmatiques",
+      "type_comparateur": "Non_médicamenteux",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "Echanges pla",
+          "t": "Echanges plasmatiques.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19687_arg_CT_1",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Supériorité démontrée d'OCTAGAM vs placebo sur le critère principal (répondeurs TIS ≥20 à S16 : 78,2% vs 43,75%, p=0,0008) avec une magnitude d'effet importante.",
+      "extrait_textuel": "Le pourcentage de répondeurs à la semaine 16 a été plus important dans le groupe OCTAGAM que dans le groupe placebo : 78,2 % versus 43,75 %, soit une différence de 34,97 % (IC95% = [16,70 ; 53,24], p = 0,0008).",
+      "page_source": "Page 17",
+      "section_source": "ANALYSE DES DONNEES DISPONIBLES",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 17,
+          "s": "Critères de j",
+          "t": "Le pourcentage de répondeurs à la semaine 16 a été plus important dans le groupe OCTAGAM que dans le groupe placebo : 78,2 % versus 43,75 %, soit une différence de 34,97 % (IC95% = [16,70 ; 53,24], p = 0,0008).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_CT_2",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Amélioration modérée à majeure du TIS observée chez la majorité des patients sous OCTAGAM (68,1% avec amélioration ≥40 points, 31,9% avec ≥60 points).",
+      "extrait_textuel": "amélioration modérée du TIS (≥ 40) : 68,1 % dans le groupe OCTAGAM 10 % et de 22,9 % dans le groupe placebo ; amélioration majeure du TIS (≥ 60) : 31,9 % et 8,33 % respectivement.",
+      "page_source": "Page 17",
+      "section_source": "ANALYSE DES DONNEES DISPONIBLES",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 17,
+          "s": "Parmi les c",
+          "t": "amélioration modérée du TIS (≥ 40) : 68,1 % dans le groupe OCTAGAM 10 % et de 22,9 % dans le groupe placebo ; amélioration majeure du TIS (≥ 60) : 31,9 % et 8,33 % respectivement.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_CT_3",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Profil de tolérance globalement favorable avec EI fréquents mais généralement légers à modérés (céphalées, fièvre, nausées). Risques graves rares mais présents (thromboemboliques).",
+      "extrait_textuel": "Les EI les plus fréquents dans le groupe OCTAGAM 10 % ont été des céphalées (40,4 % versus 8,3 % dans le groupe placebo), de la fièvre (17,3 % versus 6,3 %), des nausées (13,5 % versus 4,2 %)...",
+      "page_source": "Page 18",
+      "section_source": "TOLERANCE",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 18,
+          "s": "Les EI le",
+          "t": "Les EI les plus fréquents dans le groupe OCTAGAM 10 % ont été des céphalées (40,4 % versus 8,3 % dans le groupe placebo), de la fièvre (17,3 % versus 6,3 %), des nausées (13,5 % versus 4,2 %), des vomissements (7,7 % versus 0,0 %) et une myalgie (5,8 % versus 0,0 %).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_CT_4",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "description": "Absence de données robustes sur la qualité de vie et absence de données comparatives au-delà de 16 semaines alors que le traitement peut être prolongé.",
+      "extrait_textuel": "de l’absence de démonstration de son efficacité en termes de qualité de vie, faute de données robustes ; de l’absence de données d’efficacité comparatives au-delà de 16 semaines alors que le traitement peut être prolongé jusqu’à 6 mois voire plus ;",
+      "page_source": "Page 2-3",
+      "section_source": "SMR et ASMR",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "de l’absence",
+          "t": "de l’absence de démonstration de son efficacité en termes de qualité de vie, faute de données robustes ; de l’absence de données d’efficacité comparatives au-delà de 16 semaines alors que le traitement peut être prolongé jusqu’à 6 mois voire plus ;",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_CT_5",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "description": "Incertitudes sur la transposabilité dans des sous-populations spécifiques (patients avec cancer, femmes enceintes, formes amyopathiques) en raison de l'absence de données.",
+      "extrait_textuel": "des incertitudes sur la transposabilité des résultats dans des sous-populations spécifiques en raison de l’absence de données : chez les patients ayant un cancer associé à la dermatomyosite ou ayant des antécédents de cancer et chez les femmes enceintes ou allaitantes...",
+      "page_source": "Page 2-3",
+      "section_source": "SMR et ASMR",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "des incertit",
+          "t": "des incertitudes sur la transposabilité des résultats dans des sous-populations spécifiques en raison de l’absence de données : chez les patients ayant un cancer associé à la dermatomyosite ou ayant des antécédents de cancer et chez les femmes enceintes ou allaitantes (les femmes étant plus fréquemment atteintes que les hommes) qui n’ont pas été inclus dans l’étude, or les Ig IV représentent souvent le seul traitement possible dans ces populations ;",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_CT_6",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Besoin médical partiellement couvert par les alternatives existantes, avec nécessité d'options efficaces et bien tolérées en cas d'échec des traitements standards.",
+      "extrait_textuel": "il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la dermatomyosite active de l’adulte, notamment en cas d’échec (réponse insuffisante, contre-indication ou intolérance) des corticoïdes et des immunosuppresseurs.",
+      "page_source": "Page 8",
+      "section_source": "BESOIN MEDICAL",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 8,
+          "s": "Le besoin mé",
+          "t": "il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la dermatomyosite active de l’adulte, notamment en cas d’échec (réponse insuffisante, contre-indication ou intolérance) des corticoïdes et des immunosuppresseurs.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_CT_7",
+      "evaluation_id": "CT-19687",
+      "source_argument": "CT",
+      "categorie_argument": "Place thérapeutique",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Place en 2e ligne ou plus chez les adultes avec dermatomyosite active justifiant une thérapeutique adjuvante, en cas de mauvaise tolérance/contre-indication ou dans l'attente du délai d'action des traitements standards.",
+      "extrait_textuel": "Traitement de 2e ligne ou plus chez les adultes porteurs de dermatomyosite active, dont la sévérité clinique musculaire justifie l’emploi d’une thérapeutique adjuvante au traitement standard (corticoïdes et/ou immunosuppresseurs) avec un souhait d’amélioration rapide justifié par la sévérité de l’atteinte et/ou en cas de mauvaise tolérance/contre-indication au traitement standard et/ou dans l’attente de son délai d’action (3 à 6 mois).",
+      "page_source": "Page 3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 3,
+          "s": "Place dans l",
+          "t": "Traitement de 2e ligne ou plus chez les adultes porteurs de dermatomyosite active, dont la sévérité clinique musculaire justifie l’emploi d’une thérapeutique adjuvante au traitement standard (corticoïdes et/ou immunosuppresseurs) avec un souhait d’amélioration rapide justifié par la sévérité de l’atteinte et/ou en cas de mauvaise tolérance/contre-indication au traitement standard et/ou dans l’attente de son délai d’action (3 à 6 mois).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_TRANS_1",
+      "evaluation_id": "CT-19687",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "description": "L'étude ProDERM montre une efficacité significative d'OCTAGAM vs placebo sur le critère principal TIS à 16 semaines, avec 78,8% de répondeurs vs 43,75%.",
+      "extrait_textuel": "Pour le critère principal, qui était l'amélioration de 20 % du TIS, il y avait 78,8 % de répondeurs dans le groupe OCTAGAM versus 43,75 % dans le groupe contrôle.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 15",
+      "section_source": "Discussion sur les résultats",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 15,
+          "s": "Pour le c",
+          "t": "Pour le critère principal, qui était l'amélioration de 20 % du TIS, il y avait 78,8 % de répondeurs dans le groupe OCTAGAM versus 43,75 % dans le groupe contrôle.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_TRANS_2",
+      "evaluation_id": "CT-19687",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "description": "Risque thromboembolique artério-veineux sous IgIV, notamment à forte dose et débit rapide, nécessitant thromboprophylaxie.",
+      "extrait_textuel": "Les événements thromboemboliques, qu'ils soient dans les territoires artériels ou veineux, très influencés par les facteurs de risque préalables cardiovasculaires... On met d'ailleurs toujours en place, dans la pratique, une thromboprophylaxie pendant les perfusions d'immunoglobuline intraveineuse.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 6",
+      "section_source": "Exposé sur la tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Les événem",
+          "t": "Les événements thromboemboliques, qu'ils soient dans les territoires artériels ou veineux, très influencés par les facteurs de risque préalables cardiovasculaires... On met d'ailleurs toujours en place, dans la pratique, une thromboprophylaxie pendant les perfusions d'immunoglobuline intraveineuse.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_TRANS_3",
+      "evaluation_id": "CT-19687",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "description": "Population cible estimée à moins de 1000 patients en France, adultes avec dermatomyosite active sévère, en adjuvant au traitement standard.",
+      "extrait_textuel": "Ce sont donc probablement moins d'un millier de patients qui seraient concernés par l'indication de l'AMM actuelle... des adultes qui ont une dermatomyosite active sévère cliniquement, au moins de sévérité modérée voire grave... en thérapeutique adjuvante au traitement standard.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Pages 7-8",
+      "section_source": "Exposé sur la population",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Ce sont do",
+          "t": "Ce sont donc probablement moins d'un millier de patients qui seraient concernés par l'indication de l'AMM actuelle... des adultes qui ont une dermatomyosite active sévère cliniquement, au moins de sévérité modérée voire grave... en thérapeutique adjuvante au traitement standard.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_TRANS_4",
+      "evaluation_id": "CT-19687",
+      "source_argument": "TRANS",
+      "categorie_argument": "Méthodologique",
+      "description": "Absence de données sur la sérologie auto-immune des patients dans l'étude ProDERM, ce qui limite l'interprétation des résultats selon le pronostic.",
+      "extrait_textuel": "On regrette un peu de ne pas avoir de données sur la sérologie auto-immune, puisqu'on sait qu'il y a des sérologies de bon pronostic... Cela pourrait théoriquement impacter les résultats de l'étude.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 6",
+      "section_source": "Exposé sur les limites",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "On regrette",
+          "t": "On regrette un peu de ne pas avoir de données sur la sérologie auto-immune, puisqu'on sait qu'il y a des sérologies de bon pronostic... Cela pourrait théoriquement impacter les résultats de l'étude.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_TRANS_5",
+      "evaluation_id": "CT-19687",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "OCTAGAM est le premier traitement d'immunoglobuline ayant une AMM dans cette indication, avec démonstration d'efficacité en étude contrôlée vs placebo.",
+      "extrait_textuel": "OCTAGAM étant le premier traitement et la seule immunoglobuline dont l'efficacité et la tolérance ont été démontrées au cours d'une étude contrôlée randomisée de phase 3.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Présentation du dossier",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "OCTAGAM ét",
+          "t": "OCTAGAM étant le premier traitement et la seule immunoglobuline dont l'efficacité et la tolérance ont été démontrées au cours d'une étude contrôlée randomisée de phase 3.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19687_arg_TRANS_6",
+      "evaluation_id": "CT-19687",
+      "source_argument": "TRANS",
+      "categorie_argument": "Durée traitement",
+      "description": "Durée de traitement dans l'étude supérieure à la pratique habituelle (jusqu'à 42 semaines), avec risque thromboembolique accru en phase d'extension.",
+      "extrait_textuel": "Les événements thromboemboliques survenaient uniquement lors de la phase d extension... ce qui témoigne du fait que les traitements prolongés et le caractère cumulatif exposent à un surrisque d'effets indésirables graves.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 7",
+      "section_source": "Exposé sur la durée",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Les événem",
+          "t": "Les événements thromboemboliques survenaient uniquement lors de la phase d extension... ce qui témoigne du fait que les traitements prolongés et le caractère cumulatif exposent à un surrisque d'effets indésirables graves.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19687_ctx",
+    "evaluation_id": "CT-19687",
+    "ISP": "OCTAGAM 100 mg/ml (immunoglobuline normale humaine) n’est pas susceptible d’avoir un impact sur la santé publique.",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-06-04",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Allemagne",
+      "Royaume-Uni",
+      "Finlande",
+      "Norvège"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Royaume-Uni",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 4,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Moins de 1500 patients",
+    "population_cible_nombre": 1500,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": 1500,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19687",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19687_smrasmr_01",
+      "evaluation_id": "CT-19687",
+      "indication_precise": "Dermatomyosite active traitée par des médicaments immunosuppresseurs, y compris des corticoïdes, ou en cas d'intolérance à ces médicaments ou de contre-indications de ces médicaments",
+      "smr": "Le service médical rendu est important",
+      "asmr": "Amélioration du service médical rendu mineure (ASMR IV)",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Compte tenu de la démonstration de la supériorité d’OCTAGAM 100 mg/ml par rapport au placebo, de son profil de tolérance globalement favorable mais avec des risques inhérents, de l’absence de démonstration de son efficacité en termes de qualité de vie, de l’absence de données comparatives au-delà de 16 semaines et des incertitudes sur la transposabilité dans des sous-populations spécifiques.",
+      "population_cible_indication": "Adultes porteurs de dermatomyosite active, dont la sévérité clinique musculaire justifie l’emploi d’une thérapeutique adjuvante au traitement standard (corticoïdes et/ou immunosuppresseurs) avec un souhait d’amélioration rapide justifié par la sévérité de l’atteinte et/ou en cas de mauvaise tolérance/contre-indication au traitement standard et/ou dans l’attente de son délai d’action (3 à 6 mois).",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": "Autres immunoglobulines humaines normales, rituximab, échanges plasmatiques",
+      "comparateur_id_HAS": [
+        "CT-19687_compHAS_01",
+        "CT-19687_compHAS_02",
+        "CT-19687_compHAS_03"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 25,
+          "s": "la Commissi",
+          "t": "le service médical rendu par OCTAGAM 100 mg/ml (immunoglobuline humaine normale), solution pour perfusion, est important dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 28,
+          "s": "La Commissi",
+          "t": "La Commission de la Transparence considère qu’OCTAGAM 100 mg/ml (Ig humaine normale), solution pour perfusion, apporte une amélioration du service médical rendu mineure (ASMR IV) dans la prise en charge de la dermatomyosite active chez l’adulte.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19687_poso_01",
+      "evaluation_id": "CT-19687",
+      "smr_asmr_id": "CT-19687_smrasmr_01",
+      "indication": "Dermatomyosite active",
+      "population_cible": "Adultes",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "2 g/kg répartis en plusieurs doses égales sur 2 à 5 jours consécutifs toutes les 4 semaines. Si aucun effet après 6 mois, arrêter le traitement. Si efficace, maintenir à long terme à la discrétion du médecin.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": 28,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "2",
+            "unite_dose": "g/kg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [
+              0
+            ],
+            "interval_days": 28
+          },
+          "voie_administration": "intraveineuse",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "La dose doit éventuellement être individualisée pour chaque patient selon la réponse clinique. Chez les patients présentant un risque de réaction thromboembolique, les IgIV doivent être administrées avec le débit de perfusion et la dose les plus faibles possible.",
+      "commentaires": "Le traitement doit être évalué après chaque cycle. La vitesse de perfusion initiale est de 0,01 ml/kg/minute, avec augmentation progressive jusqu'à un maximum de 0,12 ml/kg/minute, sauf chez les patients à risque thromboembolique où le débit ne doit pas dépasser 0,04 ml/kg/min.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "Dermatomyosit",
+          "t": "2 g/kg répartis en plusieurs doses égales sur 2 à 5 jours consécutifs toutes les 4 semaines.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19687_event_AMM_01",
+      "evaluation_id": "CT-19687",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-06-04",
+      "detail_brut": "Une AMM a été octroyée OCTAGAM 100 mg/ml (immunoglobuline humaine normale) dans cette indication par procédure de reconnaissance mutuelle le 4 juin 2021.",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM extension d'indication",
+      "acteurs_impliques": [
+        "Octapharma",
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": 348,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Une AMM a é",
+          "t": "Une AMM a été octroyée OCTAGAM 100 mg/ml (immunoglobuline humaine normale) dans cette indication par procédure de reconnaissance mutuelle le 4 juin 2021.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19687_event_CT_01",
+      "evaluation_id": "CT-19687",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-05-18",
+      "detail_brut": "Avis de la Commission de la Transparence adopté le 18 mai 2022.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis définitif",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "18 MAI 2022",
+          "t": "18 MAI 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19687",
+    "delai_amm_ct_jours": 348,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19687",
+    "is_orphan": false,
+    "classe_ATC_l2": "J06",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 2,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 34.97,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 16,
+    "sae_pct_num": 5.8,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Pourcentage de patients répondeurs (amélioration ≥20 points du TIS)",
+    "p_value_log10": 3.0969,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19687",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19687_essai_ProDERM",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19687_essai_ProDERM",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19687_essai_ProDERM_crit_principal",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19687_essai_ProDERM",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19687_essai_ProDERM_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19687_essai_ProDERM",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19687_essai_ProDERM_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19687",
+      "tgt_type": "COMPARATOR_HAS",
+      "tgt_id": "CT-19687_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": {
+    "id": "CT-19687_annotation",
+    "text": "Extraits du document CT pour annotation NER/relations.",
+    "meta": {
+      "doc_id": "CT-19687",
+      "source": "CT",
+      "template": "CT_modern",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "ANALYSE DES DONNEES DISPONIBLES",
+      "hierarchie": [
+        "ETUDES"
+      ],
+      "page_start": 10,
+      "page_end": 25,
+      "split": "train",
+      "guidelines_version": "1.0"
+    },
+    "entities": [],
+    "relations": []
+  },
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19687",
+    "contribution_presente": false,
+    "contribution_id": null,
+    "association": null,
+    "methodologie": null,
+    "demande_audition": null,
+    "impacts_maladie": null,
+    "traitements_actuels": null,
+    "evaluation_medicament": null,
+    "indication_demandee": null,
+    "position_association": null,
+    "synthese_contribution": null,
+    "evidence": []
+  },
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19687_interv_1",
+      "evaluation_id": "CT-19687",
+      "expert_nom": "Éric Mensi",
+      "role": "Expert invité",
+      "intervention_type": "Exposé initial",
+      "resume": "Présentation de la dermatomyosite, de l'étude ProDERM, de l'efficacité, de la tolérance et de la population cible pour OCTAGAM.",
+      "extrait_textuel": "Je vous remercie de m'avoir donné l'opportunité d'examiner ce dossier. Pour commencer, je dis quelques mots sur la dermatomyosite...",
+      "page_source": "Pages 3-7",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 3,
+          "s": "Je vous re",
+          "t": "Je vous remercie de m'avoir donné l'opportunité d'examiner ce dossier. Pour commencer, je dis quelques mots sur la dermatomyosite...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19687_interv_2",
+      "evaluation_id": "CT-19687",
+      "expert_nom": "Éric Mensi",
+      "role": "Expert invité",
+      "intervention_type": "Réponses aux questions",
+      "resume": "Réponses aux questions sur la durée du traitement, la sérologie, le risque thromboembolique, les comparateurs, etc.",
+      "extrait_textuel": "Merci pour vos questions. Pour répondre à la première question, la sérologie auto-immune impacte-t-elle la stratégie thérapeutique ? Oui, dans une certaine mesure...",
+      "page_source": "Pages 8-13",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 10,
+          "s": "Merci pour ",
+          "t": "Merci pour vos questions. Pour répondre à la première question, la sérologie auto-immune impacte-t-elle la stratégie thérapeutique ? Oui, dans une certaine mesure...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19687_point_1",
+      "evaluation_id": "CT-19687",
+      "sujet": "Durée du traitement et risque thromboembolique",
+      "description": "Débat sur la durée idéale du traitement (étude vs pratique) et lien avec les événements thromboemboliques temps-dépendants.",
+      "extrait_textuel": "Serge Kouzan : J'avais deux questions. La première est sur la durée du traitement... J'ai noté que les accidents thromboemboliques sont temps-dépendants.",
+      "page_source": "Page 8",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 8,
+          "s": "Serge Kouz",
+          "t": "Serge Kouzan : J'avais deux questions. La première est sur la durée du traitement... J'ai noté que les accidents thromboemboliques sont temps-dépendants.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19687_point_2",
+      "evaluation_id": "CT-19687",
+      "sujet": "Absence de sérologie auto-immune dans l'étude",
+      "description": "Question sur l'absence de données de sérologie dans l'étude ProDERM et son impact sur l'interprétation des résultats.",
+      "extrait_textuel": "Serge Kouzan : Est-ce que l'absence de sérologie dans cet essai est liée au fait qu'à l'époque... ou est-ce un « oubli » regrettable ?",
+      "page_source": "Page 8",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 8,
+          "s": "Serge Kouz",
+          "t": "Serge Kouzan : Est-ce que l'absence de sérologie dans cet essai est liée au fait qu'à l'époque... ou est-ce un « oubli » regrettable ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19687_point_3",
+      "evaluation_id": "CT-19687",
+      "sujet": "Comparaison avec le rituximab et pertinence des critères de jugement",
+      "description": "Débat sur l'utilisation du rituximab comme comparateur et sur la pertinence du critère de jugement principal (TIS minimal vs modéré/important).",
+      "extrait_textuel": "Jean-Christophe Lega : J'ai une question sur le comparateur et sur le critère de jugement principal... Pour le critère de jugement, ils ont utilisé un score qui a plusieurs domaines...",
+      "page_source": "Page 11-12",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 11,
+          "s": "Jean-Christ",
+          "t": "Jean-Christophe Lega : J'ai une question sur le comparateur et sur le critère de jugement principal... Pour le critère de jugement, ils ont utilisé un score qui a plusieurs domaines...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19687_point_4",
+      "evaluation_id": "CT-19687",
+      "sujet": "Positionnement par rapport aux autres immunoglobulines",
+      "description": "Discussion sur la différence entre OCTAGAM et autres IgIV, et sur l'ASMR par rapport à une indication précédente.",
+      "extrait_textuel": "Sylvie Chevret : Dans l'autre indication, nous avions conclu à une ASMR V parce qu'on n'avait pas démontré qu'OCTAGAM montrait un bénéfice par rapport aux autres immunoglobulines humaines normales.",
+      "page_source": "Page 14",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 14,
+          "s": "Sylvie Chev",
+          "t": "Sylvie Chevret : Dans l'autre indication, nous avions conclu à une ASMR V parce qu'on n'avait pas démontré qu'OCTAGAM montrait un bénéfice par rapport aux autres immunoglobulines humaines normales.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19687_vote_1",
+      "evaluation_id": "CT-19687",
+      "objet_vote": "ISP (Intérêt de Santé Publique)",
+      "resultat": "Absence d'ISP",
+      "nb_votants": 16,
+      "nb_voix_pour": 16,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "detail": "16 voix pour une absence d'ISP.",
+      "page_source": "Page 16",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 16,
+          "s": "Nous avons ",
+          "t": "Nous avons 16 voix pour une absence d'ISP.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19687_vote_2",
+      "evaluation_id": "CT-19687",
+      "objet_vote": "SMR (Service Médical Rendu)",
+      "resultat": "Important",
+      "nb_votants": 16,
+      "nb_voix_pour": 16,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "detail": "16 voix pour un SMR important.",
+      "page_source": "Page 16",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 16,
+          "s": "Nous avons ",
+          "t": "Nous avons 16 voix pour un SMR important.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19687_vote_3",
+      "evaluation_id": "CT-19687",
+      "objet_vote": "ASMR (Amélioration du Service Médical Rendu)",
+      "resultat": "IV avec 15 voix, V avec 1 voix",
+      "nb_votants": 16,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "detail": "15 voix pour une ASMR IV et 1 voix pour une ASMR V.",
+      "page_source": "Page 16",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 16,
+          "s": "S'agissant ",
+          "t": "S'agissant de l'ASMR, nous avons 15 voix pour une ASMR IV et 1 voix pour une ASMR V.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ]
+}

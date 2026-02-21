@@ -1,0 +1,1984 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19791",
+  "evaluation_id": "CT-19791",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19791_ROTATEQ_PIC_INS_AvisDèf_CT19791.pdf",
+        "type": "CT",
+        "page_count": 40
+      },
+      "F2": {
+        "file_name": "trans_1_rotarix_rotateq_29062022_transcription_ct1977519791.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 19
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19791_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "progres_therapeutique",
+        "place_strategie"
+      ],
+      "routing_hint": "Début avis, synthèse",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19791_seg_02",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 3,
+      "char_start": 501,
+      "char_end": 2000,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "recommendations_vaccinales",
+        "comparateurs",
+        "informations_IIA"
+      ],
+      "routing_hint": "Détails stratégie vaccinale HAS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19791_seg_03",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Motif de l’examen",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "type_avis",
+        "indication",
+        "SMR",
+        "ASMR"
+      ],
+      "routing_hint": "Motif évaluation",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19791_seg_04",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 301,
+      "char_end": 600,
+      "heading_text": "Indication concernée",
+      "expected_fields": [
+        "indication_precise",
+        "population_cible"
+      ],
+      "routing_hint": "Indication AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19791_seg_05",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "SMR et ASMR",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 601,
+      "char_end": 1500,
+      "heading_text": "SMR IMPORTANT, ASMR IV",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "justification"
+      ],
+      "routing_hint": "Conclusions SMR/ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19791_seg_06",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 1501,
+      "char_end": 1800,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible_nombre",
+        "contre_indications"
+      ],
+      "routing_hint": "Estimation population",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19791_seg_07",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Recommandations",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 1801,
+      "char_end": 2500,
+      "heading_text": "Recommandations",
+      "expected_fields": [
+        "actions_specificues",
+        "mesures_hygiene"
+      ],
+      "routing_hint": "Recommandations Commission",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19791_seg_08",
+      "section_label_normalise": "DONNEES_CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "historique_evaluations",
+        "contexte_reglementaire"
+      ],
+      "routing_hint": "Historique produit",
+      "label_confidence": 0.85
+    },
+    {
+      "segment_id": "CT-19791_seg_09",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication (détail)",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 400,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication_AMM",
+        "references"
+      ],
+      "routing_hint": "Indication détaillée",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19791_seg_10",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 9,
+      "char_start": 401,
+      "char_end": 1500,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "schema_vaccinal",
+        "doses",
+        "age_limite"
+      ],
+      "routing_hint": "Posologie RCP",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19791_seg_11",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_medicamenteux",
+        "comparateurs_non_medicamenteux"
+      ],
+      "routing_hint": "Identification comparateurs",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19791_seg_12",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 16,
+      "char_start": 0,
+      "char_end": 5000,
+      "heading_text": "Analyse des données disponibles",
+      "expected_fields": [
+        "essais_cliniques",
+        "resultats_efficacite",
+        "tolerance"
+      ],
+      "routing_hint": "Synthèse données cliniques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19791_seg_13",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 20,
+      "page_end": 21,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "SMR_final",
+        "ASMR_final",
+        "avis_favorable"
+      ],
+      "routing_hint": "Conclusions finales",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_1",
+      "section_label_normalise": "AVERTISSEMENT",
+      "section_label_brut": "AVERTISSEMENT",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [
+        "texte_avertissement"
+      ],
+      "routing_hint": "Métadonnées et avertissement sur la transcription",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_2",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "ROTARIX / ROTATEQ – Examen – Inscription (CT)",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 19,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "ROTARIX / ROTATEQ – Examen – Inscription (CT)",
+      "expected_fields": [
+        "arguments",
+        "interventions",
+        "votes"
+      ],
+      "routing_hint": "Transcription des débats de la commission",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19791_produit_01",
+      "evaluation_id": "CT-19791",
+      "nom_commercial": "ROTATEQ",
+      "dci": "vaccin rotavirus (vivant)",
+      "code_cis": "Non renseigné",
+      "code_cip13": "34009 376 223 6 3",
+      "forme_pharmaceutique": "Solution buvable",
+      "dosage": "Non renseigné",
+      "titulaire_amm": "Merck Sharp & Dohme B.V.",
+      "code_atc": "J07BH02",
+      "statut_amm": "AMM standard",
+      "date_amm": "2006-06-27",
+      "conditions_prescription": "Liste I",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "ROTATEQ",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "Vaccin rotavirus (vivant)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 24,
+          "s": "CT-19791",
+          "t": "CIP : 34009 376 223 6 3",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "forme_pharmaceutique",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "Solution buvable",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 40,
+          "s": "CT-19791",
+          "t": "Merck Sharp & Dohme B.V.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "code_atc",
+          "f": "F1",
+          "p": 24,
+          "s": "CT-19791",
+          "t": "J07BH02",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "date_amm",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19791",
+          "t": "27 juin 2006",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "conditions_prescription",
+          "f": "F1",
+          "p": 24,
+          "s": "CT-19791",
+          "t": "Liste I",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "id_produit": "CT-197751_prod_ROTARIX",
+      "evaluation_id": "CT-197751",
+      "nom_commercial": "ROTARIX",
+      "dci": "vaccin vivant atténué monovalent d'origine humaine",
+      "titulaire_amm": "GSK",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19791",
+      "Num_avis": "CT-19791",
+      "produit_nom": "ROTATEQ",
+      "dci": "vaccin rotavirus (vivant)",
+      "type_avis": "Inscription",
+      "forme": "Solution buvable",
+      "dosage": "Non renseigné",
+      "indication": "Immunisation active des nourrissons de l’âge de 6 semaines à 32 semaines pour la prévention des gastro-entérites dues à une infection à rotavirus",
+      "classe_ATC": "J07BH02",
+      "pathologie": "Gastro-entérites à rotavirus",
+      "maladie_rare": false,
+      "ligne_traitement": "Prévention",
+      "sous_groupe_population": "nourrissons de 6 à 32 semaines",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Vaccins",
+      "aire_therapeutique_niveau_2": "Vaccins viraux",
+      "aire_therapeutique_niveau_3": "Vaccins contre les diarrhées à rotavirus",
+      "source_aire_therapeutique": "Déduit ATC J07BH02",
+      "design_etude": "Essais cliniques randomisés, études observationnelles, méta-analyses",
+      "niveau_preuve_brut": "Données d'essais cliniques et d'études en vie réelle",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Prévention des gastro-entérites à rotavirus, besoin non couvert par les alternatives non vaccinales",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "6 à 32 semaines",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "type_avis_enum": "Inscription",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Avis défavorable en 2015, réévaluation en 2022 avec nouvelles données",
+      "historique_ASMR_comparateurs": "ROTARIX : ASMR non attribué en 2015 (SMR insuffisant)",
+      "concurrence_therapeutique_recente": "ROTARIX (vaccin monovalent) pour nourrissons 6-24 semaines",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-29",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les gastro-entérites à rotavirus peuvent entraîner des hospitalisations, des déshydratations sévères, et exceptionnellement des décès (environ 3,2 décès par saison en France).",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Nourrissons",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : ROTARIX (vaccin monovalent) et mesures non médicamenteuses (hygiène, allaitement, solutés de réhydratation)",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "ROTATEQ",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19791",
+          "t": "ROTATEQ est indiqué pour l’immunisation active des nourrissons de l’âge de 6 semaines à 32 semaines pour la prévention des gastro-entérites dues à une infection à rotavirus.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "Inscription",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "Adopté par la Commission de la transparence le 29 juin 2022",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 20,
+          "s": "CT-19791",
+          "t": "le nombre de décès liés à une gastroentérite à rotavirus chez les enfants âgés de moins de 3 ans est estimé à 16 sur la période de 2014 à 2019, soit 3,2 décès par saison attribuable au rotavirus",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-197751",
+      "Num_avis": "CT-197751",
+      "produit_nom": "ROTARIX / ROTATEQ",
+      "dci": "vaccins pour la prévention des gastroentérites dues à une infection à Rotavirus",
+      "type_avis": "Examen - Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "vaccin oral",
+      "dosage": "Non renseigné",
+      "indication": "Prévention des gastroentérites dues à une infection à Rotavirus chez les nourrissons",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Gastroentérites à Rotavirus",
+      "maladie_rare": false,
+      "ligne_traitement": "Prévention primaire",
+      "ligne_traitement_enum": "Non renseigné",
+      "sous_groupe_population": "Nourrissons de 6 semaines à 24 semaines (ROTARIX) ou 6 à 32 semaines (ROTATEQ)",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Vaccins",
+      "aire_therapeutique_niveau_2": "Vaccins pédiatriques",
+      "aire_therapeutique_niveau_3": "Vaccins contre les gastroentérites virales",
+      "source_aire_therapeutique": "Texte avis page 2",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Nourrissons de 6 semaines à 24 semaines (ROTARIX) ou 6 à 32 semaines (ROTATEQ)",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Avis défavorable en 2015 ; réexamen en 2022",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": 22,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-29",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Nourrissons",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "ROTARIX",
+          "t": "ROTARIX ... indiqué chez les nourrissons de 6 semaines à 24 semaines ... ROTATEQ ... chez les nourrissons de 6 à 32 semaines",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 3,
+          "s": "Pour rap",
+          "t": "dans son avis du 1er avril 2015, la commission de la transparence avait rendu un avis défavorable",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19791_essai_REST",
+      "evaluation_id": "CT-19791",
+      "nom_essai": "REST",
+      "nct_number": "Non renseigné",
+      "design": "RCT",
+      "population_cible": "nourrissons âgés de 6 à 12 semaines sans comorbidité",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "efficacité démontrée",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": 6,
+      "age_max_num": 12,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 11,
+          "s": "CT-19791",
+          "t": "REST",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 11,
+          "s": "CT-19791",
+          "t": "étude de phase III, contrôlée versus placebo, randomisée, double-aveugle",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 11,
+          "s": "CT-19791",
+          "t": "nourrissons âgés de 6 à 12 semaines au moment de l’administration de la première dose et sans comorbidité",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19791_essai_IVANHOE",
+      "evaluation_id": "CT-19791",
+      "nom_essai": "IVANHOE",
+      "nct_number": "Non renseigné",
+      "design": "Cohorte",
+      "population_cible": "population française, région de Brest, saison épidémique 2008-2009",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "impact de la vaccination démontré",
+      "QoL_flag": false,
+      "niveau_preuve": "Observationnel",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19791",
+          "t": "IVANHOE",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19791",
+          "t": "étude de cohorte",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19791_essai_Cochrane_meta",
+      "evaluation_id": "CT-19791",
+      "nom_essai": "Cochrane_meta",
+      "nct_number": "Non renseigné",
+      "design": "Meta_analyse",
+      "population_cible": "nourrissons de moins de 12 mois et de moins de 24 mois",
+      "comparateur_utilise": "placebo ou autres vaccins",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "efficacité et tolérance évaluées",
+      "QoL_flag": false,
+      "niveau_preuve": "Meta_analyse",
+      "pooling_flag": true,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": null,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19791",
+          "t": "méta-analyse Cochrane",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19791_essai_REST_crit_GEA_RV_severes",
+      "evaluation_id": "CT-19791",
+      "essai_id": "CT-19791_essai_REST",
+      "nom_critere": "GEA-RV sévères",
+      "nature_critere": "Dur",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "efficacité vaccinale 97%",
+      "valeur_groupe_comparateur": "placebo",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "réduction du risque de 97%",
+      "gain_relatif_num": 97.0,
+      "HR_RR_OR": "RR = 0,03",
+      "HR_RR_OR_num": 0.03,
+      "IC95": "[0,01 ; 0,11]",
+      "IC95_low_num": 0.01,
+      "IC95_high_num": 0.11,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "RR",
+      "type_effet": "RR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "La Commission considère que l'efficacité est démontrée avec une magnitude d'effet importante.",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19791",
+          "t": "efficacité vaccinale de ROTATEQ sur la réduction du risque de GEA-RV sévères chez les enfants âgés de moins de 1 an, de 97 %",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "HR_RR_OR",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19791",
+          "t": "RR = 0,03, IC 95% : [0,01 ; 0,11]",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19791_essai_REST_crit_hospitalisations",
+      "evaluation_id": "CT-19791",
+      "essai_id": "CT-19791_essai_REST",
+      "nom_critere": "Hospitalisations pour GEA-RV",
+      "nature_critere": "Dur",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "réduction des hospitalisations",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "réduction de 65% à 84%",
+      "gain_relatif_num": 74.5,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Impact significatif sur l'organisation des soins.",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19791",
+          "t": "impact sur l’organisation des soins dans les pays ayant introduit la vaccination universelle... réduction des hospitalisations liées aux GEA-RV chez les enfants éligibles en période post-vaccination comprise entre 65 % et 84 %",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19791_tol",
+      "evaluation_id": "CT-19791",
+      "essai_id": null,
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Invagination intestinale aiguë (IIA)",
+          "grade": "≥3",
+          "incidence_pct_traitement": 0.006,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": 7,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 4,
+              "s": "CT-19791",
+              "t": "surrisque transitoire d’invagination intestinale aiguë (IIA) survenant principalement dans les 7 jours suivant la 1ère dose de vaccin (jusqu’à 6 cas pour 100 000 nourrissons vaccinés)",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Fièvre",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 20.9,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 31,
+              "s": "CT-19791",
+              "t": "fièvre (20,9 %)",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        },
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 17.6,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 31,
+              "s": "CT-19791",
+              "t": "diarrhée (17,6 %)",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        },
+        {
+          "ei_terme": "Vomissement",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 10.1,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 31,
+              "s": "CT-19791",
+              "t": "vomissement (10,1 %)",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "ei_grade_max": "3",
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "Non renseigné",
+          "description": "Surrisque d'IIA post-vaccinal",
+          "mesures_prises": "Suivi renforcé de pharmacovigilance, information des parents et professionnels",
+          "impact_evaluation": "Pris en compte dans l'évaluation bénéfice/risque",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 2,
+              "s": "CT-19791",
+              "t": "Le suivi renforcé de pharmacovigilance, relatif à la notification des IIA doit être poursuivi.",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "signal_ansm_flag": false,
+      "EI_graves": "Invagination intestinale aiguë (IIA) jusqu’à 6 cas pour 100 000 nourrissons vaccinés, principalement dans les 7 jours suivant la 1ère dose.",
+      "EI_frequents": "Fièvre (20,9%), diarrhée (17,6%), vomissement (10,1%)",
+      "deces": "Non renseigné",
+      "signal_securite": "Surrisque d'IIA identifié, nécessitant un suivi renforcé.",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19791",
+          "t": "surrisque transitoire d’invagination intestinale aiguë (IIA) survenant principalement dans les 7 jours suivant la 1ère dose de vaccin (jusqu’à 6 cas pour 100 000 nourrissons vaccinés)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19791_essai_REST_comp_01",
+      "essai_id": "CT-19791_essai_REST",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": false,
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 11,
+          "s": "CT-19791",
+          "t": "contrôlée versus placebo",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19791_compHAS_01",
+      "evaluation_id": "CT-19791",
+      "nom_comparateur_HAS": "ROTARIX",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Vaccin",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "CT-19791",
+          "t": "ROTARIX (vaccin monovalent rotavirus vivant)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19791_compHAS_02",
+      "evaluation_id": "CT-19791",
+      "nom_comparateur_HAS": "Mesures non médicamenteuses (hygiène, allaitement, SRO)",
+      "type_comparateur": "Non_médicamenteux",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Soins_support",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "CT-19791",
+          "t": "mesures d’hygiène (lavage des mains, nettoyage des surfaces), l’allaitement maternel et les solutés de réhydratation orale (SRO)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19791_arg_CT_01",
+      "evaluation_id": "CT-19791",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Efficacité vaccinale démontrée de 97% contre les GEA-RV sévères chez les enfants de moins de 1 an dans l'essai REST.",
+      "extrait_textuel": "des données cliniques ayant démontré une efficacité vaccinale (réduction du risque de gastro-entérites aigües à rotavirus [GEA-RV] sévères chez les enfants âgés de moins de 1 an, de 97 %)",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19791",
+          "t": "des données cliniques ayant démontré une efficacité vaccinale (réduction du risque de gastro-entérites aigües à rotavirus [GEA-RV] sévères chez les enfants âgés de moins de 1 an, de 97 %)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19791_arg_CT_02",
+      "evaluation_id": "CT-19791",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Efficacité en vie réelle démontrée avec réduction des hospitalisations de 65% à 84% dans les pays ayant une bonne couverture vaccinale.",
+      "extrait_textuel": "impact sur l’organisation des soins dans les pays ayant introduit la vaccination universelle et ayant une bonne couverture vaccinale en termes de réduction des hospitalisations liées aux GEA-RV chez les enfants éligibles en période post-vaccination comprise entre 65 % et 84 %",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19791",
+          "t": "impact sur l’organisation des soins dans les pays ayant introduit la vaccination universelle et ayant une bonne couverture vaccinale en termes de réduction des hospitalisations liées aux GEA-RV chez les enfants éligibles en période post-vaccination comprise entre 65 % et 84 %",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19791_arg_CT_03",
+      "evaluation_id": "CT-19791",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Surrisque transitoire d'IIA jusqu'à 6 cas pour 100 000 nourrissons vaccinés, nécessitant information et surveillance.",
+      "extrait_textuel": "d’un profil de tolérance globalement favorable malgré un surrisque transitoire d’invagination intestinale aiguë (IIA) survenant principalement dans les 7 jours suivant la 1ère dose de vaccin (jusqu’à 6 cas pour 100 000 nourrissons vaccinés)",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19791",
+          "t": "d’un profil de tolérance globalement favorable malgré un surrisque transitoire d’invagination intestinale aiguë (IIA) survenant principalement dans les 7 jours suivant la 1ère dose de vaccin (jusqu’à 6 cas pour 100 000 nourrissons vaccinés)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19791_arg_CT_04",
+      "evaluation_id": "CT-19791",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical non couvert dans la prévention des GEA à rotavirus, avec options limitées en dehors des mesures d'hygiène.",
+      "extrait_textuel": "Le besoin médical non couvert en dehors des traitements symptomatique par les solutés réhydratations oraux, l’allaitement maternel et les mesures d’hygiènes",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 20,
+          "s": "CT-19791",
+          "t": "Le besoin médical non couvert en dehors des traitements symptomatique par les solutés réhydratations oraux, l’allaitement maternel et les mesures d’hygiènes",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19791_arg_CT_05",
+      "evaluation_id": "CT-19791",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Place établie dans la stratégie vaccinale avec ROTARIX, selon les recommandations HAS de juin 2022.",
+      "extrait_textuel": "La HAS recommande la vaccination contre les rotavirus de tous les nourrissons âgés de 6 semaines à 6 mois, selon un schéma vaccinal à deux doses pour ROTARIX et à trois doses pour ROTATEQ.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "La HAS recommande la vaccination contre les rotavirus de tous les nourrissons âgés de 6 semaines à 6 mois, selon un schéma vaccinal à deux doses (à 2 et 3 mois de vie) pour le vaccin monovalent (ROTARIX) et à trois doses (à 2, 3 et 4 mois de vie) pour le vaccin pentavalent (ROTATEQ).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-197751_arg_TRANS_1",
+      "evaluation_id": "CT-197751",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Efficacité élevée des vaccins contre les gastroentérites à Rotavirus (82-86% en vie réelle) et impact majeur sur les hospitalisations.",
+      "extrait_textuel": "Vous voyez que nous sommes sur des taux qui sont de 82 %, 86 % contre les gastroentérites à Rotavirus, ce qui est tout à fait considérable.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Emmanuel Grimprel",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Page 6",
+      "section_source": "Présentation par Emmanuel Grimprel",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Vous voye",
+          "t": "Vous voyez que nous sommes sur des taux qui sont de 82 %, 86 % contre les gastroentérites à Rotavirus",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-197751_arg_TRANS_2",
+      "evaluation_id": "CT-197751",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Mitigé",
+      "description": "Risque d'invagination intestinale aiguë post-vaccinale, mais réévalué à la baisse (1,7/100 000 vs 6/100 000 précédemment) et prévisible dans les 7 jours suivant la première dose.",
+      "extrait_textuel": "Il n'est pas de 6 pour 100 000. Il a été réévalué à la baisse dans les données internationales à 1,7 pour 100 000... il y a une fenêtre de tir dans les sept jours qui suivent la première dose.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Emmanuel Grimprel",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 7",
+      "section_source": "Présentation par Emmanuel Grimprel",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Il n'est",
+          "t": "Il n'est pas de 6 pour 100 000. Il a été réévalué à la baisse dans les données internationales à 1,7 pour 100 000",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-197751_arg_TRANS_3",
+      "evaluation_id": "CT-197751",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Fardeau important des gastroentérites à Rotavirus en France : consultations, passages aux urgences, hospitalisations, et impact sur le système de santé.",
+      "extrait_textuel": "En termes de santé publique, c'est considérable. Vous voyez le nombre de consultations qui est majeur, le nombre de passages aux urgences...",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Emmanuel Grimprel",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Page 4",
+      "section_source": "Présentation par Emmanuel Grimprel",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "En terme",
+          "t": "En termes de santé publique, c'est considérable. Vous voyez le nombre de consultations qui est majeur",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-197751_arg_TRANS_4",
+      "evaluation_id": "CT-197751",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "Réticence des médecins généralistes à vacciner contre le Rotavirus, ce qui pourrait limiter la couverture vaccinale.",
+      "extrait_textuel": "Les médecins généralistes sont assez réticents vis-à-vis de cette vaccination... C'est un souci.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Daniel Floret",
+      "moment_debat": "Intervention de Daniel Floret",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 9",
+      "section_source": "Intervention de Daniel Floret",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Les méd",
+          "t": "Les médecins généralistes sont assez réticents vis-à-vis de cette vaccination",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-197751_arg_TRANS_5",
+      "evaluation_id": "CT-197751",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "Pas de différence d'efficacité démontrée entre ROTARIX (monovalent) et ROTATEQ (pentavalent), mais ROTARIX a 2 doses vs 3 pour ROTATEQ.",
+      "extrait_textuel": "Il n'y a pas eu d'étude comparative, mais il n'y a pas d'évidence qu'un vaccin soit meilleur que l'autre.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Daniel Floret",
+      "moment_debat": "Questions",
+      "impact_decision": "Mentionné",
+      "page_source": "Page 11",
+      "section_source": "Questions",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Il n'y",
+          "t": "Il n'y a pas eu d'étude comparative, mais il n'y a pas d'évidence qu'un vaccin soit meilleur que l'autre.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-197751_arg_TRANS_6",
+      "evaluation_id": "CT-197751",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Favorable",
+      "description": "Aucun décès post-vaccination rapporté en France depuis 2015 et risque d'invagination peut-être compensé par une protection contre les invaginations spontanées naturelles.",
+      "extrait_textuel": "Il n'y a pas eu de nouveau décès rapporté à la suite d'une vaccination à Rotavirus depuis en France... globalement, dans la population de 1 an, il n'y en a pas plus et il y en aurait même peut-être moins.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Emmanuel Grimprel",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 6-7",
+      "section_source": "Présentation par Emmanuel Grimprel",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Il n'y",
+          "t": "Il n'y a pas eu de nouveau décès rapporté à la suite d'une vaccination à Rotavirus depuis en France",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19791_ctx",
+    "evaluation_id": "CT-19791",
+    "ISP": "susceptible d’avoir un impact sur la santé publique",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": true,
+    "ISP_categorie": "Modéré",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2006-06-27",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis",
+      "Europe",
+      "Australie",
+      "Canada"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "CDC",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 737000,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "environ 737 000 nourrissons âgés de 6 semaines à 32 semaines chaque année",
+    "population_cible_nombre": 737000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Données labo",
+    "incertitude_population": "Faible",
+    "population_cible_mediane": 737000,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_pharmacovigilance",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 4,
+        "s": "CT-19791",
+        "t": "ROTATEQ, vaccin rotavirus (vivant) est susceptible d’avoir un impact sur la santé publique.",
+        "m": "manual",
+        "c": 0.9
+      },
+      {
+        "field": "population_cible_nombre",
+        "f": "F1",
+        "p": 5,
+        "s": "CT-19791",
+        "t": "La population cible de ROTATEQ est d’environ 737 000 nourrissons âgés de 6 semaines à 32 semaines chaque année.",
+        "m": "manual",
+        "c": 0.9
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19791",
+    "texte_brut": "Document CT complet non reproduit ici par souci de concision.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19791_smrasmr_01",
+      "evaluation_id": "CT-19791",
+      "indication_precise": "Immunisation active des nourrissons de l’âge de 6 semaines à 32 semaines pour la prévention des gastro-entérites dues à une infection à rotavirus",
+      "smr": "La Commission considère que le service médical rendu par ROTATEQ est IMPORTANT dans l'immunisation active des nourrissons...",
+      "asmr": "la Commission de la Transparence considère que la spécialité ROTATEQ, vaccin rotavirus (vivant) apporte une amélioration du service médical rendu mineure (ASMR IV)...",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Compte tenu des données d'efficacité, d'impact sur les soins, de tolérance acceptable malgré le surrisque d'IIA, et de l'absence d'impact sur la mortalité.",
+      "population_cible_indication": "nourrissons de 6 à 32 semaines",
+      "ligne_traitement_indication": "Prévention",
+      "comparateurs_references_indication": "ROTARIX, mesures d'hygiène",
+      "comparateur_id_HAS": "CT-19791_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "6 à 32 semaines"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Elevée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 20,
+          "s": "CT-19791",
+          "t": "La Commission considère que le service médical rendu par ROTATEQ est IMPORTANT dans l'immunisation active des nourrissons de l’âge de 6 semaines à 32 semaines pour la prévention des gastro-entérites dues à une infection à rotavirus",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 21,
+          "s": "CT-19791",
+          "t": "la Commission de la Transparence considère que la spécialité ROTATEQ, vaccin rotavirus (vivant) apporte une amélioration du service médical rendu mineure (ASMR IV) dans la prévention des gastro-entérites dues à une infection à rotavirus chez les nourrissons âgés de 6 semaines à 32 semaines.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "smr_asmr_id": "CT-197751_smrasmr_01",
+      "evaluation_id": "CT-197751",
+      "indication_precise": "Prévention des gastroentérites dues à une infection à Rotavirus chez les nourrissons",
+      "smr": "SMR important",
+      "asmr": "ASMR IV",
+      "smr_revendique": "SMR important",
+      "asmr_revendique": "ASMR IV",
+      "justification_decisionnelle": "Non renseigné",
+      "population_cible_indication": "Nourrissons de 6 semaines à 24 semaines (ROTARIX) ou 6 à 32 semaines (ROTATEQ)",
+      "ligne_traitement_indication": "Prévention primaire",
+      "comparateurs_references_indication": "Non renseigné",
+      "comparateur_id_HAS": null,
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Nourrissons"
+      },
+      "gain_survie_cite": null,
+      "qol_cite": null,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "IV",
+      "evidence": [
+        {
+          "field": "smr_revendique",
+          "f": "F1",
+          "p": 4,
+          "s": "Aujourd",
+          "t": "le laboratoire GSK ainsi que le laboratoire MSD revendiquent un SMR important",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_revendique_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Aujourd",
+          "t": "une ASMR de niveau IV",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19791_poso_01",
+      "evaluation_id": "CT-19791",
+      "smr_asmr_id": "CT-19791_smrasmr_01",
+      "indication": "Immunisation active des nourrissons de 6 à 32 semaines pour la prévention des gastro-entérites à rotavirus",
+      "population_cible": "nourrissons de 6 à 32 semaines",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "3 doses, première dose à partir de 6 semaines et au plus tard à 12 semaines, intervalle d'au moins 4 semaines entre doses, dernière dose jusqu'à 32 semaines.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "1",
+            "unite_dose": "dose"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              0
+            ],
+            "interval_days": 28
+          },
+          "voie_administration": "orale",
+          "expected_phase_duration_days": 84
+        }
+      ],
+      "ajustements_poso_brut": "Non renseigné",
+      "commentaires": "Administration orale uniquement, jamais injecter.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19791",
+          "t": "Le schéma de vaccination est en 3 doses. La première dose peut être administrée à partir de l’âge de 6 semaines et au plus tard à l’âge de 12 semaines. L’intervalle entre chaque dose doit être d’au moins 4 semaines. la troisième (dernière) dose peut être faite jusqu'à l'âge de 32 semaines",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19791_event_AMM_01",
+      "evaluation_id": "CT-19791",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2006-06-27",
+      "detail_brut": "AMM européenne obtenue le 27 juin 2006",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19791",
+          "t": "27 juin 2006",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19791_event_CT_01",
+      "evaluation_id": "CT-19791",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Avis adopté par la Commission de la transparence le 29 juin 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis favorable à l'inscription",
+      "acteurs_impliques": [
+        "Commission de la transparence HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19791",
+          "t": "Adopté par la Commission de la transparence le 29 juin 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-197751_event_TRANS_01",
+      "evaluation_id": "CT-197751",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2022-06-29",
+      "detail_brut": "Séance de la Commission de Transparence",
+      "source_doc": "TRANSCRIPTION",
+      "detail_type_specifique": "Transcription sténotypée de la séance",
+      "acteurs_impliques": [
+        "Pierre Cochat",
+        "Emmanuel Grimprel",
+        "Daniel Floret",
+        "Jean-Christophe Mercier",
+        "autres membres"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi",
+          "t": "Mercredi 29 juin 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19791",
+    "delai_amm_ct_jours": 5840,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19791",
+    "is_orphan": false,
+    "classe_ATC_l2": "J07B",
+    "aire_therapeutique": "Vaccins viraux",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": true,
+    "n_essais": 3,
+    "n_rct": 1,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 97.0,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "GEA-RV sévères",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19791",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19791_essai_REST",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19791_essai_REST",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19791_essai_REST_crit_GEA_RV_severes",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19791",
+      "tgt_type": "SMRASMR",
+      "tgt_id": "CT-19791_smrasmr_01",
+      "label": "EVAL_HAS_SMRASMR"
+    }
+  ],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "expert_id": "CT-197751_expert_01",
+      "evaluation_id": "CT-197751",
+      "nom_expert": "Emmanuel Grimprel",
+      "role": "Rapporteur des recommandations vaccinales",
+      "intervention_resume": "Présentation des données actualisées sur l'efficacité, le fardeau de la maladie, la tolérance (invagination intestinale aiguë) et l'impact en santé publique.",
+      "points_cles": [
+        "Efficacité 82-86%",
+        "Risque invagination réévalué à 1,7/100 000",
+        "Fardeau important sur le système de santé",
+        "Immunité collective démontrée"
+      ],
+      "evidence": [
+        {
+          "field": "intervention_resume",
+          "f": "F1",
+          "p": 4,
+          "s": "Je vais",
+          "t": "Je vais aller assez rapidement, parce que vous avez un dossier qui est très complet.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "expert_id": "CT-197751_expert_02",
+      "evaluation_id": "CT-197751",
+      "nom_expert": "Daniel Floret",
+      "role": "Rapporteur des recommandations vaccinales",
+      "intervention_resume": "Confirmation des arguments d'Emmanuel Grimprel, ajout sur la fluctuation des souches non liée à la vaccination, et préoccupations sur la couverture vaccinale et l'information des familles.",
+      "points_cles": [
+        "Arguments de 2015 tombés",
+        "Pas de sélection de souches résistantes",
+        "Couverture vaccinale et information des familles comme enjeux"
+      ],
+      "evidence": [
+        {
+          "field": "intervention_resume",
+          "f": "F1",
+          "p": 8,
+          "s": "Je ne v",
+          "t": "Je ne vais pas ajouter grand-chose à ce qu'a dit Emmanuel",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-197751_point_01",
+      "evaluation_id": "CT-197751",
+      "sujet": "Risque d'invagination intestinale aiguë post-vaccinale",
+      "description": "Débat sur la réévaluation du risque (1,7 vs 6/100 000), sa prévisibilité (fenêtre de 7 jours post-première dose), et la possibilité que le vaccin protège contre les invaginations spontanées.",
+      "controverses": "Certains membres soulignent le risque, d'autres le minimisent en raison de sa prévisibilité et de l'absence de nouveaux décès.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Le probl",
+          "t": "Le problème était l'invagination intestinale aiguë.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-197751_point_02",
+      "evaluation_id": "CT-197751",
+      "sujet": "Réticence des médecins généralistes à vacciner",
+      "description": "Discussion sur la nécessité de convaincre les médecins généralistes, qui sont réticents, pour obtenir une couverture vaccinale suffisante.",
+      "controverses": "Certains membres veulent encourager les médecins généralistes dans l'avis, tandis que d'autres insistent sur la transparence de leur réticence actuelle.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Effectiv",
+          "t": "Effectivement, il y a une réticence des médecins généralistes et j'en fais partie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-197751_point_03",
+      "evaluation_id": "CT-197751",
+      "sujet": "Différences entre ROTARIX et ROTATEQ",
+      "description": "Discussion sur les différences technologiques (monovalent vs pentavalent, doses) et l'absence de preuve de supériorité de l'un sur l'autre.",
+      "controverses": "Question sur le risque de sélection de souches résistantes avec le monovalent, mais les experts indiquent que ce n'est pas observé.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Ce sont",
+          "t": "Ce sont deux vaccins différents.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-197751_vote_01",
+      "evaluation_id": "CT-197751",
+      "objet_vote": "ISP (Intérêt de Santé Publique)",
+      "resultat": "Adopté",
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "details": "Vote par appel nominatif, 22 votants",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "Nous avo",
+          "t": "Nous avons 22 voix pour une reconnaissance d'ISP",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-197751_vote_02",
+      "evaluation_id": "CT-197751",
+      "objet_vote": "SMR (Service Médical Rendu)",
+      "resultat": "Important",
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "details": "Vote par appel nominatif, 22 votants",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "22 voix",
+          "t": "22 voix pour un SMR important",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-197751_vote_03",
+      "evaluation_id": "CT-197751",
+      "objet_vote": "ASMR (Amélioration du Service Médical Rendu)",
+      "resultat": "IV",
+      "nb_voix_pour": 19,
+      "nb_voix_contre": 3,
+      "nb_abstentions": 0,
+      "details": "19 voix pour ASMR IV, 3 voix pour ASMR III",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "19 voix",
+          "t": "19 voix pour une ASMR IV et 3 voix pour une ASMR III",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-197751",
+    "contribution_presente": false,
+    "contribution_id": null,
+    "association": null,
+    "methodologie": null,
+    "demande_audition": null,
+    "impacts_maladie": null,
+    "traitements_actuels": null,
+    "evaluation_medicament": null,
+    "indication_demandee": null,
+    "position_association": null,
+    "synthese_contribution": null,
+    "evidence": []
+  }
+}
