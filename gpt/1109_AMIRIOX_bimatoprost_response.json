@@ -1,0 +1,966 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19729",
+  "evaluation_id": "CT-19729",
+  "extraction_date": "2022-04-06",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-04-06",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19729.pdf",
+        "type": "CT",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19729_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l'avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 4000,
+      "heading_text": "Avis version définitive",
+      "expected_fields": [],
+      "routing_hint": "Essais_Cliniques, SMR_ASMR, Arguments_Decisionnels",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19729_seg_02",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 4001,
+      "char_end": 7000,
+      "heading_text": "03 COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [],
+      "routing_hint": "Comparateurs_HAS, Arguments_Decisionnels",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19729_seg_03",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 7001,
+      "char_end": 8500,
+      "heading_text": "04 CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [],
+      "routing_hint": "SMR_ASMR, Arguments_Decisionnels",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19729_seg_04",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 8501,
+      "char_end": 9200,
+      "heading_text": "04.3 Population cible",
+      "expected_fields": [],
+      "routing_hint": "Population_Cible, Arguments_Decisionnels",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19729_seg_05",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 9201,
+      "char_end": 10100,
+      "heading_text": "06 INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "expected_fields": [],
+      "routing_hint": "Informations_Administratives",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19729",
+      "produit_nom_commercial": "AMIRIOX",
+      "dci": "bimatoprost",
+      "forme_pharmaceutique": "collyre en solution",
+      "dosage": "0,3 mg/ml",
+      "titulaire_amm": "SIFI France",
+      "cip": "34009 302 346 0 0",
+      "hybride_de": "LUMIGAN"
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19729",
+      "Num_avis": "CT-19729",
+      "produit_nom": "AMIRIOX",
+      "dci": "bimatoprost",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "collyre en solution",
+      "dosage": "0,3 mg/ml",
+      "indication": "Réduction de la pression intraoculaire élevée chez les patients adultes atteints de glaucome chronique à angle ouvert ou d’hypertonie intraoculaire (en monothérapie ou en association aux bêtabloquants).",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Glaucome chronique à angle ouvert, hypertonie intraoculaire",
+      "maladie_rare": false,
+      "ligne_traitement": "Première intention",
+      "ligne_traitement_enum": "1L",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Ophtalmologie",
+      "aire_therapeutique_niveau_2": "Glaucome",
+      "aire_therapeutique_niveau_3": "Traitement de la réduction de la pression intraoculaire",
+      "source_aire_therapeutique": "Texte avis page 1-4",
+      "design_etude": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "gravite_patho": "Les glaucome et l’hypertonie oculaire sont des pathologies sévères pouvant entraîner la cécité.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Patients adultes atteints de glaucome chronique à angle ouvert ou d’hypertonie intraoculaire",
+      "pertinence_concurrence_therapeutique": "Existence d’alternatives thérapeutiques disponibles notamment LUMIGAN et autres collyres bêtabloquants et analogues de prostaglandine.",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "La Commission a renouvelé l'inscription de LUMIGAN en 2019 avec SMR important dans la même indication.",
+      "historique_ASMR_comparateurs": "AMIRIOX est un hybride sans conservateur par rapport à LUMIGAN. ASMR V attribué, absence d’amélioration du service médical rendu.",
+      "concurrence_therapeutique_recente": "Présence de produits de référence et médicaments de première et deuxième intention utilisés en pratique courante",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-04-06",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "smr": "La Commission considère que le service médical rendu par AMIRIOX (bimatoprost) 0,3 mg/ml est important dans l’indication.",
+      "smr_enum": "Important",
+      "asmr": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la spécialité de référence LUMIGAN.",
+      "asmr_enum": "V",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Convient à ...",
+          "t": "La Commission considère que le service médical rendu par AMIRIOX (bimatoprost) 0,3 mg/ml est important",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Convient à ...",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "bimatopr",
+          "t": "AMIRIOX 0,3 mg/ml, collyre en solution",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-19729_tol_01",
+    "evaluation_id": "CT-19729",
+    "essai_id": "Non renseigné",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Non renseigné",
+    "EI_graves_detailles": [],
+    "EI_frequents": "Non renseigné",
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19729_compHAS_01",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "BETOPTIC",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "03 COMPAR",
+          "t": "BETOPTIC bétaxolol Alcon S.A.S.",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_02",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "CARTEOL",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "03 COMPAR",
+          "t": "CARTEOL cartéolol Chauvin",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_03",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "BETAGAN",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "03 COMPAR",
+          "t": "BETAGAN lévobunolol Allergan France S.A.S.",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_04",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "OPHTIM",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "03 COMPAR",
+          "t": "OPHTIM timolol Théa",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_05",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "TIMABAK",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "03 COMPAR",
+          "t": "TIMABAK timolol Théa",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_06",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "TIMOCOMOD",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "TIMOCOMOD timolol Delbert",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_07",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "TIMOPTOL",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Bêtabloquants",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "TIMOPTOL timolol Santen",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_08",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "LUMIGAN",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "LUMIGAN bimatoprost Allergan",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_09",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "XALATAN",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "XALATAN latanoprost Pfizer",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_10",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "LATANOPROST NORIDERM",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "LATANOPROST NORIDERM latanoprost Noriderm",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_11",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "TRAVATAN",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "TRAVATAN travoprost Novartis Pharma",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_12",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "BIMATOPROST IDIFARMA",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "BIMATOPROST IDIFARMA bimatoprost Centre Spécialités Pharmaceutiques",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_13",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "XIOP",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "XIOP latanoprost Horus Pharma",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_14",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "LATAZED",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "03 COMPAR",
+          "t": "LATAZED latanoprost Horus Pharma",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_15",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "SINETRAV",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "03 COMPAR",
+          "t": "SINETRAV travoprost Horus Pharma",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_16",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "MONOPROST",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "03 COMPAR",
+          "t": "MONOPROST latanoprost Théa Pharma",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_17",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "VIZILATAN",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "03 COMPAR",
+          "t": "VIZILATAN latanoprost Chauvin",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19729_compHAS_18",
+      "evaluation_id": "CT-19729",
+      "nom_comparateur_HAS": "VIZITRAV",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Analogues de prostaglandine",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "03 COMPAR",
+          "t": "VIZITRAV travoprost Chauvin",
+          "m": "table",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19729_arg_CT_01",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Le glaucome et l’hypertonie oculaire sont des pathologies sévères pouvant entraîner la cécité, justifiant un traitement.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le glaucome et l’hypertonie oculaire sont des pathologies sévères pouvant entraîner la cécité.",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "CONCLUSION",
+          "t": "Le glaucome et l’hypertonie oculaire sont des pathologies sévères pouvant entraîner la cécité.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19729_arg_CT_02",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "AMIRIOX est un traitement de première intention dans la réduction de la pression intraoculaire élevée.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Cette spécialité est un traitement de première intention.",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "CONCLUSION",
+          "t": "Cette spécialité est un traitement de première intention.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19729_arg_CT_03",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "AMIRIOX est conditionné sans conservateur, ce qui limite les effets indésirables liés aux conservateurs présents dans les collyres habituels.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission rappelle que les conservateurs présents dans les collyres peuvent induire des effets indésirables inflammatoires conjonctivaux et une toxicité de la surface oculaire. De ce fait, les collyres sans conservateur doivent être privilégiés.",
+      "page_source": "Page 2",
+      "section_source": "Contexte",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte ",
+          "t": "La Commission rappelle que les conservateurs présents dans les collyres peuvent induire, en cas d’administration chronique, des effets indésirables inflammatoires conjonctivaux et une toxicité de la surface oculaire...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19729_arg_CT_04",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "AMIRIOX n’apporte pas de progrès thérapeutique (ASMR V) par rapport au médicament de référence LUMIGAN, malgré l’absence de conservateur.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la spécialité de référence LUMIGAN (bimatoprost).",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Conclusion",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à la spécialité de référence LUMIGAN (bimatoprost).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19729_arg_CT_05",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "description": "La population cible est estimée à environ 1 million de patients adultes atteints de glaucome chronique à angle ouvert ou d’hypertonie intraoculaire.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "La population cible d’AMIRIOX peut être estimée à environ 1 million de patients.",
+      "page_source": "Page 4",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Population",
+          "t": "La population cible d’AMIRIOX (bimatoprost) 0,3 mg/ml, collyre en solution peut être estimée à environ 1 million de patients.",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19729_arg_CT_06",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Les associations fixes sont privilégiées dans la mesure où elles évitent d’administrer deux collyres à 10 minutes d’intervalle.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les associations fixes seront privilégiées dans la mesure où elles évitent d’administrer les deux collyres à 10 min d’intervalle.",
+      "page_source": "Page 3",
+      "section_source": "Comparateurs cliniquement pertinents",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparat",
+          "t": "Les associations fixes seront privilégiées dans la mesure où elles évitent d’administrer les deux collyres à 10 min d’intervalle.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19729_arg_CT_07",
+      "evaluation_id": "CT-19729",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Les collyres sans conservateur sont à privilégier en raison du risque d’effets indésirables liés aux conservateurs dans les collyres avec conservateur.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les conservateurs présents dans les collyres peuvent induire, en cas d’administration chronique, des effets indésirables inflammatoires conjonctivaux et une toxicité de la surface oculaire. De ce fait, les collyres sans conservateur doivent être privilégiés.",
+      "page_source": "Page 2",
+      "section_source": "Contexte",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte ",
+          "t": "Les conservateurs présents dans les collyres peuvent induire, en cas d’administration chronique, des effets indésirables inflammatoires conjonctivaux et une toxicité de la surface oculaire.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19729_ctx",
+    "evaluation_id": "CT-19729",
+    "ISP": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "2021-07-28",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "s": "INFORMATI",
+        "t": "Date initiale (procédure d’octroi) : 28 juillet 2021 (procédure décentralisée)",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "SMR_apres_audition_enum",
+        "f": "F1",
+        "p": 4,
+        "s": "CONCLUSION",
+        "t": "La Commission considère que le service médical rendu par AMIRIOX (bimatoprost) est important",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "ASMR_après_audition_enum",
+        "f": "F1",
+        "p": 4,
+        "s": "CONCLUSION",
+        "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+        "m": "rule",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19729",
+    "texte_brut": "Avis CT complet : L'essentiel de l'avis favorable au remboursement de AMIRIOX (bimatoprost) 0,3 mg/ml collyre sans conservateur..."
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19729_smrasmr_01",
+      "evaluation_id": "CT-19729",
+      "indication_precise": "Réduction de la pression intraoculaire élevée chez les patients adultes atteints de glaucome chronique à angle ouvert ou d'hypertonie intraoculaire (en monothérapie ou en association aux bêtabloquants).",
+      "smr": "La Commission considère que le service médical rendu par AMIRIOX est important dans cette indication.",
+      "smr_enum": "Important",
+      "asmr": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "AMIRIOX apporte un traitement sans conservateur, réduisant les risques liés aux conservateurs en administration chronique. Pas d'amélioration clinique par rapport à LUMIGAN.",
+      "population_cible_indication": "patients adultes atteints de glaucome chronique à angle ouvert ou d’hypertonie intraoculaire",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": [
+        "LUMIGAN"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19729_compHAS_08"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": null,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "CONCLUSION",
+          "t": "La Commission considère que le service médical rendu par AMIRIOX est important",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "CONCLUSION",
+          "t": "Cette spécialité est un hybride qui n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19729_event_AMM_01",
+      "evaluation_id": "CT-19729",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-07-28",
+      "detail_brut": "Date initiale (procédure d’octroi) : 28 juillet 2021 (procédure décentralisée)",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM EMA",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "INFORMATI",
+          "t": "Date initiale (procédure d’octroi) : 28 juillet 2021 (procédure décentralisée)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19729_event_CT_01",
+      "evaluation_id": "CT-19729",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-04-06",
+      "detail_brut": "Avis adopté par la Commission de la Transparence le 6 avril 2022.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption avis CT",
+      "acteurs_impliques": [
+        "HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis vers",
+          "t": "Avis adopté par la Commission de la Transparence le 6 avril 2022.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19729",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": 622,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_flag_incomplet": false,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19729",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Ophtalmologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

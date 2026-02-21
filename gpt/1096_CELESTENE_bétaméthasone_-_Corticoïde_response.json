@@ -1,0 +1,553 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19786",
+  "evaluation_id": "CT-19786",
+  "extraction_date": "2022-04-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-04-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19786.pdf",
+        "type": "CT",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT1978601",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse page 1-3",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Synthèse de l'avis",
+      "expected_fields": [],
+      "routing_hint": "",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT1978602",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives pages 4-5",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [],
+      "routing_hint": "",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT1978603",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications thérapeutiques et contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Indications CELESTENE",
+      "expected_fields": [],
+      "routing_hint": "",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT1978604",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Comparateurs",
+      "expected_fields": [],
+      "routing_hint": "",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT1978605",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions et Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [],
+      "routing_hint": "",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT1978606",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie et conditionnements",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Recommandations Commission",
+      "expected_fields": [],
+      "routing_hint": "",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "code_cip13": "34009 302 367 5 8",
+      "produit": "CELESTENE 4 mg/1 ml, solution injectable"
+    },
+    {
+      "code_cip13": "34009 301 947 7 5",
+      "produit": "CELESTENE CHRONODOSE 5,70 mg/ml, suspension injectable"
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19786",
+      "Num_avis": "CT-19786",
+      "produit_nom": "CELESTENE",
+      "dci": "bétaméthasone",
+      "type_avis": "Avis version définitive",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable / suspension injectable",
+      "dosage": "4 mg/1 ml ; 5,70 mg/ml",
+      "indication": "Indications AMM excepté rhinites allergiques",
+      "classe_ATC": "H02AB01",
+      "pathologie": "Pathologies inflammatoires, dysimmunitaires et allergiques",
+      "maladie_rare": false,
+      "ligne_traitement": "Variable",
+      "source_aire_therapeutique": "Déduit ATC H02AB01",
+      "aire_therapeutique_niveau_1": "Autre",
+      "aire_therapeutique_niveau_2": "Corticoïdes",
+      "aire_therapeutique_niveau_3": "Ville et Hôpital",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Insuffisante couverture pour rhinites allergiques, autres indications couvertes",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "gravite_patho": "Les corticoïdes sont indiqués dans des maladies inflammatoires, dysimmunitaires et allergiques d’importance variable",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes et enfants selon indication AMM",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Nouvelles présentations de CELESTENE complémentaires aux spécialités déjà inscrites",
+      "historique_ASMR_comparateurs": "ASMR V (absence de progrès par rapport aux présentations déjà disponibles)",
+      "concurrence_therapeutique_recente": "Existence de nombreuses spécialités à base de corticoïdes substituables",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-04-20",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 5,
+          "s": "HAS - Di",
+          "t": "H02AB01  Corticoïdes à usage systémique non associés",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 2,
+          "s": "Pour rappel",
+          "t": "Nouvelles présentations complémentaires aux spécialités CELESTENE déjà disponibles",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "Les corticoïdes",
+          "t": "Le rapport efficacité/effet indésirables est important dans les indications de l’AMM, excepté dans les rhinites allergiques",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 4,
+          "s": "Les glucocorticoïdes",
+          "t": "Les glucocorticoïdes injectables n’ont plus de place dans la stratégie thérapeutique des rhinites allergiques",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "evaluation_id": "CT-19786",
+    "EI_graves": "Non renseigné",
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19786_compHAS_01",
+      "evaluation_id": "CT-19786",
+      "nom_comparateur_HAS": "Spécialités à base de corticoïdes",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Les comparateurs",
+          "t": "Les comparateurs cliniquement pertinents sont les spécialités à base de corticoïdes recommandés dans les indications de l’AMM",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19786_arg_CT_1",
+      "evaluation_id": "CT-19786",
+      "source_argument": "CT",
+      "categorie_argument": "SMR/ASMR",
+      "direction_argument": "Favorable",
+      "description": "La Commission considère que le service médical rendu par CELESTENE injectable est important dans les indications de l’AMM excepté dans les rhinites allergiques.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par CELESTENE ... est important dans les indications de l’AMM, excepté dans les rhinites allergiques.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "La Commission",
+          "t": "service médical rendu par CELESTENE ... est important dans les indications de l’AMM",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19786_arg_CT_2",
+      "evaluation_id": "CT-19786",
+      "source_argument": "CT",
+      "categorie_argument": "SMR/ASMR",
+      "direction_argument": "Défavorable",
+      "description": "Le SMR est insuffisant dans l’indication rhinites allergiques pour justifier une prise en charge par la solidarité nationale.",
+      "extrait_textuel": "SMR insuffisant pour justifier prise en charge dans les rhinites allergiques.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "heureusement",
+          "t": "service médical rendu insuffisant dans les rhinites allergiques",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19786_arg_CT_3",
+      "evaluation_id": "CT-19786",
+      "source_argument": "CT",
+      "categorie_argument": "ASMR",
+      "direction_argument": "Défavorable",
+      "description": "Les nouvelles présentations ne présentent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà disponibles.",
+      "extrait_textuel": "Ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "La Commission",
+          "t": "Ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19786_arg_CT_4",
+      "evaluation_id": "CT-19786",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Les corticoïdes injectables n’ont plus de place dans la stratégie thérapeutique des rhinites allergiques.",
+      "extrait_textuel": "Il est à noter que les glucocorticoïdes injectables n’ont plus de place dans la stratégie thérapeutique des rhinites allergiques.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "Il est à noter",
+          "t": "les glucocorticoïdes injectables n’ont plus de place dans la stratégie thérapeutique des rhinites allergiques",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19786_arg_CT_5",
+      "evaluation_id": "CT-19786",
+      "source_argument": "CT",
+      "categorie_argument": "Conditionnements",
+      "direction_argument": "Favorable",
+      "description": "Les nouveaux conditionnements sont adaptés aux conditions de prescription selon indication, posologie, et durée de traitement.",
+      "extrait_textuel": "Ils sont adaptés aux conditions de prescription selon l’indication, la posologie et la durée de traitement.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 5",
+      "section_source": "Recommandations de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Ils sont a",
+          "t": "Ils sont adaptés aux conditions de prescription selon l’indication, la posologie et la durée de traitement",
+          "m": "rule",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19786_ctx",
+    "evaluation_id": "CT-19786",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19786",
+    "texte_brut": "Avis complet CT bétaméthasone CELESTENE 4 mg/1 ml et CELESTENE CHRONODOSE 5,70 mg/ml concernant nouvelle présentation. SMR important indications AMM sauf rhinites allergiques, ASMR V absence de progrès. Comparateurs nombreux, corticoïdes. Tolérance non détaillée.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19786_smrasmr_01",
+      "evaluation_id": "CT-19786",
+      "indication_precise": "Indications AMM excepté dans rhinites allergiques",
+      "smr": "La Commission considère que le service médical rendu par CELESTENE est important dans les indications de l’AMM excepté dans les rhinites allergiques.",
+      "smr_enum": "Important",
+      "asmr": "Ces spécialités sont des compléments de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Service médical rendu important sauf rhinites allergiques où SMR insuffisant; pas d'amélioration thérapeutique; présence alternatives thérapeutiques.",
+      "population_cible_indication": "Adultes et enfants selon AMM",
+      "ligne_traitement_indication": "Variable",
+      "comparateurs_references_indication": "Nombreuses spécialités corticoïdes recommandées",
+      "comparateur_id_HAS": "CT-19786_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Variable",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": null,
+      "tolerance_acceptable": null,
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "La Commission",
+          "t": "service médical rendu par CELESTENE ... est important dans les indications de l’AMM",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "la Commission",
+          "t": "Ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19786_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-19786",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-04-20",
+      "detail_brut": "Adoption avis commission de la transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis Com",
+          "t": "AVIS 20 AVRIL 2022",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19786_event_VALIDATION_ADMIN_01",
+      "evaluation_id": "CT-19786",
+      "event_type": "DOSSIER_COMPLEMENT_FOURNI",
+      "event_date": "2022-03-17",
+      "detail_brut": "Date de validation administrative",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Calendrier",
+          "t": "Date de validation administrative* : 17 mars 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19786",
+    "delai_amm_ct_jours": null,
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19786",
+    "is_orphan": false,
+    "classe_ATC_l2": "Corticoïdes",
+    "aire_therapeutique": "Autre",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

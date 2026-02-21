@@ -1,0 +1,657 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19637",
+  "evaluation_id": "CT-19637",
+  "extraction_date": "2022-03-23",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-03-23",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19637.pdf",
+        "type": "CT",
+        "page_count": 10
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19637_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "type_avis"
+      ],
+      "routing_hint": "Avis"
+    },
+    {
+      "segment_id": "CT-19637_seg_02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 1201,
+      "char_end": 4800,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "population_cible",
+        "comparateurs",
+        "ligne_traitement",
+        "biomarqueur",
+        "smr"
+      ],
+      "routing_hint": "Indications"
+    },
+    {
+      "segment_id": "CT-19637_seg_03",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 4801,
+      "char_end": 5000,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs"
+      ],
+      "routing_hint": "Comparateurs"
+    },
+    {
+      "segment_id": "CT-19637_seg_04",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 10,
+      "char_start": 5001,
+      "char_end": 14000,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "evidence",
+        "ligne_traitement"
+      ],
+      "routing_hint": "Service Médical Rendu"
+    },
+    {
+      "segment_id": "CT-19637_seg_05",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population Cible",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 10,
+      "char_start": 14001,
+      "char_end": 14500,
+      "heading_text": "Population Cible",
+      "expected_fields": [
+        "population_cible"
+      ],
+      "routing_hint": "Population Cible"
+    },
+    {
+      "segment_id": "CT-19637_seg_06",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 10,
+      "char_start": 14501,
+      "char_end": 15000,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "presentation",
+        "titulaire_amm",
+        "Liste_concernes",
+        "condition_prescription"
+      ],
+      "routing_hint": "Administratif"
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "OPDIVO",
+      "dci": "nivolumab",
+      "titulaire_amm": "BRISTOL MYERS SQUIBB",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution à diluer pour perfusion",
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "10 mg/ml",
+          "code_cip13": "34009 550 855 2"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS - Dir",
+          "t": "nivolumab OPDIVO 10mg/ml, solution à diluer pour perfusion",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 10,
+          "s": "BRISTOL ",
+          "t": "Demandeur BRISTOL MYERS SQUIBB",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 10,
+          "s": "Boîte de ",
+          "t": "Boîte de 1 flacon (verre) de 12 ml (CIP : 34009 550 855 2 2)",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19637",
+      "Num_avis": "CT-19637",
+      "produit_nom": "OPDIVO",
+      "dci": "nivolumab",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "solution à diluer pour perfusion",
+      "dosage": "10 mg/ml",
+      "indication": "Multiplies indications oncologiques (mélanome, cancer bronchique, mésothéliome, carcinome rénal, lymphome de Hodgkin, carcinome urothélial, cancer colorectal, carcinome épidermoïde de l’œsophage, cancer de l’œsophage ou de la jonction œso-gastrique, adénocarcinome gastrique et œsophage)",
+      "classe_ATC": "L01XC17",
+      "pathologie": "Oncologie solide et hémato-oncologie",
+      "maladie_rare": false,
+      "ligne_traitement": "Variable selon indication",
+      "sous_groupe_population": "Adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Déduit ATC L01XC17",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "La Commission a déjà évalué OPDIVO (nivolumab) 10 mg/ml dans ses nombreuses indications.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-03-23",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Grave à très grave selon indications, certaines maladies graves engageant le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave",
+        "Très_grave"
+      ],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents identifiés pour les différentes indications",
+      "evidence": [
+        {
+          "field": "historique_Has_produit",
+          "f": "F1",
+          "p": 2,
+          "s": "Pour rappel",
+          "t": "La Commission a déjà évalué OPDIVO (nivolumab) 10 mg/ml dans ses nombreuses indications",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis version",
+          "t": "AVIS 23 MARS 2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-19637_tol_01",
+    "evaluation_id": "CT-19637",
+    "essai_id": "Non renseigné",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Non renseigné",
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "deces_detailles": [],
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19637_compHAS_01",
+      "evaluation_id": "CT-19637",
+      "nom_comparateur_HAS": "Traitements antérieurs à base de fluoropyrimidine et de sels de platine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Chimiotherapie",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 1,
+          "s": "L’essentiel",
+          "t": "Traitement en monothérapie des patients adultes atteints d’un carcinome épidermoïde de l’œsophage après chimiothérapie combinée antérieure à base de fluoropyrimidine et de sels de platine",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19637_arg_CT_01",
+      "evaluation_id": "CT-19637",
+      "source_argument": "CT",
+      "categorie_argument": "Service_medical_rendu",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "La Commission considère que le service médical rendu (SMR) par OPDIVO est important pour plusieurs indications majeures notamment le mélanome avancé, cancer bronchique non à petites cellules, lymphome de Hodgkin, et cancer du rein.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par d’OPDIVO ..., est important : En monothérapie dans le traitement de 1ère ligne du mélanome avancé ... En monothérapie dans le traitement des patients adultes atteints d’un lymphome de Hodgkin classique en rechute ... Dans le traitement du cancer du rein à cellules claires ou comportant un contingent de cellules claires...",
+      "page_source": "Page 8-9",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 8,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu par d’OPDIVO ... est important",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19637_arg_CT_02",
+      "evaluation_id": "CT-19637",
+      "source_argument": "CT",
+      "categorie_argument": "Service_medical_rendu",
+      "direction_argument": "Modéré",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "Le service médical rendu est modéré pour certaines associations en première ligne notamment en association à l’ipilimumab pour cancer non à petites cellules métastatique et cancer colorectal métastatique avec déficience du système de réparation des mésappariements de l’ADN.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par d’OPDIVO ..., est modéré : En association à l’ipilimumab et à 2 cycles de chimiothérapie à base de sels de platine, ... En association à l’ipilimumab, dans le traitement des patients adultes atteints d’un cancer colorectal métastatique ...",
+      "page_source": "Page 9-10",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 9,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu par d’OPDIVO ... est modéré",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19637_arg_CT_03",
+      "evaluation_id": "CT-19637",
+      "source_argument": "CT",
+      "categorie_argument": "Service_medical_rendu",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "description": "Le service médical rendu est insuffisant pour le traitement en monothérapie du carcinome épidermoïde de l’œsophage avancé non résécable et pour le carcinome urothélial localement avancé ou métastatique après échec d’une chimiothérapie à base de sels de platine.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par d’OPDIVO ..., est insuffisant : Dans le traitement en monothérapie des patients adultes atteints d’un carcinome épidermoïde de l’œsophage avancé non résécable ... Dans le traitement des patients adultes atteints d’un carcinome urothélial localement avancé ...",
+      "page_source": "Page 9",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 9,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu par d’OPDIVO ... est insuffisant",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19637_arg_CT_04",
+      "evaluation_id": "CT-19637",
+      "source_argument": "CT",
+      "categorie_argument": "Amélioration_SMR",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Cette spécialité, complément de gamme, n'apporte pas d'amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "extrait_textuel": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "page_source": "Page 10",
+      "section_source": "Amélioration du service médical rendu",
+      "evidence": [
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 10,
+          "s": "Cette spé",
+          "t": "Cette spécialité est un complément de gamme qui n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19637_arg_CT_05",
+      "evaluation_id": "CT-19637",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "Avis favorable à l’inscription sur la liste des spécialités agréées à l’usage des collectivités dans les indications ayant reçu un SMR important ou modéré et aux posologies de l’AMM.",
+      "extrait_textuel": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à l’usage des collectivités dans les indications ayant reçu un SMR important ou modéré et aux posologies de l’AMM.",
+      "page_source": "Page 10",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 10,
+          "s": "La Commiss",
+          "t": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à l’usage des collectivités",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19637_ctx",
+    "evaluation_id": "CT-19637",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2015-06-19",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19637",
+    "texte_brut": "Avis version définitive COMMISSION DE LA TRANSPARENCE AVIS 23 MARS 2022 nivolumab OPDIVO 10mg/ml, solution à diluer pour perfusion...",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19637_smrasmr_01",
+      "evaluation_id": "CT-19637",
+      "indication_precise": "Traitement en monothérapie des patients adultes atteints d'un mélanome avancé (non résécable ou métastatique)",
+      "smr": "La Commission considère que le service médical rendu est important dans cette indication.",
+      "smr_enum": "Important",
+      "asmr": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "La CT considère que le bénéfice clinique est important mais sans progrès par rapport aux présentations déjà disponibles.",
+      "population_cible_indication": "Patients adultes",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": [
+        "Chimiothérapie combinée basée sur fluoropyrimidine et sels de platine"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19637_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Non renseigné",
+        "stade": "Métastatique",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "Avis vers",
+          "t": "La Commission considère que le service médical rendu est important dans cette indication",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 10,
+          "s": "Cette spé",
+          "t": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "smr_asmr_id": "CT-19637_smrasmr_02",
+      "evaluation_id": "CT-19637",
+      "indication_precise": "Traitement en association à l’ipilimumab et à 2 cycles de chimiothérapie à base de sels de platine, en première ligne, dans le cancer bronchique non à petites cellules métastatique",
+      "smr": "La Commission considère que le service médical rendu est modéré dans cette indication.",
+      "smr_enum": "Modéré",
+      "asmr": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "SMR modéré considéré pour cette association; pas d’amélioration par rapport aux autres formulations.",
+      "population_cible_indication": "Patients adultes",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": [
+        "Chimiothérapie combinée basée sur sels de platine"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19637_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Non renseigné",
+        "stade": "Métastatique",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 9,
+          "s": "La Commiss",
+          "t": "La Commission considère que le service médical rendu est modéré",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19637_event_AMM_01",
+      "evaluation_id": "CT-19637",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2015-06-19",
+      "detail_brut": "Date initiale d’octroi de l’AMM",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_AMM_ema",
+          "f": "F1",
+          "p": 10,
+          "s": "Date initi",
+          "t": "Date initiale (procédure d’octroi) : 19/06/2015",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19637_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-19637",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-03-23",
+      "detail_brut": "Date d’examen et d’adoption de l’avis CT",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis vers",
+          "t": "Date d’examen et d’adoption : 23/03/2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19637",
+    "delai_amm_ct_jours": 2434,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [
+      {
+        "field": "delai_amm_ct_jours",
+        "f": "F1",
+        "p": 10,
+        "s": "Date initi",
+        "t": "Date initiale (procédure d’octroi) : 19/06/2015; Date d’examen et d’adoption : 23/03/2022",
+        "m": "manual",
+        "c": 0.95
+      }
+    ]
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19637",
+    "is_orphan": false,
+    "classe_ATC_l2": "Antinéoplasiques et immunomodulateurs",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 1,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

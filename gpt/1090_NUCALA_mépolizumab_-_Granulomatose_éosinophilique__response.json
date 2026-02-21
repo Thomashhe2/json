@@ -1,0 +1,1893 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19629",
+  "evaluation_id": "CT-19629",
+  "extraction_date": "2022-04-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-04-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19629.pdf",
+        "type": "CT",
+        "page_count": 34
+      },
+      "F2": {
+        "file_name": "CT-19629_Transcription_NUCALA_AVIS.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 15
+      },
+      "F3": {
+        "file_name": "Non renseigné",
+        "type": "CONTRIB",
+        "page_count": 2
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19629_seg01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis version définitive",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Avis version définitive",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "besoin_medical",
+        "population_cible",
+        "argumentaire_principaux"
+      ],
+      "routing_hint": "Synthèse",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19629_seg02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "indication",
+        "population_cible",
+        "posologie"
+      ],
+      "routing_hint": "Indications",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19629_seg03",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "posologie_texte",
+        "posologie_dose",
+        "posologie_population"
+      ],
+      "routing_hint": "Posologie",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19629_seg04",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 9,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "description",
+        "limitations"
+      ],
+      "routing_hint": "Besoin médical",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19629_seg05",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 10,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Comparateurs pertinents",
+      "expected_fields": [
+        "medicamenteux",
+        "non_medicamenteux"
+      ],
+      "routing_hint": "Comparateurs",
+      "label_confidence": 0.94
+    },
+    {
+      "segment_id": "CT-19629_seg06",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Études MIRRA et autres",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 19,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Étude MIRRA",
+      "expected_fields": [
+        "essais_cliniques",
+        "populations",
+        "critères",
+        "résultats_efficacite"
+      ],
+      "routing_hint": "Essais",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19629_seg07",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 19,
+      "page_end": 24,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Tolérance",
+      "expected_fields": [
+        "EI_graves",
+        "EI_frequents",
+        "deces"
+      ],
+      "routing_hint": "Tolérance",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19629_seg08",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Suivi à long terme",
+      "template_detecte": "CT_modern",
+      "page_start": 24,
+      "page_end": 28,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Programme de suivi tolérance",
+      "expected_fields": [
+        "tolérance_long_terme"
+      ],
+      "routing_hint": "Suivi tolérance",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19629_seg09",
+      "section_label_normalise": "SMR_ASMR_PAR_INDICATION",
+      "section_label_brut": "Conclusions service rendu et ASMR",
+      "template_detecte": "CT_modern",
+      "page_start": 29,
+      "page_end": 34,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Conclusion de la Commission de la Transparence",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "population_cible",
+        "conclusion"
+      ],
+      "routing_hint": "Conclusions",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19629_seg10",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 34,
+      "page_end": 34,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Informations administratives",
+      "expected_fields": [
+        "titulaire",
+        "presentations",
+        "AMM",
+        "prescription"
+      ],
+      "routing_hint": "Infos admin",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_0001",
+      "section_label_normalise": "TRANSCRIPTION_SEANCE",
+      "section_label_brut": "Commission de Transparence - séance NUCALA",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 15,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Débat sur NUCALA - Extension d'indication",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "segment_0001",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Contribution des associations de patients et d’usagers aux évaluations des médicaments et des dispositifs médicaux",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Contribution des associations de patients",
+      "expected_fields": [
+        "association",
+        "methodologie",
+        "impacts_maladie",
+        "traitements_actuels",
+        "evaluation_medicament",
+        "indication_demandee",
+        "position_association",
+        "synthese_contribution"
+      ],
+      "routing_hint": "point_de_vue_patient",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "NUCALA",
+      "dci": "mepolizumab",
+      "titulaire_amm": "GLAXOSMITHKLINE",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "poudre pour solution injectable en flacon",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg",
+          "code_cip13": "34009 300 383 5 2"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg/ml",
+          "code_cip13": "34009 301 863 4 3"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg/ml",
+          "code_cip13": "34009 302 505 6 3"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg/ml",
+          "code_cip13": "34009 301 863 3 6"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 34,
+          "s": "NUCALA 1",
+          "t": "NUCALA 100 mg, poudre pour solution injectable en flacon, solution injectable en seringue préremplie et solution injectable en stylo prérempli",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19629",
+      "Num_avis": "CT-19629",
+      "produit_nom": "NUCALA",
+      "dci": "mepolizumab",
+      "type_avis": "Extension_indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Injectable sous-cutané",
+      "dosage": "100 mg/ ml",
+      "indication": "Traitement additionnel des formes récidivantes ou réfractaires de la granulomatose éosinophilique avec polyangéite chez les patients âgés de 6 ans et plus",
+      "classe_ATC": "R03DX09",
+      "pathologie": "Granulomatose éosinophilique avec polyangéite",
+      "maladie_rare": true,
+      "ligne_traitement": "1ère ligne",
+      "ligne_traitement_enum": "1L",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Maladie auto-immune",
+      "aire_therapeutique_niveau_3": "Granulomatose éosinophilique avec polyangéite",
+      "source_aire_therapeutique": "Texte avis page 2",
+      "design_etude": "Étude de phase III, randomisée, en double aveugle, comparative versus placebo",
+      "niveau_preuve_brut": "Étude de phase III randomisée, en double aveugle, comparative versus placebo",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Dans la prise en charge de la GEPA non contrôlée ou réfractaire ou chez les patients intolérants aux traitements conventionnels, le besoin n’est actuellement pas couvert.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "≥ 6 ans",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "NUCALA (mépolizumab) a obtenu l’AMM initiale en 2015 dans l’asthme sévère à éosinophiles et a été étendu en 2018 chez l’enfant ≥ 6 ans.",
+      "historique_ASMR_comparateurs": "Aucun comparateur médicamenteux cliniquement pertinent dans l’indication GEPA.",
+      "concurrence_therapeutique_recente": "Absence d’alternative thérapeutique pour les formes récidivantes ou réfractaires de GEPA.",
+      "vote_unanimite": true,
+      "nb_votants": 21,
+      "nb_voix_pour": 21,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-04-20",
+      "gravite_patho": "La granulomatose éosinophilique avec polyangéite (GEPA) peut avoir des complications engageant le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Patients âgés de 6 ans et plus atteints de GEPA récidivante ou réfractaire",
+      "pertinence_concurrence_therapeutique": "Aucun comparateur médicamenteux cliniquement pertinent",
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis vers",
+          "t": "Avis version définitive",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis vers",
+          "t": "NUCALA 100 mg, poudre pour solution injectable en flacon, solution injectable en seringue préremplie et solution injectab...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 3,
+          "s": "Nouvelle ind",
+          "t": "Nouvelle indication",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "design_etude",
+          "f": "F1",
+          "p": 10,
+          "s": "A Double-",
+          "t": "Étude de phase III, randomisée, en double aveugle, comparative versus placebo",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "niveau_preuve_brut",
+          "f": "F1",
+          "p": 10,
+          "s": "A Double-",
+          "t": "Étude de phase III randomisée, en double aveugle, comparative versus placebo",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "Mais au r",
+          "t": "Dans la prise en charge de la GEPA non contrôlée ou réfractaire ou chez les patients intolérants aux traitements conventionnels, le besoin n’est actuellement pas couvert.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 6,
+          "s": " Pronost",
+          "t": "La granulomatose éosinophilique avec polyangéite (GEPA) peut avoir des complications engageant le pronostic vital.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "sous_groupe_population": "Non renseigné",
+      "transcription_textuelle": "Transcription complète de la séance de la commission du 20 avril 2022 concernant l'extension d'indication de NUCALA dans la granulomatose éosinophilique avec polyangéite...",
+      "extraits_arguments": []
+    },
+    {
+      "evaluation_id": "Non renseigné",
+      "Num_avis": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19629_essai_MIRRA",
+      "evaluation_id": "CT-19629",
+      "essai_nom": "MIRRA",
+      "nct_number": "NCT02020889",
+      "design": "Phase_III_RCT_DB",
+      "population_cible": "Adultes ≥18 ans, patients avec GEPA récidivante ou réfractaire sous corticothérapie stable",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 68,
+      "nb_patient_comparateur": 68,
+      "resultat_global": "Supériorité du mépolizumab sur placebo sur durée cumulée totale de rémission et proportion en rémission à sem 36 et 48",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase_III_RCT_DB",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Région géographique"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2016-09-05",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100.0,
+      "nb_patients_inclus": "136",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "France",
+          "nb_patients": "13",
+          "pourcentage": "9.6%"
+        }
+      ],
+      "date_fin_inclusion": "2016-09",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "qol_instruments": [
+        "SF-36",
+        "WPAI-GH V2"
+      ],
+      "qol_resultats_brut": "Analyses exploratoires sans gestion multiplicité, pas de conclusion formelle.",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 1,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 10,
+          "s": "A Double-",
+          "t": "Référence A Double-blind, Randomised, Placebo-controlled Study to Investigate the Efficacy and Safety of Mepolizumab in the Treatment of Eosinophilic Granulomatosis With Polyangiitis...",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 10,
+          "s": "A Double-",
+          "t": "Clinicaltrials.gov NCT02020889",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "phase",
+          "f": "F1",
+          "p": 10,
+          "s": "A Double-",
+          "t": "Étude de phase III, de supériorité, multicentrique, randomisée, comparative versus placebo, en double-aveugle, en groupes parallèles",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 15,
+          "s": "Les patients ont été randomisés (ratio d’allocation 1 : 1) pour recevoir pendant 52 semaines 3 injections sous-cutanée de 100 mg",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_comparateur",
+          "f": "F1",
+          "p": 15,
+          "s": "Les patients randomisés (ratio d’allocation 1 : 1) ont reçu 3 injections placebo sous-cutané de chlorure de sodium 0,9 %",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "randomisation_flag",
+          "f": "F1",
+          "p": 11,
+          "s": "groupe randomisé à 1:1",
+          "t": "randomisation 1:1",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19629_essai_MIRRA_crit_duree_cumulee_remission_CS04",
+      "evaluation_id": "CT-19629",
+      "essai_id": "CT-19629_essai_MIRRA",
+      "nom_critere": "Durée totale cumulée de rémission (BVAS=0 et dose CSO ≤ 4 mg/jour)",
+      "nature_critere": "Dur",
+      "unite_mesure": "semaines cumulées",
+      "hierarchie_critere": "Co-primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "critere_co_primaire_groupe": "duree_remission_proportion",
+      "condition_test": "Testé en parallèle avec proportion patients en rémission",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.05,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 2,
+      "test_statistique_utilise": "Régression logistique à cotes proportionnelles",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Région géographique"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "critere_atteint": true,
+      "commentaire_has_resultat": "La durée totale cumulée de rémission a été significativement supérieure dans le groupe mépolizumab.",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 16,
+          "s": "Tableau 3",
+          "t": "durée totale cumulée de rémission (BVAS=0 et dose CSO ≤ 4 mg/jour) a été significativement supérieure dans le groupe mépolizumab (OR=5,91; p<0,001)",
+          "m": "table",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19629_essai_MIRRA_crit_proportion_remission_sem36_48_CS04",
+      "evaluation_id": "CT-19629",
+      "essai_id": "CT-19629_essai_MIRRA",
+      "nom_critere": "Proportion de patients en rémission aux semaines 36 et 48 (BVAS=0 et dose CSO ≤ 4 mg/jour)",
+      "nature_critere": "Dur",
+      "unite_mesure": "pourcentage",
+      "hierarchie_critere": "Co-primaire",
+      "ordre_hierarchie": [
+        2
+      ],
+      "critere_co_primaire_groupe": "duree_remission_proportion",
+      "condition_test": "Testé en parallèle avec durée totale cumulée de rémission",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.05,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 2,
+      "test_statistique_utilise": "Régression logistique",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Région géographique"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "critere_atteint": true,
+      "commentaire_has_resultat": "La proportion de patients en rémission aux semaines 36 et 48 a été significativement supérieure dans le groupe mépolizumab.",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 16,
+          "s": "Tableau 3",
+          "t": "proportion de patients en rémission aux semaines 36 et 48 significativement plus élevée dans le groupe mépolizumab (OR=16,74; p<0,001)",
+          "m": "table",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19629_essai_MIRRA_crit_delai_premiere_rechute",
+      "evaluation_id": "CT-19629",
+      "essai_id": "CT-19629_essai_MIRRA",
+      "nom_critere": "Délai de survenue de la première rechute confirmée de GEPA",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Hazard Ratio",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non renseigné",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Cox_regression",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Région géographique"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "critere_atteint": true,
+      "commentaire_has_resultat": "Le délai de survenue de la première rechute a été significativement plus long dans le groupe mépolizumab.",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 3",
+          "t": "augmentation statistiquement significative du délai de survenue de la première rechute confirmée de GEPA (HR=0,32; p<0,001)",
+          "m": "table",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19629_essai_MIRRA_crit_dose_cso_sem48_52",
+      "evaluation_id": "CT-19629",
+      "essai_id": "CT-19629_essai_MIRRA",
+      "nom_critere": "Dose quotidienne moyenne de CSO au cours des semaines 48 à 52",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "mg",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non renseigné",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Régression logistique",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Région géographique"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "critere_atteint": true,
+      "commentaire_has_resultat": "Dose quotidienne moyenne de corticostéroïdes significativement plus faible dans le groupe mépolizumab.",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 20,
+          "s": "semaines 48",
+          "t": "dose quotidienne moyenne de CSO plus faible dans le groupe mépolizumab (OR=0,20; p<0,001)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Co-primaire"
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19629_essai_MIRRA_tol",
+      "evaluation_id": "CT-19629",
+      "essai_id": "CT-19629_essai_MIRRA",
+      "ei_total_pct": 97.0,
+      "ei_total_pct_comparateur": 94.0,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 3.0,
+      "discontinuations_ae_pct_comparateur": 1.0,
+      "deaths_ae_n": 1,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": true,
+      "EI_graves": "Proportion de patients avec EI grave : 18 % groupe mépolizumab, 26 % groupe placebo",
+      "EI_frequents": "Céphalées (32 %), arthralgies (22 %), sinusites (21 %), infections voies aériennes supérieures (21 %)",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Réactions d’hypersensibilité",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": 4.0,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 3,
+          "n_patients_comparateur": null,
+          "issue": "Retrait étude",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 21,
+              "s": "Toléra",
+              "t": "Des réactions systémiques (dont hypersensibilité) ont causé le retrait de 1 patient dans le groupe mépolizumab.",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Infections graves (asthme, pneumonie, GEPA)",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 32.0,
+          "incidence_pct_comparateur": 18.0,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 21,
+              "s": "Tolérance",
+              "t": "Les céphalées ont été rapportées chez 32 % des patients du groupe mépolizumab et chez 18 % du groupe placebo.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Arthralgies",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 22.0,
+          "incidence_pct_comparateur": 18.0,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 21,
+              "s": "Tolérance",
+              "t": "Les arthralgies ont été rapportées chez 22 % des patients du groupe mépolizumab et chez 18 % du groupe placebo.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "deces": [
+        {
+          "cause_deces": "Arrêt cardiaque",
+          "relation_traitement": "Improbable",
+          "delai_survenue_jours": null,
+          "contexte": "Un décès survenu dans le groupe mépolizumab",
+          "evidence": [
+            {
+              "field": "deces",
+              "f": "F1",
+              "p": 22,
+              "s": "Tolérance",
+              "t": "Un décès (arrêt cardiaque) a été rapporté dans le groupe mépolizumab, non lié au traitement.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "evidence": [
+        {
+          "field": "ei_total_pct",
+          "f": "F1",
+          "p": 21,
+          "s": "Tolérance",
+          "t": "La proportion de patients ayant eu au moins un événement indésirable (EI) a été de 97 % dans le groupe mépolizumab et de 94 % dans le groupe placebo.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "discontinuations_ae_pct",
+          "f": "F1",
+          "p": 21,
+          "s": "Tolérance",
+          "t": "La proportion d’EI ayant conduit à l’arrêt du traitement a été de 3 % dans le groupe mépolizumab et 1 % dans le groupe placebo.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite": "Non renseigné"
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19629_essai_MIRRA_comp_01",
+      "essai_id": "CT-19629_essai_MIRRA",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 10,
+          "s": "A Double-",
+          "t": "Étude randomisée comparant mépolizumab à un placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "comparateur_standard_soin": "Non renseigné"
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19629_compHAS_01",
+      "evaluation_id": "CT-19629",
+      "nom_comparateur_HAS": "Aucun comparateur médicamenteux cliniquement pertinent",
+      "type_comparateur": "Aucun",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "Dans le champ",
+          "t": "NUCALA (mépolizumab) est le seul médicament disposant d’une AMM dans le traitement additionnel des formes récidivantes ou réfractaires de la GEPA. Il n’existe donc pas de comparateur médicamenteux cliniquement pertinent.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19629_arg_CT_01",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "L’étude MIRRA démontre une amélioration significative du délai total cumulatif de rémission avec une forte quantité d’effet cliniquement pertinente.",
+      "extrait_textuel": "La durée totale cumulée de rémission a été significativement supérieure dans le groupe mépolizumab par rapport au groupe placebo (OR=5,91 ; p < 0,001).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 16",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "Tableau 3",
+          "t": "La durée totale cumulée de rémission a été significativement supérieure dans le groupe mépolizumab",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_02",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Une proportion significativement plus élevée de patients en rémission aux semaines 36 et 48 administerent un traitement par mépolizumab.",
+      "extrait_textuel": "La proportion de patients en rémission aux semaines 36 et 48 a été de 32 % dans le groupe mépolizumab et de 3 % dans le groupe placebo (OR=16,74 ; p < 0,001).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 16",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "Tableau 3",
+          "t": "La proportion de patients en rémission aux semaines 36 et 48 a été significativement supérieure dans le groupe mépolizumab",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_03",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Le délai de survenue de la première rechute confirmée de GEPA est significativement prolongé sous mépolizumab.",
+      "extrait_textuel": "Une augmentation statistiquement significative du délai de survenue de la première rechute confirmée de GEPA a été observée chez les patients traités par mépolizumab par rapport aux patients sous placebo durant les 52 semaines de traitement (HR=0,32 ; p < 0,001).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 19",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "Tableau 3",
+          "t": "augmentation statistiquement significative du délai de survenue de la première rechute confirmée de GEPA (HR=0,32 ; p < 0,001)",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_04",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "La dose quotidienne moyenne de corticoïdes oraux est significativement plus faible sous mépolizumab au cours des semaines 48 à 52.",
+      "extrait_textuel": "Au cours des 4 dernières semaines de l’étude (semaines 48 à 52), les patients traités par mépolizumab ont eu une dose quotidienne moyenne de CSO plus faible par rapport aux sujets ayant reçu le placebo (OR=0,20 ; p < 0,001).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 20",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 20,
+          "s": "semaines 48",
+          "t": "dose quotidienne moyenne de CSO plus faible dans le groupe mépolizumab (OR=0,20 ; p < 0,001)",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_05",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance est acceptable avec des EI fréquemment légers à modérés comme céphalées, arthralgies, sinusites et infections respiratoires.",
+      "extrait_textuel": "Les EI les plus fréquents ont été les céphalées (32 %), les arthralgies (22 %), les sinusites (21 %) et les infections des voies aériennes supérieures (21 %) dans le groupe mépolizumab.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 21",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 21,
+          "s": "Tolérance",
+          "t": "Les EI les plus fréquents ont été les céphalées (32 %), les arthralgies (22 %), les sinusites (21 %) et les infections des voies aériennes supérieures (21 %) dans le groupe mépolizumab.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_06",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Les événements indésirables graves liés au traitement sont rares, principalement infections et affections respiratoires.",
+      "extrait_textuel": "Les événements indésirables graves liés au traitement ont été signalés chez 4 % des patients dans le groupe mépolizumab.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 21",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 21,
+          "s": "Tolérance",
+          "t": "La proportion de patients ayant eu des EIG liés au traitement a été de 4 % dans le groupe mépolizumab.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_07",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le besoin médical en GEPA réfractaire ou récidivante est non couvert, justifiant la place de NUCALA.",
+      "extrait_textuel": "Le besoin médical n’est actuellement pas couvert dans la prise en charge de la GEPA non contrôlée ou réfractaire.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Besoin médi",
+          "t": "Dans la prise en charge de la GEPA non contrôlée ou réfractaire ou chez les patients intolérants aux traitements conventionnels, le besoin n’est actuellement pas couvert.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_CT_08",
+      "evaluation_id": "CT-19629",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "NUCALA est reconnu comme traitement de 1ère intention en traitement additionnel des formes récidivantes ou réfractaires de GEPA chez les patients âgés de 6 ans et plus.",
+      "extrait_textuel": "NUCALA (mépolizumab) est un traitement de 1ère intention chez les patients âgés de 6 ans et plus en traitement additionnel des formes récidivantes ou réfractaires de la granulomatose éosinophilique avec polyangéite.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Pages 2-3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Place du",
+          "t": "NUCALA (mépolizumab) est un traitement de 1ère intention chez les patients âgés de 6 ans et plus en traitement additionnel des formes récidivantes ou réfractaires",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_001",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "description": "La granulomatose éosinophilique avec polyangéite (GEPA) est une maladie rare à forte morbi-mortalité avec un besoin médical important lié à la corticodépendance et au risque vital en cas d’atteintes cardiaques.",
+      "extrait_textuel": "La granulomatose éosinophilique avec polyangéite fait partie de la famille des vascularites à ANCA, mais c’est un peu le parent pauvre... il y a un risque vital.",
+      "intervenant": "Dr Antoine Néel",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Antoine N",
+          "t": "granulomatose éosinophilique avec polyangéite fait partie de la famille des vascularites à ANCA, mais c’est un peu le parent pauvre",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_002",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "description": "L’étude MIRRA démontre une amélioration statistiquement significative des critères principaux de durée cumulée de rémission et proportion de patients en rémission à semaines 36 et 48.",
+      "extrait_textuel": "Pour les cocritères de jugement principaux... ils étaient statistiquement significatifs en faveur du groupe mépolizumab.",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Commiss",
+          "t": "Pour les cocritères de jugement principaux... statistiquement significatifs en faveur du groupe mépolizumab.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_003",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Le profil de tolérance du mépolizumab est similaire à celui connu dans le traitement de l’asthme sévère, sans nouveau signal identifié.",
+      "extrait_textuel": "Le profil de tolérance du mépolizumab était similaire à celui déjà connu dans le traitement de l'asthme sévère à éosinophiles.",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Le profil",
+          "t": "Le profil de tolérance du mépolizumab était similaire à celui déjà connu dans le traitement de l'asthme sévère à éosinophiles",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_004",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "description": "L’extrapolation des données pédiatriques est justifiée par la similarité clinique adulte/enfant mais la maladie est très rare chez l’enfant, ce qui limite les études spécifiques.",
+      "extrait_textuel": "La GEPA est une maladie exceptionnelle chez l’enfant... justifiant l’extrapolation EMA.",
+      "intervenant": "Pr Patrick Niaudet",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "Patrick",
+          "t": "La GEPA est une maladie exceptionnelle chez l’enfant... extrapolation utilisée",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_005",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Pertinence clinique",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "Les critères BVAS utilisés présentent une limite de précision pour cette maladie avec des difficultés à mesurer la rémission et à différencier activité réelle de manifestations respiratoires.",
+      "extrait_textuel": "Le score BVAS est le seul score validé, mais il ne décrit pas précisément les manifestations ORL ou respiratoires de cette maladie.",
+      "intervenant": "Dr Antoine Néel",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "NUCALA – ",
+          "t": "Le score BVAS utilisé... ne reflète pas précisément manifestations respiratoires/ORL.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_006",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "L’effet d’épargne cortisonique est un critère important et significatif favorisant le mépolizumab, néanmoins la qualité de vie n’est pas suffisamment documentée.",
+      "extrait_textuel": "L’effet d’épargne cortisonique est nettement observé alors que les données qualité de vie sont peu fournies et exploratoires.",
+      "intervenant": "Dr Antoine Néel",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "NUCALA - ",
+          "t": "Les données montrent un effet d’épargne cortisonique significatif mais peu de données sur qualité de vie.",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_007",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "description": "L’étude exclut les formes graves récentes et on ne connaît pas la place du traitement dans ces populations.",
+      "extrait_textuel": "La population étude exclut les malades avec atteinte grave récente... place du médicament à étudier.",
+      "intervenant": "Dr Antoine Néel",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "NUCALA –",
+          "t": "Cette population particulière exclut les malades avec atteinte grave récente et on ne sait pas la place de la molécule.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_008",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "Un effet suspensif probable du traitement est observé, avec rechute à l’arrêt du mépolizumab, sans guérison définie.",
+      "extrait_textuel": "Il y a un effet suspensif probable, les patients rechutent à l’arrêt du traitement.",
+      "intervenant": "Pr Jean-Christophe Lega",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Nucala – ",
+          "t": "Très probablement que quand on arrête le traitement, les patients rechutent.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_009",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "description": "Certains sous-groupes, notamment en fonction du taux d’éosinophiles et de la dose de corticoïdes, montrent des bénéfices variables du mépolizumab, sans données claires pour personnaliser le traitement.",
+      "extrait_textuel": "Différences d’effet selon éosinophilie basale et dose de corticoïdes, traitement probablement non efficace chez patients sous forte corticothérapie.",
+      "intervenant": "Pr Jean-Christophe Lega",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "Nucala – ",
+          "t": "Analyse en sous-groupes montre différences majeures d’effet selon taux d’éosinophiles et dose corticoïdes.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19629_arg_TRANS_010",
+      "evaluation_id": "CT-19629",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "description": "Les patients témoignent d’un fort impact sur la qualité de vie, la fatigue, et la corticodépendance génèrent une demande importante pour une réduction des corticoïdes.",
+      "extrait_textuel": "Le traitement est « miraculeux », « change la vie », permet arrêt des corticoïdes, soulage familles.",
+      "intervenant": "France Vascularites (association patients)",
+      "moment_debat": "Contribution",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "France Va",
+          "t": "Ce traitement est « miraculeux », « change la vie », « permet une autonomie retrouvée et l’arrêt des corticoïdes ».",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Association France Vascularites souligne les impacts majeurs de la granulomatose éosinophilique sur la qualité de vie avec fortes fatigabilités, impacts sociaux et perte d’autonomie, soulignant un besoin médical important non couvert.",
+      "extrait_textuel": "Difficultés respiratoires dues à l’asthme, stress important, impact professionnel et sociale, perte d’autonomie dans vie quotidienne.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description_impacts_patients",
+          "f": "F1",
+          "p": 1,
+          "s": "Difficulté",
+          "t": "Difficultés respiratoires dues à l’asthme. Stress important lié à l’oppression en relation avec l’asthme. Impact professionnel avec une grande fatigabilité et parfois impact social. Perte d’autonomie dans les tâches courantes de la vie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "La maladie affecte fortement l’entourage avec anxiétés et stress causés aussi par les effets secondaires des corticoïdes, augmentant la charge globale pour les aidants.",
+      "extrait_textuel": "Angoisses, stress, ne pas savoir quoi faire. Impact des effets secondaires des corticoïdes (irritabilité, troubles du comportement…).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "impacts_proches_aidants",
+          "f": "F1",
+          "p": 1,
+          "s": "Angoisses,",
+          "t": "Angoisses, stress, ne pas savoir quoi faire. L’impact des effets secondaires des corticoïdes (irritabilité, troubles du comportement…).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Traitements_actuels",
+      "direction_argument": "Défavorable",
+      "description": "Les corticoïdes utilisés en fortes doses et immunosuppresseurs prolongés entraînent de multiples effets secondaires importants, affectant la qualité de vie des patients.",
+      "extrait_textuel": "Corticoïdes doses fortes, effets secondaires : prise de poids, insomnies, ostéoporose, diabète, irritabilité, dépression, insuffisance surrénalienne, etc. Immunosuppresseurs : infections, fatigue, nausées, diarrhées.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "inconvenients",
+          "f": "F1",
+          "p": 1,
+          "s": "Les corticoïdes",
+          "t": "Les corticoïdes sont utilisés à fortes doses en traitement d’attaque... effets secondaires des corticoïdes peuvent être : prise de poids, perte sommeil, ostéoporose, diabète cortico-induit, irritabilité, dépression, insuffisance surrénaliennes, etc. Effets secondaires immunosuppresseurs : infections, nausées, diarrhées, fatigue, etc.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Les attentes majeures des patients concernent une meilleure gestion de l’asthme, la limitation voire l’arrêt des corticoïdes pour améliorer la qualité de vie.",
+      "extrait_textuel": "Mieux gérer l’asthme et limiter son impact au quotidien. Diminuer, voire arrêter les corticoïdes.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "besoins_non_couverts",
+          "f": "F1",
+          "p": 1,
+          "s": "Mieux gérer",
+          "t": "Mieux gérer l’asthme et limiter son impact au quotidien. Diminuer, voire arrêter les corticoïdes.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_5",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Évaluation_médicament",
+      "direction_argument": "Favorable",
+      "description": "Nucala apporte un bénéfice notable par son effet épargne cortisonique réduisant les effets secondaires, améliore l’autonomie quotidienne et soulage l’entourage.",
+      "extrait_textuel": "Épargne cortisonique, diminution des effets secondaires dépourvus aux corticoïdes, autonomie retrouvée, entourage soulagé et rassuré.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "avantages_constates",
+          "f": "F1",
+          "p": 2,
+          "s": "- Épargne",
+          "t": "Épargne cortisonique et donc diminution importante des effets secondaires liés aux corticoïdes. L’entourage est soulagé et rassuré par rapport à l’irritabilité / les troubles du comportement du proche malade. Retrouver une autonomie dans la vie de tous les jours, aussi bien sociale que professionnelle.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_6",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Évaluation_médicament",
+      "direction_argument": "Favorable",
+      "description": "Le mode d’administration du médicament est bien accepté par les patients malgré la nécessité d’une surveillance post-injection.",
+      "extrait_textuel": "Les patients ne se sentent pas pénalisés par le mode d’administration... la nécessité de surveillance après injection est bien acceptée.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "avantages_constates",
+          "f": "F1",
+          "p": 2,
+          "s": "Les patients",
+          "t": "Les patients ne se sentent pas pénalisés par le mode d’administration du médicament. Le seul point qui est parfois discuté est la nécessité de surveillance après injection mais relativement bien accepté par les patients.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_7",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Les patients expriment un ressenti très positif, qualifiant le médicament de \"miraculeux\" et valorisant le regain d’autonomie et la diminution des corticoïdes.",
+      "extrait_textuel": "« miraculeux ! », « change la vie », « autonomie retrouvée », « arrêt des corticoïdes ».",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "attentes_principales",
+          "f": "F1",
+          "p": 2,
+          "s": "Quelques mo",
+          "t": "Quelques mots exprimés par les patients consultés : « miraculeux ! », « change la vie », « moins lourd à organiser », « autonomie retrouvée », « arrêt des corticoïdes »",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_8",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Synthèse",
+      "direction_argument": "Favorable",
+      "description": "Le médicament permet une meilleure autonomie, un meilleur contrôle de l’asthme, un allègement des corticoïdes et un impact positif important sur le moral des patients et de leur entourage.",
+      "extrait_textuel": "Épargne cortisonique, meilleur contrôle de l’asthme, entourage serein, impact moral positif améliorant le suivi de la prise en charge.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "synthese_contribution",
+          "f": "F1",
+          "p": 2,
+          "s": "- L’épargne",
+          "t": "L’épargne cortisonique et donc des effets secondaires liés aux corticoïdes est le point le plus important. Meilleur contrôle de l’asthme pour retrouver autonomie et meilleure qualité de vie. Entourage plus serein. Impact positif important sur le moral des patients et donc un meilleur suivi de leur prise en charge personnelle.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19629_ctx",
+    "evaluation_id": "CT-19629",
+    "ISP": "NUCALA (mépolizumab) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-11-12",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": true,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Durée totale cumulée de rémission et proportion de patients en rémission",
+    "valeur_critère": "OR=5,91 et OR=16,74 respectivement",
+    "impact_décision": "Passage SMR important, ASMR IV attribué",
+    "estimation_mesure_impact": "Impact significatif sur morbidité",
+    "evidence": [
+      {
+        "field": "SMR_apres_audition_enum",
+        "f": "F1",
+        "p": 29,
+        "s": "Conclusion",
+        "t": "la Commission de la transparence considère que NUCALA (mépolizumab) apporte une amélioration du service médical rendu mineure (ASMR IV) dans la stratégie de prise en charge",
+        "m": "rule",
+        "c": 0.99
+      },
+      {
+        "field": "SMR_apres_audition_enum",
+        "f": "F1",
+        "p": 29,
+        "s": "Conclusion",
+        "t": "la Commission considère que le service médical rendu par NUCALA (mépolizumab) est important chez les patients âgés de 6 ans et plus",
+        "m": "rule",
+        "c": 0.99
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19629",
+    "texte_brut": "Avis version définitive - NUCALA 100 mg mépolizumab - Extension indication GEPA...",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19629_smrasmr_01",
+      "evaluation_id": "CT-19629",
+      "indication_precise": "Traitement additionnel des formes récidivantes ou réfractaires de la granulomatose éosinophilique avec polyangéite chez les patients âgés de 6 ans et plus",
+      "smr": "La Commission considère que le service médical rendu par NUCALA (mépolizumab) est important chez les patients âgés de 6 ans et plus, en traitement additionnel des formes récidivantes ou réfractaires de la granulomatose éosinophilique avec polyangéite.",
+      "smr_enum": "Important",
+      "asmr": "la Commission de la transparence considère que NUCALA (mépolizumab) apporte une amélioration du service médical rendu mineure (ASMR IV) dans la stratégie de prise en charge des formes récidivantes ou réfractaires de la granulomatose éosinophilique avec polyangéite.",
+      "asmr_enum": "IV",
+      "smr_revendique": "Service médical rendu important",
+      "asmr_revendique": "ASMR IV",
+      "justification_decisionnelle": "Basée sur la supériorité de NUCALA sur placebo pour deux co-critères de jugement principaux cliniquement pertinents et un profil de tolérance acceptable.",
+      "population_cible_indication": "Patients âgés de 6 ans et plus ayant des formes récidivantes ou réfractaires de granulomatose éosinophilique avec polyangéite.",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": "Aucun comparateur médicamenteux cliniquement pertinent identifié",
+      "comparateur_id_HAS": "CT-19629_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Réfractaire",
+        "population_age": "≥ 6 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 29,
+          "s": "Conclusion",
+          "t": "La Commission considère que le service médical rendu par NUCALA (mépolizumab) est important",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 29,
+          "s": "Conclusion",
+          "t": "apporte une amélioration du service médical rendu mineure (ASMR IV) dans la stratégie de prise en charge",
+          "m": "rule",
+          "c": 0.98
+        }
+      ],
+      "asmr_revendique_enum": "IV"
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19629_poso_01",
+      "evaluation_id": "CT-19629",
+      "smr_asmr_id": "CT-19629_smrasmr_01",
+      "indication": "Traitement additionnel des formes récidivantes ou réfractaires de la granulomatose éosinophilique avec polyangéite chez les patients âgés de 6 ans et plus",
+      "population_cible": "Adultes et enfants âgés de 6 ans et plus",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Chez adultes et adolescents ≥ 12 ans: 300 mg SC toutes les 4 semaines. Enfants 6-11 ans: ≥ 40 kg 200 mg SC, < 40 kg 100 mg SC toutes les 4 semaines.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": 28,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 300,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 28
+          },
+          "voie_administration": "Sous-cutanée",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "La nécessité de poursuivre le traitement doit être réévaluée au minimum une fois par an. Pas d'étude chez enfants <6 ans.",
+      "commentaires": "Réévaluation annuelle recommandée. Le mépolizumab n'a pas été étudié chez les enfants < 6 ans.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "Granulom",
+          "t": "La dose recommandée de mépolizumab est de 300 mg, administrés par voie sous-cutanée une fois toutes les 4 semaines chez adultes et adolescents ≥ 12 ans. Enfants 6-11 ans pesant ≥ 40 kg reçoivent 200 mg, < 40 kg reçoivent 100 mg, tous administrés toutes les 4 semaines.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19629_event_AMM_01",
+      "evaluation_id": "CT-19629",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-11-12",
+      "detail_brut": "AMM obtenue pour l'extension d'indication dans GEPA, polypose naso-sinusienne et syndrome hyperéosinophilique",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "AMM aux ",
+          "t": "NUCALA (mépolizumab) a obtenu l'AMM le 12 novembre 2021 dans cette extension d’indication.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19629_event_CT_01",
+      "evaluation_id": "CT-19629",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-04-20",
+      "detail_brut": "Avis adopte par la Commission de la Transparence le 20 avril 2022",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis vers",
+          "t": "AVIS 20 AVRIL 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19629",
+    "delai_amm_ct_jours": 494,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19629",
+    "is_orphan": true,
+    "classe_ATC_l2": "Bronchodilatateurs",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 1,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": 3.0,
+    "critere_principal_description": "Durée totale cumulée de rémission (BVAS=0 et dose CSO ≤ 4 mg/jour)",
+    "p_value_log10": 3.05,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19629",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19629_essai_MIRRA",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19629_essai_MIRRA_crit_duree_cumulee_remission_CS04",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19629_essai_MIRRA_crit_proportion_remission_sem36_48_CS04",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19629_essai_MIRRA_crit_delai_premiere_rechute",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19629_essai_MIRRA_crit_dose_cso_sem48_52",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19629_essai_MIRRA_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-19629_essai_MIRRA_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19629",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19629_compHAS_01",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19629",
+      "tgt_type": "SMR_ASMR_Par_Indication",
+      "tgt_id": "CT-19629_smrasmr_01",
+      "label": "EVAL_HAS_SMRSAMR"
+    },
+    {
+      "src_type": "SMR_ASMR_Par_Indication",
+      "src_id": "CT-19629_smrasmr_01",
+      "tgt_type": "Posologie_Par_Indication",
+      "tgt_id": "CT-19629_poso_01",
+      "label": "SMRSAMR_POSO"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19629",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19629_essai_MIRRA",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19629_essai_MIRRA_crit_cocritere_remission",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19629_essai_MIRRA_crit_prop_remission_S36_S48",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19629_essai_MIRRA",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-19629_essai_MIRRA_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19629",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19629_arg_TRANS_001",
+      "label": "EVAL_HAS_VOTE"
+    }
+  ],
+  "Annotation_View": []
+}

@@ -1,0 +1,1430 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19562",
+  "evaluation_id": "CT-19562",
+  "extraction_date": "2022-04-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-04-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19562.pdf",
+        "type": "CT",
+        "page_count": 35
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19562_seg1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis version définitive, synthèse",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 10500,
+      "heading_text": "Synthèse et contexte",
+      "expected_fields": [
+        "Efficacité",
+        "Place dans la stratégie",
+        "Recommandations"
+      ],
+      "routing_hint": "",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19562_seg2",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Essais cliniques, méthodes, résultats",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 20,
+      "char_start": 10501,
+      "char_end": 32000,
+      "heading_text": "Présentation étude clinique A3921104",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Populations_Essai",
+        "Resultats_Efficacite"
+      ],
+      "routing_hint": "",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19562_seg3",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance, effets indésirables, événements graves",
+      "template_detecte": "CT_modern",
+      "page_start": 21,
+      "page_end": 28,
+      "char_start": 32001,
+      "char_end": 43000,
+      "heading_text": "Données tolérance et plan de gestion des risques",
+      "expected_fields": [
+        "Tolérance"
+      ],
+      "routing_hint": "",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19562_seg4",
+      "section_label_normalise": "SMR_ASMR_PAR_INDICATION",
+      "section_label_brut": "Conclusions de la Commission, SMR, ASMR, place dans la stratégie",
+      "template_detecte": "CT_modern",
+      "page_start": 29,
+      "page_end": 35,
+      "char_start": 43001,
+      "char_end": 51000,
+      "heading_text": "Conclusions et recommandations",
+      "expected_fields": [
+        "SMR_ASMR",
+        "Arguments_Decisionnels",
+        "Population_Cible"
+      ],
+      "routing_hint": "",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "dc": "tofacitinib",
+      "produit_nom": "XELJANZ",
+      "forme_pharmaceutique": "Comprimé pelliculé / solution buvable",
+      "dosage": [
+        "5 mg",
+        "1 mg/ml"
+      ],
+      "titulaire_amm": "PFIZER",
+      "exclusion_statut": false,
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19562",
+      "Num_avis": "CT-19562",
+      "produit_nom": "XELJANZ",
+      "dci": "tofacitinib",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Comprimés, solution buvable",
+      "dosage": "5 mg comprimé, 1 mg/ml solution buvable",
+      "indication": "Traitement de l’arthrite juvénile idiopathique polyarticulaire active (polyarthrite à facteur rhumatoïde positif ou négatif et oligoarthrite étendue) et du rhumatisme psoriasique juvénile chez les patients âgés de 2 ans et plus ayant présenté une réponse inadéquate à un traitement par DMARD antérieur.",
+      "classe_ATC": "L04AA29",
+      "pathologie": "Arthrite juvénile idiopathique (AJI), rhumatisme psoriasique juvénile",
+      "maladie_rare": false,
+      "ligne_traitement": "Troisième ligne et plus",
+      "ligne_traitement_enum": "3L",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Rhumatologie",
+      "aire_therapeutique_niveau_3": "Arthrite juvénile idiopathique et rhumatisme psoriasique juvénile",
+      "source_aire_therapeutique": "Texte avis page 3",
+      "design_etude": "Étude de phase III, double aveugle, randomisée, contrôlée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "niveau_preuve_brut": "Étude phase III randomisée en double aveugle ; étude phase II/III en ouvert pour tolérance",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Besoin médical partiellement couvert en raison des échecs, intolérances aux médicaments disponibles et des phénomènes d’échappement.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "gravite_patho": "L’arthrite juvénile idiopathique est une maladie chronique grave et invalidante.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Enfants et adolescents âgés de 2 à 17 ans",
+      "biomarqueur_requis": "Aucun",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "2 à 17 ans",
+      "date_evaluation": "2022-04-20",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Tofacitinib évalué chez l’adulte dans la polyarthrite rhumatoïde et le rhumatisme psoriasique avec un profil d’efficacité et tolérance déjà connu.",
+      "historique_ASMR_comparateurs": "Absence de données comparatives directes avec les biothérapies anti-TNF, ASMR V attribué.",
+      "concurrence_therapeutique_recente": "Disponibilité de plusieurs biothérapies anti-TNF et autres traitements de fond classiques et biologiques.",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "extraits_arguments": [
+        "Supériorité d’une poursuite du traitement par tofacitinib vs arrêt placebo sur les poussées et réponses ACR30, 50, 70 à S44.",
+        "Tolérance similaire à celle observée chez l’adulte, infections fréquentes, absence de signal majeur cardiovasculaire ou néoplasique chez enfants traités.",
+        "Place de XELJANZ principalement en 3ème ligne après échec au moins d’une biothérapie, notamment anti-TNF.",
+        "Besoin médical partiellement couvert ; absence de progrès thérapeutique par rapport aux anti-TNF.",
+        "Population cible estimée entre 94 et 470 enfants et adolescents."
+      ],
+      "evidence": [
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 3,
+          "s": "Place de",
+          "t": "la Commission considère que la place de XELJANZ (tofacitinib) se situe principalement après échec d’au moins une biothérapie, notamment anti-TNF (soit en 3ème ligne et plus).",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 3,
+          "s": "Le besoin médical",
+          "t": "Le besoin médical partiellement couvert identifié en raison des phénomènes d’échappement thérapeutique et/ou de tolérance associés à ces médicaments.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "la Commission",
+          "t": "le service médical rendu par XELJANZ (tofacitinib) est important dans la nouvelle indication de l’AMM.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "en l’absence",
+          "t": "En l’absence de données comparatives directes versus les autres médicaments biologiques disponibles, la Commission de la transparence considère que XELJANZ (tofacitinib) n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie de prise en charge.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "tofacitinib",
+          "t": "tofacitinib XELJANZ 5 mg, comprimé et 1 mg/ml solution buvable",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19562_essai_A3921104",
+      "evaluation_id": "CT-19562",
+      "essai_nom": "A3921104",
+      "nct_number": "NCT02592434",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Catégorie AJI",
+        "CRP"
+      ],
+      "population_analyse_principale": "mITT",
+      "date_cutoff_donnees": "2019-05-16",
+      "duree_suivi_prevu_mois": 11,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Enfants et adolescents de 2 à 17 ans atteints d’arthrite juvénile idiopathique polyarticulaire (FR+ ou FR-), oligoarthrite étendue et AJI systémique refroidie",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 88,
+      "nb_patient_comparateur": 85,
+      "resultat_global": "Réduction significative des poussées de la maladie à 44 semaines",
+      "qol_instruments": [
+        "CHAQ-DI"
+      ],
+      "qol_resultats_brut": "Amélioration significative du score CHAQ-DI à S44",
+      "qol_difference_cliniquement_pertinente": true,
+      "qol_favorable": true,
+      "niveau_preuve": "Phase III randomisée en double aveugle",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 11,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "age_min_num": 2,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": "3L",
+      "evidence": [
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 8,
+          "s": "Début du",
+          "t": "Étude de phase III, multicentrique, internationale, de supériorité, randomisée, en double aveugle comparative versus placebo.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 8,
+          "s": "Principaux",
+          "t": "Patient âgé de 2 ans à 17 ans inclus avec arthrite juvénile idiopathique polyarticulaire active, oligoarthrite étendue.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 10,
+          "s": "Randomisation",
+          "t": "Les patients ont été randomisés (ratio d’allocation 1 : 1) pour recevoir le tofacitinib ou le placebo.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 18,
+          "s": "Patients traités",
+          "t": "88 patients dans le groupe tofacitinib",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "qol_resultats_brut",
+          "f": "F1",
+          "p": 21,
+          "s": "La qualité",
+          "t": "Les résultats démontrent la supériorité du groupe tofacitinib par rapport au groupe placebo en termes de qualité de vie évaluée par le questionnaire CHAQ-DI.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19562_essai_A3921145",
+      "evaluation_id": "CT-19562",
+      "essai_nom": "A3921145",
+      "nct_number": "NCT01500551",
+      "design": "Phase_II_III",
+      "phase": "II_III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "2019-06-04",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Patients âgés de 2 à 17 ans atteints d’arthrite juvénile idiopathique et ayant participé aux études précédentes avec tofacitinib",
+      "comparateur_utilise": "Non applicable",
+      "comparateur_type_enum": "Non renseigné",
+      "nb_patient_traitement": 223,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Tolérance à long terme décrite",
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "niveau_preuve": "Étude en ouvert de tolérance long terme",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": true,
+      "age_min_num": 2,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": "3L",
+      "evidence": [
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 23,
+          "s": "Il s’agit",
+          "t": "Étude de phase II/III, multicentrique, non comparative, en ouvert dont l’objectif était de décrire la tolérance à long terme du tofacitinib.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 23,
+          "s": "Un total",
+          "t": "Un total de 227 patients a été inclus dans l’étude, 223 traités par tofacitinib.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19562_essai_A3921104_crit_Principal_poussée",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921104",
+      "critere_nom": "Pourcentage de patients ayant eu au moins une poussée de la maladie à S44",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Primaire",
+      "p_value": "0,0031",
+      "p_value_num": 0.0031,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 17,
+          "s": "Critère de jugement principal",
+          "t": "Pourcentage de patients ayant eu au moins une poussée de la maladie à la semaine 44",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Le pourcentage",
+          "t": "p = 0,0031 statistiquement significative au risque d’erreur alpha de 5 %",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19562_essai_A3921104_crit_ACR50",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921104",
+      "critere_nom": "Pourcentage de patients ayant une réponse AJI ACR50 à S44",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "p_value": "0,0166",
+      "p_value_num": 0.0166,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 21,
+          "s": "Pourcentage de patients",
+          "t": "Pourcentage de patients ayant une réponse AJI ACR50 à S44",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 21,
+          "s": "Différence versus placebo, p = 0,0166",
+          "t": "p = 0,0166",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19562_essai_A3921104_crit_ACR30",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921104",
+      "critere_nom": "Pourcentage de patients ayant une réponse AJI ACR30 à S44",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "p_value": "0,0031",
+      "p_value_num": 0.0031,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 21,
+          "s": "Pourcentage de patients",
+          "t": "Pourcentage de patients ayant une réponse AJI ACR30 à S44",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 21,
+          "s": "Différence versus placebo, p = 0,0031",
+          "t": "p = 0,0031",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19562_essai_A3921104_crit_ACR70",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921104",
+      "critere_nom": "Pourcentage de patients ayant une réponse AJI ACR70 à S44",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "p_value": "0,0387",
+      "p_value_num": 0.0387,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 21,
+          "s": "Pourcentage de patients",
+          "t": "Pourcentage de patients ayant une réponse AJI ACR70 à S44",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 21,
+          "s": "Différence versus placebo, p = 0,0387",
+          "t": "p = 0,0387",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19562_essai_A3921104_crit_CHAQ-DI",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921104",
+      "critere_nom": "Evolution du score CHAQ-DI à S44",
+      "type_critere_enum": "QoL",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "p_value": "0,0292",
+      "p_value_num": 0.0292,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 21,
+          "s": "Evolution du critère CHAQ-DI",
+          "t": "Evolution du critère CHAQ-DI à S44 par rapport à l’inclusion",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 21,
+          "s": "Différence versus placebo, p = 0,0292",
+          "t": "p = 0,0292",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19562_essai_A3921104_tol",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921104",
+      "ae_total_pct": 77.3,
+      "ae_total_pct_comparateur": 74.1,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 18.4,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Infections des voies respiratoires supérieures",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 14.8,
+          "incidence_pct_comparateur": 10.6,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "Les EI les",
+              "t": "Les EI les plus fréquemment rapportés étaient les infections des voies respiratoires supérieures (tofacitinib : 14,8 %vs placebo : 10,6 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Arthrite juvénile idiopathique",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 3.4,
+          "incidence_pct_comparateur": 14.1,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "Les EI les",
+              "t": "Les EI les plus fréquemment rapportés étaient ... les AJI (3,4 % vs 14,1 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Progression de la maladie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 9.1,
+          "incidence_pct_comparateur": 15.3,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "Les EI les",
+              "t": "Les EI les plus fréquemment rapportés étaient ... progression de la maladie (9,1 % vs 15,3 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_graves": "Aucun décès ni événement indésirable sévère n’a été rapporté significativement.",
+      "EI_frequents": "Les infections des voies respiratoires supérieures sont les plus fréquentes (14,8 % vs 10,6 %).",
+      "deces": "Aucun décès n’a eu lieu au cours de l’étude.",
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "2022-02-01",
+          "description": "Réévaluation des inhibiteurs JAK dans les maladies inflammatoires chroniques, incluant AJI, concernant le risque cardiovasculaire et cancéreux.",
+          "mesures_prises": "Surveillance accrue et étude continue.",
+          "impact_evaluation": "Résultats attendus pour juin 2022.",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 26,
+              "s": "A la suite des résultats finaux de L’étude ORAL surveillance, le PRAC a décidé",
+              "t": "Réévaluation du risque cardiovasculaire et cancéreux des inhibiteurs JAK incluant l’AJI.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 23,
+          "s": "La population",
+          "t": "Au total, 77,3 % (n = 68) des patients du groupe tofacitinib ont eu au moins un événement indésirable.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "discontinuations_ae_pct",
+          "f": "F1",
+          "p": 23,
+          "s": "45 patients ont arrêté le traitement suite à un événement indésirable (16 dans le groupe tofacitinib).",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "deaths_ae_n",
+          "f": "F1",
+          "p": 26,
+          "s": "Aucun décès n’a eu lieu au cours de l’étude.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-19562_essai_A3921145_tol",
+      "evaluation_id": "CT-19562",
+      "essai_id": "CT-19562_essai_A3921145",
+      "ae_total_pct": 71.7,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Infections sévères",
+          "grade": "3-4",
+          "incidence_pct_traitement": 2.7,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 6,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 24,
+              "s": "Concernant les EI d’intérêt, il y a eu 6 patients avec une infection sévère",
+              "t": "6 patients avec infection sévère dont pneumonie, appendicite, pyélonéphrite, etc.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Zona",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.3,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 3,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 24,
+              "s": "3 patients avec zona",
+              "t": "3 patients avec zona modéré et sévère",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Augmentation modérée enzymes hépatiques",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 2,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 24,
+              "s": "2 patients avec augmentation modérée des enzymes hépatiques",
+              "t": "2 patients avec augmentation modérée des enzymes hépatiques",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Uvéite",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 24,
+              "s": "1 patient avec uvéite",
+              "t": "1 patient avec uvéite",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [],
+      "EI_graves": "Sur 223 patients, 160 ont rapporté au moins un EI dont 15 sévères et 9 graves, infections et troubles musculosquelettiques fréquents.",
+      "EI_frequents": "Infections des voies aériennes supérieures, rhinopharyngites, infections virales fréquentes.",
+      "deces": "Aucun décès rapporté.",
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "2022-02-01",
+          "description": "Suivi additionnel pharmacovigilance, réévaluation des risques thromboemboliques et mortalité.",
+          "mesures_prises": "Etudes et registres prospectifs de tolérance en cours.",
+          "impact_evaluation": "Résultats attendus en 2022-06.",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 25,
+              "s": "XELJANZ (tofacitinib) fait l’objet d’un suivi additionnel de pharmacovigilance",
+              "t": "Suivi et études complémentaires sont en place pour risque thromboembolique et mortalité.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 24,
+          "s": "L’étude a inclus",
+          "t": "Sur les 223 patients, 71,7 % ont rapporté au moins un événement indésirable.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19562_essai_A3921104_comp_01",
+      "essai_id": "CT-19562_essai_A3921104",
+      "nom_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "comparateur_type_enum",
+          "f": "F1",
+          "p": 10,
+          "s": "Randomisation",
+          "t": "Les patients ont été randomisés (ratio d’allocation 1 : 1) pour recevoir le tofacitinib ou le placebo.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19562_compHAS_01",
+      "evaluation_id": "CT-19562",
+      "nom_comparateur_HAS": "ENBREL (étanercept) et biosimilaires BENEPALI, ERELZI",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Immunothérapie",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "Les biothérapies",
+          "t": "Les biothérapies disposant d’une AMM dans l’AJIp après échec de csDMARDs sont ENBREL (étanercept) et biosimilaires BENEPALI et ERELZI.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19562_compHAS_02",
+      "evaluation_id": "CT-19562",
+      "nom_comparateur_HAS": "HUMIRA (adalimumab) et biosimilaires IMRALDI, AMGEVITA, HYRIMOZ",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Immunothérapie",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "Les biothérapies",
+          "t": "Parmi les biothérapies, on trouve HUMIRA (adalimumab) et biosimilaires IMRALDI, AMGEVITA et HYRIMOZ.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19562_compHAS_03",
+      "evaluation_id": "CT-19562",
+      "nom_comparateur_HAS": "ROACTEMRA (tocilizumab) forme SC et IV",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Immunothérapie",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "Un anti-IL 6 : ROACTEMRA (tocilizumab), forme SC et IV.",
+          "t": "ROACTEMRA (tocilizumab) est un anti-IL 6 disponible en forme SC et IV.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19562_compHAS_04",
+      "evaluation_id": "CT-19562",
+      "nom_comparateur_HAS": "ORENCIA (abatacept) forme IV et SC",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Immunothérapie",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "un inhibiteur de la co-stimulation des lymphocytes T, ORENCIA (abatacept) forme IV et SC",
+          "t": "ORENCIA (abatacept) est un inhibiteur de co-stimulation des lymphocytes T, disponible en IV et SC.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19562_arg_CT_1",
+      "evaluation_id": "CT-19562",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "L'étude A3921104 a démontré une réduction statistiquement significative et cliniquement pertinente des poussées de la maladie à la semaine 44 chez les patients traités par tofacitinib par rapport au placebo.",
+      "extrait_textuel": "Le pourcentage de patients ayant eu au moins une poussée de la maladie à la semaine 44 a été de 29,2 % dans le groupe tofacitinib et de 52,9 % dans le groupe placebo, soit une différence de 23,7 % en faveur du tofacitinib (p = 0,0031).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 18",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 18,
+          "s": "Le pourcentage",
+          "t": "Le pourcentage de patients ayant eu au moins une poussée à la semaine 44 a été de 29,2 % dans le groupe tofacitinib et de 52,9 % dans le groupe placebo (p = 0,0031).",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19562_arg_CT_2",
+      "evaluation_id": "CT-19562",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Les réponses AJI ACR30, ACR50 et ACR70 à la semaine 44 sont significativement supérieures chez les patients traités par tofacitinib comparé au placebo.",
+      "extrait_textuel": "Le pourcentage de patients ayant une réponse AJI ACR50 à S44 était de 66,7 % dans le groupe tofacitinib contre 47,1 % pour le placebo (p = 0,0166), AJI ACR30 : 70,8 % vs 47,1 % (p = 0,0031), AJI ACR70 : 54,2 % vs 37,1 % (p = 0,0387).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 21",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 21,
+          "s": "Le pourcentage",
+          "t": "Les réponses AJI ACR30, ACR50 et ACR70 à la semaine 44 étaient significativement supérieures avec tofacitinib.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19562_arg_CT_3",
+      "evaluation_id": "CT-19562",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance de tofacitinib chez l’enfant est similaire à celui de l’adulte, marqué principalement par des infections des voies respiratoires supérieures et aucun décès rapporté dans les études évaluées.",
+      "extrait_textuel": "Les événements indésirables les plus fréquents étaient les infections des voies respiratoires supérieures (14,8 % sous tofacitinib vs 10,6 % placebo). Aucun décès n’a eu lieu au cours de ces études.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 23",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 23,
+          "s": "Les événements indésirables",
+          "t": "Les événements indésirables les plus fréquents étaient les infections des voies respiratoires supérieures (14,8 % versus 10,6 %).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19562_arg_CT_4",
+      "evaluation_id": "CT-19562",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "XELJANZ est placé principalement en troisième ligne après échec au moins d’une biothérapie, notamment anti-TNF, en raison de l’absence de données comparatives directes versus ces biothérapies.",
+      "extrait_textuel": "La Commission considère que la place de XELJANZ (tofacitinib) se situe principalement après échec d’au moins une biothérapie, notamment anti-TNF (soit en 3ème ligne et plus).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commission considère",
+          "t": "La Commission considère que la place de XELJANZ (tofacitinib) se situe principalement après échec d’au moins une biothérapie, notamment anti-TNF.",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19562_arg_CT_5",
+      "evaluation_id": "CT-19562",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le besoin médical dans l’arthrite juvénile idiopathique est partiellement couvert en raison des échecs, intolérances et phénomènes d’échappement thérapeutique liés aux traitements disponibles.",
+      "extrait_textuel": "Compte tenu des phénomènes d’échappement thérapeutique et/ou de tolérance associés aux médicaments existants, le besoin médical est partiellement couvert.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 3",
+      "section_source": "Synthèse",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Le besoin médical",
+          "t": "Le besoin médical partiellement couvert identifié en raison des phénomènes d’échappement thérapeutique et/ou de tolérance.",
+          "m": "rule",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19562_arg_CT_6",
+      "evaluation_id": "CT-19562",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "La population cible est estimée entre 94 et 470 patients âgés de 2 à 17 ans atteints d’arthrite juvénile idiopathique polyarticulaire, oligoarticulaire étendue ou associée au psoriasis en échec de traitements conventionnels et biologiques.",
+      "extrait_textuel": "La population cible de XELJANZ est estimée entre 94 et 470 patients.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 33-34",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 33,
+          "s": "La population cible",
+          "t": "La population cible de XELJANZ (tofacitinib) est estimée entre 94 et 470 patients.",
+          "m": "rule",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19562_ctx",
+    "evaluation_id": "CT-19562",
+    "ISP": "XELJANZ (tofacitinib) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2017-03-22",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Royaume-Uni",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Pays-Bas",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Belgique",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Espagne",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Italie",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 7,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Nouvelles données cliniques",
+    "valeur_critère": "Différence 23,7 % (p=0,0031) patients avec poussée à S44",
+    "impact_décision": "Maintien SMR Important et ASMR V",
+    "estimation_mesure_impact": "Réduction de près de 24 % des poussées de la maladie",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19562",
+    "texte_brut": "Avis complet HAS CT-19562 sur XELJANZ (tofacitinib)...",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19562_smrasmr_01",
+      "evaluation_id": "CT-19562",
+      "indication_precise": "Traitement de l’arthrite juvénile idiopathique polyarticulaire active (polyarthrite à facteur rhumatoïde positif ou négatif et oligoarthrite étendue) et du rhumatisme psoriasique juvénile chez les patients âgés de 2 ans et plus ayant présenté une réponse inadéquate à un traitement par DMARD antérieur.",
+      "smr": "Le service médical rendu par XELJANZ (tofacitinib) est important dans cette indication.",
+      "smr_enum": "Important",
+      "asmr": "En l’absence de données comparatives directes versus les autres médicaments biologiques disponibles, XELJANZ (tofacitinib) n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Supériorité statistiquement significative sur la réduction des poussées, mais absence de donnée comparative versus biothérapies ; tolérance similaire à l’adulte.",
+      "population_cible_indication": "Patients âgés de 2 ans et plus avec AJI polyarticulaire, oligoarthrite étendue et rhumatisme psoriasique juvénile",
+      "ligne_traitement_indication": "3L",
+      "comparateurs_references_indication": [
+        "ENBREL (étanercept)",
+        "HUMIRA (adalimumab)",
+        "ROACTEMRA (tocilizumab)",
+        "ORENCIA (abatacept)"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19562_compHAS_01",
+        "CT-19562_compHAS_02",
+        "CT-19562_compHAS_03",
+        "CT-19562_compHAS_04"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "3L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "2-17 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "la Commission",
+          "t": "le service médical rendu par XELJANZ (tofacitinib) est important dans la nouvelle indication.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "en l’absence",
+          "t": "XELJANZ (tofacitinib) n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19562_poso_01",
+      "evaluation_id": "CT-19562",
+      "smr_asmr_id": "CT-19562_smrasmr_01",
+      "indication": "Traitement de l’arthrite juvénile idiopathique polyarticulaire active et rhumatisme psoriasique juvénile chez patients âgés de 2 ans et plus",
+      "population_cible": "Patients âgés de 2 ans et plus",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose variable en fonction du poids corporel, solution buvable ou comprimé pelliculé de 5 mg deux fois par jour.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "Variable selon poids",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              1,
+              1
+            ],
+            "interval_days": 12
+          },
+          "voie_administration": "Orale",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Adaptation selon tolérance et évolution clinique.",
+      "commentaires": "Les patients pesant ≥ 40 kg peuvent échanger la solution buvable contre le comprimé.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "Tofacitinib peut",
+          "t": "La dose recommandée chez les patients âgés de 2 ans et plus est basée sur les catégories de poids",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19562_event_01",
+      "evaluation_id": "CT-19562",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2017-03-22",
+      "detail_brut": "Date initiale AMM procédure centralisée",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 34,
+          "s": "Date initiale",
+          "t": "Date initiale (procédure centralisée) : 22/03/2017",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19562_event_02",
+      "evaluation_id": "CT-19562",
+      "event_type": "EXTENSION_INDICATION_ADOPTE",
+      "event_date": "2021-09-30",
+      "detail_brut": "Extension d’indication AJIp",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 34,
+          "s": "Date extension",
+          "t": "Date extension d’indication (AJIp) : 30/09/2021",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19562_event_03",
+      "evaluation_id": "CT-19562",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-04-20",
+      "detail_brut": "Avis adopté par la Commission de la Transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 35,
+          "s": "Date d’adoption",
+          "t": "Date d’adoption : 20/04/2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19562",
+    "delai_amm_ct_jours": 1866,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19562",
+    "is_orphan": false,
+    "classe_ATC_l2": "L04AA",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 3,
+    "is_rct": true,
+    "n_essais": 2,
+    "n_rct": 1,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 0.237,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 11,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": 18.4,
+    "critere_principal_description": "Pourcentage de patients ayant eu au moins une poussée de la maladie à S44",
+    "p_value_log10": 2.5086373958,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19562",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19562_essai_A3921104",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19562",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19562_essai_A3921145",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19562_essai_A3921104",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19562_essai_A3921104_crit_Principal_poussée",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19562_essai_A3921104",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19562_essai_A3921104_crit_ACR50",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19562_essai_A3921104",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19562_essai_A3921104_crit_ACR30",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19562_essai_A3921104",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19562_essai_A3921104_crit_ACR70",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19562_essai_A3921104",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19562_essai_A3921104_crit_CHAQ-DI",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19562_essai_A3921104",
+      "tgt_type": "Comparateurs_ESSAI",
+      "tgt_id": "CT-19562_essai_A3921104_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19562",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19562_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19562",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19562_compHAS_02",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19562",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19562_compHAS_03",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19562",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19562_compHAS_04",
+      "label": "EVAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": []
+}

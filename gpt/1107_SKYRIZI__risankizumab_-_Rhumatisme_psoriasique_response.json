@@ -1,0 +1,1748 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19570",
+  "evaluation_id": "CT-19570",
+  "extraction_date": "2022-03-23",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-03-23",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19570.pdf",
+        "type": "CT",
+        "page_count": 33
+      },
+      "F2": {
+        "file_name": "TRANSCRIPTION_PARTIES_1_à_5.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 9
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19570_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis version définitive",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 26000,
+      "heading_text": "Avis version définitive introduction",
+      "expected_fields": [],
+      "routing_hint": "Essais_Cliniques, Arguments_Decisionnels, SMR_ASMR_Par_Indication",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19570_seg_02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications thérapeutiques",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 7,
+      "char_start": 26001,
+      "char_end": 46000,
+      "heading_text": "Indications et posologie",
+      "expected_fields": [
+        "posologie"
+      ],
+      "routing_hint": "Posologie_Par_Indication",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19570_seg_03",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 9,
+      "char_start": 46001,
+      "char_end": 65000,
+      "heading_text": "Besoin médical adapté au rhumatisme psoriasique",
+      "expected_fields": [],
+      "routing_hint": "Arguments_Decisionnels",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19570_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 12,
+      "char_start": 65001,
+      "char_end": 100000,
+      "heading_text": "Liste des comparateurs pertinents",
+      "expected_fields": [],
+      "routing_hint": "Comparateurs_HAS, Comparateurs_Essai",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19570_seg_05",
+      "section_label_normalise": "ESSAIS",
+      "section_label_brut": "Essais cliniques KEEPsAKE-1 et KEEPsAKE-2",
+      "template_detecte": "CT_modern",
+      "page_start": 12,
+      "page_end": 22,
+      "char_start": 100001,
+      "char_end": 180000,
+      "heading_text": "Détails études cliniques KEEPsAKE",
+      "expected_fields": [
+        "critères_jugement",
+        "populations_essai",
+        "résultats_efficacité"
+      ],
+      "routing_hint": "Essais_Cliniques, Critères_Jugement",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19570_seg_06",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance des études cliniques et données complémentaires",
+      "template_detecte": "CT_modern",
+      "page_start": 22,
+      "page_end": 27,
+      "char_start": 180001,
+      "char_end": 220000,
+      "heading_text": "Tolérance et sécurité",
+      "expected_fields": [
+        "Tolérance"
+      ],
+      "routing_hint": "Tolérance",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19570_seg_07",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 29,
+      "page_end": 33,
+      "char_start": 220001,
+      "char_end": 260000,
+      "heading_text": "SMR, ASMR, Population cible et conclusion",
+      "expected_fields": [],
+      "routing_hint": "SMR_ASMR_Par_Indication, Arguments_Decisionnels",
+      "label_confidence": 0.99
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "SKYRIZI",
+      "dci": "risankizumab",
+      "titulaire_amm": "Abbvie",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "75 mg",
+          "code_cip13": "34009 301 748 8 3"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 302 281 5 9"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 302 281 4 2"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "SKYRIZI",
+          "t": "risankizumab SKYRIZI 75 mg et 150 mg, solution injectable en seringue préremplie",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 33,
+          "s": "Laborat",
+          "t": "Laboratoire ABBVIE",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 9,
+          "s": "SKYRIZI",
+          "t": "B/2 seringues préremplies (CIP : 34009 301 748 8 3)",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19570",
+      "Num_avis": "CT-19570",
+      "produit_nom": "SKYRIZI",
+      "dci": "risankizumab",
+      "type_avis": "Extension_indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "solution injectable en seringue et stylo préremplis",
+      "dosage": "75 mg, 150 mg",
+      "indication": "Traitement du rhumatisme psoriasique actif de l’adulte avec réponse inadéquate ou intolérance à un ou plusieurs traitements de fond antirhumatismaux (DMARD).",
+      "classe_ATC": "L04AC18",
+      "pathologie": "Rhumatisme psoriasique actif",
+      "maladie_rare": false,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Maladies auto-immunes",
+      "aire_therapeutique_niveau_3": "Rhumatisme psoriasique actif",
+      "source_aire_therapeutique": "Texte avis page 1",
+      "design_etude": "Études cliniques de phase III, randomisées, contrôlées, en double aveugle vs placebo.",
+      "design_enum": "Phase_III_RCT_DB",
+      "niveau_preuve_brut": "Études cliniques de phase III, multicentriques, randomisées, contrôlées versus placebo et en double aveugle.",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Le besoin médical dans le traitement du RP est partiellement couvert malgré de nombreux médicaments disponibles. Les phénomènes d’échappement, réponses insuffisantes, contre-indications et intolérance persistent. SKYRIZI (risankizumab) est susceptible d’apporter une réponse partielle.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes ≥ 18 ans",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "SKYRIZI a été évalué auparavant dans le psoriasis en plaques modéré à sévère avec SMR important et ASMR IV.",
+      "historique_ASMR_comparateurs": "Absence d’amélioration du service médical rendu (ASMR V) par rapport aux autres médicaments biologiques disponibles dans le traitement du RP.",
+      "concurrence_therapeutique_recente": "Il existe des alternatives médicamenteuses notamment les anti-TNF avec un recul de plus de 15 ans en efficacité et tolérance.",
+      "vote_unanimite": true,
+      "nb_votants": 22,
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "date_evaluation": "2022-03-23",
+      "gravite_patho": "Le rhumatisme psoriasique est une maladie chronique, invalidante dans certaines formes.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : anti-TNF, inhibiteurs d’interleukines, anti-JAK, inhibiteur PDE4.",
+      "evidence": [
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 3,
+          "s": "L’essentiel",
+          "t": "Le besoin médical dans le traitement du RP est partiellement couvert par nombreux médicaments",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "design_enum",
+          "f": "F1",
+          "p": 12,
+          "s": "KEEPsAKE",
+          "t": "Etudes cliniques de phase III, multicentriques, randomisées, contrôlées versus placebo et en double aveugle.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "La Commission",
+          "t": "la Commission considère que le service médical rendu par SKYRIZI (risankizumab) est modéré...",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "la Commission considère que SKYRIZI",
+          "t": "la Commission considère que SKYRIZI (risankizumab) n’apporte pas d’amélioration du service médical rendu (ASMR V)...",
+          "m": "rule",
+          "c": 0.99
+        }
+      ],
+      "transcription_textuelle": "Transcription complète du débat du 23 mars 2022, incluant présentation, questions, échanges et vote final concernant SKYRIZI dans le rhumatisme psoriasique.",
+      "extraits_arguments": [
+        "SKYRIZI évalué dans le rhumatisme psoriasique en extension d'indication.",
+        "Deux études KEEPsAKE-1 et KEEPsAKE-2, phase 3, randomisées, en double aveugle, contrôlées contre placebo.",
+        "Population : adultes atteints de rhumatisme psoriasique actif après échec au moins un traitement de fond.",
+        "Dose de risankizumab : 150 mg SC à S0, S4 puis toutes les 12 semaines.",
+        "Critère principal : ACR20 à S24, résultats supérieurs au placebo, différence de près de 24%.",
+        "Critères secondaires positifs (fonctionnel, cutané, enthésite, qualité de vie) sauf efficacité structurale non significative.",
+        "Tolérance compatible avec les autres anti-IL23 : IE des voies respiratoires supérieures, augmentations transaminases, céphalées.",
+        "Pas d’événements cardiovasculaires majeurs, tuberculose ou réactions anaphylactiques notoires.",
+        "Comparaison indirecte avec autres biothérapies anti-IL23, qualité et cohérence des données comparable.",
+        "SMR modéré et ASMR V proposés, confirmés par vote (22 voix pour)."
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19570_essai_KEEPsAKE-1",
+      "evaluation_id": "CT-19570",
+      "essai_nom": "KEEPsAKE-1",
+      "nct_number": "NCT03675308",
+      "design": "Phase III randomisée contrôlée en double aveugle",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Atteinte surface corporelle psoriasis ≥ 3%",
+        "Utilisation d’au moins un csDMARD",
+        "Présence de dactylites",
+        "Présence d’enthésites"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2020-11-02",
+      "duree_suivi_prevu_mois": 52,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Adultes ≥ 18 ans atteints de rhumatisme psoriasique actif, naïfs de bDMARD, échec ou intolérance à csDMARD",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 483,
+      "nb_patient_comparateur": 481,
+      "resultat_global": "Supériorité statistiquement significative de risankizumab vs placebo sur critère principal ACR20 à S24",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III randomisée contrôlée, double aveugle, multicentrique",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": 18,
+      "age_max_num": 85,
+      "ligne_traitement_essai_enum": "2L",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "KEEPsAKE",
+          "t": "l’étude KEEPsAKE-1, réalisée chez 964 patients ayant eu une réponse inadéquate ou une intolérance à un ou plusieurs traitements de fond conventionnels (csDMARD) et naïfs de traitement de fond biologique (bDMARD)",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 14,
+          "s": "Au total, 964 patients ont été randomisés...",
+          "t": "964 patients ont été randomisés, 483 dans groupe risankizumab, 481 dans groupe placebo",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 9,
+          "s": "comparateurs",
+          "t": "Placebo",
+          "m": "rule",
+          "c": 0.9
+        }
+      ],
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "nb_patients_inclus": "964",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": []
+    },
+    {
+      "essai_id": "CT-19570_essai_KEEPsAKE-2",
+      "evaluation_id": "CT-19570",
+      "essai_nom": "KEEPsAKE-2",
+      "nct_number": "NCT03671148",
+      "design": "Phase III randomisée contrôlée en double aveugle",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Atteinte surface corporelle psoriasis ≥ 3%",
+        "Utilisation d’au moins un csDMARD",
+        "Nombre de bDMARD antérieur"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2020-11-02",
+      "duree_suivi_prevu_mois": 52,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Adultes ≥ 18 ans atteints de rhumatisme psoriasique actif, exposition ou échec à bDMARD",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 224,
+      "nb_patient_comparateur": 219,
+      "resultat_global": "Supériorité du risankizumab sur placebo à S24 sur critère principal ACR20",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III randomisée contrôlée, double aveugle, multicentrique",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": 18,
+      "age_max_num": 84,
+      "ligne_traitement_essai_enum": "2L",
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 13,
+          "s": "KEEPsAKE",
+          "t": "l’étude KEEPsAKE-2, réalisée chez 443 patients ayant eu une réponse inadéquate ou une intolérance à un ou plusieurs csDMARD et dont la moitié étaient en échec à au moins un bDMARD",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 14,
+          "s": "443 patients ont été randomisés",
+          "t": "443 patients randomisés, 224 risankizumab, 219 placebo",
+          "m": "rule",
+          "c": 0.99
+        }
+      ],
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "nb_patients_inclus": "443",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": []
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19570_essai_KEEPsAKE-1_crit_ACR20_S24",
+      "essai_id": "CT-19570_essai_KEEPsAKE-1",
+      "evaluation_id": "CT-19570",
+      "nom_critere": "Pourcentage de patients avec une réponse ACR20 à semaine 24",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "p ≤ 0,001",
+      "p_value_num": 0.001,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 16,
+          "s": "Critère de jugement principal",
+          "t": "Pourcentage de patients avec une réponse ACR20 à la semaine 24",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 17,
+          "s": "Le pourcentage de patients avec une réponse ACR20 à la semaine 24",
+          "t": "Le pourcentage était de 57,3 % dans le groupe risankizumab et de 33,5 % dans le groupe placebo, p ≤ 0,001",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19570_essai_KEEPsAKE-1_crit_HAQ-DI_S24",
+      "essai_id": "CT-19570_essai_KEEPsAKE-1",
+      "evaluation_id": "CT-19570",
+      "nom_critere": "Variation du score HAQ-DI à semaine 24",
+      "type_critere_enum": "Fonctionnel",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "p_value": "p < 0,001",
+      "p_value_num": 0.001,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 18,
+          "s": "Critère secondaire hiérarchisé",
+          "t": "Variation du score HAQ-DI à S24",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 19,
+          "s": "Différence vs placebo du score HAQ-DI à S24, p < 0,001",
+          "t": "Différence entre risankizumab et placebo sur score HAQ-DI : -0,20 (p < 0,001)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19570_essai_KEEPsAKE-2_crit_ACR20_S24",
+      "essai_id": "CT-19570_essai_KEEPsAKE-2",
+      "evaluation_id": "CT-19570",
+      "nom_critere": "Pourcentage de patients avec une réponse ACR20 à semaine 24",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "p_value": "p ≤ 0,001",
+      "p_value_num": 0.001,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 20,
+          "s": "Critère principal",
+          "t": "Pourcentage de patients répondeurs ACR20 à S24",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 21,
+          "s": "Risankizumab 51,3% vs placebo 26,4%, p ≤ 0,001",
+          "t": "Le pourcentage de patients avec une réponse ACR20 à S24 était de 51,3 % dans le groupe risankizumab et 26,4 % dans le groupe placebo, p ≤ 0,001",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19570_essai_KEEPsAKE_tol",
+      "evaluation_id": "CT-19570",
+      "essai_id": "CT-19570_essai_KEEPsAKE-1",
+      "EI_graves": "Les événements indésirables graves ont concerné 2,5% et 3,7% des patients dans les groupes risankizumab et placebo respectivement.",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 0.8,
+      "discontinuations_ae_pct_comparateur": 0.8,
+      "deaths_ae_n": 1,
+      "deaths_ae_n_comparateur": 0,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Pneumonie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 0.2,
+          "incidence_pct_comparateur": 0.4,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 2,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 22,
+              "s": "EIG",
+              "t": "Un patient dans le groupe risankizumab a présenté une pneumonie vs 2 patients dans le groupe placebo",
+              "m": "rule",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Rhinopharyngites",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 3.3,
+          "incidence_pct_comparateur": 2.9,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 22,
+              "s": "EI fréquents",
+              "t": "Rhinopharyngites 3,3% dans le groupe risankizumab vs 2,9% placebo",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Infections des voies respiratoires supérieures",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 2.5,
+          "incidence_pct_comparateur": 4.2,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 22,
+              "s": "EI fréquents",
+              "t": "Infections voies respiratoires supérieures 2,5% risankizumab vs 4,2% placebo",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Augmentation ALAT",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 2.7,
+          "incidence_pct_comparateur": 2.1,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 22,
+              "s": "EI fréquents",
+              "t": "Augmentation ALAT 2,7% risankizumab vs 2,1% placebo",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "deces_detailles": [
+        {
+          "cause_deces": "Pyélonéphrite",
+          "relation_traitement": "Improbable",
+          "delai_survenue_jours": null,
+          "contexte": "Décès dans l’étude KEEPsAKE-1 considéré non lié au traitement",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "Décès",
+              "t": "Un décès pendant les 24 premières semaines de traitement dans le groupe risankizumab chez un patient ayant eu une pyélonéphrite (non lié au traitement).",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "2020-03-25",
+          "description": "Risques potentiels identifiés dans le PGR : EIG cardiaques majeurs, infections graves, tumeurs, réactions d’hypersensibilité graves.",
+          "mesures_prises": "Surveillance des événements indésirables, absence de nouveau signal.",
+          "impact_evaluation": "Profil de sécurité cohérent avec psoriasis, tolérance attendue.",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 24,
+              "s": "Plan de Gestion des Risques",
+              "t": "Risques importants potentiels : Événements indésirables cardiaques majeurs, infections graves, tumeurs, réactions d’hypersensibilité graves.",
+              "m": "rule",
+              "c": 0.97
+            }
+          ]
+        }
+      ],
+      "EI_frequents": "Les effets indésirables fréquents incluent les rhinopharyngites, infections des voies respiratoires supérieures, et augmentation des transaminases.",
+      "deces": "Un décès imputé à une pyélonéphrite a été rapporté dans le groupe risankizumab, non lié au traitement.",
+      "signal_securite": "Le profil de sécurité général est cohérent avec celui observé dans le psoriasis avec suivi du PGR.",
+      "evidence": []
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19570_essai_KEEPsAKE-1_comp_01",
+      "essai_id": "CT-19570_essai_KEEPsAKE-1",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "comparateur_type_enum",
+          "f": "F1",
+          "p": 9,
+          "s": "comparateurs",
+          "t": "Placebo",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_essai_KEEPsAKE-2_comp_01",
+      "essai_id": "CT-19570_essai_KEEPsAKE-2",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "comparateur_type_enum",
+          "f": "F1",
+          "p": 9,
+          "s": "comparateurs",
+          "t": "Placebo",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19570_compHAS_01",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Adalimumab (HUMIRA)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "HUMIRA",
+          "t": "HUMIRA (adalimumab), indiqué pour le traitement du RP actif et évolutif chez l’adulte",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_02",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Étancercept (ENBREL)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "ENBREL",
+          "t": "ENBREL (étanercept), un anti-TNF indiqué dans le traitement du RP actif et évolutif chez l’adulte",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_03",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Certolizumab pégol (CIMZIA)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "CIMZIA",
+          "t": "CIMZIA (certolizumab pégol) est indiqué dans le traitement du RP actif de l’adulte",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_04",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Infliximab (REMICADE)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "REMICADE",
+          "t": "REMICADE (infliximab) est indiqué dans le traitement du RP actif et évolutif chez les adultes",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_05",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Golimumab (SIMPONI)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "SIMPONI",
+          "t": "SIMPONI (golimumab) est indiqué dans le traitement du rhumatisme psoriasique actif et évolutif",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_06",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Ustékinumab (STELARA)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "STELARA",
+          "t": "STELARA (ustékinumab), inhibiteur des interleukines 12 et 23, indiqué dans le rhumatisme psoriasique actif",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_07",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Sécukinumab (COSENTYX)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "COSENTYX",
+          "t": "COSENTYX (sécukinumab), inhibiteur de l’interleukine 17, indiqué dans le traitement du rhumatisme psoriasique actif",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_08",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Ixékizumab (TALTZ)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "TALTZ",
+          "t": "TALTZ (ixékizumab), anti IL17A, indiqué dans le traitement du rhumatisme psoriasique actif chez les adultes",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_09",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Guselkumab (TREMFYA)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "TREMFYA",
+          "t": "TREMFYA (guselkumab), inhibiteur de l’interleukine 23, indiqué dans le traitement du rhumatisme psoriasique actif",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_10",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Aprémilast (OTEZLA)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "OTEZLA",
+          "t": "OTEZLA (aprémilast), inhibiteur de la PDE4, indiqué dans le traitement du rhumatisme psoriasique actif",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_11",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Tofacitinib (XELJANZ)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "XELJANZ",
+          "t": "XELJANZ (tofacitinib), inhibiteur de Janus Kinase, indiqué dans le traitement du rhumatisme psoriasique actif",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19570_compHAS_12",
+      "evaluation_id": "CT-19570",
+      "nom_comparateur_HAS": "Upadacitinib (RINVOQ)",
+      "type_comparateur": "Traitement_actif",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 11,
+          "s": "RINVOQ",
+          "t": "RINVOQ (upadacitinib), inhibiteur de Janus Kinase, indiqué dans le traitement du RP actif chez les adultes",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19570_arg_CT_01",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "Les études KEEPsAKE-1 et 2 montrent une supériorité statistiquement significative de risankizumab sur placebo pour le critère principal ACR20 à 24 semaines, avec un gain modéré d’environ 24%.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Le pourcentage de patients répondeurs ACR20 à la semaine 24 était de 57,3 % dans le groupe risankizumab vs 33,5 % dans le groupe placebo (p ≤ 0,001) dans l’étude KEEPsAKE-1 et de 51,3 % vs 26,4 % (p ≤ 0,001) dans l’étude KEEPsAKE-2.",
+      "page_source": "Page 16-21",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "Critère principal ACR20",
+          "t": "Le pourcentage de patients répondeurs ACR20 à la semaine 24 était de 57,3 % dans le groupe risankizumab vs 33,5 % dans le groupe placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_02",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "description": "Risankizumab améliore significativement la fonction physique, l’activité cutanée et l’activité de la maladie dans les critères secondaires hiérarchisés des études KEEPsAKE-1 et 2.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "La supériorité du risankizumab versus placebo a été démontrée sur la majorité des critères secondaires hiérarchisés, notamment le HAQ-DI, PASI90, résolution d'enthésites et dactylites, ainsi que l’activité minimale de la maladie (MDA).",
+      "page_source": "Page 17-21",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 18,
+          "s": "Critères secondaires hiérarchisés",
+          "t": "Supériorité du risankizumab sur HAQ-DI, PASI90, enthésites, dactylites, MDA",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_03",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "Profil de tolérance conforme à celui observé dans le psoriasis, avec une fréquence similaire d’événements indésirables graves entre les groupes risankizumab et placebo.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "La fréquence des événements indésirables graves était similaire dans les deux groupes dans les études KEEPsAKE-1 et 2. Les effets indésirables fréquents comprenaient infections des voies respiratoires supérieures, rhinopharyngites et augmentation des transaminases.",
+      "page_source": "Page 22-25",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 23,
+          "s": "Tolérance et sécurité",
+          "t": "Fréquence des événements indésirables grave similaire entre groupes ; infections voies respiratoires supérieures fréquentes",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_04",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Le rhumatisme psoriasique est une maladie chronique grave et invalidante. Les traitements actuels sont nombreux mais le besoin médical reste partiellement couvert, notamment en cas d’échec, intolérance ou réponse insuffisante aux traitements existants.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le rhumatisme psoriasique est une maladie chronique, souvent invalidante. Le besoin médical est partiellement couvert, du fait d’échecs, d’intolérances et d’insuffisance des traitements disponibles.",
+      "page_source": "Page 7",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Besoin médical",
+          "t": "Le rhumatisme psoriasique est une maladie inflammatoire chronique partiellement couverte par traitements disponibles",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_05",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "SKYRIZI est indiqué en deuxième ligne et plus, mais la Commission recommande de privilégier les anti-TNF en première intention en raison de leur recul et efficacité démontrée sur la destruction articulaire.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "La Commission considère qu’en cas d’échec d’un traitement de fond conventionnel (2ème ligne), les anti-TNF doivent être privilégiés en première intention. La place de SKYRIZI est après échec d’au moins un anti-TNF (3ème ligne et plus).",
+      "page_source": "Page 30-31",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "Place dans la stratégie",
+          "t": "Les anti-TNF doivent être privilégiés en première intention, SKYRIZI après échec des anti-TNF",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_06",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "description": "Absence de données comparatives directes entre risankizumab et les médicaments biologiques de référence tels que les anti-TNF, ce qui limite la précision sur sa place relative dans la stratégie thérapeutique.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "En l'absence de comparaison directe du risankizumab aux autres options thérapeutiques disponibles après échec d’au moins un anti-TNF, sa place relative ne peut être précisée.",
+      "page_source": "Page 31",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 31,
+          "s": "Comparaison directe manquante",
+          "t": "Absence de comparaison directe limite la précision sur la place de risankizumab",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_07",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "description": "Les risques immunogéniques et cancérigènes à long terme, liés à l'activité immunosuppressive du médicament, ne sont pas encore évalués, nécessitant des données de suivi prolongé.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "Des données de tolérance à plus long terme sont nécessaires pour évaluer notamment le risque immunogénique et cancérigène liés à l’activité immunosuppressive.",
+      "page_source": "Page 29",
+      "section_source": "Conclusions",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 29,
+          "s": "Données tolérance longue",
+          "t": "Données de tolérance à plus long terme nécessaires notamment pour risque immunogénique et cancérigène.",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_08",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Le rhumatisme psoriasique touche environ 0,19 % de la population adulte en France, avec une population cible estimée à environ 12 000 patients pour SKYRIZI.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "Prévalence estimée à 0,19 %, population cible maximale évaluée à environ 12 000 patients en France.",
+      "page_source": "Page 33",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 33,
+          "s": "Prévalence",
+          "t": "La population cible de SKYRIZI serait au maximum de 12 000 patients",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_CT_09",
+      "evaluation_id": "CT-19570",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Le rapport efficacité/effets indésirables de SKYRIZI est considéré comme moyen. Le SMR est modéré et l’ASMR est de niveau V en raison de l’absence d’amélioration du service médical rendu comparé aux traitements disponibles.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "La Commission considère que le service médical rendu par SKYRIZI est modéré et n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+      "page_source": "Page 32",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 32,
+          "s": "SMR et ASMR",
+          "t": "service médical rendu par SKYRIZI est modéré",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_1",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Deux études phase 3 KEEPsAKE-1 et KEEPsAKE-2 ont démontré la supériorité statistiquement significative du risankizumab par rapport au placebo sur le critère principal ACR20 à 24 semaines dans le rhumatisme psoriasique actif.",
+      "extrait_textuel": "Dans les deux études, on a eu une démonstration statistiquement significative de la supériorité du risankizumab par rapport au placebo sur ce critère de jugement principal. Vous voyez les pourcentages qui sont assez proches, avec des différences de 24 % et 24,5 % entre les groupes pour les deux études.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet, pour la HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Commission",
+          "t": "Dans les deux études, on a eu une démonstration statistiquement significative de la supériorité du risankizumab par rapport au placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_2",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Les critères secondaires incluant le score de capacité fonctionnelle HAQ-DI, l'atteinte cutanée, l'activité de la maladie et la qualité de vie ont été positifs et supérieurs au placebo dans l'étude KEEPsAKE-2.",
+      "extrait_textuel": "Dans l’étude KEEPsAKE-2, tous les critères de jugement secondaire hiérarchisés ont été positif. Il y a eu une démonstration de la supériorité du risankizumab par rapport au placebo, notamment sur le score de capacité fonctionnelle, d’atteinte cutanée, d’activité de la maladie et de qualité de vie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet, pour la HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Commission",
+          "t": "Tous les critères de jugement secondaire hiérarchisés ont été positif ... qualité de vie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_3",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance est conforme aux autres anti-IL23 déjà évalués, avec effets indésirables fréquents mais peu graves comme infections des voies aériennes supérieures, augmentations des transaminases, céphalées et troubles gastro-intestinaux.",
+      "extrait_textuel": "Les effets indésirables les plus fréquents sont les infections des voies aériennes supérieures, les rhinopharyngites, les bronchites, les augmentations des transaminases. Il y avait aussi des effets indésirables généraux, à savoir des céphalées, nausées et vomissements.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet, pour la HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Commission",
+          "t": "Les effets indésirables les plus fréquents sont les infections des voies aériennes supérieures...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_4",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Position thérapeutique proposée en troisième ligne et plus après échec d’au moins un anti-TNF alpha, alignée avec la place d'autres biothérapies anti-IL23 dans cette indication.",
+      "extrait_textuel": "Le laboratoire revendique un SMR modéré dans l'indication et une ASMR V, une place dans la stratégie thérapeutique après échec d’au moins un anti-TNF, en troisième ligne et plus, comme TREMFYA.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet, pour la HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Commission",
+          "t": "Le laboratoire revendique un SMR modéré dans l'indication et une ASMR V",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_5",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "Aucune comparaison directe avec anti-TNF dans les essais, comparable à d’autres dossiers d’anti-IL23 évalués précédemment, avec limitations similaires.",
+      "extrait_textuel": "Pas de données comparatives aux anti-TNF alors que cette comparaison était possible, mais c’est le cas pour tous les dossiers similaires.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Chef de Projet, pour la HAS",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Commission",
+          "t": "Pas de données comparatives aux anti-TNF alors que cette comparaison était possible",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_6",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le rhumatisme psoriasique peut entraîner des handicaps fonctionnels importants et un fort impact sur la qualité de vie, ce qui justifie l'intérêt d’une nouvelle option thérapeutique en 2L et plus.",
+      "extrait_textuel": "L’inflammation persistante sur les articulations peut provoquer des déformations progressives et entraîner un handicap fonctionnel et un fort impact sur la qualité de vie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Michel Clanet, Vice-Président",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Commission",
+          "t": "L’inflammation persistante ... handicap fonctionnel et un fort impact sur la qualité de vie",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_7",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Neutre",
+      "description": "Critère principal ACR20 représente une amélioration modeste cliniquement perçue (20%) mais est un standard dans cette indication.",
+      "extrait_textuel": "Critère de jugement principal ACR 20 est un objectif modeste car c’est une amélioration de 20% des signes et symptômes.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet, pour la HAS",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Commission",
+          "t": "Critère de jugement principal qui n’est pas très pertinent cliniquement",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_8",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "description": "Discussion sur l'intérêt commercial ou clinique d’avoir plusieurs médicaments similaires dans la même classe anti-IL23.",
+      "extrait_textuel": "Question sur l’intérêt de développer un médicament comme celui-là qui répète les précédents ? C’est peut-être commercial.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Sylvie Castaigne, membre de la CT",
+      "moment_debat": "Délibération",
+      "impact_decision": "Sans_impact_apparent",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Commission",
+          "t": "Question sur l’intérêt commercial ou clinique d’avoir plusieurs médicaments similaires",
+          "m": "manual",
+          "c": 0.8
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19570_arg_TRANS_9",
+      "evaluation_id": "CT-19570",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Vote unanime de la Commission pour un SMR modéré et une ASMR V, aligné avec les données d’efficacité et tolérance.",
+      "extrait_textuel": "Le vote par appel nominatif donne 22 voix pour un SMR modéré et 22 voix pour une ASMR V, adopté sur table.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Michel Clanet, Vice-Président",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Commission",
+          "t": "22 voix pour un SMR modéré et 22 voix pour une ASMR V, adopté",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19570_ctx",
+    "evaluation_id": "CT-19570",
+    "ISP": "SKYRIZI (risankizumab) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2019-04-26",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      {
+        "pays": "Royaume-Uni",
+        "organisme": "Non renseigné",
+        "decision": "Non renseigné",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Non renseigné",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Pays-Bas",
+        "organisme": "Non renseigné",
+        "decision": "Non renseigné",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Belgique",
+        "organisme": "Non renseigné",
+        "decision": "Non renseigné",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Espagne",
+        "organisme": "Non renseigné",
+        "decision": "Non renseigné",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Italie",
+        "organisme": "Non renseigné",
+        "decision": "Non renseigné",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Modéré",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Critère principal ACR20",
+    "valeur_critère": "∼24% de différence ACR20 à S24",
+    "impact_décision": "Maintien SMR Modéré et ASMR V",
+    "estimation_mesure_impact": "Amélioration modérée de la réponse à 24 semaines ACR20",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19570",
+    "texte_brut": "Avis de la Commission de la Transparence... (texte intégral concaténé)",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19570_smrasmr_01",
+      "evaluation_id": "CT-19570",
+      "indication_precise": "Traitement du rhumatisme psoriasique actif de l’adulte avec réponse inadéquate ou intolérance à un ou plusieurs traitements de fond antirhumatismaux",
+      "smr": "La Commission considère que le service médical rendu par SKYRIZI est modéré dans la nouvelle indication.",
+      "smr_enum": "Modéré",
+      "asmr": "La Commission considère que SKYRIZI (risankizumab) n’apporte pas d’amélioration du service médical rendu (ASMR V).",
+      "asmr_enum": "V",
+      "smr_revendique": "Modéré",
+      "asmr_revendique": "V",
+      "justification_decisionnelle": "Effet modéré démontré avec ACR20, absence de supériorité structurelle, tolérance connue, données sur échec anti-TNF limitées.",
+      "population_cible_indication": "Adultes avec RP actif en échec ou intolérance à DMARD",
+      "ligne_traitement_indication": "2L et plus, surtout 3L après échec anti-TNF",
+      "comparateurs_references_indication": "Anti-TNF, anti-interleukines, anti-JAK, inhibiteurs PDE4",
+      "comparateur_id_HAS": [
+        "CT-19570_compHAS_01",
+        "CT-19570_compHAS_02",
+        "CT-19570_compHAS_03",
+        "CT-19570_compHAS_04",
+        "CT-19570_compHAS_05",
+        "CT-19570_compHAS_06",
+        "CT-19570_compHAS_07",
+        "CT-19570_compHAS_08",
+        "CT-19570_compHAS_09",
+        "CT-19570_compHAS_10",
+        "CT-19570_compHAS_11",
+        "CT-19570_compHAS_12"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "3L_plus",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes ≥ 18 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "La Commission",
+          "t": "la Commission considère que le service médical rendu par SKYRIZI (risankizumab) est modéré",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 32,
+          "s": "Ces spécialités",
+          "t": "Ces spécialités n’apportent pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19570_poso_01",
+      "evaluation_id": "CT-19570",
+      "smr_asmr_id": "CT-19570_smrasmr_01",
+      "indication": "Traitement du rhumatisme psoriasique actif adulte avec réponse inadéquate à un ou plusieurs DMARD",
+      "population_cible": "Adultes atteints de rhumatisme psoriasique actif de 2ème ligne et plus",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose recommandée de 150 mg par injection sous-cutanée à S0, S4 et toutes les 12 semaines ensuite. Deux injections de 75 mg ou une injection unique de 150 mg. Interruption recommandée en cas de non-réponse à 16 semaines.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 150,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [
+              0,
+              28
+            ],
+            "interval_days": 28
+          },
+          "voie_administration": "Sous-cutanée",
+          "expected_phase_duration_days": 56
+        },
+        {
+          "phase_nom": "Entretien",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": 150,
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [
+              0
+            ],
+            "interval_days": 84
+          },
+          "voie_administration": "Sous-cutanée",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "1ère injection sous-cutanée réalisée dans un centre adapté. Patients avertis sur zones d’injection à éviter.",
+      "commentaires": "Renvoi au RCP pour détails des instructions d’injection et posologie complète.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "Posologie",
+          "t": "Dose recommandée est de 150 mg administrée en injection sous-cutanée à la semaine 0, à la semaine 4, puis toutes les 12 semaines",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "ajustements_poso_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "Recommandations particulières",
+          "t": "La première injection sous-cutanée de ce médicament soit réalisée dans une structure de soins adaptée",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19570_event_AMM_01",
+      "evaluation_id": "CT-19570",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2019-04-26",
+      "detail_brut": "AMM initiale de SKYRIZI",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 33,
+          "s": "AMM",
+          "t": "AMM initiale (procédure centralisée) : 26/04/2019",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19570_event_EXT_IND_01",
+      "evaluation_id": "CT-19570",
+      "event_type": "EXTENSION_INDICATION_ADOPTE",
+      "event_date": "2021-11-15",
+      "detail_brut": "Extension d’indication dans le rhumatisme psoriasique actif",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 33,
+          "s": "Extension",
+          "t": "Extension d’indication obtenue le 15/11/2021",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19570_event_AVIS_CT_01",
+      "evaluation_id": "CT-19570",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-03-23",
+      "detail_brut": "Adoption de l’avis par la Commission de la Transparence",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 33,
+          "s": "Avis",
+          "t": "Avis version définitive adopté le 23/03/2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19570",
+    "delai_amm_ct_jours": 1055,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19570",
+    "is_orphan": false,
+    "classe_ATC_l2": "Immunologie",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": true,
+    "n_essais": 2,
+    "n_rct": 2,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 24,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": 0.8,
+    "critere_principal_description": "Pourcentage de patients avec une réponse ACR20 à semaine 24",
+    "p_value_log10": 3,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19570",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-1",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19570",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-2",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19570_essai_KEEPsAKE-1",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-1_crit_ACR20_S24",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19570_essai_KEEPsAKE-1",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-1_crit_HAQ-DI_S24",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19570_essai_KEEPsAKE-2",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-2_crit_ACR20_S24",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19570_essai_KEEPsAKE-1",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-1_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19570_essai_KEEPsAKE-2",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-19570_essai_KEEPsAKE-2_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19570",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19570_compHAS_01",
+      "label": "EVAL_HAS_TRIAL"
+    }
+  ],
+  "Annotation_View": []
+}

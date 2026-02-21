@@ -1,0 +1,1486 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19667",
+  "evaluation_id": "CT-19667",
+  "extraction_date": "2022-04-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-04-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19667_delamanide_DELTRYBA_AvisDef.pdf",
+        "type": "CT",
+        "page_count": 27
+      },
+      "F2": {
+        "file_name": "TRANSCRIPTION_Partie1-5_DELTYBA_CT-19667.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 9
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19667_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis version définitive",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 6500,
+      "heading_text": "Synthèse Avis"
+    },
+    {
+      "segment_id": "CT-19667_seg_02",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin Médical",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 8,
+      "char_start": 6501,
+      "char_end": 14500,
+      "heading_text": "Besoin Medical"
+    },
+    {
+      "segment_id": "CT-19667_seg_03",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 11,
+      "char_start": 14501,
+      "char_end": 18500,
+      "heading_text": "Comparateurs cliniquement pertinents"
+    },
+    {
+      "segment_id": "CT-19667_seg_04",
+      "section_label_normalise": "EVALUATIONS_HAS",
+      "section_label_brut": "Rappel des précédentes évaluations",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 13,
+      "char_start": 18501,
+      "char_end": 21500,
+      "heading_text": "Historique évaluations"
+    },
+    {
+      "segment_id": "CT-19667_seg_05",
+      "section_label_normalise": "ESSAIS",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 13,
+      "page_end": 16,
+      "char_start": 21501,
+      "char_end": 27500,
+      "heading_text": "Analyses données cliniques"
+    },
+    {
+      "segment_id": "CT-19667_seg_06",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 5001,
+      "char_end": 6500,
+      "heading_text": "Posologie"
+    },
+    {
+      "segment_id": "CT-19667_seg_07",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 14,
+      "page_end": 19,
+      "char_start": 26501,
+      "char_end": 33500,
+      "heading_text": "Tolérance"
+    },
+    {
+      "segment_id": "CT-19667_seg_08",
+      "section_label_normalise": "SMR_ASMR",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 23,
+      "page_end": 27,
+      "char_start": 38000,
+      "char_end": 43000,
+      "heading_text": "Conclusions Commission"
+    },
+    {
+      "segment_id": "CT-19667_seg_09",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 27,
+      "page_end": 27,
+      "char_start": 43001,
+      "char_end": 44000,
+      "heading_text": "Informations administratives"
+    },
+    {
+      "segment_id": "CT19667_S1",
+      "section_label_normalise": "TRANSCRIPTION_SEANCE",
+      "section_label_brut": "Commission de Transparence – DELTYBA",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Transcription Commission de Transparence DELTYBA",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Extraction Arguments et débats commission",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "DELTYBA",
+      "dci": "Delamanide",
+      "titulaire_amm": "OTSUKA PHARMACEUTICAL FRANCE SAS",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "comprimé pelliculé",
+          "dosage_concentration": "50 mg",
+          "code_cip13": "34009 300 105 7 0",
+          "forme_pharma_enum": "Comprime_pellicule"
+        },
+        {
+          "forme_pharmaceutique": "comprimé dispersible",
+          "dosage_concentration": "25 mg",
+          "code_cip13": "34009 302 421 8 6",
+          "forme_pharma_enum": "Comprime_dispersible"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 27,
+          "s": "Confidenti",
+          "t": "DELTYBA 50 mg, comprimé pelliculé B/ 48 comprimés – plaquette thermoformée (alu/alu) (CIP : 34009 300 105 7 0)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 27,
+          "s": "Confidenti",
+          "t": "DELTYBA 25 mg, comprimé dispersible B/ 48 comprimés – plaquette (alu/alu) (CIP : 34009 302 421 8 6)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS - Dir",
+          "t": "Delamanide",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 27,
+          "s": "Confidenti",
+          "t": "OTSUKA PHARMACEUTICAL FRANCE SAS",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19667",
+      "Num_avis": "CT-19667",
+      "produit_nom": "DELTYBA (delamanide)",
+      "dci": "Delamanide",
+      "type_avis": "Avis",
+      "type_avis_enum": "Extension_indication",
+      "forme": "comprimé pelliculé, comprimé dispersible",
+      "dosage": "25 mg, 50 mg",
+      "indication": "Traitement de la tuberculose pulmonaire multirésistante (TB-MR) chez les adultes, les adolescents, les enfants et les nourrissons ayant un poids corporel supérieur ou égal à 10 kg, lorsque l’utilisation d’un autre schéma thérapeutique efficace est impossible pour des raisons de résistance ou d’intolérance.",
+      "classe_ATC": "J04AK06",
+      "pathologie": "Tuberculose pulmonaire multirésistante",
+      "maladie_rare": false,
+      "ligne_traitement": "2L",
+      "sous_groupe_population": "Enfants et nourrissons ≥ 10 kg",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Traitement de la tuberculose pulmonaire multirésistante",
+      "source_aire_therapeutique": "Déduit ATC J04AK06",
+      "design_etude": "Étude de phase 2 en population pédiatrique, étude pharmacocinétique",
+      "niveau_preuve_brut": "Données d’études de phase 2, pharmacocinétique et tolérance",
+      "niveau_preuve_interprete": "Phase_II",
+      "besoin_medical_brut": "Le delamanide est un antibiotique bactéricide contre Mycobacterium tuberculosis, indiqué dans la tuberculose multirésistante. Il répond à un besoin médical important en raison de la gravité et de la rareté de la maladie.",
+      "besoin_medical_interprete": "Couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Enfants et nourrissons ≥ 10 kg",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_II",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "DELTYBA (delamanide) a été initialement inscrit en 2016 pour la tuberculose multirésistante chez l’adulte avec SMR important et ASMR III. Extension pédiatrique en 2021 pour enfants ≥ 30 kg.",
+      "historique_ASMR_comparateurs": "ASMR III lors de réévaluations précédentes basées sur études phase II et III. Comparateur principal : bedaquiline (SIRTURO).",
+      "concurrence_therapeutique_recente": "Présence de SIRTURO (bédaquiline) comme alternative, extension des indications pédiatriques.",
+      "vote_unanimite": true,
+      "nb_votants": 15,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-04-20",
+      "transcription_textuelle": "Mercredi 20 avril 2022, Commission de Transparence réunion portant sur DELTYBA – Extension pédiatrique...",
+      "extraits_arguments": [
+        "Extension de l’indication au traitement pédiatrique des enfants et nourrissons >= 10 kg",
+        "Profil de tolérance globalement cohérent avec celui des adultes",
+        "DELTYBA est une option thérapeutique de référence selon l’OMS",
+        "Prescription restreinte aux médecins expérimentés en tuberculose multi-résistante",
+        "Population cible estimée à <= 10 enfants par an en France"
+      ],
+      "gravite_patho": "La tuberculose multirésistante est une maladie rare, fréquemment mortelle, avec une progression mondiale préoccupante.",
+      "gravite_patho_enum": [
+        "Très_grave"
+      ],
+      "type_population_cible": "Enfants et nourrissons >= 10 kg",
+      "pertinence_concurrence_therapeutique": "Présence de comparateurs cliniquement pertinents dont SIRTURO (bédaquiline).",
+      "evidence": [
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "La tuberc",
+          "t": "Le delamanide est un antibiotique, premier représentant de la classe des nitro-dihydro-imidazooxazoles, ayant une activité bactéricide contre les Mycobacterium tuberculosis.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "La tuberc",
+          "t": "Il répond à un besoin médical important en raison de la gravité et de la rareté de la maladie.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 4,
+          "s": "La tuberc",
+          "t": "Il répond à un besoin médical important en raison de la gravité et de la rareté de la maladie.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "design_etude",
+          "f": "F1",
+          "p": 4,
+          "s": "Non renseigné",
+          "t": "Non renseigné",
+          "m": "rule",
+          "c": 1.0
+        },
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis vers",
+          "t": "extension d’indication",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 27,
+          "s": "La Commiss",
+          "t": "La Commission donne un avis favorable à l'inscription... le vote est unanime.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19667_essai_232",
+      "evaluation_id": "CT-19667",
+      "essai_nom": "Étude 232",
+      "nct_number": "Non renseigné",
+      "design": "Phase_II_single_arm",
+      "phase": "II",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Enfants et nourrissons atteints de tuberculose multirésistante, poids corporel ≥ 10 kg",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": 37,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Évaluation pharmacocinétique et tolérance du delamanide en association avec traitement de fond optimisé",
+      "QoL_flag": false,
+      "niveau_preuve": "Intermédiaires",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.3,
+      "age_min_num": 0,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "nb_patients_inclus": "37",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 13,
+          "s": "Selon l'é",
+          "t": "Il s'agit d'une étude clinique de phase II (232), multicentrique, non comparative, en ouvert.",
+          "m": "ner",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 15,
+          "s": "Les 12 enfan",
+          "t": "Population composée d'enfants et nourrissons avec poids ≥ 10 kg atteints de TB-MR.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 15,
+          "s": "Cohorte 3",
+          "t": "12 enfants cohortes 3 et 12 nourrissons cohorte 4 étudiés (24 patients au total).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19667_essai_233",
+      "evaluation_id": "CT-19667",
+      "essai_nom": "Étude 233",
+      "nct_number": "Non renseigné",
+      "design": "Phase_II_single_arm",
+      "phase": "II",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 24,
+      "maturite_donnees": "Intermédiaires",
+      "population_cible": "Enfants et nourrissons atteints de tuberculose multirésistante, poids corporel ≥ 10 kg",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": 37,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Évaluation pharmacocinétique, tolérance et efficacité à 6 mois, extension de l'étude 232",
+      "QoL_flag": false,
+      "niveau_preuve": "Intermédiaires",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 24,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "age_min_num": 0,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "nb_patients_inclus": "37",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "Philippines, Afrique du Sud",
+          "nb_patients": "37",
+          "pourcentage": null
+        }
+      ],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": 1,
+      "date_analyses_intermediares_mois": [
+        "M6",
+        "M12",
+        "M18",
+        "M24"
+      ],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 15,
+          "s": "Selon les r",
+          "t": "Étude clinique phase II (233), multicentrique, non comparative à doses multiples.",
+          "m": "ner",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 15,
+          "s": "Population divisée en 4 cohortes d’âges différents, enfants et nourrissons étudiés.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19667_essai_01",
+      "evaluation_id": "CT-19667",
+      "essai_nom": "Étude principale pédiatrique délamanide",
+      "nct_number": "Non renseigné",
+      "design": "Phase_II",
+      "design_enum": "Phase_II",
+      "population_cible": "Enfants et nourrissons de 10 à 30 kg ayant tuberculose multirésistante",
+      "comparateur_utilise": "Traitement optimisé +/- placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 37,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Pharmacocinétique équivalente à l’adulte, tolérance acceptable, données d’efficacité non concluantes",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase 2, études pharmacocinétique et tolérance",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": "Non renseigné",
+      "phase": "II",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 6,
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": 10,
+      "age_max_num": 30,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "nb_patients_inclus": "37",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 5,
+          "s": "Sur la base",
+          "t": "Le présent dossier s’appuie sur une étude de phase 2 évaluant pharmacocinétique, tolérance, efficacité",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 4,
+          "s": "Sur la base",
+          "t": "Population pédiatrique, enfants et nourrissons pesant entre 10 et 30 kg",
+          "m": "manual",
+          "c": 0.97
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 6,
+          "s": "En fait,",
+          "t": "Petit chaland de patients, 37 patients au total, dont 20 dans tranche poids concernée",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 6,
+          "s": "En fait,",
+          "t": "Données pharmacocinétiques cohérentes, tolérance acceptable, efficacité non jugée démontrée",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19667_essai_233_tol",
+      "evaluation_id": "CT-19667",
+      "essai_id": "CT-19667_essai_233",
+      "EI_graves": "Deux décès (un dans chaque cohorte 3 et 4) dus à une pneumopathie, non liés au delamanide.",
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": 2,
+      "deaths_ae_n_comparateur": null,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Infections",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 7,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 16,
+              "s": "Deux déce",
+              "t": "Deux décès à la suite d’une pneumopathie, non liées au delamanide selon l’investigateur.",
+              "m": "rule",
+              "c": 0.9
+            }
+          ]
+        },
+        {
+          "ei_terme": "Augmentation corticotrophine sanguine",
+          "grade": "1-2",
+          "incidence_pct_traitement": 2,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 2,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "evidence": []
+        },
+        {
+          "ei_terme": "Prolongation temps de prothrombine",
+          "grade": "1-2",
+          "incidence_pct_traitement": 2,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 2,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Infections des voies respiratoires supérieures",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 41.7,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 16,
+              "s": "Données to",
+              "t": "Les infections des voies respiratoires supérieures (41,7%) chez les enfants de la cohorte 3.",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Hyperuricémie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 33.3,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "4",
+      "deces_detailles": [
+        {
+          "cause_deces": "Pneumopathie",
+          "relation_traitement": "Improbable",
+          "delai_survenue_jours": null,
+          "contexte": "Décès liés à la tuberculose, non au delamanide.",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 16,
+              "s": "Deux déce",
+              "t": "Deux décès à la suite d’une pneumopathie, non liées au delamanide selon l’investigateur.",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "EI_frequents": "Infections des voies respiratoires supérieures (41,7% cohorte 3), hyperuricémie (33,3%).",
+      "deces": "Deux décès par pneumopathie non liés au médicament.",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 16,
+          "s": "Deux décès",
+          "t": "Deux décès à la suite d’une pneumopathie, non liées au delamanide selon l’investigateur.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19667_essai_01_comp_01",
+      "essai_id": "CT-19667_essai_01",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 5,
+          "s": "et le taux de négativation",
+          "t": "étude randomisée en double aveugle sur 511 patients avec placebo",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19667_compHAS_01",
+      "evaluation_id": "CT-19667",
+      "nom_comparateur_HAS": "SIRTURO (bédaquiline)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "Comparateurs_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "SIRTURO",
+          "t": "Le comparateur cliniquement pertinent de DELTYBA (delamanide) est SIRTURO (bédaquiline).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19667_arg_CT_01",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Le delamanide répond à un besoin médical important lié à la tuberculose multirésistante rare, grave et souvent mortelle, et à la rareté des alternatives thérapeutiques adaptées aux enfants.",
+      "extrait_textuel": "Le besoin médical est important dans la tuberculose multirésistante qui est une maladie rare et fréquemment mortelle, avec peu d'alternatives thérapeutiques disponibles, notamment en pédiatrie.",
+      "page_source": "Page 4",
+      "section_source": "Besoin Médical",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "La tuberc",
+          "t": "Le besoin médical peut être considéré comme important en raison de la gravité et de la rareté de la maladie.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_02",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "Les résultats cliniques pédiatriques montrent une réponse favorable au traitement, comparable aux données observées chez l’adulte et les adolescents.",
+      "extrait_textuel": "Les résultats de réponses favorables au traitement chez enfants et nourrissons sont cohérents avec ceux des adultes et adolescents avec tuberculose multirésistante sensible au delamanide.",
+      "page_source": "Pages 13-16",
+      "section_source": "Analyse des données disponibles",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 16,
+          "s": "Les résultats de l’analyse finale",
+          "t": "Les résultats de ces séquences thérapeutiques sont cohérents avec ceux observés dans les études chez les adultes, les adolescents et les enfants.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_03",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "Le profil de tolérance du delamanide chez les enfants et nourrissons est globalement cohérent avec celui connu chez l’adulte, avec quelques effets indésirables fréquents comme les infections respiratoires et hyperuricémie.",
+      "extrait_textuel": "Le profil de tolérance a été cohérent avec celui connu dans la population adulte et les informations du RCP. Les effets indésirables les plus fréquents sont les infections des voies respiratoires supérieures et l’hyperuricémie.",
+      "page_source": "Pages 14-17",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 16,
+          "s": "Le profil de tolérance",
+          "t": "Globalement, le profil de tolérance a été cohérent avec celui connu dans la population adulte et les informations disponibles dans le RCP.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_04",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "DELTYBA est une option thérapeutique de référence pour le traitement de la tuberculose pulmonaire multirésistante sensible au delamanide, en accord avec les recommandations OMS et après avis du centre de référence des mycobactéries.",
+      "extrait_textuel": "DELTYBA est une option thérapeutique de référence, pour le traitement des patients atteints d’une tuberculose pulmonaire multirésistante sensible au delamanide, conformément aux recommandations actualisées de l’OMS.",
+      "page_source": "Pages 1, 23",
+      "section_source": "Synthèse, Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis version",
+          "t": "DELTYBA (delamanide) est une option thérapeutique de référence",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 23,
+          "s": "La prise en",
+          "t": "DELTYBA (delamanide) est une option thérapeutique de référence conformément aux recommandations actualisées de l’OMS.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_05",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "L’extension d’indication n’entraîne pas de modification sensible de la population cible, estimée à moins de 10 patients par an en France.",
+      "extrait_textuel": "La population cible ne devrait pas excéder 10 patients par an en France pour l’extension pédiatrique aux enfants et nourrissons supérieurs ou égaux à 10 kg.",
+      "page_source": "Page 3",
+      "section_source": "Synthèse Avis",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Population cible",
+          "t": "Cette population ne devrait pas excéder 10 patients par an en France.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_06",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "description": "Le delamanide apporte une réponse au besoin médical identifié en raison de son activité bactéricide sur les souches multirésistantes de la tuberculose.",
+      "extrait_textuel": "DELTYBA (delamanide) apporte une réponse au besoin médical identifié en raison de son activité bactéricide sur les souches multirésistantes.",
+      "page_source": "Page 21",
+      "section_source": "Conclusion Commission",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 21,
+          "s": "Au total, les données",
+          "t": "DELTYBA (delamanide) apporte une réponse au besoin médical identifié, en raison de son activité bactéricide sur les souches multirésistantes.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_07",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "description": "Le profil de tolérance est marqué par un risque d’allongement de l’intervalle QT, troubles psychiatriques, neurologiques, gastro-intestinaux et hépatiques, nécessitant respect du PGR et du RCP.",
+      "extrait_textuel": "Le profil de tolérance est marqué par un risque d’allongement de l’intervalle QT, de troubles psychiatriques, neurologiques, gastro-intestinaux ou hépatiques et de résistances médicamenteuses (risques identifiés dans le PGR).",
+      "page_source": "Pages 21-22",
+      "section_source": "Tolérance, Conclusion",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 22,
+          "s": "Au total, les données",
+          "t": "Le profil de tolérance est marqué par un risque d’allongement de l’intervalle QT, de troubles psychiatriques, neurologiques, gastro-intestinaux ou hépatiques.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_08",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "La formulation pédiatrique de delamanide (25 mg comprimé dispersible) s’adapte bien aux besoins des enfants et des nourrissons.",
+      "extrait_textuel": "La Commission salue l’intérêt de disposer de médicament avec une formulation et une forme galénique adaptée aux jeunes enfants et nourrissons.",
+      "page_source": "Pages 2 et 23",
+      "section_source": "Synthèse, Place dans la stratégie",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "La Commission",
+          "t": "La Commission salue l’intérêt de disposer de médicament avec une formulation et une forme galénique adaptée aux jeunes enfants et nourrissons.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_CT_09",
+      "evaluation_id": "CT-19667",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "La Commission recommande la restriction de la prescription aux médecins expérimentés et la décision après concertation avec experts.",
+      "extrait_textuel": "La Commission préconise la restriction de la prescription de DELTYBA aux médecins expérimentés et après proposition documentée lors d’une réunion de concertation thérapeutique.",
+      "page_source": "Pages 3 et 27",
+      "section_source": "Synthèse, Conclusions",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Conformément à son avis précédent",
+          "t": "La Commission préconise la restriction de la prescription de DELTYBA (delamanide) aux médecins expérimentés dans la prise en charge des tuberculoses multirésistantes.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_01",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le délamanide répond à un besoin important dans le traitement de la tuberculose pulmonaire multirésistante pédiatrique avec des options limitées.",
+      "extrait_textuel": "Le délamanide est un antibiotique... compte tenu d’un besoin thérapeutique important.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Élisabeth Gattulli",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "DEL",
+          "t": "compte tenu d’un besoin thérapeutique important",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_02",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "description": "Les données d’efficacité chez l’enfant sont limitées et non démonstratives, principalement des données pharmacocinétiques sans robustesse statistique.",
+      "extrait_textuel": "En ce qui concerne la pédiatrie... on ne peut absolument rien dire sur le plan de l’efficacité.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Serge Kouzan",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "En ce qui concerne la pédiatrie",
+          "t": "On ne peut absolument rien dire sur le plan de l’efficacité compte tenu de la façon dont le médicament a été prescrit",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_03",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Modéré",
+      "description": "Tolérance acceptable mais avec des effets indésirables notables tels que problèmes hépatiques, éruptions cutanées, prolongation QT, et deux décès non liés au traitement.",
+      "extrait_textuel": "Problèmes de transaminases, augmentation ACTH, deux éruptions cutanées, prolongation QT, deux décès non liés au traitement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Serge Kouzan",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "En ce qui concerne la tolérance",
+          "t": "Il peut y avoir des problèmes de transaminases, deux éruptions cutanées, prolongation QT",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_04",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Le délamanide est reconnu comme médicament du groupe C selon l’OMS, réservé aux traitements non de première ligne, avec usage supervisé en centre national de référence.",
+      "extrait_textuel": "Le délamanide fait partie du groupe C... traitement doit être dirigé et supervisé par le centre national de référence.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Serge Kouzan",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "DEL",
+          "t": "Le délamanide fait partie du groupe C. Il ne s'agit pas d'un traitement de première ligne.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_05",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Possibilité future de réduire la durée de traitement grâce à des molécules comme le délamanide et le bedaquiline, favorisant l’observance notamment chez les enfants.",
+      "extrait_textuel": "Plus les traitements sont courts, plus on optimise la prise... traitements courts pourraient être aussi efficaces.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Les rapporteurs",
+          "t": "Les traitements courts sont finalement peut-être aussi efficaces ou non inférieurs aux traitements plus longs.",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_06",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "description": "Absence de données d’efficacité robustes chez les enfants de moins de 10 kg et question sur la non-bioéquivalence des formulations dispersibles 25 mg par rapport à 50 mg.",
+      "extrait_textuel": "La bioéquivalence n’est pas démontrée... pas de données suffisantes pour enfants <10 kg.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Serge Kouzan",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Sur la diapositive",
+          "t": "Pas de bioéquivalence avec la formulation dispersible 25 mg et données insuffisantes pour <10 kg.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_07",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "La Commission souligne l’importance de l’observance pour éviter la résistance, indispensable pour l’efficacité des traitements contre la tuberculose.",
+      "extrait_textuel": "L’important est de mettre l’accent sur l’observance pour éviter la survenue de résistances.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Clémence Basse",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "COMMISS",
+          "t": "L’important est de mettre l’accent sur l’observance du traitement pour éviter la survenue de résistances",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_08",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "Critique sur la définition du critère d’efficacité secondaire « réponse favorable », mêlant guérison et fin de traitement, qui rend les résultats difficilement interprétables.",
+      "extrait_textuel": "À quoi sert d’avoir une séquence thérapeutique menée à son terme si on n’est pas guéri ?",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Sylvie Chevret",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "COMMISS",
+          "t": "Critique de la définition du critère d'efficacité combinant guérison et séquence menée à terme",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19667_arg_TRANS_09",
+      "evaluation_id": "CT-19667",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "description": "Alignement des extensions pédiatriques basé sur étude pharmacocinétique ou pharmacologie suffisante, avec possibilité de valorisation accrue selon l’effort de développement pédiatrique.",
+      "extrait_textuel": "Le Bureau propose qu’une étude de pharmacocinétique ou de pharmacoéquivalence suffise à l’alignement.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "COMMISS",
+          "t": "Le Bureau propose qu’une étude de pharmacocinétique ou de pharmacoéquivalence suffise à l’alignement.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19667_ctx",
+    "evaluation_id": "CT-19667",
+    "ISP": "DELTYBA (delamanide) est susceptible d’avoir un impact supplémentaire sur la santé publique dans le traitement de la tuberculose multirésistante.",
+    "ISP_flag": true,
+    "ISP_categorie": "Important",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_conditionnelle",
+    "date_AMM_ema": "2014-04-28",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": true,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Europe (EMA)"
+    ],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "III",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19667",
+    "texte_brut": "Avis version définitive ... [CONTENU COMBINÉ DES PARTIES DU PDF À DISPOSITION]"
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19667_smrasmr_01",
+      "evaluation_id": "CT-19667",
+      "indication_precise": "Traitement de la tuberculose pulmonaire multirésistante (TB-MR) chez les adultes, les adolescents, les enfants et les nourrissons ayant un poids corporel supérieur ou égal à 10 kg, lorsque l’utilisation d’un autre schéma thérapeutique efficace est impossible pour des raisons de résistance ou d’intolérance.",
+      "smr": "La Commission considère que le service médical rendu par DELTYBA (delamanide) est important dans l’indication de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que DELTYBA (delamanide), en association avec une pluri-antibiothérapie appropriée, apporte une amélioration du service médical rendu modérée (ASMR III) chez les enfants et les nourrissons ayant un poids corporel d’au moins 10 kg atteints d’une tuberculose multirésistante.",
+      "asmr_enum": "III",
+      "smr_revendique": "SMR important",
+      "asmr_revendique": "III",
+      "justification_decisionnelle": "Prise en compte du besoin médical important, activité bactéricide démontrée, données limitées pédiatriques, conformité aux recommandations OMS.",
+      "population_cible_indication": "Enfants et nourrissons poids ≥10 kg",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": [
+        "SIRTURO (bédaquiline)"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19667_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Enfants et nourrissons >= 10 kg"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 26,
+          "s": "Considérant",
+          "t": "La Commission considère que le service médical rendu par DELTYBA (delamanide) est important dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 26,
+          "s": "Prenant e",
+          "t": "La Commission considère que DELTYBA (delamanide), en association avec une pluri-antibiothérapie appropriée, apporte une amélioration du service médical rendu modérée (ASMR III) chez les enfants et les nourrissons ...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "asmr_revendique_enum": "III"
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19667_poso_01",
+      "evaluation_id": "CT-19667",
+      "smr_asmr_id": "CT-19667_smrasmr_01",
+      "indication": "Traitement de la tuberculose pulmonaire multirésistante (TB-MR) chez les adultes, les adolescents, les enfants et les nourrissons ayant un poids corporel supérieur ou égal à 10 kg",
+      "population_cible": "Enfants, adolescents et adultes",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Adultes : 100 mg deux fois par jour pendant 24 semaines. Enfants >10-<20 kg : 25 mg deux fois par jour. 20-<30 kg : 50 mg matin, 25 mg soir. 30-<50 kg : 50 mg deux fois par jour. ≥ 50 kg : 100 mg deux fois par jour.",
+      "phases": [
+        {
+          "phase_nom": "Traitement continu",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "Variable selon poids",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 12
+          },
+          "voie_administration": "Orale",
+          "expected_phase_duration_days": 168
+        }
+      ],
+      "ajustements_poso_brut": "Aucune adaptation posologique n’est jugée nécessaire pour insuffisance rénale légère à modérée. Déconseillé en insuffisance hépatique modérée à sévère.",
+      "commentaires": "Le delamanide doit être pris avec les repas. Pièces dispersibles doivent être dissoutes dans de l’eau.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "Posologie",
+          "t": "Adolescents, enfants et nourrissons : doses adaptées selon poids corporel, administrées deux fois par jour pendant 24 semaines.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "ajustements_poso_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "Posologie",
+          "t": "Aucune adaptation posologique n’est jugée nécessaire chez les patients présentant une insuffisance rénale légère à modérée. Déconseillé chez insuffisance hépatique modérée à sévère.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19667_event_AMM_01",
+      "evaluation_id": "CT-19667",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2014-04-28",
+      "detail_brut": "AMM conditionnelle européenne accordée chez l'adulte pour DELTYBA.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 4,
+          "s": "DELTYBA a",
+          "t": "DELTYBA a obtenu une autorisation de mise sur le marché conditionnelle européenne le 28 avril 2014.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19667_event_EXT_IND_01",
+      "evaluation_id": "CT-19667",
+      "event_type": "EXTENSION_INDICATION_ADOPTE",
+      "event_date": "2021-09-16",
+      "detail_brut": "Extension d’indication pédiatrique aux enfants et nourrissons ≥ 10 kg.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 4,
+          "s": "La présente",
+          "t": "L’extension d’indication pédiatrique a été obtenue le 16 septembre 2021.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19667_event_ADOPTION_CT_01",
+      "evaluation_id": "CT-19667",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-04-20",
+      "detail_brut": "Adoption avis final Commission de la Transparence.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 27,
+          "s": "Avis vers",
+          "t": "La Commission a adopté son avis favorable le 20 avril 2022.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19667",
+    "delai_amm_ct_jours": 2894,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19667",
+    "is_orphan": true,
+    "classe_ATC_l2": "Anti-mycobactériens",
+    "aire_therapeutique": "Infectiologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 2,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": 24,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": true,
+    "nb_votants": 15,
+    "voix_pour_pct": 100,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": []
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19667",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19667_essai_232",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19667",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19667_essai_233",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19667",
+      "tgt_type": "Comparateurs_HAS",
+      "tgt_id": "CT-19667_compHAS_01",
+      "label": "EVAL_HAS_ECO"
+    }
+  ],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19667",
+    "contribution_presente": false,
+    "contribution_id": "Non renseigné",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  }
+}
