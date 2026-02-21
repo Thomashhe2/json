@@ -1,0 +1,1242 @@
+{
+  "schema_version": "3.3.5-production",
+  "doc_id": "CT-19777",
+  "evaluation_id": "CT-19777",
+  "extraction_date": "2022-03-09",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-03-09",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_octagam_neuropathiemotricemultifocale_pis_rcp_avisdef_ct19777.pdf",
+        "type": "CT",
+        "page_count": 37
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "sec_1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis version définitive",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "HAS - Direction de l'Evaluation et de l’Accès à l’Innovation",
+      "expected_fields": [
+        "evaluation_id",
+        "doc_type",
+        "date_evaluation",
+        "produit_nom"
+      ],
+      "routing_hint": "Métadonnées et synthèse initiale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_2",
+      "section_label_normalise": "CONTEXTE",
+      "section_label_brut": "01 CONTEXTE",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "01 CONTEXTE",
+      "expected_fields": [
+        "contexte_evaluation",
+        "type_avis",
+        "historique_amm"
+      ],
+      "routing_hint": "Contexte de la demande d'extension d'indication",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_3",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "02 INDICATIONS",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "02 INDICATIONS",
+      "expected_fields": [
+        "indication",
+        "population_cible"
+      ],
+      "routing_hint": "Indications thérapeutiques du RCP",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_4",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "03 POSOLOGIE",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "03 POSOLOGIE",
+      "expected_fields": [
+        "posologie",
+        "voie_administration"
+      ],
+      "routing_hint": "Posologie pour la NMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_5",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "04 BESOIN THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "04 BESOIN THERAPEUTIQUE",
+      "expected_fields": [
+        "besoin_medical_brut",
+        "gravite_patho",
+        "epidemiologie"
+      ],
+      "routing_hint": "Description de la maladie et prise en charge actuelle",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_6",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "05 COMPARATEURS",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "05 COMPARATEURS",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Liste des comparateurs cliniquement pertinents",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_7",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "08 ANALYSE DES DONNEES DISPONIBLES",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "08 ANALYSE DES DONNEES DISPONIBLES",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Resultats_Efficacite"
+      ],
+      "routing_hint": "Analyse des études d'efficacité",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_8",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "08.2 Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 10,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "08.2 Tolérance",
+      "expected_fields": [
+        "effets_indesirables",
+        "risques_identifies"
+      ],
+      "routing_hint": "Profil de tolérance d'OCTAGAM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "sec_9",
+      "section_label_normalise": "CONCLUSIONS",
+      "section_label_brut": "011 CONCLUSIONS DE LA COMMISSION",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 12,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "011 CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "population_cible",
+        "avis_favorable"
+      ],
+      "routing_hint": "Conclusions sur le SMR, l'ASMR et la population",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19777_prod_01",
+      "evaluation_id": "CT-19777",
+      "produit_nom_commercial": "OCTAGAM 100 mg/ml",
+      "dci": "immunoglobuline humaine normale",
+      "forme_pharmaceutique": "solution pour perfusion",
+      "titulaire_amm": "OCTAPHARMA",
+      "code_cis": "Non renseigné",
+      "code_cip13": "34009 576 182 1, 34009 576 183 8, 34009 576 184 4, 34009 576 185 0",
+      "classe_ATC": "J06BA02",
+      "statut_amm": "Valide",
+      "type_produit": "Médicament",
+      "statut_liste": "Collectivités",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 13,
+          "s": "Presen",
+          "t": "Présentations concernées OCTAGAM 100 mg/ml, solution pour perfusion",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "Immuno",
+          "t": "Immunoglobuline humaine normale OCTAGAM 100 mg/ml, solution pour perfusion",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 13,
+          "s": "Code A",
+          "t": "Code ATC J06BA02 Immunoglobulines humaines normales pour administration intravasculaire",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19777",
+      "Num_avis": "CT-19777",
+      "produit_nom": "OCTAGAM 100 mg/ml, solution pour perfusion",
+      "dci": "immunoglobuline humaine normale",
+      "type_avis": "Extension d'indication et modifications de l'AMM",
+      "type_avis_enum": "Extension_indication",
+      "forme": "solution pour perfusion",
+      "dosage": "100 mg/ml",
+      "indication": "Neuropathie motrice multifocale (NMM) de l'adulte, l'enfant et l'adolescent (0-18 ans)",
+      "classe_ATC": "J06BA02",
+      "pathologie": "Neuropathie motrice multifocale",
+      "maladie_rare": true,
+      "ligne_traitement": "Traitement de première intention",
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "Adultes, enfants, adolescents (0-18 ans)",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Immunomodulation",
+      "aire_therapeutique_niveau_3": "Neuropathies dysimmunitaires",
+      "source_aire_therapeutique": "Déduit ATC J06BA02 et indication",
+      "design_etude": "Harmonisation des RCP européens, données de littérature",
+      "niveau_preuve_brut": "Données issues de la littérature (études randomisées vs placebo, méta-analyse)",
+      "niveau_preuve_interprete": "Meta_analyse",
+      "besoin_medical_brut": "Le besoin médical est actuellement partiellement couvert par les Ig IV actuellement disponibles et des immunosuppresseurs/immunomodulateurs hors AMM.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Neurologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "0-18 ans et adultes",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Voir tableau comparateurs",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-03-09",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "La neuropathie motrice multifocale est une maladie grave qui évolue vers un handicap et une dégradation marquée de la qualité de vie.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes, enfants et adolescents (0-18 ans) ayant une neuropathie motrice multifocale",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : les autres immunoglobulines humaines normales intraveineuses avec AMM dans la NMM (TEGELINE, KIOVIG, CLAIRYG, PRIVIGEN, FLEBOGAMMA DIF, GAMUNEX).",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "L’esse",
+          "t": "Avis favorable au remboursement dans la nouvelle indication : neuropathie motrice multifocale de l’adulte, l’enfant et l’adolescent (0-18 ans).",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "Modifi",
+          "t": "Modifications de l’AMM Nouvelle indication",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 4,
+          "s": "Il s’a",
+          "t": "Il s’agit d’une maladie rare dont la prévalence est estimée à 1,5/100 000.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 1,
+          "s": "Place ",
+          "t": "Dans la nouvelle indication, au même titre que les autres spécialités d’immunoglobuline humaine normale, OCTAGAM 100 mg/ml [...] est un traitement de première intention chez l’adulte, l’enfant et l’adolescent (0-18 ans)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "COMMIS",
+          "t": "COMMISSION DE LA TRANSPARENCE AVIS 9 MARS 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19777_essai_Hahn2013",
+      "evaluation_id": "CT-19777",
+      "nom_essai": "Hahn et al. (2013)",
+      "nct_number": "Non renseigné",
+      "design": "RCT en double aveugle, croisé vs placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Patients atteints de neuropathie motrice multifocale",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": "Non renseigné",
+      "nb_patient_comparateur": "Non renseigné",
+      "resultat_global": "Différence significative de force musculaire entre Ig IV et placebo",
+      "QoL_flag": false,
+      "niveau_preuve": "Étude randomisée contrôlée",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "44",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 7,
+          "s": "Etude ",
+          "t": "Etude de Hahn et al. (2013) : Il s‘agit d’une étude randomisée, en double aveugle, croisée (2 périodes de 12 semaines) versus placebo réalisée chez 44 patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19777_essai_vanSchaik2005",
+      "evaluation_id": "CT-19777",
+      "nom_essai": "van Schaik et al. (2005) - Méta-analyse",
+      "nct_number": "Non renseigné",
+      "design": "Méta-analyse d'études randomisées vs placebo",
+      "design_enum": "Meta_analyse",
+      "population_cible": "Patients atteints de neuropathie motrice multifocale",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": "18 traitements par Ig IV",
+      "nb_patient_comparateur": "18 traitements par placebo",
+      "resultat_global": "Amélioration significative de la force musculaire avec Ig IV vs placebo",
+      "QoL_flag": false,
+      "niveau_preuve": "Méta-analyse",
+      "pooling_flag": true,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non renseigné",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "34",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 7,
+          "s": "Méta-a",
+          "t": "Méta-analyse de van Schaik et al. (2005)7 publiée dans la Cochrane Library : Cette méta-analyse a inclus 4 études regroupant 34 patients, randomisées, versus placebo.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19777_essai_Hahn2013_crit_force_musculaire",
+      "evaluation_id": "CT-19777",
+      "essai_id": "CT-19777_essai_Hahn2013",
+      "nom_critere": "Force musculaire (préhension maximale moyenne de la main la plus touchée)",
+      "nature_critere": "Fonctionnel",
+      "unite_mesure": "pourcentage de variation",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "augmentation de 3,75%",
+      "valeur_groupe_comparateur": "diminution de 31,38%",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "p = 0,005",
+      "p_value_num": 0.005,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 7,
+          "s": "La for",
+          "t": "La force musculaire moyenne (préhension maximale moyenne de la main la plus touchée) a diminué de 31,38 % dans le groupe placebo alors qu’elle a augmenté de 3,75 %) dans le groupe Ig IV, avec une différence significative entre les deux groupes (p = 0,005).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19777_essai_vanSchaik2005_crit_handicap",
+      "evaluation_id": "CT-19777",
+      "essai_id": "CT-19777_essai_vanSchaik2005",
+      "nom_critere": "Amélioration du handicap",
+      "nature_critere": "Fonctionnel",
+      "unite_mesure": "ratio de risque (RR)",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "7/18 (39%)",
+      "valeur_groupe_comparateur": "2/18 (11%)",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "RR = 3, IC95 % = [0,89 ; 0,12]",
+      "HR_RR_OR_num": 3.0,
+      "IC95": "[0,89 ; 0,12]",
+      "IC95_low_num": 0.89,
+      "IC95_high_num": 0.12,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "RR",
+      "type_effet": "RR",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "HR_RR_OR",
+          "f": "F1",
+          "p": 7,
+          "s": "Critère",
+          "t": "Critère de jugement principal (3 études, n = 18) : une amélioration significative du handicap par rapport à l’inclusion et évaluée entre 2 et 4 semaines après le dernier traitement a été pour 7/18 (39 %) traitements par Ig IV versus 2/18 (11 %) traitements, sans différence significative entre les traitements par Ig IV et les traitements par placebo (RR = 3, IC95 % = [0,89 ; 0,12]).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19777_essai_vanSchaik2005_crit_force_musculaire",
+      "evaluation_id": "CT-19777",
+      "essai_id": "CT-19777_essai_vanSchaik2005",
+      "nom_critere": "Amélioration de la force musculaire",
+      "nature_critere": "Fonctionnel",
+      "unite_mesure": "ratio de risque (RR)",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "21/27 (78%)",
+      "valeur_groupe_comparateur": "1/27 (4%)",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "RR = 11, IC95 % = [2,86 ; 42,25]",
+      "HR_RR_OR_num": 11.0,
+      "IC95": "[2,86 ; 42,25]",
+      "IC95_low_num": 2.86,
+      "IC95_high_num": 42.25,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "RR",
+      "type_effet": "RR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "HR_RR_OR",
+          "f": "F1",
+          "p": 7,
+          "s": "Critère",
+          "t": "Critère de jugement secondaire (3 études, n = 27) : une amélioration de la force musculaire (préhension maximale moyenne de la main la plus touchée) évaluée entre 2 et 6 semaines après le dernier traitement a été observé chez 21/27 (78 %) patients avec les traitements par Ig IV versus 1/27 (4 %), avec une différence statistiquement significative (RR = 11, IC95 % = [2,86 ; 42,25]",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19777_essai_global_tol",
+      "evaluation_id": "CT-19777",
+      "essai_id": null,
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "signal_securite_flag",
+          "f": "F1",
+          "p": 8,
+          "s": "Sur la",
+          "t": "Sur la période couverte par le PSUR, aucun nouveau signal de tolérance n’a été détecté par rapport aux informations de tolérance mentionnées dans le RCP précédemment en vigueur.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19777_essai_Hahn2013_comp_01",
+      "essai_id": "CT-19777_essai_Hahn2013",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 7,
+          "s": "Etude ",
+          "t": "Etude de Hahn et al. (2013) : [...] versus placebo réalisée chez 44 patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19777_essai_vanSchaik2005_comp_01",
+      "essai_id": "CT-19777_essai_vanSchaik2005",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 7,
+          "s": "Méta-a",
+          "t": "Méta-analyse de van Schaik et al. (2005) [...] randomisées, versus placebo.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19777_compHAS_01",
+      "evaluation_id": "CT-19777",
+      "nom_comparateur_HAS": "TEGELINE 50 mg/ml",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "NOM (D",
+          "t": "TEGELINE 50 mg/ml, poudre et solvant pour solution pour perfusion (Ig humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19777_compHAS_02",
+      "evaluation_id": "CT-19777",
+      "nom_comparateur_HAS": "KIOVIG 100 mg/ml",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "KIOVIG",
+          "t": "KIOVIG 100 mg/ml, solution pour perfusion (Ig humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19777_compHAS_03",
+      "evaluation_id": "CT-19777",
+      "nom_comparateur_HAS": "CLAIRYG 50 mg/ml",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "CLAIRY",
+          "t": "CLAIRYG 50 mg/ml, solution pour perfusion (Ig humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19777_compHAS_04",
+      "evaluation_id": "CT-19777",
+      "nom_comparateur_HAS": "PRIVIGEN 100 mg/ml",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "PRIVIG",
+          "t": "PRIVIGEN 100 mg/ml, solution pour perfusion (Ig humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19777_compHAS_05",
+      "evaluation_id": "CT-19777",
+      "nom_comparateur_HAS": "FLEBOGAMMA DIF",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "FLEBOG",
+          "t": "FLEBOGAMMA DIF (Ig humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19777_compHAS_06",
+      "evaluation_id": "CT-19777",
+      "nom_comparateur_HAS": "GAMUNEX 100 mg/ml",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "GAMUNE",
+          "t": "GAMUNEX 100 mg/ml, solution injectable par voie intraveineuse (Ig humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [],
+  "Données_Contexte": {
+    "contexte_id": "CT-19777_ctx",
+    "evaluation_id": "CT-19777",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-06-20",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Allemagne",
+      "Belgique",
+      "Espagne",
+      "Italie",
+      "Pays-Bas",
+      "Royaume-Uni",
+      "Finlande",
+      "Danemark",
+      "Norvège",
+      "Suède"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Suède",
+        "organisme": "Non renseigné",
+        "decision": "Not_recommended",
+        "date_decision": "Non renseigné",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 2,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "environ 1 000 patients",
+    "population_cible_nombre": 1000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Orphanet et extrapolation données démographiques françaises",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": 1000,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 1,
+        "s": "Ces mo",
+        "t": "(AMM octroyée le 20/06/2021 par procédure de reconnaissance mutuelle)",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "population_cible_france",
+        "f": "F1",
+        "p": 12,
+        "s": "D’aprè",
+        "t": "La population cible de OCTAGAM (Ig humaine normale) peut être estimée à environ 1 000 patients.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19777",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19777_smrasmr_01",
+      "evaluation_id": "CT-19777",
+      "indication_precise": "Neuropathie motrice multifocale (NMM) de l'adulte, l'enfant et l'adolescent (0-18 ans)",
+      "smr": "Le service médical rendu par OCTAGAM 100 mg/ml (immunoglobuline humaine normale), solution pour perfusion, est important dans le traitement de la neuropathie motrice multifocale chez l’adulte, l’enfant et l’adolescent (0-18 ans).",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère qu’OCTAGAM 100 mg/ml (immunoglobuline humaine normale), solution pour perfusion, n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la prise en charge de la neuropathie motrice multifocale chez l’adulte, l’enfant et l’adolescent (0-18 ans) par rapport aux autres immunoglobulines humaines normales administrées par voie intraveineuse.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Compte tenu : - de la gravité de la maladie conduisant progressivement à une amyotrophie, - de la rareté de la maladie, - du besoin médical partiellement couvert par les alternatives disponibles (autres immunoglobulines humaines normales déjà disponibles dont l’effet à court terme a été démontré uniquement, immunosuppresseurs/immunomodulateurs utilisés hors AMM), - de l’absence de démonstration d’un impact supplémentaire en termes de morbi-mortalité, de qualité de vie, d’organisation des soins et de parcours de vie et de soin du patient, par rapport aux autres immunoglobulines humaines normales, - des tensions d’approvisionnement récurrentes, OCTAGAM 100 mg/ml (immunoglobuline humaine normale) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+      "population_cible_indication": "Patients adultes, enfants ou adolescents (0-18 ans) ayant une neuropathie motrice multifocale.",
+      "ligne_traitement_indication": "Traitement de première intention",
+      "comparateurs_references_indication": "Autres immunoglobulines humaines normales intraveineuses (TEGELINE, KIOVIG, CLAIRYG, PRIVIGEN, FLEBOGAMMA DIF, GAMUNEX)",
+      "comparateur_id_HAS": [
+        "CT-19777_compHAS_01",
+        "CT-19777_compHAS_02",
+        "CT-19777_compHAS_03",
+        "CT-19777_compHAS_04",
+        "CT-19777_compHAS_05",
+        "CT-19777_compHAS_06"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "0-18 ans et adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 11,
+          "s": "En cons",
+          "t": "En conséquence, la Commission considère que le service médical rendu par OCTAGAM 100 mg/ml (immunoglobuline humaine normale), solution pour perfusion, est important dans le traitement de la neuropathie motrice multifocale chez l’adulte, l’enfant et l’adolescent (0-18 ans).",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 11,
+          "s": "11.1.2",
+          "t": "La Commission considère qu’OCTAGAM 100 mg/ml (immunoglobuline humaine normale), solution pour perfusion, n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la prise en charge de la neuropathie motrice multifocale chez l’adulte, l’enfant et l’adolescent (0-18 ans) par rapport aux autres immunoglobulines humaines normales administrées par voie intraveineuse.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19777_poso_01",
+      "evaluation_id": "CT-19777",
+      "smr_asmr_id": "CT-19777_smrasmr_01",
+      "indication": "Neuropathie motrice multifocale (NMM)",
+      "population_cible": "Adultes, enfants et adolescents (0-18 ans)",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose initiale : 2 g/kg répartis sur 2 à 5 jours consécutifs. Dose d’entretien : 1 g/kg toutes les 2 à 4 semaines ou 2 g/kg toutes les 4 à 8 semaines.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "2",
+            "unite_dose": "g/kg"
+          },
+          "frequence": {
+            "type": "jours_cycle",
+            "dose_days_in_cycle": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "interval_days": null
+          },
+          "voie_administration": "intraveineuse",
+          "expected_phase_duration_days": 5
+        },
+        {
+          "phase_nom": "Entretien",
+          "cycle_length_days": 28,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "1",
+            "unite_dose": "g/kg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 14
+          },
+          "voie_administration": "intraveineuse",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "La dose doit éventuellement être individualisée pour chaque patient selon la réponse clinique. Il peut être nécessaire d’adapter la dose en fonction du poids corporel des patients qui présentent une insuffisance pondérale ou qui sont en surpoids.",
+      "commentaires": "L’effet du traitement doit être évalué après chaque cycle de traitement. Si aucun effet du traitement n’est observé après 6 mois, le traitement doit être arrêté.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "Neuropa",
+          "t": "Neuropathie motrice multifocale (NMM) Dose initiale : 2 g/kg répartis sur 2 à 5 jours consécutifs. Dose d’entretien : 1 g/kg toutes les 2 à 4 semaines ou 2 g/kg toutes les 4 à 8 semaines.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19777_event_AMM_01",
+      "evaluation_id": "CT-19777",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-06-20",
+      "detail_brut": "AMM octroyée le 20/06/2021 par procédure de reconnaissance mutuelle pour l'ajout de l'indication neuropathie motrice multifocale",
+      "source_doc": "F1 page 1",
+      "detail_type_specifique": "Extension d'indication NMM",
+      "acteurs_impliques": [
+        "EMA",
+        "OCTAPHARMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Ces mo",
+          "t": "(AMM octroyée le 20/06/2021 par procédure de reconnaissance mutuelle)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19777_event_CT_01",
+      "evaluation_id": "CT-19777",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-03-09",
+      "detail_brut": "Avis de la Commission de la Transparence adopté le 9 mars 2022",
+      "source_doc": "F1 page 1",
+      "detail_type_specifique": "Avis favorable au remboursement dans la nouvelle indication NMM",
+      "acteurs_impliques": [
+        "Commission de la Transparence HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "COMMIS",
+          "t": "COMMISSION DE LA TRANSPARENCE AVIS 9 MARS 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19777",
+    "delai_amm_ct_jours": 262,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19777",
+    "is_orphan": false,
+    "classe_ATC_l2": "J06B",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 2,
+    "n_rct": 2,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Force musculaire (préhension maximale moyenne de la main la plus touchée)",
+    "p_value_log10": 2.30102999566,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 1,
+    "template_ere": "CT_modern",
+    "missingness_indicators": [],
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19777",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19777_essai_Hahn2013",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19777",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19777_essai_vanSchaik2005",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19777_essai_Hahn2013",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19777_essai_Hahn2013_crit_force_musculaire",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19777_essai_vanSchaik2005",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19777_essai_vanSchaik2005_crit_handicap",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19777_essai_vanSchaik2005",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19777_essai_vanSchaik2005_crit_force_musculaire",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19777_essai_Hahn2013",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19777_essai_Hahn2013_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19777_essai_vanSchaik2005",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19777_essai_vanSchaik2005_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": []
+}

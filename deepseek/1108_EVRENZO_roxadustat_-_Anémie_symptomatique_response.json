@@ -1,0 +1,1328 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19516",
+  "evaluation_id": "CT-19516",
+  "extraction_date": "2022-03-30",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-03-30",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19516_EVRENZO_PIC_INS_AVIS_DEF_CT19516.pdf",
+        "type": "CT",
+        "page_count": 0
+      },
+      "F2": {
+        "file_name": "trans_2_evrenzo_30032022_transcription_ct19516_2022-04-29_15-22-44_733.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 17
+      },
+      "F3": {
+        "file_name": "trans_1_evrenzo_30032022_transcription_ct19516.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 17
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19516_seg_01",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "AVERTISSEMENT",
+      "template_detecte": "CT_modern",
+      "page_start": 0,
+      "page_end": 0,
+      "char_start": 0,
+      "char_end": 0,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [
+        "evaluation_id",
+        "produit_nom",
+        "dci",
+        "indication"
+      ],
+      "routing_hint": "Avertissement légal sur la transcription",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19516_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Introduction et présentation",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Audition d’inscription : EVRENZO",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Présentation de la séance et du laboratoire",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19516_seg_03",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Présentation du Pr Choukroun",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Questions des membres de la commission",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Arguments sur l'efficacité et la sécurité cardiovasculaire",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19516_seg_04",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Présentation du Pr Lobbedez",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Délibération et vote",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Arguments sur le besoin médical et les avantages du roxadustat",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19516_seg_05",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et réponses",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 12,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": null,
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Débats sur la tolérance, la mortalité, les thromboses",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19516_seg_06",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Délibération et vote",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 12,
+      "page_end": 17,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": null,
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Discussion finale et votes sur SMR/ASMR",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19516_prod_01",
+      "evaluation_id": "CT-19516",
+      "nom_commercial": "EVRENZO",
+      "dci": "roxadustat",
+      "code_atc": "B03XA05",
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19516",
+      "Num_avis": "CT-19516",
+      "produit_nom": "EVRENZO",
+      "dci": "roxadustat",
+      "type_avis": "Inscription",
+      "forme": "comprimés pelliculés",
+      "dosage": "20 mg, 50 mg, 70 mg, 100 mg, 150 mg",
+      "indication": "Traitement des patients adultes présentant une anémie symptomatique associée à une maladie rénale chronique (MRC)",
+      "classe_ATC": "B03XA05",
+      "pathologie": "Maladie rénale chronique",
+      "maladie_rare": false,
+      "ligne_traitement": "1ère intention",
+      "sous_groupe_population": "Patients adultes non dialysés ou dialysés depuis moins de 4 mois, non traités par agent stimulant l'érythropoïèse (ASE)",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Hématologie",
+      "aire_therapeutique_niveau_2": "Anémie",
+      "aire_therapeutique_niveau_3": "Anémie associée à une maladie rénale chronique",
+      "source_aire_therapeutique": "Déduit ATC B03XA05",
+      "design_etude": "8 études de phase III",
+      "niveau_preuve_brut": "Études de phase III",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Non renseigné",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "type_avis_enum": "Inscription",
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [
+        "Non renseigné"
+      ],
+      "type_population_cible": "Patients adultes",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-03-30",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "EVRENZO",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "roxadustat",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "Traitement des patients adultes présentant une anémie symptomatique associée à une maladie rénale chronique (MRC)",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "forme",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "comprimés pelliculés",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19516_essai_01",
+      "evaluation_id": "CT-19516",
+      "nom_essai": "Études de phase III (nom non spécifié)",
+      "nct_number": "Non renseigné",
+      "design": "RCT",
+      "population_cible": "Patients adultes présentant une anémie symptomatique associée à une maladie rénale chronique",
+      "comparateur_utilise": "Placebo et agents stimulant l'érythropoïèse (ASE)",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Démonstration d'une efficacité non inférieure aux ASE sur la correction et le contrôle de l'hémoglobine",
+      "QoL_flag": null,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": null,
+      "population_dedoublée": null,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Non renseigné",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "8 études de phase III",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "Démonstration d'une efficacité non inférieure aux ASE sur la correction et le contrôle de l'hémoglobine",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19516_essai_01_crit_01",
+      "evaluation_id": "CT-19516",
+      "essai_id": "CT-19516_essai_01",
+      "nom_critere": "Correction et contrôle de l'hémoglobine",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "Non renseigné",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Non renseigné",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Non renseigné",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19516_essai_01_tol",
+      "evaluation_id": "CT-19516",
+      "essai_id": "CT-19516_essai_01",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": null,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Thrombose de la fistule artério-veineuse",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Hypertension",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Œdème périphérique",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Hyperkaliémie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Nausée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "5",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Risque d'événements indésirables graves plus élevé que sous ASE, notamment de thrombose de la fistule artério-veineuse",
+      "EI_frequents": "Hypertension, Thrombose de l'accès vasculaire, Diarrhée, Œdème périphérique, Hyperkaliémie, Nausée",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "Risque d'événements indésirables graves plus élevé que sous ASE, notamment de thrombose de la fistule artério-veineuse",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19516_essai_01_comp_01",
+      "essai_id": "CT-19516_essai_01",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19516_essai_01_comp_02",
+      "essai_id": "CT-19516_essai_01",
+      "nom_comparateur": "Agents stimulant l'érythropoïèse (ASE)",
+      "type_comparateur": "ActiveComparator",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Therapie_ciblee",
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19516_compHAS_01",
+      "evaluation_id": "CT-19516",
+      "nom_comparateur_HAS": "Agents stimulant l'érythropoïèse (ASE)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Therapie_ciblee",
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19516_arg_TRANS_1",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "description": "Non-infériorité du roxadustat par rapport aux ASE pour la correction et le maintien de l'hémoglobine, avec un moindre recours au fer intraveineux.",
+      "extrait_textuel": "Le traitement par roxadustat a démontré son efficacité chez les patients non-dialysés et les patients dialysés incidents avec une non-infériorité du roxadustat par rapport à la darbépoétine alpha.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Choukroun",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19516",
+          "t": "Le traitement par roxadustat a démontré son efficacité chez les patients non-dialysés et les patients dialysés incidents avec une non-infériorité du roxadustat par rapport à la darbépoétine alpha.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_2",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "description": "Pas d'augmentation du risque cardiovasculaire ou de mortalité avec le roxadustat par rapport à un ASE chez les patients non-dialysés et dialysés incidents.",
+      "extrait_textuel": "Les études de sécurité montrent qu’il n’y a pas d’augmentation du risque cardiovasculaire ou de mortalité avec le roxadustat par rapport à un ASE chez les patients non-dialysés et chez les patients dialysés incidents.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr Choukroun",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19516",
+          "t": "Les études de sécurité montrent qu’il n’y a pas d’augmentation du risque cardiovasculaire ou de mortalité avec le roxadustat par rapport à un ASE chez les patients non-dialysés et chez les patients dialysés incidents.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_3",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Besoin_médical",
+      "description": "Avantage de la voie orale (trois comprimés par semaine) et réduction des besoins en fer intraveineux, simplifiant la prise en charge.",
+      "extrait_textuel": "L’administration est très simple puisque c’est une voie orale. Ce sont trois comprimés par semaine. Il n’y a pas de conditions de délivrance ou de stockage particulières... la réduction attendue des besoins en fer injectable aura vraiment un impact majeur.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Lobbedez",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19516",
+          "t": "L’administration est très simple puisque c’est une voie orale. Ce sont trois comprimés par semaine. Il n’y a pas de conditions de délivrance ou de stockage particulières... la réduction attendue des besoins en fer injectable aura vraiment un impact majeur.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_4",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "description": "Augmentation des thromboses de fistule artérioveineuse observée dans les études, liée possiblement à la correction de l'anémie.",
+      "extrait_textuel": "Un point avait été soulevé aussi dans les discussions. On l’avait mentionné dans la vie. Il y avait davantage de patients qui avaient des hémoglobines au-dessus de 12, 13 gr.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "CT-19516",
+          "t": "Un point avait été soulevé aussi dans les discussions. On l’avait mentionné dans la vie. Il y avait davantage de patients qui avaient des hémoglobines au-dessus de 12, 13 gr.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_5",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "description": "Surrisque de mortalité observé chez les patients dialysés stables en conversion d'un traitement par ASE, non revendiqué par le laboratoire.",
+      "extrait_textuel": "Les patients dialysés stables en conversion d’un ASE versus maintien de l’agence stimulant l’érythropoïèse. De fait, les résultats étaient en défaveur, en particulier pour la mortalité totale.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "CT-19516",
+          "t": "Les patients dialysés stables en conversion d’un ASE versus maintien de l’agence stimulant l’érythropoïèse. De fait, les résultats étaient en défaveur, en particulier pour la mortalité totale.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_6",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population",
+      "description": "Débat sur la poursuite du traitement chez les dialysés après 4 mois, avec incertitude sur les risques de changement de traitement.",
+      "extrait_textuel": "Si on autorise le produit chez les dialysés incidents, est-ce que la prescription ne va pas se poursuivre ensuite ad vitam aeternam ?",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Pr Daubert",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19516",
+          "t": "Si on autorise le produit chez les dialysés incidents, est-ce que la prescription ne va pas se poursuivre ensuite ad vitam aeternam ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_01",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Roxadustat efficace pour corriger et maintenir l'hémoglobine, non-inférieur aux ASE, avec moindre recours au fer IV.",
+      "extrait_textuel": "Le traitement par roxadustat a démontré son efficacité... avec une non-infériorité du roxadustat par rapport à la darbépoétine alpha... L'avantage... est également un moindre recours au fer intraveineux.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Choukroun",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19516_seg_02",
+          "t": "Le traitement par roxadustat a démontré son efficacité... avec une non-infériorité du roxadustat par rapport à la darbépoétine alpha... L'avantage... est également un moindre recours au fer intraveineux.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_02",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Favorable",
+      "description": "Pas d'augmentation du risque cardiovasculaire ou de mortalité avec roxadustat vs ASE chez les non-dialysés et dialysés incidents.",
+      "extrait_textuel": "Les études de sécurité montrent qu'il n'y a pas d'augmentation du risque cardiovasculaire ou de mortalité avec le roxadustat par rapport à un ASE chez les patients non-dialysés et chez les patients dialysés incidents.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr Choukroun",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19516_seg_02",
+          "t": "Les études de sécurité montrent qu'il n'y a pas d'augmentation du risque cardiovasculaire ou de mortalité avec le roxadustat par rapport à un ASE chez les patients non-dialysés et chez les patients dialysés incidents.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_03",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Avantages pratiques : administration orale, simplification du traitement, réduction des besoins en fer IV, préservation du capital veineux.",
+      "extrait_textuel": "L'administration est très simple puisque c'est une voie orale... la réduction attendue des besoins en fer injectable aura vraiment un impact majeur sur la prise en charge des patientes... préserver le réseau veineux de ces patients.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr Lobbedez",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19516_seg_02",
+          "t": "L'administration est très simple puisque c'est une voie orale... la réduction attendue des besoins en fer injectable aura vraiment un impact majeur sur la prise en charge des patientes... préserver le réseau veineux de ces patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_04",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Inquiétudes sur la thrombose de fistule et la rapidité d'augmentation de l'hématocrite.",
+      "extrait_textuel": "Un des points qui a été soulevé, surtout par la Commission de la Transparence, c'était la tolérance. Vous n'avez, ni toi, ni Monsieur Lobbedez, reparlé des accidents de thrombose de fistule.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr Cochat",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19516_seg_03",
+          "t": "Un des points qui a été soulevé, surtout par la Commission de la Transparence, c'était la tolérance. Vous n'avez, ni toi, ni Monsieur Lobbedez, reparlé des accidents de thrombose de fistule.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_05",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Augmentation de la mortalité globale de 20 à 40% dans certaines populations.",
+      "extrait_textuel": "Dans les études de tolérance, on est d'accord. Les analyses ont montré une augmentation de la mortalité globale de 20 à 40 % dans deux sous-populations.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pr Lega",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 9,
+          "s": "CT-19516_seg_03",
+          "t": "Dans les études de tolérance, on est d'accord. Les analyses ont montré une augmentation de la mortalité globale de 20 à 40 % dans deux sous-populations.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_06",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Neutre",
+      "description": "Débat sur le bénéfice de la correction de l'anémie vs risque de mortalité avec les correcteurs.",
+      "extrait_textuel": "Quel est le bénéfice de la correction de l'anémie dans ce cas-là, si on sait que les médicaments correcteurs, de façon systématique, augmentent la mortalité ?",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Dr Blondon",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19516_seg_03",
+          "t": "Quel est le bénéfice de la correction de l'anémie dans ce cas-là, si on sait que les médicaments correcteurs, de façon systématique, augmentent la mortalité ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19516_arg_TRANS_07",
+      "evaluation_id": "CT-19516",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "Question sur la poursuite du traitement après 4 mois de dialyse et risque de changement de médicament.",
+      "extrait_textuel": "Si on autorise le produit chez les dialysés incidents, est-ce que la prescription ne va pas se poursuivre ensuite ad vitam aeternam ?",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Pr Daubert",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19516_seg_04",
+          "t": "Si on autorise le produit chez les dialysés incidents, est-ce que la prescription ne va pas se poursuivre ensuite ad vitam aeternam ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19516_ctx",
+    "evaluation_id": "CT-19516",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Au maximum 200 000 patients",
+    "population_cible_nombre": 200000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19516",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19516_smrasmr_01",
+      "evaluation_id": "CT-19516",
+      "indication_precise": "Traitement des patients adultes présentant une anémie symptomatique associée à une maladie rénale chronique (MRC)",
+      "smr": "Uniquement chez les patients qui ne sont pas déjà traités par un ASE, non dialysés ou dialysés depuis moins de 4 mois",
+      "asmr": "Pas d'amélioration du service médical rendu en comparaison aux agents stimulant l'érythropoïèse (ASE) dans le traitement de l'anémie symptomatique associée à une MRC chez les patients adultes non dialysés ou dialysés depuis moins de 4 mois et n'étant pas en cours de traitement par un ASE",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Non renseigné",
+      "population_cible_indication": "Patients adultes avec anémie symptomatique associée à une MRC, non dialysés ou dialysés depuis moins de 4 mois, non traités par ASE",
+      "ligne_traitement_indication": "1ère intention",
+      "comparateurs_references_indication": "Agents stimulant l'érythropoïèse (ASE)",
+      "comparateur_id_HAS": "CT-19516_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": null,
+      "qol_cite": null,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "Uniquement chez les patients qui ne sont pas déjà traités par un ASE, non dialysés ou dialysés depuis moins de 4 mois",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "Pas d'amélioration du service médical rendu en comparaison aux agents stimulant l'érythropoïèse (ASE) dans le traitement de l'anémie symptomatique associée à une MRC chez les patients adultes non dialysés ou dialysés depuis moins de 4 mois et n'étant pas en cours de traitement par un ASE",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19516_poso_01",
+      "evaluation_id": "CT-19516",
+      "smr_asmr_id": "CT-19516_smrasmr_01",
+      "indication": "Traitement des patients adultes présentant une anémie symptomatique associée à une maladie rénale chronique (MRC)",
+      "population_cible": "Patients adultes non dialysés ou dialysés depuis moins de 4 mois, non traités par ASE",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Voie orale, 3 fois par semaine lors de jours non consécutifs. Dose initiale : 70 mg si poids < 100 kg, 100 mg si poids ≥ 100 kg. Adaptation pour maintenir l'hémoglobine entre 10 et 12 g/dL. Dose maximale : patients non dialysés : 3 mg/kg ou 300 mg trois fois par semaine ; patients dialysés : 3 mg/kg ou 400 mg trois fois par semaine.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "70 mg si poids < 100 kg, 100 mg si poids ≥ 100 kg",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxs",
+            "dose_days_in_cycle": [],
+            "interval_days": null
+          },
+          "voie_administration": "orale",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Pour maintenir l'hémoglobine entre 10 et 12 g/dL, avec ajustements toutes les 4 semaines basés sur l'hémoglobine actuelle et sa variation",
+      "commentaires": "Non renseigné",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 0,
+          "s": "CT-19516",
+          "t": "Voie orale, 3 fois par semaine lors de jours non consécutifs. Dose initiale : 70 mg si poids < 100 kg, 100 mg si poids ≥ 100 kg. Adaptation pour maintenir l'hémoglobine entre 10 et 12 g/dL. Dose maximale : patients non dialysés : 3 mg/kg ou 300 mg trois fois par semaine ; patients dialysés : 3 mg/kg ou 400 mg trois fois par semaine.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19516_event_CT_01",
+      "evaluation_id": "CT-19516",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-03-30",
+      "detail_brut": "Audition du laboratoire Astellas pour EVRENZO",
+      "source_doc": "Transcription",
+      "detail_type_specifique": "Audition d'inscription",
+      "acteurs_impliques": [
+        "Astellas",
+        "Pr Choukroun",
+        "Pr Lobbedez",
+        "Commission de Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19516",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19516",
+    "is_orphan": false,
+    "classe_ATC_l2": "B03",
+    "aire_therapeutique": "Hématologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnu": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Correction et contrôle de l'hémoglobine",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": null,
+    "annee_ct": null,
+    "trimestre_ct": null,
+    "template_ere": "CT_modern",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19516",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19516_essai_01",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19516_essai_01",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19516_essai_01_crit_01",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19516_essai_01",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19516_essai_01_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19516_essai_01",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19516_essai_01_comp_02",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19516_essai_01",
+      "tgt_type": "TOLERANCE",
+      "tgt_id": "CT-19516_essai_01_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": [],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19516_vote_1",
+      "evaluation_id": "CT-19516",
+      "type_vote": "SMR",
+      "description": "Vote sur le maintien du SMR insuffisant pour l'ensemble de l'AMM",
+      "resultat": "Rejeté",
+      "nb_votants": 18,
+      "nb_voix_pour": 6,
+      "nb_voix_contre": 11,
+      "nb_abstentions": 1,
+      "details": "6 voix pour le maintien, 11 voix contre le maintien et 1 abstention.",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19516",
+          "t": "Nous avons 6 voix pour le maintien, 11 voix contre le maintien et 1 abstention.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19516_vote_2",
+      "evaluation_id": "CT-19516",
+      "type_vote": "SMR_ASMR",
+      "description": "Vote dans le périmètre restreint (non-dialysés et dialysés incidents)",
+      "resultat": "SMR important et ASMR V adoptés",
+      "nb_votants": 18,
+      "nb_voix_pour_SMR_important": 8,
+      "nb_voix_pour_SMR_modéré": 6,
+      "nb_voix_pour_SMR_insuffisant": 2,
+      "nb_abstentions_SMR": 2,
+      "nb_voix_pour_ASMR_V": 16,
+      "nb_abstentions_ASMR": 2,
+      "nb_voix_pour_miroir_SMR_insuffisant": 17,
+      "nb_abstentions_miroir": 1,
+      "details": "SMR: 8 voix important, 6 modéré, 2 insuffisant, 2 abstentions. ASMR: 16 voix V, 2 abstentions. Miroir SMR insuffisant: 17 voix pour, 1 abstention.",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19516",
+          "t": "Concernant le SMR, 8 voix pour un SMR important, 6 voix pour un SMR modéré, 2 voix pour un SMR insuffisant et 2 abstentions. Concernant l'ASMR, 16 voix pour une ASMR V et 2 abstentions. 17 voix pour un SMR insuffisant en miroir et 1 abstention.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "sujet_vote": "SMR dans le périmètre restreint (non-dialysés et dialysés incidents)",
+      "pages": [
+        16
+      ]
+    }
+  ],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19516_interv_1",
+      "evaluation_id": "CT-19516",
+      "nom_expert": "Pr Choukroun",
+      "role": "Expert clinique",
+      "affiliation": "Néphrologue",
+      "sujet_intervention": "Efficacité et sécurité du roxadustat",
+      "points_cles": [
+        "Non-infériorité vs ASE",
+        "Sécurité cardiovasculaire",
+        "Moindre recours au fer IV"
+      ],
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19516",
+          "t": "Mon activité est centrée principalement sur la néphrologie clinique et la transplantation rénale, avec en expertise des travaux de recherche autour des complications de la maladie rénale, y compris l'anémie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19516_interv_2",
+      "evaluation_id": "CT-19516",
+      "nom_expert": "Pr Lobbedez",
+      "role": "Expert clinique",
+      "affiliation": "CHU de Caen, vice-président de la commission dialyse",
+      "sujet_intervention": "Besoin médical et avantages du roxadustat",
+      "points_cles": [
+        "Avantage voie orale",
+        "Réduction du fer IV",
+        "Préservation du capital veineux"
+      ],
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19516",
+          "t": "Je suis néphrologue. Je travaille au CHU de Caen. Je suis principalement des patients atteints d’une maladie rénale chronique au stade avancé et des patients traités par dialyse en général.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "expert_nom": "Pr Choukroun",
+      "institution": "CHU de Caen"
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19516_point_1",
+      "evaluation_id": "CT-19516",
+      "sujet": "Thrombose de fistule artérioveineuse",
+      "description": "Débat sur l'augmentation observée des thromboses de fistule, lien possible avec la correction de l'anémie et la vitesse d'augmentation de l'hématocrite.",
+      "intervenants": [
+        "Pr Cochat",
+        "Pr Lobbedez",
+        "Chef de projet HAS"
+      ],
+      "controverses": "Le laboratoire n'a pas répondu sur la vitesse d'augmentation de l'hématocrite.",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19516",
+          "t": "Un des points qui a été soulevé, surtout par la Commission de la Transparence, c’était la tolérance. Vous n’avez, ni toi, ni Monsieur Lobbedez, reparlé des accidents de thrombose de fisture.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19516_point_2",
+      "evaluation_id": "CT-19516",
+      "sujet": "Mortalité chez les dialysés stables en conversion",
+      "description": "Discussion sur la surmortalité observée dans cette sous-population, non revendiquée par le laboratoire.",
+      "intervenants": [
+        "Pr Lega",
+        "Chef de projet HAS"
+      ],
+      "controverses": "Augmentation de 20 à 40% de la mortalité globale signalée, ce qui est rare pour une molécule.",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 9,
+          "s": "CT-19516",
+          "t": "Dans les études de tolérance, on est d’accord. Les analyses ont montré une augmentation de la mortalité globale de 20 à 40 % dans deux sous-populations.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19516_point_3",
+      "evaluation_id": "CT-19516",
+      "sujet": "Poursuite du traitement après 4 mois de dialyse",
+      "description": "Débat sur la continuation du traitement chez les dialysés incidents après la période de 4 mois, avec incertitude sur les risques de changement de traitement.",
+      "intervenants": [
+        "Pr Daubert",
+        "Pr Cochat",
+        "Pr Clanet"
+      ],
+      "controverses": "Risque de surrisque lors du changement de traitement, manque de données.",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19516",
+          "t": "Si on autorise le produit chez les dialysés incidents, est-ce que la prescription ne va pas se poursuivre ensuite ad vitam aeternam ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "pages": [
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19516",
+    "contribution_presente": false,
+    "contribution_id": "Non renseigné",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  }
+}
