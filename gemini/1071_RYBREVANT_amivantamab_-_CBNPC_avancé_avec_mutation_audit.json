@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[0].magnitude_effet_categorie",
+        "gpt_claim": "FAIBLE",
+        "deepseek_claim": "MODERE",
+        "evidence": "SMR insuffisant et ASMR V (absence d'amélioration) indiquent une magnitude d'effet cliniquement non significative ou faible selon la grille HAS.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Tolérance[0].sae_pct",
+        "gpt_claim": "41.8",
+        "deepseek_claim": "null",
+        "evidence": "Le texte mentionne explicitement : 'La fréquence des EI de grades ≥ 3 a été de 41,8%'.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication[0].asmr_enum",
+        "gpt_claim": "V",
+        "deepseek_claim": "null",
+        "evidence": "L'avis conclut explicitement à une ASMR V (cf. section 10 de l'avis CT).",
+        "severity": "high"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.caractere_innovant_reconnu",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "L'avis mentionne un SMR insuffisant, ce qui exclut techniquement la reconnaissance d'un caractère innovant au sens strict de la HAS.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.9,
+      "rationale_short": "GPT a capturé des données cliniques critiques (pourcentage d'EI graves, valeur de l'ASMR) que DeepSeek a laissées en null. GPT respecte mieux la cohérence méthodologique HAS (Magnitude Faible vs SMR Insuffisant)."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[0].magnitude_effet_categorie\",\n      \"gpt_claim\": \"FAIBLE\",\n      \"deepseek_claim\": \"MODERE\",\n      \"evidence\": \"SMR insuffisant et ASMR V (absence d'amélioration) indiquent une magnitude d'effet cliniquement non significative ou faible selon la grille HAS.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Tolérance[0].sae_pct\",\n      \"gpt_claim\": \"41.8\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Le texte mentionne explicitement : 'La fréquence des EI de grades ≥ 3 a été de 41,8%'.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication[0].asmr_enum\",\n      \"gpt_claim\": \"V\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"L'avis conclut explicitement à une ASMR V (cf. section 10 de l'avis CT).\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.caractere_innovant_reconnu\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"L'avis mentionne un SMR insuffisant, ce qui exclut techniquement la reconnaissance d'un caractère innovant au sens strict de la HAS.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"GPT a capturé des données cliniques critiques (pourcentage d'EI graves, valeur de l'ASMR) que DeepSeek a laissées en null. GPT respecte mieux la cohérence méthodologique HAS (Magnitude Faible vs SMR Insuffisant).\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

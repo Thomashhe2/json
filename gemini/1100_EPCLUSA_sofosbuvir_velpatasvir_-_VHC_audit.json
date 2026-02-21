@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "1 essai (GS-US-342-1143)",
+        "deepseek_claim": "6 essais (GS-US-342-1143 + ASTRAL 1-4 + HEPATHER)",
+        "evidence": "L'évaluation CT-19718 porte spécifiquement sur l'extension pédiatrique basée sur l'étude GS-US-342-1143. Les études ASTRAL concernent l'historique adulte.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Tolérance[0].signal_securite_flag",
+        "gpt_claim": "true",
+        "deepseek_claim": "false",
+        "evidence": "Le texte mentionne explicitement : 'Risques importants identifiés - bradycardie sévère... réactivation du VHB'.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "SMR_ASMR_Par_Indication",
+        "gpt_claim": "2 entrées (3-6 ans et >=6 ans)",
+        "deepseek_claim": "3 entrées (inclut une redondance globale >=3 ans)",
+        "evidence": "L'avis CT-19718 distingue l'extension (3-6 ans) et le complément de gamme (>=6 ans). La 3ème entrée de DeepSeek est redondante.",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.gravite_patho_enum",
+        "gpt_claim": "Modérée",
+        "deepseek_claim": "FAIBLE",
+        "evidence": "Le texte indique 'maladie virale grave dans sa chronicité mais rarement sévère chez l'enfant'.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT est plus rigoureux sur la sécurité en identifiant correctement les signaux de pharmacovigilance (bradycardie/VHB) que DeepSeek ignore. GPT respecte mieux le périmètre de l'évaluation pédiatrique en ne listant pas les essais adultes historiques comme preuves principales."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"1 essai (GS-US-342-1143)\",\n      \"deepseek_claim\": \"6 essais (GS-US-342-1143 + ASTRAL 1-4 + HEPATHER)\",\n      \"evidence\": \"L'évaluation CT-19718 porte spécifiquement sur l'extension pédiatrique basée sur l'étude GS-US-342-1143. Les études ASTRAL concernent l'historique adulte.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Tolérance[0].signal_securite_flag\",\n      \"gpt_claim\": \"true\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"Le texte mentionne explicitement : 'Risques importants identifiés - bradycardie sévère... réactivation du VHB'.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"SMR_ASMR_Par_Indication\",\n      \"gpt_claim\": \"2 entrées (3-6 ans et >=6 ans)\",\n      \"deepseek_claim\": \"3 entrées (inclut une redondance globale >=3 ans)\",\n      \"evidence\": \"L'avis CT-19718 distingue l'extension (3-6 ans) et le complément de gamme (>=6 ans). La 3ème entrée de DeepSeek est redondante.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.gravite_patho_enum\",\n      \"gpt_claim\": \"Modérée\",\n      \"deepseek_claim\": \"FAIBLE\",\n      \"evidence\": \"Le texte indique 'maladie virale grave dans sa chronicité mais rarement sévère chez l'enfant'.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT est plus rigoureux sur la sécurité en identifiant correctement les signaux de pharmacovigilance (bradycardie/VHB) que DeepSeek ignore. GPT respecte mieux le périmètre de l'évaluation pédiatrique en ne listant pas les essais adultes historiques comme preuves principales.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"incoherence_interne\"\n  ]\n}"
+}

@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "6 arguments extraits (Besoin, Efficacité, Place, etc.)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "Texte source contient : 'L'insuffisance cardiaque chronique sévère décompensée aiguë (ICDA) est une affection grave...'",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Comparateurs_HAS",
+        "gpt_claim": "2 comparateurs identifiés (ZIMINO, LEVOSIMENDAN ALTAN)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "Texte source : 'Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour la spécialité ZIMINO...'",
+        "severity": "high"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.ligne_traitement",
+        "gpt_claim": "4L+",
+        "deepseek_claim": "null",
+        "evidence": "Texte source : 'uniquement en traitement de dernier recours'",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "1 produit (le produit évalué)",
+        "deepseek_claim": "4 produits (incluant comparateurs et princeps)",
+        "evidence": "DeepSeek liste SIMDAX, ZIMINO et ALTAN en plus de KALCEKS.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT a extrait l'intégralité des arguments décisionnels et des comparateurs, là où DeepSeek a laissé ces sections vides. GPT propose également une interprétation métier de la ligne de traitement (4L+ pour dernier recours)."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"6 arguments extraits (Besoin, Efficacité, Place, etc.)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"Texte source contient : 'L'insuffisance cardiaque chronique sévère décompensée aiguë (ICDA) est une affection grave...'\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Comparateurs_HAS\",\n      \"gpt_claim\": \"2 comparateurs identifiés (ZIMINO, LEVOSIMENDAN ALTAN)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"Texte source : 'Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour la spécialité ZIMINO...'\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.ligne_traitement\",\n      \"gpt_claim\": \"4L+\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Texte source : 'uniquement en traitement de dernier recours'\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"1 produit (le produit évalué)\",\n      \"deepseek_claim\": \"4 produits (incluant comparateurs et princeps)\",\n      \"evidence\": \"DeepSeek liste SIMDAX, ZIMINO et ALTAN en plus de KALCEKS.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT a extrait l'intégralité des arguments décisionnels et des comparateurs, là où DeepSeek a laissé ces sections vides. GPT propose également une interprétation métier de la ligne de traitement (4L+ pour dernier recours).\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

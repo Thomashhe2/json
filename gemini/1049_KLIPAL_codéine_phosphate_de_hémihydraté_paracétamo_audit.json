@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication[0].population_cible_indication",
+        "gpt_claim": "Inclusion (>15 ans) et exclusions détaillées (allaitement, CYP2D6, post-chirurgie)",
+        "deepseek_claim": "Patients âgés de plus de 15 ans uniquement",
+        "evidence": "Avis favorable... sauf dans populations suivantes : enfants <12 ans, femmes allaitantes, métaboliseurs ultra rapides CYP2D6, patients <18 ans après amygdalectomie/adénoïdectomie.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Comparateurs_HAS",
+        "gpt_claim": "Un seul bloc regroupant princeps, génériques et autres antalgiques",
+        "deepseek_claim": "Deux entrées distinctes séparant les produits à base de codéine des autres antalgiques",
+        "evidence": "Les comparateurs... comprennent les spécialités princeps et génériques à base de paracétamol et de codéine ainsi que les autres antalgiques recommandés.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "7 arguments identifiés incluant les recommandations sur le conditionnement",
+        "deepseek_claim": "5 arguments identifiés",
+        "evidence": "Conditionnements adaptés aux conditions de prescription selon indication, posologie et durée de traitement.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.indication.age_restriction_detail",
+        "gpt_claim": "Plus de 15 ans sauf enfants <12 ans (redondant)",
+        "deepseek_claim": "> 15 ans (concis)",
+        "evidence": "Avis favorable au remboursement chez les patients âgés de plus de 15 ans.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT capture avec beaucoup plus de précision les populations exclues (sécurité) et les recommandations de conditionnement, éléments critiques pour un audit HAS. DeepSeek est plus performant sur la structuration des comparateurs mais trop succinct sur les restrictions cliniques."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication[0].population_cible_indication\",\n      \"gpt_claim\": \"Inclusion (>15 ans) et exclusions détaillées (allaitement, CYP2D6, post-chirurgie)\",\n      \"deepseek_claim\": \"Patients âgés de plus de 15 ans uniquement\",\n      \"evidence\": \"Avis favorable... sauf dans populations suivantes : enfants <12 ans, femmes allaitantes, métaboliseurs ultra rapides CYP2D6, patients <18 ans après amygdalectomie/adénoïdectomie.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Comparateurs_HAS\",\n      \"gpt_claim\": \"Un seul bloc regroupant princeps, génériques et autres antalgiques\",\n      \"deepseek_claim\": \"Deux entrées distinctes séparant les produits à base de codéine des autres antalgiques\",\n      \"evidence\": \"Les comparateurs... comprennent les spécialités princeps et génériques à base de paracétamol et de codéine ainsi que les autres antalgiques recommandés.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"7 arguments identifiés incluant les recommandations sur le conditionnement\",\n      \"deepseek_claim\": \"5 arguments identifiés\",\n      \"evidence\": \"Conditionnements adaptés aux conditions de prescription selon indication, posologie et durée de traitement.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.indication.age_restriction_detail\",\n      \"gpt_claim\": \"Plus de 15 ans sauf enfants <12 ans (redondant)\",\n      \"deepseek_claim\": \"> 15 ans (concis)\",\n      \"evidence\": \"Avis favorable au remboursement chez les patients âgés de plus de 15 ans.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT capture avec beaucoup plus de précision les populations exclues (sécurité) et les recommandations de conditionnement, éléments critiques pour un audit HAS. DeepSeek est plus performant sur la structuration des comparateurs mais trop succinct sur les restrictions cliniques.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

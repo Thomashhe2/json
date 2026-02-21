@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.age_restriction_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "500 mg : convient aux adultes... enfants pesant plus de 21 kg (âgés de 6 ans et plus). 1 g : convient aux adultes et aux adolescents pesant plus de 50 kg (âgés de 15 ans et plus).",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "6 arguments extraits",
+        "deepseek_claim": "3 arguments extraits",
+        "evidence": "GPT extrait les arguments SMR (arg_04), ASMR (arg_05) et Place thérapeutique (arg_06) absents de la liste DeepSeek.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.historique_Has_produit",
+        "gpt_claim": "Demande d'inscription d'un générique remplaçant un générique déjà inscrit...",
+        "deepseek_claim": "null",
+        "evidence": "Texte source: 'Demande d'inscription de génériques remplaçant des spécialités déjà inscrites avec modification excipients et forme'",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.aire_therapeutique_niveau_1",
+        "gpt_claim": "null",
+        "deepseek_claim": "Analgésiques",
+        "evidence": "DeepSeek déduit l'aire thérapeutique à partir du code ATC N02BE01.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT est nettement plus exhaustif sur les arguments décisionnels (6 contre 3) et capture correctement l'historique du produit. DeepSeek est cependant plus précis sur les restrictions d'âge/poids."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.age_restriction_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"500 mg : convient aux adultes... enfants pesant plus de 21 kg (âgés de 6 ans et plus). 1 g : convient aux adultes et aux adolescents pesant plus de 50 kg (âgés de 15 ans et plus).\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"6 arguments extraits\",\n      \"deepseek_claim\": \"3 arguments extraits\",\n      \"evidence\": \"GPT extrait les arguments SMR (arg_04), ASMR (arg_05) et Place thérapeutique (arg_06) absents de la liste DeepSeek.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.historique_Has_produit\",\n      \"gpt_claim\": \"Demande d'inscription d'un générique remplaçant un générique déjà inscrit...\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Texte source: 'Demande d'inscription de génériques remplaçant des spécialités déjà inscrites avec modification excipients et forme'\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.aire_therapeutique_niveau_1\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"Analgésiques\",\n      \"evidence\": \"DeepSeek déduit l'aire thérapeutique à partir du code ATC N02BE01.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT est nettement plus exhaustif sur les arguments décisionnels (6 contre 3) et capture correctement l'historique du produit. DeepSeek est cependant plus précis sur les restrictions d'âge/poids.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

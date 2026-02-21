@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "4 essais listés (doublons de HAUSER-RCT et HAUSER-OLE)",
+        "deepseek_claim": "2 essais listés (HAUSER-RCT et HAUSER-OLE)",
+        "evidence": "GPT liste l'essai HAUSER-RCT deux fois (ID CT-19616_essai_HAUSER-RCT et CT-19616_essai_HAUSER_RCT) avec des métriques légèrement divergentes (N=157 vs N=158).",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.population_cible_nombre",
+        "gpt_claim": "null / non extrait",
+        "deepseek_claim": "9105",
+        "evidence": "DeepSeek extrait précisément les données de population (HFHe : 9100 ; HFHo : 5) issues des registres REFERCHOL mentionnés dans l'avis.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.maladie_rare",
+        "gpt_claim": "true",
+        "deepseek_claim": "false",
+        "evidence": "L'avis concerne l'HFHe (non rare) et l'HFHo (rare). GPT généralise à 'true', DeepSeek à 'false'. La désignation orpheline EMA est pourtant confirmée en page 44.",
+        "severity": "low"
+      },
+      {
+        "type": "structure",
+        "field_path": "Posologie_Par_Indication",
+        "gpt_claim": "Focus unique sur l'HFHe (140mg/420mg)",
+        "deepseek_claim": "Détail distinct pour HFHe et HFHo (avec titration)",
+        "evidence": "DeepSeek capture la spécificité de l'HFHo : dose initiale 420mg/mois avec ajustement possible à 420mg/2semaines après 12 semaines.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.9,
+      "rationale_short": "DeepSeek évite la duplication majeure des essais cliniques présente chez GPT et extrait des données de contexte critiques (estimations de population, ISP) absentes chez son concurrent. Sa segmentation de la posologie par indication est plus fidèle au texte source."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"4 essais listés (doublons de HAUSER-RCT et HAUSER-OLE)\",\n      \"deepseek_claim\": \"2 essais listés (HAUSER-RCT et HAUSER-OLE)\",\n      \"evidence\": \"GPT liste l'essai HAUSER-RCT deux fois (ID CT-19616_essai_HAUSER-RCT et CT-19616_essai_HAUSER_RCT) avec des métriques légèrement divergentes (N=157 vs N=158).\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.population_cible_nombre\",\n      \"gpt_claim\": \"null / non extrait\",\n      \"deepseek_claim\": \"9105\",\n      \"evidence\": \"DeepSeek extrait précisément les données de population (HFHe : 9100 ; HFHo : 5) issues des registres REFERCHOL mentionnés dans l'avis.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.maladie_rare\",\n      \"gpt_claim\": \"true\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"L'avis concerne l'HFHe (non rare) et l'HFHo (rare). GPT généralise à 'true', DeepSeek à 'false'. La désignation orpheline EMA est pourtant confirmée en page 44.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Posologie_Par_Indication\",\n      \"gpt_claim\": \"Focus unique sur l'HFHe (140mg/420mg)\",\n      \"deepseek_claim\": \"Détail distinct pour HFHe et HFHo (avec titration)\",\n      \"evidence\": \"DeepSeek capture la spécificité de l'HFHo : dose initiale 420mg/mois avec ajustement possible à 420mg/2semaines après 12 semaines.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"DeepSeek évite la duplication majeure des essais cliniques présente chez GPT et extrait des données de contexte critiques (estimations de population, ISP) absentes chez son concurrent. Sa segmentation de la posologie par indication est plus fidèle au texte source.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"incoherence_interne\"\n  ]\n}"
+}

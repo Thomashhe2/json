@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "Liste complète (DZUVEO, sufentanil, AGUETTANT)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "GPT extrait les identifiants produits avec codes CIP et DCI, DeepSeek ignore totalement ce bloc.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.vote_unanimite",
+        "gpt_claim": "true (16 votants)",
+        "deepseek_claim": "null",
+        "evidence": "GPT capture les données de vote dans les champs dédiés, DeepSeek les laisse à null malgré leur présence en transcription.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "7 essais (incluant des doublons SAP202/Phase 2)",
+        "deepseek_claim": "5 essais (incluant IAP309 vs morphine)",
+        "evidence": "GPT crée des doublons entre les noms de code (SAP202) et les descriptions (Phase 2 Bunionectomie). DeepSeek identifie l'essai IAP309.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "SMR_ASMR_Par_Indication.asmr_revendique_enum",
+        "gpt_claim": "V",
+        "deepseek_claim": "Non_renseigné",
+        "evidence": "GPT déduit l'ASMR revendiquée de la section historique/contexte, DeepSeek reste prudent sur l'absence de mention explicite 'revendiquée'.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT offre une extraction administrative bien plus complète (Identifiants produits, statistiques de vote) et respecte mieux le schéma des enums, malgré une redondance dans la liste des essais cliniques."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"Liste complète (DZUVEO, sufentanil, AGUETTANT)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"GPT extrait les identifiants produits avec codes CIP et DCI, DeepSeek ignore totalement ce bloc.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.vote_unanimite\",\n      \"gpt_claim\": \"true (16 votants)\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT capture les données de vote dans les champs dédiés, DeepSeek les laisse à null malgré leur présence en transcription.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"7 essais (incluant des doublons SAP202/Phase 2)\",\n      \"deepseek_claim\": \"5 essais (incluant IAP309 vs morphine)\",\n      \"evidence\": \"GPT crée des doublons entre les noms de code (SAP202) et les descriptions (Phase 2 Bunionectomie). DeepSeek identifie l'essai IAP309.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"SMR_ASMR_Par_Indication.asmr_revendique_enum\",\n      \"gpt_claim\": \"V\",\n      \"deepseek_claim\": \"Non_renseigné\",\n      \"evidence\": \"GPT déduit l'ASMR revendiquée de la section historique/contexte, DeepSeek reste prudent sur l'absence de mention explicite 'revendiquée'.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT offre une extraction administrative bien plus complète (Identifiants produits, statistiques de vote) et respecte mieux le schéma des enums, malgré une redondance dans la liste des essais cliniques.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

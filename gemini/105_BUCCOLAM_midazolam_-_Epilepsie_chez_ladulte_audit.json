@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "2 essais (1 observationnel, 1 PK)",
+        "deepseek_claim": "4 essais (2 RCT pédiatriques, 1 PK, 1 modélisation)",
+        "evidence": "DeepSeek inclut Scott 1999 et Talukdar 2009, bases de l'extrapolation pédiatrique citées dans l'avis.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "Liste vide",
+        "deepseek_claim": "Code CIP 34009 221 087 1 1 présent",
+        "evidence": "Le texte source contient explicitement le code CIP : 34009 221 087 1 1.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS.indication",
+        "gpt_claim": "Cible uniquement les adultes",
+        "deepseek_claim": "Libellé complet AMM (nourrissons à adultes)",
+        "evidence": "DeepSeek capture l'intégralité du libellé d'indication mentionné en page 4.",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Posologie_Par_Indication.phases",
+        "gpt_claim": "Non structuré",
+        "deepseek_claim": "Phase d'initiation structurée (10mg fixe)",
+        "evidence": "DeepSeek a transformé le texte de posologie en objet structuré 'phases'.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.95,
+      "rationale_short": "DeepSeek est plus exhaustif, capturant les essais cliniques historiques (pédiatrie) essentiels à la compréhension de l'extrapolation HAS, ainsi que les données administratives (CIP) omises par GPT."
+    },
+    "quality_flags": [
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"2 essais (1 observationnel, 1 PK)\",\n      \"deepseek_claim\": \"4 essais (2 RCT pédiatriques, 1 PK, 1 modélisation)\",\n      \"evidence\": \"DeepSeek inclut Scott 1999 et Talukdar 2009, bases de l'extrapolation pédiatrique citées dans l'avis.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"Liste vide\",\n      \"deepseek_claim\": \"Code CIP 34009 221 087 1 1 présent\",\n      \"evidence\": \"Le texte source contient explicitement le code CIP : 34009 221 087 1 1.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS.indication\",\n      \"gpt_claim\": \"Cible uniquement les adultes\",\n      \"deepseek_claim\": \"Libellé complet AMM (nourrissons à adultes)\",\n      \"evidence\": \"DeepSeek capture l'intégralité du libellé d'indication mentionné en page 4.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Posologie_Par_Indication.phases\",\n      \"gpt_claim\": \"Non structuré\",\n      \"deepseek_claim\": \"Phase d'initiation structurée (10mg fixe)\",\n      \"evidence\": \"DeepSeek a transformé le texte de posologie en objet structuré 'phases'.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"DeepSeek est plus exhaustif, capturant les essais cliniques historiques (pédiatrie) essentiels à la compréhension de l'extrapolation HAS, ainsi que les données administratives (CIP) omises par GPT.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\"\n  ]\n}"
+}

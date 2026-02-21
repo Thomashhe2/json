@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "8 arguments extraits (Besoin, Efficacité, SMR/ASMR, etc.)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "GPT extrait 8 arguments détaillés avec extraits textuels (ex: 'L'hyperthyroïdie peut être responsable de complications...'), alors que DeepSeek ne remplit pas cette section cruciale.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.historique_Has_produit",
+        "gpt_claim": "Détails sur THIAMAZOLE 5 mg HEXAL et THYROZOL",
+        "deepseek_claim": "null",
+        "evidence": "GPT : 'THIAMAZOLE 5 mg HEXAL est spécialité référence...'. DeepSeek : null.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison.presentations",
+        "gpt_claim": "Tableau d'objets avec description et code_cip",
+        "deepseek_claim": "Champs plats code_cip13 et code_cip13_2",
+        "evidence": "GPT utilise une structure normalisée pour les présentations (100 et 125 comprimés), DeepSeek utilise des clés suffixées non standards.",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.aire_therapeutique_niveau_1",
+        "gpt_claim": "Endocrinologie",
+        "deepseek_claim": "Hormones systémiques, exclusions sexuelles",
+        "evidence": "GPT simplifie par la spécialité médicale, DeepSeek reprend le libellé exact de la classe ATC H.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT surpasse largement DeepSeek en extrayant l'intégralité de la section 'Arguments_Decisionnels' (8 arguments contre 0), essentielle pour un audit HAS. GPT maintient également une meilleure structure pour les présentations et l'historique produit."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"8 arguments extraits (Besoin, Efficacité, SMR/ASMR, etc.)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"GPT extrait 8 arguments détaillés avec extraits textuels (ex: 'L'hyperthyroïdie peut être responsable de complications...'), alors que DeepSeek ne remplit pas cette section cruciale.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.historique_Has_produit\",\n      \"gpt_claim\": \"Détails sur THIAMAZOLE 5 mg HEXAL et THYROZOL\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT : 'THIAMAZOLE 5 mg HEXAL est spécialité référence...'. DeepSeek : null.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison.presentations\",\n      \"gpt_claim\": \"Tableau d'objets avec description et code_cip\",\n      \"deepseek_claim\": \"Champs plats code_cip13 et code_cip13_2\",\n      \"evidence\": \"GPT utilise une structure normalisée pour les présentations (100 et 125 comprimés), DeepSeek utilise des clés suffixées non standards.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.aire_therapeutique_niveau_1\",\n      \"gpt_claim\": \"Endocrinologie\",\n      \"deepseek_claim\": \"Hormones systémiques, exclusions sexuelles\",\n      \"evidence\": \"GPT simplifie par la spécialité médicale, DeepSeek reprend le libellé exact de la classe ATC H.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT surpasse largement DeepSeek en extrayant l'intégralité de la section 'Arguments_Decisionnels' (8 arguments contre 0), essentielle pour un audit HAS. GPT maintient également une meilleure structure pour les présentations et l'historique produit.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS.indication",
+        "gpt_claim": "Détection per-opératoire des complications urétérales suspectées au cours de la chirurgie abdomino-pelvienne.",
+        "deepseek_claim": "Ce médicament est à usage diagnostique uniquement. Carmin d'indigo Provingo est indiqué dans la détection per-opératoire...",
+        "evidence": "Texte source: 'Indication : Ce médicament est à usage diagnostique uniquement. Carmin d'indigo Provingo est indiqué dans...'",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments identifiés (Besoin, Efficacité, Comparaison, SMR_ASMR, Place)",
+        "deepseek_claim": "3 arguments identifiés (Besoin, Efficacité, Place)",
+        "evidence": "La section 'Conclusions de la Commission' contient des paragraphes distincts sur le SMR/ASMR et les comparateurs que GPT a isolés.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.historique_Has_produit",
+        "gpt_claim": "null",
+        "deepseek_claim": "Référence à l'avis CARMYNE du 23 avril 2014",
+        "evidence": "Le texte mentionne CARMYNE mais la date précise de 2014 n'est pas explicitement dans le texte brut fourni (potentielle connaissance externe ou hallucination mineure).",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "SMR_ASMR_Par_Indication.comparateurs_references_indication",
+        "gpt_claim": "[\"CARMYNE 40 mg/5 mL solution injectable\"] (Array)",
+        "deepseek_claim": "\"CARMYNE (indigotine [carmin d'indigo]) 40mg/5ml, solution injectable\" (String)",
+        "evidence": "Le schéma attendu pour les comparateurs est généralement une liste (Array).",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT propose une segmentation plus fine des arguments décisionnels (5 vs 3) et respecte mieux la séparation entre l'indication clinique et les mentions de bon usage. DeepSeek inclut des données historiques non présentes dans le payload (connaissance externe)."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "risque_hallucination"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS.indication\",\n      \"gpt_claim\": \"Détection per-opératoire des complications urétérales suspectées au cours de la chirurgie abdomino-pelvienne.\",\n      \"deepseek_claim\": \"Ce médicament est à usage diagnostique uniquement. Carmin d'indigo Provingo est indiqué dans la détection per-opératoire...\",\n      \"evidence\": \"Texte source: 'Indication : Ce médicament est à usage diagnostique uniquement. Carmin d'indigo Provingo est indiqué dans...'\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments identifiés (Besoin, Efficacité, Comparaison, SMR_ASMR, Place)\",\n      \"deepseek_claim\": \"3 arguments identifiés (Besoin, Efficacité, Place)\",\n      \"evidence\": \"La section 'Conclusions de la Commission' contient des paragraphes distincts sur le SMR/ASMR et les comparateurs que GPT a isolés.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.historique_Has_produit\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"Référence à l'avis CARMYNE du 23 avril 2014\",\n      \"evidence\": \"Le texte mentionne CARMYNE mais la date précise de 2014 n'est pas explicitement dans le texte brut fourni (potentielle connaissance externe ou hallucination mineure).\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"SMR_ASMR_Par_Indication.comparateurs_references_indication\",\n      \"gpt_claim\": \"[\\\"CARMYNE 40 mg/5 mL solution injectable\\\"] (Array)\",\n      \"deepseek_claim\": \"\\\"CARMYNE (indigotine [carmin d'indigo]) 40mg/5ml, solution injectable\\\" (String)\",\n      \"evidence\": \"Le schéma attendu pour les comparateurs est généralement une liste (Array).\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT propose une segmentation plus fine des arguments décisionnels (5 vs 3) et respecte mieux la séparation entre l'indication clinique et les mentions de bon usage. DeepSeek inclut des données historiques non présentes dans le payload (connaissance externe).\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"risque_hallucination\"\n  ]\n}"
+}

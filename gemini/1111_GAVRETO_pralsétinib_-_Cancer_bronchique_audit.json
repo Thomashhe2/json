@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "2 essais identifiés (ARROW et AcceleRET-Lung)",
+        "deepseek_claim": "1 essai identifié (ARROW)",
+        "evidence": "GPT capture l'étude de phase III comparative AcceleRET-Lung (p.26) mentionnée dans le document, alors que DeepSeek l'omet dans sa liste d'essais.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication",
+        "gpt_claim": "1 bloc d'indication (2L+)",
+        "deepseek_claim": "2 blocs d'indications (1L et 2L+)",
+        "evidence": "DeepSeek respecte mieux la structure HAS en séparant le SMR 'Insuffisant' en 1ère ligne et le SMR 'Faible' en 2ème ligne.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Données_Contexte.ISP_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "DeepSeek active le flag ISP (true) alors que le texte source stipule explicitement que le produit 'n'est pas susceptible d'avoir un impact supplémentaire'.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Données_Contexte.decisions_internationales",
+        "gpt_claim": "Capture la décision FDA (USA)",
+        "deepseek_claim": "Liste vide",
+        "evidence": "GPT extrait correctement l'AMM aux Etats-Unis mentionnée en page 26, information absente chez DeepSeek.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT est plus exhaustif sur les données cliniques (capture de l'essai de phase III) et les décisions internationales. Bien que DeepSeek structure mieux le SMR par ligne, il présente une incohérence interne sur le flag ISP."
+    },
+    "quality_flags": [
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"2 essais identifiés (ARROW et AcceleRET-Lung)\",\n      \"deepseek_claim\": \"1 essai identifié (ARROW)\",\n      \"evidence\": \"GPT capture l'étude de phase III comparative AcceleRET-Lung (p.26) mentionnée dans le document, alors que DeepSeek l'omet dans sa liste d'essais.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication\",\n      \"gpt_claim\": \"1 bloc d'indication (2L+)\",\n      \"deepseek_claim\": \"2 blocs d'indications (1L et 2L+)\",\n      \"evidence\": \"DeepSeek respecte mieux la structure HAS en séparant le SMR 'Insuffisant' en 1ère ligne et le SMR 'Faible' en 2ème ligne.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Données_Contexte.ISP_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"DeepSeek active le flag ISP (true) alors que le texte source stipule explicitement que le produit 'n'est pas susceptible d'avoir un impact supplémentaire'.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Données_Contexte.decisions_internationales\",\n      \"gpt_claim\": \"Capture la décision FDA (USA)\",\n      \"deepseek_claim\": \"Liste vide\",\n      \"evidence\": \"GPT extrait correctement l'AMM aux Etats-Unis mentionnée en page 26, information absente chez DeepSeek.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT est plus exhaustif sur les données cliniques (capture de l'essai de phase III) et les décisions internationales. Bien que DeepSeek structure mieux le SMR par ligne, il présente une incohérence interne sur le flag ISP.\"\n  },\n  \"quality_flags\": [\n    \"incoherence_interne\"\n  ]\n}"
+}

@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison[0].code_cip13",
+        "gpt_claim": "34009 302 368 4 0",
+        "deepseek_claim": "null",
+        "evidence": "code_cip13: 34009 302 368 4 0 (p. 43)",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication[0].smr_revendique",
+        "gpt_claim": "SMR modéré",
+        "deepseek_claim": "null",
+        "evidence": "smr_revendique: SMR modéré",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[COMPOSE-4].nb_patient_traitement",
+        "gpt_claim": "193",
+        "deepseek_claim": "97",
+        "evidence": "L'étude COMPOSE-4 incluant 193 patients (Total N=193)",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "8 entrées (doublons COMPOSE-1/COMPOSE1)",
+        "deepseek_claim": "4 entrées (uniques)",
+        "evidence": "GPT liste CT-19544_essai_COMPOSE1 et CT-19544_essai_COMPOSE-1",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.SMR_apres_audition_enum",
+        "gpt_claim": "FAIBLE",
+        "deepseek_claim": "Non_renseigné",
+        "evidence": "SMR_apres_audition_enum: FAIBLE (p. 42)",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT extrait les données administratives critiques (CIP13, SMR revendiqué) et le contexte final de l'audition que DeepSeek ignore. Cependant, GPT présente des doublons structurels dans la liste des essais et une erreur de calcul sur l'effectif bras/total de COMPOSE-4."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique",
+      "incoherence_interne",
+      "risque_hallucination"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison[0].code_cip13\",\n      \"gpt_claim\": \"34009 302 368 4 0\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"code_cip13: 34009 302 368 4 0 (p. 43)\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication[0].smr_revendique\",\n      \"gpt_claim\": \"SMR modéré\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"smr_revendique: SMR modéré\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[COMPOSE-4].nb_patient_traitement\",\n      \"gpt_claim\": \"193\",\n      \"deepseek_claim\": \"97\",\n      \"evidence\": \"L'étude COMPOSE-4 incluant 193 patients (Total N=193)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"8 entrées (doublons COMPOSE-1/COMPOSE1)\",\n      \"deepseek_claim\": \"4 entrées (uniques)\",\n      \"evidence\": \"GPT liste CT-19544_essai_COMPOSE1 et CT-19544_essai_COMPOSE-1\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.SMR_apres_audition_enum\",\n      \"gpt_claim\": \"FAIBLE\",\n      \"deepseek_claim\": \"Non_renseigné\",\n      \"evidence\": \"SMR_apres_audition_enum: FAIBLE (p. 42)\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT extrait les données administratives critiques (CIP13, SMR revendiqué) et le contexte final de l'audition que DeepSeek ignore. Cependant, GPT présente des doublons structurels dans la liste des essais et une erreur de calcul sur l'effectif bras/total de COMPOSE-4.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\",\n    \"incoherence_interne\",\n    \"risque_hallucination\"\n  ]\n}"
+}

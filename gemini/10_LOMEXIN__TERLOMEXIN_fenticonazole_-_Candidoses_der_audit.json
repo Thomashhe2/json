@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "3 produits extraits (CIP 34009 333 830 8 4, etc.)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "1 tube(s) aluminium verni de 15 g (CIP : 34009 333 830 8 4) ; plaquette(s) thermoformée(s) PVC PVDC aluminium de 3 capsule(s) (CIP : 34009 337 833 1 0)",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication[0].asmr_enum",
+        "gpt_claim": "V",
+        "deepseek_claim": "null",
+        "evidence": "Ces spécialités n'apportent pas d'ASMR (ASMR V)",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments extraits (Efficacité, Besoin, Place, Tolérance, Comparaison)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "Au total, le laboratoire n'a fourni aucune nouvelle donnée clinique significative. [...] Les alternatives remboursables sont présentées en Annexe 4.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "SMR_ASMR_Par_Indication",
+        "gpt_claim": "2 entrées distinctes (Crème vs Capsules)",
+        "deepseek_claim": "1 entrée fusionnée",
+        "evidence": "LOMEXIN 2 % crème ; LOMEXIN 600 mg et TERLOMEXIN 200 mg capsules molles vaginales",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "0 essai (considéré comme absence de données nouvelles)",
+        "deepseek_claim": "1 essai (EFEMERIS cohort study)",
+        "evidence": "Une étude de cohorte rétrospective EFEMERIS 2004-2018 a été présentée sans nouvelles données significatives.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.98,
+      "rationale_short": "GPT a extrait l'intégralité des données administratives (CIP), les arguments décisionnels et la note d'ASMR, alors que DeepSeek a omis ces sections critiques. GPT respecte mieux la structure par indication du document HAS."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"3 produits extraits (CIP 34009 333 830 8 4, etc.)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"1 tube(s) aluminium verni de 15 g (CIP : 34009 333 830 8 4) ; plaquette(s) thermoformée(s) PVC PVDC aluminium de 3 capsule(s) (CIP : 34009 337 833 1 0)\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication[0].asmr_enum\",\n      \"gpt_claim\": \"V\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Ces spécialités n'apportent pas d'ASMR (ASMR V)\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments extraits (Efficacité, Besoin, Place, Tolérance, Comparaison)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"Au total, le laboratoire n'a fourni aucune nouvelle donnée clinique significative. [...] Les alternatives remboursables sont présentées en Annexe 4.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"SMR_ASMR_Par_Indication\",\n      \"gpt_claim\": \"2 entrées distinctes (Crème vs Capsules)\",\n      \"deepseek_claim\": \"1 entrée fusionnée\",\n      \"evidence\": \"LOMEXIN 2 % crème ; LOMEXIN 600 mg et TERLOMEXIN 200 mg capsules molles vaginales\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"0 essai (considéré comme absence de données nouvelles)\",\n      \"deepseek_claim\": \"1 essai (EFEMERIS cohort study)\",\n      \"evidence\": \"Une étude de cohorte rétrospective EFEMERIS 2004-2018 a été présentée sans nouvelles données significatives.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.98,\n    \"rationale_short\": \"GPT a extrait l'intégralité des données administratives (CIP), les arguments décisionnels et la note d'ASMR, alors que DeepSeek a omis ces sections critiques. GPT respecte mieux la structure par indication du document HAS.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

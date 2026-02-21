@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "SMR_ASMR_Par_Indication",
+        "gpt_claim": "1 entrée (fusionnée)",
+        "deepseek_claim": "2 entrées (scindées)",
+        "evidence": "DeepSeek sépare l'indication 'SMR Important' de l'indication 'Rhinite allergique' (SMR Insuffisant), reflétant mieux la structure de l'avis.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments extraits",
+        "deepseek_claim": "0 argument (liste vide)",
+        "evidence": "GPT extrait les justifications sur le SMR, l'ASMR, la place thérapeutique et les conditionnements. DeepSeek omet totalement cette section.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.date_AMM_ema",
+        "gpt_claim": "null",
+        "deepseek_claim": "1997-11-21",
+        "evidence": "DeepSeek identifie correctement la date d'AMM historique (21 novembre 1997) présente dans le texte.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Timeline_Evenements",
+        "gpt_claim": "Inclut la validation administrative (17/03/2022)",
+        "deepseek_claim": "Omet la validation administrative",
+        "evidence": "GPT capture la date de validation administrative du dossier, DeepSeek se limite aux dates d'adoption/publication.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "Bien que DeepSeek soit plus granulaire sur le tableau SMR/ASMR, son omission totale des 'Arguments_Decisionnels' constitue une perte d'information critique pour un audit HAS. GPT offre une extraction plus complète de la logique décisionnelle."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"SMR_ASMR_Par_Indication\",\n      \"gpt_claim\": \"1 entrée (fusionnée)\",\n      \"deepseek_claim\": \"2 entrées (scindées)\",\n      \"evidence\": \"DeepSeek sépare l'indication 'SMR Important' de l'indication 'Rhinite allergique' (SMR Insuffisant), reflétant mieux la structure de l'avis.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments extraits\",\n      \"deepseek_claim\": \"0 argument (liste vide)\",\n      \"evidence\": \"GPT extrait les justifications sur le SMR, l'ASMR, la place thérapeutique et les conditionnements. DeepSeek omet totalement cette section.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.date_AMM_ema\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"1997-11-21\",\n      \"evidence\": \"DeepSeek identifie correctement la date d'AMM historique (21 novembre 1997) présente dans le texte.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Timeline_Evenements\",\n      \"gpt_claim\": \"Inclut la validation administrative (17/03/2022)\",\n      \"deepseek_claim\": \"Omet la validation administrative\",\n      \"evidence\": \"GPT capture la date de validation administrative du dossier, DeepSeek se limite aux dates d'adoption/publication.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"Bien que DeepSeek soit plus granulaire sur le tableau SMR/ASMR, son omission totale des 'Arguments_Decisionnels' constitue une perte d'information critique pour un audit HAS. GPT offre une extraction plus complète de la logique décisionnelle.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

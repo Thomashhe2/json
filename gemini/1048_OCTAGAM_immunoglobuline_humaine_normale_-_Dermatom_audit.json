@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Timeline_Evenements[1].event_date",
+        "gpt_claim": "2021-07-15",
+        "deepseek_claim": "2021-06-04",
+        "evidence": "GPT cite '15 juillet 2021' vs DeepSeek cite '4 juin 2021' pour la date d'AMM.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS.vote_unanimite",
+        "gpt_claim": "true (19/19)",
+        "deepseek_claim": "null",
+        "evidence": "GPT extrait les données de vote (19 votants, unanime) absentes chez DeepSeek.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Essais_Cliniques[0].arret_premature_flag",
+        "gpt_claim": "true (Sécurité)",
+        "deepseek_claim": "false",
+        "evidence": "GPT interprète les EI graves comme un arrêt prématuré, DeepSeek considère l'essai non arrêté.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Comparateurs_HAS",
+        "gpt_claim": "8 entrées distinctes",
+        "deepseek_claim": "3 entrées groupées",
+        "evidence": "GPT liste individuellement CLAIRYG, FLEBOGAMMA, etc. DeepSeek les groupe dans une seule chaîne.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT capture des données administratives cruciales (votes, caractère innovant) et détaille mieux les comparateurs HAS. Cependant, il semble halluciner un arrêt prématuré de l'essai ProDERM."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "risque_hallucination",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Timeline_Evenements[1].event_date\",\n      \"gpt_claim\": \"2021-07-15\",\n      \"deepseek_claim\": \"2021-06-04\",\n      \"evidence\": \"GPT cite '15 juillet 2021' vs DeepSeek cite '4 juin 2021' pour la date d'AMM.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS.vote_unanimite\",\n      \"gpt_claim\": \"true (19/19)\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT extrait les données de vote (19 votants, unanime) absentes chez DeepSeek.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Essais_Cliniques[0].arret_premature_flag\",\n      \"gpt_claim\": \"true (Sécurité)\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"GPT interprète les EI graves comme un arrêt prématuré, DeepSeek considère l'essai non arrêté.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Comparateurs_HAS\",\n      \"gpt_claim\": \"8 entrées distinctes\",\n      \"deepseek_claim\": \"3 entrées groupées\",\n      \"evidence\": \"GPT liste individuellement CLAIRYG, FLEBOGAMMA, etc. DeepSeek les groupe dans une seule chaîne.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT capture des données administratives cruciales (votes, caractère innovant) et détaille mieux les comparateurs HAS. Cependant, il semble halluciner un arrêt prématuré de l'essai ProDERM.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"risque_hallucination\",\n    \"incoherence_interne\"\n  ]\n}"
+}

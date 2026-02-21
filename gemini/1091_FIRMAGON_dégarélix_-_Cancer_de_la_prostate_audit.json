@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "5 essais identifiés (CS21, Mason 2013, PRONOUNCE, EORTC 1414, MASON2013)",
+        "deepseek_claim": "3 essais identifiés (CS21A, CS21, Mason 2013)",
+        "evidence": "GPT capture les essais interrompus (PRONOUNCE) et en cours (EORTC 1414) mentionnés dans le texte, alors que DeepSeek les omet.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.date_AMM_ema",
+        "gpt_claim": "2009-02-17",
+        "deepseek_claim": "2021-10-19",
+        "evidence": "GPT identifie la date de l'AMM initiale (2009), tandis que DeepSeek utilise la date de l'extension d'indication faisant l'objet de l'avis.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Tolérance[0].EI_graves_detailles",
+        "gpt_claim": "Détail des EIG (Enzymes hépatiques, Cancer gastrique)",
+        "deepseek_claim": "Liste vide ou non détaillée",
+        "evidence": "GPT a extrait les événements indésirables graves spécifiques mentionnés à la page 16 de l'avis (Mason et al).",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "2 objets distincts (80mg et 120mg)",
+        "deepseek_claim": "1 objet regroupant les CIP",
+        "evidence": "GPT sépare les présentations par dosage conformément à la structure habituelle des bases de données pharmaceutiques.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.9,
+      "rationale_short": "GPT offre une extraction nettement plus exhaustive, notamment sur le paysage clinique complet (essais PRONOUNCE et EORTC) et la granularité des données de tolérance. DeepSeek omet des pans entiers de la discussion technique."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"5 essais identifiés (CS21, Mason 2013, PRONOUNCE, EORTC 1414, MASON2013)\",\n      \"deepseek_claim\": \"3 essais identifiés (CS21A, CS21, Mason 2013)\",\n      \"evidence\": \"GPT capture les essais interrompus (PRONOUNCE) et en cours (EORTC 1414) mentionnés dans le texte, alors que DeepSeek les omet.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.date_AMM_ema\",\n      \"gpt_claim\": \"2009-02-17\",\n      \"deepseek_claim\": \"2021-10-19\",\n      \"evidence\": \"GPT identifie la date de l'AMM initiale (2009), tandis que DeepSeek utilise la date de l'extension d'indication faisant l'objet de l'avis.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Tolérance[0].EI_graves_detailles\",\n      \"gpt_claim\": \"Détail des EIG (Enzymes hépatiques, Cancer gastrique)\",\n      \"deepseek_claim\": \"Liste vide ou non détaillée\",\n      \"evidence\": \"GPT a extrait les événements indésirables graves spécifiques mentionnés à la page 16 de l'avis (Mason et al).\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"2 objets distincts (80mg et 120mg)\",\n      \"deepseek_claim\": \"1 objet regroupant les CIP\",\n      \"evidence\": \"GPT sépare les présentations par dosage conformément à la structure habituelle des bases de données pharmaceutiques.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"GPT offre une extraction nettement plus exhaustive, notamment sur le paysage clinique complet (essais PRONOUNCE et EORTC) et la granularité des données de tolérance. DeepSeek omet des pans entiers de la discussion technique.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\"\n  ]\n}"
+}

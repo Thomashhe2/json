@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "3 essais (233, 232, Étude principale pédiatrique)",
+        "deepseek_claim": "3 essais (242-12-232, 242-12-233, 242-09-213)",
+        "evidence": "GPT crée un doublon structurel avec 'Étude principale' qui agrège les données des études 232/233 (37 patients), tandis que DeepSeek identifie correctement l'étude de phase III adulte (213) mentionnée dans le texte.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.vote_unanimite",
+        "gpt_claim": "true (15 votants, 15 pour)",
+        "deepseek_claim": "null",
+        "evidence": "Le texte F1 p.27 stipule : 'La Commission donne un avis favorable... le vote est unanime' avec 15 voix.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.besoin_medical_interprete",
+        "gpt_claim": "Couvert",
+        "deepseek_claim": "Non_couvert",
+        "evidence": "Le texte mentionne un 'besoin médical important' et 'peu d'alternatives'. L'interprétation 'Non_couvert' ou 'Partiellement' est plus conforme aux standards HAS quand les alternatives sont rares.",
+        "severity": "low"
+      },
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "Focus sur les arguments de synthèse (CT)",
+        "deepseek_claim": "Extraction exhaustive de la transcription (TRANS)",
+        "evidence": "DeepSeek capture 11 arguments détaillés issus des débats (bioéquivalence, critiques méthodologiques de S. Kouzan), là où GPT tronque la partie transcription.",
+        "severity": "high"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.85,
+      "rationale_short": "DeepSeek offre une analyse beaucoup plus fine de la transcription et des identifiants d'essais, évitant le doublon structurel de GPT sur la population pédiatrique. GPT est cependant plus performant sur l'extraction des données de vote administratif."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"3 essais (233, 232, Étude principale pédiatrique)\",\n      \"deepseek_claim\": \"3 essais (242-12-232, 242-12-233, 242-09-213)\",\n      \"evidence\": \"GPT crée un doublon structurel avec 'Étude principale' qui agrège les données des études 232/233 (37 patients), tandis que DeepSeek identifie correctement l'étude de phase III adulte (213) mentionnée dans le texte.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.vote_unanimite\",\n      \"gpt_claim\": \"true (15 votants, 15 pour)\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Le texte F1 p.27 stipule : 'La Commission donne un avis favorable... le vote est unanime' avec 15 voix.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.besoin_medical_interprete\",\n      \"gpt_claim\": \"Couvert\",\n      \"deepseek_claim\": \"Non_couvert\",\n      \"evidence\": \"Le texte mentionne un 'besoin médical important' et 'peu d'alternatives'. L'interprétation 'Non_couvert' ou 'Partiellement' est plus conforme aux standards HAS quand les alternatives sont rares.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"Focus sur les arguments de synthèse (CT)\",\n      \"deepseek_claim\": \"Extraction exhaustive de la transcription (TRANS)\",\n      \"evidence\": \"DeepSeek capture 11 arguments détaillés issus des débats (bioéquivalence, critiques méthodologiques de S. Kouzan), là où GPT tronque la partie transcription.\",\n      \"severity\": \"high\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"DeepSeek offre une analyse beaucoup plus fine de la transcription et des identifiants d'essais, évitant le doublon structurel de GPT sur la population pédiatrique. GPT est cependant plus performant sur l'extraction des données de vote administratif.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\"\n  ]\n}"
+}

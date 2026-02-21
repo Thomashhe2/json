@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.nb_votants",
+        "gpt_claim": "21",
+        "deepseek_claim": "null",
+        "evidence": "21 votants pour ce vote. 13 voix pour et 8 abstentions.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "11 arguments (8 CT + 3 TRANS)",
+        "deepseek_claim": "5 arguments (TRANS uniquement)",
+        "evidence": "GPT extrait les arguments formels de la CT (ex: CT_1 à CT_8) absents chez DeepSeek.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "4 essais (doublon essai_01 et 304)",
+        "deepseek_claim": "3 essais",
+        "evidence": "GPT liste 'Étude principale' et 'ALXN1210-PNH-304' séparément pour le même essai de 13 patients.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[0].date_cutoff_donnees",
+        "gpt_claim": "null",
+        "deepseek_claim": "2021-05-04",
+        "evidence": "date_cutoff_donnees: 2021-05-04",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.pathologie_categorie_enum",
+        "gpt_claim": "Immunologie",
+        "deepseek_claim": "Hematologie",
+        "evidence": "L'HPN est une pathologie hématologique (système sanguin), bien que traitée par immunomodulateurs.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT surpasse DeepSeek en extrayant les données administratives cruciales (votes) et l'intégralité des arguments de la Commission (CT), malgré un doublon structurel dans les essais cliniques."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.nb_votants\",\n      \"gpt_claim\": \"21\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"21 votants pour ce vote. 13 voix pour et 8 abstentions.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"11 arguments (8 CT + 3 TRANS)\",\n      \"deepseek_claim\": \"5 arguments (TRANS uniquement)\",\n      \"evidence\": \"GPT extrait les arguments formels de la CT (ex: CT_1 à CT_8) absents chez DeepSeek.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"4 essais (doublon essai_01 et 304)\",\n      \"deepseek_claim\": \"3 essais\",\n      \"evidence\": \"GPT liste 'Étude principale' et 'ALXN1210-PNH-304' séparément pour le même essai de 13 patients.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[0].date_cutoff_donnees\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"2021-05-04\",\n      \"evidence\": \"date_cutoff_donnees: 2021-05-04\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.pathologie_categorie_enum\",\n      \"gpt_claim\": \"Immunologie\",\n      \"deepseek_claim\": \"Hematologie\",\n      \"evidence\": \"L'HPN est une pathologie hématologique (système sanguin), bien que traitée par immunomodulateurs.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT surpasse DeepSeek en extrayant les données administratives cruciales (votes) et l'intégralité des arguments de la Commission (CT), malgré un doublon structurel dans les essais cliniques.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

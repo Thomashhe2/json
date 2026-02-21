@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments extraits (Efficacité, Comparaison, Besoin, Place, SMR)",
+        "deepseek_claim": "[] (vide)",
+        "evidence": "Le document contient des sections 'L'essentiel' et 'Conclusions' avec des motifs clairs (ASMR V, SMR Important, 1ère intention).",
+        "severity": "high"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.besoin_medical_interprete",
+        "gpt_claim": "Couvert",
+        "deepseek_claim": "Non_couvert",
+        "evidence": "Le texte indique : 'La prévention de l'ovulation prématurée est un besoin médical couvert par ce traitement.'",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "[] (0 essais)",
+        "deepseek_claim": "1 essai (Études cliniques non spécifiées)",
+        "evidence": "Il s'agit d'un médicament hybride (procédure simplifiée) sans nouvel essai clinique propre présenté dans l'avis.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.SMR_apres_audition_enum",
+        "gpt_claim": "IMPORTANT",
+        "deepseek_claim": "Non_renseigné",
+        "evidence": "Le texte stipule explicitement : 'le service médical rendu par CEZIBOE 0,25 mg est important'.",
+        "severity": "high"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT a extrait l'intégralité des arguments décisionnels et a correctement interprété le besoin médical comme étant couvert. DeepSeek a échoué à remplir la section des arguments et a créé un faux essai clinique pour combler le vide structurel."
+    },
+    "quality_flags": [
+      "risque_hallucination",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments extraits (Efficacité, Comparaison, Besoin, Place, SMR)\",\n      \"deepseek_claim\": \"[] (vide)\",\n      \"evidence\": \"Le document contient des sections 'L'essentiel' et 'Conclusions' avec des motifs clairs (ASMR V, SMR Important, 1ère intention).\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.besoin_medical_interprete\",\n      \"gpt_claim\": \"Couvert\",\n      \"deepseek_claim\": \"Non_couvert\",\n      \"evidence\": \"Le texte indique : 'La prévention de l'ovulation prématurée est un besoin médical couvert par ce traitement.'\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"[] (0 essais)\",\n      \"deepseek_claim\": \"1 essai (Études cliniques non spécifiées)\",\n      \"evidence\": \"Il s'agit d'un médicament hybride (procédure simplifiée) sans nouvel essai clinique propre présenté dans l'avis.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.SMR_apres_audition_enum\",\n      \"gpt_claim\": \"IMPORTANT\",\n      \"deepseek_claim\": \"Non_renseigné\",\n      \"evidence\": \"Le texte stipule explicitement : 'le service médical rendu par CEZIBOE 0,25 mg est important'.\",\n      \"severity\": \"high\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT a extrait l'intégralité des arguments décisionnels et a correctement interprété le besoin médical comme étant couvert. DeepSeek a échoué à remplir la section des arguments et a créé un faux essai clinique pour combler le vide structurel.\"\n  },\n  \"quality_flags\": [\n    \"risque_hallucination\",\n    \"incoherence_interne\"\n  ]\n}"
+}

@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison.code_cip13",
+        "gpt_claim": "null",
+        "deepseek_claim": "34009 376 223 6 3",
+        "evidence": "CIP : 34009 376 223 6 3 (p. 24)",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Données_Contexte.ISP_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "ROTATEQ... est susceptible d'avoir un impact sur la santé publique (p. 4)",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[0].nb_patient_traitement",
+        "gpt_claim": "2834",
+        "deepseek_claim": "null",
+        "evidence": "2 834 dans le groupe vacciné (p. 12)",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Critères_Jugement[0].HR_RR_OR",
+        "gpt_claim": "null",
+        "deepseek_claim": "RR = 0,03",
+        "evidence": "RR = 0,03, IC 95% : [0,01 ; 0,11] (p. 14)",
+        "severity": "high"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.9,
+      "rationale_short": "DeepSeek capture des données réglementaires (CIP13, ISP) et statistiques (RR, IC95) cruciales pour un audit HAS, là où GPT reste superficiel, bien que GPT soit plus précis sur les effectifs (N) des essais."
+    },
+    "quality_flags": [
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison.code_cip13\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"34009 376 223 6 3\",\n      \"evidence\": \"CIP : 34009 376 223 6 3 (p. 24)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Données_Contexte.ISP_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"ROTATEQ... est susceptible d'avoir un impact sur la santé publique (p. 4)\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[0].nb_patient_traitement\",\n      \"gpt_claim\": \"2834\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"2 834 dans le groupe vacciné (p. 12)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Critères_Jugement[0].HR_RR_OR\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"RR = 0,03\",\n      \"evidence\": \"RR = 0,03, IC 95% : [0,01 ; 0,11] (p. 14)\",\n      \"severity\": \"high\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"DeepSeek capture des données réglementaires (CIP13, ISP) et statistiques (RR, IC95) cruciales pour un audit HAS, là où GPT reste superficiel, bien que GPT soit plus précis sur les effectifs (N) des essais.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\"\n  ]\n}"
+}

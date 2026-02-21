@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "7 essais distincts (PYRENNEES, HIMALAYAS, ROCKIES, SIERRAS, ALPS, ANDES, OLYMPUS) avec NCT et effectifs.",
+        "deepseek_claim": "1 seul bloc générique 'Études de phase III (nom non spécifié)'.",
+        "evidence": "Le payload contient 8 études cliniques multicentriques (ALPS, ANDES, OLYMPUS, etc.) avec des numéros NCT spécifiques.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.besoin_medical_interprete",
+        "gpt_claim": "Partiellement_couvert",
+        "deepseek_claim": "Non_couvert",
+        "evidence": "besoin_medical_brut: 'Le besoin médical est actuellement partiellement couvert par les thérapeutiques disponibles'",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.date_AMM_ema",
+        "gpt_claim": "2021-08-18",
+        "deepseek_claim": "null",
+        "evidence": "date_AMM_ema: '2021-08-18' dans le bloc Données_Contexte de GPT.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "Liste exhaustive des 5 présentations avec codes CIP13.",
+        "deepseek_claim": "Une seule ligne produit sans détail de présentation ni CIP13.",
+        "evidence": "Le payload liste 5 dosages (20, 50, 70, 100, 150 mg) avec leurs codes CIP13 respectifs.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT respecte la granularité des données sources, notamment en extrayant individuellement les 8 essais cliniques et les codes CIP13. DeepSeek échoue sur la structure des essais et commet une erreur factuelle sur le besoin médical (indiqué comme non couvert au lieu de partiellement)."
+    },
+    "quality_flags": [
+      "incoherence_interne",
+      "admin_vs_clinique",
+      "risque_hallucination"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"7 essais distincts (PYRENNEES, HIMALAYAS, ROCKIES, SIERRAS, ALPS, ANDES, OLYMPUS) avec NCT et effectifs.\",\n      \"deepseek_claim\": \"1 seul bloc générique 'Études de phase III (nom non spécifié)'.\",\n      \"evidence\": \"Le payload contient 8 études cliniques multicentriques (ALPS, ANDES, OLYMPUS, etc.) avec des numéros NCT spécifiques.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.besoin_medical_interprete\",\n      \"gpt_claim\": \"Partiellement_couvert\",\n      \"deepseek_claim\": \"Non_couvert\",\n      \"evidence\": \"besoin_medical_brut: 'Le besoin médical est actuellement partiellement couvert par les thérapeutiques disponibles'\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.date_AMM_ema\",\n      \"gpt_claim\": \"2021-08-18\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"date_AMM_ema: '2021-08-18' dans le bloc Données_Contexte de GPT.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"Liste exhaustive des 5 présentations avec codes CIP13.\",\n      \"deepseek_claim\": \"Une seule ligne produit sans détail de présentation ni CIP13.\",\n      \"evidence\": \"Le payload liste 5 dosages (20, 50, 70, 100, 150 mg) avec leurs codes CIP13 respectifs.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT respecte la granularité des données sources, notamment en extrayant individuellement les 8 essais cliniques et les codes CIP13. DeepSeek échoue sur la structure des essais et commet une erreur factuelle sur le besoin médical (indiqué comme non couvert au lieu de partiellement).\"\n  },\n  \"quality_flags\": [\n    \"incoherence_interne\",\n    \"admin_vs_clinique\",\n    \"risque_hallucination\"\n  ]\n}"
+}

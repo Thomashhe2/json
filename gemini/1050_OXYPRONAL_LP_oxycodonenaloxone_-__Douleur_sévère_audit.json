@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Posologie_Par_Indication",
+        "gpt_claim": "[]",
+        "deepseek_claim": "Contient l'indication 'douleur sévère d'origine cancéreuse' avec posologie 'Aux posologies de l'AMM'",
+        "evidence": "DeepSeek extrait la posologie mentionnée en page 4, alors que GPT laisse le champ vide.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication[0].qol_cite",
+        "gpt_claim": "true",
+        "deepseek_claim": "false",
+        "evidence": "Le texte mentionne explicitement : 'retentissent de façon majeure sur la qualité de vie du patient'. GPT est plus précis ici.",
+        "severity": "low"
+      },
+      {
+        "type": "structure",
+        "field_path": "Tolérance",
+        "gpt_claim": "Objet unique avec champs nulls",
+        "deepseek_claim": "Liste contenant un objet avec EI_frequents renseigné",
+        "evidence": "DeepSeek capture 'La constipation est un effet indésirable très fréquent' dans le bloc Tolérance, GPT l'omet.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.aire_therapeutique_niveau_1",
+        "gpt_claim": "null",
+        "deepseek_claim": "Système nerveux",
+        "evidence": "DeepSeek déduit l'aire thérapeutique à partir du code ATC N02AA55, GPT ne réalise pas l'inférence.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.85,
+      "rationale_short": "DeepSeek offre une extraction plus exhaustive en complétant les sections 'Posologie' et 'Tolérance' que GPT a laissées vides. Bien que GPT soit plus cohérent sur le flag 'qol_cite', DeepSeek respecte mieux la structure attendue pour un audit HAS."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Posologie_Par_Indication\",\n      \"gpt_claim\": \"[]\",\n      \"deepseek_claim\": \"Contient l'indication 'douleur sévère d'origine cancéreuse' avec posologie 'Aux posologies de l'AMM'\",\n      \"evidence\": \"DeepSeek extrait la posologie mentionnée en page 4, alors que GPT laisse le champ vide.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication[0].qol_cite\",\n      \"gpt_claim\": \"true\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"Le texte mentionne explicitement : 'retentissent de façon majeure sur la qualité de vie du patient'. GPT est plus précis ici.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Tolérance\",\n      \"gpt_claim\": \"Objet unique avec champs nulls\",\n      \"deepseek_claim\": \"Liste contenant un objet avec EI_frequents renseigné\",\n      \"evidence\": \"DeepSeek capture 'La constipation est un effet indésirable très fréquent' dans le bloc Tolérance, GPT l'omet.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.aire_therapeutique_niveau_1\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"Système nerveux\",\n      \"evidence\": \"DeepSeek déduit l'aire thérapeutique à partir du code ATC N02AA55, GPT ne réalise pas l'inférence.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"DeepSeek offre une extraction plus exhaustive en complétant les sections 'Posologie' et 'Tolérance' que GPT a laissées vides. Bien que GPT soit plus cohérent sur le flag 'qol_cite', DeepSeek respecte mieux la structure attendue pour un audit HAS.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

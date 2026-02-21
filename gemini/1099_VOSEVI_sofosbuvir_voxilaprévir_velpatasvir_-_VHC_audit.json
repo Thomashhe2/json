@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "Contient CIP13, ATC et Titulaire",
+        "deepseek_claim": "Liste vide",
+        "evidence": "GPT extrait CIP 34009 301 102 8 7 et ATC J05AP56, DeepSeek omet ces identifiants réglementaires.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.suivi_post_inscription",
+        "gpt_claim": "true (Cohorte HEPATHER)",
+        "deepseek_claim": "false",
+        "evidence": "Le texte mentionne explicitement le suivi des modalités d'utilisation et de tolérance dans la cohorte HEPATHER.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.population_cible_france",
+        "gpt_claim": "800 à 1 700 patients",
+        "deepseek_claim": "Moins d'une centaine",
+        "evidence": "GPT extrait la prévalence épidémiologique (800-1700), DeepSeek extrait le flux annuel restreint (<100).",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "2 entrées (doublon de l'étude GS-US-367-1175)",
+        "deepseek_claim": "1 entrée unique",
+        "evidence": "GPT crée une entrée générique et une entrée spécifique pour le même essai NCT03820258.",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.gravite_patho_enum",
+        "gpt_claim": "Modérée",
+        "deepseek_claim": "FAIBLE",
+        "evidence": "Le texte décrit une maladie grave à long terme mais bénigne chez l'enfant ; GPT privilégie le pronostic long terme.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT est plus exhaustif sur les données administratives (CIP, ATC) et identifie correctement le suivi post-inscription (HEPATHER). DeepSeek est plus propre sur la structure des essais mais manque des informations pivots du dossier."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"Contient CIP13, ATC et Titulaire\",\n      \"deepseek_claim\": \"Liste vide\",\n      \"evidence\": \"GPT extrait CIP 34009 301 102 8 7 et ATC J05AP56, DeepSeek omet ces identifiants réglementaires.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.suivi_post_inscription\",\n      \"gpt_claim\": \"true (Cohorte HEPATHER)\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"Le texte mentionne explicitement le suivi des modalités d'utilisation et de tolérance dans la cohorte HEPATHER.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.population_cible_france\",\n      \"gpt_claim\": \"800 à 1 700 patients\",\n      \"deepseek_claim\": \"Moins d'une centaine\",\n      \"evidence\": \"GPT extrait la prévalence épidémiologique (800-1700), DeepSeek extrait le flux annuel restreint (<100).\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"2 entrées (doublon de l'étude GS-US-367-1175)\",\n      \"deepseek_claim\": \"1 entrée unique\",\n      \"evidence\": \"GPT crée une entrée générique et une entrée spécifique pour le même essai NCT03820258.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.gravite_patho_enum\",\n      \"gpt_claim\": \"Modérée\",\n      \"deepseek_claim\": \"FAIBLE\",\n      \"evidence\": \"Le texte décrit une maladie grave à long terme mais bénigne chez l'enfant ; GPT privilégie le pronostic long terme.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT est plus exhaustif sur les données administratives (CIP, ATC) et identifie correctement le suivi post-inscription (HEPATHER). DeepSeek est plus propre sur la structure des essais mais manque des informations pivots du dossier.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\"\n  ]\n}"
+}

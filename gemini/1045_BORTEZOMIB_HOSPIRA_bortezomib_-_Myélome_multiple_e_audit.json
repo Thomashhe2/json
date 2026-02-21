@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments extraits",
+        "deepseek_claim": "0 argument extrait",
+        "evidence": "GPT extrait les arguments d'efficacité, SMR et ASMR (ex: 'Avis favorable au remboursement...'), DeepSeek laisse la liste vide.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "SMR_ASMR_Par_Indication",
+        "gpt_claim": "1 entrée regroupant les statuts",
+        "deepseek_claim": "2 entrées distinctes",
+        "evidence": "DeepSeek sépare l'indication avec SMR Important de celle avec SMR Insuffisant (doxorubicine), ce qui est plus conforme au formalisme HAS.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison.code_cip13",
+        "gpt_claim": "null",
+        "deepseek_claim": "34009 301 668 6 4",
+        "evidence": "DeepSeek a identifié le code CIP13 et le code ATC (L01XG01) présents en page 5, absents chez GPT.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.besoin_medical_interprete",
+        "gpt_claim": "Partiellement_couvert",
+        "deepseek_claim": "null",
+        "evidence": "GPT interprète le besoin médical à partir du contexte SMR, DeepSeek ne renseigne pas le champ.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT l'emporte grâce à l'extraction exhaustive des arguments décisionnels, essentiels pour un audit HAS, là où DeepSeek échoue totalement sur ce bloc. DeepSeek est cependant plus précis sur les identifiants techniques (CIP/ATC) et la structure des indications."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments extraits\",\n      \"deepseek_claim\": \"0 argument extrait\",\n      \"evidence\": \"GPT extrait les arguments d'efficacit\\u00e9, SMR et ASMR (ex: 'Avis favorable au remboursement...'), DeepSeek laisse la liste vide.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"SMR_ASMR_Par_Indication\",\n      \"gpt_claim\": \"1 entr\\u00e9e regroupant les statuts\",\n      \"deepseek_claim\": \"2 entr\\u00e9es distinctes\",\n      \"evidence\": \"DeepSeek s\\u00e9pare l'indication avec SMR Important de celle avec SMR Insuffisant (doxorubicine), ce qui est plus conforme au formalisme HAS.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison.code_cip13\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"34009 301 668 6 4\",\n      \"evidence\": \"DeepSeek a identifi\\u00e9 le code CIP13 et le code ATC (L01XG01) pr\\u00e9sents en page 5, absents chez GPT.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.besoin_medical_interprete\",\n      \"gpt_claim\": \"Partiellement_couvert\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT interpr\\u00e8te le besoin m\\u00e9dical \\u00e0 partir du contexte SMR, DeepSeek ne renseigne pas le champ.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT l'emporte gr\\u00e2ce \\u00e0 l'extraction exhaustive des arguments d\\u00e9cisionnels, essentiels pour un audit HAS, l\\u00e0 o\\u00f9 DeepSeek \\u00e9choue totalement sur ce bloc. DeepSeek est cependant plus pr\\u00e9cis sur les identifiants techniques (CIP/ATC) et la structure des indications.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

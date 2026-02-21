@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison[0].code_cip13",
+        "gpt_claim": "null",
+        "deepseek_claim": "34009 550 243 1 6",
+        "evidence": "1 flacon en verre de 4 ml (CIP : 34009 550 243 1 6)",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS",
+        "gpt_claim": "Tableau d'objets (Array)",
+        "deepseek_claim": "Objet avec clés par indication (Map)",
+        "evidence": "GPT utilise une structure de liste simple alors que DeepSeek indexe par le libellé complet de l'indication.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[0].nb_patient_traitement",
+        "gpt_claim": "null",
+        "deepseek_claim": "566",
+        "evidence": "DeepSeek extrait les effectifs précis (566 vs 281) absents de la structure principale de GPT.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Données_Contexte.ASMR_après_audition_enum",
+        "gpt_claim": "III",
+        "deepseek_claim": "Non_renseigné",
+        "evidence": "GPT remplit correctement l'enum de synthèse finale (ASMR III) tandis que DeepSeek le laisse vide dans le bloc Contexte.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.85,
+      "rationale_short": "DeepSeek est plus précis sur les identifiants techniques (CIP13, DCI) et les données quantitatives des essais (N patients). GPT présente des doublons incohérents (CT-XXXXX) et une structure de données moins rigoureuse."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "incoherence_interne",
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison[0].code_cip13\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"34009 550 243 1 6\",\n      \"evidence\": \"1 flacon en verre de 4 ml (CIP : 34009 550 243 1 6)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS\",\n      \"gpt_claim\": \"Tableau d'objets (Array)\",\n      \"deepseek_claim\": \"Objet avec clés par indication (Map)\",\n      \"evidence\": \"GPT utilise une structure de liste simple alors que DeepSeek indexe par le libellé complet de l'indication.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[0].nb_patient_traitement\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"566\",\n      \"evidence\": \"DeepSeek extrait les effectifs précis (566 vs 281) absents de la structure principale de GPT.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Données_Contexte.ASMR_après_audition_enum\",\n      \"gpt_claim\": \"III\",\n      \"deepseek_claim\": \"Non_renseigné\",\n      \"evidence\": \"GPT remplit correctement l'enum de synthèse finale (ASMR III) tandis que DeepSeek le laisse vide dans le bloc Contexte.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"DeepSeek est plus précis sur les identifiants techniques (CIP13, DCI) et les données quantitatives des essais (N patients). GPT présente des doublons incohérents (CT-XXXXX) et une structure de données moins rigoureuse.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"incoherence_interne\",\n    \"admin_vs_clinique\"\n  ]\n}"
+}

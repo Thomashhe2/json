@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication",
+        "gpt_claim": "Contient 2 entrées détaillant le SMR (Faible) et l'ASMR (V) pour l'indication principale.",
+        "deepseek_claim": "Tableau vide []",
+        "evidence": "GPT extrait SMR_ASMR_Par_Indication avec smr_enum: 'FAIBLE' et asmr_enum: 'V' sourcé p.54.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Posologie_Par_Indication",
+        "gpt_claim": "Détaille la dose de 1500 mg (3 comprimés) une fois par jour.",
+        "deepseek_claim": "Objet vide {}",
+        "evidence": "GPT identifie la posologie via le texte de l'avis (p.8) : '1 500 mg... par voie orale une fois par jour'.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Données_Contexte",
+        "gpt_claim": "Extraction complète (ATU cohorte, AMM EMA 14/02/2022, FDA 2019).",
+        "deepseek_claim": "Tableau vide []",
+        "evidence": "GPT remplit les champs type_acces_precoce_enum et date_AMM_ema.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison.code_cip13",
+        "gpt_claim": "null",
+        "deepseek_claim": "34009 302 471 5 0",
+        "evidence": "DeepSeek a identifié un code CIP13 spécifique non présent dans l'extraction GPT.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Timeline_Evenements",
+        "gpt_claim": "4 événements extraits (Adoption, Audition, AMM, ATU).",
+        "deepseek_claim": "Tableau vide []",
+        "evidence": "GPT liste les dates clés comme le 20/07/2022 pour l'audition.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT a extrait les données critiques pour un audit HAS (SMR/ASMR, Posologie, Calendrier réglementaire) que DeepSeek a totalement omises. DeepSeek n'a capturé que les essais et les arguments, laissant les sections administratives et décisionnelles vides."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication\",\n      \"gpt_claim\": \"Contient 2 entrées détaillant le SMR (Faible) et l'ASMR (V) pour l'indication principale.\",\n      \"deepseek_claim\": \"Tableau vide []\",\n      \"evidence\": \"GPT extrait SMR_ASMR_Par_Indication avec smr_enum: 'FAIBLE' et asmr_enum: 'V' sourcé p.54.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Posologie_Par_Indication\",\n      \"gpt_claim\": \"Détaille la dose de 1500 mg (3 comprimés) une fois par jour.\",\n      \"deepseek_claim\": \"Objet vide {}\",\n      \"evidence\": \"GPT identifie la posologie via le texte de l'avis (p.8) : '1 500 mg... par voie orale une fois par jour'.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Données_Contexte\",\n      \"gpt_claim\": \"Extraction complète (ATU cohorte, AMM EMA 14/02/2022, FDA 2019).\",\n      \"deepseek_claim\": \"Tableau vide []\",\n      \"evidence\": \"GPT remplit les champs type_acces_precoce_enum et date_AMM_ema.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison.code_cip13\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"34009 302 471 5 0\",\n      \"evidence\": \"DeepSeek a identifié un code CIP13 spécifique non présent dans l'extraction GPT.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Timeline_Evenements\",\n      \"gpt_claim\": \"4 événements extraits (Adoption, Audition, AMM, ATU).\",\n      \"deepseek_claim\": \"Tableau vide []\",\n      \"evidence\": \"GPT liste les dates clés comme le 20/07/2022 pour l'audition.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT a extrait les données critiques pour un audit HAS (SMR/ASMR, Posologie, Calendrier réglementaire) que DeepSeek a totalement omises. DeepSeek n'a capturé que les essais et les arguments, laissant les sections administratives et décisionnelles vides.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}
