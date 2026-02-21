@@ -1,0 +1,745 @@
+{
+  "schema_version": "3.3.5",
+  "doc_id": "CT-19809",
+  "evaluation_id": "CT-19809",
+  "extraction_date": "2022-05-11",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-05-11",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19809_ZOPHREN_PIS_INS_COMPLEMENT_GAMME_Avisdef_CT19809.pdf",
+        "type": "CT",
+        "page_count": 3
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19809_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "progres_enum"
+      ],
+      "routing_hint": "Conclusion rapide",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_02",
+      "section_label_normalise": "CONTEXTE_EVALUATION",
+      "section_label_brut": "CONTEXTE",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CONTEXTE",
+      "expected_fields": [
+        "type_avis_enum",
+        "contexte_evaluation",
+        "historique_HAS_produit"
+      ],
+      "routing_hint": "Description demande",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "INDICATIONS",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "INDICATIONS",
+      "expected_fields": [
+        "indication_precise",
+        "population_cible"
+      ],
+      "routing_hint": "Liste indications AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Liste comparateurs",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_05",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "CONCLUSIONS DE LA COMMISSION : Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr_enum",
+        "arguments_smr",
+        "place_therapeutique"
+      ],
+      "routing_hint": "SMR et justification",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_06",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "CONCLUSIONS DE LA COMMISSION : Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr_enum",
+        "justification_asmr"
+      ],
+      "routing_hint": "ASMR V",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_07",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "POPULATION CIBLE",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "POPULATION CIBLE",
+      "expected_fields": [
+        "population_cible",
+        "type_population_cible"
+      ],
+      "routing_hint": "Population non modifiée",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19809_seg_08",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "expected_fields": [
+        "date_evaluation",
+        "presentations",
+        "demandeur",
+        "code_ATC",
+        "statut_AMM"
+      ],
+      "routing_hint": "Tableau informations",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "identifiant_produit": "CT-19809_ZOPHREN_2mgml_inj",
+      "evaluation_id": "CT-19809",
+      "produit_nom_commercial": "ZOPHREN",
+      "dci": "ondansétron",
+      "forme_pharmaceutique": "solution injectable en ampoule",
+      "dosage_concentration": "2 mg/mL",
+      "voie_administration": "IV",
+      "code_cip13": [
+        "34009 556 839 5 7",
+        "34009 550 795 9 0"
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ondansét",
+          "t": "ondansétron ZOPHREN 2 mg/mL, solution injectable en ampoule (IV)",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 3,
+          "s": "Boîte de ",
+          "t": "Boîte de 10 ampoules de 2 ml (CIP : 34009 556 839 5 7) Boîte de 8 ampoules de 4 ml (CIP : 34009 550 795 9 0)",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19809",
+      "Num_avis": "CT-19809",
+      "produit_nom": "ZOPHREN",
+      "dci": "ondansétron",
+      "type_avis": "Inscription de nouvelles présentations",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable en ampoule",
+      "dosage": "2 mg/mL",
+      "indication": "Voir SMR_ASMR_Par_Indication",
+      "classe_ATC": "A04AA01",
+      "pathologie": "Nausées et vomissements induits par chimiothérapie cytotoxique, radiothérapie ou postopératoires",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": null,
+      "sous_groupe_population": "Adultes et enfants à partir de 6 mois (chimiothérapie) ou 1 mois (postopératoire)",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Antiémétiques",
+      "aire_therapeutique_niveau_2": "Antiémétiques sérotoninergiques",
+      "aire_therapeutique_niveau_3": "Antagonistes des récepteurs 5-HT3",
+      "source_aire_therapeutique": "Déduit ATC A04AA01",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Les nausées et vomissements sont un des effets indésirables récurrents des chimiothérapies et sont des complications fréquentes de l’anesthésie. Ils conduisent à une dégradation marquée de la qualité de vie.",
+      "besoin_medical_interprete": "Couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_HAS_produit": "Dans son avis du 27 juin 2018, la Commission a octroyé à ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) un service médical rendu important dans les indications de l’AMM.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-05-11",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les nausées et vomissements sont un des effets indésirables récurrents des chimiothérapies et sont des complications fréquentes de l’anesthésie. Ils conduisent à une dégradation marquée de la qualité de vie.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes et enfants à partir de 6 mois (chimiothérapie) ou 1 mois (postopératoire)",
+      "pertinence_concurrence_therapeutique": "Les comparateurs cliniquement pertinents de ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) sont nombreux et comprennent des spécialités princeps et génériques. Ce sont les autres antiémétiques recommandés dans chacune des indications de l’AMM.",
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "Mise à di",
+          "t": "Mise à disposition de nouvelles présentations",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 3,
+          "s": "Code ATC",
+          "t": "A04AA01",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 2,
+          "s": "Les nausé",
+          "t": "Les nausées et vomissements sont un des effets indésirables récurrents des chimiothérapies et sont des complications fréquentes de l’anesthésie. Ils conduisent à une dégradation marquée de la qualité de vie.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "historique_HAS_produit",
+          "f": "F1",
+          "p": 2,
+          "s": "Pour rapp",
+          "t": "Pour rappel, dans son avis du 27 juin 20181, la Commission a octroyé à ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) un service médical rendu important dans les indications de l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 3,
+          "s": "Date d’ex",
+          "t": "Date d’examen et d’adoption : 11 mai 2022",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 2,
+          "s": "Les nausé",
+          "t": "Les nausées et vomissements sont un des effets indésirables récurrents des chimiothérapies et sont des complications fréquentes de l’anesthésie. Ils conduisent à une dégradation marquée de la qualité de vie.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "pertinence_concurrence_therapeutique",
+          "f": "F1",
+          "p": 2,
+          "s": "Les compa",
+          "t": "Les comparateurs cliniquement pertinents de ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) sont nombreux et comprennent des spécialités princeps et génériques. Ce sont les autres antiémétiques recommandés dans chacune des indications de l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19809_compHAS_01",
+      "evaluation_id": "CT-19809",
+      "nom_comparateur_HAS": "Autres antiémétiques (antagonistes de la sérotonine et autres)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antiémétiques",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Les compa",
+          "t": "Les comparateurs cliniquement pertinents de ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) sont nombreux et comprennent des spécialités princeps et génériques. Ce sont les autres antiémétiques recommandés dans chacune des indications de l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19809_arg_CT_01",
+      "evaluation_id": "CT-19809",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Nausées/vomissements récurrents en chimiothérapie/radiothérapie/anesthésie, dégradation qualité de vie importante.",
+      "extrait_textuel": "Les nausées et vomissements sont un des effets indésirables récurrents des chimiothérapies et sont des complications fréquentes de l’anesthésie. Ils conduisent à une dégradation marquée de la qualité de vie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Les nausé",
+          "t": "Les nausées et vomissements sont un des effets indésirables récurrents des chimiothérapies et sont des complications fréquentes de l’anesthésie. Ils conduisent à une dégradation marquée de la qualité de vie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19809_arg_CT_02",
+      "evaluation_id": "CT-19809",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Traitement préventif et curatif de 1ère intention dans ses indications.",
+      "extrait_textuel": "Cette spécialité entre dans le cadre d’un traitement préventif et curatif. Cette spécialité est un traitement de 1ère intention.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Cette spé",
+          "t": "Cette spécialité entre dans le cadre d’un traitement préventif et curatif. Cette spécialité est un traitement de 1ère intention.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19809_arg_CT_03",
+      "evaluation_id": "CT-19809",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Rapport efficacité/effets indésirables de l'ondansétron reste important dans les indications AMM.",
+      "extrait_textuel": "Le rapport efficacité/effets indésirables de l’ondansétron dans les indications de l’AMM reste important.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Le rapport",
+          "t": "Le rapport efficacité/effets indésirables de l’ondansétron dans les indications de l’AMM reste important.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19809_arg_CT_04",
+      "evaluation_id": "CT-19809",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "Existence d'alternatives médicamenteuses, notamment autres antagonistes de la sérotonine.",
+      "extrait_textuel": "Il existe des alternatives médicamenteuses, notamment les autres antagonistes de la sérotonine.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Il existe ",
+          "t": "Il existe des alternatives médicamenteuses, notamment les autres antagonistes de la sérotonine.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19809_arg_CT_05",
+      "evaluation_id": "CT-19809",
+      "source_argument": "CT",
+      "categorie_argument": "Économique",
+      "direction_argument": "Neutre",
+      "description": "Pas d'impact supplémentaire sur santé publique vs présentations déjà inscrites.",
+      "extrait_textuel": "ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport aux autres présentations déjà inscrites.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Intérêt de",
+          "t": "ZOPHREN (ondansétron) 2 mg/mL, solution injectable (IV) n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport aux autres présentations déjà inscrites.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19809_ctx",
+    "evaluation_id": "CT-19809",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "1990-03-05",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "contexte_evaluation": "Demande d'inscription sur liste collectivités de deux nouvelles présentations (boîte 8x4ml et 10x2ml) en complément de gamme de ZOPHREN 2mg/mL solution injectable déjà disponible. Pas d'essais cliniques nouveaux car complément de gamme.",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 3,
+        "s": "AMM Date",
+        "t": "Date initiale (procédure nationale) : 05/03/1990",
+        "m": "manual",
+        "c": 0.99
+      },
+      {
+        "field": "contexte_evaluation",
+        "f": "F1",
+        "p": 2,
+        "s": "Il s’agit",
+        "t": "Il s’agit d’une demande d’inscription sur la liste des spécialités agréées à l’usage des collectivités de deux nouvelles présentations de la spécialité ZOPHREN (ondansétron) 2 mg/mL, solution injectable en ampoule (IV), en boite de 8 ampoules de 4 ml et de 10 ampoules de 2 ml.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19809",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19809_smrasmr_01",
+      "evaluation_id": "CT-19809",
+      "indication_precise": "Prévention et traitement des nausées et vomissements aigus induits par la chimiothérapie cytotoxique moyennement à hautement émétisante et la radiothérapie hautement émétisante chez l'adulte. Prévention des nausées et vomissements aigus induits par la chimiothérapie cytotoxique moyennement à hautement émétisante chez l'enfant à partir de 6 mois. Traitement des nausées et vomissements induits par la chimiothérapie cytotoxique chez l’enfant à partir de 6 mois. Traitement des nausées et vomissements postopératoires chez l'adulte. Prévention et traitement des nausées et vomissements post-opératoires chez l’enfant à partir d’1 mois.",
+      "smr": "La Commission considère que le service médical rendu par ZOPHREN (ondansétron) 2 mg/mL, solution injectable en ampoule (IV) est important dans les indications de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Ces présentations sont des compléments de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Rapport efficacité/effets indésirables important, traitement préventif et curatif de 1ère intention, existence d'alternatives.",
+      "population_cible_indication": "Adultes et enfants à partir de 6 mois (chimiothérapie) ou 1 mois (postopératoire)",
+      "ligne_traitement_indication": "1ère intention",
+      "comparateurs_references_indication": "Autres antiémétiques recommandés dans chaque indication",
+      "comparateur_id_HAS": "CT-19809_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes et enfants ≥6 mois (chimiothérapie), ≥1 mois (postopératoire)"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Elevée",
+      "niveau_confiance_annotation": 4,
+      "annotateur": "auto",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commis",
+          "t": "La Commission considère que le service médical rendu par ZOPHREN (ondansétron) 2 mg/mL, solution injectable en ampoule (IV) est important dans les indications de l’AMM.",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 3,
+          "s": "Ces présen",
+          "t": "Ces présentations sont des compléments de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "indication_precise",
+          "f": "F1",
+          "p": 2,
+          "s": "• Préventi",
+          "t": "• Prévention et traitement des nausées et vomissements aigus induits par la chimiothérapie cytotoxique moyennement à hautement émétisante et la radiothérapie hautement émétisante chez l'adulte. • Prévention des nausées et vomissements aigus induits par la chimiothérapie cytotoxique moyennement à hautement émétisante chez l'enfant à partir de 6 mois. • Traitement des nausées et vomissements induits par la chimiothérapie cytotoxique chez l’enfant à partir de 6 mois. • Traitement des nausées et vomissements postopératoires chez l'adulte. • Prévention et traitement des nausées et vomissements post-opératoires chez l’enfant à partir d’1 mois.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19809_event_AMM_01",
+      "evaluation_id": "CT-19809",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "1990-03-05",
+      "detail_brut": "AMM initiale procédure nationale",
+      "source_doc": "F1 page 3",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "AMM Date",
+          "t": "Date initiale (procédure nationale) : 05/03/1990",
+          "m": "manual",
+          "c": 0.99
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19809_event_CT_01",
+      "evaluation_id": "CT-19809",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-05-11",
+      "detail_brut": "Date d'examen et d'adoption par la Commission",
+      "source_doc": "F1 page 3",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "Date d’ex",
+          "t": "Date d’examen et d’adoption : 11 mai 2022",
+          "m": "manual",
+          "c": 0.99
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19809",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19809",
+    "is_orphan": false,
+    "classe_ATC_l2": "A04",
+    "aire_therapeutique": "Antiémétiques",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}
