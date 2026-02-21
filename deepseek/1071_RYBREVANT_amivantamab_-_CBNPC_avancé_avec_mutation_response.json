@@ -1,0 +1,2423 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19701",
+  "evaluation_id": "CT-19701",
+  "extraction_date": "2022-06-15",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19701_RYBREVANT_PIC_INS_AvisDef+_CT19701.pdf",
+        "type": "CT",
+        "page_count": 23
+      },
+      "F2": {
+        "file_name": "trans_2_rybrevant_20042022_transcription_ct19701.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 13
+      },
+      "F3": {
+        "file_name": "trans_1_rybrevant_15062022_transcription_ct19701.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 11
+      },
+      "F4": {
+        "file_name": "contrib_1_questionnaire_has_contrib_asso_med_de_lair_rybrevant_amivantamab.pdf",
+        "type": "CONTRIB",
+        "page_count": null
+      }
+    },
+    "extraction_date": "2022-04-20"
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19701_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "place_strategie"
+      ],
+      "routing_hint": "Conclusion synthétique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Motif de l’examen",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "indication",
+        "smr",
+        "asmr",
+        "isp"
+      ],
+      "routing_hint": "Décision SMR/ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_03",
+      "section_label_normalise": "CONTEXTE",
+      "section_label_brut": "01 CONTEXTE",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "01 CONTEXTE",
+      "expected_fields": [
+        "contexte_evaluation",
+        "historique"
+      ],
+      "routing_hint": "Contexte de la demande",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19701_seg_04",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "02 INDICATIONS",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "02 INDICATIONS",
+      "expected_fields": [
+        "indication"
+      ],
+      "routing_hint": "Indication AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_05",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "03 POSOLOGIE",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "03 POSOLOGIE",
+      "expected_fields": [
+        "posologie"
+      ],
+      "routing_hint": "Posologie",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19701_seg_06",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "04 BESOIN MEDICAL",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "04 BESOIN MEDICAL",
+      "expected_fields": [
+        "besoin_medical"
+      ],
+      "routing_hint": "Analyse besoin médical",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19701_seg_07",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "05 COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 2500,
+      "heading_text": "05 COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs"
+      ],
+      "routing_hint": "Liste comparateurs",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_08",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "07 ANALYSE DES DONNEES DISPONIBLES",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 18,
+      "char_start": 0,
+      "char_end": 10000,
+      "heading_text": "07 ANALYSE DES DONNEES DISPONIBLES",
+      "expected_fields": [
+        "essais_cliniques",
+        "criteres_jugement",
+        "resultats"
+      ],
+      "routing_hint": "Détails étude CHRYSALIS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_09",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "07.3 Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 16,
+      "page_end": 18,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "07.3 Tolérance",
+      "expected_fields": [
+        "effets_indesirables"
+      ],
+      "routing_hint": "Données sécurité",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_10",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "08 PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 19,
+      "page_end": 21,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "08 PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "expected_fields": [
+        "place_strategie"
+      ],
+      "routing_hint": "Position thérapeutique",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19701_seg_11",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "09 CONCLUSIONS DE LA COMMISSION",
+      "template_detecte": "CT_modern",
+      "page_start": 21,
+      "page_end": 23,
+      "char_start": 0,
+      "char_end": 2500,
+      "heading_text": "09 CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "isp",
+        "vote"
+      ],
+      "routing_hint": "Conclusions finales",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_1_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 1/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 1510,
+      "heading_text": "PARTIE 1/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "AVERTISSEMENT"
+      ],
+      "routing_hint": "transcription_intro",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_2_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 2/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1830,
+      "heading_text": "PARTIE 2/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_3_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 3/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 2350,
+      "heading_text": "PARTIE 3/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_4_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 4/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1850,
+      "heading_text": "PARTIE 4/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_5_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 5/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 2100,
+      "heading_text": "PARTIE 5/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_6_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 6/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 6,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 2150,
+      "heading_text": "PARTIE 6/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_7_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 7/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 1850,
+      "heading_text": "PARTIE 7/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_8_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 8/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 2200,
+      "heading_text": "PARTIE 8/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_9_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 9/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 9,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": 1850,
+      "heading_text": "PARTIE 9/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_10_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 10/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 10,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "PARTIE 10/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_11_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 11/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 11,
+      "char_start": 0,
+      "char_end": 2100,
+      "heading_text": "PARTIE 11/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_12_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 12/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 12,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 950,
+      "heading_text": "PARTIE 12/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "transcription_debat",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_13_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "TRANSCRIPTION PARTIE 13/13",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 13,
+      "page_end": 13,
+      "char_start": 0,
+      "char_end": 1950,
+      "heading_text": "PARTIE 13/13: Mercredi 20 avril 2022 Commission de Transparence RYBREVANT – Examen – Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "transcription_vote",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19701_seg_1",
+      "section_label_normalise": "AVERTISSEMENT",
+      "section_label_brut": "AVERTISSEMENT",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [
+        "Informations générales"
+      ],
+      "routing_hint": "Métadonnées et avertissement",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19701_seg_2",
+      "section_label_normalise": "PRESENTATION_DOSSIER",
+      "section_label_brut": "Audition inscription : RYBREVANT",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "1. Audition inscription : RYBREVANT (CBNPC) - (EGFR) (CT-19701) JANSSEN-CILAG",
+      "expected_fields": [
+        "Introduction de l'audition"
+      ],
+      "routing_hint": "Début de l'audition",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19701_seg_3",
+      "section_label_normalise": "PRESENTATION_HAS",
+      "section_label_brut": "Présentation du dossier par la chef de projet HAS",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 500,
+      "char_end": 1500,
+      "heading_text": "Présentation du dossier",
+      "expected_fields": [
+        "Résumé du dossier"
+      ],
+      "routing_hint": "Présentation initiale par la HAS",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19701_seg_4",
+      "section_label_normalise": "PRESENTATION_LABORATOIRE",
+      "section_label_brut": "Présentation du laboratoire Janssen",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 7,
+      "char_start": 1500,
+      "char_end": 4000,
+      "heading_text": "Présentation du laboratoire",
+      "expected_fields": [
+        "Arguments du laboratoire"
+      ],
+      "routing_hint": "Présentation par le laboratoire",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19701_seg_5",
+      "section_label_normalise": "QUESTIONS_DEBATS",
+      "section_label_brut": "Questions et débats de la commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 11,
+      "char_start": 4000,
+      "char_end": 8000,
+      "heading_text": "Questions et débats",
+      "expected_fields": [
+        "Interventions",
+        "Points de discussion"
+      ],
+      "routing_hint": "Échanges entre la commission et le laboratoire",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19701_seg_6",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote de la commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 11,
+      "char_start": 8000,
+      "char_end": 8500,
+      "heading_text": "Vote",
+      "expected_fields": [
+        "Résultats du vote"
+      ],
+      "routing_hint": "Vote final",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "seg_1",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Nom et adresse de l’association",
+      "template_detecte": "CONTRIB",
+      "page_start": null,
+      "page_end": null,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Nom et adresse de l’association :",
+      "expected_fields": [
+        "nom_association",
+        "adresse"
+      ],
+      "routing_hint": "Contribution_Patients.association",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_2",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Méthode utilisée pour remplir le questionnaire",
+      "template_detecte": "CONTRIB",
+      "page_start": null,
+      "page_end": null,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "1. Méthode utilisée pour remplir le questionnaire",
+      "expected_fields": [
+        "methode_recueil",
+        "description_methode",
+        "nb_patients_consultes"
+      ],
+      "routing_hint": "Contribution_Patients.methodologie",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_3",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Impact de la maladie / état de santé",
+      "template_detecte": "CONTRIB",
+      "page_start": null,
+      "page_end": null,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "2. Impact de la maladie / état de santé",
+      "expected_fields": [
+        "description_impacts_patients",
+        "impacts_proches_aidants"
+      ],
+      "routing_hint": "Contribution_Patients.impacts_maladie",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_4",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "template_detecte": "CONTRIB",
+      "page_start": null,
+      "page_end": null,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "3. Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "expected_fields": [
+        "traitements_disponibles",
+        "avantages",
+        "inconvenients",
+        "besoins_non_couverts"
+      ],
+      "routing_hint": "Contribution_Patients.traitements_actuels",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_5",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Expériences avec le médicament évalué",
+      "template_detecte": "CONTRIB",
+      "page_start": null,
+      "page_end": null,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "4. Expériences avec le médicament évalué",
+      "expected_fields": [
+        "experience_avec_medicament",
+        "avantages_constates",
+        "attentes_principales"
+      ],
+      "routing_hint": "Contribution_Patients.evaluation_medicament",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_6",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Synthèse de votre contribution",
+      "template_detecte": "CONTRIB",
+      "page_start": null,
+      "page_end": null,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "6. Synthèse de votre contribution",
+      "expected_fields": [
+        "position_generale",
+        "justification",
+        "arguments_principaux"
+      ],
+      "routing_hint": "Contribution_Patients.position_association",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19701_produit_01",
+      "evaluation_id": "CT-19701",
+      "produit_nom_commercial": "RYBREVANT",
+      "dci": "amivantamab",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "JANSSEN-CILAG",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution à diluer pour perfusion",
+          "dosage_concentration": "350 mg",
+          "code_cip13": "34009 550 861 7 8",
+          "code_cip7": "9001945",
+          "code_cip13_sans_espaces": "3400890019453"
+        }
+      ],
+      "classe_ATC": "L01FX18",
+      "statut_prescription": "Liste I",
+      "conditions_prescription": "Médicament réservé à l'usage hospitalier. Prescription réservée aux médecins spécialistes en oncologie et aux médecins compétents en cancérologie.",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "amivantam",
+          "t": "RYBREVANT 350 mg, solution à diluer pour perfusion",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "amivantam",
+          "t": "amivantamab",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 23,
+          "s": "B/1 flac",
+          "t": "CIP : 34009 550 861 7 8",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19701",
+      "Num_avis": "CT-19701",
+      "produit_nom": "RYBREVANT",
+      "dci": "amivantamab",
+      "type_avis": "Première évaluation",
+      "type_avis_enum": "Inscription",
+      "forme": "solution à diluer pour perfusion",
+      "dosage": "350 mg",
+      "indication": "En monothérapie dans le traitement des patients adultes atteints d’un cancer bronchique non à petites cellules (CBNPC) avancé avec mutations activatrices du récepteur du facteur de croissance épidermique (EGFR) par insertion dans l’exon 20, après échec d'un traitement à base de sels de platine.",
+      "classe_ATC": "L01FX18",
+      "pathologie": "Cancer bronchique non à petites cellules",
+      "maladie_rare": false,
+      "ligne_traitement": "2ème ligne après échec d'un traitement à base de sels de platine",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "Patients adultes avec mutations EGFR exon 20 insertion",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Cancer bronchique",
+      "aire_therapeutique_niveau_3": "CBNPC avec mutation EGFR",
+      "source_aire_therapeutique": "Déduit ATC L01FX18 et indication",
+      "design_etude": "Étude de phase I/II non comparative (CHRYSALIS)",
+      "niveau_preuve_brut": "Données préliminaires issues d'une cohorte de l'étude de phase I/II non comparative",
+      "niveau_preuve_interprete": "Phase_I_II",
+      "besoin_medical_brut": "Le besoin médical chez les patients adultes ayant un CBNPC avancé avec mutations activatrices de l’EGFR par insertion dans l’exon 20 et après échec d'un traitement à base de sels de platine est considéré comme très partiellement couvert par les traitements de chimiothérapie de 2ème ligne.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes",
+      "biomarqueur_requis": "Mutation activatrice EGFR par insertion dans l'exon 20",
+      "design_enum": "Phase_I_II",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Première évaluation",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Deux inhibiteurs de tyrosine kinase (mobocertinib, poziotinib) disponibles en accès compassionnel",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-15",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Le cancer bronchique non à petites cellules (CBNPC) est une maladie grave qui engage le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : chimiothérapies (docétaxel, pémétrexed, gemcitabine, vinorelbine) et inhibiteurs de tyrosine kinase en accès compassionnel (mobocertinib, poziotinib).",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "s": "Indication",
+          "t": "En monothérapie dans le traitement des patients adultes atteints d’un cancer bronchique non à petites cellules (CBNPC) avancé avec mutations activatrices du récepteur du facteur de croissance épidermique (EGFR) par insertion dans l’exon 20, après échec d'un traitement à base de sels de platine.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 1,
+          "s": "L’essent",
+          "t": "après échec d'un traitement à base de sels de platine",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19701_essai_CHRYSALIS",
+      "evaluation_id": "CT-19701",
+      "nom_essai": "CHRYSALIS",
+      "nct_number": "NCT02609776",
+      "design": "Etude de phase I/II, monobras, multi cohortes, ouverte, multicentrique.",
+      "design_enum": "Phase_I_II_single_arm",
+      "population_cible": "Patients atteints de CBNPC avancé avec mutation EGFR par insertion dans l'exon 20, précédemment traités par chimiothérapie à base de sels de platine.",
+      "comparateur_utilise": "Aucun",
+      "nb_patient_traitement": 114,
+      "nb_patient_comparateur": 0,
+      "resultat_global": "Taux de réponse globale de 36,8%",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase I/II non comparative",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12.5,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "I_II",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Patients avec mutation exon 20 et chimiothérapie antérieure (cohorte D)",
+      "date_cutoff_donnees": "2021-03-30",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Préliminaires",
+      "age_min_num": 36,
+      "age_max_num": 84,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "114",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 8,
+          "s": "Study of",
+          "t": "Study of Amivantamab, a Human Bispecific EGFR and cMet Antibody, in Participants With Advanced Non-Small Cell Lung Cancer (CHRYSALIS)",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 11,
+          "s": "Au 30 mars",
+          "t": "Au 30 mars 2021, la cohorte d’efficacité D comprenait 114 patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19701_essai_CHRYSALIS_crit_ORR",
+      "evaluation_id": "CT-19701",
+      "essai_id": "CT-19701_essai_CHRYSALIS",
+      "nom_critere": "Taux de réponse globale confirmée (ORR)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "%",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "36,8%",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[28,0 ; 46,4]",
+      "IC95_low_num": 28.0,
+      "IC95_high_num": 46.4,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Taux de réponse modeste rapporté",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 10,
+          "s": "Critère de",
+          "t": "Taux de réponse globale confirmée (ORR)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 15,
+          "s": "A la date",
+          "t": "ORR évalué par l’investigateur a été de 36,8% IC95% : [28,0% ; 46,4%]",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19701_essai_CHRYSALIS_crit_PFS",
+      "evaluation_id": "CT-19701",
+      "essai_id": "CT-19701_essai_CHRYSALIS",
+      "nom_critere": "Survie sans progression (PFS)",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "mois",
+      "hierarchie_critere": "Exploratoire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Kaplan-Meier",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "6,9 mois",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[5,6 ; 8,6]",
+      "IC95_low_num": 5.6,
+      "IC95_high_num": 8.6,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "months",
+      "type_effet": "Autre",
+      "significativite_statistique": null,
+      "critere_atteint": null,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 11,
+          "s": "Critères de",
+          "t": "Survie sans progression (PFS)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 15,
+          "s": "Survie sans",
+          "t": "Médiane, mois [IC 95%] 6,9 mois [5,6 ; 8,6]",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19701_essai_CHRYSALIS_crit_OS",
+      "evaluation_id": "CT-19701",
+      "essai_id": "CT-19701_essai_CHRYSALIS",
+      "nom_critere": "Survie globale (OS)",
+      "nature_critere": "Dur",
+      "unite_mesure": "mois",
+      "hierarchie_critere": "Exploratoire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Kaplan-Meier",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "22,8 mois",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[17,5 ; NE]",
+      "IC95_low_num": 17.5,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "months",
+      "type_effet": "Autre",
+      "significativite_statistique": null,
+      "critere_atteint": null,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 11,
+          "s": "Critères de",
+          "t": "Survie globale (OS)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 15,
+          "s": "Survie globale",
+          "t": "Médiane, mois [IC 95%] 22,8 mois [17,5 ; NE]",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19701_essai_CHRYSALIS_tol",
+      "evaluation_id": "CT-19701",
+      "essai_id": "CT-19701_essai_CHRYSALIS",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 11.8,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": 11,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": true,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Rash",
+          "grade": "3-4",
+          "incidence_pct_traitement": 3.9,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 16,
+              "s": "La fréquence",
+              "t": "le rash (3,9%)",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        },
+        {
+          "ei_terme": "Hypokaliémie",
+          "grade": "3-4",
+          "incidence_pct_traitement": 3.9,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 16,
+              "s": "La fréquence",
+              "t": "l’hypokaliémie (3,9%)",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Réactions liées à la perfusion",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 63.4,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 15,
+              "s": "Les événements",
+              "t": "les réactions liées à la perfusion (63,4%)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Rash cutané",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 85.0,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 15,
+              "s": "S’agissant des",
+              "t": "Rashs cutanés : 85,0% (130/153)",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "ei_grade_max": "5",
+      "deces_detailles": [
+        {
+          "cause_deces": "Insuffisance respiratoire",
+          "relation_traitement": "Non renseigné",
+          "delai_survenue_jours": null,
+          "contexte": "Non renseigné",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 16,
+              "s": "Un total de",
+              "t": "Il s’est agi de 2 insuffisances respiratoires",
+              "m": "manual",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Les EI de grade 3 ou 4 considérés comme liés au traitement par l’investigateur et survenus chez au moins 2% de patients ont été : le rash (3,9%), l’hypokaliémie (3,9%), la toxicité des ongles (3,3%), la diarrhée (3,3%), l’hypoalbuminémie (3,3%) et les réactions liées à la perfusion (2,6%).",
+      "EI_frequents": "Les événements indésirables (EI) les plus fréquemment rapportés (fréquence ≥ 20%) ont été : les réactions liées à la perfusion (63,4%), les événements associés à l'inhibition de l'EGFR : périonyxis (52,9%), rash (43,1%), dermatite acnéiforme (39,2%) et stomatite (22,2%), les événements liés à l’inhibition du MET : hypoalbuminémie (39,2%) et œdèmes périphériques (22,9%), les nausées (24,8%) et la constipation (23,5%), l’augmentation de l’ALAT (22,2%).",
+      "deces": "Un total de 11 patients (7,2%) ont eu un EI de grade 5 (entrainant le décès).",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "discontinuations_ae_pct",
+          "f": "F1",
+          "p": 15,
+          "s": "Des EI ayant",
+          "t": "Des EI ayant entrainé l’arrêt du traitement sont survenus chez 18 patients (11,8%).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19701_compHAS_01",
+      "evaluation_id": "CT-19701",
+      "nom_comparateur_HAS": "TAXOTERE et ses génériques (docétaxel)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Chimiothérapie",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "TAXOTERE",
+          "t": "TAXOTERE et ses génériques docétaxel",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19701_compHAS_02",
+      "evaluation_id": "CT-19701",
+      "nom_comparateur_HAS": "ALIMTA et ses génériques (pémétrexed)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Chimiothérapie",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "ALIMTA et",
+          "t": "ALIMTA et ses génériques pémétrexed",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19701_compHAS_03",
+      "evaluation_id": "CT-19701",
+      "nom_comparateur_HAS": "GEMZAR et ses génériques (gemcitabine)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Chimiothérapie",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "GEMZAR et",
+          "t": "GEMZAR et ses génériques gemcitabine",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19701_compHAS_04",
+      "evaluation_id": "CT-19701",
+      "nom_comparateur_HAS": "NAVELBINE et ses génériques (vinorelbine)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Chimiothérapie",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "NAVELBINE et",
+          "t": "NAVELBINE et ses génériques vinorelbine",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19701_arg_CT_01",
+      "evaluation_id": "CT-19701",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Défavorable",
+      "description": "Données d'efficacité préliminaires avec taux de réponse modeste (ORR 36,8%) sur un nombre limité de patients (n=114) et suivi court (médiane 12,5 mois).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "les données préliminaires disponibles issues d’une cohorte de l’étude de phase I/II non comparative CHRYSALIS dans laquelle un taux de réponse modeste a été rapporté (taux de réponse globale de 36,8% ; IC95% : [28,0 ; 46,4]) sur un nombre de patients (n=114) et une durée de suivi (médiane de 12,5 mois) limités",
+      "page_source": "Page 3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "les données",
+          "t": "les données préliminaires disponibles issues d’une cohorte de l’étude de phase I/II non comparative CHRYSALIS dans laquelle un taux de réponse modeste a été rapporté (taux de réponse globale de 36,8% ; IC95% : [28,0 ; 46,4]) sur un nombre de patients (n=114) et une durée de suivi (médiane de 12,5 mois) limités",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19701_arg_CT_02",
+      "evaluation_id": "CT-19701",
+      "source_argument": "CT",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "Absence de comparaison directe et faiblesse méthodologique de la comparaison indirecte fournie, alors qu'une comparaison directe robuste était possible.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "l’impossibilité de déterminer la quantité d’effet de ce traitement du fait de l’absence de comparaison directe et la faiblesse méthodologique de la comparaison indirecte fournie, dans un contexte où une comparaison directe à une alternative thérapeutique disponible avec une méthodologie robuste était possible",
+      "page_source": "Page 3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "l’impossibilité",
+          "t": "l’impossibilité de déterminer la quantité d’effet de ce traitement du fait de l’absence de comparaison directe et la faiblesse méthodologique de la comparaison indirecte fournie, dans un contexte où une comparaison directe à une alternative thérapeutique disponible avec une méthodologie robuste était possible",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19701_arg_CT_03",
+      "evaluation_id": "CT-19701",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Défavorable",
+      "description": "Fraction de patients inclus ayant une maladie moins agressive, voire indolente, ce qui peut biaiser les résultats de survie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "avec de plus une fraction de patients inclus ayant une maladie moins agressive, voire indolente",
+      "page_source": "Page 3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "avec de plus",
+          "t": "avec de plus une fraction de patients inclus ayant une maladie moins agressive, voire indolente",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19701_arg_CT_04",
+      "evaluation_id": "CT-19701",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Profil de tolérance marqué par une incidence élevée d'effets indésirables de grades ≥3 (41,8%) et des arrêts de traitement dans 11,8% des cas.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La fréquence des EI de grades ≥3 a été de 41,8%. Des EI ayant entrainé l’arrêt du traitement sont survenus chez 18 patients (11,8%).",
+      "page_source": "Page 15-16",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 15,
+          "s": "La fréquence",
+          "t": "La fréquence des EI de grades ≥3 a été de 41,8%.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 15,
+          "s": "Des EI ayant",
+          "t": "Des EI ayant entrainé l’arrêt du traitement sont survenus chez 18 patients (11,8%).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19701_arg_CT_05",
+      "evaluation_id": "CT-19701",
+      "source_argument": "CT",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "description": "Impossibilité d'interpréter les résultats de survie sans progression et survie globale du fait du caractère non comparatif et exploratoire des analyses.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "l’impossibilité d’interpréter les résultats de survie sans progression et de survie globale du fait du caractère non comparatif de l’étude et du caractère purement exploratoire des analyses",
+      "page_source": "Page 18",
+      "section_source": "Discussion",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 18,
+          "s": "l’impossibilité",
+          "t": "l’impossibilité d’interpréter les résultats de survie sans progression et de survie globale du fait du caractère non comparatif de l’étude et du caractère purement exploratoire des analyses",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_1",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Neutre",
+      "description": "Taux de réponse de 37% avec un taux de censure élevé (50%) pour la durée de réponse, rendant les résultats moins robustes.",
+      "extrait_textuel": "Pour la durée de la réponse, je demanderai l’aide de Sylvie, mais il y a un taux de censure de 50 %. Le fait d’avoir une médiane à 10-12 mois avec un taux de censure de 50 % veut dire que l’on aligne ceux qui manquent sur les chiffres.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 5",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "trans_5_13",
+          "t": "Pour la durée de la réponse, je demanderai l’aide de Sylvie, mais il y a un taux de censure de 50 %.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Dr KOUZAN",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_2",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population",
+      "direction_argument": "Défavorable",
+      "description": "Présence d'une proportion non négligeable de patients indolents (moitié des patients avec plus de 2 ans d'évolution), créant une hétérogénéité majeure dans l'agressivité de la maladie.",
+      "extrait_textuel": "Il y a quand même une proportion non négligeable de patients indolents. Ici, c’est un empilement de données individuelles avec la durée d’évolution. Les traits verticaux sont le nombre de mois. Le premier trait, c’est 20 mois, donc presque 2 ans, et le dernier trait, c’est 10 ans.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 4",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "trans_4_13",
+          "t": "Il y a quand même une proportion non négligeable de patients indolents.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Dr KOUZAN",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur_majeur"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_3",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Défavorable",
+      "description": "Médiane de survie de 22 mois alors que la médiane de suivi est de 12 mois, ce qui est difficile à interpréter.",
+      "extrait_textuel": "Là, c’est pareil pour la médiane de survie. Il y a une médiane de 22 mois alors que la médiane de suivi est de 12 mois. Je ne comprends pas comment l’on peut avoir une médiane de survie de 22 mois alors que la médiane de suivi est de 12 mois.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 5",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "trans_5_13",
+          "t": "Il y a une médiane de 22 mois alors que la médiane de suivi est de 12 mois.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_4",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "Comparaison indirecte avec cohorte ESME présente des différences moyennes standardisées élevées après pondération (30% sur lignes antérieures, 37% sur métastases hépatiques), remettant en question la validité.",
+      "extrait_textuel": "Enfin, ce qui m’a principalement gênée, c’est qu’ils nous montrent des différences moyennes standardisées, qui est la façon de quantifier les différences moyennes entre groupes sur ces facteurs pronostiques, après pondération, qui restent très élevées. Il y a notamment 30 % en termes d’unités d’écart-type de différence sur le nombre de lignes antérieures au traitement, 37 % de différence sur les métastases hépatiques.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "page_source": "Page 8-9",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "trans_8_13",
+          "t": "Il y a notamment 30 % en termes d’unités d’écart-type de différence sur le nombre de lignes antérieures au traitement, 37 % de différence sur les métastases hépatiques.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Pr GIRARD",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_5",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Existence d'autres molécules en accès compassionnel (poziotinib, mobocertinib) qui entrent dans la discussion des traitements appropriés disponibles.",
+      "extrait_textuel": "Il existe deux inhibiteurs de tyrosine kinase qui ont été spécifiquement développés pour le traitement de ce cancer avec cette mutation précise, qui sont en cours de développement, en cours d'étude, et qui sont actuellement disponibles en accès compassionnel en France.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 2",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "trans_2_13",
+          "t": "Il existe deux inhibiteurs de tyrosine kinase qui ont été spécifiquement développés... actuellement disponibles en accès compassionnel en France.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Pr GIRARD",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_6",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Toxicité gérable mais non négligeable, avec des effets de type TKI EGFR (peau, diarrhées) et anti-MET (hypoalbuminémie, œdème périphérique).",
+      "extrait_textuel": "Cette tolérance est évaluée sur un très faible nombre de patients. Des conclusions robustes sont donc bien sûr impossibles. Je peux juste dire, comme pour le dossier précédent, que la toxicité semble gérable même si elle n’est pas négligeable.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 6",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "trans_6_13",
+          "t": "La toxicité semble gérable même si elle n’est pas négligeable.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Pr GIRARD",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_7",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Taux de réponse de 37% avec 3 réponses complètes chez des patients mutés EGFR exon 20, encourageant pour une mutation rare sans thérapie ciblée jusqu'alors.",
+      "extrait_textuel": "Je reviens à notre population d’intérêt aujourd’hui, les patients avec insertion de l’exon 20. Je voulais juste dire qu’un taux de réponse de 37 % et 3 réponses complètes - j’ai vérifié dans le papier-, et malgré tout chez les patients mutés qui n’ont pas accès à l’immunothérapie et qui n’ont pas eu accès à une thérapie ciblée jusqu’à aujourd’hui, ce sont quand même des résultats évidemment encourageants.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 10-11",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "trans_10_13",
+          "t": "un taux de réponse de 37 % et 3 réponses complètes... ce sont quand même des résultats évidemment encourageants.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "intervenant": "Dr KOUZAN",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné"
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_8",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Favorable",
+      "description": "Expérience clinique positive avec l'amivantamab : patients toujours sous traitement après deux ans avec une toxicité très acceptable, contrairement au mobocertinib/poziotinib très difficiles à manier (fortes diarrhées).",
+      "extrait_textuel": "Il est vrai que j’ai eu la chance de pouvoir administrer l’amivantamab chez des patients depuis deux ans dans la structure où je travaille. Les patients sont toujours sous traitement, avec une toxicité très acceptable. C’est vrai que deux ans sous traitement chez les patients qui ont une mutation qui n’était pas ciblable jusqu’alors, c’est toujours impressionnant.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 11",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "trans_11_13",
+          "t": "Les patients sont toujours sous traitement, avec une toxicité très acceptable.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19701_arg_TRANS_9",
+      "evaluation_id": "CT-19701",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "Plan de développement : la phase 3 attendue est en première ligne en association avec chimiothérapie, et non en monothérapie, ce qui ne répond pas complètement aux incertitudes actuelles.",
+      "extrait_textuel": "J’ai compris que la phase 3 qui était attendue était en première ligne, et donc en association à la chimiothérapie. Y a-t-il quand même un plan de développement en monothérapie ? ... À ma connaissance, il n’y a pas de développement en monothérapie.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "page_source": "Page 12-13",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 12,
+          "s": "trans_12_13",
+          "t": "À ma connaissance, il n’y a pas de développement en monothérapie.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "description": "Cancer rare (insertions exon 20 EGFR) en impasse thérapeutique avec mortalité élevée et options limitées.",
+      "extrait_textuel": "Il s'agit donc d'un cancer rare, qui ne peut être diagnostiqué que par séquençage de nouvelle génération... Comme tous les cancers avec mutations de l'EGFR, l'immunothérapie est peu ou pas efficace et le traitement repose avant tout sur la chimiothérapie, elle aussi le plus souvent inefficace.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association De l’Air !",
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": null,
+          "s": "seg_4",
+          "t": "Il s'agit donc d'un cancer rare... chimiothérapie, elle aussi le plus souvent inefficace.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité",
+      "description": "Attente des patients : augmentation de l'espérance de vie avec qualité de vie optimale, via des thérapies ciblées.",
+      "extrait_textuel": "La principale attente est une augmentation de l’espérance de vie avec une qualité de vie optimale. Les patients qui bénéficient de ce genre de traitement nous disent... cela leur permet d’avoir une meilleure qualité de vie, car souvent moins de fatigue et de contraintes d’hospitalisation, donc plus de liberté.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association De l’Air !",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": null,
+          "s": "seg_4",
+          "t": "La principale attente est une augmentation de l’espérance de vie avec une qualité de vie optimale...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "L'amivantamab représente un progrès majeur pour cette tumeur rare, avec deux options disponibles (mobocertinib et amivantamab).",
+      "extrait_textuel": "Il n'y a pas d'étude comparant le mobocertinib et l'amivantanab mais la mise à disposition de ces deux molécules est un progrès majeur pour la prise en charge de cette tumeur rare, en impasse thérapeutique jusqu'à présent.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association De l’Air !",
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": null,
+          "s": "seg_5",
+          "t": "Il n'y a pas d'étude comparant le mobocertinib et l'amivantanab mais la mise à disposition de ces deux molécules est un progrès majeur...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19701_ctx",
+    "evaluation_id": "CT-19701",
+    "ISP": "RYBREVANT (amivantamab) n’est pas susceptible d’avoir un intérêt de santé publique.",
+    "acces_precoce": "ATU_cohorte",
+    "date_debut_acces_precoce": "2021-06-30",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": 39,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": true,
+    "ISP_categorie": "Faible",
+    "type_acces_precoce_enum": "ATU_cohorte",
+    "statut_reglementaire_ema": "AMM_conditionnelle",
+    "date_AMM_ema": "2021-12-09",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [
+      "dépôt des résultats de l’étude de phase III PAPILLON"
+    ],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 1,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Etats-Unis",
+      "Allemagne",
+      "Pays-Bas",
+      "Belgique",
+      "Espagne",
+      "Italie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Etats-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2021-05-20",
+        "reference": "Breakthrough designation",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-06-15",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Insuffisant",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 4,
+        "s": "RYBREVANT",
+        "t": "RYBREVANT (amivantamab) a obtenu une autorisation de mise sur le marché (AMM) conditionnelle dans cette indication le 9 décembre 2021.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19701",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19701_smrasmr_01",
+      "evaluation_id": "CT-19701",
+      "indication_precise": "En monothérapie dans le traitement des patients adultes atteints d’un cancer bronchique non à petites cellules (CBNPC) avancé avec mutations activatrices du récepteur du facteur de croissance épidermique (EGFR) par insertion dans l’exon 20, après échec d'un traitement à base de sels de platine.",
+      "smr": "INSUFFISANT pour justifier d’une prise en charge par la solidarité nationale dans l’indication de l’AMM.",
+      "asmr": "Sans objet",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Prenant en compte l’impossibilité de déterminer la quantité d’effet de ce traitement du fait de l’absence de comparaison directe et la faiblesse méthodologique de la comparaison indirecte fournie, et les données préliminaires disponibles issues d’une cohorte de l’étude de phase I/II non comparative CHRYSALIS dans laquelle un taux de réponse modeste a été rapporté.",
+      "population_cible_indication": "Patients adultes atteints d’un CBNPC avancé avec mutations activatrices de l’EGFR par insertion dans l’exon 20, après échec d'un traitement à base de sels de platine.",
+      "ligne_traitement_indication": "2ème ligne après échec d'un traitement à base de sels de platine",
+      "comparateurs_references_indication": [
+        "docétaxel",
+        "pémétrexed",
+        "gemcitabine",
+        "vinorelbine"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19701_compHAS_01",
+        "CT-19701_compHAS_02",
+        "CT-19701_compHAS_03",
+        "CT-19701_compHAS_04"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Mutation activatrice EGFR par insertion dans l'exon 20",
+        "stade": "Métastatique",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Faible",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR",
+          "t": "SMR INSUFFISANT pour justifier d’une prise en charge par la solidarité nationale dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19701_poso_01",
+      "evaluation_id": "CT-19701",
+      "smr_asmr_id": "CT-19701_smrasmr_01",
+      "indication": "En monothérapie dans le traitement des patients adultes atteints d’un cancer bronchique non à petites cellules (CBNPC) avancé avec mutations activatrices du récepteur du facteur de croissance épidermique (EGFR) par insertion dans l’exon 20, après échec d'un traitement à base de sels de platine.",
+      "population_cible": "Patients adultes",
+      "posologie_source": "renvoi_RCP",
+      "posologie_resumee_brut": "RYBREVANT (amivantamab) doit être administré par voie intraveineuse une fois par semaine pendant 4 semaines, puis toutes les 2 semaines par la suite. Le traitement doit être poursuivi tant qu’un bénéfice clinique est observé chez le patient ou jusqu’à la survenue d’une toxicité inacceptable.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": 28,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "1050 mg pour patients <80 kg ou 1400 mg pour patients ≥80 kg",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxs",
+            "dose_days_in_cycle": [
+              1,
+              8,
+              15,
+              22
+            ],
+            "interval_days": 7
+          },
+          "voie_administration": "intraveineuse",
+          "expected_phase_duration_days": 28
+        },
+        {
+          "phase_nom": "Entretien",
+          "cycle_length_days": 14,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "1050 mg pour patients <80 kg ou 1400 mg pour patients ≥80 kg",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxs",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 14
+          },
+          "voie_administration": "intraveineuse",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Non renseigné",
+      "commentaires": "Cf. RCP",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "RYBREVANT",
+          "t": "RYBREVANT (amivantamab) doit être administré par voie intraveineuse une fois par semaine pendant 4 semaines, puis toutes les 2 semaines par la suite.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19701_event_AMM_01",
+      "evaluation_id": "CT-19701",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-12-09",
+      "detail_brut": "RYBREVANT (amivantamab) a obtenu une AMM conditionnelle dans cette indication le 9 décembre 2021.",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM conditionnelle",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "RYBREVANT",
+          "t": "RYBREVANT (amivantamab) a obtenu une autorisation de mise sur le marché (AMM) conditionnelle dans cette indication le 9 décembre 2021.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19701_event_ACCES_01",
+      "evaluation_id": "CT-19701",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2021-06-30",
+      "detail_brut": "En France, l’amivantamab a fait l’objet d’une ATU de cohorte octroyée par l’ANSM le 30 juin 2021.",
+      "source_doc": "F1",
+      "detail_type_specifique": "ATU de cohorte",
+      "acteurs_impliques": [
+        "ANSM"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "En France",
+          "t": "En France, l’amivantamab a fait l’objet d’une ATU de cohorte octroyée par l’ANSM le 30 juin 2021.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19701_event_CT_01",
+      "evaluation_id": "CT-19701",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-05-11",
+      "detail_brut": "Date d’adoption : 11 mai 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption avis CT",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 23,
+          "s": "Date d’adoption",
+          "t": "Date d’adoption : 11 mai 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19701_event_AUDITION_01",
+      "evaluation_id": "CT-19701",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-06-15",
+      "detail_brut": "Date de l’audition : 15 juin 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Audition laboratoire",
+      "acteurs_impliques": [
+        "Commission de la Transparence",
+        "Laboratoire"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 23,
+          "s": "Date de l’audition",
+          "t": "Date de l’audition : 15 juin 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19701",
+    "delai_amm_ct_jours": 154,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": 35,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19701",
+    "is_orphan": false,
+    "classe_ATC_l2": "L01",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 36.8,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 12.5,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": 11.8,
+    "critere_principal_description": "Taux de réponse globale (ORR)",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVALUATION",
+      "src_id": "CT-19701",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19701_essai_CHRYSALIS",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19701_essai_CHRYSALIS",
+      "tgt_type": "CRITERION",
+      "tgt_id": "CT-19701_essai_CHRYSALIS_crit_ORR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19701_essai_CHRYSALIS",
+      "tgt_type": "CRITERION",
+      "tgt_id": "CT-19701_essai_CHRYSALIS_crit_PFS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19701_essai_CHRYSALIS",
+      "tgt_type": "CRITERION",
+      "tgt_id": "CT-19701_essai_CHRYSALIS_crit_OS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19701_essai_CHRYSALIS",
+      "tgt_type": "TOLERANCE",
+      "tgt_id": "CT-19701_essai_CHRYSALIS_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervenant": "Serge Kouzan",
+      "role": "membre de la CT",
+      "intervention": "Présentation du dossier, critique sur taux de censure, proportion d'indolents, comparaison indirecte.",
+      "extrait_textuel": "Vous allez voir que c’est presque un copié-collé du dossier précédent. Il y a quelques différences, qui d’ailleurs sont importantes.",
+      "page_source": "Page 2",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 2,
+          "s": "trans_2_13",
+          "t": "Serge Kouzan, membre de la CT.- Vous allez voir que c’est presque un copié-collé du dossier précédent.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "intervenant": "Sylvie Chevret",
+      "role": "membre de la CT",
+      "intervention": "Analyse méthodologique de l'essai et de la comparaison indirecte, points sur le taux de réponse et la validité des courbes de survie.",
+      "extrait_textuel": "Indépendamment du type de cancer de ces malades, il y a quelques petites différences quand même avec le dossier précédent, à la fois sur l’essai et sur la comparaison indirecte qui est présentée.",
+      "page_source": "Page 7",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "trans_7_13",
+          "t": "Sylvie Chevret, membre de la CT.- Indépendamment du type de cancer de ces malades, il y a quelques petites différences quand même avec le dossier précédent.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "intervenant": "Clémence Basse",
+      "role": "membre de la CT",
+      "intervention": "Point sur l'innovation thérapeutique, expérience clinique positive avec l'amivantamab vs autres traitements.",
+      "extrait_textuel": "Je voulais refaire un commentaire. Dans les patients avec un cancer du poumon métastatique, il y a donc les mutations EGFR dans environ 13 % des cas.",
+      "page_source": "Page 10",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 10,
+          "s": "trans_10_13",
+          "t": "Clémence Basse, membre de la CT.- Je voulais refaire un commentaire.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "intervenant": "Michel Clanet",
+      "role": "Vice-Président",
+      "intervention": "Animation du débat, questions sur la rareté, le diagnostic, comparaison avec dossier précédent, organisation du vote.",
+      "extrait_textuel": "Michel Clanet, Vice-Président.- Serge et Sylvie sont les rapporteurs. Nous faisons d’abord le dossier de droit commun.",
+      "page_source": "Page 1",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 1,
+          "s": "trans_1_13",
+          "t": "Michel Clanet, Vice-Président.- Serge et Sylvie sont les rapporteurs.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "intervenant": "Pr COCHAT",
+      "role": "Président de la commission",
+      "affiliation": "Commission de Transparence",
+      "interventions": [
+        "Ouverture et clôture de l'audition",
+        "Animation des débats"
+      ]
+    },
+    {
+      "intervenant": "Mme SCHMITT",
+      "role": "Directrice Accès au marché et affaires gouvernementales",
+      "affiliation": "Janssen-Cilag",
+      "interventions": [
+        "Présentation initiale du laboratoire",
+        "Conclusion de la présentation"
+      ]
+    },
+    {
+      "intervenant": "Pr GIRARD",
+      "role": "Expert scientifique et clinicien",
+      "affiliation": "Institut du Thorax Curie-Montsouris",
+      "interventions": [
+        "Présentation détaillée du contexte médical, de l'efficacité et de la tolérance de RYBREVANT"
+      ]
+    },
+    {
+      "intervenant": "Dr KOUZAN",
+      "role": "Membre de la commission",
+      "affiliation": "Commission de Transparence",
+      "interventions": [
+        "Commentaires sur les incohérences du dossier",
+        "Discussion sur les patients indolents",
+        "Remarques sur le vote"
+      ]
+    },
+    {
+      "intervenant": "Chef de projet HAS",
+      "role": "Chef de projet",
+      "affiliation": "HAS",
+      "interventions": [
+        "Présentation du dossier",
+        "Questions sur les données comparatives"
+      ]
+    },
+    {
+      "intervenant": "Pr CHEVRET",
+      "role": "Membre de la commission",
+      "affiliation": "HAS",
+      "interventions": [
+        "Interventions sur les limitations des comparaisons indirectes"
+      ]
+    },
+    {
+      "intervenant": "Pr CLANET",
+      "role": "Vice-Président",
+      "affiliation": "Commission de Transparence",
+      "interventions": [
+        "Question sur les études complémentaires"
+      ]
+    },
+    {
+      "intervenant": "Pr DAUBERT",
+      "role": "Membre de la commission",
+      "affiliation": "Commission de Transparence",
+      "interventions": [
+        "Question sur le type d'AMM"
+      ]
+    },
+    {
+      "intervenant": "Dr BLONDON",
+      "role": "Membre de la commission",
+      "affiliation": "HAS",
+      "interventions": [
+        "Question sur la différence entre accès précoce et droit commun"
+      ]
+    },
+    {
+      "intervenant": "Mme KELLEY",
+      "role": "Agent HAS",
+      "affiliation": "HAS",
+      "interventions": [
+        "Explications sur les critères d'accès précoce",
+        "Annonce des résultats du vote"
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19701_point_1",
+      "description": "Débat sur le niveau d'incertitude et de faiblesse du dossier par rapport au dossier précédent, notamment sur le taux d'indolence et la rareté.",
+      "intervenants": [
+        "Michel Clanet",
+        "Serge Kouzan",
+        "Sylvie Chevret"
+      ],
+      "extrait_textuel": "Michel Clanet, Vice-Président.- Il y a une question qui me taraude. C’est de savoir si dans le niveau d’incertitude et de faiblesse de ces dossiers, nous sommes dans le même niveau que celui que nous venons d’évaluer précédemment ou si nous sommes dans un dossier encore plus faible que le précédent.",
+      "page_source": "Page 12",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 12,
+          "s": "trans_12_13",
+          "t": "Michel Clanet, Vice-Président.- Il y a une question qui me taraude.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19701_point_2",
+      "description": "Discussion sur la validité de la comparaison indirecte avec la cohorte ESME, notamment sur la sélection des patients via les codes CIM-10 et les différences résiduelles après appariement.",
+      "intervenants": [
+        "Sylvie Chevret",
+        "Michel Clanet"
+      ],
+      "extrait_textuel": "Sylvie Chevret, membre de la CT.- Concernant la pertinence de la population externe, on parle souvent du contrôle des biais de confusion, mais je trouve que la définition même des malades que l’on prend est importante.",
+      "page_source": "Page 9",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 9,
+          "s": "trans_9_13",
+          "t": "Sylvie Chevret, membre de la CT.- Concernant la pertinence de la population externe.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "point": "Patients indolents dans l'étude CHRYSALIS",
+      "description": "Débat sur la présence de patients avec une évolution longue (jusqu'à 12 ans) dans l'étude, remettant en question l'agressivité uniforme de la maladie.",
+      "intervenants_impliques": [
+        "Dr KOUZAN",
+        "Pr GIRARD"
+      ],
+      "pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "point": "Validité des données comparatives FLATIRON",
+      "description": "Discussion sur la validité des comparaisons de survie en raison du score ECOG manquant pour de nombreux patients dans la base FLATIRON.",
+      "intervenants_impliques": [
+        "Chef de projet HAS",
+        "Pr GIRARD"
+      ],
+      "pages": [
+        9
+      ]
+    },
+    {
+      "point": "Taux de réponse et son importance clinique",
+      "description": "Débat sur l'interprétation du taux de réponse de 43% et sa pertinence dans un contexte de besoins non couverts.",
+      "intervenants_impliques": [
+        "Dr KOUZAN",
+        "Pr CHEVRET"
+      ],
+      "pages": [
+        8,
+        11
+      ]
+    },
+    {
+      "point": "Cohérence entre accès précoce et SMR",
+      "description": "Discussion sur l'incohérence perçue entre l'octroi d'un accès précoce par la HAS et le vote pour un SMR insuffisant.",
+      "intervenants_impliques": [
+        "Dr KOUZAN",
+        "Pr COCHAT",
+        "Mme KELLEY"
+      ],
+      "pages": [
+        10,
+        11
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19701_vote_1",
+      "sujet_vote": "SMR suffisant vs insuffisant",
+      "date_vote": "2022-04-20",
+      "resultat": "SMR insuffisant",
+      "nb_votants": 19,
+      "nb_voix_pour_suffisant": 7,
+      "nb_voix_pour_insuffisant": 11,
+      "nb_abstentions": 1,
+      "details": "Vote entre un SMR suffisant (conditionnel faible comme le précédent) et un SMR insuffisant.",
+      "extrait_textuel": "Claire Brotons, pour la HAS.- Nous avons 7 voix pour un SMR suffisant, 11 voix pour un SMR insuffisant et 1 abstention. C’est donc un SMR insuffisant.",
+      "page_source": "Page 13",
+      "section_source": "TRANSCRIPTION",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 13,
+          "s": "trans_13_13",
+          "t": "7 voix pour un SMR suffisant, 11 voix pour un SMR insuffisant et 1 abstention. C’est donc un SMR insuffisant.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {},
+  "Témoignages_Patients": [
+    {
+      "temoignage_id": "temoignage_1",
+      "evaluation_id": "Non renseigné",
+      "texte": "Les patients disent avoir besoin d’attention et de soutien, ce qui engendre des sollicitations importantes de l’entourage pour pallier aux difficultés quotidiennes.",
+      "source": "Section 2.2",
+      "evidence": [
+        {
+          "field": "Témoignages_Patients",
+          "f": "F1",
+          "p": null,
+          "s": "seg_3",
+          "t": "Les patients disent avoir besoin d’attention et de soutien...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "temoignage_id": "temoignage_2",
+      "evaluation_id": "Non renseigné",
+      "texte": "Les patients qui bénéficient de ce genre de traitement nous disent pour les thérapies ciblées que cela leur permet d’avoir une meilleure qualité de vie, car souvent moins de fatigue et de contraintes d’hospitalisation, donc plus de liberté.",
+      "source": "Section 3.2",
+      "evidence": [
+        {
+          "field": "Témoignages_Patients",
+          "f": "F1",
+          "p": null,
+          "s": "seg_4",
+          "t": "Les patients qui bénéficient de ce genre de traitement nous disent... plus de liberté.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ]
+}

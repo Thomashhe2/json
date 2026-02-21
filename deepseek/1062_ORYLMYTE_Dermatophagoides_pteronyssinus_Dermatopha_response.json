@@ -1,0 +1,2136 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19645",
+  "evaluation_id": "CT-19645",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19645_ORYLMYTE_PIS_INS_Avisdéf_CT19645.pdf",
+        "type": "CT",
+        "page_count": 22
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19645_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "population",
+        "indication"
+      ],
+      "routing_hint": "Synthèse de l'avis",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "CONTEXTE",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "CONTEXTE",
+      "expected_fields": [
+        "produit",
+        "demande",
+        "AMM"
+      ],
+      "routing_hint": "Contexte de l'évaluation",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "INDICATION THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "INDICATION THERAPEUTIQUE",
+      "expected_fields": [
+        "indication",
+        "population"
+      ],
+      "routing_hint": "Indication thérapeutique",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_04",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "POSOLOGIE",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "POSOLOGIE",
+      "expected_fields": [
+        "posologie",
+        "duree_traitement"
+      ],
+      "routing_hint": "Posologie",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_05",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "BESOIN MEDICAL",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "BESOIN MEDICAL",
+      "expected_fields": [
+        "besoin_medical",
+        "prevalence",
+        "alternatives"
+      ],
+      "routing_hint": "Besoin médical",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_06",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs",
+        "alternatives"
+      ],
+      "routing_hint": "Comparateurs",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_07",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "DONNEES CLINIQUES",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "DONNEES CLINIQUES",
+      "expected_fields": [
+        "essais",
+        "resultats",
+        "efficacite"
+      ],
+      "routing_hint": "Données cliniques",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_08",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Données de tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 13,
+      "page_end": 15,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "Données de tolérance",
+      "expected_fields": [
+        "effets_indesirables",
+        "securite"
+      ],
+      "routing_hint": "Tolérance",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_09",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 15,
+      "page_end": 18,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "expected_fields": [
+        "place_therapeutique",
+        "recommandations"
+      ],
+      "routing_hint": "Place dans la stratégie",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_10",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "CONCLUSIONS DE LA COMMISSION",
+      "template_detecte": "CT_modern",
+      "page_start": 19,
+      "page_end": 20,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "decision"
+      ],
+      "routing_hint": "Conclusions",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_11",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 20,
+      "page_end": 22,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible",
+        "estimation"
+      ],
+      "routing_hint": "Population cible",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19645_seg_12",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "template_detecte": "CT_modern",
+      "page_start": 22,
+      "page_end": 22,
+      "char_start": 0,
+      "char_end": 100,
+      "heading_text": "INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "expected_fields": [
+        "presentations",
+        "AMM",
+        "conditions"
+      ],
+      "routing_hint": "Informations administratives",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19645_produit_01",
+      "evaluation_id": "CT-19645",
+      "produit_nom_commercial": "ORYLMYTE",
+      "dci": "Extrait allergénique standardisé d’acariens de la poussière de maison Dermatophagoides pteronyssinus et Dermatophagoides farinae à parts égales",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "STALLERGENES",
+      "evidence": []
+    },
+    {
+      "produit_id": "CT-19645_produit_02",
+      "evaluation_id": "CT-19645",
+      "produit_nom_commercial": "ACARIZAX",
+      "dci": "Extrait allergénique standardisé d’acariens Dermatophagoides pteronyssinus et Dermatophagoides farinae",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "ALK-ABELLO",
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19645",
+      "Num_avis": "CT-19645",
+      "produit_nom": "ORYLMYTE",
+      "dci": "Extrait allergénique standardisé d’acariens de la poussière de maison Dermatophagoides pteronyssinus et Dermatophagoides farinae à parts égales",
+      "type_avis": "Première évaluation",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimés sublinguaux",
+      "dosage": "100 IR, 100 IR - 300 IR et 300 IR",
+      "indication": "traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens dont le diagnostic a été établi par une histoire clinique évocatrice et la positivité d’un test de sensibilisation aux acariens de la poussière de maison",
+      "classe_ATC": "V01AA03",
+      "pathologie": "Rhinite allergique ou rhinoconjonctivite aux acariens",
+      "maladie_rare": false,
+      "ligne_traitement": "Deuxième intention après échec des traitements symptomatiques",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "Adolescents (12-17 ans) et adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Allergologie",
+      "aire_therapeutique_niveau_2": "Immunothérapie allergénique",
+      "aire_therapeutique_niveau_3": "Rhinite allergique aux acariens",
+      "source_aire_therapeutique": "Déduit ATC V01AA03",
+      "design_etude": "Études randomisées en double aveugle versus placebo",
+      "niveau_preuve_brut": "Essais de phases II/III",
+      "niveau_preuve_interprete": "Phase_II_III",
+      "besoin_medical_brut": "Il existe un besoin médical chez les patients ayant une rhinite allergique ou une rhinoconjonctivite modérée à sévère due aux acariens à disposer de traitements permettant un meilleur contrôle de la maladie et améliorant la qualité de vie. Le besoin médical dans cette indication est donc partiellement couvert.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adolescents (12-17 ans) et adultes ; non indiqué <12 ans et >65 ans",
+      "biomarqueur_requis": "Test de sensibilisation aux acariens (prick-test cutané et/ou dosage d’IgE spécifiques)",
+      "design_enum": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "ACARIZAX : ASMR V",
+      "concurrence_therapeutique_recente": "ACARIZAX et APSI",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-29",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les rhinites et rhinoconjonctivites allergiques représentent des affections fréquentes qui peuvent dégrader la qualité de vie par les perturbations qu'elles entraînent.",
+      "gravite_patho_enum": [
+        "Faible"
+      ],
+      "type_population_cible": "Adolescents (de 12 à 17 ans) et adultes",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : ACARIZAX et les allergènes préparés spécialement pour un individu (APSI)",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "ORYLMYTE",
+          "t": "ORYLMYTE 100 IR, 100 IR - 300 IR et 300 IR, comprimés sublinguaux",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "INDICATION",
+          "t": "ORYLMYTE est indiqué chez les adolescents (de 12 à 17 ans) et les adultes dans le traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens dont le diagnostic a été établi par une histoire clinique évocatrice et la positivité d’un test de sensibilisation aux acariens de la poussière de maison",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 22,
+          "s": "Classific",
+          "t": "Classification ATC\nV01AA03",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "AVIS",
+          "t": "AVIS\n29 JUIN 2022",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19645_essai_VO57.07",
+      "evaluation_id": "CT-19645",
+      "essai_nom": "VO57.07",
+      "nct_number": "Non renseigné",
+      "design": "Multicentrique, double aveugle, randomisée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Adultes (18-50 ans) avec rhinite allergique ≥12 mois, prick-test positif et IgE spécifiques aux acariens, ARTSS≥5, asthme intermittent",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 170,
+      "nb_patient_comparateur": 170,
+      "resultat_global": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur le critère principal (AASS)",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase II/III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "II/III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": 50,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "340",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 8,
+          "s": "Etudes",
+          "t": "VO57.07\n(Bergmann K.C et al)\n2014",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 8,
+          "s": "Groupes",
+          "t": "Orylmyte 300 IR\n(n=170)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19645_essai_SL75.14",
+      "evaluation_id": "CT-19645",
+      "essai_nom": "SL75.14",
+      "nct_number": "Non renseigné",
+      "design": "Multicentrique, double aveugle, randomisée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Adolescents et adultes (12-65 ans) avec rhinite ≥12 mois (±asthme), sensibilisation aux acariens, TCS≥5 après run-in",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 802,
+      "nb_patient_comparateur": 805,
+      "resultat_global": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur le critère principal (aTCS)",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 12,
+      "age_max_num": 65,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [
+        "RQLQ"
+      ],
+      "qol_resultats_brut": "À la fin du traitement, le score global du RQLQ était respectivement de 1,42 dans le groupe ORYLMYTE, et 1,62 dans le groupe placebo, soit une différence relative de 12% (p = 0,0004).",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": true,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "1607",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 8,
+          "s": "Etudes",
+          "t": "SL75.14\n(Demoly P. et al)\n2021",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19645_essai_VO64.08",
+      "evaluation_id": "CT-19645",
+      "essai_nom": "VO64.08",
+      "nct_number": "Non renseigné",
+      "design": "Multicentrique, double aveugle, randomisée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Enfants et adolescents (5-17 ans) avec rhinite ≥12 mois, prick-test positif et IgE spécifiques aux acariens, ARTSS≥5",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 241,
+      "nb_patient_comparateur": 230,
+      "resultat_global": "Pas de différence significative entre ORYLMYTE 300 IR et placebo sur le critère principal (AASS)",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase II/III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "II/III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 5,
+      "age_max_num": 17,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": false,
+      "magnitude_effet_categorie": "Non_significatif",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "471",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 8,
+          "s": "Etudes",
+          "t": "VO64.08\n(Halken S. et al)\n2014",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19645_essai_1207D1731",
+      "evaluation_id": "CT-19645",
+      "essai_nom": "1207D1731",
+      "nct_number": "Non renseigné",
+      "design": "Multicentrique, double aveugle, randomisée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Adolescents et adultes (12-64 ans) avec rhinite, test provocation nasal positif aux acariens, IgE spécifiques >0,7 kU/L, score symptômes ARTSS≥6",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 322,
+      "nb_patient_comparateur": 323,
+      "resultat_global": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur le critère principal (AASS)",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase II/III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "II/III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 12,
+      "age_max_num": 64,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "645",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 8,
+          "s": "Etudes",
+          "t": "1207D1731\n(Okamoto Y. et al)\n2017",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19645_essai_1501D1732",
+      "evaluation_id": "CT-19645",
+      "essai_nom": "1501D1732",
+      "nct_number": "Non renseigné",
+      "design": "Multicentrique, double aveugle, randomisée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Enfants (5-16 ans) avec rhinite, test provocation nasal positif aux acariens, score IgE spécifique ImmunoCAP>3, score symptômes RTSS≥6",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 219,
+      "nb_patient_comparateur": 219,
+      "resultat_global": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur le critère principal (AASS)",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 5,
+      "age_max_num": 16,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "438",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 8,
+          "s": "Etudes",
+          "t": "1501D1732\n(Okamoto Y. et al)\n2019",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19645_essai_VO57.07_crit_AASS",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO57.07",
+      "nom_critere": "Score ajusté des symptômes (AASS)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score 0-15",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "3,18",
+      "valeur_groupe_comparateur": "3,87",
+      "gain_absolu": "-0,69",
+      "gain_absolu_num": -0.69,
+      "gain_relatif": "-17,9%",
+      "gain_relatif_num": -17.9,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-1,25; - 0,14]",
+      "IC95_low_num": -1.25,
+      "IC95_high_num": -0.14,
+      "p_value": "0,0150",
+      "p_value_num": 0.015,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 8,
+          "s": "Critère",
+          "t": "Moyenne du score ajusté des symptômes (AASS9) durant les 3 derniers mois de l’année 1",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 11,
+          "s": "Différenc",
+          "t": "p-value\n0,0150",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19645_essai_SL75.14_crit_aTCS",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_SL75.14",
+      "nom_critere": "Score total combiné symptômes-traitement (aTCS)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score 0-15",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "3,62",
+      "valeur_groupe_comparateur": "4,35",
+      "gain_absolu": "-0,74",
+      "gain_absolu_num": -0.74,
+      "gain_relatif": "-16,9%",
+      "gain_relatif_num": -16.9,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-1,08; -0,38]",
+      "IC95_low_num": -1.08,
+      "IC95_high_num": -0.38,
+      "p_value": "< 0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 8,
+          "s": "Critère",
+          "t": "Moyenne du score total combiné symptômes-traitement aTCS10 durant les 4 dernières semaines de traitement de 12 mois",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19645_essai_VO64.08_crit_AASS",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO64.08",
+      "nom_critere": "Score ajusté des symptômes (AASS)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score 0-15",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "2,85",
+      "valeur_groupe_comparateur": "2,84",
+      "gain_absolu": "0,01",
+      "gain_absolu_num": 0.01,
+      "gain_relatif": "0,36%",
+      "gain_relatif_num": 0.36,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-0,41; - 0,43]",
+      "IC95_low_num": -0.41,
+      "IC95_high_num": -0.43,
+      "p_value": "NS",
+      "p_value_num": null,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Absente",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 8,
+          "s": "Critère",
+          "t": "Moyenne score ajusté des symptômes (AASS9) sur les 2 derniers mois de l’année 1",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19645_essai_1207D1731_crit_AASS",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1207D1731",
+      "nom_critere": "Score ajusté des symptômes (AASS)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score 0-15",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "5,00",
+      "valeur_groupe_comparateur": "6,11",
+      "gain_absolu": "-1,11",
+      "gain_absolu_num": -1.11,
+      "gain_relatif": "-18,2%",
+      "gain_relatif_num": -18.2,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-1,51; - 0,72]",
+      "IC95_low_num": -1.51,
+      "IC95_high_num": -0.72,
+      "p_value": "<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 8,
+          "s": "Critère",
+          "t": "Moyenne du score ajusté des symptômes (AASS9) entre S44 et S52 après le début du traitement",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19645_essai_1501D1732_crit_AASS",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1501D1732",
+      "nom_critere": "Score ajusté des symptômes (AASS)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score 0-15",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "6,32",
+      "valeur_groupe_comparateur": "7,27",
+      "gain_absolu": "-0,95",
+      "gain_absolu_num": -0.95,
+      "gain_relatif": "-13,1%",
+      "gain_relatif_num": -13.1,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-1,49; - 0,42]",
+      "IC95_low_num": -1.49,
+      "IC95_high_num": -0.42,
+      "p_value": "0,0005",
+      "p_value_num": 0.0005,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 8,
+          "s": "Critère",
+          "t": "Moyenne du score ajusté des symptômes (AASS9) entre S48 et S52 après le début du traitement",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19645_essai_VO57.07_tol",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO57.07",
+      "ae_total_pct": 88.2,
+      "ae_total_pct_comparateur": 80.0,
+      "sae_pct": 3.5,
+      "sae_pct_comparateur": 1.2,
+      "discontinuations_ae_pct": 10.0,
+      "discontinuations_ae_pct_comparateur": 2.9,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "œdème pharyngé",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "aggravation eczéma",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "prurit buccal",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 30.0,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème buccal",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 12.4,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème de la langue",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 5.3,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème labial",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 7.1,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "Non renseigné",
+          "date_signal": "Non renseigné",
+          "description": "Réactions allergiques systémiques, incluant des réactions anaphylactiques graves, rapportées depuis la mise sur le marché dans d'autres pays (effet de classe)",
+          "mesures_prises": "Première administration sous surveillance médicale",
+          "impact_evaluation": "Non renseigné",
+          "evidence": []
+        }
+      ],
+      "signal_ansm_flag": false,
+      "EI_graves": "EI graves : 6 (3,5%) dans le groupe ORYLMYTE, 2 (1,2%) dans le groupe placebo. EI graves considérés comme liés au traitement : œdème pharyngé, aggravation eczéma (groupe ORYLMYTE), urticaire (groupe placebo).",
+      "EI_frequents": "Prurit buccal (30%), œdème buccal (12,4%), œdème de la langue (5,3%), œdème labial (7,1%).",
+      "deces": "Non renseigné",
+      "signal_securite": "Risques importants identifiés : Réactions laryngopharyngées sévères, Réactions anaphylactiques incluant un choc anaphylactique, Œsophagite à éosinophiles.",
+      "evidence": [
+        {
+          "field": "sae_pct",
+          "f": "F1",
+          "p": 13,
+          "s": "EI graves",
+          "t": "EI graves (%)\n6 (3,5)\n2 (1,2)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19645_essai_SL75.14_tol",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_SL75.14",
+      "ae_total_pct": 70.1,
+      "ae_total_pct_comparateur": 54.9,
+      "sae_pct": 2.6,
+      "sae_pct_comparateur": 1.1,
+      "discontinuations_ae_pct": 12.4,
+      "discontinuations_ae_pct_comparateur": 2.1,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "réactions laryngo-pharyngées",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "prurit buccal",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 23.6,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème buccal",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 14.0,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème de la langue",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 8.5,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème labial",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 7.6,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "prurit auriculaire",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 14.4,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "EI graves : 21 (2,6%) dans le groupe ORYLMYTE, 9 (1,1%) dans le groupe placebo. EI grave considéré comme lié au traitement : réactions laryngo-pharyngées (2 cas).",
+      "EI_frequents": "Prurit buccal (23,6%), œdème buccal (14,0%), œdème de la langue (8,5%), œdème labial (7,6%), prurit auriculaire (14,4%).",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19645_essai_VO64.08_tol",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO64.08",
+      "ae_total_pct": 75.1,
+      "ae_total_pct_comparateur": 67.8,
+      "sae_pct": 2.9,
+      "sae_pct_comparateur": 3.0,
+      "discontinuations_ae_pct": 6.6,
+      "discontinuations_ae_pct_comparateur": 1.7,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "prurit buccal",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 11.2,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "EI graves : 7 (2,9%) dans le groupe ORYLMYTE, 7 (3,0%) dans le groupe placebo.",
+      "EI_frequents": "Prurit buccal (11,2%), pharyngite (9,5%), bronchite (9,1%), céphalées (8,7%).",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19645_essai_1207D1731_tol",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1207D1731",
+      "ae_total_pct": 88.2,
+      "ae_total_pct_comparateur": 75.5,
+      "sae_pct": 1.9,
+      "sae_pct_comparateur": 0.6,
+      "discontinuations_ae_pct": 3.4,
+      "discontinuations_ae_pct_comparateur": 1.2,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "rhinopharyngite",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 36.3,
+          "incidence_pct_comparateur": 36.0,
+          "evidence": []
+        },
+        {
+          "ei_terme": "irritation de la gorge",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 20.8,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "œdème buccal",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 20.8,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "EI graves : 6 (1,9%) dans le groupe ORYLMYTE, 2 (0,6%) dans le groupe placebo.",
+      "EI_frequents": "Rhinopharyngite (36,3%), irritation de la gorge (20,8%), œdème buccal (20,8%), pharyngite (17,1%).",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19645_essai_1501D1732_tol",
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1501D1732",
+      "ae_total_pct": 96.8,
+      "ae_total_pct_comparateur": 94.5,
+      "sae_pct": 2.3,
+      "sae_pct_comparateur": 0.9,
+      "discontinuations_ae_pct": 8.2,
+      "discontinuations_ae_pct_comparateur": 0.9,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "laryngite",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "rhinopharyngite",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 42.5,
+          "incidence_pct_comparateur": 53.0,
+          "evidence": []
+        },
+        {
+          "ei_terme": "grippe",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 26.0,
+          "incidence_pct_comparateur": 31.1,
+          "evidence": []
+        },
+        {
+          "ei_terme": "pharyngite",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 23.3,
+          "incidence_pct_comparateur": 24.7,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "EI graves : 5 (2,3%) dans le groupe ORYLMYTE, 2 (0,9%) dans le groupe placebo. EI grave considéré comme lié au traitement : laryngite (1 cas).",
+      "EI_frequents": "Rhinopharyngite (42,5%), grippe (26,0%), pharyngite (23,3%), œdème buccal (16,6%).",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19645_essai_VO57.07_comp_01",
+      "essai_id": "CT-19645_essai_VO57.07",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19645_essai_SL75.14_comp_01",
+      "essai_id": "CT-19645_essai_SL75.14",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19645_essai_VO64.08_comp_01",
+      "essai_id": "CT-19645_essai_VO64.08",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19645_essai_1207D1731_comp_01",
+      "essai_id": "CT-19645_essai_1207D1731",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19645_essai_1501D1732_comp_01",
+      "essai_id": "CT-19645_essai_1501D1732",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Populations_Essai": [
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO57.07",
+      "population_description": "Adultes 18-50 ans avec rhinite allergique ≥12 mois, prick-test positif et IgE spécifiques aux acariens, ARTSS≥5, asthme intermittent",
+      "age_min": 18,
+      "age_max": 50,
+      "age_moyen": 29,
+      "anciennete_maladie_moyenne_ans": 10.3,
+      "asthme_associe_pct": 30.7,
+      "polysensibilisation_pct": 52.3,
+      "score_symptomes_inclusion": "aRTSS 6.93",
+      "evidence": [
+        {
+          "field": "population_description",
+          "f": "F1",
+          "p": 10,
+          "s": "Caractéri",
+          "t": "Moyenne d’âge (Limites d’âge à l’inclusion, ans)\n29 (18-50)\nAncienneté de la rhinite (ans)\n10,3 (8,73)\nAsthme associé\n30,7 %\nAutres sensibilisations\nPolysensibilisation 52,3%",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_SL75.14",
+      "population_description": "Adolescents et adultes 12-65 ans avec rhinite ≥12 mois (±asthme), sensibilisation aux acariens, TCS≥5 après run-in",
+      "age_min": 12,
+      "age_max": 65,
+      "age_moyen": 29.6,
+      "anciennete_maladie_moyenne_ans": 11.26,
+      "asthme_associe_pct": 37.6,
+      "polysensibilisation_pct": 43.7,
+      "score_symptomes_inclusion": "aTCS 7.87",
+      "evidence": [
+        {
+          "field": "population_description",
+          "f": "F1",
+          "p": 10,
+          "s": "Caractéri",
+          "t": "Moyenne d’âge (Limites d’âge à l’inclusion, ans)\n29,6 (12-65)\nAncienneté de la rhinite (ans)\n11,26 (10,55)\nAsthme associé\n37,6%\nAutres sensibilisations\nPolysensibilisation 43,7%",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO64.08",
+      "population_description": "Enfants et adolescents 5-17 ans avec rhinite ≥12 mois, prick-test positif et IgE spécifiques aux acariens, ARTSS≥5",
+      "age_min": 5,
+      "age_max": 17,
+      "age_moyen": 11.1,
+      "anciennete_maladie_moyenne_ans": 4.28,
+      "asthme_associe_pct": null,
+      "polysensibilisation_pct": 53.5,
+      "score_symptomes_inclusion": "aTCS 6.83",
+      "evidence": [
+        {
+          "field": "population_description",
+          "f": "F1",
+          "p": 10,
+          "s": "Caractéri",
+          "t": "Moyenne d’âge (Limites d’âge à l’inclusion, ans)\n11,1 (5-17)\nAncienneté de la rhinite (ans)\n4,28 (2,7)\nAutres sensibilisations\nPolysensibilisation 53,5%",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1207D1731",
+      "population_description": "Adolescents et adultes 12-64 ans avec rhinite, test provocation nasal positif aux acariens, IgE spécifiques >0,7 kU/L, score symptômes ARTSS≥6",
+      "age_min": 12,
+      "age_max": 64,
+      "age_moyen": 30.1,
+      "anciennete_maladie_moyenne_ans": null,
+      "asthme_associe_pct": 14.0,
+      "polysensibilisation_pct": 69,
+      "score_symptomes_inclusion": "aRTSS 9.05",
+      "evidence": [
+        {
+          "field": "population_description",
+          "f": "F1",
+          "p": 10,
+          "s": "Caractéri",
+          "t": "Moyenne d’âge (Limites d’âge à l’inclusion, ans)\n30,1 (12-64)\nAsthme associé\n14,0%\nAutres sensibilisations\nPolysensibilisation 69%",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1501D1732",
+      "population_description": "Enfants 5-16 ans avec rhinite, test provocation nasal positif aux acariens, score IgE spécifique ImmunoCAP>3, score symptômes RTSS≥6",
+      "age_min": 5,
+      "age_max": 16,
+      "age_moyen": 10.4,
+      "anciennete_maladie_moyenne_ans": null,
+      "asthme_associe_pct": null,
+      "polysensibilisation_pct": 80,
+      "score_symptomes_inclusion": "aRTSS 9.69",
+      "evidence": [
+        {
+          "field": "population_description",
+          "f": "F1",
+          "p": 10,
+          "s": "Caractéri",
+          "t": "Moyenne d’âge (Limites d’âge à l’inclusion, ans)\n10,4 (5-16)\nAutres sensibilisations\nPolysensibilisation 80%",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Resultats_Efficacite": [
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO57.07",
+      "critere_id": "CT-19645_essai_VO57.07_crit_AASS",
+      "resultat_resume": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur l'AASS (différence -0,69, IC95% [-1,25; -0,14], p=0,0150).",
+      "magnitude_effet": "Faible",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_SL75.14",
+      "critere_id": "CT-19645_essai_SL75.14_crit_aTCS",
+      "resultat_resume": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur l'aTCS (différence -0,74, IC95% [-1,08; -0,38], p<0,0001).",
+      "magnitude_effet": "Faible",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_VO64.08",
+      "critere_id": "CT-19645_essai_VO64.08_crit_AASS",
+      "resultat_resume": "Pas de différence significative entre ORYLMYTE 300 IR et placebo sur l'AASS (différence 0,01, IC95% [-0,41; 0,43], NS).",
+      "magnitude_effet": "Non_significatif",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1207D1731",
+      "critere_id": "CT-19645_essai_1207D1731_crit_AASS",
+      "resultat_resume": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur l'AASS (différence -1,11, IC95% [-1,51; -0,72], p<0,0001).",
+      "magnitude_effet": "Faible",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "essai_id": "CT-19645_essai_1501D1732",
+      "critere_id": "CT-19645_essai_1501D1732_crit_AASS",
+      "resultat_resume": "Différence significative en faveur d'ORYLMYTE 300 IR vs placebo sur l'AASS (différence -0,95, IC95% [-1,49; -0,42], p=0,0005).",
+      "magnitude_effet": "Faible",
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Contre_Indications": [
+    {
+      "evaluation_id": "CT-19645",
+      "contre_indication": "Enfants de moins de 12 ans",
+      "population": "Pédiatrique",
+      "justification": "L’efficacité d’ORYLMYTE chez les enfants de moins de 12 ans n’a pas été établie.",
+      "evidence": [
+        {
+          "field": "contre_indication",
+          "f": "F1",
+          "p": 3,
+          "s": "Population",
+          "t": "L’efficacité d’ORYLMYTE chez les enfants de moins de 12 ans n’a pas été établie.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "CT-19645",
+      "contre_indication": "Adultes de plus de 65 ans",
+      "population": "Âgée",
+      "justification": "L’expérience clinique d’une immunothérapie par ORYLMYTE n'est pas disponible chez l’adulte de plus de 65 ans. ORYLMYTE n’est pas indiqué chez les adultes de plus de 65 ans.",
+      "evidence": [
+        {
+          "field": "contre_indication",
+          "f": "F1",
+          "p": 3,
+          "s": "Population",
+          "t": "ORYLMYTE n’est pas indiqué chez les adultes de plus de 65 ans",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19645_smrasmr_01",
+      "evaluation_id": "CT-19645",
+      "indication_precise": "traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens chez les adolescents (de 12 à 17 ans) et les adultes",
+      "smr": "La Commission considère que le service médical rendu par ORYLMYTE est faible chez les adolescents (de 12 à 17 ans) et les adultes dans le traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens.",
+      "smr_enum": "Faible",
+      "asmr": "ORYLMYTE, comprimé sublingual, n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la prise en charge chez les adolescents (de 12 à 17 ans) et les adultes dans le traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Le rapport efficacité/effets indésirables est faible. Cette spécialité est un traitement de seconde intention. Il existe des alternatives thérapeutiques (ACARIZAX et APSI).",
+      "population_cible_indication": "Adolescents (de 12 à 17 ans) et adultes ayant une rhinite allergique, ou une rhinoconjonctivite, modérée à sévère due aux acariens.",
+      "ligne_traitement_indication": "Deuxième intention après échec des traitements symptomatiques",
+      "comparateurs_references_indication": "ACARIZAX et APSI",
+      "comparateur_id_HAS": "CT-19645_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Test de sensibilisation aux acariens (prick-test cutané et/ou dosage d’IgE spécifiques)",
+        "stade": "Non renseigné",
+        "population_age": "12-17 ans et adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "Service M",
+          "t": "le service médical rendu par ORYLMYTE est faible",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 20,
+          "s": "Améliorat",
+          "t": "n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19645_compHAS_01",
+      "evaluation_id": "CT-19645",
+      "nom_comparateur_HAS": "ACARIZAX 12 SQ-HDM, lyophilisat oral",
+      "type_comparateur": "Médicament",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunothérapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "NOM",
+          "t": "ACARIZAX 12 SQ-HDM, lyophilisat oral",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19645_compHAS_02",
+      "evaluation_id": "CT-19645",
+      "nom_comparateur_HAS": "Allergènes préparés spécialement pour un individu (APSI)",
+      "type_comparateur": "Non médicamenteux",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunothérapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Dans le t",
+          "t": "les allergènes préparés spécialement pour un individu (APSI)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19645_arg_CT_01",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Neutre",
+      "description": "Efficacité démontrée vs placebo mais faible magnitude (différence <1 point sur scores AASS/aTCS) et peu cliniquement pertinente.",
+      "extrait_textuel": "L’ensemble des études montre un effet très modeste de l’immunothérapie sur la réduction des symptômes. Une évolution de l’ordre de moins d’un point a été mis en évidence, cette différence observée est peu cliniquement pertinente.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 12",
+      "section_source": "Discussion",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "L’ensemb",
+          "t": "L’ensemble des études montre un effet très modeste de l’immunothérapie sur la réduction des symptômes.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19645_arg_CT_02",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Effets indésirables fréquents mais principalement locaux (prurit, œdème ORL) ; risque de réactions allergiques systémiques nécessitant première administration sous surveillance.",
+      "extrait_textuel": "Les effets indésirables les plus fréquents avec le traitement par extrait allergénique standardisé d’acariens sont des réactions locales de type allergique (prurit, œdème ou inflammation au niveau ORL).",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 15",
+      "section_source": "Conclusion sur la tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "Les effe",
+          "t": "Les effets indésirables les plus fréquents avec le traitement par extrait allergénique standardisé d’acariens sont des réactions locales de type allergique",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19645_arg_CT_03",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical partiellement couvert ; nécessité de traitements permettant un meilleur contrôle de la maladie et améliorant la qualité de vie.",
+      "extrait_textuel": "Il existe un besoin médical chez les patients ayant une rhinite allergique ou une rhinoconjonctivite modérée à sévère due aux acariens à disposer de traitements permettant un meilleur contrôle de la maladie et améliorant la qualité de vie. Le besoin médical dans cette indication est donc partiellement couvert.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Il existe",
+          "t": "Il existe un besoin médical chez les patients ayant une rhinite allergique ou une rhinoconjonctivite modérée à sévère due aux acariens à disposer de traitements permettant un meilleur contrôle de la maladie et améliorant la qualité de vie.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19645_arg_CT_04",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Traitement de deuxième intention après échec des traitements symptomatiques, conformément aux recommandations.",
+      "extrait_textuel": "ORYLMYTE est un traitement de deuxième intention, chez les adolescents (de 12 à 17 ans) et chez les adultes, dans le traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 18",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 18,
+          "s": "Place d",
+          "t": "ORYLMYTE est un traitement de deuxième intention, chez les adolescents (de 12 à 17 ans) et chez les adultes",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19645_arg_CT_05",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "description": "Données d'efficacité limitées à 12 mois alors que l'immunothérapie nécessite un traitement long (3 ans) ; transposabilité incertaine.",
+      "extrait_textuel": "Il persiste un doute sur la transposabilité des résultats de ces études dans la mesure où l’immunothérapie allergénique nécessite un traitement long (3 ans) alors que la supériorité d’ORYLMYTE n’a été démontrée versus placebo qu’après un an de traitement maximum.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 12",
+      "section_source": "Discussion",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "Il persist",
+          "t": "Il persiste un doute sur la transposabilité des résultats de ces études dans la mesure où l’immunothérapie allergénique nécessite un traitement long (3 ans)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19645_arg_CT_06",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison",
+      "direction_argument": "Neutre",
+      "description": "Alternatives disponibles : ACARIZAX (mêmes principes actifs) et APSI ; pas de comparaison directe pour préciser la place d'ORYLMYTE.",
+      "extrait_textuel": "En l’absence de comparaison directe, la place d'ORYLMYTE par rapport à ACARIZAX ne peut pas être précisée.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 18",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 18,
+          "s": "En l’abse",
+          "t": "En l’absence de comparaison directe, la place d'ORYLMYTE par rapport à ACARIZAX ne peut pas être précisée.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19645_arg_CT_07",
+      "evaluation_id": "CT-19645",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "Population cible restreinte aux adolescents (12-17 ans) et adultes ; exclusion des enfants <12 ans et adultes >65 ans.",
+      "extrait_textuel": "ORYLMYTE n’est pas indiqué chez les adultes de plus de 65 ans. L’efficacité d’ORYLMYTE chez les enfants de moins de 12 ans n’a pas été établie.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 3",
+      "section_source": "Population",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "ORYLMYTE",
+          "t": "ORYLMYTE n’est pas indiqué chez les adultes de plus de 65 ans. L’efficacité d’ORYLMYTE chez les enfants de moins de 12 ans n’a pas été établie.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Votes_Commission": [],
+  "Données_Contexte": {
+    "contexte_id": "CT-19645_ctx",
+    "evaluation_id": "CT-19645",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-08-27",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Danemark",
+      "Allemagne",
+      "Suède"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Danemark",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "2016-01-01",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Allemagne",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "2016-01-01",
+        "reference": "Non renseigné",
+        "evidence": []
+      },
+      {
+        "pays": "Suède",
+        "organisme": "Non renseigné",
+        "decision": "Recommended",
+        "date_decision": "2016-05-01",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 3,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "186 000 patients",
+    "population_cible_nombre": 186000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Extrapolation",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": 186000,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Faible",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 2,
+        "s": "ORYLMYTE",
+        "t": "ORYLMYTE a obtenu une autorisation de mise sur le marché (AMM) en France le 27 août 2021",
+        "m": "manual",
+        "c": 1.0
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19645",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19645_poso_01",
+      "evaluation_id": "CT-19645",
+      "smr_asmr_id": "CT-19645_smrasmr_01",
+      "indication": "traitement de la rhinite allergique ou de la rhinoconjonctivite modérée à sévère due aux acariens",
+      "population_cible": "Adolescents (de 12 à 17 ans) et adultes",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Traitement d'initiation sur 3 jours : Jour 1 : 1 comprimé de 100 IR ; Jour 2 : 2 comprimés de 100 IR ; Jour 3 : 1 comprimé de 300 IR. Traitement d'entretien : 300 IR par jour. Durée : apparition de l'effet clinique attendue 8-16 semaines ; durée recommandée 3 ans mais données d'efficacité sur 12 mois.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": 3,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "100 IR puis 300 IR",
+            "unite_dose": "IR"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              1,
+              2,
+              3
+            ],
+            "interval_days": 1
+          },
+          "voie_administration": "sublinguale",
+          "expected_phase_duration_days": 3
+        },
+        {
+          "phase_nom": "Entretien",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "300",
+            "unite_dose": "IR"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [],
+            "interval_days": 1
+          },
+          "voie_administration": "sublinguale",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "La période d’augmentation progressive de la dose peut être prolongée si le médecin le juge nécessaire.",
+      "commentaires": "ORYLMYTE 100 IR est destiné uniquement à la période d’augmentation progressive de la dose.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 2,
+          "s": "Traitement",
+          "t": "Traitement d’initiation\nIl est recommandé d’augmenter la dose d’ORYLMYTE sur une période de trois jours, selon le schéma posologique suivant pour atteindre la dose d’entretien :\nJour 1\n1 comprimé de 100 IR\nJour 2\n2 comprimés de 100 IR en même temps\nJour 3\n1 comprimé de 300 IR",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19645_event_AMM_01",
+      "evaluation_id": "CT-19645",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-08-27",
+      "detail_brut": "AMM obtenue en France par procédure décentralisée",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [
+        "STALLERGENES"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "ORYLMYTE",
+          "t": "ORYLMYTE a obtenu une autorisation de mise sur le marché (AMM) en France le 27 août 2021",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19645_event_CT_01",
+      "evaluation_id": "CT-19645",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Avis de la Commission de la Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis définitif",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "AVIS",
+          "t": "AVIS\n29 JUIN 2022",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19645",
+    "delai_amm_ct_jours": 306,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19645",
+    "is_orphan": false,
+    "classe_ATC_l2": "V01",
+    "aire_therapeutique": "Allergologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": true,
+    "n_essais": 5,
+    "n_rct": 5,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": -0.74,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": 3.5,
+    "discontinuations_pct_num": 12.4,
+    "critere_principal_description": "Score ajusté des symptômes (AASS) ou score total combiné symptômes-traitement (aTCS)",
+    "p_value_log10": 4.0,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19645",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19645_essai_VO57.07",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19645_essai_VO57.07",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19645_essai_VO57.07_crit_AASS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19645_essai_VO57.07",
+      "tgt_type": "COMP",
+      "tgt_id": "CT-19645_essai_VO57.07_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19645_essai_VO57.07",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19645_essai_VO57.07_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19645",
+      "tgt_type": "SMRASMR",
+      "tgt_id": "CT-19645_smrasmr_01",
+      "label": "EVAL_HAS_SMRASMR"
+    }
+  ],
+  "Annotation_View": []
+}

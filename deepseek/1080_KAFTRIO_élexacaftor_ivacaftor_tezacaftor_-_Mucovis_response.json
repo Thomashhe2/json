@@ -1,0 +1,3074 @@
+{
+  "schema_version": "3.3.5-production",
+  "doc_id": "CT-19737",
+  "evaluation_id": "CT-19737",
+  "extraction_date": "2022-05-11",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19737_KAFTRIO_KALYDECO_PIC_EXT_INS_Avisdef_CT19737_CT19738_CT19739.pdf",
+        "type": "CT",
+        "page_count": 55
+      },
+      "F2": {
+        "file_name": "trans_2_kaftrio_11102022_transcription_ceesp.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 7
+      },
+      "F3": {
+        "file_name": "trans_3_kaftrio_13092022_transcription_ceesp.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 22
+      },
+      "F4": {
+        "file_name": "trans_1_kaftrio_kalydeco_11052022_transcription_ct19737_ct19738_ct19739.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 9
+      },
+      "F5": {
+        "file_name": "eco_1_kaftrio_11102022_avis_economique.pdf",
+        "type": "ECO",
+        "page_count": 12
+      },
+      "F6": {
+        "file_name": "contrib_1_kaftrio_6_11_ans_contribution_vaincre_la_mucoviscidose.pdf",
+        "type": "CONTRIB",
+        "page_count": 11
+      }
+    },
+    "extraction_date": "2022-10-11"
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "seg_synthese",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L'essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "place_strategie"
+      ],
+      "routing_hint": "Première page de synthèse",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_indications",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "indications"
+      ],
+      "routing_hint": "Section des indications",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_posologie",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "posologie"
+      ],
+      "routing_hint": "Tableau de posologie",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_besoin_medical",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 10,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "besoin_medical_brut"
+      ],
+      "routing_hint": "Description de la maladie et besoins non couverts",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_comparateurs",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 13,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Tableau des comparateurs",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_etudes",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Informations sur l'indication évaluée au niveau international",
+      "template_detecte": "CT_modern",
+      "page_start": 14,
+      "page_end": 14,
+      "heading_text": "Informations sur l'indication évaluée au niveau international",
+      "expected_fields": [
+        "essais_cliniques"
+      ],
+      "routing_hint": "Études internationales",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_efficacite",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles - Efficacité",
+      "template_detecte": "CT_modern",
+      "page_start": 18,
+      "page_end": 33,
+      "heading_text": "Analyse des données disponibles - Efficacité",
+      "expected_fields": [
+        "essais_cliniques",
+        "critères_jugement"
+      ],
+      "routing_hint": "Détail des études d'efficacité",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_tolerance",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 35,
+      "page_end": 42,
+      "heading_text": "Tolérance",
+      "expected_fields": [
+        "EI",
+        "EIG"
+      ],
+      "routing_hint": "Données de tolérance",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_place_strategie",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 45,
+      "page_end": 47,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "place_strategie"
+      ],
+      "routing_hint": "Positionnement thérapeutique",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_smr_asmr",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 47,
+      "page_end": 49,
+      "heading_text": "Service Médical Rendu",
+      "expected_fields": [
+        "smr",
+        "asmr"
+      ],
+      "routing_hint": "Conclusions SMR et ASMR",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_pop_cible",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 49,
+      "page_end": 49,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible"
+      ],
+      "routing_hint": "Estimation de la population",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_recommandations",
+      "section_label_normalise": "ANNEXES",
+      "section_label_brut": "Autres recommandations de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 49,
+      "page_end": 51,
+      "heading_text": "Autres recommandations de la Commission",
+      "expected_fields": [
+        "demandes_donnees"
+      ],
+      "routing_hint": "Demandes d'études et recommandations",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_admin",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 51,
+      "page_end": 55,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "dates",
+        "presentations"
+      ],
+      "routing_hint": "Informations administratives",
+      "label_confidence": 1
+    },
+    {
+      "segment_id": "seg_1",
+      "section_label_normalise": "AVERTISSEMENT",
+      "section_label_brut": "AVERTISSEMENT",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [],
+      "routing_hint": "Métadonnées et avertissements",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_2",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Examen en phase contradictoire Avis économique KAFTRIO",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CEESP – Avis économique - KAFTRIO\nMardi 11 octobre 2022\n1. Examen en phase contradictoire Avis économique KAFTRIO (VERTEX PHARMACEUTICALS)",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Présentation du dossier et contexte",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_3",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Analyse critique et requalification de la réserve majeure",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CEESP – Avis économique - KAFTRIO\nMardi 11 octobre 2022",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Discussion sur la réserve majeure et les populations",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_4",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et clarifications",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CEESP – Avis économique - KAFTRIO\nMardi 11 octobre 2022",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Dernières questions et vote",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_5",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote sur l'avis",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "L'avis est adopté avec 13 voix.",
+      "expected_fields": [
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Vote final",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_01",
+      "section_label_normalise": "CEESP_SYNTHESE",
+      "section_label_brut": "CEESP – Avis économique - KAFTRIO",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 22,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Adoption d'un projet d'avis : Avis économique KAFTRIO",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Transcription de la séance CEESP",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19737_seg_01",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Introduction et contexte",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Mercredi 11 mai 2022 - Commission de Transparence - KAFTRIO – Examen – Inscription (CT)/KAFTRIO – Examen – Extension d’indication/KALYDECO – Examen – Extension d’indication",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Début de la séance, introduction par Michel Clanet et chef de projet HAS",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19737_seg_02",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Présentation génotypique et mutations",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Présentation par Serge Kouzan",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Explication des mutations CFTR et géographie de la pathologie par Serge Kouzan",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19737_seg_03",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Présentation des données cliniques adultes et pédiatriques",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Présentation par Jean-Christophe Mercier",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Données des essais cliniques, registre national, transplantation, études pédiatriques",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19737_seg_04",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Contribution des patients",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 8,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Contribution de l'association Vaincre la Mucoviscidose par Jean-Pierre Thierry",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Témoignages des patients et parents sur l'amélioration de l'état de santé",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19737_seg_05",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Discussion et vote final",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 9,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Discussion, vote et conclusion",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Votes_Commission_Transcription",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Dernières questions, vote d'alignement avec 19 voix pour, adoption sur table",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_01",
+      "section_label_normalise": "CEESP_SYNTHESE",
+      "section_label_brut": "Avis de la CEESP relatif aux produits de santé",
+      "template_detecte": "CEESP",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "HAS • KAFTRIO (elexacaftor/tezacaftor/ivacaftor) en association à l’ivacaftor • octobre 2022",
+      "expected_fields": [
+        "contexte",
+        "revendications_industriel"
+      ],
+      "routing_hint": "Contexte et revendications",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_02",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Contribution d'association(s) de patients ou d'usagers",
+      "template_detecte": "CEESP",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "Contribution d'association(s) de patients ou d'usagers",
+      "expected_fields": [
+        "contribution_patients"
+      ],
+      "routing_hint": "Témoignages patients",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_03",
+      "section_label_normalise": "ANALYSES_MEDICO_ECONOMIQUES",
+      "section_label_brut": "Sur l'analyse de l'efficience",
+      "template_detecte": "CEESP",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Sur l'analyse de l'efficience",
+      "expected_fields": [
+        "efficience",
+        "reserves_methodologiques"
+      ],
+      "routing_hint": "Analyse efficience",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_04",
+      "section_label_normalise": "IMPACT_BUDGETAIRE",
+      "section_label_brut": "Sur l'analyse d'impact budgétaire",
+      "template_detecte": "CEESP",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "Sur l'analyse d'impact budgétaire",
+      "expected_fields": [
+        "impact_budgetaire",
+        "reserves"
+      ],
+      "routing_hint": "Analyse impact budgétaire",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_05",
+      "section_label_normalise": "CEESP_SYNTHESE",
+      "section_label_brut": "Conclusion de la commission",
+      "template_detecte": "CEESP",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Conclusion de la commission",
+      "expected_fields": [
+        "avis_ceesp",
+        "recommandations"
+      ],
+      "routing_hint": "Conclusion CEESP",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CONTRIB_sec_1",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Questionnaire de recueil du point de vue des patients et usagers pour l'évaluation d'un médicament",
+      "template_detecte": "Mixte",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "1. Méthode utilisée pour remplir le questionnaire",
+      "expected_fields": [
+        "Contribution_Patients"
+      ],
+      "routing_hint": "methodologie",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CONTRIB_sec_2",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "2. Impact de la maladie / état de santé",
+      "template_detecte": "Mixte",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "2.1 Comment la maladie (ou l'état de santé) pour laquelle le médicament est évalué affecte-t-elle la qualité de vie des patients ?",
+      "expected_fields": [
+        "Contribution_Patients"
+      ],
+      "routing_hint": "impacts_maladie",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CONTRIB_sec_3",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "3. Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "template_detecte": "Mixte",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "3.1 Selon vous, quelles sont actuellement les thérapeutiques les plus adaptées ?",
+      "expected_fields": [
+        "Contribution_Patients"
+      ],
+      "routing_hint": "traitements_actuels",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CONTRIB_sec_4",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "4. Expériences avec le médicament évalué",
+      "template_detecte": "Mixte",
+      "page_start": 6,
+      "page_end": 11,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "4.1 D'après votre expérience du médicament et celle des autres malades, quelles sont les conséquences positives ou négatives de son utilisation ?",
+      "expected_fields": [
+        "Contribution_Patients",
+        "Temoignages_Patients"
+      ],
+      "routing_hint": "evaluation_medicament",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19737",
+      "Num_avis": "CT-19737",
+      "produit_nom": "KAFTRIO",
+      "dci": "ivacaftor/tezacaftor/elexacaftor",
+      "type_avis": "Extension d'indication pour KAFTRIO 75 mg/50 mg/100 mg et inscription d'un nouveau dosage à 37,5 mg/25 mg/50 mg ; extension d'indication pour KALYDECO",
+      "forme": "comprimé pelliculé",
+      "dosage": "37,5 mg/25 mg/50 mg et 75 mg/50 mg/100 mg pour KAFTRIO ; 75 mg et 150 mg pour KALYDECO",
+      "indication": "Traitement des patients atteints de mucoviscidose âgés de 6 ans et plus porteurs d’au moins une mutation F508del du gène CFTR",
+      "classe_ATC": "R07AX32",
+      "pathologie": "Mucoviscidose",
+      "maladie_rare": true,
+      "ligne_traitement": "Première intention",
+      "sous_groupe_population": "Patients âgés de 6 ans et plus, porteurs d'au moins une mutation F508del du gène CFTR",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Système respiratoire",
+      "aire_therapeutique_niveau_2": "Autres médicaments de l'appareil respiratoire",
+      "aire_therapeutique_niveau_3": "Modulateurs de CFTR",
+      "source_aire_therapeutique": "Déduit ATC R07AX32",
+      "design_etude": "Étude de phase IIIb randomisée contrôlée vs placebo (étude 116) et étude de phase III non comparative (étude 106)",
+      "niveau_preuve_brut": "Phase III",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Chez les patients hétérozygotes pour la mutation F508del et porteurs d'une mutation du gène CFTR à fonction minimale, le besoin médical est actuellement non couvert.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "6 ans et plus",
+      "biomarqueur_requis": "Mutation F508del du gène CFTR",
+      "design_enum": "Phase_III_RCT_DB",
+      "type_avis_enum": "Extension_indication",
+      "gravite_patho": "La mucoviscidose est une maladie grave qui met prématurément en jeu le pronostic vital des patients. La mutation F508del du gène CFTR est la mutation la plus fréquemment observée et expose à une forme relativement sévère de mucoviscidose.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Enfants âgés de 6 à 11 ans",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "KAFTRIO a précédemment été évalué par la CT dans le traitement des patients atteints de mucoviscidose âgés de 12 ans et plus : avis du 18 novembre 2020 (SMR important et ASMR II) et avis du 27 octobre 2021 (SMR important et ASMR IV).",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": 19,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-05-11",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "t": "KAFTRIO est indiqué en association avec l’ivacaftor dans le traitement des patients atteints de mucoviscidose âgés de 6 ans et plus porteurs d’au moins une mutation F508del du gène CFTR",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 10,
+          "t": "Chez les patients hétérozygotes pour la mutation F508del et porteurs d’une mutation du gène CFTR à fonction minimale, le besoin médical est actuellement non couvert.",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 47,
+          "t": "La mucoviscidose est une maladie grave qui met prématurément en jeu le pronostic vital des patients. La mutation F508del du gène CFTR est la mutation la plus fréquemment observée et expose à une forme relativement sévère de mucoviscidose.",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {},
+      "pertinence_concurrence_therapeutique": "Non renseigné"
+    },
+    {
+      "evaluation_id": "Non renseigné",
+      "Num_avis": "Non renseigné",
+      "produit_nom": "KAFTRIO",
+      "dci": "elexacaftor/tezacaftor/ivacaftor et ivacaftor",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Comprimés",
+      "dosage": "Non renseigné",
+      "indication": "Traitement des patients atteints de mucoviscidose, âgés de 6 ans et plus, homozygotes (F/F) ou hétérozygotes (F/MF)",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Mucoviscidose",
+      "maladie_rare": true,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": "Non renseigné",
+      "sous_groupe_population": "Patients pédiatriques 6-11 ans et extension 12 ans et plus",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Pneumologie",
+      "aire_therapeutique_niveau_2": "Mucoviscidose",
+      "aire_therapeutique_niveau_3": "Modulateurs CFTR",
+      "source_aire_therapeutique": "Texte avis",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "6 ans et plus",
+      "biomarqueur_requis": "Mutation F508del du gène CFTR",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": true,
+      "nb_votants": 13,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-10-11",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [
+        "Non renseigné"
+      ],
+      "type_population_cible": "Patients atteints de mucoviscidose âgés de six ans et plus, homozygotes ou hétérozygotes pour la mutation F508del du gène CFTR",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP –",
+          "t": "KAFTRIO",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "pathologie",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP –",
+          "t": "mucoviscidose",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP –",
+          "t": "maladie génétique autosomique récessive, rare et grave",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "age_restriction_detail",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP –",
+          "t": "âgé de six ans et plus",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "biomarqueur_requis",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP –",
+          "t": "mutation F508del du gène CFTR",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 7,
+          "s": "L'avis es",
+          "t": "L'avis est adopté avec 13 voix.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_voix_pour",
+          "f": "F1",
+          "p": 7,
+          "s": "L'avis es",
+          "t": "L'avis est adopté avec 13 voix.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_votants",
+          "f": "F1",
+          "p": 7,
+          "s": "L'avis es",
+          "t": "L'avis est adopté avec 13 voix.",
+          "m": "manual",
+          "c": 0.8
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 2,
+          "s": "Mardi 11",
+          "t": "Mardi 11 octobre 2022",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "type_population_cible",
+          "f": "F1",
+          "p": 2,
+          "s": "CEESP –",
+          "t": "patients atteints de la mucoviscidose âgé de six ans et plus",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "historique_HAS_produit": "Évalué précédemment en février 2021 pour les patients âgés de 12 ans et plus",
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19737_essai_116",
+      "evaluation_id": "CT-19737",
+      "nom_essai": "116",
+      "nct_number": "NCT04353817",
+      "design": "Etude de phase IIIb, multicentrique, randomisée, en double aveugle, en groupes parallèles, comparative versus placebo",
+      "population_cible": "Patients âgés de 6 à 11 ans, hétérozygotes pour la mutation F508del du gène CFTR et porteurs d'une mutation du gène CFTR à fonction minimale",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": 61,
+      "nb_patient_comparateur": 60,
+      "resultat_global": "Supériorité de KAFTRIO + KALYDECO vs placebo sur l'ICP2,5 à 24 semaines",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "ICP2,5 (<10 vs ≥10)",
+        "poids (<30 kg vs ≥30 kg)"
+      ],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 6,
+      "maturite_donnees": "Matures",
+      "age_min_num": 6,
+      "age_max_num": 11,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [
+        "CFQ-R"
+      ],
+      "qol_resultats_brut": "Amélioration du score du domaine respiratoire du CFQ-R de 5,9 points vs placebo",
+      "qol_difference_cliniquement_pertinente": true,
+      "qol_favorable": true,
+      "nb_facteurs_stratification": 2,
+      "nb_patients_inclus": "121",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "France",
+          "nb_patients": "14",
+          "pourcentage": null
+        }
+      ],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 18,
+          "t": "Etude 116",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 19,
+          "t": "Etude de phase IIIb, multicentrique, randomisée, en double aveugle, en groupes parallèles, comparative versus placebo",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 19,
+          "t": "Patients âgés de 6 à 11 ans, hétérozygotes pour la mutation F508del du gène CFTR et porteurs d'une mutation du gène CFTR à fonction minimale",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19737_essai_106",
+      "evaluation_id": "CT-19737",
+      "nom_essai": "106",
+      "nct_number": "NCT03691779",
+      "design": "Etude de phase III, non comparative, multicentrique, en ouvert, en deux parties (partie A et B)",
+      "population_cible": "Patients âgés de 6 à 11 ans, hétérozygotes pour la mutation F508del du gène CFTR et porteurs d'une mutation à fonction minimale ou homozygotes pour la mutation F508del du gène CFTR",
+      "comparateur_utilise": "Aucun",
+      "nb_patient_traitement": 66,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Amélioration du VEMS, du taux de chlorures sudoral et de l'ICP2,5 à 24 semaines",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 6,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 6,
+      "maturite_donnees": "Matures",
+      "age_min_num": 6,
+      "age_max_num": 11,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [
+        "CFQ-R"
+      ],
+      "qol_resultats_brut": "Amélioration du score du domaine respiratoire du CFQ-R de 7,0 points à 24 semaines",
+      "qol_difference_cliniquement_pertinente": true,
+      "qol_favorable": true,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "66",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 25,
+          "t": "Etude 106",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 25,
+          "t": "Etude de phase III, non comparative, multicentrique, en ouvert, en deux parties (partie A et B)",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 25,
+          "t": "Patients âgés de 6 à 11 ans, hétérozygotes pour la mutation F508del du gène CFTR et porteurs d'une mutation à fonction minimale ou homozygotes pour la mutation F508del du gène CFTR",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19737_essai_107",
+      "evaluation_id": "CT-19737",
+      "nom_essai": "107",
+      "nct_number": "NCT04183790",
+      "design": "Etude multicentrique de phase III non comparative, d'extension (jusqu'à 96 semaines), en ouvert",
+      "population_cible": "Patients âgés de 6 à 11 ans ayant participé à la partie B de l'étude 106, homozygotes pour la mutation F508del ou hétérozygotes pour la mutation F508del et porteurs d'une mutation à fonction minimale",
+      "comparateur_utilise": "Aucun",
+      "nb_patient_traitement": 64,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Maintien de l'amélioration du VEMS, de la concentration en chlorures sudoral et de l'ICP2,5 à 24 semaines de l'extension",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 24,
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": 6,
+      "age_max_num": 11,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 50,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [
+        "CFQ-R"
+      ],
+      "qol_resultats_brut": "Amélioration du domaine respiratoire du CFQ-R de 12,9 points à la semaine 24 de l'étude 107",
+      "qol_difference_cliniquement_pertinente": true,
+      "qol_favorable": true,
+      "nb_facteurs_stratification": 0,
+      "nb_patients_inclus": "64",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 31,
+          "t": "Etude 107",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 31,
+          "t": "Etude multicentrique de phase III non comparative, d'extension (jusqu'à 96 semaines), en ouvert",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 31,
+          "t": "Patients âgés de 6 à 11 ans ayant participé à la partie B de l'étude 106, homozygotes pour la mutation F508del ou hétérozygotes pour la mutation F508del et porteurs d'une mutation à fonction minimale",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19737_essai_116_crit_ICP25",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_116",
+      "nom_critere": "Variation absolue de l'indice de clairance pulmonaire (ICP2,5)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "points",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "ICP2,5 initial",
+        "poids initial"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Diminution de -2,29 points",
+      "valeur_groupe_comparateur": "Diminution de -0,02 points",
+      "gain_absolu": "-2,26 points",
+      "gain_absolu_num": -2.26,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-2,71 ; -1,81]",
+      "IC95_low_num": -2.71,
+      "IC95_high_num": -1.81,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "points",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "La supériorité de KAFTRIO + KALYDECO a été démontrée par rapport au placebo",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "t": "Variation absolue de l’indice de clairance pulmonaire (ICP2,5) jusqu’à la semaine 24, par rapport à la valeur initiale",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 23,
+          "t": "p<0,0001",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19737_essai_116_crit_chlore_sudoral",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_116",
+      "nom_critere": "Variation absolue du taux de chlorures dans la sueur",
+      "nature_critere": "Biomarqueur",
+      "unite_mesure": "mmol/L",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "valeur initiale"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Diminution de -52,1 mmol/L",
+      "valeur_groupe_comparateur": "Diminution de -0,9 mmol/L",
+      "gain_absolu": "-51,2 mmol/L",
+      "gain_absolu_num": -51.2,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-55,3 ; -47,1]",
+      "IC95_low_num": -55.3,
+      "IC95_high_num": -47.1,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "mmol/L",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Quasi-normalisation du chlore sudoral",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "t": "Variation absolue du taux de chlorures dans la sueur jusqu’à la semaine 24",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 23,
+          "t": "p<0,0001",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19737_essai_116_crit_VEMS",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_116",
+      "nom_critere": "Variation absolue du VEMS en pourcentage de sa valeur théorique",
+      "nature_critere": "Fonctionnel",
+      "unite_mesure": "points de pourcentage",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "valeur initiale"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Augmentation de +9,5 points",
+      "valeur_groupe_comparateur": "Diminution de -1,5 points",
+      "gain_absolu": "11,0 points",
+      "gain_absolu_num": 11,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[6,9 ;15,1]",
+      "IC95_low_num": 6.9,
+      "IC95_high_num": 15.1,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Quasi-normalisation du VEMS",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "t": "Variation absolue du volume expiratoire maximum par seconde (VEMS) en pourcentage de sa valeur théorique jusqu’à la semaine 24",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 24,
+          "t": "p<0,0001",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19737_essai_106_crit_VEMS",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_106",
+      "nom_critere": "Variation absolue du VEMS en pourcentage de sa valeur théorique",
+      "nature_critere": "Fonctionnel",
+      "unite_mesure": "points de pourcentage",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "type de mutation",
+        "valeur initiale du VEMS"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Augmentation de +10,2 points",
+      "valeur_groupe_comparateur": null,
+      "gain_absolu": "+10,2 points",
+      "gain_absolu_num": 10.2,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[7,9 ;12,6]",
+      "IC95_low_num": 7.9,
+      "IC95_high_num": 12.6,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Amélioration du VEMS maintenue jusqu'à la 24ème semaine",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 27,
+          "t": "variation absolue du volume expiratoire maximum par seconde (VEMS) en pourcentage de sa valeur théorique jusqu’à la semaine 24",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 30,
+          "t": "p<0,0001",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19737_essai_106_crit_chlore_sudoral",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_106",
+      "nom_critere": "Variation absolue du taux de chlorures dans la sueur",
+      "nature_critere": "Biomarqueur",
+      "unite_mesure": "mmol/L",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "valeur initiale"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Diminution de -60,9 mmol/L",
+      "valeur_groupe_comparateur": null,
+      "gain_absolu": "-60,9 mmol/L",
+      "gain_absolu_num": -60.9,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-63,7 ; -58,2]",
+      "IC95_low_num": -63.7,
+      "IC95_high_num": -58.2,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "mmol/L",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "88,9% des patients avaient un taux de chlorures sudoral < 60 mmol/L à 24 semaines",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 27,
+          "t": "variation absolue du taux de chlorures dans la sueur jusqu’à la semaine 24",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 30,
+          "t": "p<0,0001",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19737_essai_106_crit_ICP25",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_106",
+      "nom_critere": "Variation absolue de l'indice de clairance pulmonaire (ICP2,5)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "points",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "valeur initiale"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Diminution de -1,71 points",
+      "valeur_groupe_comparateur": null,
+      "gain_absolu": "-1,71 points",
+      "gain_absolu_num": -1.71,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "[-2,11 ; -1,30]",
+      "IC95_low_num": -2.11,
+      "IC95_high_num": -1.3,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "points",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Amélioration de l'ICP2,5 pendant les 24 semaines de traitement",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 27,
+          "t": "variation absolue de l’indice de clairance pulmonaire (ICP2,5) jusqu’à la semaine 24",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 30,
+          "t": "p<0,0001",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19737_essai_116_tol",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_116",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": 6.7,
+      "sae_pct_comparateur": 14.8,
+      "discontinuations_ae_pct": 1.7,
+      "discontinuations_ae_pct_comparateur": 0,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Rash",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.7,
+          "incidence_pct_comparateur": 0,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 0,
+          "issue": "Récupération",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Syndrome d'obstruction intestinale distale",
+          "grade": "3-4",
+          "incidence_pct_traitement": 0,
+          "incidence_pct_comparateur": 1.6,
+          "n_patients_traitement": 0,
+          "n_patients_comparateur": 1,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 30,
+          "incidence_pct_comparateur": 19.7,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Toux",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 23.3,
+          "incidence_pct_comparateur": 42.6,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Douleur abdominale",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 8.3,
+          "incidence_pct_comparateur": 27.9,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "3",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "4 patients (6,7%) du groupe KAFTRIO + KALYDECO et 9 patients (14,8%) du groupe placebo ont rapporté un EI grave",
+      "EI_frequents": "Céphalées (30,0%), toux (23,3%), douleur abdominale (8,3%) dans le groupe KAFTRIO + KALYDECO",
+      "deces": "Aucun décès",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "sae_pct",
+          "f": "F1",
+          "p": 35,
+          "t": "Patients ayant rapporté un EI grave : 4 (6,7%) du groupe KAFTRIO + KALYDECO et 9 (14,8%) du groupe placebo",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 36,
+          "t": "Céphalées (30,0%), toux (23,3%), douleur abdominale (8,3%) dans le groupe KAFTRIO + KALYDECO",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19737_essai_106_tol",
+      "evaluation_id": "CT-19737",
+      "essai_id": "CT-19737_essai_106",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": 1.5,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 1.5,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Infection par métapneumovirus, rhinovirus et pneumonie",
+          "grade": "3-4",
+          "incidence_pct_traitement": 1.5,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Toux",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 42.4,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 24.2,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Pyrexie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 21.2,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "3",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "1 patient (1,5%) a rapporté un EI grave",
+      "EI_frequents": "Toux (42,4%), céphalées (24,2%), pyrexie (21,2%)",
+      "deces": "Aucun décès",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "sae_pct",
+          "f": "F1",
+          "p": 38,
+          "t": "Patients ayant rapporté un EI grave : 1 (1,5%)",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 38,
+          "t": "Toux (42,4%), céphalées (24,2%), pyrexie (21,2%)",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19737_essai_116_comp_01",
+      "essai_id": "CT-19737_essai_116",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 19,
+          "t": "placebo",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19737_compHAS_01",
+      "evaluation_id": "CT-19737",
+      "nom_comparateur_HAS": "KALYDECO (ivacaftor)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Oui pour patients hétérozygotes F508del avec mutation gating",
+      "famille_comparateur": "Modulateur_CFTR",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "t": "KALYDECO (ivacaftor) en monothérapie chez les patients hétérozygotes pour la mutation F508del et porteurs d’une mutation de type « gating »",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19737_compHAS_02",
+      "evaluation_id": "CT-19737",
+      "nom_comparateur_HAS": "ORKAMBI (lumacaftor/ivacaftor)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Oui pour patients homozygotes F508del",
+      "famille_comparateur": "Modulateur_CFTR",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "t": "ORKAMBI (lumacaftor/ivacaftor) chez les patients homozygotes pour la mutation F508del",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19737_compHAS_03",
+      "evaluation_id": "CT-19737",
+      "nom_comparateur_HAS": "SYMKEVI (tezacaftor/ivacaftor) + KALYDECO (ivacaftor)",
+      "type_comparateur": "Traitement actif",
+      "comparateur_standard_soin": "Oui pour patients homozygotes F508del ou hétérozygotes F508del avec mutation à fonction résiduelle",
+      "famille_comparateur": "Modulateur_CFTR",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "t": "SYMKEVI (tezacaftor/ivacaftor) + KALYDECO (ivacaftor) chez les patients homozygotes pour la mutation F508del ou hétérozygotes pour la mutation F508del et porteurs d’une mutation du gène CFTR à fonction résiduelle",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "Non renseigné_compHAS_01",
+      "evaluation_id": "Non renseigné",
+      "nom_comparateur_HAS": "Meilleurs soins de support (MSS)",
+      "type_comparateur": "BSC",
+      "comparateur_standard_soin": "Soins standards sans modulateur CFTR",
+      "famille_comparateur": "BSC",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_01",
+          "t": "meilleurs soins de support (MSS)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "Non renseigné_arg_TRANS_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "La CEESP propose de refuser la requalification de la réserve majeure sur la comparaison indirecte pour la population homozygote 6-11 ans.",
+      "extrait_textuel": "Les éléments apportés par l'industriel ne permettent pas de lever l'ensemble de la réserve majeure. ... Ainsi, on vous propose de la conserver telle quelle.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Une chef de projet, pour la CEESP",
+      "moment_debat": "Analyse critique",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Les élémen",
+          "t": "Les éléments apportés par l'industriel ne permettent pas de lever l'ensemble de la réserve majeure.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "Discussion sur les différences entre populations homozygote et hétérozygote, et les réserves applicables.",
+      "extrait_textuel": "On a les deux populations, mais on a eu une présentation du résultat par sous-population...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Une chef de projet, pour la CEESP",
+      "moment_debat": "Questions",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "On a les d",
+          "t": "On a les deux populations, mais on a eu une présentation du résultat par sous-population.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Défavorable",
+      "description": "M. Serrier critique le fait que les industriels n'ont pas pris en compte les remarques du premier avis pour le second dossier.",
+      "extrait_textuel": "Il faut rappeler dans ce dossier que les industriels bénéficiaient du premier avis lorsqu'ils ont soumis le second et qu'ils n'ont pas pris en compte les remarques du premier avis pour le second.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "M. SERRIER",
+      "moment_debat": "Intervention rapporteur",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "Il faut rap",
+          "t": "Il faut rappeler dans ce dossier que les industriels bénéficiaient du premier avis...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Neutre",
+      "description": "Modification d'une phrase dans les données complémentaires concernant les études en vie réelle prévues.",
+      "extrait_textuel": "C'est pour signaler qu'on a modifié une phrase dans les données complémentaires puisque dans le dossier, aucune étude n'avait été mentionnée par l'industriel.",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Une chef de projet, pour la CEESP",
+      "moment_debat": "Clarifications",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "C'est pour",
+          "t": "C'est pour signaler qu'on a modifié une phrase dans les données complémentaires.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_5",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Neutre",
+      "description": "Question sur le moment de la mise à disposition des données relatives aux études en vie réelle.",
+      "extrait_textuel": "Est-ce qu'ils sont allés aussi sur la précision du moment de la mise à disposition des données relatives à ces études ?",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "M. BERDAÏ",
+      "moment_debat": "Questions",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Est-ce qu'i",
+          "t": "Est-ce qu'ils sont allés aussi sur la précision du moment de la mise à disposition des données ?",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_6",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "description": "Discordance entre amélioration perçue par les patients (questionnaires spécifiques) et données d'utilité génériques (EQ-5D) utilisées pour le RDCR.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "M. le Pr BARDOU",
+      "moment_debat": "Questions",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "trans_01",
+          "t": "discordance entre la contribution des associations de patients... et les données de qualité de vie qui ne sont pas terribles",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_7",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Procédural",
+      "direction_argument": "Neutre",
+      "description": "Demande de cohérence entre les demandes de données complémentaires de la CEESP et de la Commission de la Transparence.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Mme POLTON",
+      "moment_debat": "Questions",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "trans_01",
+          "t": "je ne trouve pas évident de faire comme si ce n’était pas un peu la HAS globalement... qui se mettaient d’accord pour dire ‘voilà ce qu’il faut faire’",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19737_arg_TRANS_1",
+      "evaluation_id": "CT-19737",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Données pédiatriques montrent amélioration VEMS (+10 points) et CFQ-R (+10-12 points) chez enfants 6-11 ans, similaires aux adultes.",
+      "extrait_textuel": "Dans la partie B, avec 66 enfants sur 24 semaines, on voit que le VEMS augmente de 10 points, que le CFQ-R score augmente de 10 à 12 points.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Présentation_données",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19737",
+          "t": "Dans la partie B, avec 66 enfants sur 24 semaines, on voit que le VEMS augmente de 10 points, que le CFQ-R score augmente de 10 à 12 points.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19737_arg_TRANS_2",
+      "evaluation_id": "CT-19737",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Neutre",
+      "description": "Extrapolation des données pour mutations hétérozygotes avec activité résiduelle (gating) basée sur l'EMA, car pas de données spécifiques.",
+      "extrait_textuel": "Dans l'hétérozygotie avec activité résiduelle de type gating, il n'y a pas de données mais il y a eu une extrapolation par l'EMA, d'ailleurs à juste titre.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Serge Kouzan",
+      "moment_debat": "Présentation_génotypique",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19737",
+          "t": "Dans l'hétérozygotie avec activité résiduelle de type gating, il n'y a pas de données mais il y a eu une extrapolation par l'EMA, d'ailleurs à juste titre.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19737_arg_TRANS_3",
+      "evaluation_id": "CT-19737",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Réduction de 90% des transplantations pulmonaires chez adultes après disponibilité trithérapie, suggérant bénéfice majeur.",
+      "extrait_textuel": "Pour la mucoviscidose, de 20 transplantations par trimestre en moyenne, on est passé, après la disponibilité de la trithérapie... à seulement 2 transplantations par trimestre, c'est-à-dire une réduction de 90 %.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Présentation_données",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19737",
+          "t": "Pour la mucoviscidose, de 20 transplantations par trimestre en moyenne, on est passé... à seulement 2 transplantations par trimestre, c'est-à-dire une réduction de 90 %.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19737_arg_TRANS_4",
+      "evaluation_id": "CT-19737",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Profil de tolérance acceptable chez enfants avec peu d'effets indésirables graves, rash chez un patient sans conséquence.",
+      "extrait_textuel": "Il y a juste eu un rash chez un patient, mais sans conséquences par la suite.",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Pierre Thierry",
+      "moment_debat": "Contribution_patients",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19737",
+          "t": "Il y a juste eu un rash chez un patient, mais sans conséquences par la suite.",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19737_arg_TRANS_5",
+      "evaluation_id": "CT-19737",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Défavorable",
+      "description": "10-15% des patients non accessibles à la modification protéique, nécessitant d'autres approches comme les ARN messagers.",
+      "extrait_textuel": "Ce qu'il faut dire, c'est que 10 % des patients ne sont pas accessibles à la modification et on attend donc éventuellement d'autres approches telles que les ARN messagers.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Discussion",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "CT-19737",
+          "t": "Ce qu'il faut dire, c'est que 10 % des patients ne sont pas accessibles à la modification et on attend donc éventuellement d'autres approches telles que les ARN messagers.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19737_arg_TRANS_6",
+      "evaluation_id": "CT-19737",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Alignement proposé de l'extension pédiatrique sur la valorisation adulte : ASMR II pour homozygotes/fonction minimale, ASMR IV pour hétérozygotes/résiduelle.",
+      "extrait_textuel": "Nous proposons donc d'aligner l'extension d'indication chez les enfants sur la valorisation qui a été faite chez les adultes.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Conclusion",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19737",
+          "t": "Nous proposons donc d'aligner l'extension d'indication chez les enfants sur la valorisation qui a été faite chez les adultes.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Efficience",
+      "direction_argument": "Défavorable",
+      "description": "Efficience non démontrée en raison de réserves majeures : manque de documentation sur la comparaison indirecte pour estimer l'efficacité relative (population homozygote) et estimation des scores d'utilité non recevable.",
+      "extrait_textuel": "L’efficience du produit n’est pas démontrée en raison des réserves majeures, invalidant les résultats de l’évaluation économique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "seg_05",
+          "t": "L’efficience du produit n’est pas démontrée en raison des réserves majeures, invalidant les résultats de l’évaluation économique.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Efficience",
+      "direction_argument": "Mitigé",
+      "description": "Pour la population hétérozygote (F/MF), analyse de sensibilité montre un RDCR de 655 057 €/QALY sur 40 ans, mais reste au-dessus des seuils d'acceptabilité.",
+      "extrait_textuel": "Cette analyse de sensibilité montre que Kaftrio est associé à un RDCR sur un horizon temporel de 40 ans de 655 057 €/QALY.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 6,
+          "s": "seg_05",
+          "t": "Cette analyse de sensibilité montre que Kaftrio est associé à un RDCR sur un horizon temporel de 40 ans de 655 057 €/QALY.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Impact_budgétaire",
+      "direction_argument": "Défavorable",
+      "description": "Impact budgétaire invalidé pour la population homozygote (F/F) en raison de réserves majeures sur le modèle. Acceptable pour les hétérozygotes (F/MF), avec coût de traitement représentant 89% des dépenses totales sur 3 ans.",
+      "extrait_textuel": "L’impact budgétaire estimé par l’industriel ne peut être retenu en raison de la réserve majeure, invalidant les résultats de l’efficience au sein de la population homozygote.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 7,
+          "s": "seg_05",
+          "t": "L’impact budgétaire estimé par l’industriel ne peut être retenu en raison de la réserve majeure, invalidant les résultats de l’efficience au sein de la population homozygote.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Réserves_méthodologiques",
+      "direction_argument": "Défavorable",
+      "description": "Absence de données d'utilité pédiatrique, entraînant une incertitude forte sur les résultats économiques, difficilement explorable.",
+      "extrait_textuel": "En l’absence de données d’utilité pédiatrique, il réside une incertitude forte et dont l’impact sur le résultat est difficilement explorable.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 7,
+          "s": "seg_05",
+          "t": "En l’absence de données d’utilité pédiatrique, il réside une incertitude forte et dont l’impact sur le résultat est difficilement explorable.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Association Vaincre la Mucoviscidose souligne le besoin médical important des patients de 6-11 ans porteurs de mutation F508del, sans traitement modulateur de CFTR disponible actuellement.",
+      "extrait_textuel": "Kaftrio®/Kalydeco® permettrait à ces patients d'avoir enfin une opportunité de traitement modulateur et, pour ceux qui bénéficient déjà d'un traitement modulateur de CFTR, de disposer d'une alternative dans l'arsenal thérapeutique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 6",
+      "section_source": "Expérience avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Kaftrio®/K",
+          "t": "Kaftrio®/Kalydeco® permettrait à ces patients d'avoir enfin une opportunité de traitement modulateur...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Témoignages de parents montrent des améliorations marquées des symptômes respiratoires et digestifs chez les enfants sous Kaftrio®/Kalydeco®, avec augmentation du VEMS, disparition de la toux et prise de poids.",
+      "extrait_textuel": "Pour 11 patients leurs parents observent que leur état de santé s'est nettement amélioré depuis la prise du traitement. Pour 1 enfant (sous traitement via essai clinique), l'état s'est stabilisé.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 7",
+      "section_source": "Expérience avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Pour 11 pat",
+          "t": "Pour 11 patients leurs parents observent que leur état de santé s'est nettement amélioré depuis la prise du traitement...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Favorable",
+      "description": "Traitement bien toléré selon les parents, avec un seul cas de rash sans conséquence sur la poursuite du traitement, et facilité d'administration.",
+      "extrait_textuel": "Un parent rapporte la survenue d'un rash qui n'a cependant pas eu de conséquence sur la poursuite du traitement.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 9",
+      "section_source": "Expérience avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Un parent r",
+          "t": "Un parent rapporte la survenue d'un rash qui n'a cependant pas eu de conséquence sur la poursuite du traitement.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Qualité_de_vie",
+      "direction_argument": "Favorable",
+      "description": "Amélioration significative de la qualité de vie des patients et de leur famille, avec réduction des soins, meilleur sommeil, et reprise des activités physiques.",
+      "extrait_textuel": "L'amélioration des symptômes pulmonaires est à l'origine d'un bien meilleur sommeil qui devient pleinement réparateur et dont les conséquences retentissent de façon positive sur la vie des patients et sur leur apparence.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 9",
+      "section_source": "Expérience avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "L'améliora",
+          "t": "L'amélioration des symptômes pulmonaires est à l'origine d'un bien meilleur sommeil qui devient pleinement réparateur...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19737_ctx",
+    "evaluation_id": "CT-19737",
+    "ISP": "KAFTRIO (ivacaftor/tezacaftor/ elexacaftor) en association avec KALYDECO (ivacaftor) est susceptible d’avoir un impact supplémentaire sur la santé publique chez les enfants âgés de 6 à 11 ans.",
+    "acces_precoce": "ATU_nominative",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": 10,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": true,
+    "ISP_categorie": "Important",
+    "type_acces_precoce_enum": "ATU_nominative",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-01-07",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": true,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Etats-Unis",
+      "Royaume-Uni",
+      "Allemagne"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Etats-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "AMM avec libellé large : TRIKAFTA",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 921,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Patients atteints de mucoviscidose âgés de 6 à 11 ans porteurs d’au moins une mutation F508del du gène CFTR",
+    "population_cible_nombre": 921,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Registres français",
+    "incertitude_population": "Faible",
+    "population_cible_mediane": 921,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_vie_réelle",
+    "delai_suivi_mois": 36,
+    "delai_suivi_justification": "La Commission souhaite obtenir les données dans un délai maximum de 3 ans",
+    "conditions_suivi": "Intégration des patients âgés de 6 à 11 ans dans l'étude post-inscription demandée en novembre 2020",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Réévaluation SMR/ASMR",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 4,
+        "t": "KAFTRIO (ivacaftor/tezacaftor/ elexacaftor) en association avec KALYDECO (ivacaftor) est susceptible d’avoir un impact supplémentaire sur la santé publique chez les enfants âgés de 6 à 11 ans.",
+        "m": "manual",
+        "c": 1
+      },
+      {
+        "field": "population_cible_nombre",
+        "f": "F1",
+        "p": 4,
+        "t": "soit un total de 921 patients.",
+        "m": "manual",
+        "c": 1
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "t": "KAFTRIO (ivacaftor/tezacaftor/elexacaftor) en association à KALYDECO (ivacaftor) a obtenu une extension d’AMM chez les enfants âgés de 6 à 11 ans en date du 7 janvier 2022.",
+        "m": "manual",
+        "c": 1
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19737",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": [],
+    "_meta": {}
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19737_smrasmr_01",
+      "evaluation_id": "CT-19737",
+      "indication_precise": "Traitement des patients atteints de mucoviscidose âgés de 6 ans et plus porteurs d’au moins une mutation F508del du gène CFTR",
+      "smr": "IMPORTANT dans le traitement des patients atteints de mucoviscidose âgés de 6 ans et plus porteurs d’au moins une mutation F508del du gène CFTR",
+      "asmr": "amélioration du service médical rendu importante (ASMR II) dans la prise en charge thérapeutique de la mucoviscidose des patients âgés de 6 à 11 ans homozygotes pour la mutation F508del du gène CFTR ou hétérozygotes pour la mutation F508del du gène CFTR et porteurs d’une mutation du gène CFTR à fonction minimale. amélioration du service médical rendu mineure (ASMR IV) dans la prise en charge thérapeutique de la mucoviscidose des patients âgés de 6 ans à 11 ans hétérozygotes pour la mutation F508del du gène CFTR et porteurs d’une mutation à fonction résiduelle ou d’une mutation dite « gating ».",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Compte-tenu de la démonstration de la supériorité de KAFTRIO en association avec KALYDECO sur l'ICP2,5 vs placebo, des résultats de l'étude non comparative, du profil de tolérance acceptable et du besoin de traitements efficaces dans cette tranche d'âge, malgré l'absence de données comparatives chez certains sous-groupes et l'absence de résultats robustes en qualité de vie.",
+      "population_cible_indication": "Patients âgés de 6 ans et plus, porteurs d'au moins une mutation F508del du gène CFTR",
+      "ligne_traitement_indication": "Première intention",
+      "comparateurs_references_indication": [
+        "SYMKEVI + KALYDECO",
+        "KALYDECO",
+        "ORKAMBI"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19737_compHAS_01",
+        "CT-19737_compHAS_02",
+        "CT-19737_compHAS_03"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Mutation F508del du gène CFTR",
+        "stade": "Non renseigné",
+        "population_age": "6 ans et plus"
+      },
+      "gain_survie_cite": null,
+      "qol_cite": null,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Elevée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "t": "IMPORTANT dans le traitement des patients atteints de mucoviscidose âgés de 6 ans et plus porteurs d’au moins une mutation F508del du gène CFTR",
+          "m": "manual",
+          "c": 1
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 3,
+          "t": "une amélioration du service médical rendu importante (ASMR II) dans la prise en charge thérapeutique de la mucoviscidose des patients âgés de 6 à 11 ans homozygotes pour la mutation F508del du gène CFTR ou hétérozygotes pour la mutation F508del du gène CFTR et porteurs d’une mutation du gène CFTR à fonction minimale. une amélioration du service médical rendu mineure (ASMR IV) dans la prise en charge thérapeutique de la mucoviscidose des patients âgés de 6 ans à 11 ans hétérozygotes pour la mutation F508del du gène CFTR et porteurs d’une mutation à fonction résiduelle ou d’une mutation dite « gating ».",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19737_poso_01",
+      "evaluation_id": "CT-19737",
+      "smr_asmr_id": "CT-19737_smrasmr_01",
+      "indication": "Traitement des patients atteints de mucoviscidose âgés de 6 ans et plus porteurs d’au moins une mutation F508del du gène CFTR",
+      "population_cible": "Patients âgés de 6 ans et plus",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Deux comprimés d'ivacaftor/tezacaftor/elexacaftor le matin et un comprimé d'ivacaftor le soir, avec des dosages adaptés au poids pour les enfants de 6 à <12 ans.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "37,5 mg/25 mg/50 mg ou 75 mg/50 mg/100 mg",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              1
+            ],
+            "interval_days": 1
+          },
+          "voie_administration": "orale",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Pour les enfants de 6 à <12 ans, poids <30 kg: ivacaftor/tezacaftor/elexacaftor 37,5 mg/25 mg/50 mg et ivacaftor 75 mg; poids ≥30 kg: ivacaftor/tezacaftor/elexacaftor 75 mg/50 mg/100 mg et ivacaftor 150 mg.",
+      "commentaires": "La prescription est réservée aux médecins expérimentés dans le traitement de la mucoviscidose.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 6,
+          "t": "Deux comprimés d'ivacaftor/tezacaftor/elexacaftor le matin et un comprimé d'ivacaftor le soir",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19737_event_AMM_01",
+      "evaluation_id": "CT-19737",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-01-07",
+      "detail_brut": "Extension d'AMM chez les enfants âgés de 6 à 11 ans",
+      "source_doc": "Avis CT",
+      "detail_type_specifique": "Extension d'AMM pour KAFTRIO en association avec KALYDECO",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "t": "KAFTRIO (ivacaftor/tezacaftor/elexacaftor) en association à KALYDECO (ivacaftor) a obtenu une extension d’AMM chez les enfants âgés de 6 à 11 ans en date du 7 janvier 2022.",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19737_event_CT_01",
+      "evaluation_id": "CT-19737",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-05-11",
+      "detail_brut": "Avis de la Commission de la Transparence",
+      "source_doc": "Avis CT",
+      "detail_type_specifique": "Avis favorable au remboursement",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "t": "11 MAI 2022",
+          "m": "manual",
+          "c": 1
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19737_event_TRANS_01",
+      "evaluation_id": "CT-19737",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2022-05-11",
+      "detail_brut": "Séance de la Commission de Transparence pour examen KAFTRIO/KALYDECO",
+      "source_doc": "TRANSCRIPTION",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19737",
+          "t": "Mercredi 11 mai 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "Non renseigné_event_AMM_01",
+      "evaluation_id": "Non renseigné",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-01-07",
+      "detail_brut": "AMM obtenue le 07/01/2022 en procédure centralisée",
+      "source_doc": "F1 page 3",
+      "detail_type_specifique": "Autorisation de mise sur le marché",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_01",
+          "t": "AMM obtenue le 07/01/2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "Non renseigné_event_ACCES_01",
+      "evaluation_id": "Non renseigné",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2022-03-28",
+      "detail_brut": "Autorisation d'accès précoce octroyée le 28/03/2022",
+      "source_doc": "F1 page 3",
+      "detail_type_specifique": "Accès précoce pour population pédiatrique",
+      "acteurs_impliques": [
+        "ANSM"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_01",
+          "t": "autorisation d’accès précoce a été octroyée à Kaftrio le 28/03/2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19737",
+    "delai_amm_ct_jours": 124,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": null,
+    "audition_realisee": null,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19737",
+    "is_orphan": true,
+    "classe_ATC_l2": "R07",
+    "aire_therapeutique": "Système respiratoire",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 3,
+    "n_rct": 1,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": -2.26,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 6,
+    "sae_pct_num": 6.7,
+    "discontinuations_pct_num": 1.7,
+    "critere_principal_description": "Variation absolue de l'ICP2,5",
+    "p_value_log10": 4,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "evidence": [],
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19737",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19737_essai_116",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19737",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19737_essai_106",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19737",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19737_essai_107",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_116",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19737_essai_116_crit_ICP25",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_116",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19737_essai_116_crit_chlore_sudoral",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_116",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19737_essai_116_crit_VEMS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_106",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19737_essai_106_crit_VEMS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_106",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19737_essai_106_crit_chlore_sudoral",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_106",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19737_essai_106_crit_ICP25",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_116",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19737_essai_116_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_106",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19737_essai_106_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19737_essai_116",
+      "tgt_type": "COMP",
+      "tgt_id": "CT-19737_essai_116_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19737",
+      "tgt_type": "COMP",
+      "tgt_id": "CT-19737_compHAS_01",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19737",
+      "tgt_type": "COMP",
+      "tgt_id": "CT-19737_compHAS_02",
+      "label": "EVAL_HAS_COMP"
+    },
+    {
+      "src_type": "EVAL",
+      "src_id": "CT-19737",
+      "tgt_type": "COMP",
+      "tgt_id": "CT-19737_compHAS_03",
+      "label": "EVAL_HAS_COMP"
+    }
+  ],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "Non renseigné",
+    "contribution_presente": true,
+    "contribution_id": "Non renseigné_contrib_1",
+    "association": {
+      "nom_association": "VAINCRE LA MUCOVISCIDOSE",
+      "type_structure": "Autre",
+      "site_internet": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_association",
+          "f": "F1",
+          "p": 1,
+          "s": "Nom et ad",
+          "t": "Nom et adresse de l’association : VAINCRE LA MUCOVISCIDOSE, 181 RUE DE TOLBIAC, 75013 PARIS",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "methodologie": {
+      "methode_recueil": "Témoignages",
+      "description_methode": "Pour compléter le présent formulaire, Vaincre la Mucoviscidose s’est basée sur sa connaissance de la maladie du fait de son expérience dans les domaines du soin, de la recherche et de la qualité de vie des patients. Concernant plus particulièrement l’expérience du traitement de Kaftrio® /Kalydeco® un appel à témoignages a été lancé (février-mars 2022) auprès de parents de patients concernés. Un questionnaire ad hoc a été élaboré pour recueillir les témoignages et leur a été adressé par mail, par l’intermédiaire des soignants des Centre de Ressources et de Compétences de la Mucoviscidose (CRCM).",
+      "nb_patients_consultes": 12,
+      "temps_redaction_heures": null,
+      "evidence": [
+        {
+          "field": "methode_recueil",
+          "f": "F1",
+          "p": 1,
+          "s": "Pour compl",
+          "t": "un appel à témoignages a été lancé (février-mars 2022) auprès de parents de patients concernés",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "nb_patients_consultes",
+          "f": "F1",
+          "p": 2,
+          "s": "Une synthè",
+          "t": "Une synthèse des 12 réponses obtenues a été réalisée",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "La mucoviscidose est une maladie chronique d'origine génétique (autosomique récessive) liée à une mutation du gène CFTR. La gravité de la maladie reste essentiellement liée à l'atteinte respiratoire. Maladie multi systémique, ses symptômes sont divers et nombreux. Ils impactent tous la qualité de vie et évoluent par poussées imprévisibles. Les principaux symptômes sont respiratoires (respiration difficile à l'effort et/ou au repos, toux fréquente, bronchorrhée, crachats épais, exacerbations, …) et digestifs (douleurs abdominales, troubles nutritionnels, difficultés alimentaires précoces, diarrhée graisseuse, constipation, sub-occlusion ou occlusion, risque accru de cancer colorectal, …). La dégradation de la fonction respiratoire, en lien notamment avec les multiples surinfections bronchiques, conduit à une insuffisance respiratoire terminale sévère.",
+      "symptomes_principaux": [
+        "respiration difficile à l'effort et/ou au repos",
+        "toux fréquente",
+        "bronchorrhée",
+        "crachats épais",
+        "exacerbations",
+        "douleurs abdominales",
+        "troubles nutritionnels",
+        "difficultés alimentaires précoces",
+        "diarrhée graisseuse",
+        "constipation",
+        "sub-occlusion ou occlusion",
+        "risque accru de cancer colorectal"
+      ],
+      "statistiques_mentionnees": [
+        {
+          "indicateur": "patients recensés en 2020",
+          "valeur": "7 376",
+          "source": "Registre Français de la mucoviscidose"
+        },
+        {
+          "indicateur": "proportion d'adultes",
+          "valeur": "59,7 %",
+          "source": "Registre Français de la mucoviscidose"
+        },
+        {
+          "indicateur": "adultes de plus de 40 ans",
+          "valeur": "14,6%",
+          "source": "Registre Français de la mucoviscidose"
+        },
+        {
+          "indicateur": "patients adultes greffés",
+          "valeur": "21,6%",
+          "source": "Registre Français de la mucoviscidose"
+        },
+        {
+          "indicateur": "âge médian au décès",
+          "valeur": "33 ans",
+          "source": "Registre français de la mucoviscidose, données 2020"
+        },
+        {
+          "indicateur": "diabète touchant les adultes",
+          "valeur": "29,8%",
+          "source": "Non renseigné"
+        }
+      ],
+      "impacts_psychologiques": "L'anxiété, parfois la dépression, guettent les parents malgré le renforcement positif à chaque consultation pluridisciplinaire.",
+      "impacts_proches_aidants": "Les contraintes quotidiennes du traitement et la sévérité de la maladie affectent tous les aspects de la vie familiale au quotidien. L'annonce du diagnostic de mucoviscidose est vécue comme un profond bouleversement pour la famille et l'entourage proche. Le caractère génétique de la maladie et sa transmission récessive autosomique entrainent très souvent une culpabilité plus ou moins enfouie des parents et des grands-parents.",
+      "evidence": [
+        {
+          "field": "description_impacts_patients",
+          "f": "F1",
+          "p": 2,
+          "s": "La mucovi",
+          "t": "La mucoviscidose est une maladie chronique d'origine génétique (autosomique récessive) liée à une mutation du gène CFTR...",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "impacts_psychologiques",
+          "f": "F1",
+          "p": 4,
+          "s": "L'anxiété,",
+          "t": "L'anxiété, parfois la dépression, guettent les parents malgré le renforcement positif à chaque consultation pluridisciplinaire.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [
+        "kinésithérapie respiratoire",
+        "activité physique adaptée (APA)",
+        "fluidifiant bronchodilatateurs",
+        "corticoïdes",
+        "antibiothérapie inhalée, orale ou intraveineuse",
+        "vaccination",
+        "extraits pancréatiques",
+        "supplémentation vitaminique et calorique",
+        "apports hydro-sodés majorés",
+        "alimentation entérale",
+        "transplantation pulmonaire",
+        "traitements immunosuppresseurs",
+        "Kalydeco®",
+        "Orkambi®",
+        "Symkevi®/Kalydeco®",
+        "Kaftrio®/Kalydeco®"
+      ],
+      "avantages": "Pour les troubles respiratoires : kinésithérapie respiratoire ; activité physique adaptée (APA) ; fluidifiant bronchodilatateurs ; corticoïdes ; antibiothérapie inhalée, orale ou intraveineuse ; vaccination (notamment contre pneumocoque ; tuberculose ; grippe chaque année). Pour les troubles digestifs et nutritionnels : extraits pancréatiques, supplémentation vitaminique et calorique, apports hydro-sodés majorés, alimentation entérale.",
+      "inconvenients": "L'usage à long terme des traitements symptomatiques existants entraîne des conséquences telles que surdité, insuffisance rénale, allergie, résistance aux antibiotiques, thromboses vasculaires. La transplantation pulmonaire et les traitements immunosuppresseurs constituent une avancée thérapeutique majeure, néanmoins les traitements sont lourds et les effets secondaires importants.",
+      "besoins_non_couverts": "Certains patients à ce jour ne peuvent prétendre à ces modulateurs. Notamment les patients de 6 à 11 ans porteurs d'un profil génétique mutation F508del/mutation fonction minimale qui ne sont éligibles ni à Kalydeco®/Kalydeco®, ni à Symkevi®/Kalydeco® et ni à Orkambi®.",
+      "evidence": [
+        {
+          "field": "traitements_disponibles",
+          "f": "F1",
+          "p": 4,
+          "s": "Pour les t",
+          "t": "Pour les troubles respiratoires : kinésithérapie respiratoire ; activité physique adaptée (APA) ; fluidifiant bronchodilatateurs ; corticoïdes ; antibiothérapie inhalée, orale ou intraveineuse ; vaccination",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "besoins_non_couverts",
+          "f": "F1",
+          "p": 6,
+          "s": "Certains pa",
+          "t": "Certains patients à ce jour ne peuvent prétendre à ces modulateurs. Notamment les patients de 6 à 11 ans porteurs d'un profil génétique mutation F508del/mutation fonction minimale qui ne sont éligibles ni à Kalydeco®/Kalydeco®, ni à Symkevi®/Kalydeco® et ni à Orkambi®.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": true,
+      "nb_patients_experience": 12,
+      "avantages_constates": "Pour 11 patients leurs parents observent que leur état de santé s’est nettement amélioré depuis la prise du traitement. Pour 1 enfant (sous traitement via essai clinique), l’état s’est stabilisé. Les parents mentionnent des effets bénéfiques sur les atteintes principales (pulmonaire et digestive). Sur le plan respiratoire, une majorité de parents mentionne une augmentation importante, voire très importante du VEMS. Il est également fait mention de disparition de la toux et des crachats qui l’accompagnent et d’épisodes d’essoufflement. Sur le plan digestif, la majorité des parents rapporte une bonne prise de poids avec une augmentation de l’appétit et une digestion normalisée. Les parents rapportent des conséquences positives de Kaftrio® avec une nette diminution des hospitalisations et des épisodes d’exacerbations depuis la mise sous traitement. Comme pour les hospitalisations, le nombre de cures d’antibiotiques en IV diminue pour tous les patients qui avaient des cures d’antibiotique avant le mise sous Kaftrio®. Au niveau de la prise du traitement, les parents indiquent qu’il est facile à prendre et aucune interruption du traitement n’a eu lieu. Le recours aux traitements symptomatiques (kinésithérapies respiratoires, aérosols, antibiotiques…) a diminué pour tous les patients et pour 50% des parents l’ensemble des traitements prend moins de temps par rapport à la période « avant Kaftrio®/Kalydeco® ». L’amélioration des symptômes pulmonaires est à l’origine d’un bien meilleur sommeil qui devient pleinement réparateur et dont les conséquences retentissent de façon positive sur la vie des patients et sur leur apparence.",
+      "inconvenients_constates": "Un parent rapporte la survenue d’un rash qui n’a cependant pas eu de conséquence sur la poursuite du traitement.",
+      "attentes_principales": "La préservation de la fonction respiratoire est un élément clé du pronostic de la maladie. La prévention du déclin de cette fonction doit se faire au plus tôt, dès le plus jeune âge. Ainsi, les attentes des patients, et plus spécifiquement des parents de très jeunes patients, vis à vis des nouveaux modulateurs de la protéine CFTR à prescrire dès le plus jeune âge, sont très fortes. Pour les jeunes parents, un traitement qui empêche la dégradation de l’état de santé de leur enfant doit transformer la mucoviscidose, maladie génétique mortelle la plus fréquente en France, en une maladie chronique stabilisée. Un nouveau traitement comme Kaftrio®/Kalydeco® administré le plus tôt permettrait aux patients de retarder la dégradation pulmonaire et à terme de retarder considérablement la greffe de poumons.",
+      "craintes_principales": "Non renseigné",
+      "evidence": [
+        {
+          "field": "avantages_constates",
+          "f": "F1",
+          "p": 7,
+          "s": "Pour 11 pat",
+          "t": "Pour 11 patients leurs parents observent que leur état de santé s’est nettement amélioré depuis la prise du traitement.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "inconvenients_constates",
+          "f": "F1",
+          "p": 9,
+          "s": "Un parent r",
+          "t": "Un parent rapporte la survenue d’un rash qui n’a cependant pas eu de conséquence sur la poursuite du traitement.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    "indication_demandee": {
+      "indication_adequate": "Oui",
+      "commentaires": "Kaftrio®/Kalydeco® permettrait à ces patients d'avoir enfin une opportunité de traitement modulateur et, pour ceux qui bénéficient déjà d'un traitement modulateur de CFTR, de disposer d'une alternative dans l'arsenal thérapeutique.",
+      "evidence": [
+        {
+          "field": "commentaires",
+          "f": "F1",
+          "p": 6,
+          "s": "Kaftrio®/K",
+          "t": "Kaftrio®/Kalydeco® permettrait à ces patients d'avoir enfin une opportunité de traitement modulateur et, pour ceux qui bénéficient déjà d'un traitement modulateur de CFTR, de disposer d'une alternative dans l'arsenal thérapeutique.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "position_association": {
+      "position_generale": "Favorable",
+      "justification": "Les plus grandes difficultés du vécu avec la maladie sont les contraintes liées aux traitements quotidiens qui impactent fortement la qualité de vie, la vie familiale et professionnelle. Quand l'état de santé se dégrade, le pronostic vital est en jeu et dans certains cas, la seule alternative thérapeutique est la transplantation pulmonaire. Les thérapeutiques actuelles sont pour la majorité des patients uniquement symptomatiques et n'empêchent pas la survenue d'épisodes d'exacerbations respiratoires, du déclin de la fonction respiratoire et de comorbidités. Kaftrio®/Kalydeco® répond aux besoins et aux attentes des patients en améliorant très nettement, non seulement les marqueurs biologiques et cliniques, mais aussi la perception par les patients mêmes de leur état de santé et de leur qualité de vie. Ces derniers aspects sont difficilement rapportés par les essais cliniques. Dans un contexte où les patients et les proches ont accès à une information globalisée, qui véhicule énormément d'espoirs avec la perspective de nouveaux médicaments innovants, l'arrivée de Kaftrio®/Kalydeco® est attendue aussi avec une impatience tout à fait compréhensible, car elle représente un gain de chances et pour certains la seule chance d'éviter une transplantation pulmonaire. Le retour d'expérience des parents de patients ayant pu bénéficier du traitement Kaftrio®/Kalydeco® est sans ambiguïté très positif, pour l'ensemble des témoignages reçus.",
+      "arguments_principaux": [
+        "Amélioration très nette des marqueurs biologiques et cliniques",
+        "Amélioration de la perception par les patients de leur état de santé et qualité de vie",
+        "Gain de chances et pour certains seule chance d'éviter une transplantation pulmonaire",
+        "Retour d'expérience des parents très positif"
+      ],
+      "evidence": [
+        {
+          "field": "justification",
+          "f": "F1",
+          "p": 12,
+          "s": "Les plus g",
+          "t": "Les plus grandes difficultés du vécu avec la maladie sont les contraintes liées aux traitements quotidiens qui impactent fortement la qualité de vie...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "synthese_contribution": "Contribution de l'association Vaincre la Mucoviscidose basée sur 12 témoignages de parents d'enfants de 6 à 11 ans sous Kaftrio®/Kalydeco®. La mucoviscidose est une maladie grave avec impact majeur sur qualité de vie et vie familiale. Les traitements actuels sont symptomatiques avec limitations. Kaftrio®/Kalydeco® est attendu pour les patients de 6-11 ans porteurs de mutation F508del sans alternative modulateur. Les témoignages rapportent des améliorations marquées des symptômes respiratoires et digestifs, réduction des hospitalisations et des traitements symptomatiques, et amélioration de la qualité de vie. L'association est favorable à ce traitement.",
+    "evidence": [
+      {
+        "field": "synthese_contribution",
+        "f": "F1",
+        "p": 1,
+        "s": "Contributio",
+        "t": "Contribution des associations de patients et d’usagers aux évaluations des médicaments et des dispositifs médicaux.",
+        "m": "manual",
+        "c": 0.9
+      }
+    ]
+  },
+  "Temoignages_Patients": [
+    {
+      "temoignage_id": "Non renseigné_tem_1",
+      "evaluation_id": "Non renseigné",
+      "source": "Contribution_Patients",
+      "type_temoin": "Parent",
+      "age_patient": null,
+      "duree_traitement_mois": null,
+      "contenu": "Quasiment plus de crachats, un vems qui passe de 45 à 75, plus de Ventilation non invasive la nuit, plus de toux nocturne il peut rire sans s’étouffer.",
+      "thematiques": [
+        "Amélioration respiratoire",
+        "VEMS",
+        "Toux"
+      ],
+      "sentiment_global": "Positif",
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 8,
+          "s": "Quasiment p",
+          "t": "Quasiment plus de crachats, un vems qui passe de 45 à 75, plus de Ventilation non invasive la nuit, plus de toux nocturne il peut rire sans s’étouffer.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "Non renseigné_tem_2",
+      "evaluation_id": "Non renseigné",
+      "source": "Contribution_Patients",
+      "type_temoin": "Parent",
+      "age_patient": null,
+      "duree_traitement_mois": null,
+      "contenu": "Son VEMS a pris 14 points de 76 à env.90. Plus de toux depuis 9 mois (il était en continue sous antibio pour du staph assez dérangeant, avec des crachats jaunes), aujourd'hui il ne crache plus, même avec la kiné. Il a eu le covid il y'à 1 mois, une journée de toux, avec des crachats fluides et facile à sortir, incroyable. Plus d'essoufflement depuis 9 mois",
+      "thematiques": [
+        "Amélioration respiratoire",
+        "VEMS",
+        "Toux",
+        "Infections"
+      ],
+      "sentiment_global": "Positif",
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 8,
+          "s": "Son VEMS a",
+          "t": "Son VEMS a pris 14 points de 76 à env.90. Plus de toux depuis 9 mois...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "Non renseigné_tem_3",
+      "evaluation_id": "Non renseigné",
+      "source": "Contribution_Patients",
+      "type_temoin": "Parent",
+      "age_patient": null,
+      "duree_traitement_mois": null,
+      "contenu": "Il était en cure tous les 3 mois de 3 semaines depuis plus de 3 ans dont une hospitalisation de 2 mois et demi d’iv non-stop… à cause d’une mycobacterie abssessus qui a enfin disparue!!!! Toujours du pyo, mais totalement asymptomatique depuis quelques mois maintenant dernière IV octobre 2021.",
+      "thematiques": [
+        "Réduction hospitalisations",
+        "Antibiotiques"
+      ],
+      "sentiment_global": "Positif",
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 9,
+          "s": "Il était en",
+          "t": "Il était en cure tous les 3 mois de 3 semaines depuis plus de 3 ans dont une hospitalisation de 2 mois et demi d’iv non-stop…",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "Non renseigné_tem_4",
+      "evaluation_id": "Non renseigné",
+      "source": "Contribution_Patients",
+      "type_temoin": "Parent",
+      "age_patient": null,
+      "duree_traitement_mois": null,
+      "contenu": "Depuis la phase ouverte pour notre fils, 9 mois sans épisode d'exacerbation. 9 mois sans prise d'antibiotique.",
+      "thematiques": [
+        "Réduction exacerbations",
+        "Antibiotiques"
+      ],
+      "sentiment_global": "Positif",
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 9,
+          "s": "Depuis la p",
+          "t": "Depuis la phase ouverte pour notre fils, 9 mois sans épisode d'exacerbation. 9 mois sans prise d'antibiotique.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ]
+}

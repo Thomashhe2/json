@@ -1,0 +1,2074 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19709",
+  "evaluation_id": "CT-19709",
+  "extraction_date": "2022-05-18",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-05-18",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19709_XEVUDY_PIC_INS_AvisDef_CT19709.pdf",
+        "type": "CT",
+        "page_count": 30
+      },
+      "F2": {
+        "file_name": "trans_2_xevudy_19072022_transcription_ceesp.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 12
+      },
+      "F3": {
+        "file_name": "trans_1_xevudy_05072022_transcription_ceesp.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 21
+      },
+      "F4": {
+        "file_name": "eco_1_xevudy_19072022_avis_economique.pdf",
+        "type": "ECO",
+        "page_count": 1
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19709_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "HAS - Direction de l'Evaluation et de l’accès à l’innovation Avis version définitive",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "indication"
+      ],
+      "routing_hint": "synthèse",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "indication",
+        "smr",
+        "asmr"
+      ],
+      "routing_hint": "indication",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_03",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "03 POSOLOGIE",
+      "expected_fields": [
+        "posologie",
+        "voie_administration"
+      ],
+      "routing_hint": "posologie",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_04",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "04 BESOIN MEDICAL",
+      "expected_fields": [
+        "besoin_medical_brut"
+      ],
+      "routing_hint": "besoin",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_05",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 15,
+      "page_end": 17,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "05 COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs"
+      ],
+      "routing_hint": "comparateurs",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_06",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 18,
+      "page_end": 23,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "07 ANALYSE DES DONNEES DISPONIBLES",
+      "expected_fields": [
+        "essais",
+        "resultats"
+      ],
+      "routing_hint": "etudes",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_07",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 23,
+      "page_end": 24,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "07.1 Résumé & discussion - Tolérance",
+      "expected_fields": [
+        "effets_indesirables"
+      ],
+      "routing_hint": "tolerance",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_08",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 24,
+      "page_end": 26,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "08 PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "expected_fields": [
+        "place_strategie"
+      ],
+      "routing_hint": "strategie",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19709_seg_09",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 26,
+      "page_end": 28,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "09 CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr",
+        "asmr"
+      ],
+      "routing_hint": "conclusions",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "trans_part_1",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Partie 1/12: Introduction et contexte",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "CEESP – Avis économique - XEVUDY, Mardi 19 juillet 2022",
+      "expected_fields": [
+        "contexte",
+        "participants"
+      ],
+      "routing_hint": "Introduction de la séance",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "trans_part_2_4",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Parties 2-4/12: Discussion sur les probabilités de transition",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Discussion sur la réserve des probabilités de transition",
+      "expected_fields": [
+        "débat",
+        "interventions"
+      ],
+      "routing_hint": "Débat sur la requalification de la réserve importante concernant les probabilités de transition",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "trans_part_5_6",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Parties 5-6/12: Discussion sur les coûts (dépenses santé non liées Covid)",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Discussion sur la réserve des dépenses santé non liées Covid",
+      "expected_fields": [
+        "débat",
+        "interventions"
+      ],
+      "routing_hint": "Débat sur la requalification de la réserve importante concernant les dépenses santé non liées Covid",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "trans_part_6_9",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Parties 6-9/12: Discussion sur les coûts (passage aux urgences)",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 11,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Discussion sur la réserve du coût de passage aux urgences",
+      "expected_fields": [
+        "débat",
+        "interventions",
+        "calculs"
+      ],
+      "routing_hint": "Débat approfondi sur la requalification de la réserve importante concernant le coût de passage aux urgences",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "trans_part_9_10",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Parties 9-10/12: Discussion sur les coûts (prise en charge ambulatoire)",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Discussion sur la réserve de la prise en charge ambulatoire",
+      "expected_fields": [
+        "débat",
+        "interventions"
+      ],
+      "routing_hint": "Débat sur la requalification de la réserve importante concernant la prise en charge ambulatoire",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "trans_part_10_12",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Parties 10-12/12: Commentaires divers et vote",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 12,
+      "page_end": 14,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Commentaires sur données COCOPREV, impact organisationnel, et vote final",
+      "expected_fields": [
+        "commentaires",
+        "vote"
+      ],
+      "routing_hint": "Points divers et conclusion avec vote",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "seg_01",
+      "section_label_normalise": "CEESP_SYNTHESE",
+      "section_label_brut": "CEESP – Avis économique - XEVUDY",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Adoption d’un projet d’avis : Avis économique XEVUDY (GLAXOSMITHKLINE) - ECO-EFFI 530",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Introduction et présentation du dossier",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_02_21",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion et débat CEESP",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 21,
+      "char_start": 0,
+      "char_end": 10000,
+      "heading_text": "Transcription de la réunion CEESP",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Discussions, questions, réponses, et vote final",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "ECO_1_seg_01",
+      "section_label_normalise": "CEESP_SYNTHESE",
+      "section_label_brut": "Avis économique CEESP",
+      "template_detecte": "CEESP",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "HAS • XEVUDY (sotrovimab) • juillet 2022",
+      "expected_fields": [
+        "Analyses_Medico_Economiques",
+        "Avis_CEESP",
+        "Impact_Budgetaire"
+      ],
+      "routing_hint": "ECO",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19709_prod_01",
+      "evaluation_id": "CT-19709",
+      "nom_commercial": "XEVUDY",
+      "dci": "sotrovimab",
+      "code_cis": "Non renseigné",
+      "code_cip13": "34009 550 864 5 1",
+      "forme_pharmaceutique": "solution à diluer pour perfusion",
+      "dosage": "500 mg",
+      "titulaire_amm": "GlaxoSmithKline",
+      "classe_ATC": "J06BD05",
+      "statut_amm": "AMM standard",
+      "date_amm": "2021-12-17",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19709",
+          "t": "XEVUDY 500 mg, solution à diluer pour perfusion",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19709",
+          "t": "sotrovimab",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 31,
+          "s": "CT-19709",
+          "t": "CIP : 34009 550 864 5 1",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19709",
+      "Num_avis": "CT-19709",
+      "produit_nom": "XEVUDY 500 mg, solution à diluer pour perfusion",
+      "dci": "sotrovimab",
+      "type_avis": "Inscription",
+      "forme": "solution à diluer pour perfusion",
+      "dosage": "500 mg",
+      "indication": "Traitement des adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) atteints de la maladie à coronavirus 2019 (COVID-19) qui ne nécessitent pas de supplémentation en oxygène et qui présentent un risque accru d’évolution vers une forme sévère de la COVID-19.",
+      "classe_ATC": "J06BD05",
+      "pathologie": "COVID-19",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Adultes et adolescents (≥12 ans, ≥40 kg) à risque d'évolution sévère, sans oxygénothérapie",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Maladies virales",
+      "aire_therapeutique_niveau_3": "COVID-19",
+      "source_aire_therapeutique": "Déduit ATC J06BD05",
+      "design_etude": "RCT",
+      "niveau_preuve_brut": "Phase II/III, randomisée, en double aveugle",
+      "niveau_preuve_interprete": "Phase_II_III",
+      "besoin_medical_brut": "Besoin médical insuffisamment couvert chez des patients atteints d’une forme légère à modérée de la COVID-19 et à risque d’évolution vers une forme sévère, qui ne nécessitent pas une supplémentation en oxygène",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "≥12 ans et ≥40 kg",
+      "biomarqueur_requis": "Souche sensible au traitement",
+      "design_enum": "Phase_II_III_RCT",
+      "type_avis_enum": "Inscription",
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [
+        "Non renseigné"
+      ],
+      "type_population_cible": "Adultes et adolescents (≥12 ans et ≥40 kg) à risque d'évolution sévère de COVID-19",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-05-18",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "CT-19709",
+          "t": "XEVUDY est indiqué pour le traitement des adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) atteints de la maladie à coronavirus 2019 (COVID-19) qui ne nécessitent pas de supplémentation en oxygène et qui présentent un risque accru d’évolution vers une forme sévère de la COVID-19.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19709",
+          "t": "Il s’agit d’une demande d’inscription de XEVUDY (sotrovimab)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "Non renseigné",
+      "Num_avis": "Non renseigné",
+      "produit_nom": "XEVUDY (sotrovimab)",
+      "dci": "sotrovimab",
+      "type_avis": "Non renseigné",
+      "forme": "flacon de 8 ml contenant 500 mg de sotrovimab (62,5 mg/ml)",
+      "dosage": "500 milligrammes",
+      "indication": "traitement des patients adultes et adolescents âgés de 12 ans et plus et pesant au moins 40 kilogrammes atteints de la Covid-19 qui ne nécessitent pas de supplémentation en oxygène et qui risquent d’évoluer vers une Covid-19 sévère",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Covid-19",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "patients adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) atteints de la COVID-19 qui ne nécessitent pas de supplémentation en oxygène et qui risquent d'évoluer vers une COVID-19 sévère",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Déduit de domaine_therapeutique",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "adultes et adolescents âgés de 12 ans et plus, poids ≥ 40 kg",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "type_avis_enum": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_HAS_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": 22,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-19",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "adultes et adolescents âgés de 12 ans et plus et pesant au moins 40 kilogrammes",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [],
+      "ligne_traitement_enum": "Non renseigné",
+      "historique_Has_produit": "Non renseigné"
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19709_essai_COMET-ICE",
+      "evaluation_id": "CT-19709",
+      "nom_essai": "COMET-ICE",
+      "nct_number": "Non renseigné",
+      "design": "RCT",
+      "population_cible": "Patients âgés de 18 ans et plus non hospitalisés ayant une infection à SARS-CoV-2 confirmée dont les symptômes étaient d’intensité légère à modérée, avec durée des symptômes ≤5 jours, ayant au moins un facteur de risque de COVID-19 sévère.",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 528,
+      "nb_patient_comparateur": 529,
+      "resultat_global": "Réduction du risque de progression vers une forme grave de la COVID-19 (hospitalisation liée à la COVID-19 ou décès toutes causes à J29) de 79%.",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase II/III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": true,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "II_III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Âge (≤70 ; >70 ans)",
+        "Durée des symptômes (≤3 jours ; 4-5 jours)",
+        "Région (Amérique du Nord, Amérique du Sud et Europe)"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": 96,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": null,
+      "arret_premature_raison": "Efficacité démontrée",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": true,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 3,
+      "nb_patients_inclus": "1057",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 18,
+          "s": "CT-19709",
+          "t": "COMET-ICE",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 18,
+          "s": "CT-19709",
+          "t": "Il s’agit d’une étude de phase II/III (COMET-ICE), contrôlée versus placebo, multicentrique, randomisée, en double aveugle",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 19,
+          "s": "CT-19709",
+          "t": "1 057 patients âgés de 18 ans et plus non hospitalisés ayant une infection à SARS-CoV-2 confirmée dont les symptômes étaient d’intensité légère à modérée. La durée des symptômes était inférieure ou égale à trois jours pour 59 % des patients et de 4 à 5 jours pour 41 % des patients, avant l’administration du traitement.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19709_essai_COMET-ICE_crit_principal",
+      "evaluation_id": "CT-19709",
+      "essai_id": "CT-19709_essai_COMET-ICE",
+      "nom_critere": "Hospitalisation >24 heures ou décès à J29",
+      "nature_critere": "Dur",
+      "unite_mesure": "RR",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "1,1% (6/528)",
+      "valeur_groupe_comparateur": "5,7% (30/529)",
+      "gain_absolu": "4,6%",
+      "gain_absolu_num": 4.6,
+      "gain_relatif": "79%",
+      "gain_relatif_num": 79.0,
+      "HR_RR_OR": "RR = 0,21",
+      "HR_RR_OR_num": 0.21,
+      "IC95": "[0,09 ; 0,50]",
+      "IC95_low_num": 0.09,
+      "IC95_high_num": 0.5,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "unite_normalisee": "RR",
+      "type_effet": "RR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "La Commission considère que la quantité d’effet est d’environ 80%.",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "s": "CT-19709",
+          "t": "la proportion de patients atteints d’une forme légère à modérée de COVID-19 à l’inclusion s’aggravant vers une hospitalisation de plus de 24 heures ou le décès au jour 29 (critère de jugement principal)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 19,
+          "s": "CT-19709",
+          "t": "1,1 % (6/528)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_comparateur",
+          "f": "F1",
+          "p": 19,
+          "s": "CT-19709",
+          "t": "5,7 % (30/529)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19709_essai_COMET-ICE_crit_secondaire1",
+      "evaluation_id": "CT-19709",
+      "essai_id": "CT-19709_essai_COMET-ICE",
+      "nom_critere": "Progression de la COVID-19 (admission aux urgences, hospitalisation ou décès toutes causes) à J29",
+      "nature_critere": "Composite",
+      "unite_mesure": "RR",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "2,5%",
+      "valeur_groupe_comparateur": "7,4%",
+      "gain_absolu": "4,9%",
+      "gain_absolu_num": 4.9,
+      "gain_relatif": "66%",
+      "gain_relatif_num": 66.0,
+      "HR_RR_OR": "RR = 0,34",
+      "HR_RR_OR_num": 0.34,
+      "IC95": "[0,19 ; 0,63]",
+      "IC95_low_num": 0.19,
+      "IC95_high_num": 0.63,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "unite_normalisee": "RR",
+      "type_effet": "RR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "s": "CT-19709",
+          "t": "la proportion de patients ayant une progression de la COVID-19 (admission aux urgences, hospitalisation ou décès toutes causes) au jour 29",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19709_essai_COMET-ICE_tol",
+      "evaluation_id": "CT-19709",
+      "essai_id": "CT-19709_essai_COMET-ICE",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Hypersensibilité",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 2.0,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Réaction liée à la perfusion",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 1.0,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Hypersensibilité (2%) et réactions liées à la perfusion (1%)",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 23,
+          "s": "CT-19709",
+          "t": "Les effets indésirables les plus fréquemment rapportés ont été les réactions d’hypersensibilité (2 %) et les réactions liées à la perfusion (1 %). L’effet indésirable le plus grave a été l'anaphylaxie (0,05 %).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19709_essai_COMET-ICE_comp_01",
+      "essai_id": "CT-19709_essai_COMET-ICE",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 18,
+          "s": "CT-19709",
+          "t": "contrôlée versus placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19709_compHAS_01",
+      "evaluation_id": "CT-19709",
+      "nom_comparateur_HAS": "EVUSHELD (tixagevimab/cilgavimab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui (accès compassionnel)",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19709",
+          "t": "EVUSHELD (tixagevimab/ cilgavimab)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19709_compHAS_02",
+      "evaluation_id": "CT-19709",
+      "nom_comparateur_HAS": "RONAPREVE (casirivimab/imdevimab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui (accès précoce)",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19709",
+          "t": "RONAPREVE (casirivimab/ imdevimab)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19709_compHAS_03",
+      "evaluation_id": "CT-19709",
+      "nom_comparateur_HAS": "PAXLOVID (PF-07321332/ritonavir)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19709",
+          "t": "PAXLOVID (PF-07321332/ ritonavir)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19709_compHAS_04",
+      "evaluation_id": "CT-19709",
+      "nom_comparateur_HAS": "VEKLURY (remdesivir)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non (commande d’état)",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19709",
+          "t": "VEKLURY (remdesivir)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "Non renseigné_arg_TRANS_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "La CEESP maintient une réserve importante sur les probabilités de transition : étapes de calcul intermédiaire non suffisamment détaillées, structure de simulation DICE pouvant induire de la confusion.",
+      "extrait_textuel": "les étapes de calcul intermédiaire des probabilités de transition intégrées dans le modèle ne sont pas suffisamment détaillées et que la structure de la simulation peut induire une confusion en termes de lecture de probabilités de transition moyennes",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet, Dominique Polton, Hassan, Valérie",
+      "moment_debat": "Discussion sur requalification réserve",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "trans_part",
+          "t": "les étapes de calcul intermédiaire des probabilités de transition intégrées dans le modèle ne sont pas suffisamment détaillées",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Économique",
+      "direction_argument": "Neutre",
+      "description": "Requalification acceptée : réserve importante sur dépenses santé non liées Covid-19 devient mineure, car caractère conservateur et impact limité (diminution RDCR 12%).",
+      "extrait_textuel": "Nous proposons d’accepter cette requalification de réserve importante en mineure puisque finalement, il est vrai que cela revêt un caractère conservateur. En effet, une analyse en scénario ne retenant pas ces dépenses diminue le RDCR de 12 %.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet, Mme PARIS",
+      "moment_debat": "Discussion sur requalification réserve",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "trans_part",
+          "t": "une analyse en scénario ne retenant pas ces dépenses diminue le RDCR de 12 %",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Économique",
+      "direction_argument": "Défavorable",
+      "description": "La CEESP refuse la requalification et maintient la réserve importante sur le coût de passage aux urgences : risque de double compte avec hospitalisation, impact non négligeable (coût urgence ≈ 50% du coût hospitalisation).",
+      "extrait_textuel": "Nous proposons de ne pas répondre favorablement à leur demande... le coût des urgences, par rapport au coût des hospitalisations, n’est pas négligeable.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet, Mme POLTON, M. HERTZ, Jennifer",
+      "moment_debat": "Discussion approfondie sur requalification réserve",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 13,
+          "s": "trans_part",
+          "t": "le coût des urgences, par rapport au coût des hospitalisations, n’est pas négligeable",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Économique",
+      "direction_argument": "Neutre",
+      "description": "Requalification acceptée : réserve importante sur prise en charge ambulatoire devient mineure, car coût marginal par rapport aux coûts d’hospitalisation.",
+      "extrait_textuel": "Nous acceptons leur demande. Cela fait suite également au débat que nous venons d’avoir sur le fait qu’il s’agit d’un poste de coût quand même faible, marginal, par rapport au coût total.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet",
+      "moment_debat": "Discussion sur requalification réserve",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "trans_part",
+          "t": "un poste de coût quand même faible, marginal, par rapport au coût total",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_5",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Données insuffisantes",
+      "direction_argument": "Neutre",
+      "description": "Données de cohorte COCOPREV publiées après évaluation suggèrent une efficacité in vivo sur variant Omicron, mais avec nombre réduit de patients ; à prendre en compte en réévaluation.",
+      "extrait_textuel": "Il donne une information concernant des données publiées après l’évaluation CT et CEESP. Il y a des données de cohorte COCOPREV qui viennent d’être publiées qui font état d’une efficacité in vivo sur le variant Omicron.",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Chef de Projet, Marc Bardo",
+      "moment_debat": "Commentaires divers",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 12,
+          "s": "trans_part",
+          "t": "données de cohorte COCOPREV... efficacité in vivo sur le variant Omicron",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_6",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Procédural",
+      "direction_argument": "Neutre",
+      "description": "L’industriel sollicite un retour qualitatif de la HAS sur l’évaluation d’impact organisationnel, car manque de références méthodologiques (guide de cartographie existant mais demande d’éléments complémentaires).",
+      "extrait_textuel": "Il émet le souhait... de recevoir un retour qualitatif au regard des attentes de la HAS sur ce type d’évaluation... il aimerait bien avoir des éléments pour avoir des billes sur la façon de faire les choses méthodologiquement",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet, Mme POLTON",
+      "moment_debat": "Commentaires divers",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 12,
+          "s": "trans_part",
+          "t": "il aimerait bien avoir des éléments pour avoir des billes sur la façon de faire les choses méthodologiquement",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_01",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Incertitude",
+      "description": "Incertitude systémique majeure liée à l'évolution rapide de la Covid-19 et des variants, affectant la pertinence des données d'essai.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Parties 1-3",
+      "section_source": "Présentation du contexte",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_01",
+          "t": "Il s’agit du premier dossier Covid que nous voyons en CEESP... entre 10 % et 20 % des patients vont évoluer rapidement...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_02",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Données insuffisantes",
+      "description": "Essai COMET-ICE réalisé avant l'émergence des variants majeurs et sans patients vaccinés, limitant la transposabilité aux patients français actuels.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Parties 2-3",
+      "section_source": "Présentation de l'essai",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "seg_02_21",
+          "t": "C’était avant l’apparition des principaux variants d’intérêt... et les patients étaient majoritairement non vaccinés.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_03",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Méthodologique",
+      "description": "Modélisation économique complexe avec des hypothèses fortes et non conservatrices, conduisant à une sous-estimation probable du RDCR.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur",
+      "page_source": "Parties 4-10",
+      "section_source": "Modélisation économique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "seg_02_21",
+          "t": "La réduction du taux d’hospitalisations est issue de l’essai par classe d’âge... et eux vont retenir une autre répartition...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_04",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité",
+      "description": "Sotrovimab réduit significativement les hospitalisations mais n'a pas d'impact démontré sur la mortalité, avec un bénéfice limité aux phases aiguës.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur",
+      "page_source": "Parties 2-3",
+      "section_source": "Résultats de l'essai",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "seg_02_21",
+          "t": "6 patients sous sotrovimab ont progressé de la Covid versus 30 patients sur 529 côté placebo... pas d’impact sur la mortalité.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_05",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Points_Discussion_Specifiques",
+      "description": "Débat sur l'hypothèse d'utilité identique après réanimation ou non, avec des membres jugeant cela peu plausible mais impact incertain.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "M. SERRIER, Mme POLTON",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Mentionné",
+      "page_source": "Parties 16-18",
+      "section_source": "Débat sur les scores d'utilité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "seg_02_21",
+          "t": "Sauf si des membres nous disent le contraire... nous imaginons qu’une personne qui va en réanimation ne va pas avoir la même utilité...",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_TRANS_06",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Points_Discussion_Specifiques",
+      "description": "Discussion sur les défis méthodologiques de l'évaluation économique des traitements Covid, avec suggestion de réfléchir à de nouveaux critères.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "intervenant": "Mme PARIS, Chef de Projet HAS",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "page_source": "Parties 19-20",
+      "section_source": "Discussion sur les méthodologies futures",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "seg_02_21",
+          "t": "Il y a des réticences... s’interrogent sur le fait de modéliser avec les taux d’hospitalisations évitées...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Efficience",
+      "description": "RDCR de 95 230 €/QALY versus soins standards, au-dessus des seuils d'acceptabilité habituels.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "rdcr_revendique: 95 230 €/QALY versus soins standards",
+      "page_source": "Page 1",
+      "section_source": "Avis économique CEESP",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • XE",
+          "t": "rdcr_revendique: 95 230 €/QALY versus soins standards",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "Incertitude majeure sur la transposabilité de la population simulée par rapport à la population française (différences d'âge et d'IMC).",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "Très incertaine, différences d'âge et d'IMC entre essai COMET-ICE et pratique réelle française",
+      "page_source": "Page 1",
+      "section_source": "Avis économique CEESP - Réserves",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • XE",
+          "t": "Très incertaine, différences d'âge et d'IMC entre essai COMET-ICE et pratique réelle française",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Réserves_méthodologiques",
+      "description": "Hypothèses fortes sur l'estimation de la qualité de vie peu plausibles en pratique réelle.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "extrait_textuel": "Peu plausibles en pratique réelle (ex. aucune désutilité associée à l'infection sans hospitalisation, utilité identique après sortie d'hôpital avec ou sans réanimation)",
+      "page_source": "Page 1",
+      "section_source": "Avis économique CEESP - Réserves",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • XE",
+          "t": "Peu plausibles en pratique réelle (ex. aucune désutilité associée à l'infection sans hospitalisation, utilité identique après sortie d'hôpital avec ou sans réanimation)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Contexte_épidémiologique",
+      "description": "Perte totale d'activité in vitro de sotrovimab contre le variant Omicron BA.2 dominant en France.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Perte totale d'activité in vitro selon données mentionnées",
+      "page_source": "Page 1",
+      "section_source": "Avis économique CEESP - Contexte épidémiologique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • XE",
+          "t": "Perte totale d'activité in vitro selon données mentionnées",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_ECO_5",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "ECO",
+      "categorie_argument": "Efficacité",
+      "description": "Réduction des hospitalisations (-79%), réanimations (-79%) et décès (-79%) avec sotrovimab versus soins standards.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "extrait_textuel": "reduction_hospitalisations: -79%, reduction_reanimations: -79%, reduction_deces: -79%",
+      "page_source": "Page 1",
+      "section_source": "Avis économique CEESP - Résultats économiques",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • XE",
+          "t": "reduction_hospitalisations: -79%, reduction_reanimations: -79%, reduction_deces: -79%",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19709_ctx",
+    "evaluation_id": "CT-19709",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Acces_precoce_pre_AMM",
+    "date_debut_acces_precoce": "2022-01-07",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": null,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Acces_precoce_pre_AMM",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-12-17",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis",
+      "Royaume-Uni",
+      "Allemagne",
+      "Pays-Bas",
+      "Espagne",
+      "Italie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Not_recommended",
+        "date_decision": "2022-04-05",
+        "reference": "FDA updates Sotrovimab emergency use authorization",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_vie_réelle",
+    "delai_suivi_mois": 36,
+    "delai_suivi_justification": "Réévaluation dans un délai maximum de 3 ans",
+    "conditions_suivi": "Mise en place d’une étude observationnelle commune, suivi virologique, soumission des données d’accès précoce",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Réévaluation SMR/ASMR",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 31,
+        "s": "CT-19709",
+        "t": "Date initiale (procédure centralisée) : 17 décembre 2021",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "acces_precoce",
+        "f": "F1",
+        "p": 5,
+        "s": "CT-19709",
+        "t": "Actuellement, XEVUDY (sotrovimab) bénéficie d’une autorisation d’accès précoce",
+        "m": "manual",
+        "c": 0.9
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19709",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19709_smrasmr_01",
+      "evaluation_id": "CT-19709",
+      "indication_precise": "Traitement des adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) atteints de la COVID-19 qui ne nécessitent pas de supplémentation en oxygène et ayant un risque accru d’évolution vers une forme sévère de la COVID-19, en cas de souche de SARS-CoV-2 sensible.",
+      "smr": "Important",
+      "asmr": "Amélioration du service médical rendu modérée (ASMR III)",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Compte tenu du besoin médical insuffisamment couvert, de la quantité d’effet (réduction du risque de progression d’environ 80%), et du profil de tolérance favorable, sous réserve de la sensibilité de la souche.",
+      "population_cible_indication": "Adultes et adolescents (≥12 ans, ≥40 kg) avec COVID-19 légère à modérée, sans oxygénothérapie, à risque d'évolution sévère.",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "EVUSHELD",
+        "RONAPREVE",
+        "PAXLOVID",
+        "VEKLURY"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19709_compHAS_01",
+        "CT-19709_compHAS_02",
+        "CT-19709_compHAS_03",
+        "CT-19709_compHAS_04"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Souche sensible au traitement",
+        "stade": "Non renseigné",
+        "population_age": "≥12 ans"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": null,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "niveau_confiance_annotation": 4,
+      "annotateur": "auto",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 26,
+          "s": "CT-19709",
+          "t": "la Commission considère que le service médical rendu par XEVUDY (sotrovimab) est important dans l’indication de l’AMM en cas de souche de SARS-CoV-2 sensible au traitement.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 27,
+          "s": "CT-19709",
+          "t": "la Commission de la Transparence considère que la spécialité XEVUDY (sotrovimab) apporte en cas de souche de SARS-CoV-2 sensible, une amélioration du service médical rendu modérée (ASMR III)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19709_poso_01",
+      "evaluation_id": "CT-19709",
+      "smr_asmr_id": "CT-19709_smrasmr_01",
+      "indication": "Traitement des adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) atteints de la COVID-19 qui ne nécessitent pas de supplémentation en oxygène et ayant un risque accru d’évolution vers une forme sévère.",
+      "population_cible": "Adultes et adolescents (≥12 ans, ≥40 kg)",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Perfusion intraveineuse unique de 500 mg, administrée dans les 5 jours suivant l'apparition des symptômes, en établissement de santé avec surveillance.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "500",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxm",
+            "dose_days_in_cycle": [],
+            "interval_days": null
+          },
+          "voie_administration": "Intraveineuse",
+          "expected_phase_duration_days": 1
+        }
+      ],
+      "ajustements_poso_brut": "Aucun ajustement posologique nécessaire chez les sujets âgés, insuffisance rénale ou hépatique.",
+      "commentaires": "Administrer en 30 minutes avec filtre 0,2 μm. Ne pas administrer en bolus.",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19709",
+          "t": "La dose recommandée est une perfusion intraveineuse unique de 500 mg administrée après dilution. Il est recommandé d’administrer XEVUDY dans les 5 jours suivant l'apparition des symptômes de la COVID-19.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19709_event_AMM_01",
+      "evaluation_id": "CT-19709",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-12-17",
+      "detail_brut": "AMM européenne obtenue le 17 décembre 2021.",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": 152,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 31,
+          "s": "CT-19709",
+          "t": "Date initiale (procédure centralisée) : 17 décembre 2021",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19709_event_ACCES_01",
+      "evaluation_id": "CT-19709",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2022-01-07",
+      "detail_brut": "Accès précoce octroyé le 07/01/2022.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Autorisation d'accès précoce",
+      "acteurs_impliques": [
+        "ANSM"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19709",
+          "t": "La soumission de l’ensemble des données cliniques des patients traités dans le cadre de l’accès précoce octroyé le 07/01/2022.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19709_event_CT_01",
+      "evaluation_id": "CT-19709",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-05-18",
+      "detail_brut": "Avis de la Commission de la Transparence adopté le 18 mai 2022.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis version définitive",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19709",
+          "t": "18 MAI 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19709",
+    "delai_amm_ct_jours": 152,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19709",
+    "is_orphan": false,
+    "classe_ATC_l2": "J06B",
+    "aire_therapeutique": "Infectiologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 79.0,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Hospitalisation >24 heures ou décès à J29",
+    "p_value_log10": 3.0,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": "Q2",
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "evidence": [],
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19709",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19709_essai_COMET-ICE",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19709_essai_COMET-ICE",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19709_essai_COMET-ICE_crit_principal",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19709_essai_COMET-ICE",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19709_essai_COMET-ICE_crit_secondaire1",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19709_essai_COMET-ICE",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19709_essai_COMET-ICE_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19709_essai_COMET-ICE",
+      "tgt_type": "TOLERANCE",
+      "tgt_id": "CT-19709_essai_COMET-ICE_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "expert_id": "expert_1",
+      "nom": "Mme PARIS",
+      "role": "Présidente de séance",
+      "interventions": [
+        "modération",
+        "sollicitation d'avis"
+      ],
+      "evidence": []
+    },
+    {
+      "expert_id": "expert_2",
+      "nom": "Chef de Projet (HAS)",
+      "role": "Présentateur des remarques et propositions",
+      "interventions": [
+        "présentation",
+        "explication des réserves"
+      ],
+      "evidence": []
+    },
+    {
+      "expert_id": "expert_3",
+      "nom": "Dominique Polton",
+      "role": "Rapporteuse",
+      "interventions": [
+        "critiques sur formulation",
+        "avis sur impact"
+      ],
+      "evidence": []
+    },
+    {
+      "expert_id": "expert_4",
+      "nom": "Pierre Hertz",
+      "role": "Rapporteur",
+      "interventions": [
+        "soutien aux propositions"
+      ],
+      "evidence": []
+    },
+    {
+      "expert_id": "expert_5",
+      "nom": "Hassan Serrier",
+      "role": "Membre de la commission",
+      "interventions": [
+        "accord avec Dominique Polton"
+      ],
+      "evidence": []
+    },
+    {
+      "expert_id": "expert_6",
+      "nom": "Jennifer Monmousseau",
+      "role": "Membre de la commission",
+      "interventions": [
+        "avis sur gradation réserves"
+      ],
+      "evidence": []
+    },
+    {
+      "expert_id": "expert_7",
+      "nom": "Marc Bardou",
+      "role": "Professeur, membre de la commission",
+      "interventions": [
+        "critique sur données COCOPREV"
+      ],
+      "evidence": []
+    },
+    {
+      "intervenant": "Mme PARIS",
+      "role": "Présidente de séance",
+      "interventions_count": 8,
+      "evidence": [
+        {
+          "field": "intervenant",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_01",
+          "t": "Mme PARIS.- Nous pouvons donc passer au dossier XEVUDY.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervenant": "Chef de Projet, pour la HAS",
+      "role": "Présentateur",
+      "interventions_count": 10,
+      "evidence": [
+        {
+          "field": "intervenant",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_01",
+          "t": "Un Chef de Projet, pour la HAS.- Bonjour à tous. Nous allons vous présenter XEVUDY, le sotrovimab.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervenant": "M. HERTZ",
+      "role": "Rapporteur",
+      "interventions_count": 2,
+      "evidence": [
+        {
+          "field": "intervenant",
+          "f": "F1",
+          "p": 14,
+          "s": "seg_02_21",
+          "t": "M. HERTZ.-  Tout d’abord, merci beaucoup aux chefs de projet...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervenant": "Mme POLTON",
+      "role": "Rapporteur",
+      "interventions_count": 5,
+      "evidence": [
+        {
+          "field": "intervenant",
+          "f": "F1",
+          "p": 14,
+          "s": "seg_02_21",
+          "t": "Mme POLTON.- Je n’ai pas forcément énormément à ajouter...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervenant": "M. BARDOU",
+      "role": "Membre de la commission",
+      "interventions_count": 3,
+      "evidence": [
+        {
+          "field": "intervenant",
+          "f": "F1",
+          "p": 15,
+          "s": "seg_02_21",
+          "t": "M. BARDOU.- J’ai juste une question.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervenant": "M. SERRIER",
+      "role": "Membre de la commission",
+      "interventions_count": 3,
+      "evidence": [
+        {
+          "field": "intervenant",
+          "f": "F1",
+          "p": 16,
+          "s": "seg_02_21",
+          "t": "M. SERRIER.- Sur des « points de détail », je voudrais juste explorer...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "point_1",
+      "sujet": "Formulation de la réserve sur les probabilités de transition",
+      "debats": [
+        "Faut-il dire 'induit' ou 'peut induire' une confusion ?",
+        "Faut-il mentionner la structure DICE ?"
+      ],
+      "controverses": "Oui",
+      "resolution": "Suppression de la mention sur la structure DICE, maintien de 'insuffisamment détaillées'",
+      "evidence": []
+    },
+    {
+      "point_id": "point_2",
+      "sujet": "Gradation des réserves (mineure vs importante)",
+      "debats": [
+        "Quel impact justifie une réserve importante ?",
+        "Faut-il considérer l'impact sur RDCR ou sur les coûts ?"
+      ],
+      "controverses": "Oui",
+      "resolution": "Examen au cas par cas, avec calcul d'impact si possible",
+      "evidence": []
+    },
+    {
+      "point_id": "point_3",
+      "sujet": "Coût de passage aux urgences : double compte ou non ?",
+      "debats": [
+        "Quelle fraction de patients est concernée ?",
+        "L'impact est-il négligeable ?"
+      ],
+      "controverses": "Oui",
+      "resolution": "Calcul montrant que le coût urgence n'est pas négligeable (≈50% du coût hospitalisation), donc maintien réserve importante",
+      "evidence": []
+    },
+    {
+      "point_id": "point_01",
+      "description": "Décalage entre les données de l'essai COMET-ICE et la situation actuelle (variants, vaccination, populations à risque).",
+      "intervenants": [
+        "Chef de Projet HAS",
+        "Mme POLTON"
+      ],
+      "moment_debat": "Présentation et questions",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "seg_02_21",
+          "t": "Tout a changé, que ce soit l’infection elle-même avec la succession de nouveaux variants...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "point_id": "point_02",
+      "description": "Clarification sur le coût de passage aux urgences et risque de double comptage dans le modèle économique.",
+      "intervenants": [
+        "Mme POLTON",
+        "Chef de Projet HAS"
+      ],
+      "moment_debat": "Questions_commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "seg_02_21",
+          "t": "Je me suis demandé si cela ne concernait pas plutôt justement les patients soignés en ambulatoire...",
+          "m": "manual",
+          "c": 0.85
+        }
+      ]
+    },
+    {
+      "point_id": "point_03",
+      "description": "Discussion sur la modélisation du Covid long, non intégré de manière robuste dans le modèle.",
+      "intervenants": [
+        "M. HERTZ",
+        "Chef de Projet HAS"
+      ],
+      "moment_debat": "Présentation et délibération",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "seg_02_21",
+          "t": "L’industriel a défini une sorte d’état de santé de Covid long, mais ce qui sort de ce modèle in fine...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "vote_1",
+      "sujet_vote": "Adoption des propositions de réponse aux observations de l'industriel (requalifications de réserves)",
+      "resultat": "Favorable",
+      "nb_voix_pour": 22,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details": "Vote par appel nominatif, 22 voix favorables",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 14,
+          "s": "trans_part",
+          "t": "Résultat du vote : Favorable : 22 voix",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "vote_id": "vote_01",
+      "objet_vote": "Adoption de l'avis économique sur XEVUDY",
+      "date_vote": "2022-07-05",
+      "resultat": "Adopté",
+      "nb_votants": null,
+      "nb_voix_pour": 21,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "unanimite": true,
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 21,
+          "s": "seg_02_21",
+          "t": "Résultat du vote : Favorable : 21 voix",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "Non renseigné",
+    "contribution_presente": false,
+    "contribution_id": "Non renseigné_contrib_1",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": null,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  }
+}

@@ -1,0 +1,1552 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19797",
+  "evaluation_id": "CT-19797",
+  "extraction_date": "2022-06-01",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-01",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19797_XEMBIFY_PIS_INS_AvisDef_CT19797.pdf",
+        "type": "CT",
+        "page_count": 17
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19797_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis version définitive",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "HAS - Direction de l'Évaluation et de l’Accès à l’Innovation - Avis version définitive",
+      "expected_fields": [
+        "evaluation_id",
+        "produit_nom",
+        "avis_conclusion"
+      ],
+      "routing_hint": "Page de titre et résumé",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19797_seg_02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "INDICATION THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "02 INDICATION THERAPEUTIQUE",
+      "expected_fields": [
+        "indication_precise"
+      ],
+      "routing_hint": "Indications approuvées",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19797_seg_03",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "POSOLOGIE",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "03 POSOLOGIE",
+      "expected_fields": [
+        "posologie_resumee_brut",
+        "voie_administration"
+      ],
+      "routing_hint": "Détails posologiques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19797_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 11,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "04 COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Liste des comparateurs SC et IV",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19797_seg_05",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "DONNEES CLINIQUES",
+      "template_detecte": "CT_modern",
+      "page_start": 12,
+      "page_end": 15,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "06 DONNEES CLINIQUES",
+      "expected_fields": [
+        "essais_cliniques",
+        "criteres_jugement",
+        "resultats_efficacite",
+        "tolerance"
+      ],
+      "routing_hint": "Études GTI1503 et GTI1502",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19797_seg_06",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "template_detecte": "CT_modern",
+      "page_start": 15,
+      "page_end": 16,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "07 PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "expected_fields": [
+        "place_therapeutique",
+        "population_cible"
+      ],
+      "routing_hint": "Contexte thérapeutique et place de XEMBIFY",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19797_seg_07",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "CONCLUSIONS DE LA COMMISSION",
+      "template_detecte": "CT_modern",
+      "page_start": 16,
+      "page_end": 17,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "08 CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "justification_decisionnelle"
+      ],
+      "routing_hint": "SMR important, ASMR V",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19797_seg_08",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "template_detecte": "CT_modern",
+      "page_start": 17,
+      "page_end": 17,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "09 INFORMATIONS ADMINISTRATIVES ET REGLEMENTAIRES",
+      "expected_fields": [
+        "date_evaluation",
+        "presentations",
+        "classe_ATC",
+        "statut_prescription"
+      ],
+      "routing_hint": "Détails administratifs",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19797_produit_XEMBIFY",
+      "evaluation_id": "CT-19797",
+      "nom_commercial": "XEMBIFY",
+      "dci": "immunoglobuline humaine normale",
+      "forme_pharmaceutique": "solution injectable sous cutanée",
+      "dosage": "200 mg/ml",
+      "titulaire_amm": "GRIFOLS France",
+      "code_cis": "Non renseigné",
+      "presentations": [
+        {
+          "code_cip13": "34009 302 440 7 4",
+          "description": "5 mL en flacon (verre), boite de 1"
+        },
+        {
+          "code_cip13": "34009 302 440 8 1",
+          "description": "10 mL en flacon (verre), boite de 1"
+        },
+        {
+          "code_cip13": "34009 302 440 9 8",
+          "description": "20 mL en flacon (verre), boite de 1"
+        },
+        {
+          "code_cip13": "34009 302 441 0 4",
+          "description": "50 mL en flacon (verre), boite de 1"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19797",
+          "t": "immunoglobuline humaine normale XEMBIFY 200 mg/ml, solution injectable sous cutanée",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "presentations",
+          "f": "F1",
+          "p": 17,
+          "s": "CT-19797",
+          "t": "XEMBIFY 200 mg/ml, solution injectable sous cutanée 5 mL en flacon (verre), boite de 1 (CIP : 34009 302 440 7 4)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19797",
+      "Num_avis": "CT-19797",
+      "produit_nom": "XEMBIFY",
+      "dci": "immunoglobuline humaine normale",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable sous cutanée",
+      "dosage": "200 mg/ml",
+      "indication": "Traitement substitutif chez les adultes, les enfants et les adolescents (âgés de 0 à 18 ans) atteints : d’un déficit immunitaire primitif (DIP) avec altération de la production d’anticorps ; d’une hypogammaglobulinémie avec infections bactériennes récurrentes chez des patients atteints de leucémie lymphoïde chronique (LLC), chez lesquels l’antibioprophylaxie a échoué ou est contre-indiquée ; d’une hypogammaglobulinémie avec infections bactériennes récurrentes chez des patients atteints de myélome multiple (MM) ; d’une hypogammaglobulinémie chez des patients en pré- et post‑transplantation de cellules souches hématopoïétiques allogéniques (GCSH allogénique)",
+      "classe_ATC": "J06BA01",
+      "pathologie": "Déficits immunitaires primitifs et secondaires",
+      "maladie_rare": false,
+      "ligne_traitement": "Traitement de 1ère intention",
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "Adultes, enfants, adolescents (0-18 ans), personnes âgées",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Immunodéficience",
+      "aire_therapeutique_niveau_3": "Traitement substitutif par immunoglobulines",
+      "source_aire_therapeutique": "Déduit ATC J06BA01",
+      "design_etude": "Études de phase III non comparatives, multicentriques",
+      "niveau_preuve_brut": "Données de phase III",
+      "niveau_preuve_interprete": "Phase_III_single_arm",
+      "besoin_medical_brut": "Besoin médical couvert par les alternatives mais tensions d’approvisionnement récurrentes",
+      "besoin_medical_interprete": "Couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "0-18 ans et adultes",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_single_arm",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Plusieurs immunoglobulines SC et IV disponibles",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-01",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les déficits immunitaires qui nécessitent un traitement de substitution par immunoglobulines sont des maladies peu fréquentes, graves, menaçant le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes, enfants et adolescents (0-18 ans) atteints de déficits immunitaires primitifs et secondaires",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : immunoglobulines administrées par voie sous-cutanée ou intraveineuse dans les indications de l’AMM de XEMBIFY",
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 2,
+          "s": "CT-19797",
+          "t": "Il s’agit d’une demande d’inscription sur la liste des spécialités agréées à l’usage des collectivités",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "CT-19797",
+          "t": "Traitement substitutif chez les adultes, les enfants et les adolescents (âgés de 0 à 18 ans) atteints : d’un déficit immunitaire primitif (DIP) avec altération de la production d’anticorps ; d’une hypogammaglobulinémie avec infections bactériennes récurrentes chez des patients atteints de leucémie lymphoïde chronique (LLC), chez lesquels l’antibioprophylaxie a échoué ou est contre-indiquée ; d’une hypogammaglobulinémie avec infections bactériennes récurrentes chez des patients atteints de myélome multiple (MM) ; d’une hypogammaglobulinémie chez des patients en pré- et post‑transplantation de cellules souches hématopoïétiques allogéniques (GCSH allogénique)",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 17,
+          "s": "CT-19797",
+          "t": "Classification ATC J06BA01",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19797",
+          "t": "Il s’agit d’un traitement de 1ère intention",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19797",
+          "t": "Les déficits immunitaires qui nécessitent un traitement de substitution par immunoglobulines sont des maladies peu fréquentes, graves, menaçant le pronostic vital.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19797_essai_GTI1503",
+      "evaluation_id": "CT-19797",
+      "nom_essai": "GTI1503",
+      "nct_number": "Non renseigné",
+      "design": "Phase III non comparative, multicentrique",
+      "design_enum": "Phase_III_single_arm",
+      "population_cible": "Patients adultes et enfants à partir de 2 ans atteints de déficits immunitaires primitifs",
+      "comparateur_utilise": "Aucun",
+      "nb_patient_traitement": 61,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Efficacité démontrée sur le taux d'infections bactériennes graves",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "age_min_num": 2,
+      "age_max_num": 69,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "61",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "L’évaluation de XEMBIFY 200 mg/ml, solution injectable (immunoglobuline humaine normale) par voie sous-cutanée repose sur deux études cliniques de phase III (GTI1503 et GTI1502)",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "L’étude clinique de phase III (GTI1503), non comparative, multicentrique, a évalué l’efficacité, la pharmacocinétique et la tolérance de XEMBIFY 200 mg/ml, solution injectable sous cutanée (immunoglobuline humaine normale) pendant 12 mois chez 61 patients adultes et enfants à partir de 2 ans atteints de déficits immunitaires primitifs.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "61 patients adultes et enfants",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "age_min_num",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19797",
+          "t": "L’âge médian était de 17 ans (2 à 69 ans)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19797_essai_GTI1502",
+      "evaluation_id": "CT-19797",
+      "nom_essai": "GTI1502",
+      "nct_number": "Non renseigné",
+      "design": "Phase III non comparative, multicentrique",
+      "design_enum": "Phase_III_single_arm",
+      "population_cible": "Patients adultes et enfants atteints de déficits immunitaires primitifs",
+      "comparateur_utilise": "Aucun",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Évaluation de la pharmacocinétique et de la tolérance",
+      "QoL_flag": false,
+      "niveau_preuve": "Phase III",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "L’évaluation de XEMBIFY 200 mg/ml, solution injectable (immunoglobuline humaine normale) par voie sous-cutanée repose sur deux études cliniques de phase III (GTI1503 et GTI1502)",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "design",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "GTI1502, non comparatives, multicentriques, réalisées chez des patients adultes, adolescents et enfants atteints de déficits immunitaires primitifs dont l’objectif était d’évaluer la pharmacocinétique et la tolérance pour l’étude GTI1502",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19797_essai_GTI1503_crit_infections_bacteriennes_graves",
+      "evaluation_id": "CT-19797",
+      "essai_id": "CT-19797_essai_GTI1503",
+      "nom_critere": "Taux d'infections bactériennes graves",
+      "nature_critere": "Dur",
+      "unite_mesure": "par personne-année",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Taux de 0,016 (limite supérieure de l’IC 99 % de 0,036)",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "rate",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Le taux global annuel d’infections bactériennes graves n’a pas dépassé la limite prédéfinie de 1",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "Le critère de jugement principal était le taux d’infections bactériennes graves, par personne-année de traitement",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19797",
+          "t": "Le taux global annuel d’infections bactériennes graves n’a pas dépassé la limite prédéfinie de 1 (taux de 0,016, avec limite supérieure de l’IC 99 % de 0,036)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19797_essai_GTI1503_crit_IgG_residuelles",
+      "evaluation_id": "CT-19797",
+      "essai_id": "CT-19797_essai_GTI1503",
+      "nom_critere": "Concentrations résiduelles sériques des IgG totales",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "mg/dL",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Moyenne de 947,64 mg/dL",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "mg/dL",
+      "type_effet": "Autre",
+      "significativite_statistique": null,
+      "critere_atteint": null,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 12,
+          "s": "CT-19797",
+          "t": "Le critère pharmacocinétique analysé était les concentrations résiduelles sériques des IgG totales à l'état d'équilibre",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19797",
+          "t": "la moyenne des concentrations résiduelles sériques des IgG totales à l'état d'équilibre a été de 947,64 mg/dL",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19797_essai_GTI1503_tol",
+      "evaluation_id": "CT-19797",
+      "essai_id": "CT-19797_essai_GTI1503",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Les données de tolérance reprises dans le RCP sont en concordance avec le profil connu des autres immunoglobulines",
+      "EI_frequents": "Pour information, le nombre d’infections relevés dans l’étude GTI1503 a été de 44 (72,1%) patients dans l’étude et de 26 (53,1%) patients pour l’étude GTI1502",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19797",
+          "t": "Les données de tolérance reprises dans le RCP sont en concordance avec le profil connu des autres immunoglobulines",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19797",
+          "t": "Pour information, le nombre d’infections relevés dans l’étude GTI1503 a été de 44 (72,1%) patients dans l’étude et de 26 (53,1%) patients pour l’étude GTI1502",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19797_essai_GTI1502_tol",
+      "evaluation_id": "CT-19797",
+      "essai_id": "CT-19797_essai_GTI1502",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [],
+      "_meta": {}
+    },
+    {
+      "tolerance_id": "CT-19797_RCP_tol",
+      "evaluation_id": "CT-19797",
+      "essai_id": null,
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Il est précisé dans le RCP que des effets indésirables de type frissons, céphalée, sensation vertigineuse, fièvre, vomissement, réactions allergiques, nausée, arthralgie, pression artérielle basse et douleur dans la partie inférieure du dos peuvent survenir occasionnellement",
+      "EI_frequents": "Les réactions locales observées aux sites de perfusion telles quelles gonflement, douleur, rougeur, induration, chaleur locale, démangeaison, contusion et rash, peuvent fréquemment survenir",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19797",
+          "t": "Il est précisé dans le RCP que des effets indésirables de type frissons, céphalée, sensation vertigineuse, fièvre, vomissement, réactions allergiques, nausée, arthralgie, pression artérielle basse et douleur dans la partie inférieure du dos peuvent survenir occasionnellement",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19797",
+          "t": "Les réactions locales observées aux sites de perfusion telles quelles gonflement, douleur, rougeur, induration, chaleur locale, démangeaison, contusion et rash, peuvent fréquemment survenir",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19797_compHAS_01",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "GAMMANORM 165 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19797",
+          "t": "GAMMANORM 165 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_02",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "HIZENTRA 200 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19797",
+          "t": "HIZENTRA 200 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_03",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "HYQVIA 100 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19797",
+          "t": "HYQVIA 100 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_04",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "CUVITRU 200 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19797",
+          "t": "CUVITRU 200 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_05",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "CUTAQUIG 165 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19797",
+          "t": "CUTAQUIG 165 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_06",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "TEGELINE (immunoglobuline humaine normale)",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19797",
+          "t": "TEGELINE (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_07",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "GAMMAGARD 50 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19797",
+          "t": "GAMMAGARD 50 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_08",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "OCTAGAM 50 et 100 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19797",
+          "t": "OCTAGAM 50 et 100 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_09",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "PRIVIGEN 100 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19797",
+          "t": "PRIVIGEN 100 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_10",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "CLAIRYG 50 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19797",
+          "t": "CLAIRYG 50 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_11",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "KIOVIG 100 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "CT-19797",
+          "t": "KIOVIG 100 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_12",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "FLEBOGAMMA DIF 50 et 100 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "CT-19797",
+          "t": "FLEBOGAMMA DIF 50 et 100 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19797_compHAS_13",
+      "evaluation_id": "CT-19797",
+      "nom_comparateur_HAS": "GAMUNEX 100 mg/mL",
+      "type_comparateur": "Immunoglobuline humaine normale",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunoglobuline",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "CT-19797",
+          "t": "GAMUNEX 100 mg/mL (immunoglobuline humaine normale)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19797_arg_CT_1",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Efficacité démontrée dans les DIP avec un taux d'infections bactériennes graves faible (0,016 par personne-année) inférieur à la limite prédéfinie de 1.",
+      "extrait_textuel": "Le taux global annuel d’infections bactériennes graves n’a pas dépassé la limite prédéfinie de 1 (taux de 0,016, avec limite supérieure de l’IC 99 % de 0,036)",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19797",
+          "t": "Le taux global annuel d’infections bactériennes graves n’a pas dépassé la limite prédéfinie de 1 (taux de 0,016, avec limite supérieure de l’IC 99 % de 0,036)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19797_arg_CT_2",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Neutre",
+      "description": "Profil de tolérance comparable à celui des autres immunoglobulines, avec des effets indésirables connus et gérables.",
+      "extrait_textuel": "Les données de tolérance reprises dans le RCP sont en concordance avec le profil connu des autres immunoglobulines",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "CT-19797",
+          "t": "Les données de tolérance reprises dans le RCP sont en concordance avec le profil connu des autres immunoglobulines",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19797_arg_CT_3",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Innovation",
+      "direction_argument": "Défavorable",
+      "description": "Pas de progrès par rapport aux immunoglobulines déjà existantes (ASMR V).",
+      "extrait_textuel": "Pas de progrès par rapport aux immunoglobulines déjà existantes",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19797",
+          "t": "Pas de progrès par rapport aux immunoglobulines déjà existantes",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19797_arg_CT_4",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical important dans des maladies graves, avec tensions d'approvisionnement en immunoglobulines justifiant une alternative supplémentaire.",
+      "extrait_textuel": "Les déficits immunitaires qui nécessitent un traitement de substitution par immunoglobulines sont des maladies peu fréquentes, graves, menaçant le pronostic vital. [...] du besoin médical déjà couvert par les alternatives mais prenant en compte les tensions d’approvisionnement récurrentes",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19797",
+          "t": "Les déficits immunitaires qui nécessitent un traitement de substitution par immunoglobulines sont des maladies peu fréquentes, graves, menaçant le pronostic vital",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19797_arg_CT_5",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Alternative thérapeutique supplémentaire aux autres immunoglobulines, sans données comparatives directes pour préciser le choix.",
+      "extrait_textuel": "La spécialité XEMBIFY 200 mg/ml, solution injectable sous cutanée (immunoglobuline humaine normale) par voie sous-cutanée est une alternative thérapeutique supplémentaire aux autres spécialités à base d’immunoglobulines humaines normales ayant les mêmes indications. Compte tenu de l’absence de donnée comparative directe versus les autres immunoglobulines (IV ou SC) le choix d’une Ig par rapport à une autre ne peut être précisé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "CT-19797",
+          "t": "La spécialité XEMBIFY 200 mg/ml, solution injectable sous cutanée (immunoglobuline humaine normale) par voie sous-cutanée est une alternative thérapeutique supplémentaire aux autres spécialités à base d’immunoglobulines humaines normales ayant les mêmes indications",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19797_arg_CT_6",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Population",
+      "direction_argument": "Favorable",
+      "description": "Population cible large incluant adultes, enfants et adolescents (0-18 ans) pour plusieurs indications de déficits immunitaires.",
+      "extrait_textuel": "La population cible de la spécialité XEMBIFY 200 mg/ml (immunoglobuline humaine normale) par voie sous-cutanée est représentée par les adultes et enfants atteints de déficits immunitaires primitifs et secondaires et nécessitant un traitement de substitution par immunoglobulines",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19797",
+          "t": "La population cible de la spécialité XEMBIFY 200 mg/ml (immunoglobuline humaine normale) par voie sous-cutanée est représentée par les adultes et enfants atteints de déficits immunitaires primitifs et secondaires et nécessitant un traitement de substitution par immunoglobulines",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19797_arg_CT_7",
+      "evaluation_id": "CT-19797",
+      "source_argument": "CT",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Défavorable",
+      "description": "Absence de données comparatives directes limitant la conclusion sur l'efficacité et la tolérance relatives par rapport aux autres immunoglobulines.",
+      "extrait_textuel": "Le plan méthodologique de l’étude (absence de comparaison) ne permet pas de tirer de conclusion quant à l’efficacité et la tolérance de XEMBIFY 200 mg/ml (immunoglobuline humaine normale) par rapport à d’autres immunoglobulines humaines normales",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "CT-19797",
+          "t": "Le plan méthodologique de l’étude (absence de comparaison) ne permet pas de tirer de conclusion quant à l’efficacité et la tolérance de XEMBIFY 200 mg/ml (immunoglobuline humaine normale) par rapport à d’autres immunoglobulines humaines normales",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19797_ctx",
+    "evaluation_id": "CT-19797",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-12-17",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis",
+      "Espagne",
+      "Italie",
+      "Allemagne",
+      "Royaume-Uni",
+      "Suède",
+      "Finlande",
+      "République tchèque",
+      "Slovaquie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2019-07-03",
+        "reference": "AMM aux Etats-Unis",
+        "evidence": [
+          {
+            "field": "decisions_internationales",
+            "f": "F1",
+            "p": 12,
+            "s": "CT-19797",
+            "t": "Le 3 juillet 2019, la FDA a approuvé XEMBIFY dans la prise en charge des déficits immunitaires primitifs chez les enfants âgés de 2 ans et plus",
+            "m": "manual",
+            "c": 0.95
+          }
+        ]
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Maladies peu fréquentes",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 2,
+        "s": "CT-19797",
+        "t": "XEMBIFY 200 mg/ml, solution injectable sous cutanée (immunoglobuline humaine normale) a obtenu une AMM en France le 17/12/2021 par procédure de reconnaissance mutuelle",
+        "m": "manual",
+        "c": 0.98
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19797",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19797_smrasmr_01",
+      "evaluation_id": "CT-19797",
+      "indication_precise": "Traitement substitutif chez les adultes, les enfants et les adolescents (âgés de 0 à 18 ans) atteints : d’un déficit immunitaire primitif (DIP) avec altération de la production d’anticorps ; d’une hypogammaglobulinémie avec infections bactériennes récurrentes chez des patients atteints de leucémie lymphoïde chronique (LLC), chez lesquels l’antibioprophylaxie a échoué ou est contre-indiquée ; d’une hypogammaglobulinémie avec infections bactériennes récurrentes chez des patients atteints de myélome multiple (MM) ; d’une hypogammaglobulinémie chez des patients en pré- et post‑transplantation de cellules souches hématopoïétiques allogéniques (GCSH allogénique)",
+      "smr": "La Commission considère que le service médical rendu par XEMBIFY 200 mg/ml (immunoglobuline humaine normale) est important dans les indications de l’AMM",
+      "asmr": "La Commission considère que XEMBIFY 200 mg/ml (immunoglobuline humaine normale) par voie sous-cutanée n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres immunoglobulines humaines normales administrées par voie sous-cutanée ou intraveineuse",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Efficacité démontrée sur le taux d'infections bactériennes graves, tolérance acceptable, mais pas d'amélioration par rapport aux alternatives",
+      "population_cible_indication": "Adultes et enfants atteints de déficits immunitaires primitifs et secondaires",
+      "ligne_traitement_indication": "1ère intention",
+      "comparateurs_references_indication": "Immunoglobulines par voie SC et IV",
+      "comparateur_id_HAS": null,
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "0-18 ans et adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19797",
+          "t": "La Commission considère que le service médical rendu par XEMBIFY 200 mg/ml (immunoglobuline humaine normale) est important dans les indications de l’AMM",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 16,
+          "s": "CT-19797",
+          "t": "La Commission considère que XEMBIFY 200 mg/ml (immunoglobuline humaine normale) par voie sous-cutanée n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux autres immunoglobulines humaines normales administrées par voie sous-cutanée ou intraveineuse",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19797_poso_01",
+      "evaluation_id": "CT-19797",
+      "smr_asmr_id": "CT-19797_smrasmr_01",
+      "indication": "Traitement substitutif",
+      "population_cible": "Adultes, enfants, adolescents (0-18 ans), personnes âgées",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose dépend du poids corporel et de la réponse clinique. Dose de charge : 0,2 à 0,5 g/kg. Dose d'entretien mensuelle : 0,4 à 0,8 g/kg, administrée environ une fois par semaine par voie sous-cutanée.",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "0.2-0.5",
+            "unite_dose": "g/kg"
+          },
+          "frequence": {
+            "type": "jours_cycle",
+            "dose_days_in_cycle": [],
+            "interval_days": null
+          },
+          "voie_administration": "Sous-cutanée",
+          "expected_phase_duration_days": null
+        },
+        {
+          "phase_nom": "Entretien",
+          "cycle_length_days": 7,
+          "dose_expression": {
+            "basis": "poids",
+            "value": "0.4-0.8",
+            "unite_dose": "g/kg/mois"
+          },
+          "frequence": {
+            "type": "qxs",
+            "dose_days_in_cycle": [],
+            "interval_days": 7
+          },
+          "voie_administration": "Sous-cutanée",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Ajustement en fonction des taux résiduels d'IgG (cible ≥ 5-6 g/L) et de l'incidence des infections",
+      "commentaires": "Administration par voie sous-cutanée uniquement, avec débit initial de 10 mL/h/site, pouvant être augmenté progressivement",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 2,
+          "s": "CT-19797",
+          "t": "La dose et la posologie dépendent de l’indication. [...] La posologie doit permettre l’obtention d’un taux résiduel d’IgG (mesuré avant la perfusion suivante) d’au moins 5 à 6 g/L et être dans l’intervalle de référence des taux d’IgG sériques pour la tranche d’âge. Une dose de charge d’au moins 0,2 à 0,5 g/kg (1 à 2,5 mL/kg) de poids corporel peut être nécessaire. [...] Après avoir atteint des taux d’IgG stables, des doses d’entretien sont administrées à intervalles réguliers (environ une fois par semaine) de façon à atteindre une dose mensuelle cumulée de l’ordre de 0,4 à 0,8 g/kg de poids corporel",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19797_event_AMM_01",
+      "evaluation_id": "CT-19797",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-12-17",
+      "detail_brut": "AMM en France par procédure de reconnaissance mutuelle",
+      "source_doc": "CT page 2",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "CT-19797",
+          "t": "XEMBIFY 200 mg/ml, solution injectable sous cutanée (immunoglobuline humaine normale) a obtenu une AMM en France le 17/12/2021 par procédure de reconnaissance mutuelle",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19797_event_CT_01",
+      "evaluation_id": "CT-19797",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-01",
+      "detail_brut": "Avis de la Commission de la Transparence",
+      "source_doc": "CT page 1",
+      "detail_type_specifique": "Avis favorable au remboursement",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19797",
+          "t": "1ER JUIN 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19797",
+    "delai_amm_ct_jours": 166,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19797",
+    "is_orphan": false,
+    "classe_ATC_l2": "J06",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 2,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Taux d'infections bactériennes graves",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19797",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19797_essai_GTI1503",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19797",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19797_essai_GTI1502",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19797_essai_GTI1503",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19797_essai_GTI1503_crit_infections_bacteriennes_graves",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19797_essai_GTI1503",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19797_essai_GTI1503_crit_IgG_residuelles",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19797_essai_GTI1503",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19797_essai_GTI1503_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19797_essai_GTI1502",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19797_essai_GTI1502_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": []
+}

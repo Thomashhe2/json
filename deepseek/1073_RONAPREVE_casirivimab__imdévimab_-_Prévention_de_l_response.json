@@ -1,0 +1,1736 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19465",
+  "evaluation_id": "CT-19465",
+  "extraction_date": "2022-05-18",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19465_RONAPREVE_PIC_INS_AvisDef_CT19465.pdf",
+        "type": "CT",
+        "page_count": 47
+      },
+      "F2": {
+        "file_name": "trans_1_ronapreve_18052022_transcription_ct19465.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 20
+      },
+      "F3": {
+        "file_name": "contrib_1_questionnaire_has_contrib_asso_med_ronapreve_casirivimab-imdevimab.pdf",
+        "type": "CONTRIB",
+        "page_count": 4
+      }
+    },
+    "extraction_date": "2022-05-18"
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19465_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "indications"
+      ],
+      "routing_hint": "Résumé de l'avis",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19465_seg_02",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Quel progrès ?",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Quel progrès ?",
+      "expected_fields": [
+        "progres_therapeutique"
+      ],
+      "routing_hint": "Évaluation de l'amélioration",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19465_seg_03",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Quelle place dans la stratégie thérapeutique ?",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Quelle place dans la stratégie thérapeutique ?",
+      "expected_fields": [
+        "place_medicament",
+        "recommandations"
+      ],
+      "routing_hint": "Positionnement thérapeutique",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19465_seg_04",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Motif de l’examen",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 400,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "indications",
+        "SMR",
+        "ASMR"
+      ],
+      "routing_hint": "Contexte administratif",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19465_seg_05",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "indications_precises"
+      ],
+      "routing_hint": "Détails des indications",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19465_seg_06",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "doses",
+        "modes_administration"
+      ],
+      "routing_hint": "Informations posologiques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19465_seg_07",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 12,
+      "page_end": 20,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "description_maladie",
+        "strategie_therapeutique"
+      ],
+      "routing_hint": "Contexte médical",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19465_seg_08",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 20,
+      "page_end": 25,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_medicamenteux",
+        "comparateurs_non_medicamenteux"
+      ],
+      "routing_hint": "Analyse des alternatives",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19465_seg_09",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 25,
+      "page_end": 33,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Analyse des données disponibles",
+      "expected_fields": [
+        "etudes_cliniques",
+        "resultats_efficacite",
+        "tolerance"
+      ],
+      "routing_hint": "Revue des études",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19465_seg_10",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 36,
+      "page_end": 42,
+      "char_start": 0,
+      "char_end": 1800,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "avis_final"
+      ],
+      "routing_hint": "Décision finale",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19465_seg_11",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 11/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 11,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_12",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 12/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 12,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_13",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 13/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 13,
+      "page_end": 13,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_14",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 14/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 14,
+      "page_end": 14,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_15",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 15/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 15,
+      "page_end": 15,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_16",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 16/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 16,
+      "page_end": 16,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_17",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 17/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 17,
+      "page_end": 17,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_18",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 18/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 18,
+      "page_end": 18,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_19",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 19/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 19,
+      "page_end": 19,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19465_seg_20",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT) - Partie 20/20",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 20,
+      "page_end": 20,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Mercredi 18 mai 2022 Commission de Transparence XEVUDY / RONAPREVE / EVUSHELD – Examen – Inscription (CT)",
+      "expected_fields": [],
+      "routing_hint": null,
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "seg_1",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Méthode utilisée pour remplir le questionnaire",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "1. Méthode utilisée pour remplir le questionnaire",
+      "expected_fields": [
+        "Contribution_Patients.methodologie"
+      ],
+      "routing_hint": "CONTRIB",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_2",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Impact de la maladie / état de santé",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "2. Impact de la maladie / état de santé",
+      "expected_fields": [
+        "Contribution_Patients.impacts_maladie"
+      ],
+      "routing_hint": "CONTRIB",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_3",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "template_detecte": "CONTRIB",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "3. Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "expected_fields": [
+        "Contribution_Patients.traitements_actuels"
+      ],
+      "routing_hint": "CONTRIB",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_4",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Expériences avec le médicament évalué",
+      "template_detecte": "CONTRIB",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "4. Expériences avec le médicament évalué",
+      "expected_fields": [
+        "Contribution_Patients.evaluation_medicament"
+      ],
+      "routing_hint": "CONTRIB",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "seg_5",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Synthèse de votre contribution",
+      "template_detecte": "CONTRIB",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "6. Synthèse de votre contribution",
+      "expected_fields": [
+        "Contribution_Patients.synthese_contribution",
+        "Contribution_Patients.position_association"
+      ],
+      "routing_hint": "CONTRIB",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19465_prod_01",
+      "evaluation_id": "CT-19465",
+      "nom_commercial": "RONAPREVE",
+      "dci": "casirivimab / imdevimab",
+      "forme_pharmaceutique": "solution à diluer pour perfusion intraveineuse ou solution pour injection sous-cutanée",
+      "dosage": "120 mg/mL",
+      "code_cip13": "34009 550 854 5 4",
+      "code_cip13_2": "34009 550 854 4 7",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 44,
+          "s": "RONAPREVE",
+          "t": "CIP : 34009 550 854 5 4",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "code_cip13_2",
+          "f": "F1",
+          "p": 44,
+          "s": "RONAPREVE",
+          "t": "CIP : 34009 550 854 4 7",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19465_prod_01",
+      "nom_commercial": "RONAPREVE",
+      "dci": "Casirivimab et imdévimab",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "evidence": []
+    },
+    {
+      "produit_id": "CT-19465_prod_02",
+      "nom_commercial": "XEVUDY",
+      "dci": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "evidence": []
+    },
+    {
+      "produit_id": "CT-19465_prod_03",
+      "nom_commercial": "EVUSHELD",
+      "dci": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19465",
+      "Num_avis": "CT-19465",
+      "produit_nom": "RONAPREVE",
+      "dci": "casirivimab / imdevimab",
+      "type_avis": "Première évaluation",
+      "type_avis_enum": "Inscription",
+      "forme": "solution à diluer pour perfusion intraveineuse ou solution pour injection sous-cutanée",
+      "dosage": "120 mg/mL",
+      "indication": "Traitement et prévention de la COVID-19 chez les adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg)",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "COVID-19",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Adultes et adolescents avec risque accru d'évolution sévère",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Infectiologie",
+      "aire_therapeutique_niveau_2": "Maladies virales",
+      "aire_therapeutique_niveau_3": "COVID-19",
+      "source_aire_therapeutique": "Déduit de pathologie",
+      "design_etude": "Études randomisées contrôlées vs placebo",
+      "niveau_preuve_brut": "Données de phase III",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Besoin médical insuffisamment couvert en traitement curatif et prophylaxie post-exposition chez les patients non-répondeurs à la vaccination",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Âgés de 12 ans et plus et pesant au moins 40 kg",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": true,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "EVUSHELD, XEVUDY, PAXLOVID, VEKLURY",
+      "vote_unanimite": false,
+      "nb_votants": 22,
+      "nb_voix_pour": 21,
+      "nb_voix_contre": null,
+      "nb_abstentions": 1,
+      "date_evaluation": "2022-05-18",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "La COVID-19 est une maladie virale aiguë pouvant menacer le pronostic vital, avec impact majeur sur la santé publique",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) avec risque accru d'évolution sévère",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : EVUSHELD, XEVUDY, PAXLOVID, VEKLURY",
+      "evidence": [
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "18 MAI",
+          "t": "18 MAI 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19465_essai_HV-2093",
+      "evaluation_id": "CT-19465",
+      "nom_essai": "HV-2093",
+      "nct_number": "Non renseigné",
+      "design": "Phase I randomisée en double aveugle contrôlée vs placebo",
+      "design_enum": "Phase_I_RCT_DB",
+      "population_cible": "Sujets adultes pour évaluation de la tolérance et pharmacocinétique en prophylaxie pré-exposition",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Données limitées d'efficacité exploratoire",
+      "QoL_flag": false,
+      "niveau_preuve": "Faible",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "I",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Sécurité",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Préliminaires",
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": false,
+      "magnitude_effet_categorie": "Non_significatif",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 27,
+          "s": "HV-2093",
+          "t": "HV-2093",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19465_essai_COV-2069",
+      "evaluation_id": "CT-19465",
+      "nom_essai": "COV-2069",
+      "nct_number": "Non renseigné",
+      "design": "Phase III randomisée en double aveugle contrôlée vs placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Cas contacts non infectés (cohorte A) et infectés asymptomatiques (cohorte B) au sein d'un foyer avec exposition à un cas index de COVID-19",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": "753 pour cohorte A, 100 pour cohorte B",
+      "nb_patient_comparateur": "752 pour cohorte A, 104 pour cohorte B",
+      "resultat_global": "Réduction de l'incidence des formes symptomatiques : 81% en cohorte A, 31.5% en cohorte B",
+      "QoL_flag": false,
+      "niveau_preuve": "Modéré",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "2475 randomisés",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 26,
+          "s": "cohorte A",
+          "t": "753 sujets ont reçu RONAPREVE",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "essai_id": "CT-19465_essai_COV-2067",
+      "evaluation_id": "CT-19465",
+      "nom_essai": "COV-2067",
+      "nct_number": "Non renseigné",
+      "design": "Phase III randomisée en double aveugle contrôlée vs placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "Patients atteints de forme légère à modérée de COVID-19 avec facteurs de risque d'évolution sévère, ne nécessitant pas d'oxygénothérapie",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": "838 pour la dose 1200 mg",
+      "nb_patient_comparateur": "1500",
+      "resultat_global": "Réduction du risque de progression vers forme sévère (hospitalisation >24h ou décès) d'environ 70%",
+      "QoL_flag": false,
+      "niveau_preuve": "Modéré",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suiji_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suiji_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "maturite_pct": 100.0,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "4567 patients randomisés",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 29,
+          "s": "COV-2067",
+          "t": "838 patients ont reçu la dose de 1200 mg",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19465_essai_COV-2069_crit_incidence_symptomatique",
+      "evaluation_id": "CT-19465",
+      "essai_id": "CT-19465_essai_COV-2069",
+      "nom_critere": "Incidence des formes symptomatiques de COVID-19 à J28",
+      "nature_critere": "Dur",
+      "unite_mesure": "Pourcentage",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Chi2",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "1.5% en cohorte A, 29.0% en cohorte B",
+      "valeur_groupe_comparateur": "7.8% en cohorte A, 42.3% en cohorte B",
+      "gain_absolu": "Réduction absolue de 6.3 points en cohorte A, 13.3 points en cohorte B",
+      "gain_absolu_num": 6.3,
+      "gain_relatif": "Réduction relative de 81% en cohorte A, 31.5% en cohorte B",
+      "gain_relatif_num": 81.0,
+      "HR_RR_OR": "OR = 0.17 en cohorte A, OR = 0.54 en cohorte B",
+      "HR_RR_OR_num": 0.17,
+      "IC95": "[0.09 ; 0.33] en cohorte A, [0.30 ; 0.97] en cohorte B",
+      "IC95_low_num": 0.09,
+      "IC95_high_num": 0.33,
+      "p_value": "p < 0.0001 en cohorte A, p = 0.0380 en cohorte B",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "OR",
+      "type_effet": "OR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "La Commission considère la réduction comme cliniquement pertinente",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 26,
+          "s": "cohorte A",
+          "t": "OR = 0,17 ; IC95% [0,09 ; 0,33] (p<0,0001)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19465_essai_COV-2067_crit_hospitalisation_deces",
+      "evaluation_id": "CT-19465",
+      "essai_id": "CT-19465_essai_COV-2067",
+      "nom_critere": "Hospitalisation >24 heures ou décès à J29",
+      "nature_critere": "Dur",
+      "unite_mesure": "Pourcentage",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Chi2",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "1.0%",
+      "valeur_groupe_comparateur": "3.2%",
+      "gain_absolu": "Réduction absolue de 2.2 points",
+      "gain_absolu_num": 2.2,
+      "gain_relatif": "Réduction relative d'environ 70%",
+      "gain_relatif_num": 70.0,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "La Commission considère le bénéfice comme important",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 29,
+          "s": "COV-2067",
+          "t": "1,0 % (7/736) dans le groupe RONAPREVE 1200 mg versus 3,2 % (24/748) dans le groupe placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": {
+    "tolerance_id": "CT-19465_tol_global",
+    "evaluation_id": "CT-19465",
+    "essai_id": null,
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "EI_graves": "Profil de tolérance favorable avec incidence faible d'événements indésirables graves",
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": [
+      {
+        "field": "EI_graves",
+        "f": "F1",
+        "p": 30,
+        "s": "Tolérance",
+        "t": "Globalement, le profil de tolérance de RONAPREVE (casirivimab/imdevimab) a été favorable dans les études cliniques",
+        "m": "manual",
+        "c": 0.9
+      }
+    ],
+    "_meta": {}
+  },
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19465_essai_COV-2069_comp_01",
+      "essai_id": "CT-19465_essai_COV-2069",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 26,
+          "s": "COV-2069",
+          "t": "contrôlée versus placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19465_essai_COV-2067_comp_01",
+      "essai_id": "CT-19465_essai_COV-2067",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 29,
+          "s": "COV-2067",
+          "t": "contrôlée versus placebo",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19465_compHAS_01",
+      "evaluation_id": "CT-19465",
+      "nom_comparateur_HAS": "EVUSHELD (tixagevimab/cilgavimab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui pour prophylaxie pré-exposition",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 22,
+          "s": "EVUSHELD",
+          "t": "EVUSHELD (tixagevimab/cilgavimab)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19465_compHAS_02",
+      "evaluation_id": "CT-19465",
+      "nom_comparateur_HAS": "XEVUDY (sotrovimab)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui pour traitement curatif",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 23,
+          "s": "XEVUDY",
+          "t": "XEVUDY (sotrovimab)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19465_arg_TRANS_1",
+      "evaluation_id": "CT-19465",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Les experts recommandent de garder les anticorps monoclonaux disponibles pour les futurs variants malgré la perte d'activité sur certains variants actuels.",
+      "extrait_textuel": "Notre position est que malgré cela, nous sommes convaincus, du fait des incertitudes épidémiologiques de l’avenir, que ces trois médicaments peuvent encore rendre des services médicaux importants sous réserve de l’adéquation de leur efficacité avec les variants en circulation.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Brigitte Autran",
+      "moment_debat": "Présentation_expert",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 3,
+          "s": "CT-19465_seg_03",
+          "t": "Notre position est que malgré cela, nous sommes convaincus...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19465_arg_TRANS_2",
+      "evaluation_id": "CT-19465",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Mitigé",
+      "description": "Les études démontrent l'efficacité sur des populations et variants antérieurs, mais nécessitent une extrapolation pour les variants actuels et les populations immunodéprimées.",
+      "extrait_textuel": "Ces études ont été conduites avant l’ère de l’Omicron et on ne peut qu’extrapoler, à mon sens, des résultats qui sont positifs dans les populations et à la période où les études ont été conduites.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Guillaume Martin-Blondel",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19465_seg_04",
+          "t": "Ces études ont été conduites avant l’ère de l’Omicron...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19465_arg_TRANS_3",
+      "evaluation_id": "CT-19465",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Nécessité de préserver l'arsenal thérapeutique face à l'incertitude des futurs variants et cycles épidémiques.",
+      "extrait_textuel": "Il est indispensable d’avoir à disposition le plus d’options thérapeutiques possible à l’avenir selon la sensibilité du virus.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Bernard Castan",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19465_seg_06",
+          "t": "Il est indispensable d’avoir à disposition le plus d’options thérapeutiques...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19465_arg_TRANS_4",
+      "evaluation_id": "CT-19465",
+      "source_argument": "TRANS",
+      "categorie_argument": "Vote",
+      "direction_argument": "Favorable",
+      "description": "Vote majoritaire pour un SMR important et une ASMR III pour RONAPREVE en traitement curatif et prophylaxie post-exposition.",
+      "extrait_textuel": "Nous avons 21 votes pour un SMR important et 1 abstention. Nous avons 21 votes pour une ASMR III et 1 abstention.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Sophie Kelley",
+      "moment_debat": "Vote",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 19,
+          "s": "CT-19465_seg_19",
+          "t": "21 votes pour un SMR important et 1 abstention. 21 votes pour une ASMR III...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19465_arg_TRANS_5",
+      "evaluation_id": "CT-19465",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "direction_argument": "Neutre",
+      "description": "Discussion sur la définition précise de la population à haut risque pour l'indication.",
+      "extrait_textuel": "Quelle est la définition précise de la population à haut risque dans ce cas particulier ?",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Hugues Blondon",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 13,
+          "s": "CT-19465_seg_13",
+          "t": "Quelle est la définition précise de la population à haut risque...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "description": "Les patients atteints de vascularites sous rituximab ont une réponse vaccinale insuffisante contre la COVID-19, ce qui les expose à des formes sévères et nécessite un isolement strict, créant un besoin médical non couvert.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Pour les patients porteurs d’une vascularite et sous traitement rituximab, la réponse immunitaire est souvent insuffisante après 2 et même 3 injections du vaccin contre la covid-19 et expose les patients à une forme sévère de covid-19.",
+      "page_source": "Page 2",
+      "section_source": "Impact de la maladie",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "seg_2",
+          "t": "Pour les patients porteurs d’une vascularite et sous traitement rituximab, la réponse immunitaire est souvent insuffisante après 2 et même 3 injections du vaccin contre la covid-19 et expose les patients à une forme sévère de covid-19.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité",
+      "description": "Le traitement préventif RONAPREVE permettrait aux patients de reprendre une vie normale et de rompre l'isolement, améliorant significativement la qualité de vie et le moral.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les malades et leurs proches pourront reprendre une vie quasi « normale » et ainsi évacuer le stress lié à la peur de faire une forme sévère de covid-19.",
+      "page_source": "Page 3",
+      "section_source": "Expériences avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_4",
+          "t": "Les malades et leurs proches pourront reprendre une vie quasi « normale » et ainsi évacuer le stress lié à la peur de faire une forme sévère de covid-19.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "RONAPREVE apporte une complémentarité avec la vaccination, permettant aux patients de ne pas faire de choix entre l'observance thérapeutique pour leur vascularite et la protection contre la COVID-19.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Il apportera une complémentarité avec la vaccination et permettra aux patients de ne pas faire de choix par rapport à l'observance thérapeutique pour le suivi de leur vascularite.",
+      "page_source": "Page 4",
+      "section_source": "Synthèse de votre contribution",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "seg_5",
+          "t": "Il apportera une complémentarité avec la vaccination et permettra aux patients de ne pas faire de choix par rapport à l'observance thérapeutique pour le suivi de leur vascularite.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19465_ctx",
+    "evaluation_id": "CT-19465",
+    "ISP": "RONAPREVE (casirivimab/imdevimab) est susceptible d’avoir un impact sur la santé publique",
+    "acces_precoce": "ATU_cohorte et accès précoce depuis 2021-2022",
+    "date_debut_acces_precoce": "2021-03-01",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": true,
+    "ISP_categorie": "Important",
+    "type_acces_precoce_enum": "ATU_cohorte",
+    "statut_reglementaire_ema": "AMM_conditionnelle",
+    "date_AMM_ema": "2021-11-12",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis",
+      "Royaume-Uni",
+      "Allemagne",
+      "Pays-Bas",
+      "Belgique",
+      "Espagne",
+      "Italie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "EUA",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Non estimable",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_observationnelle",
+    "delai_suivi_mois": 36,
+    "delai_suivi_justification": "Réévaluation dans un délai maximum de 3 ans",
+    "conditions_suivi": "Mise en place d'une étude observationnelle commune",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Réévaluation SMR/ASMR",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 8,
+        "s": "AMM européenne",
+        "t": "AMM européenne centralisée le 12 novembre 2021",
+        "m": "manual",
+        "c": 0.95
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19465",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19465_smrasmr_01",
+      "evaluation_id": "CT-19465",
+      "indication_precise": "Prophylaxie post-exposition de la COVID-19 chez les adultes et adolescents avec immunodépression ou non-répondeurs à la vaccination",
+      "smr": "Service médical rendu important",
+      "smr_enum": "Important",
+      "asmr": "Amélioration du service médical rendu modérée (ASMR III)",
+      "asmr_enum": "III",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Besoin médical insuffisamment couvert, efficacité démontrée dans les études, profil de tolérance favorable",
+      "population_cible_indication": "Adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) non-répondeurs ou faiblement répondeurs à la vaccination avec risque accru de forme sévère",
+      "ligne_traitement_indication": "Première intention",
+      "comparateurs_references_indication": "EVUSHELD, XEVUDY",
+      "comparateur_id_HAS": "CT-19465_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "≥12 ans"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 38,
+          "s": "Service Médical Rendu",
+          "t": "le service médical rendu par RONAPREVE (casirivimab/imdevimab) est important",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "smr_asmr_id": "CT-19465_smrasmr_02",
+      "evaluation_id": "CT-19465",
+      "indication_precise": "Traitement curatif de la COVID-19 chez les adultes et adolescents avec forme légère à modérée et risque accru d'évolution sévère",
+      "smr": "Service médical rendu important",
+      "smr_enum": "Important",
+      "asmr": "Amélioration du service médical rendu modérée (ASMR III)",
+      "asmr_enum": "III",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Efficacité démontrée dans la réduction des hospitalisations, besoin médical non couvert, tolérance acceptable",
+      "population_cible_indication": "Adultes et adolescents (âgés de 12 ans et plus et pesant au moins 40 kg) avec COVID-19 légère à modérée ne nécessitant pas d'oxygénothérapie et avec risque accru d'évolution sévère",
+      "ligne_traitement_indication": "Première intention",
+      "comparateurs_references_indication": "EVUSHELD, XEVUDY, PAXLOVID, VEKLURY",
+      "comparateur_id_HAS": "CT-19465_compHAS_02",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Légère à modérée",
+        "population_age": "≥12 ans"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 40,
+          "s": "ASMR III",
+          "t": "ASMR III dans la prise en charge",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [
+    {
+      "posologie_id": "CT-19465_poso_01",
+      "evaluation_id": "CT-19465",
+      "smr_asmr_id": "CT-19465_smrasmr_01",
+      "indication": "Prophylaxie post-exposition",
+      "population_cible": "Adultes et adolescents âgés de 12 ans et plus pesant au moins 40 kg",
+      "posologie_source": "texte_avis",
+      "posologie_resumee_brut": "Dose unique de 600 mg de casirivimab et 600 mg d'imdevimab en perfusion intraveineuse ou injection sous-cutanée",
+      "phases": [
+        {
+          "phase_nom": "Initiation",
+          "cycle_length_days": null,
+          "dose_expression": {
+            "basis": "fixe",
+            "value": "600 mg",
+            "unite_dose": "mg"
+          },
+          "frequence": {
+            "type": "qxj",
+            "dose_days_in_cycle": [
+              0
+            ],
+            "interval_days": null
+          },
+          "voie_administration": "Intraveineuse ou sous-cutanée",
+          "expected_phase_duration_days": null
+        }
+      ],
+      "ajustements_poso_brut": "Non nécessaire pour insuffisance rénale ou hépatique, population âgée",
+      "commentaires": "Administrer dès que possible après contact avec un cas de COVID-19",
+      "evidence": [
+        {
+          "field": "posologie_resumee_brut",
+          "f": "F1",
+          "p": 10,
+          "s": "Posologie",
+          "t": "600 mg de casirivimab et 600 mg d'imdevimab administrés en une seule perfusion intraveineuse ou par injection sous-cutanée",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19465_event_AMM_01",
+      "evaluation_id": "CT-19465",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-11-12",
+      "detail_brut": "AMM européenne centralisée pour RONAPREVE",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM conditionnelle",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 8,
+          "s": "AMM européenne",
+          "t": "AMM européenne centralisée le 12 novembre 2021",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19465_event_CT_01",
+      "evaluation_id": "CT-19465",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-05-18",
+      "detail_brut": "Avis de la Commission de la Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis définitif",
+      "acteurs_impliques": [
+        "HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "18 MAI",
+          "t": "18 MAI 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19465_event_TRANS_01",
+      "evaluation_id": "CT-19465",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2022-05-18",
+      "detail_brut": "Séance de la Commission de Transparence pour l'examen de XEVUDY, RONAPREVE, et EVUSHELD.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "CT-19465_seg_01",
+          "t": "Mercredi 18 mai 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19465",
+    "delai_amm_ct_jours": 187,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19465",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Infectiologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": true,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 3,
+    "n_rct": 3,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 70.0,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Hospitalisation >24 heures ou décès à J29",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19465",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19465_essai_COV-2069",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19465_essai_COV-2069",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19465_essai_COV-2069_crit_incidence_symptomatique",
+      "label": "TRIAL_HAS_CRIT"
+    }
+  ],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "Non renseigné",
+    "contribution_presente": true,
+    "contribution_id": "Non renseigné_contrib_1",
+    "association": {
+      "nom_association": "France Vascularites",
+      "type_structure": "Non renseigné",
+      "site_internet": "Non renseigné",
+      "evidence": [
+        {
+          "field": "association.nom_association",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_1",
+          "t": "Nom et adresse de l’association : France Vascularites, 7 rue de l’église 21540 BLAISY-BAS",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "methodologie": {
+      "methode_recueil": "Veille téléphonique et mail",
+      "description_methode": "Veille téléphonique et mail. Lecture des recommandations pour les patients atteints de maladies auto-immunes ou auto-inflammatoires en période épidémique COVID-19 (filière de santé maladies rares FAI2R) + Echanges avec des médecins spécialistes des vascularites (centre de référence hôpital Cochin et centre de compétences CHU Dijon) + Lecture de différentes études notamment sur la réponse immunitaire des vaccins contre la covid-19 pour les patients sous rituximab dans le cadre d’une maladie auto-immune.",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null,
+      "evidence": [
+        {
+          "field": "methodologie.methode_recueil",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_1",
+          "t": "Veille téléphonique et mail.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "methodologie.description_methode",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_1",
+          "t": "Lecture des recommandations pour les patients atteints de maladies auto-immunes ou auto-inflammatoires en période épidémique COVID-19 (filière de santé maladies rares FAI2R) + Echanges avec des médecins spécialistes des vascularites (centre de référence hôpital Cochin et centre de compétences CHU Dijon) + Lecture de différentes études notamment sur la réponse immunitaire des vaccins contre la covid-19 pour les patients sous rituximab dans le cadre d’une maladie auto-immune.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Les vascularites sont des maladies rares auto-immunes ou auto-inflammatoires rares. La plupart d’entre-elles (une quinzaine de pathologies classifiées en fonction de la taille des vaisseaux atteints) sont potentiellement mortelles en l’absence de traitement et de prise en charge adaptée. La qualité de vie peut être lourdement impactée en fonction de la sévérité de la maladie, son délai diagnostic, les organes atteints, la chronicité des symptômes et les séquelles. Pour les patients porteurs d’une vascularite et sous traitement rituximab, la réponse immunitaire est souvent insuffisante après 2 et même 3 injections du vaccin contre la covid-19 et expose les patients à une forme sévère de covid-19. Ces patients doivent être extrêmement vigilant face à une potentielle contamination par la covid-19 et doivent souvent couper toutes relations extérieures, voire s’isoler.",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": "Ces difficultés quotidiennes peuvent engendrer stress, dépression, fatigue, repli sur soi, déni pour le patient mais également pour les proches",
+      "impacts_proches_aidants": "Les vascularites entrainent un impact important sur la qualité de vie du patient. La reprise du travail n’est parfois pas possible. Les proches doivent parfois assumer seul les charges du foyer. Certains parents d’enfants porteurs de vascularites sont obligés d’arrêter de travailler pour s’occuper de leur enfant. L’équilibre familial peut être fortement perturbé par la pandémie de covid-19. D’une manière générale les proches sont contraints d’être extrêmement vigilant afin de limiter toute contagion.",
+      "evidence": [
+        {
+          "field": "impacts_maladie.description_impacts_patients",
+          "f": "F1",
+          "p": 1,
+          "s": "seg_2",
+          "t": "Les vascularites sont des maladies rares auto-immunes ou auto-inflammatoires rares. La plupart d’entre-elles (une quinzaine de pathologies classifiées en fonction de la taille des vaisseaux atteints) sont potentiellement mortelles en l’absence de traitement et de prise en charge adaptée. La qualité de vie peut être lourdement impactée en fonction de la sévérité de la maladie, son délai diagnostic, les organes atteints, la chronicité des symptômes et les séquelles.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "impacts_maladie.impacts_psychologiques",
+          "f": "F1",
+          "p": 2,
+          "s": "seg_2",
+          "t": "Ces difficultés quotidiennes peuvent engendrer stress, dépression, fatigue, repli sur soi, déni pour le patient mais également pour les proches",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "impacts_maladie.impacts_proches_aidants",
+          "f": "F1",
+          "p": 2,
+          "s": "seg_2",
+          "t": "Les vascularites entrainent un impact important sur la qualité de vie du patient. La reprise du travail n’est parfois pas possible. Les proches doivent parfois assumer seul les charges du foyer. Certains parents d’enfants porteurs de vascularites sont obligés d’arrêter de travailler pour s’occuper de leur enfant. L’équilibre familial peut être fortement perturbé par la pandémie de covid-19. D’une manière générale les proches sont contraints d’être extrêmement vigilant afin de limiter toute contagion.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [
+        "corticoïdes",
+        "immunosuppresseurs (cyclophosphamide, imurel, méthotrexate, cellcept…)",
+        "biothérapie (rituximab, tocilizumab…)"
+      ],
+      "avantages": "Ces traitements permettent d’enrayer rapidement l’inflammation et de maintenir le patient en rémission durable.",
+      "inconvenients": "Le patient reste toutefois hypersensible aux infections puisque son immunité est nettement moins efficace. D’autres effets secondaires liés aux corticoïdes et traitement immunosuppresseurs sont fréquemment observés, comme l’irritabilité, diabète cortico-induit, ostéoporose, cataracte, prise de poids, déformation du visage, nausée, diarrhées…",
+      "besoins_non_couverts": "Non renseigné",
+      "evidence": [
+        {
+          "field": "traitements_actuels.traitements_disponibles",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_3",
+          "t": "corticoïdes au long cours et des immunosuppresseurs (cyclophosphamide, imurel, méthotrexate, cellcept…) ou biothérapie (rituximab, tocilizumab…)",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "traitements_actuels.avantages",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_3",
+          "t": "Ces traitements permettent d’enrayer rapidement l’inflammation et de maintenir le patient en rémission durable.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "traitements_actuels.inconvenients",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_3",
+          "t": "Le patient reste toutefois hypersensible aux infections puisque son immunité est nettement moins efficace. D’autres effets secondaires liés aux corticoïdes et traitement immunosuppresseurs sont fréquemment observés, comme l’irritabilité, diabète cortico-induit, ostéoporose, cataracte, prise de poids, déformation du visage, nausée, diarrhées…",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": "Les attentes sont de pouvoir continuer à soigner la vascularite tout en étant protéger contre les formes sévères de covid-19.",
+      "craintes_principales": "La limite sera peut-être la disponibilité du produit pour l’ensemble des personnes concernées (?)",
+      "evidence": [
+        {
+          "field": "evaluation_medicament.attentes_principales",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_4",
+          "t": "Les attentes sont de pouvoir continuer à soigner la vascularite tout en étant protéger contre les formes sévères de covid-19.",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "evaluation_medicament.craintes_principales",
+          "f": "F1",
+          "p": 3,
+          "s": "seg_4",
+          "t": "La limite sera peut-être la disponibilité du produit pour l’ensemble des personnes concernées (?)",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": "Non renseigné",
+      "evidence": []
+    },
+    "position_association": {
+      "position_generale": "Favorable",
+      "justification": "Ce traitement préventif est un signal fort pour le moral des patients concernés. Il permettra de retrouver une vie normale pour les patients, de rompre l’isolement sans prendre de risques supplémentaires liés à la covid-19. Il apportera une complémentarité avec la vaccination et permettra aux patients de ne pas faire de choix par rapport à l’observance thérapeutique pour le suivi de leur vascularite.",
+      "arguments_principaux": [
+        "Signal fort pour le moral",
+        "Permet de retrouver une vie normale et rompre l'isolement",
+        "Complémentarité avec la vaccination"
+      ],
+      "evidence": [
+        {
+          "field": "position_association.justification",
+          "f": "F1",
+          "p": 4,
+          "s": "seg_5",
+          "t": "Ce traitement préventif est un signal fort pour le moral des patients concernés. Il permettra de retrouver une vie normale pour les patients, de rompre l’isolement sans prendre de risques supplémentaires liés à la covid-19. Il apportera une complémentarité avec la vaccination et permettra aux patients de ne pas faire de choix par rapport à l’observance thérapeutique pour le suivi de leur vascularite.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    "synthese_contribution": "L'association France Vascularites contribue à l'évaluation de RONAPREVE (casirivimab-imdevimab) pour la prévention et le traitement de la COVID-19 chez les patients atteints de vascularites, en particulier ceux sous rituximab ayant une réponse vaccinale insuffisante. La maladie a un impact sévère sur la qualité de vie et l'entourage. Les traitements actuels sont efficaces mais exposent à des infections et effets secondaires. L'association soutient ce traitement préventif qui permettrait de rompre l'isolement, de reprendre une vie normale et d'offrir une complémentarité avec la vaccination, sans compromettre le traitement de la vascularite.",
+    "evidence": []
+  },
+  "Temoignages_Patients": []
+}

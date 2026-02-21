@@ -1,0 +1,1781 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-19455",
+  "evaluation_id": "CT-19455",
+  "extraction_date": "2022-01-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19455_JARDIANCE_PIC_EI_AvisDef_modifiéle14012022_CT19455.pdf",
+        "type": "CT",
+        "page_count": 51
+      },
+      "F2": {
+        "file_name": "trans_1_jardiance_24112021_transcription_ct19455.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 15
+      },
+      "F3": {
+        "file_name": "contrib_1_contribution_ffd_-_jardiance_empagliflozine_vf.pdf",
+        "type": "CONTRIB",
+        "page_count": 14
+      }
+    },
+    "extraction_date": "Non renseigné"
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19455_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "page_start": 1,
+      "page_end": 1,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "Place_thérapeutique"
+      ],
+      "routing_hint": "Avis favorable au remboursement uniquement en traitement de recours...",
+      "label_confidence": 0.95,
+      "template_detecte": "TRANSCRIPTION",
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "CT-19455_seg_02",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Quelle place dans la stratégie thérapeutique ?",
+      "page_start": 1,
+      "page_end": 2,
+      "heading_text": "Quelle place dans la stratégie thérapeutique ?",
+      "expected_fields": [
+        "Position_thérapeutique",
+        "Comparateurs"
+      ],
+      "routing_hint": "Place de JARDIANCE (empagliflozine) dans la stratégie thérapeutique",
+      "label_confidence": 0.95,
+      "template_detecte": "TRANSCRIPTION",
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "CT-19455_seg_03",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Motif de l’examen",
+      "page_start": 4,
+      "page_end": 4,
+      "heading_text": "Motif de l’examen",
+      "expected_fields": [
+        "SMR",
+        "ASMR"
+      ],
+      "routing_hint": "SMR IMPORTANT en traitement de recours... ASMR IV",
+      "label_confidence": 0.95,
+      "template_detecte": "TRANSCRIPTION",
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "CT-19455_seg_04",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "ANALYSE DES DONNEES DISPONIBLES",
+      "page_start": 19,
+      "page_end": 36,
+      "heading_text": "ANALYSE DES DONNEES DISPONIBLES",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Résultats"
+      ],
+      "routing_hint": "Etude EMPEROR-reduced",
+      "label_confidence": 0.95,
+      "template_detecte": "TRANSCRIPTION",
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "CT-19455_seg_05",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "page_start": 28,
+      "page_end": 34,
+      "heading_text": "Tolérance",
+      "expected_fields": [
+        "EI",
+        "SAE",
+        "Profils_tolérance"
+      ],
+      "routing_hint": "Données issues de l’étude clinique EMPEROR-reduced",
+      "label_confidence": 0.95,
+      "template_detecte": "TRANSCRIPTION",
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "CT-19455_seg_06",
+      "section_label_normalise": "CONCLUSIONS_DE_LA_COMMISSION",
+      "section_label_brut": "CONCLUSIONS DE LA COMMISSION",
+      "page_start": 40,
+      "page_end": 43,
+      "heading_text": "CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "Décision"
+      ],
+      "routing_hint": "Service Médical Rendu, Amélioration du Service Médical Rendu",
+      "label_confidence": 0.95,
+      "template_detecte": "TRANSCRIPTION",
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "contrib_section1",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Questionnaire de recueil du point de vue des patients et usagers",
+      "template_detecte": "Mixte",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Questionnaire de recueil du point de vue des patients et usagers pour l’évaluation d’un médicament",
+      "expected_fields": [
+        "association",
+        "methodologie"
+      ],
+      "routing_hint": "Informations administratives et méthodologie",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "contrib_section2",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Méthode utilisée pour remplir le questionnaire",
+      "template_detecte": "Mixte",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "1. Méthode utilisée pour remplir le questionnaire",
+      "expected_fields": [
+        "methodologie"
+      ],
+      "routing_hint": "Description détaillée de l'étude QUALICC",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "contrib_section3",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Impact de la maladie / état de santé",
+      "template_detecte": "Mixte",
+      "page_start": 4,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "2. Impact de la maladie / état de santé",
+      "expected_fields": [
+        "impacts_maladie"
+      ],
+      "routing_hint": "Impacts de l'ICC sur patients et proches",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "contrib_section4",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "template_detecte": "Mixte",
+      "page_start": 8,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "3. Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "expected_fields": [
+        "traitements_actuels"
+      ],
+      "routing_hint": "Traitements actuels et leurs limites",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "contrib_section5",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Expériences avec le médicament évalué",
+      "template_detecte": "Mixte",
+      "page_start": 9,
+      "page_end": 11,
+      "char_start": 0,
+      "char_end": 2500,
+      "heading_text": "4. Expériences avec le médicament évalué",
+      "expected_fields": [
+        "evaluation_medicament"
+      ],
+      "routing_hint": "Revue de littérature sur l'Empagliflozine",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "contrib_section6",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Information supplémentaire",
+      "template_detecte": "Mixte",
+      "page_start": 11,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "5. Information supplémentaire",
+      "expected_fields": [
+        "position_association"
+      ],
+      "routing_hint": "Difficultés parcours de soins et attentes",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "contrib_section7",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Synthèse de votre contribution",
+      "template_detecte": "Mixte",
+      "page_start": 12,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "6. Synthèse de votre contribution",
+      "expected_fields": [
+        "synthese_contribution"
+      ],
+      "routing_hint": "Synthèse des points clés",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19455_produit_01",
+      "nom_commercial": "JARDIANCE",
+      "dci": "empagliflozine",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "JARDIANCE",
+          "t": "JARDIANCE 10 mg, comprimé pelliculé",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19455_produit_02",
+      "nom_commercial": "FORXIGA",
+      "dci": "dapagliflozine",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 2,
+          "s": "FORXIGA",
+          "t": "FORXIGA (dapagliflozine)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19455",
+      "Num_avis": "CT-19455",
+      "produit_nom": "JARDIANCE",
+      "dci": "empagliflozine",
+      "type_avis": "Extension d’indication",
+      "forme": "comprimé pelliculé",
+      "dosage": "10 mg",
+      "indication": "JARDIANCE est indiqué chez les adultes pour le traitement de l’insuffisance cardiaque chronique symptomatique à fraction d’éjection réduite.",
+      "classe_ATC": "A10BK03",
+      "pathologie": "Insuffisance cardiaque chronique avec fraction d’éjection réduite",
+      "maladie_rare": false,
+      "ligne_traitement": "Traitement de recours après échec d'un traitement standard optimisé",
+      "sous_groupe_population": "Patients adultes avec FEVG ≤ 40%, classe NYHA II à IV, symptomatiques malgré traitement standard optimisé",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Cardiologie",
+      "aire_therapeutique_niveau_2": "Insuffisance cardiaque",
+      "aire_therapeutique_niveau_3": "Insuffisance cardiaque à fraction d'éjection réduite",
+      "source_aire_therapeutique": "Déduit de pathologie",
+      "design_etude": "Étude de phase III randomisée, en double aveugle, versus placebo",
+      "niveau_preuve_brut": "Étude randomisée contrôlée de phase III",
+      "niveau_preuve_interprete": "Phase_III_RCT_DB",
+      "besoin_medical_brut": "Le besoin médical est partiellement couvert par les produits actuellement disponibles. Il existe donc un besoin médical à disposer de médicaments supplémentaires efficaces et bien tolérés.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Cardiologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes (≥ 18 ans)",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "type_avis_enum": "Extension_indication",
+      "gravite_patho": "L’insuffisance cardiaque est une maladie évolutive difficile à stabiliser par les alternatives existantes, pouvant engager le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes avec insuffisance cardiaque chronique symptomatique à fraction d'éjection réduite",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : FORXIGA (dapagliflozine), IEC, ARA II, bêtabloquants, antagonistes des minéralocorticoïdes, sacubitril/valsartan",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Avis antérieurs pour diabète de type 2 : SMR important et ASMR IV (2020).",
+      "historique_ASMR_comparateurs": "FORXIGA (dapagliflozine) a une ASMR IV dans la même indication.",
+      "concurrence_therapeutique_recente": "FORXIGA (dapagliflozine) est un comparateur direct.",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-01-05",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 4,
+          "s": "Motif de l",
+          "t": "Extension d’indication",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 4,
+          "s": "Indication",
+          "t": "JARDIANCE est indiqué chez les adultes pour le traitement de l’insuffisance cardiaque chronique symptomatique à fraction d’éjection réduite.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 10,
+          "s": "Conclusion sur",
+          "t": "Le besoin médical est partiellement couvert par les produits actuellement disponibles. Il existe donc un besoin médical à disposer de médicaments supplémentaires efficaces et bien tolérés.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "evaluation_id": "Non renseigné",
+      "Num_avis": "Non renseigné",
+      "produit_nom": "JARDIANCE",
+      "dci": "Empagliflozine",
+      "type_avis": "Non renseigné",
+      "type_avis_enum": "Non renseigné",
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "indication": "Non renseigné",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Diabète de type 2 avec insuffisance cardiaque chronique",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": "Non renseigné",
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Non renseigné",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Endocrinologie",
+      "age_restriction_flag": null,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Non renseigné",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "Non renseigné",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19455_essai_EMPEROR-reduced",
+      "evaluation_id": "CT-19455",
+      "nom_essai": "EMPEROR-reduced",
+      "nct_number": "NCT03057977",
+      "design": "Étude de phase III de supériorité, multicentrique, randomisée, en double aveugle, en groupes parallèles, comparative versus placebo",
+      "population_cible": "Patients adultes avec insuffisance cardiaque chronique symptomatique (NYHA II-IV) et FEVG ≤ 40%",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": 1863,
+      "nb_patient_comparateur": 1867,
+      "resultat_global": "Supériorité de l'empagliflozine sur le critère principal composite (décès cardiovasculaire ou hospitalisation pour insuffisance cardiaque)",
+      "QoL_flag": true,
+      "niveau_preuve": "Phase III RCT",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 16.9,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 14.4,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "région géographique",
+        "statut diabétique",
+        "DFG à l’inclusion"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2020-05-28",
+      "duree_suivi_prevu_mois": 20,
+      "maturite_donnees": "Matures",
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": true,
+      "qol_instruments": [
+        "KCCQ",
+        "EQ-5D-5L"
+      ],
+      "qol_resultats_brut": "Non renseigné (analyse exploratoire)",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 3,
+      "nb_patients_inclus": "3730",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "France",
+          "nb_patients": "55",
+          "pourcentage": null
+        }
+      ],
+      "date_fin_inclusion": "novembre 2019",
+      "nb_analyses_intermediaire": 1,
+      "date_analyses_intermediares_mois": [
+        "Non renseigné"
+      ],
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 19,
+          "s": "Etude EMPER",
+          "t": "Etude EMPEROR-reduced",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 19,
+          "s": "Clinicaltrials",
+          "t": "N° d’enregistrement : NCT03057977",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19455_essai_EMPEROR-reduced_crit_principal",
+      "essai_id": "CT-19455_essai_EMPEROR-reduced",
+      "evaluation_id": "CT-19455",
+      "nom_critere": "Décès cardiovasculaire ou hospitalisation pour insuffisance cardiaque",
+      "nature_critere": "Dur",
+      "unite_mesure": "HR",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.0496,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 3,
+      "test_statistique_utilise": "Cox_regression",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "région géographique",
+        "statut diabétique",
+        "âge",
+        "sexe",
+        "FEVG",
+        "DFG"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "19,4% (361/1863)",
+      "valeur_groupe_comparateur": "24,7% (462/1867)",
+      "gain_absolu": "5,3%",
+      "gain_absolu_num": 5.3,
+      "gain_relatif": "25%",
+      "gain_relatif_num": 25.0,
+      "HR_RR_OR": "HR=0,75",
+      "HR_RR_OR_num": 0.75,
+      "IC95": "[0,65 ; 0,86]",
+      "IC95_low_num": 0.65,
+      "IC95_high_num": 0.86,
+      "p_value": "p<0,0001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "HR",
+      "type_effet": "HR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "La Commission considère la quantité d’effet jugée pertinente",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "s": "Critère de",
+          "t": "Critère de jugement principal composite Délai de survenue du premier évènement, confirmé par un comité d’évaluation externe indépendant, parmi les évènements composites suivants : décès cardiovasculaire ou hospitalisation pour cause d’insuffisance cardiaque",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "critere_id": "CT-19455_essai_EMPEROR-reduced_crit_secondaire_1",
+      "essai_id": "CT-19455_essai_EMPEROR-reduced",
+      "evaluation_id": "CT-19455",
+      "nom_critere": "Fréquence des hospitalisations pour cause d’insuffisance cardiaque (initiale et récurrentes)",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "HR",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": 2,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Testé seulement si critère principal significatif",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.0496,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 3,
+      "test_statistique_utilise": "Modèle conjoint",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "région géographique",
+        "statut diabétique",
+        "âge",
+        "sexe",
+        "FEVG",
+        "DFG"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "13,2% (246/1863)",
+      "valeur_groupe_comparateur": "18,3% (342/1867)",
+      "gain_absolu": "5,1%",
+      "gain_absolu_num": 5.1,
+      "gain_relatif": "30%",
+      "gain_relatif_num": 30.0,
+      "HR_RR_OR": "HR=0,70",
+      "HR_RR_OR_num": 0.7,
+      "IC95": "[0,58 ; 0,85]",
+      "IC95_low_num": 0.58,
+      "IC95_high_num": 0.85,
+      "p_value": "p=0,0003",
+      "p_value_num": 0.0003,
+      "unite_normalisee": "HR",
+      "type_effet": "HR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 19,
+          "s": "Critères de",
+          "t": "Fréquence des hospitalisations pour cause d’insuffisance cardiaque (initiale et récurrentes)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19455_essai_EMPEROR-reduced_tol",
+      "evaluation_id": "CT-19455",
+      "essai_id": "CT-19455_essai_EMPEROR-reduced",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": true,
+      "EI_graves": "41,4% dans le groupe empagliflozine vs 48,1% dans le groupe placebo ont rapporté au moins un EI grave. Principaux EI graves : insuffisance cardiaque (17,8% vs 23,8%), hypotension (7,0% vs 6,4%).",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Infection génitale",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 1.7,
+          "incidence_pct_comparateur": 0.6,
+          "n_patients_traitement": 31,
+          "n_patients_comparateur": 12,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 29,
+              "s": "Infections",
+              "t": "31 événements d’infection génitale rapportés dans le groupe empagliflozine... contre 12 événements dans le groupe placebo",
+              "m": "manual",
+              "c": 1.0
+            }
+          ]
+        },
+        {
+          "ei_terme": "Amputation des membres inférieurs",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 0.7,
+          "incidence_pct_comparateur": 0.5,
+          "n_patients_traitement": 13,
+          "n_patients_comparateur": 10,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 29,
+              "s": "Amputation",
+              "t": "13 cas d’amputation dans le groupe empagliflozine et 10 cas dans le groupe placebo",
+              "m": "manual",
+              "c": 1.0
+            }
+          ]
+        }
+      ],
+      "EI_frequents": "EI fréquents : insuffisance cardiaque, hypotension, infections génitales, infections urinaires",
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces": "515 patients décédés : 249 (13,4%) dans le groupe empagliflozine et 266 (14,2%) dans le groupe placebo. Décès cardiovasculaires : 187 vs 202.",
+      "deces_detailles": [],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "Classe SGLT2",
+          "date_signal": "Non renseigné",
+          "description": "Risque d'acidocétose, infections génitales, amputation, gangrène de Fournier",
+          "mesures_prises": "Examen approfondi du patient et information complète requise",
+          "impact_evaluation": "Mises en garde dans l'avis",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 2,
+              "s": "S’agissant des",
+              "t": "signaux de tolérance de type acidocétose, infections génitales, amputation des membres inférieurs, gangrène de Fournier",
+              "m": "manual",
+              "c": 1.0
+            }
+          ]
+        }
+      ],
+      "signal_ansm_flag": true,
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 29,
+          "s": "La proportion",
+          "t": "La proportion de patients ayant rapporté au moins un EI grave (EIG) a été de 41,4% (772/1863) dans le groupe empagliflozine et de 48,1% (896/1863) dans le groupe placebo.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19455_essai_EMPEROR-reduced_comp_01",
+      "essai_id": "CT-19455_essai_EMPEROR-reduced",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": false,
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 19,
+          "s": "Groupe placebo",
+          "t": "Groupe placebo : placebo administré une fois par jour par voie orale.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19455_compHAS_01",
+      "evaluation_id": "CT-19455",
+      "nom_comparateur_HAS": "FORXIGA (dapagliflozine)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Inhibiteur_SGLT2",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 12,
+          "s": "FORXIGA",
+          "t": "FORXIGA (dapagliflozine)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19455_arg_CT_1",
+      "evaluation_id": "CT-19455",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Supériorité démontrée de l'empagliflozine vs placebo sur le critère composite décès cardiovasculaire ou hospitalisation pour IC (HR=0,75 ; p<0,0001), avec réduction des hospitalisations pour IC.",
+      "extrait_textuel": "réduction du premier évènement du critère principal composite... avec une différence absolue de 5,3% (HR=0,75 ; IC95% [0,65 ; 0,86], p<0,0001)",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "réduction du",
+          "t": "réduction du premier évènement du critère principal composite... avec une différence absolue de 5,3% (HR=0,75 ; IC95% [0,65 ; 0,86], p<0,0001)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_CT_2",
+      "evaluation_id": "CT-19455",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Profil de tolérance marqué par des infections génitales, amputations, et un cas de gangrène de Fournier, nécessitant des précautions chez les patients diabétiques.",
+      "extrait_textuel": "profil de tolérance marqué notamment par des événements d’infections génitales, amputation, gangrène de Fournier (un cas)",
+      "page_source": "Page 4",
+      "section_source": "Service Médical Rendu",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "profil de tol",
+          "t": "profil de tolérance marqué notamment par des événements d’infections génitales, amputation, gangrène de Fournier (un cas)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_CT_3",
+      "evaluation_id": "CT-19455",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Place en traitement de recours en ajout d'un traitement standard optimisé chez les patients symptomatiques malgré ce traitement.",
+      "extrait_textuel": "JARDIANCE (empagliflozine) 10 mg est un traitement de recours qui peut être proposé en ajout d’un traitement standard optimisé",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Dans la strat",
+          "t": "JARDIANCE (empagliflozine) 10 mg est un traitement de recours qui peut être proposé en ajout d’un traitement standard optimisé",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_01",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "description": "L'étude EMPEROR-reduced montre un bénéfice sur les hospitalisations pour insuffisance cardiaque (HR=0,75) similaire à DAPA-HF, mais pas de bénéfice significatif sur la mortalité cardiovasculaire contrairement à dapagliflozine.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Claude Daubert",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Page 4-5",
+      "section_source": "Présentation des résultats EMPEROR-reduced",
+      "extrait_textuel": "Les résultats sont superposables à ceux de dapagliflozine, avec un hazard ratio à 0,75... En revanche, il n’a pas été observé de différence significative pour la mortalité cardiovasculaire.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "CT-19455",
+          "t": "Les résultats sont superposables à ceux de dapagliflozine, avec un hazard ratio à 0,75... En revanche, il n’a pas été observé de différence significative pour la mortalité cardiovasculaire.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_02",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Méthodologique",
+      "description": "Les comparaisons indirectes entre empagliflozine et dapagliflozine sont exploratoires et ne prouvent pas l'équivalence ; un signal de surmortalité cardiovasculaire chez les diabétiques sous empagliflozine est noté (HR ≈1,6).",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Sylvie Chevret",
+      "moment_debat": "Discussion",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 6-7",
+      "section_source": "Analyse des comparaisons indirectes",
+      "extrait_textuel": "Ils concluent à l'équivalence de leur produit avec la dapagliflozine, si ce n’est que... l’absence de différence n’est pas preuve d’équivalence... le HR est à 1,6... petit signal de surmortalité cardiovasculaire.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19455",
+          "t": "Ils concluent à l'équivalence de leur produit avec la dapagliflozine, si ce n’est que... l’absence de différence n’est pas preuve d’équivalence... le HR est à 1,6... petit signal de surmortalité cardiovasculaire.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_03",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population",
+      "description": "La proportion de diabétiques est plus élevée dans EMPEROR (50 %) que dans la population générale d'insuffisants cardiaques (~25 %), ce qui peut influencer l'extrapolation des résultats.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Albert Trinh Duc",
+      "moment_debat": "Discussion",
+      "impact_decision": "Mentionné",
+      "page_source": "Page 8-9",
+      "section_source": "Discussion sur les sous-groupes diabétiques",
+      "extrait_textuel": "Dans la population générale des insuffisants cardiaques, la proportion de patients diabétiques est plus aux alentours de 25 % que de 50 %.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19455",
+          "t": "Dans la population générale des insuffisants cardiaques, la proportion de patients diabétiques est plus aux alentours de 25 % que de 50 %.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_04",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance",
+      "description": "La tolérance de l'empagliflozine est similaire à celle attendue avec les gliflozines, avec principalement des infections génitales plus fréquentes mais sans formes compliquées.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Claude Daubert",
+      "moment_debat": "Discussion",
+      "impact_decision": "Mentionné",
+      "page_source": "Page 5",
+      "section_source": "Tolérance",
+      "extrait_textuel": "La tolérance est celle attendue avec les gliflozines... Le seul signal concerne des infections génitales, plus fréquentes sous empagliflozine, avec 1,7 % versus 0,6 %, mais sans différence dans les formes compliquées.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19455",
+          "t": "La tolérance est celle attendue avec les gliflozines... Le seul signal concerne des infections génitales, plus fréquentes sous empagliflozine, avec 1,7 % versus 0,6 %, mais sans différence dans les formes compliquées.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_05",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Les recommandations ESC 2021 placent les gliflozines (dapagliflozine et empagliflozine) au même niveau dans une quadrithérapie pour l'insuffisance cardiaque à fraction d'éjection réduite.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Claude Daubert",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 5",
+      "section_source": "Place dans les recommandations",
+      "extrait_textuel": "Dapagliflozine et empagliflozine sont placés au même niveau... traitement de base... est maintenant une quadrithérapie associant IEC ou ENTRESTO, bêtabloquant, ARM et gliflozine.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19455",
+          "t": "Dapagliflozine et empagliflozine sont placés au même niveau... traitement de base... est maintenant une quadrithérapie associant IEC ou ENTRESTO, bêtabloquant, ARM et gliflozine.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_06",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité",
+      "description": "Le laboratoire demande un alignement sur FORXIGA (dapagliflozine) avec SMR important, ASMR IV et ISP, mais une différence sur la mortalité cardiovasculaire pourrait justifier une ASMR V.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Jean-Claude Daubert",
+      "moment_debat": "Présentation",
+      "impact_decision": "Contributeur_majeur",
+      "page_source": "Page 5-6",
+      "section_source": "Conclusion de la présentation",
+      "extrait_textuel": "Le laboratoire demande clairement à être aligné sur FORXIGA... éventuellement attribuer à JARDIANCE une ASMR V versus FORXIGA, du fait de cette petite différence sur la mortalité cardiovasculaire.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "CT-19455",
+          "t": "Le laboratoire demande clairement à être aligné sur FORXIGA... éventuellement attribuer à JARDIANCE une ASMR V versus FORXIGA, du fait de cette petite différence sur la mortalité cardiovasculaire.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19455_arg_TRANS_07",
+      "evaluation_id": "CT-19455",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "description": "La Fédération française des diabétiques souligne l'impact de l'insuffisance cardiaque sur la qualité de vie et considère que l'empagliflozine apporte un SMR important grâce à la réduction des hospitalisations.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Pierre Thierry",
+      "moment_debat": "Contribution association",
+      "impact_decision": "Contributeur",
+      "page_source": "Page 7-8",
+      "section_source": "Contribution de la Fédération française des diabétiques",
+      "extrait_textuel": "Sur l'empagliflozine... cette molécule est de nature, grâce à la baisse des hospitalisations... à apporter un service médical rendu important.",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19455",
+          "t": "Sur l'empagliflozine... cette molécule est de nature, grâce à la baisse des hospitalisations... à apporter un service médical rendu important.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_1",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "description": "L'ICC est une complication grave du diabète de type 2 (première cause de mortalité) avec impact majeur sur les capacités fonctionnelles et qualité de vie des patients et leurs proches.",
+      "extrait_textuel": "Aujourd’hui, 10 % à 15 % des personnes diabétiques de type 2 souffrent d’une ICC. Cette complication représente la première cause de mortalité dans cette population.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 12",
+      "section_source": "Synthèse de votre contribution",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 12,
+          "s": "contrib_s",
+          "t": "10 % à 15 % des personnes diabétiques de type 2 souffrent d’une ICC. Cette complication représente la première cause de mortalité dans cette population.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_2",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité",
+      "description": "L'Empagliflozine permet de réduire significativement les hospitalisations et décès associés à l'ICC selon plusieurs études (EMPA-REG OUTCOME, EMPEROR-Reduced).",
+      "extrait_textuel": "L’Empagliflozine permettait de réduire significativement le nombre d’hospitalisations et de décès associés à un événement cardiovasculaire par rapport à un placebo.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 10",
+      "section_source": "Expériences avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "contrib_s",
+          "t": "L’Empagliflozine permettait de réduire significativement le nombre d’hospitalisations et de décès associés à un événement cardiovasculaire par rapport à un placebo.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_3",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance",
+      "description": "Profil de sécurité acceptable de l'Empagliflozine : principalement infections génitales et urinaires bénignes, pas plus d'événements indésirables graves que le placebo.",
+      "extrait_textuel": "En dehors d’infections bénignes de l’appareil génital, les patients, y compris diabétiques, sous Empagliflozine n’ont pas déclaré plus d’événements indésirables que les patients sous placebo.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 10",
+      "section_source": "Expériences avec le médicament évalué",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "contrib_s",
+          "t": "En dehors d’infections bénignes de l’appareil génital, les patients, y compris diabétiques, sous Empagliflozine n’ont pas déclaré plus d’événements indésirables que les patients sous placebo.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_4",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "description": "Manque d'accompagnement humain et d'information des patients sur l'ICC (stade, gravité, traitements) entraînant diagnostic tardif et faible observance.",
+      "extrait_textuel": "Les participants ne connaissaient ni la catégorie « ICC », ni leur stade de gravité et encore moins leur Fraction d’Éjection Ventriculaire Gauche (FEVG).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 11",
+      "section_source": "Information supplémentaire",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "contrib_s",
+          "t": "Les participants ne connaissaient ni la catégorie « ICC », ni leur stade de gravité et encore moins leur Fraction d’Éjection Ventriculaire Gauche (FEVG).",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_5",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Attentes des patients : prévention de l'ICC, limitation de l'évolution symptomatique, regain de capacités fonctionnelles, éviter les crises aiguës, meilleur accompagnement.",
+      "extrait_textuel": "Les attentes qui ressortent de nos entretiens sont : 1) Prévenir plus largement et plus efficacement l’apparition de l’ICC. 2) Limiter l’évolution symptomatique de l’ICC. 3) Regagner en capacités fonctionnelles et par extension en qualité de vie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 9",
+      "section_source": "Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "contrib_s",
+          "t": "Les attentes qui ressortent de nos entretiens sont : 1) Prévenir plus largement et plus efficacement l’apparition de l’ICC. 2) Limiter l’évolution symptomatique de l’ICC. 3) Regagner en capacités fonctionnelles et par extension en qualité de vie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19455_ctx",
+    "evaluation_id": "CT-19455",
+    "ISP": "JARDIANCE (empagliflozine) est susceptible d’avoir un impact supplémentaire sur la santé publique.",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": true,
+    "ISP_categorie": "Modéré",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-06-17",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2021-08-18",
+        "reference": "Non renseigné",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "116 000 patients maximum",
+    "population_cible_nombre": 116000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": 116000,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-01-05",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 4,
+        "s": "ISP",
+        "t": "JARDIANCE (empagliflozine) est susceptible d’avoir un impact supplémentaire sur la santé publique.",
+        "m": "manual",
+        "c": 1.0
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 6,
+        "s": "Date initiale",
+        "t": "obtenue le 17 juin 2021",
+        "m": "manual",
+        "c": 1.0
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19455",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19455_smrasmr_01",
+      "evaluation_id": "CT-19455",
+      "indication_precise": "en traitement de recours, en ajout d’un traitement standard optimisé chez les patients adultes atteints d’insuffisance cardiaque chronique avec fraction d’éjection réduite (FEVG ≤ 40%) qui restent symptomatiques (classe NYHA II à IV) malgré ce traitement",
+      "smr": "IMPORTANT en traitement de recours... INSUFFISANT pour justifier d’une prise en charge par la solidarité nationale, dans les autres populations de l’indication",
+      "asmr": "amélioration du service médical rendu mineure (ASMR IV)",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Compte-tenu de la supériorité démontrée dans l'étude EMPEROR-reduced, du profil de tolérance, et de l'absence de comparaison directe à FORXIGA.",
+      "population_cible_indication": "Patients adultes avec insuffisance cardiaque chronique symptomatique à FEVG ≤ 40% malgré traitement standard optimisé",
+      "ligne_traitement_indication": "Traitement de recours en ajout",
+      "comparateurs_references_indication": "FORXIGA (dapagliflozine)",
+      "comparateur_id_HAS": "CT-19455_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Symptomatique (NYHA II-IV)",
+        "population_age": "Adultes (≥ 18 ans)"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Elevée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 4,
+          "s": "SMR",
+          "t": "IMPORTANT en traitement de recours, en ajout d’un traitement standard optimisé chez les patients adultes atteints d’insuffisance cardiaque chronique avec fraction d’éjection réduite (FEVG ≤ 40%) qui restent symptomatiques (classe NYHA II à IV) malgré ce traitement.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19455_event_AMM_01",
+      "evaluation_id": "CT-19455",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-06-17",
+      "detail_brut": "Extension d'indication obtenue le 17 juin 2021",
+      "source_doc": "F1",
+      "detail_type_specifique": "Extension d'indication pour insuffisance cardiaque",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 6,
+          "s": "obtenue le",
+          "t": "obtenue le 17 juin 2021",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19455_event_AUDITION_01",
+      "evaluation_id": "CT-19455",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-01-05",
+      "detail_brut": "Audition du laboratoire le 05 janvier 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Audition HAS",
+      "acteurs_impliques": [
+        "BOEHRINGER INGELHEIM"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "AVIS",
+          "t": "5 JANVIER 2022",
+          "m": "manual",
+          "c": 1.0
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19455",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19455",
+    "is_orphan": false,
+    "classe_ATC_l2": "A10B",
+    "aire_therapeutique": "Cardiologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 0.75,
+    "critere_principal_dur": true,
+    "suivi_median_mois_max": 16.9,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Décès cardiovasculaire ou hospitalisation pour insuffisance cardiaque",
+    "p_value_log10": 4.0,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": 1,
+    "template_ere": "CT_modern",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19455",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19455_essai_EMPEROR-reduced",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19455_essai_EMPEROR-reduced",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19455_essai_EMPEROR-reduced_crit_principal",
+      "label": "TRIAL_HAS_CRIT"
+    }
+  ],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19455_interv_01",
+      "evaluation_id": "CT-19455",
+      "nom_expert": "Jean-Claude Daubert",
+      "role": "Membre de la CT",
+      "intervention_type": "Présentation",
+      "sujet_abordé": "Présentation du dossier JARDIANCE, études EMPEROR-reduced et DAPA-HF, comparaisons, place dans les recommandations",
+      "extrait_textuel": "Après FORXIGA, JARDIANCE est la seconde gliflozine que nous évaluons... Les études de phase 3... EMPEROR-reduced avec empagliflozine...",
+      "page_source": "Page 3-6",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 3,
+          "s": "CT-19455",
+          "t": "Après FORXIGA, JARDIANCE est la seconde gliflozine que nous évaluons...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19455_interv_02",
+      "evaluation_id": "CT-19455",
+      "nom_expert": "Sylvie Chevret",
+      "role": "Membre de la CT",
+      "intervention_type": "Analyse méthodologique",
+      "sujet_abordé": "Analyse des comparaisons indirectes entre empagliflozine et dapagliflozine",
+      "extrait_textuel": "Le laboratoire a produit des comparaisons de l’empagliflozine à la dapagliflozine... Ils concluent à l'équivalence... mais l'absence de différence n'est pas preuve d'équivalence.",
+      "page_source": "Page 6-7",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19455",
+          "t": "Le laboratoire a produit des comparaisons de l’empagliflozine à la dapagliflozine... Ils concluent à l'équivalence...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19455_interv_03",
+      "evaluation_id": "CT-19455",
+      "nom_expert": "Jean-Pierre Thierry",
+      "role": "Membre de la CT",
+      "intervention_type": "Contribution association",
+      "sujet_abordé": "Présentation de la contribution de la Fédération française des diabétiques",
+      "extrait_textuel": "C’est une contribution de la Fédération française des diabétiques... Sur l'empagliflozine, ils se réfèrent notamment à EMPA-REG et surtout à EMPEROR...",
+      "page_source": "Page 7-8",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "CT-19455",
+          "t": "C’est une contribution de la Fédération française des diabétiques... Sur l'empagliflozine, ils se réfèrent notamment à EMPA-REG et surtout à EMPEROR...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19455_interv_04",
+      "evaluation_id": "CT-19455",
+      "nom_expert": "Albert Trinh Duc",
+      "role": "Membre de la CT",
+      "intervention_type": "Question",
+      "sujet_abordé": "Questions sur les sous-groupes diabétiques et l'extrapolation à la population générale",
+      "extrait_textuel": "Les diabétiques, dans la population générale, ne représentent pas 50 %. On est plutôt aux alentours de 25 %.",
+      "page_source": "Page 8-9",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19455",
+          "t": "Les diabétiques, dans la population générale, ne représentent pas 50 %. On est plutôt aux alentours de 25 %.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19455_interv_05",
+      "evaluation_id": "CT-19455",
+      "nom_expert": "Michel Clanet",
+      "role": "Vice-Président",
+      "intervention_type": "Animation du débat",
+      "sujet_abordé": "Animation de la discussion, questions aux experts, organisation du vote",
+      "extrait_textuel": "Nous allons pouvoir passer à la discussion et aux questions... Je propose que nous votions l’ISP, le SMR et l’ASMR...",
+      "page_source": "Pages multiples",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 8,
+          "s": "CT-19455",
+          "t": "Nous allons pouvoir passer à la discussion et aux questions...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19455_point_01",
+      "evaluation_id": "CT-19455",
+      "sujet": "Différence de mortalité cardiovasculaire entre empagliflozine et dapagliflozine",
+      "description": "Débat sur l'absence de bénéfice significatif sur la mortalité cardiovasculaire avec empagliflozine dans EMPEROR-reduced, contrairement à dapagliflozine dans DAPA-HF, et si cela justifie une ASMR différente.",
+      "intervenants_impliques": [
+        "Jean-Claude Daubert",
+        "Sylvie Chevret",
+        "Michel Clanet",
+        "Albert Trinh Duc"
+      ],
+      "page_source": "Page 8-10",
+      "extrait_textuel": "Il semble qu’il y ait plus de diabétiques dans EMPEROR, donc on aurait pu s’attendre à ce que l’effet soit encore supérieur...",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 9,
+          "s": "CT-19455",
+          "t": "Il semble qu’il y ait plus de diabétiques dans EMPEROR, donc on aurait pu s’attendre à ce que l’effet soit encore supérieur...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19455_point_02",
+      "evaluation_id": "CT-19455",
+      "sujet": "Validité des comparaisons indirectes et signal de surmortalité chez les diabétiques",
+      "description": "Discussion sur les limites des comparaisons indirectes et le signal de hazard ratio à 1,6 pour la mortalité cardiovasculaire chez les diabétiques sous empagliflozine vs dapagliflozine.",
+      "intervenants_impliques": [
+        "Sylvie Chevret",
+        "Jean-Claude Daubert"
+      ],
+      "page_source": "Page 6-8",
+      "extrait_textuel": "Ils ont proposé, en analyse de sensibilité, des méthodes indirectes ajustées... Ils concluent à l’équivalence... mais le signal de surmortalité cardiovasculaire...",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 6,
+          "s": "CT-19455",
+          "t": "Ils ont proposé, en analyse de sensibilité, des méthodes indirectes ajustées... Ils concluent à l’équivalence... mais le signal de surmortalité cardiovasculaire...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19455_point_03",
+      "evaluation_id": "CT-19455",
+      "sujet": "Stratégie thérapeutique et place des gliflozines",
+      "description": "Échanges sur l'évolution des recommandations ESC 2021 et la place des gliflozines dans la quadrithérapie, ainsi que la séquence d'introduction des traitements.",
+      "intervenants_impliques": [
+        "Jean-Claude Daubert",
+        "Étienne Lengliné"
+      ],
+      "page_source": "Page 11-12",
+      "extrait_textuel": "Les dernières recommandations ont déjà franchi le pas de la quadrithérapie... peut-être d’un ordre de prescription tout à fait différent...",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 11,
+          "s": "CT-19455",
+          "t": "Les dernières recommandations ont déjà franchi le pas de la quadrithérapie... peut-être d’un ordre de prescription tout à fait différent...",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19455_vote_01",
+      "evaluation_id": "CT-19455",
+      "objet_vote": "ISP (Intérêt de Santé Publique)",
+      "resultat": "Reconnu",
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "nb_votants": 22,
+      "details": "22 voix pour la reconnaissance d’un ISP.",
+      "page_source": "Page 15",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 15,
+          "s": "CT-19455",
+          "t": "Nous avons 22 voix pour la reconnaissance d’un ISP.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19455_vote_02",
+      "evaluation_id": "CT-19455",
+      "objet_vote": "SMR (Service Médical Rendu) dans le périmètre restreint",
+      "resultat": "Important",
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "nb_votants": 22,
+      "details": "22 voix pour un SMR important.",
+      "page_source": "Page 15",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 15,
+          "s": "CT-19455",
+          "t": "Nous avons 22 voix pour un SMR important.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19455_vote_03",
+      "evaluation_id": "CT-19455",
+      "objet_vote": "ASMR (Amélioration du Service Médical Rendu) dans le périmètre restreint",
+      "resultat": "V (dans la stratégie)",
+      "nb_voix_pour": 12,
+      "nb_voix_contre": 10,
+      "nb_abstentions": 0,
+      "nb_votants": 22,
+      "details": "12 voix pour une ASMR V dans la stratégie et 10 voix pour une ASMR IV au même titre que FORXIGA.",
+      "page_source": "Page 15",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 15,
+          "s": "CT-19455",
+          "t": "Nous avons 12 voix pour une ASMR V dans la stratégie et 10 voix pour une ASMR IV au même titre que FORXIGA.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19455_vote_04",
+      "evaluation_id": "CT-19455",
+      "objet_vote": "SMR en miroir (autres situations cliniques de l'AMM)",
+      "resultat": "Insuffisant",
+      "nb_voix_pour": 22,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "nb_votants": 22,
+      "details": "22 voix pour un SMR insuffisant dans les autres situations cliniques.",
+      "page_source": "Page 15",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 15,
+          "s": "CT-19455",
+          "t": "Nous avons 22 voix pour un SMR insuffisant dans les autres situations cliniques.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19455",
+    "contribution_presente": true,
+    "contribution_id": "CT-19455_contrib_1",
+    "association": {
+      "nom_association": "Fédération française des diabétiques",
+      "type_structure": "Association_agréée_nationale",
+      "site_internet": "Non renseigné"
+    },
+    "methodologie": {
+      "methode_recueil": "Enquête_patients",
+      "description_methode": "Étude qualitative approfondie QUALICC avec entretiens semi-directifs réalisés par le Diabète Lab.",
+      "nb_patients_consultes": 10,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Limitations fonctionnelles, essoufflement, limitation de l'activité physique, stratégies de coping (limitation volontaire d'activité), baisse des objectifs liée à l'âge.",
+      "symptomes_principaux": [
+        "Essoufflement",
+        "Limitation activité physique"
+      ],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": "Non renseigné",
+      "impacts_proches_aidants": "Repos important sur les aidants."
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": "Non renseigné",
+      "inconvenients": "Polymédication, problèmes de prise en charge et coordination, adhésion mauvaise.",
+      "besoins_non_couverts": "Non renseigné"
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": "Baisse des hospitalisations, baisse de la mortalité",
+      "craintes_principales": "Non renseigné"
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": "Non renseigné"
+    },
+    "position_association": {
+      "position_generale": "Favorable",
+      "justification": "Profil de sécurité acceptable, baisse des hospitalisations et de la mortalité, apporte un SMR important.",
+      "arguments_principaux": [
+        "Profil de sécurité acceptable",
+        "Baisse des hospitalisations",
+        "Baisse de la mortalité"
+      ]
+    },
+    "synthese_contribution": "Contribution qualitative sur l'insuffisance cardiaque chronique, mettant en avant les impacts sur la qualité de vie et le polymédication. Position favorable à l'empagliflozine basée sur les études EMPA-REG et EMPEROR, avec attente de baisse des hospitalisations et de la mortalité.",
+    "evidence": [
+      {
+        "field": "Contribution_Patients",
+        "f": "F1",
+        "p": 6,
+        "s": "CT-19455",
+        "t": "Elle a porté sur une dizaine de personnes supposées avoir une insuffisance cardiaque chronique...",
+        "m": "manual",
+        "c": 0.9
+      }
+    ]
+  }
+}
