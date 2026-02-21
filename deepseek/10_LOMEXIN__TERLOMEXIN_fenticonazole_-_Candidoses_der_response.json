@@ -1,0 +1,831 @@
+{
+  "schema_version": "3.1.1-production",
+  "doc_id": "CT-21290",
+  "evaluation_id": "CT-21290",
+  "extraction_date": "2025-12-17",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-12-17",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-21290_LOMEXIN_TERLOMEXIN_PIS_RAD_AvisDef_CT21290.pdf",
+        "type": "CT",
+        "page_count": 6
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-21290_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l’avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Synthèse de l’avis",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum"
+      ],
+      "routing_hint": "Conclusion de la Commission",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21290_seg_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "dci",
+        "presentations",
+        "demandeur",
+        "type_avis_enum"
+      ],
+      "routing_hint": "Détails administratifs",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-21290_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications de l’AMM",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Indications de l’AMM visées par la demande",
+      "expected_fields": [
+        "indication",
+        "population_cible"
+      ],
+      "routing_hint": "Détails des indications",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21290_seg_04",
+      "section_label_normalise": "EVALUATION_PAR_COMMISSION",
+      "section_label_brut": "Évaluation par la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Évaluation par la Commission",
+      "expected_fields": [
+        "date_evaluation"
+      ],
+      "routing_hint": "Dates et processus d'évaluation",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-21290_seg_05",
+      "section_label_normalise": "COMPLEMENT_INFORMATION",
+      "section_label_brut": "Complément d’information",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 600,
+      "heading_text": "Complément d’information",
+      "expected_fields": [
+        "essai_nom",
+        "tolerance_details"
+      ],
+      "routing_hint": "Données supplémentaires fournies",
+      "label_confidence": 0.85
+    },
+    {
+      "segment_id": "CT-21290_seg_06",
+      "section_label_normalise": "CONCLUSIONS_COMMISSION",
+      "section_label_brut": "Conclusions de la Commission de la Transparence",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Conclusions de la Commission de la Transparence",
+      "expected_fields": [
+        "smr_enum",
+        "indication"
+      ],
+      "routing_hint": "Décision finale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-21290_seg_07",
+      "section_label_normalise": "ANNEXES",
+      "section_label_brut": "Annexe",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Annexe",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Liste des comparateurs",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21290",
+      "Num_avis": "CT-21290",
+      "produit_nom": "LOMEXIN 600 mg et 2 %, TERLOMEXIN 200 mg, capsule molle vaginale et crème",
+      "dci": "fenticonazole",
+      "type_avis": "Demande de radiation",
+      "type_avis_enum": "Réévaluation",
+      "forme": "capsule molle vaginale et crème",
+      "dosage": "600 mg, 2%, 200 mg",
+      "indication": "Candidoses, dermatophyties, Pityriasis versicolor pour LOMEXIN 2 % crème ; Candidoses génitales surinfectées ou non par des bactéries Gram + pour LOMEXIN 600 mg et TERLOMEXIN 200 mg, capsule molle vaginale",
+      "classe_ATC": "D01AC12, G01AF12",
+      "pathologie": "Candidoses, dermatophyties, Pityriasis versicolor, infections génitales",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": null,
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Dermatologie et gynécologie",
+      "aire_therapeutique_niveau_2": "Antifongiques",
+      "aire_therapeutique_niveau_3": "Traitements topiques",
+      "source_aire_therapeutique": "Déduit ATC D01AC12, G01AF12",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Avis précédent du 21/09/2016 avec SMR modéré",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2025-12-17",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Non renseigné",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • LO",
+          "t": "LOMEXIN 600 mg et 2 %, TERLOMEXIN 200 mg, capsule molle vaginale et crème",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "fenticonazole (D01AC12)",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte",
+          "t": "Demande de radiation",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Indicatio",
+          "t": "Candidoses, dermatophyties, et Pityriasis versicolor pour LOMEXIN 2 % crème ; les candidoses génitales surinfectées ou non par des bactéries Gram + pour LOMEXIN 600 mg et TERLOMEXIN 200 mg, capsule molle vaginale",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 3,
+          "s": "Évaluation",
+          "t": "Date d’examen et d’adoption : 17 décembre 2025.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "Avis favorable au maintien des conclusions précédentes de la Commission",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-21290_essai_EFEMERIS_cohort",
+      "evaluation_id": "CT-21290",
+      "essai_nom": "EFEMERIS cohort study",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_retrospectif",
+      "design_enum": "Observationnel_retrospectif",
+      "population_cible": "Femmes enceintes et fœtus exposés au fenticonazole",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Non renseigné",
+      "QoL_flag": false,
+      "niveau_preuve": "Non renseigné",
+      "pooling_flag": false,
+      "population_dedoublée": "Non renseigné",
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": false,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "Complément",
+          "t": "une publication relative à une étude de cohorte rétrospective menée à partir de la base de données française EFEMERIS (2004–2018), visant à évaluer la tolérance du fenticonazole chez les femmes enceintes et les fœtus",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-21290_essai_EFEMERIS_cohort_crit_tolerance",
+      "evaluation_id": "CT-21290",
+      "essai_id": "CT-21290_essai_EFEMERIS_cohort",
+      "nom_critere": "Tolérance du fenticonazole chez les femmes enceintes et les fœtus",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "Non renseigné",
+      "hierarchie_critere": "Non renseigné",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Non renseigné",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "Autre",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Non renseigné",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-21290_essai_EFEMERIS_cohort_tol",
+      "evaluation_id": "CT-21290",
+      "essai_id": "CT-21290_essai_EFEMERIS_cohort",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "tolerance_id",
+          "f": "F1",
+          "p": 3,
+          "s": "Complément",
+          "t": "visant à évaluer la tolérance du fenticonazole chez les femmes enceintes et les fœtus",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21290_compHAS_01",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "AMYCOR, 1% crème (bifonazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Annexe",
+          "t": "AMYCOR, 1% crème (bifonazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_02",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "KETODERM 2%, crème et ses génériques (kétoconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Annexe",
+          "t": "KETODERM 2%, crème et ses génériques (kétoconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_03",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "MONAZOL® 2% crème (sertaconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Annexe",
+          "t": "MONAZOL® 2% crème (sertaconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_04",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "MYCOSTER 1 % solution pour application cutanée et ses génériques (ciclopirox olamine)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "Annexe",
+          "t": "MYCOSTER 1 % solution pour application cutanée et ses génériques (ciclopirox olamine)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_05",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "PEVARYL 1 %, crème et ses génériques (éconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Annexe",
+          "t": "PEVARYL 1 %, crème et ses génériques (éconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_06",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "FAZOL, crème (isoconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Annexe",
+          "t": "FAZOL, crème (isoconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_07",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "TROSYD, crème dermatologique (tioconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Annexe",
+          "t": "TROSYD, crème dermatologique (tioconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_08",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "FONX 1 %, crème en tube (Oxiconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "Annexe",
+          "t": "FONX 1 %, crème en tube (Oxiconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_09",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "MONAZOL, ovule (sertaconazole) et ses génériques",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Annexe",
+          "t": "MONAZOL, ovule (sertaconazole) et ses génériques",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_10",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "GYNO-PEVARYL LP 150 mg, ovule et ses génériques (éconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Annexe",
+          "t": "GYNO-PEVARYL LP 150 mg, ovule et ses génériques (éconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_11",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "GYNO TROSYD 300 mg, ovule (tioconazole)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Annexe",
+          "t": "GYNO TROSYD 300 mg, ovule (tioconazole)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-21290_compHAS_12",
+      "evaluation_id": "CT-21290",
+      "nom_comparateur_HAS": "POLYGYNAX, capsule vaginale (sulfate de néomycine, sulfate de polymyxine B, nystatine)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Antifongique",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 6,
+          "s": "Annexe",
+          "t": "POLYGYNAX, capsule vaginale (sulfate de néomycine, sulfate de polymyxine B, nystatine)",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [],
+  "Données_Contexte": {
+    "contexte_id": "CT-21290_ctx",
+    "evaluation_id": "CT-21290",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": false,
+    "PSA_flag": false,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21290",
+    "texte_brut": "Non renseigné",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21290_smrasmr_01",
+      "evaluation_id": "CT-21290",
+      "indication_precise": "Candidoses, dermatophyties, Pityriasis versicolor pour LOMEXIN 2 % crème ; Candidoses génitales surinfectées ou non par des bactéries Gram + pour LOMEXIN 600 mg et TERLOMEXIN 200 mg, capsule molle vaginale",
+      "smr": "Maintien du service médical rendu modéré",
+      "smr_enum": "Modéré",
+      "asmr": "Non renseigné",
+      "asmr_enum": null,
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Les nouvelles données cliniques ne sont pas de nature à modifier la dernière appréciation",
+      "population_cible_indication": "Patients atteints de candidoses, dermatophyties, Pityriasis versicolor ou candidoses génitales",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": "Voir Comparateurs_HAS",
+      "comparateur_id_HAS": [],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Synthèse",
+          "t": "Avis favorable au maintien des conclusions précédentes de la Commission",
+          "m": "manual",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Posologie_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21290",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-21290",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Dermatologie et gynécologie",
+    "type_avis_enum": "Réévaluation",
+    "innovation_reconnu": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2025,
+    "trimestre_ct": 4,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}
