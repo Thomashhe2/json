@@ -1,0 +1,1298 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19830_HAS_VERZENIOS_Septembre2022.pdf",
+        "type": "CT",
+        "page_count": 35
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L'essentiel, Synthèse des conclusions, Résumé & discussion, Place dans la stratégie thérapeutique, Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 6000,
+      "heading_text": "Synthèse générale",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication",
+        "Arguments_Decisionnels",
+        "Evaluations_HAS"
+      ],
+      "routing_hint": "important",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "seg_02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications, Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 7,
+      "char_start": 6001,
+      "char_end": 9000,
+      "heading_text": "Indications et posologie",
+      "expected_fields": [
+        "Indications",
+        "Posologie"
+      ],
+      "routing_hint": "standard",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_03",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 9,
+      "char_start": 9001,
+      "char_end": 11000,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "besoin_medical_brut",
+        "besoin_medical_interprete"
+      ],
+      "routing_hint": "important",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents, Médicaments, Comparateurs non médicamenteux",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 11,
+      "char_start": 11001,
+      "char_end": 13000,
+      "heading_text": "Comparateurs pertinents",
+      "expected_fields": [
+        "Comparateurs_Essai",
+        "Comparateurs_HAS"
+      ],
+      "routing_hint": "important",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_05",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles, Efficacité, Qualité de vie, Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 28,
+      "char_start": 13001,
+      "char_end": 24000,
+      "heading_text": "Étude clinique MonarchE",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Resultats_Efficacite",
+        "Tolérance"
+      ],
+      "routing_hint": "critique",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "seg_06",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 31,
+      "page_end": 32,
+      "char_start": 24001,
+      "char_end": 25000,
+      "heading_text": "Place dans la stratégie",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "important",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "seg_07",
+      "section_label_normalise": "SMR_ASMR_PAR_INDICATION",
+      "section_label_brut": "Conclusions de la Commission, Service Médical Rendu, Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 32,
+      "page_end": 34,
+      "char_start": 25001,
+      "char_end": 28000,
+      "heading_text": "Conclusions SMR / ASMR",
+      "expected_fields": [
+        "SMR_ASMR_Par_Indication"
+      ],
+      "routing_hint": "critique",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "seg_08",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 34,
+      "page_end": 35,
+      "char_start": 28001,
+      "char_end": 30000,
+      "heading_text": "Informations administratives",
+      "expected_fields": [
+        "Identifiants_Produits_Liaison",
+        "Evaluations_HAS"
+      ],
+      "routing_hint": "standard",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "VERZENIOS",
+      "dci": "abémaciclib",
+      "titulaire_amm": "Lilly France",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "comprimés pelliculés",
+          "forme_pharma_enum": "Comprime",
+          "dosage_concentration": "50 mg",
+          "code_cip13": "34009 301 629 6 5"
+        },
+        {
+          "forme_pharmaceutique": "comprimés pelliculés",
+          "forme_pharma_enum": "Comprime",
+          "dosage_concentration": "100 mg",
+          "code_cip13": "34009 301 629 8 9"
+        },
+        {
+          "forme_pharmaceutique": "comprimés pelliculés",
+          "forme_pharma_enum": "Comprime",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 301 630 0 9"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • VERZENIOS",
+          "t": "HAS • VERZENIOS 50, 100 et 150 mg comprimés pelliculés • septembre 2022",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis sur les",
+          "t": "Avis sur les medicaments abémaciclib VERZENIOS 50, 100 et 150 mg comprimés pelliculés",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 35,
+          "s": "Demandeur Lilly",
+          "t": "Demandeur Lilly France",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 34,
+          "s": "VERZENIOS 50 mg",
+          "t": "VERZENIOS 50 mg, comprimés pelliculés CIP : 34009 301 629 6 5",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19830",
+      "Num_avis": "CT-19830",
+      "produit_nom": "VERZENIOS",
+      "dci": "abémaciclib",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "comprimés pelliculés",
+      "dosage": "50, 100 et 150 mg",
+      "indication": "Traitement adjuvant du cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Cancer du sein précoce RH+/HER2-",
+      "maladie_rare": false,
+      "ligne_traitement": "Adjuvant",
+      "ligne_traitement_enum": "Adjuvant",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Oncologie du sein",
+      "aire_therapeutique_niveau_3": "Cancer du sein précoce RH+/HER2-",
+      "source_aire_therapeutique": "Texte avis page 5",
+      "design_etude": "Étude clinique de phase III, randomisée, ouverte, multicentrique",
+      "niveau_preuve_brut": "Étude clinique randomisée en ouvert de phase III",
+      "niveau_preuve_interprete": "Niveau_1",
+      "besoin_medical_brut": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase). Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la prise en charge du cancer du sein précoce RH+/HER2-.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "gravite_patho": "Le cancer du sein précoce RH+/HER2- est une affection grave engageant le pronostic vital, associée à un risque élevé de rechute chez certaines patientes.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Patients adultes atteints de cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Ki-67 ≥ 20% pour cohorte non considérée dans AMM",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "VERZENIOS a déjà été évalué en 2018 et 2021 dans le cancer du sein avancé ou métastatique avec SMR important seulement.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Alternatives hormonothérapiques existantes (tamoxifène, inhibiteurs de l’aromatase).",
+      "vote_unanimite": false,
+      "nb_votants": 18,
+      "nb_voix_pour": 0,
+      "nb_voix_contre": 18,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-09-14",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [
+        "Avis défavorable au remboursement",
+        "Faible gain clinique sur survie sans maladie invasive",
+        "Absence de données sur survie globale",
+        "Effets indésirables fréquents et impact tolérance au stade précoce",
+        "Besoin médical partiellement couvert"
+      ],
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis sur",
+          "t": "Avis sur les medicaments abémaciclib VERZENIOS 50, 100 et 150 mg comprimés pelliculés - Extension d'indication",
+          "m": "manual",
+          "c": 0.97
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical est actuellement partiellement couvert",
+          "t": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase). Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la prise en charge du cancer du sein précoce RH+/HER2-.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "niveau_preuve_interprete",
+          "f": "F1",
+          "p": 13,
+          "s": "Étude clinique de phase III randomisée en ouvert",
+          "t": "Il s’agit d’une étude clinique de phase III, randomisée en ouvert, réalisée chez des patients adultes atteints de cancer du sein adjuvant RH+/HER2- avec atteinte ganglionnaire et à haut risque de rechute.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 34,
+          "s": "La Commission donne un avis défavorable",
+          "t": "La Commission donne un avis défavorable à l'inscription sur la liste des spécialités remboursables aux assurés sociaux et sur la liste des spécialités agréées",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "essai_nom": "MonarchE",
+      "nct_number": "NCT03155997",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "traitement antérieur (chimio)",
+        "statut ménopausique",
+        "région géographique"
+      ],
+      "population_cible": "Adultes pré ou post-ménopausés, cancer du sein précoce HR+/HER2- avec atteinte ganglionnaire, invasif, réséqué, haut risque de récidive",
+      "comparateur_utilise": "Hormonothérapie standard seule (létrozole, anastrozole, exémestane ou tamoxifène avec ou sans agonistes de la GnRH)",
+      "comparateur_type_enum": "Hormonotherapie",
+      "nb_patient_traitement": 2808,
+      "nb_patient_comparateur": 2829,
+      "resultat_global": "Supériorité statistique en survie sans maladie invasive (IDFS) avec HR=0.747, différence absolue 1,8 points (95,2% vs 93,4%)",
+      "qol_flag": true,
+      "qol_instruments": [
+        "FACT-B",
+        "FACT-ES",
+        "FACIT-2",
+        "FACIT-3",
+        "FACIT-F13",
+        "EQ-5D-5L"
+      ],
+      "qol_resultats_brut": "Pas de conclusion robuste possible en raison de l'ouverture de l'étude et absence de gestion multiplicité",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": null,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 27,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": true,
+      "nb_analyses_intermediaire": 3,
+      "date_analyses_intermediares_mois": [
+        "M12",
+        "M18",
+        "M24"
+      ],
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Adjuvant",
+      "maturite_donnees": "Intermédiaires",
+      "maturite_pct": 72.2,
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 11,
+          "s": "Les patients ont été randomisés",
+          "t": "Les patients ont été randomisés dans l’étude MonarchE (NCT03155997) en ouvert avec ratio 1:1, traitement abémaciclib + hormonothérapie adjuvante vs hormonothérapie seule.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "comparateur_utilise",
+          "f": "F1",
+          "p": 6,
+          "s": "L’hormonothérapie standard adjuvante",
+          "t": "Les patients du groupe de comparaison ont reçu une hormonothérapie standard adjuvante, au choix de l’investigateur (létrozole, anastrozole, exémestane, tamoxifène, avec ou sans agonistes GnRH).",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 20,
+          "s": "2 808 patients dans le groupe abémaciclib",
+          "t": "Au total, 2 808 patients étaient dans le groupe abémaciclib + hormonothérapie, 2 829 dans le groupe hormonothérapie seule.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 23,
+          "s": "Proportion de survie sans maladie invasive avec HR=0,747",
+          "t": "La proportion de survie sans maladie invasive (IDFS) était supérieure avec abémaciclib + HT (95,2%) vs HT seule (93,4%), HR=0,747 (IC 95% [0,598 ; 0,932], p = 0,00957).",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "qol_instruments",
+          "f": "F1",
+          "p": 15,
+          "s": "Qualité de vie évaluée par FACT-B, FACT-ES, FACIT-2, FACIT-3",
+          "t": "La qualité de vie a été évaluée de façon exploratoire avec FACT-B, FACT-ES, FACIT-2, FACIT-3, FACIT-F13 et EQ-5D-5L. Aucune conclusion robuste n’a pu être tirée.",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_IDFS",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "critere_nom": "Survie sans maladie invasive (IDFS)",
+      "type_critere_enum": "Composite",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "HR",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": [
+        1
+      ],
+      "condition_test": null,
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Lan Demets/O’Brien-Fleming",
+      "alpha_ajuste": 0.0264,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 3,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "traitement antérieur",
+        "statut ménopausique",
+        "région"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "0,00957",
+      "p_value_num": 0.00957,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Mineure",
+      "HR_RR_OR": "HR = 0,747 (IC95% [0,598 ; 0,932])",
+      "HR_RR_OR_num": 0.747,
+      "IC95": "[0,598 ; 0,932]",
+      "IC95_low_num": 0.598,
+      "IC95_high_num": 0.932,
+      "gain_absolu": "1,8 points (95,2 % vs 93,4 %)",
+      "gain_absolu_num": 1.8,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Bien que statistiquement significative, la CT considère que la taille de l’effet sur la survie sans maladie invasive est cliniquement faible avec un gain absolu de 1,8 points, et ce critère ne peut être considéré comme substitutif de la survie globale.",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 23,
+          "s": "4,8 % des patients du groupe abémaciclib",
+          "t": "HR = 0,747 ; IC95% [0,598 ; 0,932] ; p = 0,00957",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_IDFS_Ki67_ITT",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "critere_nom": "Survie sans maladie invasive (IDFS) chez patients avec marqueur Ki-67 ≥ 20% (population ITT)",
+      "type_critere_enum": "Composite",
+      "nature_critere": "Secondaire_cle",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": [
+        2
+      ],
+      "condition_test": "Testé seulement si IDFS population ITT significative",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Lan Demets/O’Brien-Fleming",
+      "alpha_ajuste": 0.0424,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 3,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "traitement antérieur",
+        "statut ménopausique",
+        "région"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "0,01108",
+      "p_value_num": 0.01108,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Faible",
+      "HR_RR_OR": "HR = 0,691 (IC95% [0,519 ; 0,920])",
+      "HR_RR_OR_num": 0.691,
+      "IC95": "[0,519 ; 0,920]",
+      "IC95_low_num": 0.519,
+      "IC95_high_num": 0.92,
+      "gain_absolu": "2,8 points (93,5 % vs 90,7 %)",
+      "gain_absolu_num": 2.8,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Gain cliniquement faible malgré signification statistique dans population avec Ki-67 élevé.",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 30,
+          "s": "6,5 % (n = 82) des patients du groupe abémaciclib + HT",
+          "t": "HR = 0,691 ; IC95% [0,519 ; 0,920] ; p = 0,01108",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_IDFS_Ki67_C1",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "critere_nom": "Survie sans maladie invasive (IDFS) chez patients avec marqueur Ki-67 ≥ 20% (cohorte 1)",
+      "type_critere_enum": "Composite",
+      "nature_critere": "Secondaire_cle",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": [
+        3
+      ],
+      "condition_test": "Testé seulement si IDFS population ITT avec Ki-67 élevé significative",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Lan Demets/O’Brien-Fleming",
+      "alpha_ajuste": 0.0426,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 3,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "traitement antérieur",
+        "statut ménopausique",
+        "région"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "0,00422",
+      "p_value_num": 0.00422,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Faible",
+      "HR_RR_OR": "HR = 0,643 (IC95% [0,475 ; 0,872])",
+      "HR_RR_OR_num": 0.643,
+      "IC95": "[0,475 ; 0,872]",
+      "IC95_low_num": 0.475,
+      "IC95_high_num": 0.872,
+      "gain_absolu": "3,8 points (93,0 % vs 89,2 %)",
+      "gain_absolu_num": 3.8,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Gain cliniquement faible malgré signification statistique dans cohorte 1 avec Ki-67 élevé.",
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 31,
+          "s": "7,0 %(n = 71) des patients du groupe abémaciclib + HT",
+          "t": "HR = 0,643 ; IC95% [0,475 ; 0,872] ; p = 0,00422",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_OS",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "critere_nom": "Survie globale",
+      "type_critere_enum": "OS",
+      "nature_critere": "Dur",
+      "unite_mesure": "HR",
+      "primaire_ou_secondaire": "Secondaire_cle",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": null,
+      "condition_test": "Analysée uniquement si critères IDFS significatifs",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Lan Demets/O’Brien-Fleming",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 3,
+      "test_statistique_utilise": "Cox_regression",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "traitement antérieur",
+        "statut ménopausique",
+        "région"
+      ],
+      "analyse_stratifiee": true,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": false,
+      "significativite_clinique_interpretee": "Non renseigné",
+      "HR_RR_OR": "HR = 1,091 (IC95% [0,818 ; 1,455])",
+      "HR_RR_OR_num": 1.091,
+      "IC95": "[0,818 ; 1,455]",
+      "IC95_low_num": 0.818,
+      "IC95_high_num": 1.455,
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "commentaire_has_resultat": "Aucune différence observée sur la survie globale lors de la première analyse intermédiaire.",
+      "evidence": [
+        {
+          "field": "HR_RR_OR",
+          "f": "F1",
+          "p": 31,
+          "s": "HR = 1,091 ; IC95% [0,818 ; 1,455]",
+          "t": "HR = 1,091 ; IC95% [0,818 ; 1,455] ; p = NS lors de cette analyse intermédiaire",
+          "m": "rule",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19830_essai_MonarchE_tol",
+      "evaluation_id": "CT-19830",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "ae_total_pct": 98.4,
+      "ae_total_pct_comparateur": 88.8,
+      "sae_pct": 15.2,
+      "sae_pct_comparateur": 8.8,
+      "discontinuations_ae_pct": 6.5,
+      "discontinuations_ae_pct_comparateur": 1.1,
+      "deaths_ae_n": 95,
+      "deaths_ae_n_comparateur": 89,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": true,
+      "ei_grade_max": "3-4",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Neutropénie",
+          "grade": "3-4",
+          "incidence_pct_traitement": 19.6,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 25,
+              "s": "Les EI les plus fréquents, neutropénie",
+              "t": "EI ≥ Grade 3 plus fréquents : neutropénies (19,6 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Leucopénie",
+          "grade": "3-4",
+          "incidence_pct_traitement": 19.6,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 25,
+              "s": "Les leucopénies aussi fréquentes",
+              "t": "EI ≥ Grade 3 plus fréquents : leucopénies (19,6 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Diarrhées",
+          "grade": "3-4",
+          "incidence_pct_traitement": 7.8,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 25,
+              "s": "Diarrhées grade 3 fréquentes",
+              "t": "EI ≥ Grade 3 plus fréquents : diarrhées (7,8 %)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 83.5,
+          "incidence_pct_comparateur": 8.6,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 24,
+              "s": "Diarrhées tous grades",
+              "t": "Diarrhées (83,5 % vs 8,6 %)",
+              "m": "table",
+              "c": 0.98
+            }
+          ]
+        },
+        {
+          "ei_terme": "Neutropénie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 45.8,
+          "incidence_pct_comparateur": 5.6,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Fatigue",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 40.6,
+          "incidence_pct_comparateur": 17.8,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Leucopénie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 37.6,
+          "incidence_pct_comparateur": 6.6,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Douleurs abdominales",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 35.5,
+          "incidence_pct_comparateur": 9.8,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 29.5,
+          "incidence_pct_comparateur": 9.0,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Anémie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 24.4,
+          "incidence_pct_comparateur": 3.7,
+          "evidence": []
+        }
+      ],
+      "deces_detailles": [
+        {
+          "cause_deces": "Origine cardiovasculaire la plus fréquente",
+          "relation_traitement": "Non renseigné",
+          "delai_survenue_jours": null,
+          "contexte": "5 patients avec antécédents cardiovasculaires, aucun décès imputé au traitement",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 25,
+              "s": "La cause la plus fréquente de décès",
+              "t": "La cause la plus fréquente de décès dans le groupe abémaciclib + HT était d’origine cardiovasculaire, aucun décès imputé au traitement",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "cause_deces": "Infections, incluant suspicion COVID-19",
+          "relation_traitement": "Non renseigné",
+          "delai_survenue_jours": null,
+          "contexte": "4 décès dans le groupe abémaciclib + HT en lien avec infection ou suspicion COVID-19",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 25,
+              "s": "second décès était lié aux infections",
+              "t": "4 décès dans le groupe abémaciclib + HT en lien avec une infection ou suspicion d’infection au COVID-19",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "EMA_PRAC",
+          "date_signal": "2022-02-01",
+          "description": "Ajout des recommandations d’adaptations posologiques pour prise en charge des événements thromboemboliques veineux ; inclusion d’effets indésirables comme les céphalées, dyspepsie, troubles des ongles.",
+          "mesures_prises": "Mise à jour du RCP, suppression des événements thromboemboliques veineux comme risque important identifié.",
+          "impact_evaluation": "Mesures de minimisation des risques limitées à celles du RCP.",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 26,
+              "s": "Le résumé des risques du PGR de VERZENIOS",
+              "t": "Le PGR mentionne la suppression des événements thromboemboliques veineux comme risques importants identifiés et modification des effets indésirables listés.",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_graves": "Les événements indésirables graves (≥ Grade 3) ont été plus fréquents dans le groupe abémaciclib + HT (49,7 %) par rapport au groupe HT (16,3 %) avec principalement neutropénies, leucopénies et diarrhées.",
+      "EI_frequents": "Les EI les plus fréquents tous grades confondus étaient la diarrhée (83,5 %), la neutropénie (45,8 %), la fatigue (40,6 %), la leucopénie (37,6 %).",
+      "deces": "184 décès ont été rapportés durant l’étude, 95 dans le groupe abémaciclib + HT et 89 dans le groupe HT seul, avec une légère surmortalité liée aux EI dans le groupe abémaciclib.",
+      "tolerance": "Le profil de tolérance est similaire à celui connu dans le cancer du sein avancé, tolérance plus difficilement acceptée dans le contexte adjuvant.",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 24,
+          "s": "EI ≥ Grade 3 plus fréquent",
+          "t": "Des neutropénies (19,6 %), des leucopénies (19,6 %) et des diarrhées (7,8 %) étaient les EI ≥ grade 3 les plus fréquents.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "EI_frequents",
+          "f": "F1",
+          "p": 24,
+          "s": "Diarrhées (83,5 %), neutropénie (45,8 %)",
+          "t": "Les EI les plus fréquents tous grades étaient diarrhées (83,5 %), neutropénie (45,8 %), fatigue (40,6 %), leucopénie (37,6 %).",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "deces",
+          "f": "F1",
+          "p": 25,
+          "s": "184 décès ont été rapportés durant l’étude",
+          "t": "184 décès ont été rapportés durant l’étude, dont 95 dans le groupe abémaciclib + HT et 89 dans le groupe HT.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19830_essai_MonarchE_comp_01",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "nom_comparateur": "Hormonothérapie standard (létrozole, anastrozole, exémestane, tamoxifène avec ou sans agoniste GnRH)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": true,
+      "comparateur_standard_enum": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 6,
+          "s": "La dose recommandée",
+          "t": "Les patients du groupe contrôle ont reçu une hormonothérapie standard adjuvante au choix du médecin (létrozole, anastrozole, exémestane, tamoxifène, avec ou sans agonistes de GnRH).",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19830_compHAS_01",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "Anastrozole (Arimidex) et génériques",
+      "type_comparateur": "Hormonotherapie",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "ARIMIDEX (anastrozole)",
+          "t": "ARIMIDEX (anastrozole) est indiqué en traitement adjuvant du cancer du sein invasif chez la femme ménopausée.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19830_compHAS_02",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "Létrozole (Femara) et génériques",
+      "type_comparateur": "Hormonotherapie",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "FEMARA (létrozole)",
+          "t": "FEMARA (létrozole) est indiqué en traitement adjuvant du cancer du sein invasif chez la femme ménopausée.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19830_compHAS_03",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "Exémestane (Aromasine) et génériques",
+      "type_comparateur": "Hormonotherapie",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "AROMASINE (exémestane)",
+          "t": "AROMASINE (exémestane) est indiqué en traitement adjuvant du cancer du sein invasif chez la femme ménopausée.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19830_compHAS_04",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "Tamoxifène (Nolvadex) et génériques",
+      "type_comparateur": "Hormonotherapie",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "NOLVADEX (tamoxifène)",
+          "t": "NOLVADEX (tamoxifène) est indiqué pour le traitement du carcinome mammaire en traitement adjuvant ou évolué.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_CT_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "L’étude MonarchE démontre une supériorité statistiquement significative de l’abémaciclib en association à une hormonothérapie standard sur la survie sans maladie invasive, mais avec un gain absolu faible de 1,8 point (95,2 % vs 93,4 %).",
+      "extrait_textuel": "À l’analyse intermédiaire, la proportion de survie sans maladie invasive était de 95,2 % des patients du groupe abémaciclib + HT et de 93,4 % dans le groupe HT, soit une différence de 1,8 points entre les deux groupes (HR = 0,747 ; p = 0,00957).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 23",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 23,
+          "s": "proportion de survie sans maladie invasive",
+          "t": "95,2 % des patients du groupe abémaciclib + HT et de 93,4 % dans le groupe HT, soit une différence de 1,8 points",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Favorable",
+      "description": "Les analyses secondaires hiérarchisées montrent une amélioration statistiquement significative de l’IDFS chez les patients porteurs d’un marqueur Ki-67 élevé, sans que la différence soit cliniquement importante.",
+      "extrait_textuel": "Pour les patients avec Ki-67 ≥ 20 %, la survie sans maladie invasive était de 93,5 % vs 90,7 % dans la population ITT (HR = 0,691 ; p = 0,01108).",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 30-31",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "survie sans maladie invasive chez les patients avec un marqueur Ki-67 élevé",
+          "t": "93,5 % vs 90,7 % ; Δ = 2,8 points (HR = 0,691 ; p = 0,01108)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité",
+      "direction_argument": "Défavorable",
+      "description": "Aucune différence n’a été démontrée sur la survie globale lors de la première analyse intermédiaire, avec un HR non significatif de 1,091.",
+      "extrait_textuel": "Aucune différence sur la survie globale n’a été observée entre les deux groupes, HR = 1,091 ; IC95% [0,818 ; 1,455] ; p = NS lors de cette analyse intermédiaire.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 31",
+      "section_source": "Efficacité",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 31,
+          "s": "aucune différence sur la survie globale",
+          "t": "HR = 1,091 ; IC95% [0,818 ; 1,455] ; p = NS lors de cette analyse intermédiaire",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance",
+      "direction_argument": "Défavorable",
+      "description": "Le profil de tolérance, marqué par des troubles gastro-intestinaux, des événements thromboemboliques et des infections, est jugé moins acceptable dans ce contexte adjuvant précoce par rapport au cancer du sein avancé.",
+      "extrait_textuel": "La Commission note un profil de tolérance marqué par des troubles gastro-intestinaux, des événements thromboemboliques et des infections, avec une acceptabilité moindre des effets indésirables dans ce contexte adjuvant.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 29-30",
+      "section_source": "Tolérance",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 29,
+          "s": "profil de tolérance, marqué par des troubles gastro-intestinaux",
+          "t": "profil de tolérance marqué par des troubles gastro-intestinaux, des événements thromboemboliques et des infections",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Neutre",
+      "description": "Le besoin médical est partiellement couvert par les traitements hormonaux existants, mais un besoin subsiste de disposer de médicaments efficaces et bien tolérés pour le cancer du sein précoce RH+/HER2-.",
+      "extrait_textuel": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase). Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 7",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical est actuellement partiellement couvert",
+          "t": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase).",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Défavorable",
+      "description": "La Commission considère que VERZENIOS n’a pas de place dans la stratégie thérapeutique adjuvante compte tenu de la modicité du gain, de l'absence de données sur la survie globale et du profil de tolérance.",
+      "extrait_textuel": "La Commission considère qu’en l’état actuel des données, VERZENIOS (abémaciclib) n’a pas de place dans la stratégie thérapeutique en association avec une hormonothérapie dans le traitement adjuvant.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 4",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "n’a pas de place dans la stratégie thérapeutique",
+          "t": "VERZENIOS (abémaciclib) n’a pas de place dans la stratégie thérapeutique en association avec une hormonothérapie dans le traitement adjuvant",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_07",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "description": "Le service médical rendu par VERZENIOS est insuffisant pour justifier d’une prise en charge par la solidarité nationale dans l’indication de l’AMM.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par VERZENIOS est insuffisant pour justifier d’une prise en charge par la solidarité nationale.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Pages 33-34",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 34,
+          "s": "service médical rendu par VERZENIOS est insuffisant",
+          "t": "Le service médical rendu par VERZENIOS est insuffisant pour justifier d’une prise en charge par la solidarité nationale dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_08",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "description": "VERZENIOS n’est pas susceptible d’avoir un intérêt supplémentaire de santé publique compte tenu de la gravité de la pathologie, du faible gain clinique et du profil tolérance défavorable.",
+      "extrait_textuel": "VERZENIOS (abémaciclib) n’est pas susceptible d’avoir un intérêt supplémentaire de santé publique.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 33",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 33,
+          "s": "VERZENIOS (abémaciclib) n’est pas susceptible d’avoir un intérêt supplémentaire",
+          "t": "VERZENIOS (abémaciclib) n’est pas susceptible d’avoir un intérêt supplémentaire de santé publique.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_09",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Les limites méthodologiques incluent la nature ouverte de l’étude, la durée de suivi courte (~2 ans), et l’absence de données de survie globale permettant d’évaluer les bénéfices à long terme.",
+      "extrait_textuel": "Le caractère ouvert de l’étude, la durée de suivi insuffisante et l’absence de données sur la survie globale sont des limites méthodologiques significatives.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 4",
+      "section_source": "Synthèse des conclusions",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "caractère ouvert de l’étude, durée de suivi insuffisante",
+          "t": "Le caractère ouvert de l’étude, la durée de suivi insuffisante et l’absence de données sur la survie globale sont des limites méthodologiques significatives.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19830_ctx",
+    "evaluation_id": "CT-19830",
+    "ISP": "VERZENIOS (abémaciclib) n’est pas susceptible d’avoir un intérêt supplémentaire de santé publique.",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2018-09-27",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [
+      "Suivi à 5 ans de l’étude MonarchE (étude PAES)"
+    ],
+    "nb_obligations_post_amm": 1,
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Etats-Unis",
+      "Royaume-Uni",
+      "Allemagne",
+      "Pays-Bas",
+      "Belgique",
+      "Espagne",
+      "Italie"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "VERZENIOS AMM FDA avec restriction Ki-67 ≥ 20%",
+        "evidence": [
+          {
+            "field": "decisions_internationales",
+            "f": "F1",
+            "p": 11,
+            "s": "VERZENIOS is a kinase inhibitor indicated in combination",
+            "t": "VERZENIOS is indicated in combination with endocrine therapy for the adjuvant treatment of adult patients with HR+/HER2- early breast cancer at high risk of recurrence and a Ki-67 score ≥20% as determined by FDA approved test.",
+            "m": "manual",
+            "c": 0.95
+          }
+        ]
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "2022-09-14",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Insuffisant",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Survie sans maladie invasive (IDFS)",
+    "valeur_critère": "HR=0.747 [0.598-0.932]; p=0.00957",
+    "impact_décision": "Maintien ASMR V et attribution SMR Insuffisant",
+    "estimation_mesure_impact": "Gain absolu faible : 1,8 points de pourcentage",
+    "evidence": [
+      {
+        "field": "SMR_apres_audition_enum",
+        "f": "F1",
+        "p": 34,
+        "s": "service médical rendu par VERZENIOS est insuffisant",
+        "t": "La Commission considère que le service médical rendu par VERZENIOS est insuffisant pour justifier d’une prise en charge",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "ASMR_après_audition_enum",
+        "f": "F1",
+        "p": 33,
+        "s": "Ces spécialités n'apportent pas d'ASMR (ASMR V)",
+        "t": "Ces spécialités n'apportent pas d'ASMR (ASMR V) dans cette indication.",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "type_critère_justification",
+        "f": "F1",
+        "p": 23,
+        "s": "proportion de survie sans maladie invasive (IDFS)",
+        "t": "Principal critère de jugement principal : survie sans maladie invasive (IDFS)",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "valeur_critère",
+        "f": "F1",
+        "p": 23,
+        "s": "HR = 0,747 ; IC95% [0,598 ; 0,932] ; p = 0,00957",
+        "t": "HR = 0,747 ; IC95% [0,598 ; 0,932] ; p = 0,00957",
+        "m": "rule",
+        "c": 0.98
+      }
+    ]
+  }
+}

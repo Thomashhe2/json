@@ -1,0 +1,486 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-06-21",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-21",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19830_Contribution_VERZENIOS_Abemaciclib.pdf",
+        "type": "CONTRIB",
+        "page_count": 23
+      }
+    }
+  },
+  "template_detecte": "CONTRIB",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19830_SEG_0001",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Contribution des associations de patients et d’usagers",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 23,
+      "char_start": 0,
+      "char_end": 45000,
+      "heading_text": "Contribution des associations de patients et d’usagers aux évaluations des médicaments et des dispositifs médicaux",
+      "expected_fields": [
+        "association",
+        "methodologie",
+        "demande_audition",
+        "impacts_maladie",
+        "traitements_actuels",
+        "evaluation_medicament",
+        "indication_demandee",
+        "position_association",
+        "synthese_contribution"
+      ],
+      "routing_hint": "CONTRIB_COMPLET",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19830",
+      "Num_avis": "CT-19830",
+      "produit_nom": "VERZENIOS ® - Abémaciclib",
+      "dci": "Abémaciclib",
+      "type_avis": "Contribution Patient",
+      "type_avis_enum": "Non renseigné",
+      "forme": "Comprimé oral",
+      "dosage": "100 mg et 150 mg",
+      "indication": "Traitement adjuvant du cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Cancer du sein précoce RH+/HER2-",
+      "maladie_rare": false,
+      "ligne_traitement": "Adjuvant",
+      "ligne_traitement_enum": "Adjuvant",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Cancer sein",
+      "aire_therapeutique_niveau_3": "Traitement adjuvant cancer sein RH+/HER2-",
+      "source_aire_therapeutique": "Texte avis page 1",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Contribution des patients souligne le fort besoin de réduction du risque de récidive dans le cancer du sein RH+/HER2- précoce avec haut risque, impactant qualité de vie et anxiété.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "RH+/HER2-",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-21",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Grave",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Femmes adultes atteintes de cancer du sein RH+/HER2- en phase adjuvante",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 1,
+          "s": "Contribution",
+          "t": "Contribution des associations de patients et d’usagers aux évaluations des médicaments et des dispositifs médicaux.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "Évaluation de",
+          "t": "Évaluation de : VERZENIOS ® - Abémaciclib",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "Évaluation de",
+          "t": "Évaluation de : VERZENIOS ® - Abémaciclib",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "ligne_traitement_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Indication(s)",
+          "t": "Traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux RH+, récepteurs du facteur de croissance épidermique humain 2 HER2-",
+          "m": "regex",
+          "c": 0.95
+        },
+        {
+          "field": "aire_therapeutique_niveau_1",
+          "f": "F1",
+          "p": 1,
+          "s": "Impacts de la maladie",
+          "t": "Le cancer du sein est le cancer féminin le plus fréquent en France",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "aire_therapeutique_niveau_2",
+          "f": "F1",
+          "p": 1,
+          "s": "Impacts de la maladie",
+          "t": "Le cancer du sein est le cancer féminin le plus fréquent en France",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "aire_therapeutique_niveau_3",
+          "f": "F1",
+          "p": 1,
+          "s": "Traitement adjuvant du cancer du sein",
+          "t": "Traitement adjuvant du cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 2,
+          "s": "Critères haut risque récidive",
+          "t": "Patients vivent anxiété et angoisse liée au risque élevé de récidive malgré le traitement adjuvant.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "biomarqueur_requis",
+          "f": "F1",
+          "p": 1,
+          "s": "Indication(s) du médicament concernée",
+          "t": "Traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux RH+, récepteurs du facteur de croissance épidermique humain 2 HER2-",
+          "m": "regex",
+          "c": 0.98
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 3,
+          "s": "Impact sur la qualité de vie",
+          "t": "Cancer du sein précoce RH+/HER2- à haut risque de récidive, anxiété, fatigue, qualité de vie affectée",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Les patientes expriment un fort besoin de traitements réduisant le risque élevé de récidive dans le cancer du sein RH+/HER2- précoce avec atteinte ganglionnaire, en raison de l’impact important sur leur qualité de vie et anxiété liée à la maladie.",
+      "extrait_textuel": "L’annonce d’un risque plus élevé de récidive est en soi un facteur d’angoisse et d’anxiété. L’ajout d’une thérapie ciblée pourra répondre à un besoin de réduire ce risque...",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 2",
+      "section_source": "Impact de la maladie / état de santé",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "L’annonce d’un risque",
+          "t": "L’annonce d’un risque plus élevé de récidive est en soi un facteur d’angoisse et d’anxiété.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Neutre",
+      "description": "Les effets secondaires du traitement adjuvant, notamment l’hormonothérapie avec ajout d’abémaciclib, ont un impact sur la vie quotidienne, la fatigue, la vie affective et sociale des patientes, malgré une qualité de vie globalement acceptable.",
+      "extrait_textuel": "De grosses variations de fatigues; Je supporte bien le verzenios ® à 100mg; Disparition d'une vie sexuelle, douleurs lors des rapports...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 4",
+      "section_source": "Impact sur la vie quotidienne",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "De grosses variations",
+          "t": "De grosses variations de fatigues",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Mitigé",
+      "description": "Les patientes ont expérimenté des effets indésirables liés à l’abémaciclib tels que fatigue, perturbations sanguines, diarrhées et douleurs articulaires, ce qui nécessite une adaptation de la dose, mais sans hospitalisation.",
+      "extrait_textuel": "Fatigue : 100%, Perturbations sanguines : 100%, Diarrhées : 50%, Douleurs articulaires : 50%; effets gênants dans quotidien mais gestion possible.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 5",
+      "section_source": "Effets indésirables",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "Fatigue : 100%",
+          "t": "Fatigue : 100%, Perturbations sanguines (neutropénie, leucopénie, anémie) : 100%",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Le traitement oral par abémaciclib est jugé facile à utiliser et suivre par les patientes, avec un suivi médical rapproché et adaptation des doses selon les effets, ce qui améliore l’observance.",
+      "extrait_textuel": "Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre. Le suivi médical rapproché est jugé satisfaisant...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 6",
+      "section_source": "Synthèse de votre contribution",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 6,
+          "s": "Ce traitement par voie",
+          "t": "Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "L’importance d’un accompagnement global, incluant oncologue, psychologue et soins de support, est soulignée pour améliorer l’observance et la qualité de vie des patientes traitées par abémaciclib en association à l’hormonothérapie.",
+      "extrait_textuel": "Un accompagnement adapté et personnalisé incluant oncologue, infirmière d’annonce, psychologue et proposition de soins de support doit être également envisagé.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 6",
+      "section_source": "Information supplémentaire",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 6,
+          "s": "Un accompagnement adapté",
+          "t": "Un accompagnement adapté et personnalisé incluant oncologue, infirmière d’annonce, psychologue et proposition de soins de support doit être également envisagé.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19830_ctx",
+    "evaluation_id": "CT-19830",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": false,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19830",
+    "texte_brut": "Contribution des associations de patients et d’usagers. Évaluation de VERZENIOS (abémaciclib)...",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19830_smrasmr_01",
+      "evaluation_id": "CT-19830",
+      "indication_precise": "Traitement adjuvant du cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "smr": "La contribution souligne le besoin médical important lié au risque élevé de récidive chez ces patientes, affectant leur qualité de vie et générant anxiété et angoisse.",
+      "smr_enum": "Modéré",
+      "asmr": "L’association d’abémaciclib à l’hormonothérapie est reconnue comme une avancée thérapeutique par les patientes pour réduire le risque de récidive, justifiant une amélioration du service médical rendu modérée.",
+      "asmr_enum": "III",
+      "smr_revendique": "Modéré",
+      "asmr_revendique": "III",
+      "justification_decisionnelle": "L’efficacité relative à la réduction du risque de récidive, la facilité d’utilisation orale, et la prise en compte de l’expérience patient avec un suivi rapproché et un accompagnement personnalisé ont guidé la décision.",
+      "population_cible_indication": "Femmes adultes atteintes de cancer du sein RH+/HER2- en phase adjuvante",
+      "ligne_traitement_indication": "Adjuvant",
+      "comparateurs_references_indication": [],
+      "comparateur_id_HAS": [],
+      "indication_structuree": {
+        "ligne_traitement": "Adjuvant",
+        "biomarqueur": "RH+/HER2-",
+        "stade": "Localisé",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "III",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 2,
+          "s": "L’annonce d’un",
+          "t": "L’annonce d’un risque plus élevé de récidive est en soi un facteur d’angoisse et d’anxiété.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "Ce traitement par",
+          "t": "Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre.",
+          "m": "manual",
+          "c": 0.96
+        },
+        {
+          "field": "qol_cite",
+          "f": "F1",
+          "p": 4,
+          "s": "De grosses variations",
+          "t": "De grosses variations de fatigues; Disparition d'une vie sexuelle, douleurs lors des rapports malgré un traitement.",
+          "m": "manual",
+          "c": 0.94
+        },
+        {
+          "field": "tolerance_acceptable",
+          "f": "F1",
+          "p": 5,
+          "s": "Fatigue : 100%",
+          "t": "Fatigue : 100%, Perturbations sanguines : 100%, effets gênants dans quotidien mais gestion possible.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19830",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19830",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Non renseigné",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 0,
+    "is_rct": null,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CONTRIB",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

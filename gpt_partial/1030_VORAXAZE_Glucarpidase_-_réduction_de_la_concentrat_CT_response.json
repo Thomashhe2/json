@@ -1,0 +1,1446 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19744",
+  "evaluation_id": "CT-19744",
+  "extraction_date": "2022-10-28",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-10-28",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19744_VORAXAZE_CT_AVIS.pdf",
+        "type": "CT",
+        "page_count": 30
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19744_Seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel, contexte et indication",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 4500,
+      "heading_text": "L’essentiel, contexte et indication",
+      "expected_fields": [
+        "Indication",
+        "SMR",
+        "ASMR",
+        "Population cible"
+      ],
+      "routing_hint": ""
+    },
+    {
+      "segment_id": "CT-19744_Seg_02",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Essais cliniques et données d’efficacité",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 19,
+      "char_start": 4501,
+      "char_end": 15200,
+      "heading_text": "Études cliniques d'efficacité et tolérance",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Resultats_Efficacite",
+        "Tolérance"
+      ],
+      "routing_hint": ""
+    },
+    {
+      "segment_id": "CT-19744_Seg_03",
+      "section_label_normalise": "Données_Contexte",
+      "section_label_brut": "Contexte réglementaire et évaluations internationales",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": 3000,
+      "char_end": 4200,
+      "heading_text": "Contexte réglementaire et évaluations internationales",
+      "expected_fields": [
+        "AMM",
+        "Accès précoce",
+        "Evaluation internationale"
+      ],
+      "routing_hint": ""
+    },
+    {
+      "segment_id": "CT-19744_Seg_04",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 27,
+      "page_end": 29,
+      "char_start": 22000,
+      "char_end": 26500,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "Place thérapeutique",
+        "Recommandations",
+        "Alternatives"
+      ],
+      "routing_hint": ""
+    },
+    {
+      "segment_id": "CT-19744_Seg_05",
+      "section_label_normalise": "CONCLUSIONS_DE_LA_COMMISSION",
+      "section_label_brut": "Conclusions de la Commission de la Transparence",
+      "template_detecte": "CT_modern",
+      "page_start": 29,
+      "page_end": 30,
+      "char_start": 26501,
+      "char_end": 30000,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "Population cible",
+        "Avis",
+        "Votes"
+      ],
+      "routing_hint": ""
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19744",
+      "produit_nom_commercial": "VORAXAZE",
+      "dci": "glucarpidase",
+      "titulaire_amm": "SERB S.A.S.",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "poudre pour solution injectable",
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "1000 unités",
+          "code_cip13": "34009 590 585 2"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis version",
+          "t": "glucarpidase VORAXAZE 1000 unités, poudre pour solution injectable",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis version",
+          "t": "glucarpidase VORAXAZE 1000 unités, poudre pour solution injectable",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 9,
+          "s": "Demandeur SERB",
+          "t": "Demandeur SERB S.A.S.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dosage_concentration",
+          "f": "F1",
+          "p": 1,
+          "s": "glucarpidase VORAXAZE",
+          "t": "VORAXAZE 1000 unités, poudre pour solution injectable",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "forme_pharmaceutique",
+          "f": "F1",
+          "p": 1,
+          "s": "glucarpidase VORAXAZE",
+          "t": "poudre pour solution injectable",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 9,
+          "s": "1 flacon de 1 000 unités (CIP",
+          "t": "1 flacon de 1 000 unités (CIP : 34009 590 585 2 2)",
+          "m": "regex",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19744",
+      "Num_avis": "CT-19744",
+      "produit_nom": "VORAXAZE",
+      "dci": "glucarpidase",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "poudre pour solution injectable",
+      "dosage": "1000 unités",
+      "indication": "Réduction de la concentration plasmatique toxique de méthotrexate chez adultes et enfants présentant une élimination retardée ou un risque de toxicité du méthotrexate",
+      "classe_ATC": "V03AF09",
+      "pathologie": "Intoxication au méthotrexate",
+      "maladie_rare": true,
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_etude": "4 études institutionnelles d’usage compassionnel, non randomisées, non comparatives, ouvertes",
+      "niveau_preuve_brut": "Études institutionnelles, non randomisées, non comparatives, ouvertes d’usage compassionnel",
+      "niveau_preuve_interprete": "Niveau_5",
+      "besoin_medical_brut": "Le besoin médical dans la prise en charge des risques d’intoxication au méthotrexate est actuellement que très partiellement couvert",
+      "besoin_medical_interprete": "Non_couvert",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie_solide",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Intoxication au méthotrexate",
+      "source_aire_therapeutique": "Texte avis page 6",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Disponible en France en ATU nominative depuis 2004, autorisation d’accès précoce post-AMM obtenue en avril 2022",
+      "historique_ASMR_comparateurs": "SMR important pour les spécialités à base d’acide folinique reconfirmé dans avis précédents",
+      "concurrence_therapeutique_recente": "Peu d’alternatives thérapeutiques efficaces disponibles",
+      "vote_unanimite": false,
+      "nb_votants": 18,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 5,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-07-20",
+      "gravite_patho": "Une intoxication au méthotrexate haute dose est une urgence médicale pouvant mettre en jeu le pronostic vital",
+      "gravite_patho_enum": [
+        "Très_grave"
+      ],
+      "type_population_cible": "Adultes et enfants ≥ 28 jours",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : spécialités à base d’acide folinique",
+      "design_enum": "Observationnel_prospectif",
+      "isp_flag": false,
+      "isp_categorie": "Pas_ISP",
+      "evidence": [
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 4,
+          "s": "spécialité dispose d‘une désignation",
+          "t": "Cette spécialité dispose d‘une désignation de médicament orphelin depuis février 2003",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "design_etude",
+          "f": "F1",
+          "p": 10,
+          "s": "Il s’agit de la demande d’inscription, sur la liste des spécialités",
+          "t": "La demande d’inscription repose principalement sur 5 études cliniques institutionnelles, d’usage compassionnel, non randomisées, non comparatives, ouvertes",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "niveau_preuve_brut",
+          "f": "F1",
+          "p": 10,
+          "s": "Les études 001, 002, 003 et 006 sont des études institutionnelles",
+          "t": "Études institutionnelles, non randomisées, non comparatives, ouvertes d’usage compassionnel",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical dans la prise en charge",
+          "t": "Le besoin médical dans la prise en charge des risques d’intoxication au méthotrexate n’est actuellement que très partiellement couvert",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical dans la prise en charge des risques",
+          "t": "Le besoin médical dans la prise en charge des risques d’intoxication au méthotrexate n’est actuellement que très partiellement couvert",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "design_enum",
+          "f": "F1",
+          "p": 10,
+          "s": "non randomisées, non comparatives, ouvertes",
+          "t": "Études institutionnelles, non randomisées, non comparatives, ouvertes d’usage compassionnel",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au remboursement",
+          "t": "Avis favorable au remboursement dans la réduction de la concentration plasmatique toxique",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "AVIS 20 JUILLET 2022",
+          "t": "Commission de la Transparence Avis 20 Juillet 2022",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19744_essai_PR001CLN001",
+      "evaluation_id": "CT-19744",
+      "essai_nom": "PR001-CLN-001",
+      "nct_number": "NCT00219791",
+      "design": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Adultes ≥ 18 ans traités par MTX HD avec élévation du MTX plasmatique et insuffisance rénale",
+      "comparateur_utilise": "Acide folinique, traitement de support",
+      "nb_patient_traitement": 44,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Réduction cliniquement significative des concentrations de MTX chez 85,7% des patients (HPLC laboratoire central)",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_5",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": 10,
+      "age_max_num": 78,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Autre",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "nb_patients_inclus": "44",
+      "date_fin_inclusion": "2007-04-16",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 11,
+          "s": "Patients âgés de ≥ 18 ans",
+          "t": "Patients âgés de ≥ 18 ans ayant reçu du MTX HD pour le traitement d'une leucémie aiguë lymphoblastique, d'un lymphome non hodgkinien ou d'une tumeur solide",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 13,
+          "s": "Effectif Au total, 44 patients",
+          "t": "Au total, 44 patients ont été inclus dans l’étude 001",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 14,
+          "s": "24 patients (85,7 %) avaient atteint une réduction",
+          "t": "24 patients (85,7 %) avaient atteint une réduction cliniquement significative des concentrations sériques de MTX (HPLC)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "age_min_num",
+          "f": "F1",
+          "p": 14,
+          "s": "L’âge médian des patients était de 53,0 ans (min-max : 10-78)",
+          "t": "âge médian 53,0 ans (min 10 ans)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "age_max_num",
+          "f": "F1",
+          "p": 14,
+          "s": "L’âge médian des patients était de 53,0 ans (min-max : 10-78)",
+          "t": "âge maximal 78 ans",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 10,
+          "s": "Clinicaltrials.gov NCT00219791",
+          "t": "Clinicaltrials.gov NCT00219791",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19744_essai_PR001CLN002",
+      "evaluation_id": "CT-19744",
+      "essai_nom": "PR001-CLN-002",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Patients tout âge avec risque vital de toxicité du MTX et élimination retardée",
+      "comparateur_utilise": "Acide folinique, traitement de support",
+      "nb_patient_traitement": 214,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Réduction cliniquement significative des concentrations de MTX chez 54,8% des patients (HPLC laboratoire central)",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_5",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": 0,
+      "age_max_num": 82,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Autre",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": null,
+      "nb_patients_inclus": "214",
+      "date_fin_inclusion": "2004-05",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 11,
+          "s": "Patients de tout âge présentant une diminution",
+          "t": "Patients de tout âge présentant une réduction d’élimination du MTX secondaire à une insuffisance rénale induite par le MTX HD",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 15,
+          "s": "Au total, 262 patients ont été inclus",
+          "t": "262 patients ont été inclus dans l’étude 002 dont 214 ont reçu au moins une dose de glucarpidase",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 15,
+          "s": "46 patients (54,8 %) avaient atteint une réduction cliniquement",
+          "t": "46 patients (54,8 %) avaient atteint une réduction cliniquement significative des concentrations sériques de MTX (HPLC)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "age_min_num",
+          "f": "F1",
+          "p": 15,
+          "s": "L’âge médian des patients était de 17,0 ans (min-max : 0,4-82)",
+          "t": "âge minimal 0 ans",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "age_max_num",
+          "f": "F1",
+          "p": 15,
+          "s": "L’âge médian des patients était de 17,0 ans (min-max : 0,4-82)",
+          "t": "âge maximal 82 ans",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19744_essai_PR001CLN003",
+      "evaluation_id": "CT-19744",
+      "essai_nom": "PR001-CLN-003",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Patients tout âge avec risque vital de toxicité du MTX et élimination retardée",
+      "comparateur_utilise": "Acide folinique, traitement de support",
+      "nb_patient_traitement": 69,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Réduction cliniquement significative des concentrations de MTX chez 66,7% des patients (HPLC laboratoire central)",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_5",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": 0,
+      "age_max_num": 71,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Autre",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "nb_patients_inclus": "69",
+      "date_fin_inclusion": "2002-03",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 17,
+          "s": "Patients de tout âge",
+          "t": "Patients de tout âge présentant une réduction d’élimination du MTX secondaire à une insuffisance rénale induite par le MTX HD",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 17,
+          "s": "Au total, 82 patients ont été inclus dans l’étude 003 dont 69 ont reçu",
+          "t": "Au total, 82 patients ont été inclus dans l’étude 003 dont 69 ont reçu au moins une dose de glucarpidase",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 17,
+          "s": "20 patients (66,7 %) avaient atteint une réduction",
+          "t": "20 patients (66,7 %) avaient atteint une réduction cliniquement significative des concentrations sériques de MTX (HPLC)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "age_max_num",
+          "f": "F1",
+          "p": 17,
+          "s": "L’âge médian des patients était de 15,0 ans (min-max : 0-71)",
+          "t": "âge maximal 71 ans",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19744_essai_PR001CLN006",
+      "evaluation_id": "CT-19744",
+      "essai_nom": "PR001-CLN-006",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Patients tout âge avec risque vital de toxicité du MTX et élimination retardée",
+      "comparateur_utilise": "Acide folinique, traitement de support",
+      "nb_patient_traitement": 149,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Réduction cliniquement significative des concentrations de MTX chez 51,9% des patients (HPLC laboratoire central)",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_5",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": 0,
+      "age_max_num": 85,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Autre",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": null,
+      "nb_patients_inclus": "149",
+      "date_fin_inclusion": "2007-04",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 18,
+          "s": "Patients de tout âge",
+          "t": "Patients de tout âge présentant une réduction d’élimination du MTX secondaire à une insuffisance rénale induite par le MTX HD",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patient_traitement",
+          "f": "F1",
+          "p": 18,
+          "s": "Au total, 184 patients ont été inclus",
+          "t": "184 patients ont été inclus dans l’étude 006 et 149 ont reçu au moins une dose de glucarpidase",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 18,
+          "s": "14 patients (51,9 %) avaient atteint une réduction",
+          "t": "14 patients (51,9 %) avaient atteint une réduction cliniquement significative des concentrations sériques de MTX (HPLC)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "age_max_num",
+          "f": "F1",
+          "p": 18,
+          "s": "L’âge médian des patients était de 18,0 ans (min-max : 0-85)",
+          "t": "âge maximal 85 ans",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19744_essai_PR001CLN016",
+      "evaluation_id": "CT-19744",
+      "essai_nom": "PR001-CLN-016",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_cible": "Population mixte (étude d’extension de sécurité)",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": 275,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Tolérance rapportée dans l'étude d'extension",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_5",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "nb_patients_inclus": "275",
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": []
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19744_essai_PR001CLN001_crit_ReductionCliniqueMTX",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_PR001CLN001",
+      "critere_nom": "Réduction cliniquement significative (CIR) des concentrations sériques de méthotrexate",
+      "type_critere_enum": "Biomarqueur",
+      "unite_mesure": "Absence de concentration > 1 µmol/L",
+      "primaire_ou_secondaire": "Primaire",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": "Modérée",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 14,
+          "s": "reduction cliniquement significative des concentrations",
+          "t": "24 patients (85,7 %) avaient atteint une réduction cliniquement significative des concentrations sériques de MTX",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19744_essai_PR001CLN001_crit_RebondConcentrationMTX",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_PR001CLN001",
+      "critere_nom": "Incidence de rebonds des concentrations de MTX",
+      "type_critere_enum": "Biomarqueur",
+      "unite_mesure": "Pourcentage (%)",
+      "primaire_ou_secondaire": "Secondaire",
+      "significativite_statistique": null,
+      "significativite_clinique_interpretee": "Non renseigné",
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 14,
+          "s": "rebonds des concentrations de MTX (définis comme une concentration",
+          "t": "4 patients (14,3 % ; n = 28) en ont présenté des rebonds des concentrations de MTX",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19744_essai_PR001CLN001_tol",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_PR001CLN001",
+      "ae_total_pct": 97.7,
+      "sae_pct": 59.1,
+      "discontinuations_ae_pct": null,
+      "deaths_ae_n": 21,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": true,
+      "EI_graves": "Hématotoxicité, hépatotoxicité, inflammation muqueuse, néphropathie toxique, fièvre, insuffisance respiratoire, toxicité cutanée",
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Hématotoxicité",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": 70.5,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 20,
+              "s": "Hématotoxicité : 31 (70,5)",
+              "t": "Hématotoxicité : 31 (70,5%)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Hépatotoxicité",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": 45.5,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 20,
+              "s": "Hépatotoxicité : 20 (45,5)",
+              "t": "Hépatotoxicité : 20 (45,5%)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Inflammation muqueuse",
+          "grade": "Non renseigné",
+          "incidence_pct_traitement": 43.2,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 20,
+              "s": "Inflammation muqueuse : 19 (43,2)",
+              "t": "Inflammation muqueuse : 19 (43,2%)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_graves_detailles": [],
+      "deces_detailles": [
+        {
+          "cause_deces": "Divers, incluant quadriplégie, désordre du système nerveux, décompensation neurologique, coma",
+          "relation_traitement": "Possible",
+          "delai_survenue_jours": null,
+          "contexte": "Décès survenus chez des patients en situation critique et/ou avec toxicité du MTX",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 21,
+              "s": "EI ayant entrainé le décès (grade 5)",
+              "t": "EI ayant entrainé le décès possiblement lié au traitement incluant quadriplégie et coma",
+              "m": "rule",
+              "c": 0.9
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "Non renseigné",
+          "date_signal": "Non renseigné",
+          "description": "Réactions d’hypersensibilité et immunogénicité possibles avec anticorps anti-glucarpidase détectés chez 21% des patients",
+          "mesures_prises": "Surveillance recommandée des signes d’anaphylaxie lors de l’administration",
+          "impact_evaluation": "Profil de tolérance acceptable au regard de la gravité des situations",
+          "evidence": [
+            {
+              "field": "signal_securite_detailles",
+              "f": "F1",
+              "p": 23,
+              "s": "Il est recommandé de surveiller les signes et les symptômes d’anaphylaxie",
+              "t": "Réactions associées à la perfusion ou des réactions d’hypersensibilité sont possibles, anticorps anti-glucarpidase détectés chez 21% des patients",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 20,
+          "s": "Patients ayant eu ≥ 1 EI – n (%) 43 (97,7)",
+          "t": "43 patients (97,7%) ont eu au moins un effet indésirable",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "sae_pct",
+          "f": "F1",
+          "p": 20,
+          "s": "Patients ayant eu ≥ 1 EIG - n (%) 26 (59,1)",
+          "t": "26 patients (59,1 %) ont eu au moins un événement indésirable grave",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "deaths_ae_n",
+          "f": "F1",
+          "p": 21,
+          "s": "EI ayant entrainé le décès (grade 5) – n (%) 21 (47,7)",
+          "t": "21 décès d'EI ayant entrainé le décès (grade 5) ont été rapportés",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19744_essai_PR001CLN001_comp_01",
+      "essai_id": "CT-19744_essai_PR001CLN001",
+      "nom_comparateur": "Acide folinique",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 10,
+          "s": "traitement par acide folinique",
+          "t": "Le traitement par acide folinique reste la meilleure option dans les 60 heures suivant la perfusion du MTX HD",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19744_essai_PR001CLN002_comp_01",
+      "essai_id": "CT-19744_essai_PR001CLN002",
+      "nom_comparateur": "Acide folinique",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 10,
+          "s": "traitement par acide folinique",
+          "t": "Le traitement par acide folinique reste la meilleure option dans les 60 heures suivant la perfusion du MTX HD",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19744_essai_PR001CLN003_comp_01",
+      "essai_id": "CT-19744_essai_PR001CLN003",
+      "nom_comparateur": "Acide folinique",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 10,
+          "s": "traitement par acide folinique",
+          "t": "Le traitement par acide folinique reste la meilleure option dans les 60 heures suivant la perfusion du MTX HD",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19744_essai_PR001CLN006_comp_01",
+      "essai_id": "CT-19744_essai_PR001CLN006",
+      "nom_comparateur": "Acide folinique",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 10,
+          "s": "traitement par acide folinique",
+          "t": "Le traitement par acide folinique reste la meilleure option dans les 60 heures suivant la perfusion du MTX HD",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19744_compHAS_01",
+      "evaluation_id": "CT-19744",
+      "nom_comparateur_HAS": "Acide folinique (folinate de calcium, levofolinate)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "Les seules alternatives médicamenteuses disponibles",
+          "t": "Les seules alternatives médicamenteuses disponibles dans cette indication sont les spécialités à base d’acide folinique (folinate de calcium ou levofolinate de calcium)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19744_compHAS_02",
+      "evaluation_id": "CT-19744",
+      "nom_comparateur_HAS": "Méthodes d’épuration extra-rénale (hémodialyse, hémoperfusion)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 8,
+          "s": "Des méthodes d’épuration extra-rénale du méthotrexate, telles que l’hémodialyse, l’hémodialyse en haut flux",
+          "t": "Des méthodes d’épuration extra-rénale du méthotrexate, telles que l’hémodialyse, l’hémodialyse en haut flux ou l’hémoperfusion au charbon actif peuvent être employées",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19744_arg_CT_01",
+      "evaluation_id": "CT-19744",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Les études 001, 002, 003 et 006 non randomisées et ouvertes montrent une réduction rapide et cliniquement significative des concentrations de méthotrexate chez la majorité des patients traités par glucarpidase.",
+      "extrait_textuel": "les résultats d’efficacité issus des 4 études non randomisées, non comparatives, ouvertes, d’usage compassionnel (études 001, 002, 003 et 006), ainsi que de l’analyse groupée réalisée, qui suggèrent l’efficacité de la glucarpidase sur l’obtention rapide d’une réduction de la concentration du méthotrexate pour une majorité des patients",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Pages 9-18",
+      "section_source": "Analyse des données disponibles",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 26,
+          "s": "les résultats d’efficacité issus des 4 études non randomisées",
+          "t": "les résultats d’efficacité issus des 4 études non randomisées, non comparatives, ouvertes, d’usage compassionnel (études 001, 002, 003 et 006), ainsi que de l’analyse groupée réalisée, qui suggèrent l’efficacité de la glucarpidase sur l’obtention rapide d’une réduction de la concentration du méthotrexate pour une majorité des patients",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_CT_02",
+      "evaluation_id": "CT-19744",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Mitigé",
+      "description": "Le profil de tolérance est difficile à évaluer en raison des nombreux événements liés à la pathologie cancéreuse et à la toxicité du méthotrexate, mais reste satisfaisant compte tenu de la gravité de la situation.",
+      "extrait_textuel": "le profil de tolérance difficilement évaluable en raison des nombreux événements indésirables liés à la pathologie cancéreuse et/ou à la toxicité du MTX, mais jugée néanmoins satisfaisant au regard de la gravité de ces situations pouvant engager le pronostic vital",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 26",
+      "section_source": "Analyse des données disponibles",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 26,
+          "s": "le profil de tolérance difficilement évaluable",
+          "t": "le profil de tolérance difficilement évaluable en raison des nombreux événements indésirables liés à la pathologie cancéreuse et/ou à la toxicité du MTX, mais jugée néanmoins satisfaisant au regard de la gravité de ces situations pouvant engager le pronostic vital",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_CT_03",
+      "evaluation_id": "CT-19744",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le besoin médical est très partiellement couvert compte tenu des rares alternatives médicamenteuses et techniques d’épuration extra-rénale limitées.",
+      "extrait_textuel": "Le besoin médical dans la prise en charge des risques d’intoxication au méthotrexate n’est actuellement que très partiellement couvert considérant le peu d’alternatives disponibles (acide folinique, techniques d’épuration extra-rénale)",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 7",
+      "section_source": "Besoin Médical",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical dans la prise en charge",
+          "t": "Le besoin médical dans la prise en charge des risques d’intoxication au méthotrexate n’est actuellement que très partiellement couvert considérant le peu d’alternatives disponibles (acide folinique, techniques d’épuration extra-rénale)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_CT_04",
+      "evaluation_id": "CT-19744",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "VORAXAZE est un traitement de secours à utiliser en cas d’élimination retardée ou de risque de toxicité du méthotrexate défini par une fonction rénale altérée ou preuve d’élimination retardée.",
+      "extrait_textuel": "VORAXAZE (glucarpidase) est un traitement de secours qui doit être utilisé pour réduire les concentrations toxiques de méthotrexate dès lors que les patients ont une élimination retardée du méthotrexate ou qu’ils présentent un risque de toxicité du méthotrexate défini comme une fonction rénale altérée ou une preuve d’élimination retardée du MTX",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Pages 2-3, 27-29",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Place du médicament VORAXAZE",
+          "t": "VORAXAZE (glucarpidase) est un traitement de secours qui doit être utilisé pour réduire les concentrations toxiques de méthotrexate dès lors que les patients ont une élimination retardée du méthotrexate...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 28,
+          "s": "Place de VORAXAZE (glucarpidase) dans la stratégie thérapeutique",
+          "t": "VORAXAZE (glucarpidase) est un traitement de secours qui doit être utilisé pour réduire les concentrations toxiques de méthotrexate dès lors que les patients ont une élimination retardée du méthotrexate ou un risque de toxicité du méthotrexate défini...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_CT_05",
+      "evaluation_id": "CT-19744",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "Le service médical rendu est important dans l’indication AMM, justifié par la gravité de la toxicité rénale du méthotrexate et la rapidité de réduction des concentrations plasmatiques.",
+      "extrait_textuel": "Compte tenu de la gravité de la toxicité rénale liée au MTX et de la capacité de la glucarpidase à réduire rapidement les concentrations plasmatiques toxiques, le service médical rendu est important",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 29",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 29,
+          "s": "service médical rendu par VORAXAZE (glucarpidase) est important",
+          "t": "Compte tenu de la gravité de la situation médicale, la Commission considère que le service médical rendu par VORAXAZE est important",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_CT_06",
+      "evaluation_id": "CT-19744",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Mitigé",
+      "description": "L’amélioration apportée (ASMR IV) est mineure, en raison des limites des études disponibles, du manque de données pédiatriques et d’une tolérance difficilement évaluable.",
+      "extrait_textuel": "la Commission considère que VORAXAZE (glucarpidase) apporte une amélioration du service médical rendu mineure (ASMR IV) dans la stratégie de prise en charge des toxicités liées au méthotrexate",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 30",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "la Commission considère que VORAXAZE (glucarpidase) apporte une amélioration",
+          "t": "la Commission considère que VORAXAZE (glucarpidase) apporte une amélioration du service médical rendu mineure (ASMR IV)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19744_ctx",
+    "evaluation_id": "CT-19744",
+    "ISP": "N'EST PAS susceptible d'avoir un impact supplémentaire sur la santé publique",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "AAP",
+    "date_debut_acces_precoce": "2022-04-25",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": 1000,
+    "conditions_arret_acces_precoce": "Conditionnée notamment à la réalisation d’une étude issue d’un registre de patients",
+    "statut_reglementaire_ema": "AMM_exceptionnelle",
+    "date_AMM_ema": "2022-01-11",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": true,
+    "prime_ema": null,
+    "obligations_post_amm": [
+      "Réalisation d’une étude issue d’un registre sur les patients traités par glucarpidase"
+    ],
+    "nb_obligations_post_amm": 1,
+    "evolution_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2012-01-01",
+        "reference": "AMM FDA 2012",
+        "evidence": [
+          {
+            "field": "decisions_internationales",
+            "f": "F1",
+            "p": 6,
+            "s": "AMM aux Etats-Unis depuis 2012",
+            "t": "La spécialité VORAXAZE (glucarpidase) dispose d’une AMM aux Etats-Unis depuis 2012",
+            "m": "rule",
+            "c": 0.95
+          }
+        ]
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "evidence": [
+      {
+        "field": "acces_precoce",
+        "f": "F1",
+        "p": 5,
+        "s": "autorisation d’accès précoce post-AMM a été octroyée",
+        "t": "Une autorisation d’accès précoce post-AMM a été octroyée par la HAS le 25 avril 2022",
+        "m": "rule",
+        "c": 0.95
+      },
+      {
+        "field": "designation_orpheline_ema",
+        "f": "F1",
+        "p": 3,
+        "s": "Cette spécialité dispose d‘une désignation",
+        "t": "Cette spécialité dispose d‘une désignation de médicament orphelin depuis février 2003",
+        "m": "rule",
+        "c": 0.95
+      }
+    ]
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19744_smrasmr_01",
+      "evaluation_id": "CT-19744",
+      "indication_precise": "Réduction de la concentration plasmatique toxique de méthotrexate chez adultes et enfants présentant une élimination retardée ou un risque de toxicité",
+      "smr": "La Commission considère que le service médical rendu par VORAXAZE (glucarpidase) est important dans l’indication de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que VORAXAZE (glucarpidase) apporte une amélioration du service médical rendu mineure (ASMR IV) dans la stratégie de prise en charge des toxicités liées au méthotrexate.",
+      "asmr_enum": "IV",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non_précisé",
+      "justification_decisionnelle": "SMR important justifié par la gravité de la toxicité rénale liée au MTX et la rapidité de réduction des concentrations plasmiques ; ASMR mineure due aux limites des études et tolérance difficile à évaluer.",
+      "population_cible_indication": "Adultes et enfants traités par MTX haute dose avec élimination retardée ou risque de toxicité",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": "Spécialités à base d’acide folinique",
+      "comparateur_id_HAS": [
+        "CT-19744_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Tous âges"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Faible",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 29,
+          "s": "la Commission considère que le service médical rendu",
+          "t": "Compte tenu de la gravité de la situation médicale, la Commission considère que le service médical rendu par VORAXAZE est important",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 30,
+          "s": "la Commission considère que VORAXAZE (glucarpidase)",
+          "t": "la Commission considère que VORAXAZE (glucarpidase) apporte une amélioration du service médical rendu mineure (ASMR IV)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19744_event_AMM_01",
+      "evaluation_id": "CT-19744",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-01-11",
+      "detail_brut": "Obtention de l'AMM européenne sous circonstances exceptionnelles",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 3,
+          "s": "AMM européenne obtenue le 11 janvier 2022",
+          "t": "AMM européenne obtenue le 11 janvier 2022 dans la réduction de la concentration plasmatique toxique du méthotrexate",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19744_event_ACCES_01",
+      "evaluation_id": "CT-19744",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2022-04-25",
+      "detail_brut": "Autorisation d'accès précoce post-AMM par la HAS",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 5,
+          "s": "autorisation d’accès précoce post-AMM a été octroyée",
+          "t": "Une autorisation d’accès précoce post-AMM a été octroyée par la HAS en date du 25 avril 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19744_event_CT_01",
+      "evaluation_id": "CT-19744",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-20",
+      "detail_brut": "Avis de la Commission de la Transparence favorable à inscription",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au remboursement",
+          "t": "Avis de la Commission de la Transparence du 20 juillet 2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19744",
+    "delai_amm_ct_jours": 190,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "clockstops_details": [],
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19744",
+    "is_orphan": true,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie_solide",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 5,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": 59.1,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Réduction cliniquement significative (CIR) des concentrations sériques de méthotrexate",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 18,
+    "voix_pour_pct": 72.2,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": []
+  },
+  "Relations": [
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19744_essai_PR001CLN001",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19744_essai_PR001CLN002",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19744_essai_PR001CLN003",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19744_essai_PR001CLN006",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "essai",
+      "tgt_id": "CT-19744_essai_PR001CLN016",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "trial",
+      "src_id": "CT-19744_essai_PR001CLN001",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19744_essai_PR001CLN001_crit_ReductionCliniqueMTX",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "trial",
+      "src_id": "CT-19744_essai_PR001CLN001",
+      "tgt_type": "critere",
+      "tgt_id": "CT-19744_essai_PR001CLN001_crit_RebondConcentrationMTX",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "trial",
+      "src_id": "CT-19744_essai_PR001CLN001",
+      "tgt_type": "tol",
+      "tgt_id": "CT-19744_essai_PR001CLN001_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "trial",
+      "src_id": "CT-19744_essai_PR001CLN001",
+      "tgt_type": "comp",
+      "tgt_id": "CT-19744_essai_PR001CLN001_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": {
+    "id": "CT-19744_Anno_01",
+    "text": "Avis complet Commission Transparence VORAXAZE glucarpidase réduction méthotrexate intoxication haute dose études tolérance efficacité place remboursement",
+    "meta": {
+      "doc_id": "CT-19744",
+      "source": "CT",
+      "template": "CT_modern",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "hierarchie": [
+        "SYNTHESE_DE_L_AVIS",
+        "ETUDES",
+        "Données_Contexte",
+        "PLACE_DANS_LA_STRATEGIE",
+        "CONCLUSIONS_DE_LA_COMMISSION"
+      ],
+      "page_start": 1,
+      "page_end": 30,
+      "split": "train",
+      "guidelines_version": "3.3.7"
+    },
+    "entities": [],
+    "relations": []
+  }
+}

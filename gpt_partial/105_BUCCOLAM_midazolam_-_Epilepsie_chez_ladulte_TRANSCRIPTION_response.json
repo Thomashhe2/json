@@ -1,0 +1,600 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-21257",
+  "evaluation_id": "CT-21257",
+  "extraction_date": "2025-09-02",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-09-02",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "Transcription_CT-21257_BUCCOLAM_audition.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 19
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT21257_seg_01",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription introduction et présentation",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 3500,
+      "heading_text": "Introduction BUCCOLAM 10mg - audition extension indication",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "TRANSCRIPTION"
+    },
+    {
+      "segment_id": "CT21257_seg_02",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Définition et enjeux des crises convulsives prolongées",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 7,
+      "char_start": 3501,
+      "char_end": 10500,
+      "heading_text": "Pharmacologie et enjeux cliniques des CCAP",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "TRANSCRIPTION"
+    },
+    {
+      "segment_id": "CT21257_seg_03",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Différences entre populations pédiatriques et adultes",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 10,
+      "char_start": 10501,
+      "char_end": 14500,
+      "heading_text": "Population cible et spécificités adultes",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "TRANSCRIPTION"
+    },
+    {
+      "segment_id": "CT21257_seg_04",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Utilisation pratique et problématiques en ambulatoire",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 12,
+      "char_start": 14501,
+      "char_end": 17500,
+      "heading_text": "Administration précoce et difficultés pratiques",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "TRANSCRIPTION"
+    },
+    {
+      "segment_id": "CT21257_seg_05",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Débats sur population cible et pharmacorésistance",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 13,
+      "page_end": 18,
+      "char_start": 17501,
+      "char_end": 25000,
+      "heading_text": "Restriction population / notion pharmacorésistance",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANSCRIPTION"
+    },
+    {
+      "segment_id": "CT21257_seg_06",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Votes département et conclusion audition",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 18,
+      "page_end": 19,
+      "char_start": 25001,
+      "char_end": 27000,
+      "heading_text": "Votes et conclusion finale",
+      "expected_fields": [
+        "Votes_Commission_Transcription",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "TRANSCRIPTION"
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "BUCCOLAM",
+      "dci": "midazolam (chlorhydrate de)",
+      "titulaire_amm": "NEURAXPHARM France",
+      "formes_pharmaceutiques": [
+        {
+          "forme_pharmaceutique": "solution buccale",
+          "dosage": "10 mg",
+          "segment_ids": [
+            "CT21257_seg_01",
+            "CT21257_seg_02",
+            "CT21257_seg_03"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "Commission",
+          "t": "BUCCOLAM 10 mg (TT des crises convulsives Adultes) (midazolam (chlorhydrate de)) – Audition – Extension d’indication",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 1,
+          "s": "NEURAXPH",
+          "t": "NEURAXPHARM France",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21257",
+      "Num_avis": "CT-21257",
+      "produit_nom": "BUCCOLAM",
+      "dci": "midazolam (chlorhydrate de)",
+      "type_avis": "Extension_indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "solution buccale",
+      "dosage": "10 mg",
+      "indication": "Traitement des crises convulsives aiguës prolongées (CCAP) chez l’adulte",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "épilepsie / CCAP",
+      "maladie_rare": false,
+      "ligne_traitement": "ambulatoire, urgence",
+      "besoin_medical_brut": "Le traitement des CCAP chez l’adulte n’est pas couvert par les options thérapeutiques actuelles.",
+      "besoin_medical_interprete": "Non_couvert",
+      "design_etude": "Données pharmacocinétiques extrapolées, revue bibliographique, études limitées",
+      "niveau_preuve_brut": "Non randomisées, extrapolation pédiatrie-adulte",
+      "niveau_preuve_interprete": "Niveau_5",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": true,
+      "historique_Has_produit": "AMM pédiatrique depuis 2011; extension d’indication adulte évaluée suite à demande",
+      "historique_ASMR_comparateurs": "Pas d’amélioration du service médical rendu démontrée vis-à-vis des benzodiazépines IV ou IM",
+      "concurrence_therapeutique_recente": "Absence de traitement buccal ambulatoire pour CCAP adultes",
+      "vote_unanimite": true,
+      "nb_votants": 18,
+      "nb_voix_pour": 18,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2025-09-02",
+      "gravite_patho": "Grave",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "evidence": [
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical",
+          "t": "Le besoin médical du traitement des CCAP chez l'adulte n'est donc pas couvert",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "niveau_preuve_interprete",
+          "f": "F1",
+          "p": 7,
+          "s": "études académiques randomisées",
+          "t": "extension d'AMM obtenue sur la base d'une modélisation pharmacocinétique",
+          "m": "manual",
+          "c": 0.9
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 19,
+          "s": "maintien à l'unanimité",
+          "t": "Vous étiez 18 votants et c'est un maintien à l'unanimité.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "EI_graves": "Non renseigné",
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "EI_graves_original": "Non renseigné",
+    "EI_frequents_original": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21257_arg_TRANS_01",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le traitement des crises convulsives aiguës prolongées chez l’adulte n’est pas couvert par les options actuelles, notamment en ambulatoire, ce qui constitue un besoin médical non couvert majeur.",
+      "extrait_textuel": "Le besoin médical du traitement des CCAP chez l'adulte n'est donc pas couvert, ce que la Commission de la transparence a reconnu, puisque le projet d'avis mentionne bien ce besoin d'une administration facilitée en ambulatoire.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Mme Bernal-Gallois",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Le besoin médical du traitement des CCAP chez l'adulte",
+          "t": "Le besoin médical du traitement des CCAP chez l'adulte n'est donc pas couvert",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_02",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Mitigé",
+      "description": "Le laboratoire propose de restreindre la population cible aux patients pharmacorésistants présentant des CCAP, mais cette restriction est contestée par plusieurs membres de la Commission.",
+      "extrait_textuel": "Mme PICKAERT a souligné que l'argumentaire tournait autour de la restriction aux sous-populations, alors que plusieurs membres, notamment Dr Trinh Duc, contestent l'idée de limiter aux pharmacorésistants.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Mme Pickaert",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 12,
+          "s": "Mme PICKAERT a souligné que l'argumentaire tournait autour",
+          "t": "Mme PICKAERT a souligné que l'argumentaire tournait autour de cela, en disant « oui, mais on ne le fera pas pour tout le monde. Et la question ou le commentaire d'Albert a mis le doigt dessus »",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_03",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "description": "Les benzodiazépines intraveineuses ou intramusculaires sont les traitements disponibles chez l’adulte mais leur administration en ambulatoire est problématique, rendant l’extension d’indication du midazolam buccal intéressante.",
+      "extrait_textuel": "Aujourd'hui chez l'adulte, on n’a, en traitement disponible de benzodiazépines, que des formulations IV ou IM qui nécessitent la présence d'un professionnel de santé spécifiquement formé, souvent hospitalier.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Mme Tyvaert",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Aujourd'hui chez l'adulte, on n’a, en traitement disponible",
+          "t": "Aujourd'hui chez l'adulte, on n’a, en traitement disponible de benzodiazépines, que des formulations IV ou IM. Ce sont des formulations qui ne sont pas possibles d'administration en ambulatoire, notamment, par l'entourage.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_04",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Neutre",
+      "description": "Aucune donnée spécifique de tolérance nouvelle n’a été présentée en extension d’indication adulte, l’expérience reste essentiellement pédiatrique.",
+      "extrait_textuel": "Dans le dossier d'extension, les données chez l'adulte étaient basées sur revue bibliographique et modélisation pharmacocinétique, sans données cliniques directes robustes.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": null,
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "extension d'AMM obtenue sur la base d'une étude de modélisation",
+          "t": "extension d'AMM a finalement été obtenue sur la base d'une étude de modélisation pharmacocinétique chez l'adulte",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_05",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "L'absence d'études cliniques randomisées chez l’adulte cause une incertitude sur l’efficacité et la posologie spécifique en population adulte.",
+      "extrait_textuel": "Il aurait été difficile de réaliser des études académique randomisées en double aveugle chez l'adulte, notamment en ambulatoire, rendant l'extrapolation nécessaire mais incertaine.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Mme Bernal-Gallois",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "il aurait été difficile de réaliser des études académiques randomisées",
+          "t": "il aurait été difficile de réaliser des études académiques randomisées en double aveugle, car en ambulatoire l'administration d'un comparateur injectable ou placebo serait problématique",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_06",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison_alternatives",
+      "direction_argument": "Neutre",
+      "description": "Il n’existe pas d’étude démontrant une supériorité de BUCCOLAM par rapport aux benzodiazépines injectables, bien que la voie buccale permette une administration plus rapide.",
+      "extrait_textuel": "Il n'y a pas d'études pour démontrer que BUCCOLAM est plus rapide ou plus efficace que les diazépam ou clonazépam injectables en urgence chez l'adulte.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "M. le Pr COCHAT / Dr TRINH DUC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 14,
+          "s": "On n'a pas de démonstration en termes de comparaison",
+          "t": "On n'a pas d'études pour démontrer que l'on est plus rapide et plus efficace avec le Buccolam qu'on pourrait l'être avec le diazépam ou le clonazépam",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_07",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Défavorable",
+      "description": "La définition de pharmacorésistance proposée est contestée par plusieurs membres qui estiment que tous les patients épileptiques peuvent bénéficier du traitement lors d’une crise prolongée.",
+      "extrait_textuel": "Plusieurs membres ont contesté l'idée de restreindre la population cible aux seuls patients pharmacorésistants car le traitement est utile dès la crise prolongée.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Dr TRINH DUC",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 13,
+          "s": "Plusieurs membres ont contesté l'idée de restreindre la population",
+          "t": "Plusieurs membres ont contesté l'idée de restreindre la population cible aux seuls patients pharmacorésistants",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_08",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "La rapidité d’administration en ambulatoire pourrait réduire la perte de chance liée au délai d’arrivée des secours, un bénéfice reconnu malgré les difficultés pratiques.",
+      "extrait_textuel": "L'argument \"time is brain\" souligne l'importance d'administrer rapidement les benzodiazépines en dehors de l'hôpital pour éviter la perte de chance.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "M. le Dr FACON",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 16,
+          "s": "le \"time is brain\" souligne l'importance",
+          "t": "L'argument \"time is brain\" souligne l'importance d'administrer rapidement les benzodiazépines en dehors de l'hôpital pour éviter la perte de chance",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21257_arg_TRANS_09",
+      "evaluation_id": "CT-21257",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "La Commission a voté à l'unanimité pour le maintien de l'ASMR V et de la population cible sans restriction, indiquant un consensus favorable sur l’évaluation globale.",
+      "extrait_textuel": "Vous étiez 18 votants et c'est un maintien à l'unanimité.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Président COCHAT",
+      "moment_debat": "Votes_comission",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 19,
+          "s": "maintien à l'unanimité",
+          "t": "Vous étiez 18 votants et c'est un maintien à l'unanimité.",
+          "m": "manual",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21257_ctx",
+    "evaluation_id": "CT-21257",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": false,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "2025-09-02",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21257",
+    "texte_brut": "Transcription complète BUCCOLAM 10mg - audition extension indication 02/09/2025 ...",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21257_smrasmr_01",
+      "evaluation_id": "CT-21257",
+      "indication_precise": "Traitement des crises convulsives aiguës prolongées chez l’adulte",
+      "smr": "La Commission considère que le service médical rendu est modéré dans cette indication en raison du besoin non couvert et des données limitées.",
+      "smr_enum": "Modéré",
+      "asmr": "La Commission considère qu'il n'y a pas d'amélioration du service médical rendu (ASMR V) du fait de l'absence de données démontrant une supériorité clinique.",
+      "asmr_enum": "V",
+      "smr_revendique": "Modéré",
+      "asmr_revendique": "V",
+      "justification_decisionnelle": "La Commission a tenu compte du besoin non couvert pour le traitement ambulatoire des CCAP adultes, mais souligne l’absence d’études cliniques robustes et les limitations liées à l’extrapolation des données pédiatriques.",
+      "population_cible_indication": "Adultes atteints de crises convulsives aiguës prolongées, population restreinte aux patients présentant un risque élevé de CCAP",
+      "ligne_traitement_indication": "Traitement ambulatoire d’urgence",
+      "comparateurs_references_indication": [
+        "benzodiazépines IV et IM",
+        "clonazépam injectable",
+        "diazépam injectable"
+      ],
+      "comparateur_id_HAS": [],
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Faible",
+      "asmr_revendique_enum": "V",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "service médical rendu est modéré",
+          "t": "La Commission considère que le service médical rendu est modéré dans cette indication",
+          "m": "manual",
+          "c": 0.96
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "pas d'amélioration du service médical rendu (ASMR V)",
+          "t": "La Commission considère qu'il n'y a pas d'amélioration du service médical rendu (ASMR V)",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21257",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {},
+  "Relations": [],
+  "Annotation_View": {}
+}

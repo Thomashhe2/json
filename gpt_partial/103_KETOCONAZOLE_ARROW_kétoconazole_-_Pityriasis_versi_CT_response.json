@@ -1,0 +1,756 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-21392",
+  "evaluation_id": "CT-21392",
+  "extraction_date": "2025-08-27",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-08-27",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-21392_HASKETOCONAZOLEARROW.pdf",
+        "type": "CT",
+        "page_count": 6
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT21392_s_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l’avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Synthèse de l’avis",
+      "expected_fields": [],
+      "routing_hint": "SYNTHESE",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT21392_s_02",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et motif",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": 1501,
+      "char_end": 3000,
+      "heading_text": "Contexte et motif d’évaluation",
+      "expected_fields": [],
+      "routing_hint": "ADMIN",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT21392_s_03",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": 3001,
+      "char_end": 6000,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [],
+      "routing_hint": "COMPARATEURS",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT21392_s_04",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu (SMR)",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 6001,
+      "char_end": 8000,
+      "heading_text": "Service médical rendu",
+      "expected_fields": [],
+      "routing_hint": "SMR",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT21392_s_05",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu (ASMR)",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "char_start": 8001,
+      "char_end": 8500,
+      "heading_text": "Amélioration du service médical rendu",
+      "expected_fields": [],
+      "routing_hint": "ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT21392_s_06",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "char_start": 8501,
+      "char_end": 9000,
+      "heading_text": "Place dans la stratégie",
+      "expected_fields": [],
+      "routing_hint": "PLACE",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "KETOCONAZOLE ARROW",
+      "dci": "kétoconazole",
+      "titulaire_amm": "ARROW GENERIQUES",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "gel en sachet-dose",
+          "forme_pharma_enum": "Gel_topique",
+          "dosage_concentration": "2 %",
+          "code_cip13": "34009 383 658 4 9"
+        },
+        {
+          "forme_pharmaceutique": "gel en sachet-dose",
+          "forme_pharma_enum": "Gel_topique",
+          "dosage_concentration": "2 %",
+          "code_cip13": "34009 383 659 0 0"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "HAS • KETO",
+          "t": "HAS • KETOCONAZOLE ARROW 2 %, gel en sachet-dose • août 2025",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis sur les",
+          "t": "Avis sur les médicaments kétoconazole KETOCONAZOLE ARROW 2 %",
+          "m": "rule",
+          "c": 0.9
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 2,
+          "s": "Le laboratoire",
+          "t": "Le laboratoire ARROW GENERIQUES sollicite l’inscription",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "dosage_concentration",
+          "f": "F1",
+          "p": 2,
+          "s": "2 %, gel en",
+          "t": "KETOCONAZOLE ARROW 2 % (kétoconazole), gel en sachet-dose",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21392",
+      "Num_avis": "CT-21392",
+      "produit_nom": "KETOCONAZOLE ARROW 2 %, gel en sachet-dose",
+      "dci": "kétoconazole",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "gel en sachet-dose",
+      "dosage": "2 %",
+      "indication": "Traitement du Pityriasis versicolor chez l’adulte et l’adolescent à partir de 12 ans",
+      "classe_ATC": "D01AC08",
+      "pathologie": "Pityriasis versicolor",
+      "maladie_rare": false,
+      "ligne_traitement": "Première intention",
+      "ligne_traitement_enum": "1L",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Dermatologie",
+      "aire_therapeutique_niveau_2": "Antifongiques topiques",
+      "aire_therapeutique_niveau_3": "Traitement du Pityriasis versicolor",
+      "source_aire_therapeutique": "Texte avis page 2",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le Pityriasis versicolor est une affection fréquente et sans caractère de gravité qui n’induit pas de dégradation marquée de la qualité de vie.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "gravite_patho": "Affection fréquente et bénigne sans dégradation majeure qualité de vie",
+      "gravite_patho_enum": [
+        "Faible"
+      ],
+      "type_population_cible": "Adultes et adolescents à partir de 12 ans",
+      "pertinence_concurrence_therapeutique": "Nombreux traitements antifongiques locaux avec AMM dans cette indication",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Extension d’indication pour KETOCONAZOLE ARROW 2 % gel en sachet-dose dans Pityriasis versicolor, AMM abrogée pour spécialité princeps en récipient unidose depuis 2017.",
+      "historique_ASMR_comparateurs": "SMR modéré accordé au princeps KETODERM 2 %, gel en récipient unidose (avis renouvellement 2015).",
+      "concurrence_therapeutique_recente": "Plusieurs antifongiques locaux avec AMM renouvelées récemment dans cette indication.",
+      "vote_unanimite": true,
+      "nb_votants": 18,
+      "nb_voix_pour": 18,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2025-08-27",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [
+        "Avis favorable au remboursement dans le traitement du Pityriasis versicolor chez l’adulte et l’adolescent à partir de 12 ans.",
+        "Pas de progrès de KETOCONAZOLE ARROW 2 % (kétoconazole), gel en sachet-dose, par rapport à la présentation gel en récipient unidose.",
+        "Population cible estimée inchangée par rapport à la présentation en récipient unidose.",
+        "Taux de remboursement proposé : 30 %.",
+        "Conditionnement en boîte de 4 sachets-dose adapté, boîte de 8 sachets non adapté à posologie AMM."
+      ],
+      "smr": "La Commission considère que le service médical rendu par KETOCONAZOLE ARROW 2 % (kétoconazole), gel en sachet-dose, est modéré dans l’indication de l’AMM.",
+      "smr_enum": "Modéré",
+      "asmr": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport au gel en récipient unidose.",
+      "asmr_enum": "V",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis sur les",
+          "t": "Inscription : Extension d'indication",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "Le Pityriasis versicolor",
+          "t": "Le Pityriasis versicolor est une affection fréquente et sans caractère de gravité qui n’induit pas de dégradation marquée de la qualité de vie.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 5,
+          "s": "Le Pityriasis versicolor",
+          "t": "Le Pityriasis versicolor est une affection fréquente et sans caractère de gravité qui n’induit pas de dégradation marquée de la qualité de vie.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "gravite_patho_enum",
+          "f": "F1",
+          "p": 5,
+          "s": "affection fréquente et sans caractère",
+          "t": "Le Pityriasis versicolor est une affection fréquente et sans caractère de gravité qui n’induit pas de dégradation marquée de la qualité de vie.",
+          "m": "rule",
+          "c": 0.85
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 5,
+          "s": "Le Pityriasis versicolor",
+          "t": "Le Pityriasis versicolor est une affection fréquente et sans caractère de gravité qui n’induit pas de dégradation marquée de la qualité de vie.",
+          "m": "rule",
+          "c": 0.85
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission considère",
+          "t": "La Commission considère que le service médical rendu par KETOCONAZOLE ARROW 2 % (kétoconazole), gel en sachet-dose, est modéré dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "Cette spécialité n’apporte pas",
+          "t": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à KETOCONAZOLE ARROW 2 % (kétoconazole), gel en récipient unidose.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 6,
+          "s": "avis favorable à l'inscription",
+          "t": "La Commission donne un avis favorable à l'inscription sur la liste des spécialités remboursables ...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_votants",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission donne un avis favorable",
+          "t": "La Commission a voté à l'unanimité avec 18 votants.",
+          "m": "rule",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "CT-21392_tol_01",
+    "evaluation_id": "CT-21392",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "EI_graves": "Non renseigné",
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "sae_data_available": false,
+    "sae_superieur_comparateur": false,
+    "deaths_reported": false,
+    "ei_grade_max": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21392_compHAS_01",
+      "evaluation_id": "CT-21392",
+      "nom_comparateur_HAS": "KETOCONAZOLE ARROW 2 %, gel en récipient unidose",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "KETOCONAZOLE ARROW 2 % gel en récipient unidose",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Comparateurs cl",
+          "t": "Le comparateur pertinent est KETOCONAZOLE ARROW (kétoconazole), gel en récipient unidose",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21392_compHAS_02",
+      "evaluation_id": "CT-21392",
+      "nom_comparateur_HAS": "Autres antifongiques locaux",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Autres antifongiques locaux disposant d’AMM dans le Pityriasis versicolor",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "La liste des",
+          "t": "Les spécialités d’antifongiques locaux disposant d’une AMM dans cette indication sont nombreuses",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21392_arg_CT_01",
+      "evaluation_id": "CT-21392",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Avis favorable au remboursement de KETOCONAZOLE ARROW 2 % gel en sachet-dose pour le traitement du Pityriasis versicolor chez l’adulte et l’adolescent à partir de 12 ans.",
+      "extrait_textuel": "Avis favorable au remboursement dans le traitement du Pityriasis versicolor chez l’adulte et l’adolescent à partir de 12 ans.",
+      "page_source": "Page 1",
+      "section_source": "Synthèse de l’avis",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au",
+          "t": "Avis favorable au remboursement dans le traitement du Pityriasis versicolor chez l’adulte et l’adolescent à partir de 12 ans.",
+          "m": "rule",
+          "c": 0.98
+        }
+      ],
+      "impact_decision": "Contributeur_majeur",
+      "intervenant": null,
+      "moment_debat": null
+    },
+    {
+      "argument_id": "CT-21392_arg_CT_02",
+      "evaluation_id": "CT-21392",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Le service médical rendu par KETOCONAZOLE ARROW 2 % gel en sachet-dose est modéré dans l’indication de l’AMM, sans amélioration du service médical rendu (ASMR V) par rapport au gel en récipient unidose.",
+      "extrait_textuel": "La Commission considère que le service médical rendu par KETOCONAZOLE ARROW 2 %, gel en sachet-dose, est modéré dans l’indication de l’AMM. Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport au gel en récipient unidose.",
+      "page_source": "Page 5-6",
+      "section_source": "Conclusions de la Commission de la Transparence",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission considère",
+          "t": "La Commission considère que le service médical rendu par KETOCONAZOLE ARROW 2 %, gel en sachet-dose, est modéré dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Cette spécialité n’apporte",
+          "t": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à KETOCONAZOLE ARROW 2 % (kétoconazole), gel en récipient unidose.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "impact_decision": "Contributeur_majeur",
+      "intervenant": null,
+      "moment_debat": null
+    },
+    {
+      "argument_id": "CT-21392_arg_CT_03",
+      "evaluation_id": "CT-21392",
+      "source_argument": "CT",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "La population cible n’est pas modifiée par l’introduction de la présentation en sachet-dose, estimée à un maximum de 400 000 patients traités pour le Pityriasis versicolor en 2023.",
+      "extrait_textuel": "L’introduction de KETOCONAZOLE ARROW 2 %, gel en sachet-dose, n’est pas de nature à modifier la population cible déjà estimée ... environ 400 000 patients.",
+      "page_source": "Page 6",
+      "section_source": "Population cible",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "population cible déjà estimée par",
+          "t": "L’introduction de KETOCONAZOLE ARROW 2 %, gel en sachet-dose, n’est pas de nature à modifier la population cible déjà estimée par la Commission ... maximum de 400 000 patients.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "impact_decision": "Contributeur",
+      "intervenant": null,
+      "moment_debat": null
+    },
+    {
+      "argument_id": "CT-21392_arg_CT_04",
+      "evaluation_id": "CT-21392",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Le gel en sachet-dose est un médicament à visée curative avec une posologie en prise unique adaptée pour le Pityriasis versicolor, sans progrès clinique par rapport à la forme en récipient unidose.",
+      "extrait_textuel": "La posologie du kétoconazole dans cette indication est en prise unique, soit un tube de 20 g ou 4 sachets de 6 g. Pas de progrès de KETOCONAZOLE ARROW 2 % gel en sachet-dose par rapport au gel en récipient unidose.",
+      "page_source": "Page 2-3",
+      "section_source": "Contexte et motif d’évaluation",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "La posologie du kétoconazole",
+          "t": "La posologie du kétoconazole dans cette indication est en prise unique, soit un tube de 20 g ... ou 4 sachets ...",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "Pas de progrès de KETOCONAZOLE",
+          "t": "Pas de progrès de KETOCONAZOLE ARROW 2 % (kétoconazole), gel en sachet-dose par rapport à KETOCONAZOLE ARROW en récipient unidose.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "impact_decision": "Mentionné",
+      "intervenant": null,
+      "moment_debat": null
+    },
+    {
+      "argument_id": "CT-21392_arg_CT_05",
+      "evaluation_id": "CT-21392",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Le conditionnement en boîte de 8 sachets-dose n’est pas adapté à la posologie du traitement du Pityriasis versicolor selon l’AMM (prise unique de 4 sachets).",
+      "extrait_textuel": "Le conditionnement en boîte de 8 sachets-dose n’est pas adapté pour le traitement du Pityriasis versicolor selon la posologie indiquée dans l’AMM (contenu 4 sachets en une prise unique).",
+      "page_source": "Page 6",
+      "section_source": "Autres recommandations de la Commission",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Le conditionnement en boîte",
+          "t": "Le conditionnement en boîte de 8 sachets-dose n’est pas adapté pour le traitement ... posologie indiquée dans l’AMM.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ],
+      "impact_decision": "Contributeur",
+      "intervenant": null,
+      "moment_debat": null
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21392_ctx",
+    "evaluation_id": "CT-21392",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "2008-02-08",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "population_cible_france": "Adultes et adolescents à partir de 12 ans nécessitant un traitement par kétoconazole 2 % gel en récipient unidose pour Pityriasis versicolor, estimée à environ 400 000 patients en 2023.",
+    "population_cible_nombre": 399635,
+    "population_cible_intervalle": [
+      [
+        399000,
+        400000
+      ]
+    ],
+    "source_estimation_population": "Données de remboursement base AMELI",
+    "incertitude_population": "Faible",
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21392",
+    "texte_brut": "KETOCONAZOLE ARROW 2 %, gel en sachet-dose, extension d’indication dans pityriasis versicolor. Avis favorable au remboursement avec SMR modéré et ASMR V. Population cible estimée à environ 400 000 patients. Pas de progrès par rapport à la forme en récipient unidose. Conditionnements adaptés à la posologie 4 sachets en prise unique. Liste des comparateurs valide. Commission accepte le remboursement à 30%.",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21392_smrasmr_01",
+      "evaluation_id": "CT-21392",
+      "indication_precise": "Traitement du Pityriasis versicolor chez l’adulte et l’adolescent à partir de 12 ans",
+      "smr": "La Commission considère que le service médical rendu par KETOCONAZOLE ARROW 2 % gel en sachet-dose est modéré dans l’indication de l’AMM.",
+      "smr_enum": "Modéré",
+      "asmr": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport à KETOCONAZOLE ARROW 2 % gel en récipient unidose.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Avis favorable à l’inscription. Pas de progrès clinique démontré. Population cible inchangée. Conditionnement adapté en boîte de 4 sachets. Taux remboursement 30%.",
+      "population_cible_indication": "Adultes et adolescents à partir de 12 ans",
+      "ligne_traitement_indication": "1L",
+      "comparateurs_references_indication": [
+        "KETOCONAZOLE ARROW 2 % gel en récipient unidose",
+        "Autres antifongiques locaux ayant AMM dans cette indication"
+      ],
+      "comparateur_id_HAS": [
+        "CT-21392_compHAS_01",
+        "CT-21392_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "≥12 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu par KETOCONAZOLE ARROW 2 %, gel en sachet-dose, est modéré dans l’indication de l’AMM.",
+          "m": "rule",
+          "c": 0.97
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "Cette spécialité",
+          "t": "Cette spécialité n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport au gel en récipient unidose.",
+          "m": "rule",
+          "c": 0.97
+        }
+      ],
+      "asmr_revendique_enum": "Non_renseigné"
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-21392_event_AMM_01",
+      "evaluation_id": "CT-21392",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2008-02-08",
+      "detail_brut": "Date initiale Autorisation de Mise sur le Marché (procédure nationale).",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_AMM_ema",
+          "f": "F1",
+          "p": 2,
+          "s": "Date initiale",
+          "t": "Date initiale (procédure nationale) : 08/02/2008",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21392_event_CT_01",
+      "evaluation_id": "CT-21392",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2025-08-27",
+      "detail_brut": "Date d’examen et d’adoption par la Commission de la transparence.",
+      "source_doc": "F1",
+      "evidence": [
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 6,
+          "s": "Date d’examen",
+          "t": "Date d’examen et d’adoption : 27 août 2025",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21392",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-21392",
+    "is_orphan": false,
+    "classe_ATC_l2": "Antifongiques",
+    "aire_therapeutique": "Dermatologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": true,
+    "nb_votants": 18,
+    "voix_pour_pct": 100.0,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

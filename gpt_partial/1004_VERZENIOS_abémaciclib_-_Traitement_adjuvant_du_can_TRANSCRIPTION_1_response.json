@@ -1,0 +1,906 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19830_TRANSCRIPTION_VERZENIOS.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 12
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT19830_seg_001",
+      "section_label_normalise": "TRANSCRIPTION_SEANCE",
+      "section_label_brut": "Transcription séance Commission de la Transparence",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 25000,
+      "heading_text": "Transcription audition VERZENIOS",
+      "expected_fields": [
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Arguments_Decisionnels",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "VERZENIOS",
+      "dci": "abemaciclib",
+      "titulaire_amm": "Lilly France",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "comprimé",
+          "forme_pharma_enum": "Non renseigné",
+          "dosage_concentration": "50 - 100 - 150 mg",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 3,
+          "s": "VERZENIOS 50 - 100",
+          "t": "VERZENIOS 50 - 100 - 150 mg (CT-19830) – Audition – Extension d'indication",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 4,
+          "s": "Il s'agit de l'abemaciclib, un inhibiteur des CDK4/6",
+          "t": "Il s'agit de l'abemaciclib, un inhibiteur des CDK4/6",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 3,
+          "s": "On fait entrer le laboratoire",
+          "t": "Monsieur Mouredia est responsable de l'accès au marché de VERZENIOS chez Lilly France",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19830",
+      "Num_avis": "CT-19830",
+      "produit_nom": "VERZENIOS",
+      "dci": "abemaciclib",
+      "type_avis": "Extension d'indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "comprimé",
+      "dosage": "50 - 100 - 150 mg",
+      "indication": "Traitement adjuvant du cancer du sein précoce RH positif, HER2 négatif, avec atteintes ganglionnaires et haut risque de rechute",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Cancer du sein précoce RH+/HER2- à haut risque",
+      "maladie_rare": false,
+      "ligne_traitement": "Adjuvant",
+      "ligne_traitement_enum": "Adjuvant",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Cancer du sein",
+      "aire_therapeutique_niveau_3": "Traitement adjuvant cancer sein RH+/HER2-",
+      "source_aire_therapeutique": "Déduit pathologie",
+      "design_etude": "Étude MonarchE, phase III randomisée, ouverte",
+      "niveau_preuve_brut": "Phase III randomisée en ouvert",
+      "niveau_preuve_interprete": "Niveau_1",
+      "besoin_medical_brut": "Population à haut risque de rechute avec pronostic très défavorable, besoins non entièrement couverts",
+      "besoin_medical_interprete": "Non_couvert",
+      "gravite_patho": "Grave",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Femmes adultes avec cancer du sein précoce RH+/HER2- à haut risque de rechute",
+      "pertinence_concurrence_therapeutique": "Traitement adjuvant sans alternative thérapeutique ciblée équivalente disponible",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Récepteurs hormonaux positifs",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Présent en traitement métastatique RH+/HER2-, nouvelle extension pour traitement adjuvant à haut risque",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": 20,
+      "nb_voix_pour": 19,
+      "nb_voix_contre": 1,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-09-14",
+      "transcription_textuelle": "Transcription complète audition VERZENIOS - HAS CT 14 septembre 2022",
+      "extraits_arguments": [
+        "Le laboratoire et les experts défendent une place innovante et importante dans le traitement adjuvant pour patientes à haut risque",
+        "L'effet principal est basé sur l'étude MonarchE avec un critère principal la survie sans maladie invasive (IDFS)",
+        "La taille d'effet sur la survie sans récidive est statistiquement significative mais cliniquement faible",
+        "Des effets indésirables gastro-intestinaux et thromboemboliques sont observés mais maîtrisables",
+        "Des débats ont eu lieu sur la pertinence de la différenciation entre les inhibiteurs CDK4/6",
+        "La question de la progression en fonction du temps de l'effet du traitement a été discutée avec des avis divergents",
+        "Le vote a été favorable au maintien de l'avis avec une voix contre"
+      ],
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Commission",
+          "t": "VERZENIOS 50 - 100 - 150 mg (CT-19830) – Audition – Extension d'indication",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 14 septembre 2022",
+          "t": "Mercredi 14 septembre 2022",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "dose",
+          "f": "F1",
+          "p": 3,
+          "s": "abemaciclib, un inhibiteur des CDK4/6, qui",
+          "t": "comprimé deux fois par jour pour une durée de deux ans",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "essai_nom": "MonarchE",
+      "nct_number": "Non renseigné",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "population_cible": "Patientes atteintes de cancer du sein précoce RH+/HER2- à haut risque de rechute, avec atteintes ganglionnaires",
+      "comparateur_utilise": "Hormonothérapie standard seule",
+      "comparateur_type_enum": "Hormonotherapie",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Supériorité de l’abemaciclib en association avec hormonothérapie sur la survie sans récidive",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 27,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 24,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Adjuvant",
+      "nb_patients_inclus": "5 637 patientes",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "le dossier repose principalement sur les résultats de",
+          "t": "Le dossier repose principalement sur les résultats de l'étude MonarchE, phase III randomisée en ouvert",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patients_inclus",
+          "f": "F1",
+          "p": 3,
+          "s": "étude chez 5 637 patientes",
+          "t": "étude réalisée chez 5 637 patientes",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "duree_traitement_moyenne_mois",
+          "f": "F1",
+          "p": 6,
+          "s": "abemaciclib, qui avait été donné pendant 24 mois",
+          "t": "abemaciclib, donné pendant 24 mois",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_IDFS",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "nom_critere": "Survie sans maladie invasive (IDFS)",
+      "type_critere_enum": "Intermédiaire",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Pourcentage de survie sans récidive",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Facteurs pronostics définis dans MonarchE"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "92,2 % à 2 ans",
+      "valeur_groupe_comparateur": "88,7 % à 2 ans",
+      "gain_absolu": "3,5 points à deux ans (analyse Kaplan-Meier)",
+      "gain_absolu_num": 3.5,
+      "gain_relatif": "Réduction relative du risque de rechute de 25 à 30%",
+      "gain_relatif_num": 27.5,
+      "HR_RR_OR": "HR=0,68 (estimé prolongé)",
+      "HR_RR_OR_num": 0.68,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Statistiquement significative",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "maturite_donnees": "Intermédiaires",
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "La commission reconnait un bénéfice statistiquement significatif sur la survie sans récidive mais avec une taille d'effet faible, non substitutif de la survie globale.",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 4,
+          "s": "principaux étant d'évaluer la supériorité",
+          "t": "critère principal était d'évaluer la supériorité de l’abemaciclib en association ... par rapport à l’hormonothérapie seule",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 6,
+          "s": "taux d'IDFS de 92,2 %",
+          "t": "taux d'IDFS de 92,2 % dans le groupe abemaciclib",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "valeur_groupe_comparateur",
+          "f": "F1",
+          "p": 6,
+          "s": "88,7 % dans le groupe hormonothérapie seule",
+          "t": "88,7 % dans le groupe hormonothérapie seule",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "gain_absolu",
+          "f": "F1",
+          "p": 6,
+          "s": "delta à deux ans de 3,5 points",
+          "t": "delta à deux ans de 3,5 points",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "gain_relatif",
+          "f": "F1",
+          "p": 5,
+          "s": "réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+          "t": "réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "significativite_statistique",
+          "f": "F1",
+          "p": 4,
+          "s": "taille d'effet considérée comme faible, bien que statistiquement significative",
+          "t": "taille d'effet considérée comme faible, bien que statistiquement significative",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19830_essai_MonarchE_tol",
+      "evaluation_id": "CT-19830",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "EI_graves": "Profil tolérance marqué troubles gastro-intestinaux, évènements thromboemboliques, infections, diarrhée gérée efficacement",
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Troubles gastro-intestinaux",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves",
+              "f": "F1",
+              "p": 4,
+              "s": "profil de tolérance marqué par des troubles gastro-intestinaux",
+              "t": "profil de tolérance marqué par des troubles gastro-intestinaux",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Évènements thromboemboliques",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves",
+              "f": "F1",
+              "p": 4,
+              "s": "profil de tolérance marqué par ... des évènements thromboemboliques",
+              "t": "profil de tolérance marqué par des évènements thromboemboliques",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Infections",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves",
+              "f": "F1",
+              "p": 4,
+              "s": "profil de tolérance marqué par ... des infections",
+              "t": "profil de tolérance marqué par des infections",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 7,
+              "s": "toxicité digestive qui est la diarrhée, qui est directement l'inhibition",
+              "t": "toxicité digestive qui est la diarrhée, qui est directement l'inhibition de la cycline 9",
+              "m": "manual",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_frequents": "Diarrhée, toxicité digestive début précoce et transitoire",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 4,
+          "s": "profils de tolérance",
+          "t": "profil de tolérance marqué par des troubles gastro-intestinaux, des évènements thromboemboliques et des infections",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19830_essai_MonarchE_comp_01",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "nom_comparateur": "Hormonothérapie standard seule",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_enum": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 3,
+          "s": "par rapport à l’hormonothérapie standard seule",
+          "t": "comparaison avec l’hormonothérapie standard seule",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_TRANS_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "L'étude MonarchE démontre une réduction relative du risque de rechute d'environ 25-30% et une amélioration de la survie sans maladie invasive chez les patientes à haut risque.",
+      "extrait_textuel": "L'étude MonarchE démontre qu'effectivement, il y a une réduction relative du risque de rechute de l'ordre de 25 à 30 %, qui est important, qui s'accroît avec le temps, et qui perdure même à l'arrêt de abemaciclib",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Monsieur Campone",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "L'étude MonarchE démontre qu'effectivement",
+          "t": "L'étude MonarchE démontre qu'effectivement, il y a une réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Neutre",
+      "description": "Le profil de tolérance est marqué par des troubles digestifs précoces, principalement diarrhée, qui est maîtrisable avec un suivi médical proactif ; toxicité hématologique est moindre que pour d'autres CDK4/6.",
+      "extrait_textuel": "La diarrhée est un évènement précoce, réversible, qui s'estompe et qui se gère facilement avec un management proactif",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Monsieur Campone",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Une toxicité digestive qui est la diarrhée",
+          "t": "Une toxicité digestive qui est la diarrhée, qui est un évènement précoce, réversible",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "VERZENIOS a une place dans la stratégie thérapeutique adjuvante pour patientes haut risque RH+/HER2- en association avec hormonothérapie standard, après chimiothérapie.",
+      "extrait_textuel": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique en première intention, en association avec une hormonothérapie standard dans le traitement adjuvant des patientes à haut risque.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Monsieur Mouredia",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Nous considérons que VERZENIOS a une place dans la stratégie",
+          "t": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique en première intention, en association avec une hormonothérapie standard",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Mitigé",
+      "description": "La taille d'effet observée est statistiquement significative mais faible; les données issues de cohortes fusionnées soulèvent des questions sur l'hétérogénéité et maturité des données.",
+      "extrait_textuel": "La commission a conclu à un SMR insuffisant, en raison notamment de la démonstration de la supériorité... mais avec une taille d'effet considérée comme faible, bien que statistiquement significative",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Monsieur Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "la commission a conclu à un SMR insuffisant",
+          "t": "la commission a conclu à un SMR insuffisant en raison notamment de la taille d'effet faible",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Population à haut risque de rechute avec presque 50% des patientes rechutant dans les dix ans, nécessitant une amélioration du traitement adjuvant actuel.",
+      "extrait_textuel": "La rechute survient essentiellement les deux premières années... 50 % rechuteront dans les dix premières années, dans 70 % des cas en situation métastatique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Monsieur Campone",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "50 % rechuteront dans les dix premières années",
+          "t": "50 % rechuteront dans les dix premières années, dans 70 % des cas, en situation métastatique",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Méthodologique",
+      "direction_argument": "Neutre",
+      "description": "Discussion sur la non violation de l'hypothèse de proportionnalité des risques et la possible augmentation numérique de l'effet sur le temps sans preuve statistique formelle.",
+      "extrait_textuel": "Le test pour la sanction de proportionnalité des hasard, pour l’instant, il n'est pas concluant... on conclut que l'effet est maintenu.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Madame André",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Le test pour la sanction de proportionnalité",
+          "t": "Le test pour la sanction de proportionnalité des hasard, pour l’instant, il n'est pas concluant",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_07",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Critique sur la non démonstration statistique d'une augmentation d'effet dans le temps et sur la présentation d'estimations ponctuelles sans intervalles de confiance.",
+      "extrait_textuel": "Estimation ponctuelle sans intervalle de confiance n'est pas informative; absence de preuve statistique d'augmentation d'effet dans le temps.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Sylvie Chevert",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Je pense que le respect des hypothèses d'un modèle",
+          "t": "Le respect des hypothèses d'un modèle est important, absence de test proportionnalité des risques problématique",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_08",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Mitigé",
+      "description": "Débat sur la pertinence clinique de l'amélioration en survie sans maladie invasive comme sur la survie globale ou la trajectoire de soins, avec point positif sur la modification de l’histoire naturelle des patientes à haut risque.",
+      "extrait_textuel": "Quand les courbes de patientes à haut risque rejoignent celles à faible risque, c'est un argument important montrant une modification de l’histoire naturelle.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Monsieur Campone",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "quand ces deux courbes se rapprochent",
+          "t": "Quand ces deux courbes se rapprochent, cela vous donne des raisons suffisantes pour vous dire que ce médicament a vraiment amélioré et modifié l'histoire naturelle",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_09",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Vote",
+      "direction_argument": "Favorable",
+      "description": "La commission a procédé à un vote à main levée, avec 19 voix pour et 1 contre, pour le maintien de l'avis sur VERZENIOS dans l'extension d'indication.",
+      "extrait_textuel": "C’était 19 pour, 1 contre. Maintien à l’unanimité",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pierre Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "C’était 19 pour, 1 contre. Maintien à l’unanimité",
+          "t": "C’était 19 pour, 1 contre. Maintien à l’unanimité",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "evaluation_id": "CT-19830",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "2022-09-14",
+    "SMR_avant_audition_enum": "Insuffisant",
+    "SMR_apres_audition_enum": "Insuffisant",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Survie sans récidive (IDFS)",
+    "valeur_critère": "Réduction relative du risque ~27%, gain absolu 3,5 points à 2 ans",
+    "impact_décision": "Maintien du SMR insuffisant",
+    "estimation_mesure_impact": "Delta de taux IDFS de 3,5 à 5,7 points selon maturité",
+    "evidence": [
+      {
+        "field": "date_audition",
+        "f": "F1",
+        "p": 1,
+        "s": "Mercredi 14 septembre",
+        "t": "Mercredi 14 septembre 2022",
+        "m": "manual",
+        "c": 0.98
+      },
+      {
+        "field": "SMR_avant_audition_enum",
+        "f": "F1",
+        "p": 4,
+        "s": "la commission a conclu à un SMR insuffisant",
+        "t": "La commission a conclu à un SMR insuffisant, en raison notamment de la démonstration de la supériorité",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "valeur_critère",
+        "f": "F1",
+        "p": 6,
+        "s": "taux d'IDFS de 92,2 % dans le groupe abemaciclib versus 88,7 %",
+        "t": "taux d'IDFS de 92,2 % dans le groupe abemaciclib versus 88,7 % dans le groupe hormonothérapie seule",
+        "m": "manual",
+        "c": 0.95
+      },
+      {
+        "field": "impact_décision",
+        "f": "F1",
+        "p": 11,
+        "s": "On vote sur le maintien ou pas de l'avis.",
+        "t": "On vote sur le maintien ou pas de l'avis.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19830",
+    "texte_brut": "Transcription intégrale de l'audition VERZENIOS Commission de la Transparence du 14 septembre 2022",
+    "embedding": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19830_smrasmr_01",
+      "evaluation_id": "CT-19830",
+      "indication_precise": "Traitement adjuvant du cancer du sein précoce RH+/HER2- à haut risque de rechute",
+      "smr": "La Commission considère que le service médical rendu est insuffisant en raison de la taille d'effet faible, de la nature intermédiaire du critère principal et du profil de tolérance",
+      "smr_enum": "Insuffisant",
+      "asmr": "Non renseigné",
+      "asmr_enum": "Non renseigné",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Bénéfice statistiquement significatif mais faible et non substitutif de la survie globale. Tolérance marquée par troubles digestifs et thromboemboliques. Population à haut risque avec besoin médical non couvert.",
+      "population_cible_indication": "Patientes aux récepteurs hormonaux positifs, atteinte ganglionnaire, haut risque de rechute",
+      "ligne_traitement_indication": "Adjuvant",
+      "comparateurs_references_indication": [
+        "Hormonothérapie standard"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19830_essai_MonarchE_comp_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Adjuvant",
+        "biomarqueur": "Récepteurs hormonaux positifs",
+        "stade": "Localisé",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "la commission a conclu à un SMR insuffisant",
+          "t": "la commission a conclu à un SMR insuffisant en raison notamment de la taille d'effet faible",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "justification_decisionnelle",
+          "f": "F1",
+          "p": 4,
+          "s": "profil de tolérance qui a été marqué par",
+          "t": "profil de tolérance marqué par des troubles gastro-intestinaux, des évènements thromboemboliques et des infections.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19830",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19830",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 0,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 0.035,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 27,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Survie sans maladie invasive (IDFS)",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 20,
+    "voix_pour_pct": 95,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": []
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluations_HAS",
+      "src_id": "CT-19830",
+      "tgt_type": "Essais_Cliniques",
+      "tgt_id": "CT-19830_essai_MonarchE",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "Critères_Jugement",
+      "tgt_id": "CT-19830_essai_MonarchE_crit_IDFS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "Comparateurs_Essai",
+      "tgt_id": "CT-19830_essai_MonarchE_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essais_Cliniques",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19830_essai_MonarchE_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": []
+}

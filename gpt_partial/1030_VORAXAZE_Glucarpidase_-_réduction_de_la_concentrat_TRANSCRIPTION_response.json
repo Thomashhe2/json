@@ -1,0 +1,530 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19744",
+  "evaluation_id": "CT-19744",
+  "extraction_date": "2022-05-11",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-05-11",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19744_Transcription_VORAXAZE_2022.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 19
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "20220511_seg_01",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription séance CT 11 mai 2022",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 19,
+      "char_start": 0,
+      "char_end": 30000,
+      "heading_text": "Commission de Transparence, VORAXAZE - Examen Inscription",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "transcription",
+      "label_confidence": 0.97
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19744",
+      "produit_nom_commercial": "VORAXAZE",
+      "dci": "glucarpidase",
+      "titulaire_amm": "Non renseigné",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable",
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "Non renseigné",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 3,
+          "s": "VORAXAZE  - Examen",
+          "t": "Commission de Transparence VORAXAZE - Examen – Inscription (CT)",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 3,
+          "s": "VORAXAZE est la glucarpidase en solution injectable",
+          "t": "VORAXAZE est la glucarpidase en solution injectable",
+          "m": "rule",
+          "c": 0.98
+        },
+        {
+          "field": "forme_pharmaceutique",
+          "f": "F1",
+          "p": 3,
+          "s": "glucarpidase en solution injectable",
+          "t": "glucarpidase en solution injectable",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19744",
+      "Num_avis": "CT-19744",
+      "produit_nom": "VORAXAZE",
+      "dci": "glucarpidase",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "solution injectable",
+      "dosage": "Non renseigné",
+      "indication": "Réduction de la concentration plasmatique toxique du méthotrexate chez les adultes et les enfants présentant une élimination retardée du méthotrexate ou un risque de toxicité du méthotrexate",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Non renseigné",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Non renseigné",
+      "design_etude": "Études cliniques institutionnelles d’usage compassionnel non randomisées, non comparatives, ouvertes",
+      "niveau_preuve_brut": "Données de faible qualité issue d’études compassionnelles non randomisées",
+      "niveau_preuve_interprete": "Niveau_5",
+      "besoin_medical_brut": "Besoin médical important dans une situation rare, sans alternative thérapeutique efficace",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Non renseigné",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Observationnel_prospectif",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Produit utilisé depuis 2004 en ATU, accès compassionnel, avec AMM européenne sous circonstances exceptionnelles depuis janvier 2022",
+      "historique_ASMR_comparateurs": "Réévaluation par commission à la suite d’une demande d’inscription au remboursement",
+      "concurrence_therapeutique_recente": "Moins d’alternatives thérapeutiques disponibles, absence de comparateurs pertinents directs",
+      "vote_unanimite": false,
+      "nb_votants": 21,
+      "nb_voix_pour": 18,
+      "nb_voix_contre": 3,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-05-11",
+      "transcription_textuelle": "Transcription des débats de la commission du 11 mai 2022 concernant VORAXAZE.",
+      "extraits_arguments": [
+        "La Commission considère que le service médical rendu est important.",
+        "L'acide folinique est un comparateur cliniquement pertinent.",
+        "Le SMR a été voté important et l'ASMR V.",
+        "La discussion a porté sur la qualité des données et la place dans la stratégie thérapeutique.",
+        "Un vote précis a validé le caractère de comparateur pour l'acide folinique."
+      ],
+      "evidence": [
+        {
+          "field": "niveau_preuve_interprete",
+          "f": "F1",
+          "p": 7,
+          "s": "données qui ont été collectées",
+          "t": "Ce sont des données qui ont été collectées dans le cadre d’une utilisation et pas tellement dans un cadre de recherche, ce qui explique la très faible qualité des données",
+          "m": "rule",
+          "c": 0.92
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "beaucoup de besoins médicaux",
+          "t": "Le besoin médical est conséquent dans cette situation rare avec peu d’autres options thérapeutiques",
+          "m": "manual",
+          "c": 0.93
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 19,
+          "s": "S’agissant de la question de savoir",
+          "t": "S’agissant de la question de savoir si le produit a comme CCP l’acide folinique, nous avons 16 voix pour, 4 voix contre et 1 abstention",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_votants",
+          "f": "F1",
+          "p": 19,
+          "s": "Sur le CCP, nous votons",
+          "t": "S’agissant de la question de savoir si le produit a comme CCP l’acide folinique, nous avons 16 voix pour, 4 voix contre et 1 abstention",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "nb_voix_pour",
+          "f": "F1",
+          "p": 19,
+          "s": "16 voix pour, 4 voix contre",
+          "t": "16 voix pour, 4 voix contre",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "nb_voix_contre",
+          "f": "F1",
+          "p": 19,
+          "s": "16 voix pour, 4 voix contre",
+          "t": "16 voix pour, 4 voix contre",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "18 voix pour un SMR important",
+          "t": "18 voix pour un SMR important",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 19,
+          "s": "18 voix pour une ASMR V dans la stratégie thérapeutique",
+          "t": "18 voix pour une ASMR V dans la stratégie thérapeutique",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19744_arg_TRANS_01",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Les études compassionnelles montrent une réduction significative (> 98%) des taux plasmatiques de méthotrexate en 15 minutes après administration de glucarpidase, indiquant une efficacité biologique forte.",
+      "extrait_textuel": "les taux de méthotrexate sont diminués de façon tout à fait significative après l’utilisation, ... réduction médiane de plus de 98 % en un quart d’heure",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "réduction médiane de plus de 98 %",
+          "t": "réduction médiane était de plus de 98 %",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_02",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Les études sont de faible qualité méthodologique, non randomisées, non contrôlées, avec de nombreuses données manquantes et hétérogénéité, limitant la robustesse des conclusions.",
+      "extrait_textuel": "Il y avait pas mal de limites dans ces études, notamment le faible nombre de patients, de très nombreuses données manquantes, des patients inclus à tort, et surtout la forte hétérogénéité entre ces études",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Patrick Niaudet",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Il y avait pas mal de limites dans ces études",
+          "t": "pas mal de limites dans ces études, notamment le faible nombre de patients, de très nombreuses données manquantes, des patients inclus à tort, et surtout la forte hétérogénéité",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_03",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le besoin médical reste important en cas d’élimination retardée du méthotrexate et de toxicité associée, avec peu d’alternatives efficaces, justifiant l’inscription de VORAXAZE.",
+      "extrait_textuel": "Le besoin médical est donc quand même assez important dans ce contexte ... Il n’y a pas tellement d’autres comparateurs",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Étienne Lengliné",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "Le besoin médical est donc quand même assez important dans ce contexte",
+          "t": "Le besoin médical est donc quand même assez important dans ce contexte. Il n’y a pas tellement d’autres comparateurs",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_04",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "description": "Il y a débat sur le statut d’acide folinique comme comparateur cliniquement pertinent, certains considérant son rôle en prévention, d’autres soulignant que VORAXAZE agit directement sur la concentration plasmatique de méthotrexate.",
+      "extrait_textuel": "le VORAXAZE agit là-dessus, mais l’acide folinique n’agit pas là-dessus ... C’est un sujet de discussion pour faire de l’acide folinique un CCP",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Pierre Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 12,
+          "s": "le VORAXAZE agit là-dessus, mais l’acide folinique n’agit pas là-dessus",
+          "t": "le VORAXAZE agit là-dessus, mais l’acide folinique n’agit pas là-dessus. Par conséquent, comment peut-on en faire un comparateur pertinent sur un paramètre sur lequel il n’agit pas ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_05",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Neutre",
+      "description": "Les effets indésirables liés à VORAXAZE sont peu fréquents et essentiellement bénins, dont paresthésies, bouffées congestives et céphalées rapportées chez 11 % des patients.",
+      "extrait_textuel": "Des effets indésirables apparus sous traitement ... rapportés chez 11 % des patients : paresthésies, bouffées congestives, céphalées.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "effets indésirables apparus sous traitement et considérés comme étant potentiellement liés à la glucarpidase",
+          "t": "Des effets indésirables ... rapportés chez 11 % des patients : principalement des paresthésies, bouffées congestives, céphalées",
+          "m": "rule",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_06",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence de démonstration d’impact clinique direct sur la morbimortalité, réduction d’efficacité cliniquement démontrée uniquement par baisse de méthotrexatémie, critère biologique substitutif.",
+      "extrait_textuel": "absence de données cliniques permettant de démontrer l’impact de la glucarpidase sur la morbimortalité des patients",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Patrick Niaudet",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "absence de données cliniques permettant de démontrer l’impact",
+          "t": "absence de données cliniques permettant de démontrer l’impact de la glucarpidase sur la morbimortalité des patients",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_07",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Qualité méthodologique faible des études compassionnelles, avec hétérogénéité importante, données manquantes massives (35-85%), et absence de protocole rigoureux.",
+      "extrait_textuel": "des données manquantes entre 35 % et 85 % en fonction des essais, peu d’effet clinique documenté, mais au final une forte hétérogénéité",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Clara Locher",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "données manquantes entre 35 % et 85 %",
+          "t": "données manquantes entre 35 % et 85 % en fonction des essais, peu d’effet clinique documenté, mais au final une forte hétérogénéité",
+          "m": "rule",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_08",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "VORAXAZE a remplacé majoritairement les techniques de dialyse lourdes et complexes, améliorant l'accès et la gestion de la toxicité du méthotrexate.",
+      "extrait_textuel": "Depuis qu’il y a le VORAXAZE, il n’y a plus de dialyses ... Le VORAXAZE marche bien",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Étienne Lengliné",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 16,
+          "s": "Depuis qu’il y a le VORAXAZE, il n’y a plus de dialyses",
+          "t": "Depuis qu’il y a le VORAXAZE, il n’y a plus de dialyses",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_09",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "La Commission a voté un SMR important pour VORAXAZE et une ASMR de niveau V, reflétant les limites des données mais la nécessité clinique.",
+      "extrait_textuel": "S’agissant du SMR, nous avons 18 voix pour un SMR important ... ASMR V (18 voix) ...",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pierre Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 19,
+          "s": "18 voix pour un SMR important, 18 voix pour une ASMR V",
+          "t": "18 voix pour un SMR important, 18 voix pour une ASMR V dans la stratégie thérapeutique",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19744_vote_CCP_acide_folinique",
+      "evaluation_id": "CT-19744",
+      "champ_voté": "comparateur_cliniquement_pertinent",
+      "objet_vote": "Acide folinique",
+      "nb_votants": 21,
+      "nb_voix_pour": 16,
+      "nb_voix_contre": 4,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "date_vote": "2022-05-11",
+      "evidence": [
+        {
+          "field": "nb_voix_pour",
+          "f": "F1",
+          "p": 19,
+          "s": "S’agissant de la question de savoir si le produit a comme CCP l’acide folinique",
+          "t": "16 voix pour, 4 voix contre et 1 abstention",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_SMR",
+      "evaluation_id": "CT-19744",
+      "champ_voté": "SMR",
+      "objet_vote": "Service Médical Rendu de VORAXAZE",
+      "nb_votants": 21,
+      "nb_voix_pour": 18,
+      "nb_voix_contre": 2,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "date_vote": "2022-05-11",
+      "evidence": [
+        {
+          "field": "nb_voix_pour",
+          "f": "F1",
+          "p": 19,
+          "s": "18 voix pour un SMR important",
+          "t": "18 voix pour un SMR important",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_ASMR",
+      "evaluation_id": "CT-19744",
+      "champ_voté": "ASMR",
+      "objet_vote": "Amélioration du Service Médical Rendu de VORAXAZE",
+      "nb_votants": 21,
+      "nb_voix_pour": 18,
+      "nb_voix_contre": 3,
+      "nb_abstentions": 0,
+      "vote_unanimite": false,
+      "date_vote": "2022-05-11",
+      "evidence": [
+        {
+          "field": "nb_voix_pour",
+          "f": "F1",
+          "p": 19,
+          "s": "18 voix pour une ASMR V",
+          "t": "18 voix pour une ASMR V dans la stratégie thérapeutique",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_ISP",
+      "evaluation_id": "CT-19744",
+      "champ_voté": "ISP",
+      "objet_vote": "Impact Supplémentaire de Santé Publique (ISP) de VORAXAZE",
+      "nb_votants": 21,
+      "nb_voix_pour": 0,
+      "nb_voix_contre": 21,
+      "nb_abstentions": 0,
+      "vote_unanimite": true,
+      "date_vote": "2022-05-11",
+      "evidence": [
+        {
+          "field": "nb_voix_contre",
+          "f": "F1",
+          "p": 19,
+          "s": "Concernant l’ISP, nous avons 21 voix contre",
+          "t": "Concernant l’ISP, nous avons 21 voix contre",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    }
+  ]
+}

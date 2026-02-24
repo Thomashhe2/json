@@ -1,0 +1,624 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19789",
+  "evaluation_id": "CT-19789",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "TRANSCRIPTION_CT-19789_Parties1-5.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 10
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "Seg_1",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Commission de Transparence - Transcription débats",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Débats Commission Transparence - Inscription DZUVEO",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANS",
+      "label_confidence": 0.99
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19789",
+      "produit_nom_commercial": "DZUVEO",
+      "dci": "sufentanil (citrate de)",
+      "dosage": "30 µg",
+      "forme": "comprimé sublingual",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30 µg",
+          "t": "DZUVEO, 30 microgrammes, un comprimé sublingual, c'est à base de sufentanil, opioïde fort",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30 µg",
+          "t": "DZUVEO, 30 microgrammes, un comprimé sublingual, c'est à base de sufentanil",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "dosage",
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30 µg",
+          "t": "DZUVEO 30 microgrammes, un comprimé sublingual",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "forme",
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30 µg",
+          "t": "DZUVEO, un comprimé sublingual",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19789",
+      "Num_avis": "CT-19789",
+      "produit_nom": "DZUVEO",
+      "dci": "sufentanil (citrate de)",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimé sublingual",
+      "dosage": "30 µg",
+      "indication": "Traitement des douleurs aiguës, modérées à sévères de l'adulte",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Douleurs aiguës modérées à sévères",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "sous_groupe_population": "Adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Non renseigné",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le traitement doit être réservé aux douleurs aiguës modérées à sévères, insuffisamment soulagées par les antalgiques des paliers inférieurs, en post-opératoire ou en médecine d'urgence.",
+      "besoin_medical_interprete": "Non renseigné",
+      "gravite_patho": "La douleur aiguë, modérée à sévère, cause une gêne importante, notamment en contexte post-opératoire et en médecine d'urgence.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Adultes uniquement, indication non étendue aux enfants actuellement",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Inscription de DZUVEO au traitement des douleurs aiguës, modérées à sévères de l’adulte, traitement non autocontrôlé, réservé à un usage sous supervision médicale.",
+      "historique_ASMR_comparateurs": "Le besoin médical est considéré comme couvert par les traitements antalgiques disponibles, ASMR V maintenue.",
+      "concurrence_therapeutique_recente": "Traitements antalgiques des paliers inférieurs disponibles. Le sufentanil est un opioïde fort déjà utilisé en pratique, forme galénique sublinguale spécifique.",
+      "vote_unanimite": true,
+      "nb_votants": 18,
+      "nb_voix_pour": 18,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-09-14",
+      "transcription_textuelle": "La Commission discute de l’inscription de DZUVEO, médicament à base de sufentanil sublingual 30 µg. Plusieurs échanges portent sur l’indication réservée aux douleurs aiguës modérées à sévères, la nécessité d’un environnement de surveillance médicale, la limitation à 48 heures d’administration, et la modification proposée concernant l’élargissement d’utilisation en médecine d'urgence et en soins post-opératoires hors salle de surveillance post-interventionnelle. Les membres échangent sur la pertinence des lieux de prescription et sur les populations ciblées (adultes, excluant pour l’instant la pédiatrie). Le vote final sur la proposition a été adopté à l’unanimité.",
+      "extraits_arguments": [
+        "Le traitement doit être réservé aux douleurs aiguës modérées à sévères, insuffisamment soulagées par les antalgiques des paliers inférieurs.",
+        "Le médicament ne doit pas être utilisé pendant plus de 48 heures.",
+        "La forme galénique sublinguale assure une rapide absorption.",
+        "Il est nécessaire que l'administration soit réalisée sous surveillance médicale avec équipement adapté pour gérer une éventuelle dépression respiratoire morphinique.",
+        "La Commission n’a pas retenu de modification de l’ASMR, estimant que le besoin médical est couvert par les options existantes.",
+        "Une discussion a porté sur l’élargissement de l’utilisation à la médecine d’urgence et aux services de soins post-opératoires.",
+        "Les indications actuelles s’adressent uniquement aux adultes, la dose étant trop forte pour les enfants.",
+        "Le profil de sécurité nécessite un encadrement strict, compte tenu du risque d’addiction et de complications respiratoires potentielles.",
+        "La Commission a adopté à l’unanimité la proposition avec la restriction aux services d’urgence et aux soins post-opératoires durant 48 heures."
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30",
+          "t": "DZUVEO, 30 microgrammes, un comprimé sublingual, c'est à base de sufentanil, opioïde fort, dans le traitement des douleurs aiguës, modérées à sévères de l'adulte.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 14",
+          "t": "Mercredi 14 septembre 2022",
+          "m": "manual",
+          "c": 0.99
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 10,
+          "s": "Adoption à l",
+          "t": "Adoption à l’unanimité",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "nb_votants",
+          "f": "F1",
+          "p": 10,
+          "s": "Appel nomin",
+          "t": "Vote par appel nominatif avec 18 votants et unanimité",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "evaluation_id": "CT-19789",
+    "tolerance_id": "CT-19789_tol",
+    "ae_total_pct": null,
+    "sae_pct": null,
+    "discontinuations_ae_pct": null,
+    "deaths_ae_n": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves": "Les risques concernent principalement la dépression respiratoire morphinique et l’addiction. L’administration doit être sous surveillance médicale stricte.",
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "EI_graves_evidence": [
+      {
+        "field": "EI_graves",
+        "f": "F1",
+        "p": 3,
+        "s": "Administration",
+        "t": "Le médicament doit être administré dans un environnement sous surveillance médicale équipé pour identifier et gérer une dépression respiratoire morphinique.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ],
+    "evidence": [
+      {
+        "field": "tolerance",
+        "f": "F1",
+        "p": 6,
+        "s": "addiction",
+        "t": "Il y a souvent, hélas, assez fréquemment... possibilité d'addiction. Cela fait un shoot et c'est efficace.",
+        "m": "manual",
+        "c": 0.9
+      },
+      {
+        "field": "tolerance",
+        "f": "F1",
+        "p": 3,
+        "s": "dépression respirato",
+        "t": "Personnel formé pour identifier et gérer une dépression respiratoire morphinique est nécessaire.",
+        "m": "manual",
+        "c": 0.95
+      }
+    ]
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19789_arg_TRANS_01",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "DZUVEO est réservé au traitement des douleurs aiguës modérées à sévères non soulagées par les traitements de palier inférieur, notamment en post-opératoire et en médecine d’urgence, avec administration sous surveillance médicale obligatoire.",
+      "extrait_textuel": "Le traitement doit être réservé aux douleurs aiguës, insuffisamment soulagées par les antalgiques des paliers inférieurs, en post-opératoire, ou en médecine d'urgence, administré sous surveillance médicale.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Le traitement doit être réservé",
+          "t": "Le traitement devait être réservé au traitement des douleurs aiguës, insuffisamment soulagé par les antalgiques des paliers inférieurs, en post-opératoire, ou en médecine d'urgence.",
+          "m": "manual",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_02",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Méiîté",
+      "description": "Discussion sur l’élargissement du lieu d’utilisation à la médecine d’urgence et aux services de chirurgie ambulatoires au-delà de la salle de surveillance post-interventionnelle.",
+      "extrait_textuel": "Discussion sur la suppression de la mention salle de surveillance post-interventionnelle et remplacement de traumatologie d'urgence par médecine d'urgence avec élargissement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Suppression de la mention",
+          "t": "Suppression de la mention « salle de surveillance post-interventionnelle » et remplacement de « traumatologie d'urgence » par « médecine d'urgence »",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_03",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "description": "Le médicament comporte un risque important de dépression respiratoire morphinique, nécessite une administration contrôlée sous surveillance médicale, et présente un risque d’addiction même en traitement court.",
+      "extrait_textuel": "Le médicament doit être administré sous surveillance médicale, avec personnel formé pour la dépression respiratoire morphinique. Risque d’addiction fréquent malgré durée courte de 48 heures.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "Il s'agit de modifications qui concernent le SMR et l'ASMR",
+          "t": "DZUVEO doit être administré dans un environnement sous surveillance médicale équipé pour identifier et gérer une dépression respiratoire morphinique.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_04",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Neutre",
+      "description": "L’indication concerne exclusivement les adultes, la dose de 30 µg étant trop élevée pour les enfants, avec attente éventuelle de formes galéniques adaptées pour la pédiatrie.",
+      "extrait_textuel": "L'indication est réservée aux adultes pour l'instant. La dose de 30 microgrammes est trop forte pour les enfants.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "indication est réservée aux adultes",
+          "t": "En sachant que l'indication est réservée aux adultes, pour l’instant. La dose de 30 microgrammes est trop forte pour les enfants.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_05",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "La forme galénique sublinguale permet une action rapide, constituant une alternative potentielle à la morphine intraveineuse, notamment dans les services d'urgence et chirurgie.",
+      "extrait_textuel": "Le produit est intéressant pour sa rapidité d'action, alternative à la morphine intraveineuse notamment dans les services de médecine d'urgence et de chirurgie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "rapidité d'action et forme galénique",
+          "t": "Ce qui est intéressant, c'est la rapidité d'action et la forme galénique spécifique sublinguale.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_06",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "La Commission valide l’élargissement des lieux d’utilisation aux services d’urgence et aux soins post-opératoires, hors salle de surveillance post-interventionnelle, avec une restriction d’administration de 48 heures.",
+      "extrait_textuel": "La Commission propose de limiter la prescription à « services d'urgence » et « soins post-opératoires » avec une durée d'administration limitée à 48 heures.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pierre Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Service d'urgence et soins post-opératoires",
+          "t": "Service d'urgence et soins post-opératoires dans le cadre des 48 heures, proposition adoptée à l'unanimité.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_07",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Neutre",
+      "description": "La Commission estime que le produit n’est pas susceptible d’avoir d’impact supplémentaire significatif en santé publique par rapport aux traitements existants.",
+      "extrait_textuel": "Au niveau de l'intérêt de santé publique, il est proposé de ne pas modifier les termes car le produit n'est pas susceptible d'avoir un impact.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "Intérêt de santé publique",
+          "t": "Il est proposé de ne pas modifier les termes de l'intérêt de santé publique, le produit n'est pas susceptible d'avoir un impact.",
+          "m": "manual",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19789_ctx",
+    "evaluation_id": "CT-19789",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "2018-06-01",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "date_audition": "2022-09-14",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19789",
+    "texte_brut": "Mercredi 14 septembre 2022 Commission de Transparence DZUVEO 30 µg (sufentanil (citrate de)) – Observations – Inscription (CT) – discussions sur indication, tolérance, lieu d'administration, durée maximale de 48 heures, élargissement possible en services d’urgence et post-opératoires, débats sur population ciblée (adultes uniquement), risques de dépression respiratoire et addiction. Vote unanime pour inscription avec ces conditions."
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19789_smrasmr_01",
+      "evaluation_id": "CT-19789",
+      "indication_precise": "Traitement des douleurs aiguës modérées à sévères chez l’adulte, non soulagées par les antalgiques des paliers inférieurs, en post-opératoire ou en médecine d'urgence",
+      "smr": "La Commission considère que le service médical rendu est important dans cette indication sous condition d’administration dans un environnement médical surveillé.",
+      "smr_enum": "Important",
+      "asmr": "La Commission maintient une ASMR V, estimant que le besoin médical est couvert par les traitements antalgiques disponibles.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "L’indication est précisément circonscrite aux douleurs aiguës modérées à sévères, dose et durée limitées, administration sous surveillance médicale. Les membres ont unanimement validé l’élargissement contrôlé en services d’urgence et post-opératoires.",
+      "population_cible_indication": "Adultes",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": "Antalgiques des paliers inférieurs, morphine en PCA intraveineuse.",
+      "comparateur_id_HAS": "Non renseigné",
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "Le traitement doit être",
+          "t": "Ce traitement devait être réservé au traitement des douleurs aiguës, insuffisamment soulagé par les antalgiques des paliers inférieurs.",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "La proposition du bureau",
+          "t": "La proposition du bureau était de ne pas modifier le libellé de l'ASMR de l'avis en phase contradictoire, puisque la commission avait voté que le besoin médical était couvert par les traitements antalgiques disponibles.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19789_event_TRANS_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2022-09-14",
+      "detail_brut": "Séance Commission de la Transparence : inscription de DZUVEO",
+      "source_doc": "F1",
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 14",
+          "t": "Commission de la Transparence Mercredi 14 septembre 2022",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19789_event_AMM_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2018-06-01",
+      "detail_brut": "AMM obtenue par procédure centralisée en juin 2018",
+      "source_doc": "F1",
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 3,
+          "s": "procédure centralisée",
+          "t": "AMM obtenue par procédure centralisée en juin 2018",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19789",
+    "delai_amm_ct_jours": null,
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19789",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Non renseigné",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": true,
+    "nb_votants": 18,
+    "voix_pour_pct": 100.0,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}
