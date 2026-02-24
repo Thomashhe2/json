@@ -1,0 +1,374 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19789",
+  "evaluation_id": "CT-19789",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_2_dzuveo_14092022_transcription_ct19789.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 10
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19789_seg_01",
+      "section_label_normalise": "AVERTISSEMENT",
+      "section_label_brut": "AVERTISSEMENT",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [
+        "meta_info"
+      ],
+      "routing_hint": "Informations méthodologiques sur la transcription",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19789_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat sur les modifications demandées (médecine d'urgence, SSPI)",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 8,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "DZUVEO 30 µg (sufentanil (citrate de)) (CT-19789) – Observations – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Débat principal sur l'élargissement des conditions d'utilisation",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19789_seg_03",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote et adoption",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 9,
+      "page_end": 10,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "DZUVEO 30 µg (sufentanil (citrate de)) (CT-19789) – Observations – Inscription (CT)",
+      "expected_fields": [
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Conclusion et vote sur les propositions",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-19789",
+      "produit_nom_commercial": "DZUVEO",
+      "dci": "sufentanil (citrate de)",
+      "forme_pharmaceutique": "comprimé sublingual",
+      "dosage": "30 µg",
+      "titulaire_amm": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "code_atc": "Non renseigné",
+      "indication": "traitement des douleurs aiguës, modérées à sévères de l'adulte",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30 µg (sufentanil (citrate de))",
+          "t": "DZUVEO 30 µg (sufentanil (citrate de)) (CT-19789) – Observations – Inscription (CT)",
+          "c": 0.98
+        },
+        {
+          "f": "F1",
+          "p": 3,
+          "s": "Il s'agit de l'inscription aux Collectivités",
+          "t": "Il s'agit de l'inscription aux Collectivités de DZUVEO, 30 microgrammes, un comprimé sublingual, c'est à base de sufentanil, opioïde fort, dans le traitement des douleurs aiguës, modérées à sévères de l'adulte.",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19789_arg_TRANS_01",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Élargissement proposé de 'traumatologie d'urgence' à 'médecine d'urgence' ou 'service d'urgence' pour couvrir toutes les douleurs aiguës en urgence, pas seulement les traumatismes.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "« Pour la modification traumatologie versus médecine d'urgence, je pense que oui, c'est recevable effectivement, parce qu'il n'y a pas que la traumatologie qui fait mal, si je puis dire, en médecine d'urgence. »",
+      "page_source": "Page 4",
+      "section_source": "Débat sur les modifications demandées",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 4,
+          "s": "Pour la modification traumatologie versus médecine d'urgence",
+          "t": "Pour la modification traumatologie versus médecine d'urgence, je pense que oui, c'est recevable effectivement, parce qu'il n'y a pas que la traumatologie qui fait mal, si je puis dire, en médecine d'urgence.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_02",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Suppression de la restriction à la 'salle de surveillance post-interventionnelle' (SSPI) pour autoriser l'utilisation en 'services de chirurgie' ou 'soins post-opératoires', similaires à l'utilisation des PCA à la morphine.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "« Pour le périopératoire, la question est de savoir si l'on peut 'autoriser' l'utilisation du produit dans les services de chirurgie. Je pense que oui, puisqu'il y a des équivalents qui sont par exemple la PCA intraveineuse à la morphine qui est utilisée dans ce contexte. »",
+      "page_source": "Page 4",
+      "section_source": "Débat sur les modifications demandées",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 4,
+          "s": "Pour le périopératoire, la question",
+          "t": "Pour le périopératoire, la question est de savoir si l'on peut 'autoriser' l'utilisation du produit dans les services de chirurgie. Je pense que oui, puisqu'il y a des équivalents qui sont par exemple la PCA intraveineuse à la morphine qui est utilisée dans ce contexte.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_03",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "description": "Précision que l'indication est réservée aux adultes (dose de 30 µg trop forte pour les enfants), mais intérêt pour des formes adaptées en pédiatrie d'urgence (ex. drépanocytose).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "« En sachant que l'indication est réservée aux adultes, pour l’instant. » « Parce que la dose est trop forte pour les enfants. C’est les 15 microgrammes, mais c'est tout de même trop fort pour les enfants. »",
+      "page_source": "Page 5",
+      "section_source": "Débat sur les modifications demandées",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 5,
+          "s": "En sachant que l'indication est réservée",
+          "t": "En sachant que l'indication est réservée aux adultes, pour l’instant.",
+          "c": 0.95
+        },
+        {
+          "f": "F1",
+          "p": 5,
+          "s": "Parce que la dose est trop forte",
+          "t": "Parce que la dose est trop forte pour les enfants. C’est les 15 microgrammes, mais c'est tout de même trop fort pour les enfants.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_04",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Cadre d'utilisation strict : traitement de courte durée (max 48h), sous surveillance médicale dans un environnement sécurisé (équipé pour gérer la dépression respiratoire), non autocontrôlé par le patient.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "« Je vous ai mentionné que DZUVEO devait être administré par un professionnel de santé dans un environnement sous surveillance médicale... ne doit pas être utilisé durant plus de 48 heures. »",
+      "page_source": "Page 3",
+      "section_source": "Présentation initiale",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 3,
+          "s": "Je vous ai mentionné que DZUVEO",
+          "t": "Je vous ai mentionné que DZUVEO devait être administré par un professionnel de santé dans un environnement sous surveillance médicale... ne doit pas être utilisé durant plus de 48 heures.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_05",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Alternative discutée : PCA à la morphine intraveineuse (utilisée couramment en service de chirurgie), mais DZUVEO offre une action rapide en sublingual sans nécessiter d'abord veineux.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "« Après, bien entendu, il faut qu'il y ait un certain nombre de précautions... mais cela fait partie du prérequis d'utilisation aux opiacés. Encore une fois, par exemple, on utilise tous les jours couramment aujourd'hui en France, des pompes d'auto-administration de morphine par voie intraveineuse dans les services de chirurgie. »",
+      "page_source": "Page 4",
+      "section_source": "Débat sur les modifications demandées",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 4,
+          "s": "Après, bien entendu, il faut qu'il",
+          "t": "Après, bien entendu, il faut qu'il y ait un certain nombre de précautions... mais cela fait partie du prérequis d'utilisation aux opiacés. Encore une fois, par exemple, on utilise tous les jours couramment aujourd'hui en France, des pompes d'auto-administration de morphine par voie intraveineuse dans les services de chirurgie.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19789_ctx",
+    "evaluation_id": "CT-19789",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19789",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19789",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_flag_incomplet": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19789",
+    "is_orphan": null,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Non renseigné",
+    "type_avis_enum": "Non renseigné",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": null,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": null,
+    "comparateur_placebo": null,
+    "comparateur_soc": null,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": "Q3",
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": "Non renseigné"
+  },
+  "Relations": [],
+  "Annotation_View": []
+}
