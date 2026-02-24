@@ -1,0 +1,1578 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-21292",
+  "evaluation_id": "CT-21292",
+  "extraction_date": "2022-09-30",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-30",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "Fichier_CT-21292.pdf",
+        "type": "CT",
+        "page_count": 94
+      },
+      "F2": {
+        "file_name": "Non renseigné",
+        "type": "TRANSCRIPTION",
+        "page_count": 17
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "F1_001_008",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel, Place dans la stratégie thérapeutique, Conclusions",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 6,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Synthèse et conclusions",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "SMR_ASMR_Par_Indication",
+        "Population_Cible"
+      ],
+      "routing_hint": "extraction principale",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "F1_009_036",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Essais cliniques, Critères de jugement, Données cliniques, Méta-analyses",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 38,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Données cliniques et études",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Resultats_Efficacite"
+      ],
+      "routing_hint": "extraction essais cliniques",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "F1_039_061",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance, effets indésirables, pharmacovigilance",
+      "template_detecte": "CT_modern",
+      "page_start": 39,
+      "page_end": 61,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Tolérance et pharmacovigilance",
+      "expected_fields": [
+        "Tolérance"
+      ],
+      "routing_hint": "extraction tolérance",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "F1_062_095",
+      "section_label_normalise": "ANNEXES",
+      "section_label_brut": "Annexe : résultats de l’étude PSOBIOTEQ 2",
+      "template_detecte": "CT_modern",
+      "page_start": 62,
+      "page_end": 94,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Résultats annexes PSOBIOTEQ 2",
+      "expected_fields": [
+        "Données_Textuelles"
+      ],
+      "routing_hint": "extraction cohorte observationnelle",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "Segment_1",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Transcription complète",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 17,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Commission de Transparence, 11 juillet 2022",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques",
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANS",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "CIMZIA",
+      "dci": "certolizumab pegol",
+      "titulaire_amm": "UCB Pharma SA",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "200 mg",
+          "code_cip13": "34009 397 320 0 8"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "200 mg",
+          "code_cip13": "34009 300 762 8 6"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en cartouche pour dispensateur de dose",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "200 mg",
+          "code_cip13": "34009 300 989 3 6"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "REMSIMA 120 mg (SC)",
+      "dci": "infliximab",
+      "titulaire_amm": "Celltrion Healthcare France",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "120 mg",
+          "code_cip13": "34009 301 993 3 6"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "120 mg",
+          "code_cip13": "34009 301 993 5 0"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "COSENTYX",
+      "dci": "sécukinumab",
+      "titulaire_amm": "Novartis Pharma SAS",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 300 106 0 0"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 300 106 2 4"
+        },
+        {
+          "forme_pharmaceutique": "poudre pour solution injectable",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 300 105 9 4"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "TALTZ",
+      "dci": "ixekizumab",
+      "titulaire_amm": "Lilly France",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "80 mg",
+          "code_cip13": "34009 300 607 5 9"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "80 mg",
+          "code_cip13": "34009 300 607 9 7"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "KYNTHEUM",
+      "dci": "brodalumab",
+      "titulaire_amm": "Leo Pharma France",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "210 mg",
+          "code_cip13": "34009 301 172 8 6"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "TREMFYA",
+      "dci": "guselkumab",
+      "titulaire_amm": "Janssen-Cilag",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg",
+          "code_cip13": "34009 301 227 5 4"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg",
+          "code_cip13": "34009 301 607 5 6"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "SKYRIZI",
+      "dci": "risankizumab",
+      "titulaire_amm": "Abbvie",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "75 mg",
+          "code_cip13": "34009 301 748 8 3"
+        },
+        {
+          "forme_pharmaceutique": "solution injectable en stylo prérempli",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "150 mg",
+          "code_cip13": "34009 302 281 4 2"
+        }
+      ]
+    },
+    {
+      "produit_nom_commercial": "ILUMETRI",
+      "dci": "tildrakizumab",
+      "titulaire_amm": "Almirall",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "solution injectable en seringue préremplie",
+          "forme_pharma_enum": "Injectable_SC",
+          "dosage_concentration": "100 mg",
+          "code_cip13": "34009 301 720 5 6"
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21292",
+      "Num_avis": "CT-21292",
+      "produit_nom": "Multiple médicaments biologiques dans psoriasis en plaques adulte",
+      "dci": "Non renseigné",
+      "type_avis": "Réévaluation",
+      "type_avis_enum": "Réévaluation",
+      "forme": "Solution injectable",
+      "dosage": "Variable selon spécialité",
+      "indication": "Traitement du psoriasis en plaques modéré à sévère chez l'adulte nécessitant un traitement systémique en cas d'échec ou intolérance aux traitements systémiques non biologiques",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Psoriasis en plaques",
+      "maladie_rare": false,
+      "ligne_traitement": "2L",
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Biothérapie",
+      "aire_therapeutique_niveau_3": "Traitement du psoriasis en plaques",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le psoriasis en plaques est une affection cutanée chronique fréquente... le besoin thérapeutique reste partiellement couvert.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Retrait de l'avis favorable pour les médicaments précédemment réévalués en mai 2021, maintien d’un avis favorable pour les autres spécialités biologiques dans le psoriasis en plaques modéré à sévère.",
+      "historique_ASMR_comparateurs": "Pas de modification des conclusions précédentes pour les ASMR.",
+      "concurrence_therapeutique_recente": "De nombreux traitements systémiques biologiques disponibles offrant des alternatives thérapeutiques efficaces.",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-11",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis version définitive modifié le",
+          "t": "Avis version définitive modifié le 30/09/2022",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 1,
+          "s": "Le psoriasis en plaques est une affection cutanée chronique",
+          "t": "Le psoriasis en plaques est une affection cutanée chronique fréquente qui touche environ 4,42 % de la population générale en France1. ... Le besoin thérapeutique reste partiellement couvert.",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "aire_therapeutique_niveau_1",
+          "f": "F1",
+          "p": 1,
+          "s": "Les traitements actuels du psoriasis n'entraînent pas",
+          "t": "L’arsenal thérapeutique comporte des traitements locaux et systémiques biologiques dans le psoriasis en plaques, relevant de l’Immunologie.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 1,
+          "s": "La Commission considère que désormais ces médicaments",
+          "t": "ces médicaments étaient des traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec à une 1re ligne de traitement systémique non biologique.",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "evaluation_id",
+          "f": "F1",
+          "p": 59,
+          "s": "La Commission de la Transparence a souhaité réévaluer",
+          "t": "La Commission de la Transparence a souhaité réévaluer les autres traitements biologiques, en application de l'article R.163-21 du code de la sécurité sociale, et au regard des nouvelles données d’efficacité et de tolérance disponibles depuis la précédente évaluation de ces médicaments par la Commission...",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis version définitive modifié le 30/09/2022",
+          "t": "Avis version définitive modifié le 30/09/2022",
+          "m": "rule",
+          "c": 0.95
+        }
+      ],
+      "gravite_patho": "Le psoriasis en plaques est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes",
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non renseigné"
+    },
+    {
+      "evaluation_id": "CT-NonRenseigné",
+      "Num_avis": "CT-NonRenseigné",
+      "produit_nom": "Biothérapies du psoriasis en plaques",
+      "dci": "Non renseigné",
+      "type_avis": "Réévaluation",
+      "type_avis_enum": "Réévaluation",
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "indication": "Traitement du psoriasis en plaques modéré à sévère nécessitant un traitement systémique",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Psoriasis en plaques",
+      "maladie_rare": false,
+      "ligne_traitement": "2L",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "Adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Immunologie",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Psoriasis",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le psoriasis en plaques modéré à sévère nécessite un traitement systémique, et malgré l'existence de traitements, un besoin médical demeure important",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "gravite_patho": "Le psoriasis en plaques modéré à sévère a un retentissement psychosocial important et une qualité de vie significativement altérée.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes nécessitant traitement systémique",
+      "pertinence_concurrence_therapeutique": "Nombreuses biothérapies disponibles avec différentes cibles biologiques mais nécessitant réévaluation.",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Les biothérapies ont été évaluées depuis plus de vingt ans, avec une première vague en mai 2021.",
+      "historique_ASMR_comparateurs": "Les ASMR ont été évaluées versus COSENTYX pour la plupart, avec discussion particulière pour TALTZ et comparaison versus guselkumab.",
+      "concurrence_therapeutique_recente": "Introduction d'anti-IL17 et anti-IL23 avec des profils d'efficacité et de tolérance améliorés.",
+      "vote_unanimite": true,
+      "nb_votants": 13,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-07-11",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": []
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-21292_essai_CIMPASI1",
+      "evaluation_id": "CT-21292",
+      "essai_nom": "CIMPASI 1",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 144,
+      "maturite_donnees": "Matures",
+      "population_cible": "Adultes avec psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Maintien des réponses PASI 75 et IGA 0 ou 1 jusqu’à la semaine 144",
+      "QoL_flag": true,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 36,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 36,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 31,
+          "s": "dans CIMPASI 1 et CIMPASI 2 : maintien des réponses",
+          "t": "dans CIMPASI 1 et CIMPASI 2 : maintien des réponses sur l’ensemble des critères d’efficacité évalués, généralement jusqu’à la fin du suivi à la semaine 144, notamment en termes de réponse PASI 75 et IGA 0 ou 1",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-21292_essai_CIMPASI2",
+      "evaluation_id": "CT-21292",
+      "essai_nom": "CIMPASI 2",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 144,
+      "maturite_donnees": "Matures",
+      "population_cible": "Adultes avec psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Maintien des réponses PASI 75 et IGA 0 ou 1 jusqu’à la semaine 144",
+      "QoL_flag": true,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 36,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 36,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 31,
+          "s": "dans CIMPASI 1 et CIMPASI 2 : maintien des réponses",
+          "t": "dans CIMPASI 1 et CIMPASI 2 : maintien des réponses sur l’ensemble des critères d’efficacité évalués, généralement jusqu’à la fin du suivi à la semaine 144, notamment en termes de réponse PASI 75 et IGA 0 ou 1",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-21292_essai_CIMPACT",
+      "evaluation_id": "CT-21292",
+      "essai_nom": "CIMPACT",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 36,
+      "maturite_donnees": "Matures",
+      "population_cible": "Adultes avec psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo, Etanercept",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Maintien des réponses PASI 75 et PGA 0 ou 1 jusqu’à la semaine 96 de la phase ouverte (144 semaines de traitement)",
+      "QoL_flag": true,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 36,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 36,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 32,
+          "s": "dans CIMPACT : maintien des réponses",
+          "t": "dans CIMPACT : maintien des réponses PASI 75 et IGA 0 ou 1 à S16 et S144.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-21292_essai_FEATURE",
+      "evaluation_id": "CT-21292",
+      "essai_nom": "FEATURE",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "population_cible": "Adultes avec psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Maintien de la supériorité du sécukinumab 300 mg sur placebo à la semaine 52",
+      "QoL_flag": true,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Important",
+      "maturite_pct": 100,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 36,
+          "s": "Le sécukinumab 300 mg avait montré sa supériorité par rapport au placebo",
+          "t": "Dans les études initiales JUNCTURE et FEATURE, randomisées en double-aveugle, versus placebo, le sécukinumab 300 mg avait montré sa supériorité par rapport au placebo en termes de réponses PASI 75 et IGA 0 ou 1 à S12 (p < 0,0001) et maintien à S52.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-21292_essai_JUNCTURE",
+      "evaluation_id": "CT-21292",
+      "essai_nom": "JUNCTURE",
+      "nct_number": "Non renseigné",
+      "design": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Matures",
+      "population_cible": "Adultes avec psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Maintien de la supériorité du sécukinumab 300 mg sur placebo à la semaine 52",
+      "QoL_flag": true,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Important",
+      "maturite_pct": 100,
+      "evidence": [
+        {
+          "field": "essai_id",
+          "f": "F1",
+          "p": 36,
+          "s": "Le sécukinumab 300 mg avait montré sa supériorité par rapport au placebo",
+          "t": "Dans les études initiales JUNCTURE et FEATURE, randomisées en double-aveugle, versus placebo, le sécukinumab 300 mg avait montré sa supériorité par rapport au placebo en termes de réponses PASI 75 et IGA 0 ou 1 à S12 (p < 0,0001) et maintien à S52.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-21292_essai_CIMPASI1_crit_PASI75",
+      "essai_id": "CT-21292_essai_CIMPASI1",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse PASI 75",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 31,
+          "s": "maintien des réponses PASI 75",
+          "t": "maintien des réponses sur l’ensemble des critères d’efficacité évalués, généralement jusqu’à la fin du suivi à la semaine 144, notamment en termes de réponse PASI 75",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-21292_essai_CIMPASI1_crit_IGA01",
+      "essai_id": "CT-21292_essai_CIMPASI1",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse IGA 0 ou 1",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 31,
+          "s": "maintien des réponses PASI 75",
+          "t": "maintien des réponses sur l’ensemble des critères d’efficacité évalués, généralement jusqu’à la fin du suivi à la semaine 144, notamment en termes de réponse IGA 0 ou 1",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-21292_essai_CIMPASI2_crit_PASI75",
+      "essai_id": "CT-21292_essai_CIMPASI2",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse PASI 75",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 31,
+          "s": "maintien des réponses PASI 75",
+          "t": "maintien des réponses sur l’ensemble des critères d’efficacité évalués, généralement jusqu’à la fin du suivi à la semaine 144, notamment en termes de réponse PASI 75",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-21292_essai_CIMPASI2_crit_IGA01",
+      "essai_id": "CT-21292_essai_CIMPASI2",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse IGA 0 ou 1",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0009,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 31,
+          "s": "maintien des réponses PASI 75",
+          "t": "maintien des réponses sur l’ensemble des critères d’efficacité évalués, généralement jusqu’à la fin du suivi à la semaine 144, notamment en termes de réponse IGA 0 ou 1",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-21292_essai_CIMPACT_crit_PASI75",
+      "essai_id": "CT-21292_essai_CIMPACT",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse PASI 75",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 32,
+          "s": "dans CIMPACT : maintien des réponses",
+          "t": "dans CIMPACT : maintien des réponses PASI 75 et IGA 0 ou 1 à S16 et S144.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-21292_essai_CIMPACT_crit_IGA01",
+      "essai_id": "CT-21292_essai_CIMPACT",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse IGA 0 ou 1",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Modérée",
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 32,
+          "s": "dans CIMPACT : maintien des réponses",
+          "t": "dans CIMPACT : maintien des réponses PASI 75 et IGA 0 ou 1 à S16 et S144.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-21292_essai_FEATURE_crit_PASI75",
+      "essai_id": "CT-21292_essai_FEATURE",
+      "evaluation_id": "CT-21292",
+      "critere_nom": "Réponse PASI 75",
+      "type_critere": "Substitutif",
+      "unite_mesure": "percentage",
+      "primaire_ou_secondaire": "Principal_primaire",
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Important",
+      "p_value": "p < 0,0001",
+      "p_value_num": 0.0009,
+      "evidence": [
+        {
+          "field": "critere_id",
+          "f": "F1",
+          "p": 36,
+          "s": "Le sécukinumab 300 mg avait montré sa supériorité",
+          "t": "Dans les études initiales JUNCTURE et FEATURE, randomisées en double-aveugle, versus placebo, le sécukinumab 300 mg avait montré sa supériorité par rapport au placebo en termes de réponses PASI 75 et IGA 0 ou 1 à S12 (p < 0,0001) et maintien à S52.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-21292_tol_CIMPASI",
+      "evaluation_id": "CT-21292",
+      "essai_id": "CT-21292_essai_CIMPASI1",
+      "ae_total_pct": null,
+      "sae_pct": 15.5,
+      "discontinuations_ae_pct": 8.8,
+      "deaths_ae_n": 7,
+      "EI_graves": "La tolérance du certolizumab pegol a été évaluée à long terme jusqu’à 144 semaines sans nouveau signal, avec un taux d’EI reliés au traitement de 26,5%, EIG de 15,5%, et 8,8% d’arrêts liés aux EI.",
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Effets indésirables reliés au traitement",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 26.5,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_frequents_detailles",
+              "f": "F1",
+              "p": 34,
+              "s": "26,5 % d’EI jugés reliés au traitement",
+              "t": "Le profil de tolérance du CZP a été similaire à ceux du placebo et de l’etanercept, sans dégradation au cours du temps, jusqu’à 144 semaines pour les patients traités par CZP : 26,5 % d’EI jugés reliés au traitement avec une incidence de 14,6 EI/ 100 PA",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Effets indésirables graves (EIG)",
+          "grade": "≥3",
+          "incidence_pct_traitement": 15.5,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 34,
+              "s": "15,5 % d’EIG, avec une incidence de 7,5 EIG/ 100 PA",
+              "t": "Le profil de tolérance du CZP a été similaire à ceux du placebo et de l’etanercept, sans dégradation au cours du temps, jusqu’à 144 semaines pour les patients traités par CZP : 15,5 % d’EIG, avec une incidence de 7,5 EIG/ 100 PA",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Arrêt traitement pour EI",
+          "grade": "≥3",
+          "incidence_pct_traitement": 8.8,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "field": "discontinuations_ae_pct",
+              "f": "F1",
+              "p": 34,
+              "s": "8,8 % d’EI ayant entraîné l’arrêt du traitement",
+              "t": "Le profil de tolérance du CZP a été similaire à ceux du placebo et de l’etanercept, sans dégradation au cours du temps, jusqu’à 144 semaines pour les patients traités par CZP : 8,8 % d’EI ayant entraîné l’arrêt du traitement",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "deces_detailles": [
+        {
+          "cause_deces": "2 décès liés au traitement chez patients avec comorbidités",
+          "relation_traitement": "Probable",
+          "delai_survenue_jours": null,
+          "contexte": "7 décès rapportés durant les 3 études avec 144 semaines de suivi",
+          "evidence": [
+            {
+              "field": "deces_detailles",
+              "f": "F1",
+              "p": 34,
+              "s": "7 décès dont 2 liés à CZP",
+              "t": "Par ailleurs 7 décès ont été rapportés durant les 3 études avec un suivi de 144 semaines, dont 2 évalués comme liés au CZP (tous deux survenus chez des patients avec de nombreuses comorbidités et facteurs de risque)",
+              "m": "rule",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": []
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-21292_essai_CIMPASI1_comp_01",
+      "essai_id": "CT-21292_essai_CIMPASI1",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "comparateur_id",
+          "f": "F1",
+          "p": 31,
+          "s": "comparé à placebo",
+          "t": "Les études CIMPASI 1 et 2 ont comparé certolizumab pegol à placebo...",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21292_compHAS_01",
+      "evaluation_id": "CT-21292",
+      "nom_comparateur_HAS": "Etanercept (ENBREL)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Therapie_ciblee",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "comparateur_id",
+          "f": "F1",
+          "p": 13,
+          "s": "anti-TNFα administré en SC : adalimumab (HUMIRA et ses biosimilaires), etanercept (ENBREL",
+          "t": "Parmi les comparateurs médicamenteux, on peut distinguer : un anti-TNFα administré en SC : adalimumab (HUMIRA et ses biosimilaires), etanercept (ENBREL et ses biosimilaires)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21292_compHAS_02",
+      "evaluation_id": "CT-21292",
+      "nom_comparateur_HAS": "Ustekinumab (STELARA)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Therapie_ciblee",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "comparateur_id",
+          "f": "F1",
+          "p": 13,
+          "s": "anti IL-12/23 administré en IV et en SC : ustekinumab (STELARA)",
+          "t": "Parmi les comparateurs médicamenteux, on peut distinguer : un anti IL-12/23 administré en IV et en SC : ustekinumab (STELARA)",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21292_arg_CT_01",
+      "evaluation_id": "CT-21292",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "Le SMR est important pour les spécialités biologiques dans le psoriasis en plaques chez l’adulte en cas d’échec après traitements systémiques non biologiques.",
+      "extrait_textuel": "La Commission considère que désormais ces médicaments étaient des traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec à une 1re ligne de traitement systémique non biologique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 2-3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "ces médicaments étaient des traitements systémiques de 2e ligne",
+          "t": "La Commission considère que désormais ces médicaments étaient des traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec à une 1re ligne de traitement systémique non biologique",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21292_arg_CT_02",
+      "evaluation_id": "CT-21292",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Les études de phase III montrent le maintien de l’efficacité des médicaments sur le psoriasis en plaques à long terme notamment sur les réponses clinques PASI 75.",
+      "extrait_textuel": "Les nouvelles données à long terme issues des phases d’extension ont montré le maintien de l’efficacité de ces médicaments dans des populations stables numériquement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 5",
+      "section_source": "Analyse des données disponibles",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "maintien de l’efficacité de ces médicaments",
+          "t": "Les nouvelles données à long terme issues des phases d’extension ont montré le maintien de l’efficacité de ces médicaments dans des populations stables numériquement",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21292_arg_CT_03",
+      "evaluation_id": "CT-21292",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Les données de pharmacovigilance et de tolérance montrent un profil stable, avec peu d’effets indésirables graves et un faible risque de cancers.",
+      "extrait_textuel": "Les données de tolérance ont montré le maintien à moyen terme (36 mois) du profil de tolérance établi, aucune nouvelle alerte de tolérance n’a été mise en évidence.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 54-56",
+      "section_source": "Résultats d’efficacité et de tolérance",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 54,
+          "s": "profil de tolérance établi lors de la mise sur le marché",
+          "t": "Les données de tolérance ont montré le maintien à moyen terme (36 mois) du profil de tolérance établi lors de la mise sur le marché de ces médicaments et actualisé depuis leur commercialisation. Aucune nouvelle alerte de tolérance n’a été mise en évidence.",
+          "m": "rule",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21292_arg_CT_04",
+      "evaluation_id": "CT-21292",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le psoriasis en plaques modéré à sévère est une maladie fréquente avec un besoin thérapeutique partiellement couvert, justifiant les traitements biologiques proposés.",
+      "extrait_textuel": "Le psoriasis en plaques est une affection cutanée chronique fréquente... le besoin thérapeutique reste partiellement couvert.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "page_source": "Page 1",
+      "section_source": "Contexte",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "Le psoriasis en plaques est une affection cutanée chronique",
+          "t": "Le psoriasis en plaques est une affection cutanée chronique fréquente qui touche environ 4,42 % de la population générale en France. [...] Le besoin thérapeutique reste partiellement couvert.",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21292_arg_CT_05",
+      "evaluation_id": "CT-21292",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "La décision thérapeutique doit tenir compte de l’histoire de la maladie, de la sévérité et de l’impact psychosocial, selon les recommandations actuelles.",
+      "extrait_textuel": "La décision de mise sous traitement doit tenir compte de l’histoire de la maladie, des caractéristiques du patient, des antécédents de traitement et de la sévérité de la maladie [...].",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "page_source": "Page 2-3",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "La décision de mise sous traitement doit tenir compte",
+          "t": "La décision de mise sous traitement doit tenir compte de l’histoire de la maladie, des caractéristiques du patient, des antécédents de traitement et de la sévérité de la maladie, celle-ci étant appréciée au regard de l’aspect des lésions mais aussi au regard de leur étendue, de l’impact de la maladie sur la qualité de vie et de l’importance de son retentissement psychosocial.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_01",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "La commission propose un élargissement du périmètre de remboursement des biothérapies pour le psoriasis modéré à sévère à une utilisation en deuxième ligne après échec du méthotrexate, alignée avec les pratiques cliniques actuelles.",
+      "extrait_textuel": "Ainsi, il me semble logique, comme cela a été fait pour les biothérapies de première génération en mai 2021, de rapprocher le périmètre du remboursement de celui de l’AMM, tout en maintenant une indication en seconde ligne de traitement systémique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 10,
+          "s": "Ainsi, il me ",
+          "t": "Ainsi, il me semble logique, comme cela a été fait pour les biothérapies de première génération en mai 2021, de rapprocher le périmètre du remboursement de celui de l’AMM, tout en maintenant une indication en seconde ligne de traitement systémique.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_02",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Les données de l'étude PSOBIOTEQ montrent un maintien à long terme de l’efficacité des anti-IL17 et anti-IL23 sur le psoriasis en plaques modéré à sévère, avec des taux élevés de PASI 75, PASI 90 et amélioration de la qualité de vie.",
+      "extrait_textuel": "Le bénéfice clinique se maintient à moyen et long terme avec des taux de PASI 75 à 85 % à un an pour COSENTYX et maintien à 5 ans pour les critères PASI.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 7,
+          "s": "Le bénéfice",
+          "t": "Le bénéfice clinique se maintient et la qualité de vie est normale ou quasi normale pour 62,5 % des malades à 52 semaines.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_03",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Aucune nouvelle alerte de tolérance grave n’a été identifiée pour les biothérapies de deuxième génération, confirmant un profil de sécurité stable sur le long terme.",
+      "extrait_textuel": "Enfin, aucun signal nouveau de tolérance n’a été mis en évidence avec le recul et avec la diffusion de la prescription de ces médicaments dont je vous rappelle que les premiers ont maintenant vingt ans.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 10,
+          "s": "Enfin, aucun signal",
+          "t": "Enfin, aucun signal nouveau de tolérance n’a été mis en évidence avec le recul et la diffusion de la prescription de ces médicaments.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_04",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Mitigé",
+      "description": "Un débat a eu lieu sur le positionnement du produit TALTZ, notamment concernant la demande d’ASMR IV par le laboratoire, qui a été contestée par la Commission faute de preuve suffisante pour le justifier.",
+      "extrait_textuel": "Je reviens sur le positionnement de TALTZ dans la stratégie. Il y a une demande d’ASMR IV mais la commission n’a pas jugé cette demande justifiée faute de démonstration claire de supériorité sur tous les autres produits.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 11,
+          "s": "Je reviens sur le",
+          "t": "Je reviens sur le positionnement de TALTZ dans la stratégie. Il y a une demande d’ASMR IV mais la commission n’a pas jugé cette demande justifiée faute de démonstration claire.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_05",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Le consensus des experts et les pratiques cliniques récentes recommandent le méthotrexate comme traitement systémique de première ligne dans le psoriasis, avec des biothérapies réservées à la seconde ligne.",
+      "extrait_textuel": "Seul le méthotrexate a été retenu par les experts comme traitement de première intention, tandis que les anti-IL17 et anti-IL23 sont recommandés en deuxième ligne après échec ou intolérance au méthotrexate.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 10,
+          "s": "Seul le méthotrexate",
+          "t": "Seul le méthotrexate a été retenu par les experts comme traitement de première intention, tandis que les anti-IL17 et anti-IL23 sont recommandés en deuxième ligne.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_06",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "En cas d’échec d’un traitement par anti-IL17 ou anti-IL23, la pratique clinique consiste à passer à un produit d’une autre famille, conformément aux recommandations actuelles.",
+      "extrait_textuel": "Si on a un échec de l’anti-IL17 on passe à l’anti-IL23 et inversement. Ce sont deux familles de produits de haute efficacité utilisées en monothérapie.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 12,
+          "s": "Si on a un échec de",
+          "t": "Si on a un échec de l’anti-IL17 on passe à l’anti-IL23 et inversement. Ce sont deux familles de produits de haute efficacité.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_07",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Les résultats des études de phase 3 et des données real-world révèlent une efficacité stable et durable des biothérapies de deuxième génération dans le psoriasis en plaques.",
+      "extrait_textuel": "Les données à long terme apportées par les laboratoires ainsi que les données observationnelles issues de PSOBIOTEQ rassurent sur l’efficacité et la tolérance dans le psoriasis nécessitant un traitement systémique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 10,
+          "s": "Les données à long terme",
+          "t": "Les données à long terme apportées par les laboratoires ainsi que les données observationnelles issues de PSOBIOTEQ rassurent sur l’efficacité et la tolérance.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_08",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Le psoriasis en plaques modéré à sévère est une maladie chronique impactant significativement la qualité de vie, justifiant la nécessité d’options thérapeutiques efficaces et bien tolérées.",
+      "extrait_textuel": "Le psoriasis en plaques entraîne un retentissement sur la qualité de vie qui est modéré à important pour une majorité de patients.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Un Chef de Projet",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 4,
+          "s": "Le psoriasis en plaques entraîne",
+          "t": "Le psoriasis en plaques entraîne un retentissement sur la qualité de vie qui est modéré à important pour une majorité de patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-NonRenseigné_arg_TRANS_09",
+      "evaluation_id": "CT-NonRenseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Le consensus des experts français validé par une méthode DELPHI confirme la place des biothérapies anti-IL17 et anti-IL23 en deuxième ligne après méthotrexate, avec une forte acceptation des cliniciens.",
+      "extrait_textuel": "Les experts recommandent les anti-IL23 et anti-IL17 en seconde ligne en cas d’échec ou d’intolérance au traitement systémique conventionnel, selon un consensus présenté en décembre 2022.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F3",
+          "p": 10,
+          "s": "Les experts recommandent les",
+          "t": "Les experts recommandent les anti-IL23 et anti-IL17 en seconde ligne en cas d’échec ou d’intolérance au traitement systémique conventionnel.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21292_ctx",
+    "evaluation_id": "CT-21292",
+    "ISP": "Ces spécialités ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique.",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2015-01-15",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21292",
+    "texte_brut": "Avis version définitive modifié le 30/09/2022. La Commission de la Transparence réévalue les médicaments systémiques biologiques pour le psoriasis en plaques modéré à sévère chez l'adulte..."
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21292_smrasmr_01",
+      "evaluation_id": "CT-21292",
+      "indication_precise": "Traitement du psoriasis en plaques modéré à sévère chez l’adulte nécessitant un traitement systémique en cas d’échec ou intolérance aux traitements conventionnels non biologiques",
+      "smr": "Service médical rendu important",
+      "smr_enum": "Important",
+      "asmr": "l’amélioration du service médical rendu reste inchangée, notamment ASMR IV pour plusieurs spécialités",
+      "asmr_enum": "IV",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Données d’efficacité à long terme, tolérance maintenue, bonne observance, cohérence avec les recommandations, étude PSOBIOTEQ 2",
+      "population_cible_indication": "Adultes avec psoriasis modéré à sévère, en échec aux traitements systémiques conventionnels et/ou photothérapie",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": [
+        "Méthotrexate",
+        "Ciclosporine",
+        "Acitrétine",
+        "Photothérapie"
+      ],
+      "comparateur_id_HAS": [
+        "CT-21292_compHAS_01",
+        "CT-21292_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "La Commission considère que désormais ces médicaments",
+          "t": "La Commission considère que désormais ces médicaments étaient des traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte en cas d’échec à une 1re ligne de traitement systémique non biologique",
+          "m": "rule",
+          "c": 0.96
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 65,
+          "s": "la Commission considère que désormais les spécialités REMSIMA 120 mg (SC) (infliximab), CIMZIA (certolizumab pegol), COSENTYX (sécukinumab)",
+          "t": "la Commission considère que désormais les spécialités REMSIMA 120 mg (SC) (infliximab), CIMZIA (certolizumab pegol), COSENTYX (sécukinumab), TALTZ (ixekizumab), KYNTHEUM (brodalumab), TREMFYA (guselkumab), SKYRIZI (risankizumab) et ILUMETRI (tildrakizumab) sont des traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques de l’adulte [...]",
+          "m": "rule",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "smr_asmr_id": "CT-NonRenseigné_smrasmr_01",
+      "evaluation_id": "CT-NonRenseigné",
+      "indication_precise": "Traitement du psoriasis en plaques modéré à sévère nécessitant un traitement systémique systémique après échec du méthotrexate",
+      "smr": "La Commission considère que le service médical rendu est important dans l'indication pleine et entière de l'AMM pour les biothérapies du psoriasis en plaques modéré à sévère nécessitant un traitement systémique, avec maintien d'une indication en deuxième ligne.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que les biothérapies du psoriasis n'apportent pas d'amélioration majeure du service médical rendu dans l'indication étudiée (ASMR V), sauf pour TALTZ où le laboratoire revendique une ASMR IV vs guselkumab, non confirmée par la Commission.",
+      "asmr_enum": "V",
+      "smr_revendique": "Service médical rendu important sauf pour REMSIMA sous-cutané (modéré).",
+      "asmr_revendique": "ASMR IV revendiquée pour TALTZ, ASMR modérées ou inchangées pour les autres.",
+      "justification_decisionnelle": "Les données cliniques et observationnelles montrent un maintien durable d’efficacité et un profil de tolérance acceptable, sans nouveaux signaux de sécurité. La place en deuxième ligne de traitement systémique est validée, en cohérence avec les pratiques experts et recommandations récentes. La demande d'ASMR IV pour TALTZ est jugée non justifiée au vu des preuves.",
+      "population_cible_indication": "Adultes atteints de psoriasis en plaques modéré à sévère requérant un traitement systémique après échec du méthotrexate.",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": [
+        "COSENTYX pour la majorité des évaluations",
+        "guselkumab pour comparaison TALTZ"
+      ],
+      "comparateur_id_HAS": [
+        "CT-NonRenseigné_compHAS_01",
+        "CT-NonRenseigné_compHAS_02"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F3",
+          "p": 3,
+          "s": "La Commission",
+          "t": "La Commission considère que le service médical rendu est important dans l'indication pleine et entière de l'AMM",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F3",
+          "p": 3,
+          "s": "La Commission considère que les biothérapies du psoriasis",
+          "t": "La Commission considère que les biothérapies du psoriasis n'apportent pas d'amélioration majeure du service médical rendu dans l'indication étudiée (ASMR V)",
+          "m": "rule",
+          "c": 0.95
+        },
+        {
+          "field": "justification_decisionnelle",
+          "f": "F3",
+          "p": 10,
+          "s": "Les données cliniques et observationnelles",
+          "t": "Les données cliniques et observationnelles montrent un maintien durable d’efficacité et un profil de tolérance acceptable, sans nouveaux signaux de sécurité.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-NonRenseigné_event_TRANS_01",
+      "evaluation_id": "CT-NonRenseigné",
+      "event_type": "TRANSCRIPTION_SEANCE",
+      "event_date": "2022-07-11",
+      "detail_brut": "Séance de la Commission de la Transparence du 11 juillet 2022, évaluation des biothérapies du psoriasis",
+      "source_doc": "F3",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F3",
+          "p": 1,
+          "s": "Commission",
+          "t": "Commission de la Transparence Lundi 11 juillet 2022",
+          "m": "rule",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-NonRenseigné_event_AUDITION_01",
+      "evaluation_id": "CT-NonRenseigné",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-07-11",
+      "detail_brut": "Audition du laboratoire Bernard Guillot concernant la réévaluation des biothérapies du psoriasis en plaques.",
+      "source_doc": "F3",
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F3",
+          "p": 6,
+          "s": "Bernard Guillot",
+          "t": "Bernard Guillot quitte la séance",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-NonRenseigné",
+    "delai_amm_ct_jours": null,
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": 0,
+    "delai_eval_depuis_evenement_initial_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-NonRenseigné",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Réévaluation",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": true,
+    "nb_votants": 13,
+    "voix_pour_pct": 100,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}
