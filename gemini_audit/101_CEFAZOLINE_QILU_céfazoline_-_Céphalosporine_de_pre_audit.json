@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Comparateurs_HAS",
+        "gpt_claim": "Un seul comparateur générique cité.",
+        "deepseek_claim": "Deux comparateurs, incluant spécifiquement CEFAZOLINE PANPHARMA.",
+        "evidence": "Ce sont les mêmes que ceux identifiés pour l'euro-générique CEFAZOLINE PANPHARMA 1 g et 2 g (cf. avis de la Commission de la Transparence du 21/06/2023).",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments centrés sur l'usage clinique.",
+        "deepseek_claim": "6 arguments incluant l'historique KEFZOL et l'ISP.",
+        "evidence": "Ces spécialités... sont des euro-génériques des spécialités de référence KEFZOL 1 g... et KEFZOL 2 g... autorisées uniquement en Autriche.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.indication",
+        "gpt_claim": "Ajoute 'par voie parentérale' dans le libellé de l'indication.",
+        "deepseek_claim": "Libellé strictement conforme aux puces de l'AMM.",
+        "evidence": "Indications de l'AMM : − Infections de la peau et des tissus mous − Infections des os et des articulations − Prophylaxie des infections péri-opératoires",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.9,
+      "rationale_short": "DeepSeek offre une extraction plus exhaustive en identifiant les références spécifiques (KEFZOL, PANPHARMA) cruciales pour un dossier d'euro-générique, là où GPT reste plus générique."
+    },
+    "quality_flags": [
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Comparateurs_HAS\",\n      \"gpt_claim\": \"Un seul comparateur générique cité.\",\n      \"deepseek_claim\": \"Deux comparateurs, incluant spécifiquement CEFAZOLINE PANPHARMA.\",\n      \"evidence\": \"Ce sont les mêmes que ceux identifiés pour l'euro-générique CEFAZOLINE PANPHARMA 1 g et 2 g (cf. avis de la Commission de la Transparence du 21/06/2023).\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments centrés sur l'usage clinique.\",\n      \"deepseek_claim\": \"6 arguments incluant l'historique KEFZOL et l'ISP.\",\n      \"evidence\": \"Ces spécialités... sont des euro-génériques des spécialités de référence KEFZOL 1 g... et KEFZOL 2 g... autorisées uniquement en Autriche.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.indication\",\n      \"gpt_claim\": \"Ajoute 'par voie parentérale' dans le libellé de l'indication.\",\n      \"deepseek_claim\": \"Libellé strictement conforme aux puces de l'AMM.\",\n      \"evidence\": \"Indications de l'AMM : − Infections de la peau et des tissus mous − Infections des os et des articulations − Prophylaxie des infections péri-opératoires\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"DeepSeek offre une extraction plus exhaustive en identifiant les références spécifiques (KEFZOL, PANPHARMA) cruciales pour un dossier d'euro-générique, là où GPT reste plus générique.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\"\n  ]\n}"
+}

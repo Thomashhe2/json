@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "5 arguments extraits (Efficacité, SMR/ASMR, Place, Besoin, Alternatives)",
+        "deepseek_claim": "Liste vide []",
+        "evidence": "Section 'Conclusions de la Commission' du texte source contenant 5 puces distinctes sur le SMR, l'ASMR, et la place thérapeutique.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "Liste vide []",
+        "deepseek_claim": "Création d'une 'Étude principale (nom non spécifié)'",
+        "evidence": "Le texte mentionne 'Dans les études cliniques...' de façon générale sans fournir de données structurées (NCT, bras, résultats) permettant de créer un objet essai.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.vote_unanimite",
+        "gpt_claim": "true (18 votants)",
+        "deepseek_claim": "null",
+        "evidence": "Texte source: 'Considérant l'ensemble de ces données... après débat et vote...'",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.aire_therapeutique_niveau_1",
+        "gpt_claim": "Gynécologie",
+        "deepseek_claim": "Endocrinologie",
+        "evidence": "Le texte comporte un pictogramme fléché 'Gynécologie' en page 1 et 2.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT a extrait avec précision les arguments décisionnels et les données de vote, là où DeepSeek a totalement omis les arguments et a généré une entrée d'essai clinique fantôme (hallucination de structure) sans données réelles."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "risque_hallucination"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"5 arguments extraits (Efficacité, SMR/ASMR, Place, Besoin, Alternatives)\",\n      \"deepseek_claim\": \"Liste vide []\",\n      \"evidence\": \"Section 'Conclusions de la Commission' du texte source contenant 5 puces distinctes sur le SMR, l'ASMR, et la place thérapeutique.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"Liste vide []\",\n      \"deepseek_claim\": \"Création d'une 'Étude principale (nom non spécifié)'\",\n      \"evidence\": \"Le texte mentionne 'Dans les études cliniques...' de façon générale sans fournir de données structurées (NCT, bras, résultats) permettant de créer un objet essai.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.vote_unanimite\",\n      \"gpt_claim\": \"true (18 votants)\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Texte source: 'Considérant l'ensemble de ces données... après débat et vote...'\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.aire_therapeutique_niveau_1\",\n      \"gpt_claim\": \"Gynécologie\",\n      \"deepseek_claim\": \"Endocrinologie\",\n      \"evidence\": \"Le texte comporte un pictogramme fléché 'Gynécologie' en page 1 et 2.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT a extrait avec précision les arguments décisionnels et les données de vote, là où DeepSeek a totalement omis les arguments et a généré une entrée d'essai clinique fantôme (hallucination de structure) sans données réelles.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"risque_hallucination\"\n  ]\n}"
+}

@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison[0].code_cip13",
+        "gpt_claim": "null",
+        "deepseek_claim": "34009 302 405 9 5",
+        "evidence": "CIP : 34009 302 405 9 5 (page 35)",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.population_cible_nombre",
+        "gpt_claim": "null",
+        "deepseek_claim": "3920000",
+        "evidence": "La population cible de RYALTRIS est estimée à 3 920 000 patients au maximum (page 33)",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[2].QoL_flag",
+        "gpt_claim": "true",
+        "deepseek_claim": "false",
+        "evidence": "Rhinoconjonctivitis Quality of Life Questionnaire (RQLQ(S)) mentionné pour l'étude GSP 301-304",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Critères_Jugement[0].p_value",
+        "gpt_claim": "<0,05",
+        "deepseek_claim": "p < 0,0001 (vs placebo) ; p = 0,0029 (vs olopatadine) ; NS (vs mométasone)",
+        "evidence": "L'avis détaille les p-values par bras de comparaison (p=0,0029 vs olopatadine)",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS.aire_therapeutique_niveau_1",
+        "gpt_claim": "Immunologie",
+        "deepseek_claim": "null",
+        "evidence": "GPT catégorise l'aire thérapeutique via le texte de la page 1, DeepSeek laisse vide.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.9,
+      "rationale_short": "DeepSeek a extrait des données administratives et épidémiologiques cruciales (CIP13, population cible de 3.9M) que GPT a omises. Il offre également une précision supérieure sur les résultats statistiques (p-values détaillées)."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison[0].code_cip13\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"34009 302 405 9 5\",\n      \"evidence\": \"CIP : 34009 302 405 9 5 (page 35)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.population_cible_nombre\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"3920000\",\n      \"evidence\": \"La population cible de RYALTRIS est estimée à 3 920 000 patients au maximum (page 33)\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[2].QoL_flag\",\n      \"gpt_claim\": \"true\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"Rhinoconjonctivitis Quality of Life Questionnaire (RQLQ(S)) mentionné pour l'étude GSP 301-304\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Critères_Jugement[0].p_value\",\n      \"gpt_claim\": \"<0,05\",\n      \"deepseek_claim\": \"p < 0,0001 (vs placebo) ; p = 0,0029 (vs olopatadine) ; NS (vs mométasone)\",\n      \"evidence\": \"L'avis détaille les p-values par bras de comparaison (p=0,0029 vs olopatadine)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS.aire_therapeutique_niveau_1\",\n      \"gpt_claim\": \"Immunologie\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT catégorise l'aire thérapeutique via le texte de la page 1, DeepSeek laisse vide.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"DeepSeek a extrait des données administratives et épidémiologiques cruciales (CIP13, population cible de 3.9M) que GPT a omises. Il offre également une précision supérieure sur les résultats statistiques (p-values détaillées).\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

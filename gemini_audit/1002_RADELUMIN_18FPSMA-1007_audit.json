@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Arguments_Decisionnels",
+        "gpt_claim": "6 arguments extraits (Efficacité, SMR/ASMR, Besoin, Place, Alternatives, Population).",
+        "deepseek_claim": "Tableau vide [].",
+        "evidence": "GPT fournit une analyse détaillée des sections 'Conclusions de la Commission' alors que DeepSeek omet totalement ce bloc structurant de l'avis HAS.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison.presentations",
+        "gpt_claim": "Structure en liste d'objets (15mL, 20mL, 10mL).",
+        "deepseek_claim": "Champs plats incrémentaux (code_cip13, code_cip13_2, code_cip13_3).",
+        "evidence": "DeepSeek utilise des clés non standard (code_cip13_2) au lieu d'une structure itérative, ce qui fragilise l'interopérabilité.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison.presentations[2].cip",
+        "gpt_claim": "null",
+        "deepseek_claim": "34009 550 897 4 2",
+        "evidence": "Le texte brut mentionne bien le CIP pour le flacon 10 mL (34009 550 897 4 2) que DeepSeek a capturé contrairement à GPT.",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.gravite_patho_enum",
+        "gpt_claim": "Très_grave",
+        "deepseek_claim": "Grave",
+        "evidence": "Le texte mentionne 'engage le pronostic vital', ce qui correspond méthodologiquement au tag 'Très_grave' chez l'auditeur HAS.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.ISP",
+        "gpt_claim": "null",
+        "deepseek_claim": "Texte complet sur l'absence d'impact supplémentaire.",
+        "evidence": "DeepSeek a extrait le paragraphe relatif à l'Intérêt de Santé Publique (ISP) présent en page 3, ignoré par GPT.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT l'emporte largement grâce à l'extraction complète des arguments décisionnels (6 items vs 0), essentiels pour un audit HAS. DeepSeek est plus précis sur les métadonnées administratives (CIP 10mL, ISP) mais échoue sur la structure clinique."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Arguments_Decisionnels\",\n      \"gpt_claim\": \"6 arguments extraits (Efficacité, SMR/ASMR, Besoin, Place, Alternatives, Population).\",\n      \"deepseek_claim\": \"Tableau vide [].\",\n      \"evidence\": \"GPT fournit une analyse détaillée des sections 'Conclusions de la Commission' alors que DeepSeek omet totalement ce bloc structurant de l'avis HAS.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison.presentations\",\n      \"gpt_claim\": \"Structure en liste d'objets (15mL, 20mL, 10mL).\",\n      \"deepseek_claim\": \"Champs plats incrémentaux (code_cip13, code_cip13_2, code_cip13_3).\",\n      \"evidence\": \"DeepSeek utilise des clés non standard (code_cip13_2) au lieu d'une structure itérative, ce qui fragilise l'interopérabilité.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison.presentations[2].cip\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"34009 550 897 4 2\",\n      \"evidence\": \"Le texte brut mentionne bien le CIP pour le flacon 10 mL (34009 550 897 4 2) que DeepSeek a capturé contrairement à GPT.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.gravite_patho_enum\",\n      \"gpt_claim\": \"Très_grave\",\n      \"deepseek_claim\": \"Grave\",\n      \"evidence\": \"Le texte mentionne 'engage le pronostic vital', ce qui correspond méthodologiquement au tag 'Très_grave' chez l'auditeur HAS.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.ISP\",\n      \"gpt_claim\": \"null\",\n      \"deepseek_claim\": \"Texte complet sur l'absence d'impact supplémentaire.\",\n      \"evidence\": \"DeepSeek a extrait le paragraphe relatif à l'Intérêt de Santé Publique (ISP) présent en page 3, ignoré par GPT.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT l'emporte largement grâce à l'extraction complète des arguments décisionnels (6 items vs 0), essentiels pour un audit HAS. DeepSeek est plus précis sur les métadonnées administratives (CIP 10mL, ISP) mais échoue sur la structure clinique.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

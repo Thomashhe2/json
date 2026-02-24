@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.age_restriction_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "Le texte mentionne explicitement des restrictions : 'enfants pesant plus de 21 kg (6 ans et plus)' pour le 500 mg et 'plus de 50 kg (15 ans et plus)' pour le 1 g.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.besoin_medical_interprete",
+        "gpt_claim": "Non_couvert",
+        "deepseek_claim": "null",
+        "evidence": "GPT interprète l'absence d'impact supplémentaire comme un besoin non couvert, ce qui est un contresens pour un générique de paracétamol (besoin largement couvert).",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "[]",
+        "deepseek_claim": "[Usage médical bien établi]",
+        "evidence": "Le document stipule 'Absence d'essais cliniques nouveaux'. DeepSeek crée un essai fictif pour l'usage établi, GPT respecte la structure vide.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Timeline_Evenements",
+        "gpt_claim": "2 événements",
+        "deepseek_claim": "3 événements",
+        "evidence": "DeepSeek a extrait la 'Date de validation administrative : 13 mai 2022' que GPT a omise.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.85,
+      "rationale_short": "DeepSeek identifie correctement les restrictions d'âge/poids et capture un événement de timeline supplémentaire. GPT commet une erreur d'interprétation majeure sur le besoin médical (Non_couvert)."
+    },
+    "quality_flags": [
+      "incoherence_interne",
+      "risque_hallucination"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.age_restriction_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"Le texte mentionne explicitement des restrictions : 'enfants pesant plus de 21 kg (6 ans et plus)' pour le 500 mg et 'plus de 50 kg (15 ans et plus)' pour le 1 g.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.besoin_medical_interprete\",\n      \"gpt_claim\": \"Non_couvert\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT interprète l'absence d'impact supplémentaire comme un besoin non couvert, ce qui est un contresens pour un générique de paracétamol (besoin largement couvert).\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"[]\",\n      \"deepseek_claim\": \"[Usage médical bien établi]\",\n      \"evidence\": \"Le document stipule 'Absence d'essais cliniques nouveaux'. DeepSeek crée un essai fictif pour l'usage établi, GPT respecte la structure vide.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Timeline_Evenements\",\n      \"gpt_claim\": \"2 événements\",\n      \"deepseek_claim\": \"3 événements\",\n      \"evidence\": \"DeepSeek a extrait la 'Date de validation administrative : 13 mai 2022' que GPT a omise.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"DeepSeek identifie correctement les restrictions d'âge/poids et capture un événement de timeline supplémentaire. GPT commet une erreur d'interprétation majeure sur le besoin médical (Non_couvert).\"\n  },\n  \"quality_flags\": [\n    \"incoherence_interne\",\n    \"risque_hallucination\"\n  ]\n}"
+}

@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[0].nb_patient_traitement",
+        "gpt_claim": "90",
+        "deepseek_claim": "null",
+        "evidence": "Dans l'étude HOPE, 90 patients ont reçu 1 500 mg de voxelotor par jour",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Critères_Jugement[0].p_value_num",
+        "gpt_claim": "0.0009",
+        "deepseek_claim": "null",
+        "evidence": "Différence entre voxelotor 1500 mg et placebo de +1,23 g/dL, p < 0,001",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.nb_decisions_internationales",
+        "gpt_claim": "2",
+        "deepseek_claim": "0",
+        "evidence": "OXBRYTA (voxelotor) est autorisé aux Etats-Unis depuis le 25 novembre 2019; AMM le 14 février 2022 (EMA)",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS",
+        "gpt_claim": "2 indications (incluant contribution patient)",
+        "deepseek_claim": "1 indication (médicale uniquement)",
+        "evidence": "GPT sépare l'avis CT-19784 et une 'Contribution' patient avec des SMR/ASMR divergents (Faible vs Important).",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Tolérance[0].sae_pct",
+        "gpt_claim": "28.4",
+        "deepseek_claim": "null",
+        "evidence": "sae_pct: 28.4, sae_pct_comparateur: 25.3",
+        "severity": "high"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT extrait la quasi-totalité des données numériques (N patients, p-values, pourcentages de tolérance) et le contexte international, là où DeepSeek laisse de nombreux champs à 'null'. GPT identifie également les contributions des parties prenantes, bien que cela crée une complexité structurelle."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[0].nb_patient_traitement\",\n      \"gpt_claim\": \"90\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Dans l'étude HOPE, 90 patients ont reçu 1 500 mg de voxelotor par jour\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Critères_Jugement[0].p_value_num\",\n      \"gpt_claim\": \"0.0009\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Différence entre voxelotor 1500 mg et placebo de +1,23 g/dL, p < 0,001\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.nb_decisions_internationales\",\n      \"gpt_claim\": \"2\",\n      \"deepseek_claim\": \"0\",\n      \"evidence\": \"OXBRYTA (voxelotor) est autorisé aux Etats-Unis depuis le 25 novembre 2019; AMM le 14 février 2022 (EMA)\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS\",\n      \"gpt_claim\": \"2 indications (incluant contribution patient)\",\n      \"deepseek_claim\": \"1 indication (médicale uniquement)\",\n      \"evidence\": \"GPT sépare l'avis CT-19784 et une 'Contribution' patient avec des SMR/ASMR divergents (Faible vs Important).\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Tolérance[0].sae_pct\",\n      \"gpt_claim\": \"28.4\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"sae_pct: 28.4, sae_pct_comparateur: 25.3\",\n      \"severity\": \"high\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT extrait la quasi-totalité des données numériques (N patients, p-values, pourcentages de tolérance) et le contexte international, là où DeepSeek laisse de nombreux champs à 'null'. GPT identifie également les contributions des parties prenantes, bien que cela crée une complexité structurelle.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.vote_unanimite",
+        "gpt_claim": "false (15 pour, 6 contre)",
+        "deepseek_claim": "null",
+        "evidence": "nb_votants: 23, nb_voix_pour: 15, nb_voix_contre: 6, nb_abstentions: 2",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Tolérance[0].ae_total_pct",
+        "gpt_claim": "80",
+        "deepseek_claim": "null",
+        "evidence": "Au moins un EI a été rapporté chez 80% des patients sous sufentanil 30 µg",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "8 entrées (doublons inclus)",
+        "deepseek_claim": "5 entrées",
+        "evidence": "GPT liste SAP202 et 'Étude phase 2 post-bunionectomie' comme deux objets distincts alors qu'il s'agit du même essai.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.nb_obligations_post_amm",
+        "gpt_claim": "1",
+        "deepseek_claim": "0",
+        "evidence": "Une étude de suivi sur l'utilisation réelle sera réalisée pour évaluer la compréhension de l'utilisation appropriée.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT extrait avec succès les données quantitatives critiques (votes de la commission, pourcentages de tolérance) que DeepSeek laisse en null. DeepSeek est cependant plus propre sur la structure des essais en évitant les doublons de saisie."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.vote_unanimite\",\n      \"gpt_claim\": \"false (15 pour, 6 contre)\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"nb_votants: 23, nb_voix_pour: 15, nb_voix_contre: 6, nb_abstentions: 2\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Tolérance[0].ae_total_pct\",\n      \"gpt_claim\": \"80\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Au moins un EI a été rapporté chez 80% des patients sous sufentanil 30 µg\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"8 entrées (doublons inclus)\",\n      \"deepseek_claim\": \"5 entrées\",\n      \"evidence\": \"GPT liste SAP202 et 'Étude phase 2 post-bunionectomie' comme deux objets distincts alors qu'il s'agit du même essai.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.nb_obligations_post_amm\",\n      \"gpt_claim\": \"1\",\n      \"deepseek_claim\": \"0\",\n      \"evidence\": \"Une étude de suivi sur l'utilisation réelle sera réalisée pour évaluer la compréhension de l'utilisation appropriée.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT extrait avec succès les données quantitatives critiques (votes de la commission, pourcentages de tolérance) que DeepSeek laisse en null. DeepSeek est cependant plus propre sur la structure des essais en évitant les doublons de saisie.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"admin_vs_clinique\"\n  ]\n}"
+}

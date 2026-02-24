@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "structure",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "2 essais (Etude 1620 et RGN1620)",
+        "deepseek_claim": "1 essai (Étude 1620)",
+        "evidence": "GPT duplique l'étude pivot NCT03132636 sous deux identifiants distincts, alors qu'il s'agit de la même étude 1620.",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques[0].QoL_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "DeepSeek identifie correctement les instruments EORTC QLQ-C30 et Skindex-16 mentionnés dans le texte.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Identifiants_Produits_Liaison[0].dci",
+        "gpt_claim": "cémiplimab",
+        "deepseek_claim": "cémipimab",
+        "evidence": "DeepSeek commet une erreur de saisie (coquille) sur la DCI en oubliant le 'l'.",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Données_Contexte.nb_decisions_internationales",
+        "gpt_claim": "5",
+        "deepseek_claim": "3",
+        "evidence": "GPT capture l'intégralité des pays mentionnés (UK, Allemagne, Belgique, Pays-Bas, USA) tandis que DeepSeek en omet deux.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.85,
+      "rationale_short": "DeepSeek l'emporte grâce à une meilleure structuration clinique, évitant le doublon majeur d'essais commis par GPT et identifiant correctement les données de Qualité de Vie (QoL), malgré une coquille sur la DCI."
+    },
+    "quality_flags": [
+      "doublon_essais",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"2 essais (Etude 1620 et RGN1620)\",\n      \"deepseek_claim\": \"1 essai (Étude 1620)\",\n      \"evidence\": \"GPT duplique l'étude pivot NCT03132636 sous deux identifiants distincts, alors qu'il s'agit de la même étude 1620.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques[0].QoL_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"DeepSeek identifie correctement les instruments EORTC QLQ-C30 et Skindex-16 mentionnés dans le texte.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Identifiants_Produits_Liaison[0].dci\",\n      \"gpt_claim\": \"cémiplimab\",\n      \"deepseek_claim\": \"cémipimab\",\n      \"evidence\": \"DeepSeek commet une erreur de saisie (coquille) sur la DCI en oubliant le 'l'.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Données_Contexte.nb_decisions_internationales\",\n      \"gpt_claim\": \"5\",\n      \"deepseek_claim\": \"3\",\n      \"evidence\": \"GPT capture l'intégralité des pays mentionnés (UK, Allemagne, Belgique, Pays-Bas, USA) tandis que DeepSeek en omet deux.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"DeepSeek l'emporte grâce à une meilleure structuration clinique, évitant le doublon majeur d'essais commis par GPT et identifiant correctement les données de Qualité de Vie (QoL), malgré une coquille sur la DCI.\"\n  },\n  \"quality_flags\": [\n    \"doublon_essais\",\n    \"incoherence_interne\"\n  ]\n}"
+}

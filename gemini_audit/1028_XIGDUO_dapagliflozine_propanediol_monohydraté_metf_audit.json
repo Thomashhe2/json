@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication[0].smr",
+        "gpt_claim": "Texte explicatif sur la radiation administrative",
+        "deepseek_claim": "null",
+        "evidence": "GPT capture : 'Ce dossier est un avis favorable à la radiation administrative, sans réévaluation clinique du service médical rendu.'",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Evaluations_HAS.sous_groupe_population",
+        "gpt_claim": "Description clinique détaillée (patients contrôlés inadéquatement...)",
+        "deepseek_claim": "Adultes âgés de 18 ans et plus",
+        "evidence": "Le texte source liste précisément les conditions d'échec thérapeutique (metformine seule, association sulfamide, etc.) que GPT a incluses.",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Comparateurs_HAS[0].nom_comparateur_HAS",
+        "gpt_claim": "dapagliflozine/metformine comprimés séparés",
+        "deepseek_claim": "XIGDUO 5 mg/1000 mg, boîte de 60 comprimés pelliculés",
+        "evidence": "GPT identifie le comparateur clinique cité dans l'indication, DeepSeek identifie l'alternative administrative citée dans le contexte.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.9,
+      "rationale_short": "GPT offre une extraction plus exhaustive, notamment sur les champs SMR/ASMR et la population cible, là où DeepSeek laisse des valeurs nulles ou trop génériques malgré la présence des informations dans le texte source."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication[0].smr\",\n      \"gpt_claim\": \"Texte explicatif sur la radiation administrative\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"GPT capture : 'Ce dossier est un avis favorable à la radiation administrative, sans réévaluation clinique du service médical rendu.'\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Evaluations_HAS.sous_groupe_population\",\n      \"gpt_claim\": \"Description clinique détaillée (patients contrôlés inadéquatement...)\",\n      \"deepseek_claim\": \"Adultes âgés de 18 ans et plus\",\n      \"evidence\": \"Le texte source liste précisément les conditions d'échec thérapeutique (metformine seule, association sulfamide, etc.) que GPT a incluses.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Comparateurs_HAS[0].nom_comparateur_HAS\",\n      \"gpt_claim\": \"dapagliflozine/metformine comprimés séparés\",\n      \"deepseek_claim\": \"XIGDUO 5 mg/1000 mg, boîte de 60 comprimés pelliculés\",\n      \"evidence\": \"GPT identifie le comparateur clinique cité dans l'indication, DeepSeek identifie l'alternative administrative citée dans le contexte.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.9,\n    \"rationale_short\": \"GPT offre une extraction plus exhaustive, notamment sur les champs SMR/ASMR et la population cible, là où DeepSeek laisse des valeurs nulles ou trop génériques malgré la présence des informations dans le texte source.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

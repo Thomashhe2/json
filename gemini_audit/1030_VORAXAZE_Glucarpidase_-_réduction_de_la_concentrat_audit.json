@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.maladie_rare",
+        "gpt_claim": "true",
+        "deepseek_claim": "false",
+        "evidence": "Cette spécialité dispose d‘une désignation de médicament orphelin depuis février 2003",
+        "severity": "medium"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Evaluations_HAS.besoin_medical_interprete",
+        "gpt_claim": "Non_couvert",
+        "deepseek_claim": "Partiellement_couvert",
+        "evidence": "Le besoin médical [...] n'est actuellement que très partiellement couvert",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.age_restriction_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "Adultes et enfants ≥ 28 jours",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication.asmr_revendique_enum",
+        "gpt_claim": "III",
+        "deepseek_claim": "Non_renseigné",
+        "evidence": "Demande revalorisation ASMR à niveau III par le laboratoire",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison.code_cip13",
+        "gpt_claim": "34009 590 585 2",
+        "deepseek_claim": "34009 590 585 2 2",
+        "evidence": "CIP : 34009 590 585 2 2",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.85,
+      "rationale_short": "GPT identifie correctement la revendication ASMR III du laboratoire et le statut de maladie rare (orphelin), points critiques pour un audit HAS. DeepSeek est plus précis sur la restriction d'âge et le libellé du besoin médical mais omet la revendication de l'industriel."
+    },
+    "quality_flags": [
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.maladie_rare\",\n      \"gpt_claim\": \"true\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"Cette spécialité dispose d‘une désignation de médicament orphelin depuis février 2003\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Evaluations_HAS.besoin_medical_interprete\",\n      \"gpt_claim\": \"Non_couvert\",\n      \"deepseek_claim\": \"Partiellement_couvert\",\n      \"evidence\": \"Le besoin médical [...] n'est actuellement que très partiellement couvert\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.age_restriction_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"Adultes et enfants ≥ 28 jours\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication.asmr_revendique_enum\",\n      \"gpt_claim\": \"III\",\n      \"deepseek_claim\": \"Non_renseigné\",\n      \"evidence\": \"Demande revalorisation ASMR à niveau III par le laboratoire\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison.code_cip13\",\n      \"gpt_claim\": \"34009 590 585 2\",\n      \"deepseek_claim\": \"34009 590 585 2 2\",\n      \"evidence\": \"CIP : 34009 590 585 2 2\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"GPT identifie correctement la revendication ASMR III du laboratoire et le statut de maladie rare (orphelin), points critiques pour un audit HAS. DeepSeek est plus précis sur la restriction d'âge et le libellé du besoin médical mais omet la revendication de l'industriel.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\"\n  ]\n}"
+}

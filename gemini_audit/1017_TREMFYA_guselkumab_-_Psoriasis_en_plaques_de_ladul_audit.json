@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "doc_id",
+        "gpt_claim": "CT-21292",
+        "deepseek_claim": "CT-544",
+        "evidence": "L'avis HAS de réévaluation des biothérapies du psoriasis est référencé sous le numéro CT-21292.",
+        "severity": "high"
+      },
+      {
+        "type": "structure",
+        "field_path": "Identifiants_Produits_Liaison",
+        "gpt_claim": "Détails complets (CIP13, formes, dosages)",
+        "deepseek_claim": "Champs majoritairement null",
+        "evidence": "GPT extrait les codes CIP13 (ex: 34009 301 172 8 6) et les formes (seringue, stylo) absents chez DeepSeek.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Essais_Cliniques",
+        "gpt_claim": "5 essais (FEATURE, JUNCTURE, CIMPASI 1/2, CIMPACT)",
+        "deepseek_claim": "2 essais (CIMPASI 1, PSOBIOTEQ2)",
+        "evidence": "Le document source détaille les études pivots pour chaque biothérapie réévaluée (Sécukinumab, Certolizumab).",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Tolérance.deaths_ae_n",
+        "gpt_claim": "7 décès (dont 2 liés)",
+        "deepseek_claim": "null",
+        "evidence": "Texte source F1 p.34 : '7 décès ont été rapportés durant les 3 études... dont 2 évalués comme liés au CZP'.",
+        "severity": "medium"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT réalise une extraction exhaustive et précise, notamment sur les identifiants réglementaires (CIP13) et la totalité des essais cliniques cités. DeepSeek échoue sur l'ID du document et omet des données de sécurité critiques (décès)."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne",
+      "risque_hallucination"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"doc_id\",\n      \"gpt_claim\": \"CT-21292\",\n      \"deepseek_claim\": \"CT-544\",\n      \"evidence\": \"L'avis HAS de réévaluation des biothérapies du psoriasis est référencé sous le numéro CT-21292.\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Identifiants_Produits_Liaison\",\n      \"gpt_claim\": \"Détails complets (CIP13, formes, dosages)\",\n      \"deepseek_claim\": \"Champs majoritairement null\",\n      \"evidence\": \"GPT extrait les codes CIP13 (ex: 34009 301 172 8 6) et les formes (seringue, stylo) absents chez DeepSeek.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Essais_Cliniques\",\n      \"gpt_claim\": \"5 essais (FEATURE, JUNCTURE, CIMPASI 1/2, CIMPACT)\",\n      \"deepseek_claim\": \"2 essais (CIMPASI 1, PSOBIOTEQ2)\",\n      \"evidence\": \"Le document source détaille les études pivots pour chaque biothérapie réévaluée (Sécukinumab, Certolizumab).\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Tolérance.deaths_ae_n\",\n      \"gpt_claim\": \"7 décès (dont 2 liés)\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Texte source F1 p.34 : '7 décès ont été rapportés durant les 3 études... dont 2 évalués comme liés au CZP'.\",\n      \"severity\": \"medium\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT réalise une extraction exhaustive et précise, notamment sur les identifiants réglementaires (CIP13) et la totalité des essais cliniques cités. DeepSeek échoue sur l'ID du document et omet des données de sécurité critiques (décès).\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\",\n    \"risque_hallucination\"\n  ]\n}"
+}

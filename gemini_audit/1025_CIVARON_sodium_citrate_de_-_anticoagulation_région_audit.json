@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.age_restriction_flag",
+        "gpt_claim": "false",
+        "deepseek_claim": "true",
+        "evidence": "Indication : 'chez l'adulte et l'enfant (hors prématurés)'. L'exclusion des prématurés constitue une restriction d'âge.",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Critères_Jugement",
+        "gpt_claim": "[]",
+        "deepseek_claim": "[Anticoagulation efficace]",
+        "evidence": "Le texte mentionne : 'Une anticoagulation efficace est obtenue par addition de 4 à 5 mmol de citrate... permettant de diminuer le taux de calcium ionisé à moins de 0,3 mmol/l'.",
+        "severity": "low"
+      },
+      {
+        "type": "interpretation",
+        "field_path": "Tolérance.EI_graves_detailles",
+        "gpt_claim": "Placés dans EI_frequents_detailles",
+        "deepseek_claim": "Placés dans EI_graves_detailles",
+        "evidence": "Le texte source qualifie l'hypocalcémie et l'hypernatrémie de 'très fréquents (≥ 1/10)'. DeepSeek les classe à tort comme graves (SAE).",
+        "severity": "low"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication.comparateurs_references_indication",
+        "gpt_claim": "4 comparateurs (REGIOCIT, ACD-A, Citrate 4% DM, Citrate trisodique 4%)",
+        "deepseek_claim": "2 comparateurs (Citrate 4% DM, REGIOCIT)",
+        "evidence": "Le texte liste explicitement REGIOCIT, Solution ACD-A et Citrate trisodique 4% comme comparateurs cliniquement pertinents.",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "DeepSeek",
+      "confidence": 0.85,
+      "rationale_short": "DeepSeek identifie correctement la restriction d'âge (prématurés) et extrait les critères de jugement (calcium ionisé), là où GPT reste en surface. GPT est cependant plus précis sur la catégorisation de la tolérance."
+    },
+    "quality_flags": [
+      "admin_vs_clinique",
+      "incoherence_interne"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.age_restriction_flag\",\n      \"gpt_claim\": \"false\",\n      \"deepseek_claim\": \"true\",\n      \"evidence\": \"Indication : 'chez l'adulte et l'enfant (hors prématurés)'. L'exclusion des prématurés constitue une restriction d'âge.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Critères_Jugement\",\n      \"gpt_claim\": \"[]\",\n      \"deepseek_claim\": \"[Anticoagulation efficace]\",\n      \"evidence\": \"Le texte mentionne : 'Une anticoagulation efficace est obtenue par addition de 4 à 5 mmol de citrate... permettant de diminuer le taux de calcium ionisé à moins de 0,3 mmol/l'.\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"interpretation\",\n      \"field_path\": \"Tolérance.EI_graves_detailles\",\n      \"gpt_claim\": \"Placés dans EI_frequents_detailles\",\n      \"deepseek_claim\": \"Placés dans EI_graves_detailles\",\n      \"evidence\": \"Le texte source qualifie l'hypocalcémie et l'hypernatrémie de 'très fréquents (≥ 1/10)'. DeepSeek les classe à tort comme graves (SAE).\",\n      \"severity\": \"low\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication.comparateurs_references_indication\",\n      \"gpt_claim\": \"4 comparateurs (REGIOCIT, ACD-A, Citrate 4% DM, Citrate trisodique 4%)\",\n      \"deepseek_claim\": \"2 comparateurs (Citrate 4% DM, REGIOCIT)\",\n      \"evidence\": \"Le texte liste explicitement REGIOCIT, Solution ACD-A et Citrate trisodique 4% comme comparateurs cliniquement pertinents.\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"DeepSeek\",\n    \"confidence\": 0.85,\n    \"rationale_short\": \"DeepSeek identifie correctement la restriction d'âge (prématurés) et extrait les critères de jugement (calcium ionisé), là où GPT reste en surface. GPT est cependant plus précis sur la catégorisation de la tolérance.\"\n  },\n  \"quality_flags\": [\n    \"admin_vs_clinique\",\n    \"incoherence_interne\"\n  ]\n}"
+}

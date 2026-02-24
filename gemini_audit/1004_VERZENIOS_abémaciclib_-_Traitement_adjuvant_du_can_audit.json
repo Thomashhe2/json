@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "model": "models/gemini-3-flash-preview",
+    "mode": "NORMAL",
+    "max_output_tokens_used": 8192,
+    "max_field_chars_used": 10000,
+    "response_mime_json": true,
+    "diag": {
+      "promptFeedback": null,
+      "finishReason": "STOP",
+      "safetyRatings": null
+    }
+  },
+  "parsed": {
+    "diffs": [
+      {
+        "type": "factuel",
+        "field_path": "Evaluations_HAS.nb_voix_contre",
+        "gpt_claim": "18 voix contre",
+        "deepseek_claim": "0 voix contre",
+        "evidence": "La Commission donne un avis défavorable à l'inscription... SMR insuffisant. (GPT cohérent avec l'issue défavorable, DeepSeek annonce 19 voix pour/0 contre, ce qui est contradictoire avec un SMR Insuffisant).",
+        "severity": "high"
+      },
+      {
+        "type": "factuel",
+        "field_path": "SMR_ASMR_Par_Indication.asmr_enum",
+        "gpt_claim": "V",
+        "deepseek_claim": "null",
+        "evidence": "Texte source: 'Ces spécialités n'apportent pas d'ASMR (ASMR V) dans cette indication.'",
+        "severity": "medium"
+      },
+      {
+        "type": "structure",
+        "field_path": "Critères_Jugement",
+        "gpt_claim": "4 critères (IDFS ITT, IDFS Ki-67 cohorte 1, IDFS Ki-67 ITT, OS)",
+        "deepseek_claim": "2 critères (IDFS, OS)",
+        "evidence": "GPT détaille les sous-populations Ki-67 >= 20%, cruciales car mentionnées dans les décisions internationales (FDA) et les analyses hiérarchisées de l'avis.",
+        "severity": "medium"
+      },
+      {
+        "type": "factuel",
+        "field_path": "Tolérance.signal_securite_flag",
+        "gpt_claim": "true (EMA PRAC 2022)",
+        "deepseek_claim": "false",
+        "evidence": "Le PGR mentionne la suppression des événements thromboemboliques veineux comme risques importants identifiés et modification des EI listés (EMA PRAC 01/02/2022).",
+        "severity": "low"
+      }
+    ],
+    "verdict": {
+      "winner": "GPT",
+      "confidence": 0.95,
+      "rationale_short": "GPT est nettement supérieur car il maintient une cohérence interne entre le vote (défavorable) et la conclusion (SMR Insuffisant), là où DeepSeek hallucine un vote quasi-unanime en faveur du produit. GPT capture également l'ASMR V explicitement citée et détaille les analyses de biomarqueurs (Ki-67)."
+    },
+    "quality_flags": [
+      "incoherence_interne",
+      "risque_hallucination",
+      "admin_vs_clinique"
+    ]
+  },
+  "raw_response": "{\n  \"diffs\": [\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Evaluations_HAS.nb_voix_contre\",\n      \"gpt_claim\": \"18 voix contre\",\n      \"deepseek_claim\": \"0 voix contre\",\n      \"evidence\": \"La Commission donne un avis défavorable à l'inscription... SMR insuffisant. (GPT cohérent avec l'issue défavorable, DeepSeek annonce 19 voix pour/0 contre, ce qui est contradictoire avec un SMR Insuffisant).\",\n      \"severity\": \"high\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"SMR_ASMR_Par_Indication.asmr_enum\",\n      \"gpt_claim\": \"V\",\n      \"deepseek_claim\": \"null\",\n      \"evidence\": \"Texte source: 'Ces spécialités n'apportent pas d'ASMR (ASMR V) dans cette indication.'\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"structure\",\n      \"field_path\": \"Critères_Jugement\",\n      \"gpt_claim\": \"4 critères (IDFS ITT, IDFS Ki-67 cohorte 1, IDFS Ki-67 ITT, OS)\",\n      \"deepseek_claim\": \"2 critères (IDFS, OS)\",\n      \"evidence\": \"GPT détaille les sous-populations Ki-67 >= 20%, cruciales car mentionnées dans les décisions internationales (FDA) et les analyses hiérarchisées de l'avis.\",\n      \"severity\": \"medium\"\n    },\n    {\n      \"type\": \"factuel\",\n      \"field_path\": \"Tolérance.signal_securite_flag\",\n      \"gpt_claim\": \"true (EMA PRAC 2022)\",\n      \"deepseek_claim\": \"false\",\n      \"evidence\": \"Le PGR mentionne la suppression des événements thromboemboliques veineux comme risques importants identifiés et modification des EI listés (EMA PRAC 01/02/2022).\",\n      \"severity\": \"low\"\n    }\n  ],\n  \"verdict\": {\n    \"winner\": \"GPT\",\n    \"confidence\": 0.95,\n    \"rationale_short\": \"GPT est nettement supérieur car il maintient une cohérence interne entre le vote (défavorable) et la conclusion (SMR Insuffisant), là où DeepSeek hallucine un vote quasi-unanime en faveur du produit. GPT capture également l'ASMR V explicitement citée et détaille les analyses de biomarqueurs (Ki-67).\"\n  },\n  \"quality_flags\": [\n    \"incoherence_interne\",\n    \"risque_hallucination\",\n    \"admin_vs_clinique\"\n  ]\n}"
+}
