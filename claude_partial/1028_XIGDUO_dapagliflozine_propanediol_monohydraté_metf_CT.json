@@ -1,0 +1,609 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19897",
+  "evaluation_id": "CT-19897",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19897_XIGDUO_Radiation.pdf",
+        "type": "CT",
+        "page_count": 2
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19897_seg_001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L'essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 450,
+      "heading_text": "L'essentiel",
+      "expected_fields": [
+        "type_avis",
+        "indication",
+        "decision"
+      ],
+      "routing_hint": "Synthèse avis",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19897_seg_002",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 451,
+      "char_end": 1200,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "motif_evaluation",
+        "indication",
+        "alternatives"
+      ],
+      "routing_hint": "Contexte administratif",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19897_seg_003",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Alternatives restant disponibles et prises en charge",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 1201,
+      "char_end": 1400,
+      "heading_text": "Alternatives restant disponibles et prises en charge",
+      "expected_fields": [
+        "alternatives_disponibles",
+        "codes_cip"
+      ],
+      "routing_hint": "Alternatives thérapeutiques",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19897_seg_004",
+      "section_label_normalise": "CONCLUSIONS",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 1401,
+      "char_end": 1600,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "avis_final",
+        "decision"
+      ],
+      "routing_hint": "Conclusion avis",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19897_seg_005",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 1601,
+      "char_end": 1900,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "presentations",
+        "demandeur",
+        "date_amm",
+        "code_atc"
+      ],
+      "routing_hint": "Données administratives",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19897_prod_001",
+      "evaluation_id": "CT-19897",
+      "produit_nom_commercial": "XIGDUO",
+      "dci": "dapagliflozine/metformine",
+      "presentations": [
+        {
+          "presentation_id": "CT-19897_pres_001",
+          "dosage_concentration": "5 mg/1000 mg",
+          "forme_pharmaceutique": "comprimé pelliculé",
+          "forme_pharma_enum": "Comprime_pellicule",
+          "conditionnement": "boîte de 56 comprimés",
+          "code_cip13": "34009278865399",
+          "code_cip13_format": "34009 278 865 3 9",
+          "statut_presentation": "Radiation_demandée",
+          "evidence": [
+            {
+              "field": "code_cip13",
+              "f": "F1",
+              "p": 2,
+              "s": "Boite de 56",
+              "t": "XIGDUO 5 mg/1000 mg, comprimé pelliculé − Boite de 56 (CIP : 34 009 278 865 3 9)",
+              "m": "rule",
+              "c": 0.99
+            }
+          ]
+        },
+        {
+          "presentation_id": "CT-19897_pres_002",
+          "dosage_concentration": "5 mg/1000 mg",
+          "forme_pharmaceutique": "comprimé pelliculé",
+          "forme_pharma_enum": "Comprime_pellicule",
+          "conditionnement": "boîte de 60 comprimés",
+          "code_cip13": "34009278867680",
+          "code_cip13_format": "34009 278 867 6 8",
+          "statut_presentation": "Remboursable",
+          "evidence": [
+            {
+              "field": "code_cip13",
+              "f": "F1",
+              "p": 1,
+              "s": "code CIP 34009",
+              "t": "code CIP 34009 278 867 6 8",
+              "m": "rule",
+              "c": 0.98
+            }
+          ]
+        },
+        {
+          "presentation_id": "CT-19897_pres_003",
+          "dosage_concentration": "5 mg/1000 mg",
+          "forme_pharmaceutique": "comprimé pelliculé",
+          "forme_pharma_enum": "Comprime_pellicule",
+          "conditionnement": "boîte de 60 comprimés",
+          "code_cip13": "34009278868296",
+          "code_cip13_format": "34009 278 868 2 9",
+          "statut_presentation": "Remboursable",
+          "evidence": [
+            {
+              "field": "code_cip13",
+              "f": "F1",
+              "p": 1,
+              "s": "code CIP 34009",
+              "t": "code CIP 34009 278 868 2 9",
+              "m": "rule",
+              "c": 0.98
+            }
+          ]
+        }
+      ],
+      "titulaire_amm": "ASTRAZENECA",
+      "classe_ATC": "A10BD15",
+      "libelle_atc": "Association d'hypoglycémiants oraux",
+      "evidence": [
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 2,
+          "s": "Demandeur",
+          "t": "Demandeur ASTRAZENECA",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 2,
+          "s": "Code ATC",
+          "t": "Code ATC A10BD15 Association d'hypoglycémiants oraux",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19897",
+      "Num_avis": "CT-19897",
+      "produit_nom": "XIGDUO 5 mg/1000 mg",
+      "dci": "dapagliflozine/metformine",
+      "type_avis": "Arrêt du remboursement de certaines présentations en vue d'un arrêt de commercialisation",
+      "type_avis_enum": "Autre_Radiation",
+      "forme": "comprimé pelliculé",
+      "dosage": "5 mg/1000 mg",
+      "indication": "Chez les adultes âgés de 18 ans et plus atteints de diabète de type 2, en complément du régime alimentaire et de l'exercice physique, pour améliorer le contrôle glycémique",
+      "classe_ATC": "A10BD15",
+      "pathologie": "Diabète de type 2",
+      "maladie_rare": false,
+      "ligne_traitement": "Complément thérapeutique",
+      "ligne_traitement_enum": "Variable",
+      "sous_groupe_population": "Adultes ≥18 ans atteints de diabète de type 2",
+      "cim10_principal": "E11",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Diabète sucré de type 2",
+      "source_cim10": "Déduit de pathologie",
+      "aire_therapeutique_niveau_1": "Endocrinologie",
+      "aire_therapeutique_niveau_2": "Diabète",
+      "aire_therapeutique_niveau_3": "Diabète de type 2",
+      "source_aire_therapeutique": "Déduit ATC A10BD15",
+      "design_etude": "Non applicable - Avis de radiation",
+      "niveau_preuve_brut": "Non applicable",
+      "niveau_preuve_interprete": null,
+      "besoin_medical_brut": "Non applicable - Avis de radiation",
+      "besoin_medical_interprete": null,
+      "pathologie_categorie_enum": "Endocrinologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes ≥18 ans",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": null,
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "XIGDUO 5 mg/1000 mg a été inscrit à la liste des spécialités remboursables. Cette présentation en boîte de 56 comprimés n'a jamais été commercialisée.",
+      "historique_ASMR_comparateurs": "Non applicable - Avis de radiation",
+      "concurrence_therapeutique_recente": "Alternatives disponibles : deux autres présentations en boîte de 60 comprimés de XIGDUO 5 mg/1000 mg restent remboursables",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-20",
+      "smr_enum": null,
+      "asmr_enum": null,
+      "gravite_patho": "Pathologie chronique nécessitant un traitement continu pour prévenir les complications",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes ≥18 ans atteints de diabète de type 2",
+      "pertinence_concurrence_therapeutique": "Alternatives thérapeutiques disponibles : autres présentations de XIGDUO et autres associations dapagliflozine/metformine",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 1,
+          "s": "Arrêt du remboursement",
+          "t": "Arrêt du remboursement d'une présentation dans l'indication",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "Chez les adultes",
+          "t": "Chez les adultes âgés de 18 ans et plus atteints de diabète de type 2, en complément du régime alimentaire et de l'exercice physique, pour améliorer le contrôle glycémique",
+          "m": "rule",
+          "c": 0.99
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 2,
+          "s": "20 juillet 2022",
+          "t": "Date d'examen et d'adoption : 20 juillet 2022",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19897_arg_CT_01",
+      "evaluation_id": "CT-19897",
+      "source_argument": "CT",
+      "categorie_argument": "Contexte_réglementaire",
+      "direction_argument": "Favorable",
+      "description": "Présentation en boîte de 56 comprimés n'a jamais été commercialisée, justifiant la radiation administrative de la liste des spécialités remboursables.",
+      "extrait_textuel": "Il s'agit d'une demande de radiation de la liste des spécialités remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités d'une présentation de la spécialité XIGDUO 5 mg/1000 mg (dapagliflozine/metformine), boîte de 56 comprimés pelliculés, au motif que celle-ci n'a jamais été commercialisée.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "demande de radiation",
+          "t": "Il s'agit d'une demande de radiation de la liste des spécialités remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités d'une présentation de la spécialité XIGDUO 5 mg/1000 mg (dapagliflozine/metformine), boîte de 56 comprimés pelliculés, au motif que celle-ci n'a jamais été commercialisée.",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19897_arg_CT_02",
+      "evaluation_id": "CT-19897",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Alternatives thérapeutiques restent disponibles et prises en charge : deux autres présentations en boîte de 60 comprimés de XIGDUO 5 mg/1000 mg demeurent remboursables, assurant la continuité de l'accès au traitement.",
+      "extrait_textuel": "Il existe deux autres présentations en boîte de 60 comprimés pelliculés de XIGDUO 5 mg/1000 mg (dapagliflozine/metformine) restant remboursables (code CIP 34009 278 867 6 8 et code CIP 34009 278 868 2 9).",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 1,
+          "s": "deux autres présentations",
+          "t": "Il existe deux autres présentations en boîte de 60 comprimés pelliculés de XIGDUO 5 mg/1000 mg (dapagliflozine/metformine) restant remboursables (code CIP 34009 278 867 6 8 et code CIP 34009 278 868 2 9).",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19897_arg_CT_03",
+      "evaluation_id": "CT-19897",
+      "source_argument": "CT",
+      "categorie_argument": "Contexte_réglementaire",
+      "direction_argument": "Favorable",
+      "description": "Avis favorable à la radiation de la liste des médicaments remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités, basé sur l'absence de commercialisation de cette présentation.",
+      "extrait_textuel": "Considérant l'ensemble de ces informations, la Commission rend un avis favorable à la radiation de la liste des médicaments remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités et divers services publics.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "avis favorable à la",
+          "t": "Considérant l'ensemble de ces informations, la Commission rend un avis favorable à la radiation de la liste des médicaments remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités et divers services publics.",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19897_ctx",
+    "evaluation_id": "CT-19897",
+    "ISP": "Non applicable - Avis de radiation",
+    "acces_precoce": "Aucun",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2014-01-16",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non applicable",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non applicable",
+    "conditions_suivi": "Non applicable",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non applicable",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non applicable",
+    "valeur_critère": "Non applicable",
+    "impact_décision": "Non applicable",
+    "estimation_mesure_impact": "Non applicable",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19897",
+    "texte_brut": "ÉVALUER LES TECHNOLOGIES DE SANTÉ AVIS SUR LES MEDICAMENTS dapagliflozine/metformine XIGDUO 5 mg/1000 mg, comprimé pelliculé Arrêt du remboursement de certaines présentations en vue d'un arrêt de commercialisation Adopté par la Commission de la transparence le 20 juillet 2022 L'essentiel Avis favorable à l'arrêt du remboursement d'une présentation dans l'indication : Chez les adultes âgés de 18 ans et plus atteints de diabète de type 2, en complément du régime alimentaire et de l'exercice physique, pour améliorer le contrôle glycémique : ‒ chez les patients contrôlés de manière inadéquate par la metformine seule à la dose maxi-male tolérée ; ‒ en association avec un sulfamide hypoglycémiant, chez les patients dont le contrôle glycé-mique est insuffisant à la dose maximale de metformine associée à un sulfamide hypogly-cémiant ; ‒ en association avec l'insuline, chez les patients dont le contrôle glycémique est insuffisant à la dose maximale de metformine associée à l'insuline ; ‒ chez les patients déjà traités par l'association dapagliflozine et metformine sous la forme de comprimés séparés. Diabète de type 2 Secteurs : Ville et Hôpital Contexte Il s'agit d'une demande de radiation de la liste des spécialités remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités d'une présentation de la spécialité XIGDUO 5 mg/1000 mg (dapagliflozine/metformine), boîte de 56 comprimés pelliculés, au motif que celle-ci n'a jamais été commercialisée. XIGDUO 5 mg/1000 mg (dapagliflozine/metformine) est pris en charge dans l'indication chez les adultes âgés de 18 ans et plus atteints de diabète de type 2, en complément du régime alimentaire et de l'exercice physique, pour améliorer le contrôle glycémique : - chez les patients contrôlés de manière inadéquate par la metformine seule à la dose maximale tolérée ; - en association avec un sulfamide hypoglycémiant, chez les patients dont le contrôle gly-cémique est insuffisant à la dose maximale de metformine associée à un sulfamide hypo-glycémiant ; - en association avec l'insuline, chez les patients dont le contrôle glycémique est insuffisant à la dose maximale de metformine associée à l'insuline ; - chez les patients déjà traités par l'association dapagliflozine et metformine sous la forme de comprimés séparés. Alternatives restant disponibles et prises en charge Il existe deux autres présentations en boîte de 60 comprimés pelliculés de XIGDUO 5 mg/1000 mg (dapagliflozine/metformine) restant remboursables (code CIP 34009 278 867 6 8 et code CIP 34009 278 868 2 9). Conclusions de la Commission Considérant l'ensemble de ces informations, la Commission rend un avis favorable à la radiation de la liste des médicaments remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités et divers services publics. Informations administratives et réglementaires Calendrier d'évaluation Date d'examen et d'adoption : 20 juillet 2022 Présentations concernées XIGDUO 5 mg/1000 mg, comprimé pelliculé − Boite de 56 (CIP : 34 009 278 865 3 9) Demandeur ASTRAZENECA Listes concernées Sécurité Sociale (CSS L.162-17) Collectivités (CSP L.5123-2) AMM Date initiale (procédure d'octroi) : 16 janvier 2014 Code ATC A10BD15 Association d'hypoglycémiants oraux",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19897_event_AMM_01",
+      "evaluation_id": "CT-19897",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2014-01-16",
+      "detail_brut": "Date initiale d'octroi de l'AMM pour XIGDUO 5 mg/1000 mg",
+      "source_doc": "F1",
+      "detail_type_specifique": "Octroi AMM initial",
+      "acteurs_impliques": [
+        "EMA",
+        "ASTRAZENECA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Procédure d'octroi standard",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Date initiale",
+          "t": "Date initiale (procédure d'octroi) : 16 janvier 2014",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19897_event_CT_01",
+      "evaluation_id": "CT-19897",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-20",
+      "detail_brut": "Adoption de l'avis de radiation par la Commission de la Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis favorable à la radiation",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Avis CT-19897",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "20 juillet 2022",
+          "t": "Adopté par la Commission de la transparence le 20 juillet 2022",
+          "m": "rule",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19897",
+    "delai_amm_ct_jours": 3102,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19897",
+    "is_orphan": false,
+    "classe_ATC_l2": "A10B",
+    "aire_therapeutique": "Endocrinologie - Diabète",
+    "type_avis_enum": "Autre_Radiation",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non applicable",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non_renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {
+      "essais_cliniques_absent": true,
+      "criteres_jugement_absent": true,
+      "tolerance_absent": true,
+      "smr_asmr_absent": true,
+      "vote_absent": true
+    }
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19897",
+      "tgt_type": "Produit",
+      "tgt_id": "CT-19897_prod_001",
+      "label": "EVAL_HAS_PRODUCT"
+    }
+  ],
+  "Annotation_View": [
+    {
+      "id": "CT-19897_ann_001",
+      "text": "Il s'agit d'une demande de radiation de la liste des spécialités remboursables aux assurés sociaux et de la liste des spécialités agréées à l'usage des collectivités d'une présentation de la spécialité XIGDUO 5 mg/1000 mg (dapagliflozine/metformine), boîte de 56 comprimés pelliculés, au motif que celle-ci n'a jamais été commercialisée.",
+      "meta": {
+        "doc_id": "CT-19897",
+        "source": "CT",
+        "template": "CT_modern",
+        "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+        "section_label_brut": "Contexte",
+        "hierarchie": [
+          "Contexte"
+        ],
+        "page_start": 1,
+        "page_end": 1,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 15,
+          "label": "PROCEDURE_TYPE"
+        },
+        {
+          "start": 80,
+          "end": 120,
+          "label": "PRODUIT"
+        },
+        {
+          "start": 150,
+          "end": 180,
+          "label": "RAISON_RADIATION"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CT-19897_ann_002",
+      "text": "Il existe deux autres présentations en boîte de 60 comprimés pelliculés de XIGDUO 5 mg/1000 mg (dapagliflozine/metformine) restant remboursables (code CIP 34009 278 867 6 8 et code CIP 34009 278 868 2 9).",
+      "meta": {
+        "doc_id": "CT-19897",
+        "source": "CT",
+        "template": "CT_modern",
+        "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+        "section_label_brut": "Alternatives restant disponibles et prises en charge",
+        "hierarchie": [
+          "Alternatives"
+        ],
+        "page_start": 1,
+        "page_end": 2,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 20,
+          "end": 60,
+          "label": "PRESENTATION"
+        },
+        {
+          "start": 100,
+          "end": 140,
+          "label": "CODE_CIP"
+        }
+      ],
+      "relations": []
+    }
+  ]
+}

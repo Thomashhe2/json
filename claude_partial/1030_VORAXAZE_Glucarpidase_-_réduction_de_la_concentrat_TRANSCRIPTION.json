@@ -1,0 +1,1250 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19744",
+  "evaluation_id": "CT-19744",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "VORAXAZE_Transcription_20juillet2022.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 18
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19744_seg_001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Présentation du dossier par la HAS",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Présentation du dossier VORAXAZE",
+      "expected_fields": [
+        "indication",
+        "smr_precedent",
+        "asmr_precedent",
+        "contexte_audition"
+      ],
+      "routing_hint": "Contexte évaluation antérieure",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19744_seg_002",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication du médicament",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": 1500,
+      "char_end": 3000,
+      "heading_text": "Indication VORAXAZE",
+      "expected_fields": [
+        "indication_precise",
+        "population_cible",
+        "pathologie"
+      ],
+      "routing_hint": "Indication et population",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19744_seg_003",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical et contexte clinique",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 8,
+      "char_start": 3000,
+      "char_end": 6000,
+      "heading_text": "Mécanisme d'action et place thérapeutique",
+      "expected_fields": [
+        "besoin_medical",
+        "alternatives_therapeutiques",
+        "gravite_pathologie"
+      ],
+      "routing_hint": "Contexte clinique et alternatives",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "CT-19744_seg_004",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Données cliniques et études",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 8,
+      "char_start": 6000,
+      "char_end": 9000,
+      "heading_text": "Données d'efficacité et tolérance",
+      "expected_fields": [
+        "efficacite",
+        "tolerance",
+        "qualite_donnees"
+      ],
+      "routing_hint": "Résultats cliniques",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19744_seg_005",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Profil de tolérance",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 9000,
+      "char_end": 10000,
+      "heading_text": "Effets indésirables",
+      "expected_fields": [
+        "ei_graves",
+        "ei_frequents",
+        "profil_tolerance"
+      ],
+      "routing_hint": "Sécurité",
+      "label_confidence": 0.88
+    },
+    {
+      "segment_id": "CT-19744_seg_006",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Débat sur le comparateur cliniquement pertinent",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 16,
+      "char_start": 10000,
+      "char_end": 15000,
+      "heading_text": "Acide folinique comme comparateur",
+      "expected_fields": [
+        "comparateur",
+        "pertinence_comparateur",
+        "justification"
+      ],
+      "routing_hint": "Débat méthodologique",
+      "label_confidence": 0.93
+    },
+    {
+      "segment_id": "CT-19744_seg_007",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Revendication ASMR",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 9,
+      "char_start": 15000,
+      "char_end": 16000,
+      "heading_text": "Demande ASMR III",
+      "expected_fields": [
+        "asmr_revendique",
+        "justification_asmr"
+      ],
+      "routing_hint": "Revendication ASMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19744_seg_008",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat et questions de la Commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 9,
+      "page_end": 16,
+      "char_start": 16000,
+      "char_end": 22000,
+      "heading_text": "Questions et débat Commission",
+      "expected_fields": [
+        "arguments",
+        "positions_membres",
+        "preoccupations"
+      ],
+      "routing_hint": "Débat Commission",
+      "label_confidence": 0.91
+    },
+    {
+      "segment_id": "CT-19744_seg_009",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote sur ASMR et comparateur",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 16,
+      "page_end": 18,
+      "char_start": 22000,
+      "char_end": 24000,
+      "heading_text": "Vote ASMR et CCP",
+      "expected_fields": [
+        "vote_asmr",
+        "vote_comparateur",
+        "resultats_vote"
+      ],
+      "routing_hint": "Résultats vote",
+      "label_confidence": 0.97
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19744_prod_001",
+      "evaluation_id": "CT-19744",
+      "produit_nom_commercial": "VORAXAZE",
+      "dci": "glucarpidase",
+      "forme_pharmaceutique": "poudre pour solution injectable",
+      "dosage_concentration": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "SERB",
+      "classe_ATC": "Non renseigné",
+      "presentations": [
+        {
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "Non renseigné",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19744",
+      "Num_avis": "CT-19744",
+      "produit_nom": "VORAXAZE",
+      "dci": "glucarpidase",
+      "type_avis": "Audition suite à avis antérieur",
+      "type_avis_enum": "Réexamen",
+      "forme": "poudre pour solution injectable",
+      "dosage": "Non renseigné",
+      "indication": "Réduire la concentration plasmatique toxique de méthotrexate chez les patients adultes et enfants à partir de 28 jours présentant une élimination retardée du méthotrexate ou un risque de toxicité du méthotrexate",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Toxicité du méthotrexate",
+      "maladie_rare": false,
+      "ligne_traitement": "Curatif",
+      "sous_groupe_population": "Patients avec élimination retardée du méthotrexate ou risque de toxicité associé à altération fonction rénale",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Support oncologique",
+      "aire_therapeutique_niveau_3": "Gestion toxicité méthotrexate",
+      "source_aire_therapeutique": "Déduit de pathologie",
+      "design_etude": "Études non randomisées, non comparatives, ouvertes, d'usage compassionnel",
+      "niveau_preuve_brut": "Études non randomisées, non comparatives, ouvertes",
+      "niveau_preuve_interprete": "Niveau_4",
+      "besoin_medical_brut": "Patients avec pronostic vital engagé présentant concentrations toxiques de méthotrexate et altération fonction rénale",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "À partir de 28 jours",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Observationnel_retrospectif",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": true,
+      "historique_Has_produit": "Avis du 1er juin 2022 : SMR Important, ASMR V, acide folinique considéré comme comparateur cliniquement pertinent",
+      "historique_ASMR_comparateurs": "ASMR V antérieure, acide folinique comme comparateur",
+      "concurrence_therapeutique_recente": "Acide folinique, dialyse (obsolète), hémodialyse",
+      "vote_unanimite": false,
+      "nb_votants": 18,
+      "nb_voix_pour": 11,
+      "nb_voix_contre": 7,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-07-20",
+      "gravite_patho": "Patients avec pronostic vital engagé présentant toxicité du méthotrexate avec altération fonction rénale",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et enfants à partir de 28 jours",
+      "pertinence_concurrence_therapeutique": "Acide folinique non pertinent en curatif ; dialyse inefficace avec rebonds ; glucarpidase seule efficace pour réduire concentrations",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "audition qui fait suite",
+          "t": "Il s'agit d'une audition qui fait suite à l'avis du 1er juin dans le cadre de la demande d'inscription",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "s": "indiquée pour réduire",
+          "t": "indiquée pour réduire la concentration plasmatique toxique de méthotrexate chez les patients adultes et enfants à partir de 28 jours",
+          "c": 0.98
+        },
+        {
+          "field": "besoin_medical_interprete",
+          "f": "F1",
+          "p": 5,
+          "s": "pronostic vital est engagé",
+          "t": "Le périmètre de remboursement, ce sont uniquement des patients dont le pronostic vital est engagé",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19744_essai_Etudes_compassionnelles",
+      "evaluation_id": "CT-19744",
+      "essai_nom": "Études d'usage compassionnel (groupées)",
+      "nct_number": null,
+      "design": "Études non randomisées, non comparatives, ouvertes, d'usage compassionnel",
+      "design_enum": "Observationnel_retrospectif",
+      "phase": "Non applicable",
+      "aveugle": "Ouvert",
+      "randomisation_flag": false,
+      "population_cible": "Patients adultes et enfants avec élimination retardée du méthotrexate ou risque de toxicité",
+      "comparateur_utilise": "Acide folinique (standard de soin)",
+      "nb_patient_traitement": "Non renseigné",
+      "nb_patient_comparateur": "Non renseigné",
+      "nb_patients_inclus": "Faible nombre de patients, notamment pédiatriques",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "resultat_global": "Efficacité sur réduction rapide concentration méthotrexate et amélioration fonction rénale",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau 4",
+      "pooling_flag": true,
+      "population_dedoublée": false,
+      "suivi_median_mois": "Faible suivi",
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": "Non renseigné",
+      "maturite_donnees": "Immatures",
+      "maturite_pct": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "analyse_stratifiee": false,
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "ligne_traitement_essai_enum": "Curatif",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "field": "design_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "quatre études non randomisées",
+          "t": "résultats d'efficacité issus des quatre études non randomisées, non comparatives, ouvertes, d'usage compassionnel",
+          "c": 0.94
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 3,
+          "s": "efficacité de VORAXAZE",
+          "t": "analyse groupée réalisée qui suggère l'efficacité de VORAXAZE sur l'obtention rapide d'une réduction de la concentration du méthotrexate pour une majorité des patients, ainsi qu'une amélioration de la fonction rénale",
+          "c": 0.93
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19744_essai_Etudes_compassionnelles_crit_Concentration_MTX",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_Etudes_compassionnelles",
+      "nom_critere": "Réduction de la concentration plasmatique de méthotrexate",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "micromoles/litre",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "primaire_ou_secondaire": "Primaire",
+      "type_critere": "Concentration plasmatique méthotrexate",
+      "type_critere_enum": "Biomarqueur",
+      "valeur_groupe_traitement": "Environ 2/3 des patients avec concentrations < 1 micromole ; majorité restante entre 1-2 micromoles",
+      "valeur_groupe_comparateur": "Non applicable",
+      "gain_absolu": "Réduction d'un facteur 10 des concentrations",
+      "gain_absolu_num": null,
+      "gain_relatif": "Réduction 90%",
+      "gain_relatif_num": 90.0,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Efficacité démontrée sur réduction rapide concentration méthotrexate, critère pertinent au regard de relation documentée entre méthotrexatémie et toxicité",
+      "is_primary": true,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non applicable",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "degre_signification": "Significatif",
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 6,
+          "s": "deux tiers des patients",
+          "t": "à peu près les deux tiers des patients ont des concentrations qui, grâce à la glucarpidase, vont passer en deçà de la micromole",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19744_essai_Etudes_compassionnelles_crit_Fonction_renale",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_Etudes_compassionnelles",
+      "nom_critere": "Amélioration de la fonction rénale",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Créatininémie (micromoles/litre)",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": 2,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "primaire_ou_secondaire": "Secondaire",
+      "type_critere": "Fonction rénale",
+      "type_critere_enum": "Biomarqueur",
+      "valeur_groupe_traitement": "Retour à taux créatinine basal dans 30 jours suivant administration glucarpidase",
+      "valeur_groupe_comparateur": "Non applicable",
+      "gain_absolu": "Normalisation fonction rénale",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Observation majeure : normalisation fonction rénale dans 30 jours post-administration",
+      "is_primary": false,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non applicable",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "degre_signification": "Significatif",
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 7,
+          "s": "30 jours qui suivent",
+          "t": "Dans les 30 jours qui suivent l'administration de glucarpidase, les patients reviennent à des taux de créatinine qui étaient leur valeur basale",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19744_essai_Etudes_compassionnelles_crit_Mortalite",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_Etudes_compassionnelles",
+      "nom_critere": "Mortalité",
+      "nature_critere": "Dur",
+      "unite_mesure": "Pourcentage",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": 3,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "primaire_ou_secondaire": "Secondaire",
+      "type_critere": "Mortalité",
+      "type_critere_enum": "OS",
+      "valeur_groupe_traitement": "Mortalité approche 8% avec glucarpidase",
+      "valeur_groupe_comparateur": "20-40% avec soins courants ; plus élevée avec hémodialyse",
+      "gain_absolu": "Réduction mortalité 12-32 points de pourcentage",
+      "gain_absolu_num": null,
+      "gain_relatif": "Réduction relative 60-80%",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "significativite_statistique": true,
+      "significativite_clinique_interpretee": "Majeure",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Données observationnelles comparant mortalité glucarpidase vs soins courants/dialyse - non issues d'études comparatives",
+      "is_primary": false,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non applicable",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "degre_signification": "Significatif",
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 7,
+          "s": "mortalité approche le chiffre",
+          "t": "la mortalité approche le chiffre de 8 % quand ils sont traités par glucarpidase, et quand on se réfère à ce que nous avions quand on se contentait de soins courants, on voit des valeurs entre 20 % et 40 %",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19744_essai_Etudes_compassionnelles_tol",
+      "evaluation_id": "CT-19744",
+      "essai_id": "CT-19744_essai_Etudes_compassionnelles",
+      "ae_total_pct": 11.0,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves": "11% des patients avaient des effets indésirables considérés comme liés au VORAXAZE, dont la majorité étaient non graves",
+      "EI_frequents": "Paresthésies et bouffées congestives",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Paresthésies",
+          "grade": "Non grave",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 4,
+              "s": "paresthésies et bouffées",
+              "t": "principalement des paresthésies et bouffées congestives",
+              "c": 0.92
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non grave",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 4,
+          "s": "11 % des patients",
+          "t": "11 % des patients avaient des effets indésirables considérés comme liés au VORAXAZE, dont la majorité étaient non graves",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19744_essai_Etudes_compassionnelles_comp_01",
+      "essai_id": "CT-19744_essai_Etudes_compassionnelles",
+      "evaluation_id": "CT-19744",
+      "nom_comparateur": "Acide folinique",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_type_enum": "Traitement_actif",
+      "comparateur_standard_soin": true,
+      "comparateur_standard_enum": "Autre",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19744_compHAS_01",
+      "evaluation_id": "CT-19744",
+      "nom_comparateur_HAS": "Acide folinique",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": true,
+      "famille_comparateur": "Autre",
+      "evidence": []
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19744_arg_TRANS_01",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Glucarpidase démontre efficacité majeure sur réduction rapide concentration méthotrexate : 2/3 patients < 1 micromole, majorité restante 1-2 micromoles. Réduction d'un facteur 10 des concentrations, contrairement à dialyse avec rebonds.",
+      "extrait_textuel": "à peu près les deux tiers des patients ont des concentrations qui, grâce à la glucarpidase, vont passer en deçà de la micromole, qui est la concentration critique en méthotrexate au niveau sanguin. Pour ceux qui n'ont pas atteint cette valeur, vous voyez que la très grande majorité va quand même avoir des concentrations entre 1 et 2 micromoles",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Étienne Chatelut",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "deux tiers des patients",
+          "t": "à peu près les deux tiers des patients ont des concentrations qui, grâce à la glucarpidase, vont passer en deçà de la micromole",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_02",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Mortalité réduite à 8% avec glucarpidase vs 20-40% avec soins courants et encore plus élevée avec hémodialyse. Bénéfice clinique majeur sur réduction mortalité et morbidité.",
+      "extrait_textuel": "la mortalité approche le chiffre de 8 % quand ils sont traités par glucarpidase, et quand on se réfère à ce que nous avions quand on se contentait de soins courants, on voit des valeurs entre 20 % et 40 %",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Étienne Chatelut",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "mortalité approche le chiffre",
+          "t": "la mortalité approche le chiffre de 8 % quand ils sont traités par glucarpidase, et quand on se réfère à ce que nous avions quand on se contentait de soins courants, on voit des valeurs entre 20 % et 40 %",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_03",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Glucarpidase seul médicament disponible capable de réduire concentrations toxiques méthotrexate. Acide folinique agit au niveau cellulaire et ne réduit pas concentrations plasmatiques. Glucarpidase remplace dialyse inefficace avec rebonds.",
+      "extrait_textuel": "VORAXAZE est le seul médicament aujourd'hui disponible qui arrête l'exposition à de fortes concentrations toxiques de méthotrexate et qui permet de ramener une majorité de malades sous des seuils toxiques de 1 micromole par litre",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Antoine Bernasconi",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "seul médicament aujourd'hui",
+          "t": "VORAXAZE est le seul médicament aujourd'hui disponible qui arrête l'exposition à de fortes concentrations toxiques de méthotrexate",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_04",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison_alternatives",
+      "direction_argument": "Défavorable",
+      "description": "Acide folinique n'est pas comparateur pertinent : administré à tous patients en prévention, pas en curatif. Chez patients avec concentrations élevées, acide folinique inefficace car transporteur saturé par méthotrexate. Augmenter doses acide folinique sans bénéfice et risque EI additionnels.",
+      "extrait_textuel": "l'acide folinique n'est pas un comparateur cliniquement pertinent, d'abord pour une première raison qui est que sa place dans la stratégie thérapeutique est tout à fait différente. Il est administré à tous les patients qui reçoivent des doses élevées de méthotrexate, au même titre que d'autres mesures de prévention de la toxicité cellulaire du méthotrexate",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Antoine Bernasconi",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "acide folinique n'est pas",
+          "t": "l'acide folinique n'est pas un comparateur cliniquement pertinent, d'abord pour une première raison qui est que sa place dans la stratégie thérapeutique est tout à fait différente",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_05",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Données de très mauvaise qualité : études non randomisées, non comparatives, rétrospectives avec nombreuses données manquantes. Critères d'administration glucarpidase hétérogènes entre études. Impossible faire essai comparatif maintenant pour raisons éthiques.",
+      "extrait_textuel": "nous avons des données de très mauvaise qualité et que cela reflète bien la teneur de nos discussions parce que cela nous empêche d'avoir une idée assez précise de la place dans la stratégie du médicament",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Étienne Lengliné",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 13,
+          "s": "données de très mauvaise",
+          "t": "nous avons des données de très mauvaise qualité et que cela reflète bien la teneur de nos discussions",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_06",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Moment d'administration glucarpidase mal défini : continuum entre retard élimination, insuffisance rénale débutante, insuffisance rénale anurique. Étude contrôlée aurait pu être possible en stades précoces vs augmentation doses acide folinique.",
+      "extrait_textuel": "ce qui n'est pas clair, c'est le moment auquel il faut l'administrer. En effet, on aurait très bien pu faire une étude contrôlée dans une situation par exemple de retard d'élimination sans insuffisance rénale ou avec une insuffisance rénale débutante",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Étienne Lengliné",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 13,
+          "s": "ce qui n'est pas clair",
+          "t": "ce qui n'est pas clair, c'est le moment auquel il faut l'administrer",
+          "c": 0.91
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_07",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Récupération fonction rénale incomplète : méta-analyse montre retour créatinine basale seulement chez 52% patients >65 ans et 25% patients <18 ans. Séquelles rénales persistantes contrairement à affirmations laboratoire.",
+      "extrait_textuel": "il y avait une méta-analyse qui montrait que le taux basal de créatinine n'était observé que chez 52 % des patients âgés de plus de 65 ans et 25 % des patients âgés de moins de 18 ans",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Patrick Niaudet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 14,
+          "s": "méta-analyse qui montrait",
+          "t": "il y avait une méta-analyse qui montrait que le taux basal de créatinine n'était observé que chez 52 % des patients âgés de plus de 65 ans et 25 % des patients âgés de moins de 18 ans",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_08",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Profil de tolérance acceptable : 11% patients avec EI liés glucarpidase, majorité non graves. Principaux EI : paresthésies et bouffées congestives. Tolérance bien meilleure que dialyse.",
+      "extrait_textuel": "11 % des patients avaient des effets indésirables considérés comme liés au VORAXAZE, dont la majorité étaient non graves, principalement des paresthésies et bouffées congestives",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "11 % des patients",
+          "t": "11 % des patients avaient des effets indésirables considérés comme liés au VORAXAZE, dont la majorité étaient non graves",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_09",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Population cible très restreinte : 192 patients/an en France sur 10 620 recevant haute dose méthotrexate (1,8%). Patients avec pronostic vital engagé. Besoin médical critique non couvert par alternatives.",
+      "extrait_textuel": "Ces 192 patients éligibles à VORAXAZE, nous l'avons vu ensemble, sont des patients dont le pronostic vital est engagé puisqu'ils associent des concentrations toxiques de méthotrexate et une fonction rénale qui est altérée",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Antoine Bernasconi",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "192 patients éligibles",
+          "t": "Ces 192 patients éligibles à VORAXAZE, nous l'avons vu ensemble, sont des patients dont le pronostic vital est engagé",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_10",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "Revendication ASMR III justifiée : glucarpidase seul médicament réduisant concentrations toxiques méthotrexate, remplace dialyse inefficace, réduit mortalité, morbidité et durée hospitalisation. Bénéfices importants pour patients.",
+      "extrait_textuel": "VORAXAZE est le seul médicament aujourd'hui disponible qui arrête l'exposition à de fortes concentrations toxiques de méthotrexate et qui permet de ramener une majorité de malades sous des seuils toxiques de 1 micromole par litre. Cette efficacité engendre des bénéfices qui sont importants pour les malades",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Antoine Bernasconi",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "seul médicament aujourd'hui",
+          "t": "VORAXAZE est le seul médicament aujourd'hui disponible qui arrête l'exposition à de fortes concentrations toxiques de méthotrexate",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19744_ctx",
+    "evaluation_id": "CT-19744",
+    "ISP": "Non demandé",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Acces_precoce_pre_AMM",
+    "type_acces_precoce_enum": "Acces_precoce_pre_AMM",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": false,
+    "PSA_flag": false,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 192,
+    "hypothese_penetration_marche_pct": 3.0,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "192 patients/an présentant élimination retardée méthotrexate ou risque toxicité avec altération fonction rénale",
+    "population_cible_nombre": 192,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Données françaises 2011-2018",
+    "incertitude_population": "Faible",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-07-20",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Important",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "V",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Efficacité réduction concentration méthotrexate et mortalité",
+    "valeur_critère": "Réduction 90% concentrations ; mortalité 8% vs 20-40%",
+    "impact_décision": "Passage ASMR V → IV",
+    "estimation_mesure_impact": "Réduction mortalité 12-32 points de pourcentage",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19744",
+    "texte_brut": "Commission de Transparence VORAXAZE – Audition – Inscription (CT) Mercredi 20 juillet 2022. Il s'agit d'une audition qui fait suite à l'avis du 1er juin dans le cadre de la demande d'inscription de la spécialité VORAXAZE, qui est la glucarpidase, poudre pour solution injectable, indiquée pour réduire la concentration plasmatique toxique de méthotrexate chez les patients adultes et enfants à partir de 28 jours présentant une élimination retardée du méthotrexate ou un risque de toxicité du méthotrexate. La commission avait octroyé un service médical rendu important et avait considéré que VORAXAZE n'apportait pas d'amélioration du service médical rendu dans la stratégie de prise en charge. La commission a considéré que l'acide folinique était un comparateur cliniquement pertinent de VORAXAZE dans l'indication évaluée.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19744_smrasmr_01",
+      "evaluation_id": "CT-19744",
+      "indication_precise": "Réduction concentration plasmatique toxique méthotrexate chez patients adultes et enfants à partir de 28 jours avec élimination retardée ou risque toxicité associé à altération fonction rénale",
+      "smr": "Service médical rendu important",
+      "smr_enum": "Important",
+      "asmr": "Amélioration du service médical rendu de niveau IV",
+      "asmr_enum": "IV",
+      "smr_revendique": "Important",
+      "smr_revendique_enum": "Important",
+      "asmr_revendique": "Niveau III",
+      "asmr_revendique_enum": "III",
+      "justification_decisionnelle": "Glucarpidase seul médicament réduisant concentrations toxiques méthotrexate. Efficacité démontrée sur réduction rapide concentration et amélioration fonction rénale. Mortalité réduite à 8% vs 20-40% avec soins courants. Remplace dialyse inefficace. Acide folinique non comparateur pertinent car administré en prévention à tous patients, inefficace en curatif.",
+      "population_cible_indication": "Patients avec pronostic vital engagé : concentrations toxiques méthotrexate + altération fonction rénale ou preuve élimination retardée",
+      "ligne_traitement_indication": "Curatif",
+      "comparateurs_references_indication": "Acide folinique (standard prévention), dialyse (obsolète)",
+      "comparateur_id_HAS": "CT-19744_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Curatif",
+        "biomarqueur": "Aucun",
+        "stade": "Non applicable",
+        "population_age": "À partir de 28 jours"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "service médical rendu",
+          "t": "La commission avait octroyé un service médical rendu important",
+          "c": 0.96
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 17,
+          "s": "ASMR IV pour ce produit",
+          "t": "Nous avons 11 voix pour une ASMR IV et 7 voix pour une ASMR V. C'est donc une ASMR IV pour ce produit",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19744_event_CT_01",
+      "evaluation_id": "CT-19744",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-01",
+      "detail_brut": "Avis antérieur : SMR Important, ASMR V, acide folinique comparateur pertinent",
+      "detail_type_specifique": "Avis initial inscription",
+      "acteurs_impliques": [
+        "Commission de Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Avis du 1er juin 2022",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": []
+    },
+    {
+      "event_id": "CT-19744_event_CT_02",
+      "evaluation_id": "CT-19744",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-07-20",
+      "detail_brut": "Audition laboratoire SERB avec présentation Professeur Chatelut et Antoine Bernasconi",
+      "detail_type_specifique": "Audition suite à avis antérieur",
+      "acteurs_impliques": [
+        "SERB",
+        "Étienne Chatelut",
+        "Antoine Bernasconi",
+        "Eva Gallardo"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Transcription 20 juillet 2022",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 20 juillet 2022",
+          "t": "Mercredi 20 juillet 2022",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19744_event_CT_03",
+      "evaluation_id": "CT-19744",
+      "event_type": "VOTE",
+      "event_date": "2022-07-20",
+      "detail_brut": "Vote ASMR : 11 voix pour ASMR IV, 7 voix pour ASMR V. Résultat : ASMR IV",
+      "detail_type_specifique": "Vote réévaluation ASMR",
+      "acteurs_impliques": [
+        "Commission de Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Transcription page 17",
+      "delai_amm_ct_jours": null,
+      "delai_ct_jo_jours": null,
+      "evidence": [
+        {
+          "field": "event_type",
+          "f": "F1",
+          "p": 17,
+          "s": "11 voix pour une ASMR IV",
+          "t": "Nous avons 11 voix pour une ASMR IV et 7 voix pour une ASMR V. C'est donc une ASMR IV pour ce produit",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19744",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": null,
+    "delai_eval_depuis_transcription_jours": 0,
+    "delai_eval_depuis_evenement_initial_jours": 49,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_flag_incomplet": false,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19744",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie - Support",
+    "type_avis_enum": "Réexamen",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": true,
+    "ligne_traitement_num": 0,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 90.0,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Réduction concentration plasmatique méthotrexate",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 18,
+    "voix_pour_pct": 61.1,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": {
+      "essais_cliniques_complets": false,
+      "criteres_jugement_complets": false,
+      "tolerance_complete": false,
+      "ceesp_present": false
+    }
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19744_essai_Etudes_compassionnelles",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19744_essai_Etudes_compassionnelles",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19744_essai_Etudes_compassionnelles_crit_Concentration_MTX",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19744_essai_Etudes_compassionnelles",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19744_essai_Etudes_compassionnelles_crit_Fonction_renale",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19744_essai_Etudes_compassionnelles",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19744_essai_Etudes_compassionnelles_crit_Mortalite",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19744_essai_Etudes_compassionnelles",
+      "tgt_type": "Comparateur",
+      "tgt_id": "CT-19744_essai_Etudes_compassionnelles_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19744_essai_Etudes_compassionnelles",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19744_essai_Etudes_compassionnelles_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19744",
+      "tgt_type": "SMR_ASMR",
+      "tgt_id": "CT-19744_smrasmr_01",
+      "label": "EVAL_HAS_SMRASMR"
+    }
+  ],
+  "Annotation_View": [
+    {
+      "id": "CT-19744_annot_001",
+      "text": "Il s'agit d'une audition qui fait suite à l'avis du 1er juin dans le cadre de la demande d'inscription de la spécialité VORAXAZE, qui est la glucarpidase, poudre pour solution injectable, indiquée pour réduire la concentration plasmatique toxique de méthotrexate chez les patients adultes et enfants à partir de 28 jours présentant une élimination retardée du méthotrexate ou un risque de toxicité du méthotrexate.",
+      "meta": {
+        "doc_id": "CT-19744",
+        "source": "TRANSCRIPTION",
+        "template": "TRANSCRIPTION",
+        "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+        "section_label_brut": "Présentation du dossier par la HAS",
+        "hierarchie": [
+          "Présentation",
+          "Contexte"
+        ],
+        "page_start": 3,
+        "page_end": 3,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 45,
+          "end": 54,
+          "label": "DATE"
+        },
+        {
+          "start": 95,
+          "end": 103,
+          "label": "PRODUIT"
+        },
+        {
+          "start": 110,
+          "end": 122,
+          "label": "DCI"
+        },
+        {
+          "start": 180,
+          "end": 192,
+          "label": "INDICATION"
+        }
+      ],
+      "relations": [
+        {
+          "head": 1,
+          "tail": 2,
+          "label": "PRODUIT_HAS_DCI"
+        },
+        {
+          "head": 1,
+          "tail": 3,
+          "label": "PRODUIT_HAS_INDICATION"
+        }
+      ]
+    },
+    {
+      "id": "CT-19744_annot_002",
+      "text": "à peu près les deux tiers des patients ont des concentrations qui, grâce à la glucarpidase, vont passer en deçà de la micromole, qui est la concentration critique en méthotrexate au niveau sanguin. Pour ceux qui n'ont pas atteint cette valeur, vous voyez que la très grande majorité va quand même avoir des concentrations entre 1 et 2 micromoles",
+      "meta": {
+        "doc_id": "CT-19744",
+        "source": "TRANSCRIPTION",
+        "template": "TRANSCRIPTION",
+        "section_label_normalise": "ETUDES",
+        "section_label_brut": "Données cliniques et études",
+        "hierarchie": [
+          "Efficacité",
+          "Concentration méthotrexate"
+        ],
+        "page_start": 6,
+        "page_end": 6,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 35,
+          "end": 43,
+          "label": "POURCENTAGE"
+        },
+        {
+          "start": 65,
+          "end": 77,
+          "label": "PRODUIT"
+        },
+        {
+          "start": 110,
+          "end": 120,
+          "label": "VALEUR_NUMERIQUE"
+        },
+        {
+          "start": 200,
+          "end": 210,
+          "label": "VALEUR_NUMERIQUE"
+        }
+      ],
+      "relations": [
+        {
+          "head": 1,
+          "tail": 2,
+          "label": "PRODUIT_HAS_EFFICACITE"
+        }
+      ]
+    }
+  ]
+}

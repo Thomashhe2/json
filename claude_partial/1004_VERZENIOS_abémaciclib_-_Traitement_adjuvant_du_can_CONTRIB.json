@@ -1,0 +1,739 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-06-21",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-21",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19830_VERZENIOS_Contribution_Patients.pdf",
+        "type": "CONTRIB",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CONTRIB",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19830_seg_001",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Nom et adresse de l'association",
+      "page_start": 1,
+      "page_end": 1,
+      "heading_text": "Nom et adresse de l'association",
+      "expected_fields": [
+        "nom_association",
+        "adresse",
+        "type_structure"
+      ],
+      "routing_hint": "CONTRIB_METADATA",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19830_seg_002",
+      "section_label_normalise": "METHODOLOGIE",
+      "section_label_brut": "Méthode utilisée pour remplir le questionnaire",
+      "page_start": 1,
+      "page_end": 2,
+      "heading_text": "1. Méthode utilisée pour remplir le questionnaire",
+      "expected_fields": [
+        "methode_recueil",
+        "nb_patients_consultes",
+        "description_methode"
+      ],
+      "routing_hint": "CONTRIB_METHODS",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19830_seg_003",
+      "section_label_normalise": "IMPACTS_MALADIE",
+      "section_label_brut": "Impact de la maladie / état de santé",
+      "page_start": 2,
+      "page_end": 3,
+      "heading_text": "2. Impact de la maladie / état de santé",
+      "expected_fields": [
+        "description_impacts_patients",
+        "symptomes_principaux",
+        "impacts_psychologiques"
+      ],
+      "routing_hint": "CONTRIB_DISEASE_IMPACT",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19830_seg_004",
+      "section_label_normalise": "TRAITEMENTS_ACTUELS",
+      "section_label_brut": "Expérience avec les thérapeutiques actuelles",
+      "page_start": 3,
+      "page_end": 4,
+      "heading_text": "3. Expérience avec les thérapeutiques actuelles autres que celles évaluées",
+      "expected_fields": [
+        "traitements_disponibles",
+        "avantages",
+        "inconvenients"
+      ],
+      "routing_hint": "CONTRIB_CURRENT_TREATMENTS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_005",
+      "section_label_normalise": "EVALUATION_MEDICAMENT",
+      "section_label_brut": "Expériences avec le médicament évalué",
+      "page_start": 4,
+      "page_end": 5,
+      "heading_text": "4. Expériences avec le médicament évalué",
+      "expected_fields": [
+        "experience_avec_medicament",
+        "avantages_constates",
+        "inconvenients_constates"
+      ],
+      "routing_hint": "CONTRIB_DRUG_EXPERIENCE",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19830_seg_006",
+      "section_label_normalise": "SYNTHESE_CONTRIBUTION",
+      "section_label_brut": "Synthèse de votre contribution",
+      "page_start": 5,
+      "page_end": 5,
+      "heading_text": "6. Synthèse de votre contribution",
+      "expected_fields": [
+        "synthese_contribution",
+        "position_generale"
+      ],
+      "routing_hint": "CONTRIB_SYNTHESIS",
+      "label_confidence": 0.97
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19830",
+    "contribution_presente": true,
+    "contribution_id": "CT-19830_contrib_01",
+    "association": {
+      "nom_association": "Patients en Réseau – PeR",
+      "adresse": "15 Rue Gît le Cœur, 75006 Paris",
+      "type_structure": "Association_agréée_nationale",
+      "site_internet": "Mon réseau Cancer du Sein",
+      "evidence": [
+        {
+          "field": "nom_association",
+          "f": "F1",
+          "p": 1,
+          "s": "Nom et adresse",
+          "t": "Association Patients en Réseau – PeR : 15 Rue Gît le Cœur, 75006 Paris",
+          "c": 0.99
+        }
+      ]
+    },
+    "methodologie": {
+      "methode_recueil": "Enquête_patients",
+      "description_methode": "L'association a rédigé un questionnaire en se basant sur les points abordés dans le « Questionnaire de recueil du point de vue des patients » proposé par la HAS. Ce questionnaire a été mis en ligne sur « Mon réseau Cancer du Sein », la page Facebook de Mon réseau Cancer du Sein entre le 10 juin et le 21 juin 2022.",
+      "nb_patients_consultes": 9,
+      "nb_patients_retenus": 2,
+      "temps_redaction_heures": null,
+      "groupe_travail_membres": 5,
+      "caracteristiques_repondantes": "Neuf personnes, toutes des femmes, ont répondu au questionnaire. Deux répondantes ont un cancer localisé recevant le traitement en adjuvant (retenues pour analyse). Les patientes vivent en Province. Une est âgée de moins de 35 ans et l'autre entre 55 et 64 ans. Toutes deux sont suivies pour un cancer RH+ / HER2-, diagnostiqué en 2021. Prise en charge dans une clinique privée ou institut privé du sein.",
+      "evidence": [
+        {
+          "field": "methode_recueil",
+          "f": "F1",
+          "p": 1,
+          "s": "questionnaire en ligne",
+          "t": "Ce questionnaire a été mis en ligne sur « Mon réseau Cancer du Sein », la page Facebook de Mon réseau Cancer du Sein entre le 10 juin et le 21 juin 2022",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patients_consultes",
+          "f": "F1",
+          "p": 1,
+          "s": "Neuf personnes",
+          "t": "Neuf personnes, toutes des femmes, ont répondu à notre questionnaire",
+          "c": 0.98
+        },
+        {
+          "field": "nb_patients_retenus",
+          "f": "F1",
+          "p": 1,
+          "s": "Seules les réponses",
+          "t": "Seules les réponses des deux patientes avec un cancer localisé et recevant le traitement en adjuvant ont été conservées",
+          "c": 0.99
+        }
+      ]
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Le cancer du sein est le cancer féminin le plus fréquent en France, avec 58 459 nouveaux cas et 12 146 décès en 2018. Le sous-type luminal (RH+) représente environ 70% de tous les cancers du sein. 30% des patientes atteintes d'un cancer du sein à un stade précoce présenteront à dix ans du diagnostic une récidive malgré un traitement local à visée curative. L'espoir de ces personnes à retrouver une vie plus normale réside dans la rémission clinique qui suit la première phase du protocole de soins. L'introduction de l'hormonothérapie est parfois vécue très difficilement à cause des effets secondaires contraignants et de la durée du traitement sur plusieurs années. L'annonce d'un risque plus élevé de récidive est en soi un facteur d'angoisse et d'anxiété.",
+      "symptomes_principaux": [
+        "Fatigue",
+        "Variations d'énergie",
+        "Anxiété",
+        "Angoisse",
+        "Peur de la récidive"
+      ],
+      "statistiques_mentionnees": [
+        {
+          "indicateur": "Nouveaux cas cancer du sein par an en France",
+          "valeur": "58 459",
+          "source": "INCA 2018"
+        },
+        {
+          "indicateur": "Décès cancer du sein par an en France",
+          "valeur": "12 146",
+          "source": "INCA 2018"
+        },
+        {
+          "indicateur": "Proportion cancers du sein RH+ (luminal)",
+          "valeur": "70%",
+          "source": "Données épidémiologiques"
+        },
+        {
+          "indicateur": "Récidive à 10 ans malgré traitement curatif",
+          "valeur": "30%",
+          "source": "BIG 1-98 Trial"
+        }
+      ],
+      "impacts_psychologiques": "Sidération, angoisse au départ puis soulagement lors de la mise en route du traitement. Peur de l'avenir, peur de la récidive. Baisse de moral, émotivité. Moral fluctuant. Sentiment d'anxiété et d'incompréhension des proches. Décalage entre les proches qui enjoignent à reprendre la vie d'avant et la réalité souvent bien différente tant en terme d'énergie que de projets de vie.",
+      "impacts_proches_aidants": "Beaucoup de patientes déclarent un décalage entre les proches qui les enjoignent à reprendre leur vie d'avant, comme si rien ne s'était passé, et leur réalité souvent bien différente tant en terme d'énergie que de projets de vie. Incompréhension des proches accentuée par les traitements par thérapies orales.",
+      "impacts_vie_quotidienne": {
+        "mobilite": "Je fais beaucoup de sport",
+        "vie_professionnelle": "J'ai peur de la fatigue à la reprise du travail. Le niveau de concentration me paraît correct. Difficile de se projeter dans mon travail.",
+        "vie_affective_sexuelle": "Disparition d'une vie sexuelle, douleurs lors des rapports malgré un traitement par mucogyne. Reprise très lente de la sexualité. La lubrification est revenue avec les gels internes et probiotiques. Très très peur de l'atrophie vaginale.",
+        "vie_sociale": "Émotivité. Moral fluctuant.",
+        "aspects_physiques": "Cheveux repoussent, pas de gros changement physique hormis l'absence de sein bien caché avec la prothèse externe. Ménopause précoce.",
+        "aspects_psychologiques": "Peur de l'avenir, peur de la récidive, pas de dépression, bon moral. Baisse de moral, fatigue, émotivité."
+      },
+      "crainte_recidive": "Afin de réduire le risque de récidive, les répondantes sont prêtes à : Dans 100% des cas à : Prendre un traitement innovant diminuant de façon significative le risque de récidive, Changer ses habitudes alimentaires, Faire plus d'activité physique, Réduire son stress, Prendre soin de son sommeil. Dans 50% des cas à : Faire face à des effets indésirables, Changer ses habitudes alimentaires.",
+      "evidence": [
+        {
+          "field": "description_impacts_patients",
+          "f": "F1",
+          "p": 2,
+          "s": "Le cancer du sein",
+          "t": "Le cancer du sein est le cancer féminin le plus fréquent en France, avec 58 459 nouveaux cas et 12 146 décès en 2018",
+          "c": 0.98
+        },
+        {
+          "field": "impacts_psychologiques",
+          "f": "F1",
+          "p": 2,
+          "s": "Sidération, angoisse",
+          "t": "Sidération, angoisse au départ puis soulagement lors de la mise en route du traitement",
+          "c": 0.96
+        },
+        {
+          "field": "crainte_recidive",
+          "f": "F1",
+          "p": 3,
+          "s": "Afin de réduire",
+          "t": "Afin de réduire le risque de récidive, les répondantes sont prêtes à : Dans 100% des cas à : Prendre un traitement innovant diminuant de façon significative le risque de récidive",
+          "c": 0.97
+        }
+      ]
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [
+        "Hormonothérapie (traitement adjuvant 5-10 ans)",
+        "Anti-aromatases (femmes ménopausées)",
+        "Inhibiteur de l'aromatase + agoniste LHRH (femmes pré/périménopausées)",
+        "Thérapies ciblées anti-kinases orales associées aux hormonothérapies",
+        "Fulvestrant (métastatique)"
+      ],
+      "avantages": "Les traitements anticancéreux qui permettent d'augmenter les chances de survie sans rechute et de survie globale avec une bonne qualité de vie (maîtrise des effets secondaires) sont importants car ils permettent de vivre le plus normalement possible. Ils laissent également la possibilité aux patients de pouvoir accéder aux soins de supports (afin de mieux supporter les traitements et ou l'impact de la maladie) pour faire face aux effets indésirables.",
+      "inconvenients": "Des hormonorésistances sont à l'origine de rechute à moins de deux ans et de rechute tardive. L'introduction de l'hormonothérapie est parfois vécue très difficilement à cause des effets secondaires qui peuvent être contraignants et de la durée du traitement sur plusieurs années.",
+      "besoins_non_couverts": "Une nouvelle population de patients est ciblée : les patients à haut risque de récidive ou à risque élevé de récidive, qui vont avoir un risque de résistance à l'hormonothérapie. La connaissance de la tolérance des nouvelles thérapies ciblées en vie réelle est un enjeu pour une adhésion réelle au traitement.",
+      "attentes_principales": "Idéalement, une nouvelle thérapeutique doit permettre de vivre plus longtemps dans de bonnes conditions avec le minimum impact sur la qualité de vie. L'administration par voie orale a la préférence des patients et un accès en pharmacie de ville apparaitrait comme « simplifiant » l'accès au traitement au quotidien. Un suivi rapproché avec des examens de contrôle plus fréquent dans le service d'oncologie est important pour 100% des répondantes afin de diminuer la crainte de récidive. Une des répondantes souhaite que soit proposé au moment de l'instauration des traitements adjuvants, un suivi psychologique, des soins de support adapté notamment l'activité physique adaptée et pouvoir échanger avec d'autres patients concernés.",
+      "evidence": [
+        {
+          "field": "traitements_disponibles",
+          "f": "F1",
+          "p": 3,
+          "s": "La stratégie thérapeutique",
+          "t": "La stratégie thérapeutique repose essentiellement sur l'hormonothérapie. Chez les femmes ménopausées, les anti-aromatases sont, selon les recommandations le traitement adjuvant",
+          "c": 0.96
+        },
+        {
+          "field": "attentes_principales",
+          "f": "F1",
+          "p": 3,
+          "s": "Idéalement, une nouvelle",
+          "t": "Idéalement, une nouvelle thérapeutique doit permettre de vivre plus longtemps dans de bonnes conditions avec le minimum impact sur la qualité de vie",
+          "c": 0.97
+        }
+      ]
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": true,
+      "nb_patients_experience": 2,
+      "duree_traitement_mois": 6,
+      "dose_recommandee": "150 mg 2 fois par jour par voie orale en association avec hormonothérapie",
+      "dose_adaptee_pct": 50,
+      "dose_adaptee_valeur": "100 mg 2 fois par jour",
+      "duree_traitement_prevue": "2 ans ou jusqu'à rechute ou toxicité inacceptable",
+      "avantages_constates": "Le plan de prise de l'abémaciclib est jugé facile à suivre pour l'ensemble des patientes. Les patientes ont l'impression de parfaitement ou assez bien connaître et gérer leurs médicaments. Leur qualité de vie est jugée assez bonne pour 50% et bonne pour 50% d'entre elles. Diminue les récidives, prise orale. Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre. Le suivi médical rapproché est jugé satisfaisant et permet d'adapter les doses en fonction des effets indésirables.",
+      "inconvenients_constates": "Les patientes ont toutes ressenti des effets indésirables attribués à l'abémaciclib. Ces effets indésirables sont apparus immédiatement et les ont moyennement gênés dans leur quotidien, sans résolution pour 50%. Effets secondaires gênants : Fatigue, Perturbations sanguines, Troubles digestifs. Ces effets indésirables impactent le quotidien des patients tout en respectant une certaine qualité de vie au quotidien.",
+      "effets_indésirables_detailles": [
+        {
+          "ei_terme": "Fatigue",
+          "incidence_pct": "100%",
+          "incidence_pct_num": 100.0,
+          "grade": "Tous grades"
+        },
+        {
+          "ei_terme": "Perturbations sanguines (neutropénie, leucopénie, anémie)",
+          "incidence_pct": "100%",
+          "incidence_pct_num": 100.0,
+          "grade": "Tous grades"
+        },
+        {
+          "ei_terme": "Diarrhées",
+          "incidence_pct": "50%",
+          "incidence_pct_num": 50.0,
+          "grade": "Tous grades"
+        },
+        {
+          "ei_terme": "Nausées",
+          "incidence_pct": "50%",
+          "incidence_pct_num": 50.0,
+          "grade": "Tous grades"
+        },
+        {
+          "ei_terme": "Douleurs articulaires",
+          "incidence_pct": "50%",
+          "incidence_pct_num": 50.0,
+          "grade": "Tous grades"
+        },
+        {
+          "ei_terme": "Alopécie",
+          "incidence_pct": "50%",
+          "incidence_pct_num": 50.0,
+          "grade": "Tous grades"
+        }
+      ],
+      "gestion_effets_indésirables": "La réduction de la dose ou l'arrêt temporaire permettent la résolution des effets indésirables dans 50% des cas respectivement. De plus, aucune hospitalisation n'a été nécessaire pour la prise en charge des effets indésirables. L'effet sur le poids est variable suivant les patientes : poids stable ou légère prise de poids (moins de 5 kg).",
+      "verbatims_patients": [
+        "Je supporte bien le verzenios ® à 100mg",
+        "De grosses variations de fatigues",
+        "Neutropénie, fatigue, anémie",
+        "Problèmes digestifs. Estomac fragile avec de la nourriture compliquée. Fatigue",
+        "Je me sens chanceuse de pouvoir en bénéficier. J'aimerais connaître les résultats connus sur les récidives (je sais qu'il est utilisé depuis des années en Allemagne et en Croatie par exemple)"
+      ],
+      "evidence": [
+        {
+          "field": "experience_avec_medicament",
+          "f": "F1",
+          "p": 4,
+          "s": "100% des répondantes",
+          "t": "100% des répondantes ont reçu l'abémaciclib immédiatement après les traitements hospitaliers en association avec l'hormonothérapie – adjuvant",
+          "c": 0.99
+        },
+        {
+          "field": "avantages_constates",
+          "f": "F1",
+          "p": 4,
+          "s": "Le plan de prise",
+          "t": "Le plan de prise de l'abémaciclib est jugé facile à suivre pour l'ensemble des patientes",
+          "c": 0.97
+        },
+        {
+          "field": "effets_indésirables_detailles",
+          "f": "F1",
+          "p": 4,
+          "s": "Fatigue : 100%",
+          "t": "Fatigue : 100%, Perturbations sanguines (neutropénie, leucopénie, anémie) : 100%, Diarrhées : 50%, Nausées : 50%, Douleurs articulaires : 50%, Alopécie : 50%",
+          "c": 0.98
+        }
+      ]
+    },
+    "indication_demandee": {
+      "indication_precise": "Traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux RH+, récepteurs du facteur de croissance épidermique humain 2 HER2-, avec atteinte ganglionnaire et haut risque de rechute",
+      "indication_adequate": "Oui",
+      "commentaires": "Au vu de la réduction significative du risque de récidive invasive à 3 ans, la consultation de suivi et d'annonce du traitement en adjuvant par abémaciclib en association avec une hormonothérapie nous paraît un enjeu-clé pour la prise de décision du patient. Les patientes éligibles à ce type de traitement d'hormonothérapie renforcée par l'abémaciclib devraient être prioritaires pour les consultations de PPAC Plan Personnalisé de l'Après-Cancer qui sont en cours de mise en place car elles auront particulièrement besoin d'être bien accompagnées dans l'instauration de ces traitements.",
+      "evidence": [
+        {
+          "field": "indication_adequate",
+          "f": "F1",
+          "p": 5,
+          "s": "Au vu de la réduction",
+          "t": "Au vu de la réduction significative du risque de récidive invasive à 3 ans, la consultation de suivi et d'annonce du traitement en adjuvant par abémaciclib en association avec une hormonothérapie nous paraît un enjeu-clé",
+          "c": 0.96
+        }
+      ]
+    },
+    "position_association": {
+      "position_generale": "Favorable",
+      "justification": "Un traitement efficace, pratique et facile à suivre. Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre. Le suivi médical rapproché est jugé satisfaisant et permet d'adapter les doses en fonction des effets indésirables. Les répondantes estiment bien connaître le plan de prise. Effets secondaires gênants à mettre en miroir avec une qualité de vie satisfaisante. Ces effets indésirables impactent le quotidien des patients tout en respectant une certaine qualité de vie au quotidien. Leur résolution se fait pour 50% par une réduction de dose et 50% par un arrêt temporaire de l'abémaciclib. Un accompagnement de l'instauration du traitement combinant information précise, suivi rapproché (suivi téléphonique, parcours d'accompagnement, application mobile…) et soins de support nous paraît très important pour cette combinaison de traitement (hormonothérapie et abémaciclib) proposé en adjuvant.",
+      "arguments_principaux": [
+        "Traitement efficace réduisant significativement le risque de récidive invasive à 3 ans",
+        "Administration par voie orale facile à suivre et à gérer",
+        "Dispensable en pharmacie de ville simplifiant l'accès au quotidien",
+        "Suivi médical rapproché permettant l'adaptation des doses",
+        "Qualité de vie satisfaisante malgré les effets indésirables",
+        "Effets indésirables gérables par réduction de dose ou arrêt temporaire",
+        "Importance d'un accompagnement global incluant suivi psychologique et soins de support"
+      ],
+      "evidence": [
+        {
+          "field": "position_generale",
+          "f": "F1",
+          "p": 5,
+          "s": "Un traitement efficace",
+          "t": "Un traitement efficace, pratique et facile à suivre. Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre",
+          "c": 0.97
+        }
+      ]
+    },
+    "synthese_contribution": "L'association Patients en Réseau a recueilli le point de vue de 2 patientes atteintes d'un cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute, traitées par abémaciclib en association avec une hormonothérapie en adjuvant depuis moins de 6 mois. Le cancer du sein RH+ représente 70% des cancers du sein, avec 30% de récidive à 10 ans malgré traitement curatif. Les patientes rapportent une forte anxiété et peur de la récidive, impactant la qualité de vie. L'abémaciclib est perçu comme un traitement efficace, facile à suivre par voie orale, avec un suivi médical rapproché satisfaisant. Les effets indésirables (fatigue 100%, perturbations sanguines 100%, diarrhées et nausées 50%) sont gérables par réduction de dose ou arrêt temporaire, sans hospitalisation. La qualité de vie est jugée assez bonne à bonne. L'association souligne l'importance d'un accompagnement global incluant information précise, suivi rapproché, soins de support (psychologique, activité physique adaptée, diététique) et accès aux consultations PPAC pour ces patientes jeunes et actives.",
+    "evidence": [
+      {
+        "field": "synthese_contribution",
+        "f": "F1",
+        "p": 5,
+        "s": "Un traitement efficace",
+        "t": "Un traitement efficace, pratique et facile à suivre. Effets secondaires gênants à mettre en miroir avec une qualité de vie satisfaisante. Considérer le recours aux soins de support",
+        "c": 0.96
+      }
+    ]
+  },
+  "recommandations_association": {
+    "accompagnement_traitement": "Un accompagnement adapté et personnalisé incluant oncologue, infirmière d'annonce, psychologue et proposition de soins de support doit être envisagé. Cette approche personnalisée renforcera l'observance au traitement sur la durée. Une prise en charge de la personne dans la globalité de ses pathologies et des effets secondaires des traitements est importante.",
+    "soins_support": "L'importance d'avoir accès aux soins de support (suivi psychologique, activité physique adaptée, diététique) ou de considérer des approches complémentaires, par exemple, médecine chinoise, acuponcture, hypnothérapeute, masseur, sophrologue, homéopathe. Le recours aux soins de support reste faible sur le panel de répondantes, ce qui souligne l'importance d'une approche globale lors de l'annonce du traitement par abémaciclib associé à l'hormonothérapie.",
+    "priorite_ppac": "Les patientes éligibles à ce type de traitement d'hormonothérapie renforcée par l'abémaciclib devraient être prioritaires pour les consultations de PPAC Plan Personnalisé de l'Après-Cancer qui sont en cours de mise en place car elles auront particulièrement besoin d'être bien accompagnées dans l'instauration de ces traitements. Ces femmes étant souvent jeunes et potentiellement en pleine vie active, une vigilance particulière sera à apporter pour leur donner un peu plus de temps pour se préparer à la reprise de leur activité professionnelle afin d'éviter des échecs souvent très préjudiciables tant moralement que socialement et économiquement.",
+    "evidence": [
+      {
+        "field": "recommandations_association",
+        "f": "F1",
+        "p": 5,
+        "s": "un accompagnement adapté",
+        "t": "un accompagnement adapté et personnalisé incluant oncologue, infirmière d'annonce, psychologue et proposition de soins de support doit être également envisagé",
+        "c": 0.95
+      }
+    ]
+  },
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical important en cancer du sein précoce RH+/HER2- : 30% des patientes présentent une récidive à 10 ans malgré traitement curatif. Hormonorésistances primaires et secondaires créent une population à haut risque nécessitant une thérapie ciblée supplémentaire.",
+      "extrait_textuel": "30% des patient.es atteintes d'un cancer du sein à un stade précoce présenteront à dix ans du diagnostic une récidive malgré un traitement local à visée curative. Une nouvelle population de patient.es est ainsi en train d'être ciblée : les patient.es à haut risque de récidive ou à risque élevé de récidive, qui vont avoir un risque de résistance à l'hormonothérapie.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association_PeR",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "30% des patient.es",
+          "t": "30% des patient.es atteintes d'un cancer du sein à un stade précoce présenteront à dix ans du diagnostic une récidive malgré un traitement local à visée curative",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Favorable",
+      "description": "Impact psychologique majeur de l'annonce du risque de récidive : anxiété, angoisse, peur de l'avenir. Les patientes sont prêtes à accepter un traitement innovant réduisant significativement le risque de récidive (100% des répondantes).",
+      "extrait_textuel": "L'annonce d'un risque plus élevé de récidive est en soi un facteur d'angoisse et d'anxiété. Afin de réduire le risque de récidive, les répondantes sont prêtes à : Dans 100% des cas à : Prendre un traitement innovant diminuant de façon significative le risque de récidive.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association_PeR",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "L'annonce d'un risque",
+          "t": "L'annonce d'un risque plus élevé de récidive est en soi un facteur d'angoisse et d'anxiété",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Réduction significative du risque de récidive invasive à 3 ans avec abémaciclib en association avec hormonothérapie. Les patientes perçoivent le traitement comme efficace et réduisant les récidives.",
+      "extrait_textuel": "Au vu de la réduction significative du risque de récidive invasive à 3 ans, la consultation de suivi et d'annonce du traitement en adjuvant par abémaciclib en association avec une hormonothérapie nous paraît un enjeu-clé pour la prise de décision du patient. Diminue les récidives, prise orale.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association_PeR",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "Au vu de la réduction",
+          "t": "Au vu de la réduction significative du risque de récidive invasive à 3 ans, la consultation de suivi et d'annonce du traitement en adjuvant par abémaciclib",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Mitigé",
+      "description": "Profil de tolérance acceptable avec effets indésirables gérables. Fatigue (100%), perturbations sanguines (100%), diarrhées et nausées (50%), douleurs articulaires et alopécie (50%). Résolution possible par réduction de dose (50%) ou arrêt temporaire (50%). Aucune hospitalisation nécessaire. Qualité de vie jugée assez bonne à bonne.",
+      "extrait_textuel": "Les patientes ont toutes ressenti des effets indésirables attribués à l'abémaciclib : Fatigue : 100%, Perturbations sanguines : 100%, Diarrhées : 50%, Nausées : 50%, Douleurs articulaires : 50%, Alopécie : 50%. La réduction de la dose ou l'arrêt temporaire permettent la résolution des effets indésirables dans 50% des cas respectivement. De plus, aucune hospitalisation n'a été nécessaire. Leur qualité de vie est jugée assez bonne pour 50% et bonne pour 50%.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association_PeR",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "Fatigue : 100%",
+          "t": "Fatigue : 100%, Perturbations sanguines (neutropénie, leucopénie, anémie) : 100%, Diarrhées : 50%, Nausées : 50%, Douleurs articulaires : 50%, Alopécie : 50%",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Administration par voie orale facile à suivre et à gérer. Dispensable en pharmacie de ville simplifiant l'accès au traitement au quotidien. Suivi médical rapproché satisfaisant permettant l'adaptation des doses en fonction des effets indésirables.",
+      "extrait_textuel": "Le plan de prise de l'abémaciclib est jugé facile à suivre pour l'ensemble des patientes. L'administration par voie orale a la préférence des patients et un accès en pharmacie de ville apparaitrait comme « simplifiant » l'accès au traitement au quotidien. Le suivi médical rapproché est jugé satisfaisant et permet d'adapter les doses en fonction des effets indésirables.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association_PeR",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "Le plan de prise",
+          "t": "Le plan de prise de l'abémaciclib est jugé facile à suivre pour l'ensemble des patientes",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Favorable",
+      "description": "Importance d'un accompagnement global incluant suivi psychologique, soins de support (activité physique adaptée, diététique), approches complémentaires et accès aux consultations PPAC. Cet accompagnement renforcera l'observance au traitement et permettra une meilleure intégration dans la vie quotidienne et professionnelle.",
+      "extrait_textuel": "Un accompagnement adapté et personnalisé incluant oncologue, infirmière d'annonce, psychologue et proposition de soins de support doit être envisagé. Cette approche personnalisée renforcera l'observance au traitement sur la durée. Les patientes éligibles à ce type de traitement devraient être prioritaires pour les consultations de PPAC Plan Personnalisé de l'Après-Cancer.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Association_PeR",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "un accompagnement adapté",
+          "t": "un accompagnement adapté et personnalisé incluant oncologue, infirmière d'annonce, psychologue et proposition de soins de support doit être envisagé",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Temoignages_Patients": [
+    {
+      "temoignage_id": "CT-19830_temo_01",
+      "theme": "Tolérance",
+      "verbatim": "Je supporte bien le verzenios ® à 100mg",
+      "contexte": "Patiente traitée depuis moins de 6 mois avec dose réduite"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_02",
+      "theme": "Effets indésirables",
+      "verbatim": "De grosses variations de fatigues",
+      "contexte": "Impact sur la vie quotidienne"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_03",
+      "theme": "Vie professionnelle",
+      "verbatim": "J'ai peur de la fatigue à la reprise du travail. Le niveau de concentration me paraît correct.",
+      "contexte": "Préoccupations concernant le retour au travail"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_04",
+      "theme": "Vie professionnelle",
+      "verbatim": "Difficile de se projeter dans mon travail.",
+      "contexte": "Incertitude concernant l'avenir professionnel"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_05",
+      "theme": "Vie affective et sexuelle",
+      "verbatim": "Disparition d'une vie sexuelle, douleurs lors des rapports malgré un traitement par mucogyne. Ma vie affective est stable.",
+      "contexte": "Impact du traitement sur la vie intime"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_06",
+      "theme": "Vie affective et sexuelle",
+      "verbatim": "Reprise très lente de la sexualité. La lubrification est revenue avec les gels internes et probiotiques. Très très peur de l'atrophie vaginale.",
+      "contexte": "Gestion des effets secondaires sur la sexualité"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_07",
+      "theme": "Aspects psychologiques",
+      "verbatim": "Peur de l'avenir, peur de la récidive, pas de dépression, bon moral",
+      "contexte": "État psychologique malgré les craintes"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_08",
+      "theme": "Aspects psychologiques",
+      "verbatim": "Baisse de moral, fatigue, émotivité",
+      "contexte": "Impact psychologique du traitement"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_09",
+      "theme": "Efficacité et espoir",
+      "verbatim": "Je me sens chanceuse de pouvoir en bénéficier. J'aimerais connaître les résultats connus sur les récidives (je sais qu'il est utilisé depuis des années en Allemagne et en Croatie par exemple)",
+      "contexte": "Perception positive du traitement et intérêt pour les données internationales"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_10",
+      "theme": "Efficacité et facilité d'utilisation",
+      "verbatim": "Diminue les récidives, prise orale",
+      "contexte": "Avantages perçus du traitement"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_11",
+      "theme": "Effets indésirables",
+      "verbatim": "Neutropénie, fatigue, anémie",
+      "contexte": "Effets indésirables rapportés"
+    },
+    {
+      "temoignage_id": "CT-19830_temo_12",
+      "theme": "Effets indésirables",
+      "verbatim": "Problèmes digestifs. Estomac fragile avec de la nourriture compliquée. Fatigue",
+      "contexte": "Effets indésirables digestifs et fatigue"
+    }
+  ],
+  "Donnees_Contexte": {
+    "contexte_id": "CT-19830_ctx",
+    "evaluation_id": "CT-19830",
+    "type_document": "CONTRIB",
+    "medicament_evalue": "VERZENIOS (Abémaciclib)",
+    "indication_evaluee": "Traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux RH+, récepteurs du facteur de croissance épidermique humain 2 HER2-, avec atteinte ganglionnaire et haut risque de rechute",
+    "date_contribution": "2022-06-21",
+    "aide_exterieure_recue": false,
+    "aide_exterieure_detail": "Non, l'association n'a reçu aucune aide extérieure",
+    "evidence": []
+  },
+  "Relations": [
+    {
+      "src_type": "Contribution_Patients",
+      "src_id": "CT-19830_contrib_01",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19830_arg_CONTRIB_01",
+      "label": "CONTRIB_ARGUMENT"
+    },
+    {
+      "src_type": "Contribution_Patients",
+      "src_id": "CT-19830_contrib_01",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19830_arg_CONTRIB_02",
+      "label": "CONTRIB_ARGUMENT"
+    },
+    {
+      "src_type": "Contribution_Patients",
+      "src_id": "CT-19830_contrib_01",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19830_arg_CONTRIB_03",
+      "label": "CONTRIB_ARGUMENT"
+    },
+    {
+      "src_type": "Contribution_Patients",
+      "src_id": "CT-19830_contrib_01",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19830_arg_CONTRIB_04",
+      "label": "CONTRIB_ARGUMENT"
+    },
+    {
+      "src_type": "Contribution_Patients",
+      "src_id": "CT-19830_contrib_01",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19830_arg_CONTRIB_05",
+      "label": "CONTRIB_ARGUMENT"
+    },
+    {
+      "src_type": "Contribution_Patients",
+      "src_id": "CT-19830_contrib_01",
+      "tgt_type": "Arguments_Decisionnels",
+      "tgt_id": "CT-19830_arg_CONTRIB_06",
+      "label": "CONTRIB_ARGUMENT"
+    }
+  ],
+  "Annotation_View": {
+    "id": "CT-19830_annotation_view",
+    "text": "Contribution des associations de patients et d'usagers aux évaluations des médicaments et des dispositifs médicaux. Questionnaire de recueil du point de vue des patients et usagers pour l'évaluation d'un médicament. Évaluation de : VERZENIOS ® - Abémaciclib. Indication(s) du médicament concernée(s) : Traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux RH+, récepteurs du facteur de croissance épidermique humain 2 HER2-, avec atteinte ganglionnaire et haut risque de rechute. Nom et adresse de l'association : Association Patients en Réseau – PeR : 15 Rue Gît le Cœur, 75006 Paris.",
+    "meta": {
+      "doc_id": "CT-19830",
+      "source": "CONTRIB",
+      "template": "CONTRIB",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "page_start": 1,
+      "page_end": 1,
+      "split": "train",
+      "guidelines_version": "3.3.8"
+    },
+    "entities": [
+      {
+        "start": 0,
+        "end": 95,
+        "label": "DOCUMENT_TYPE"
+      },
+      {
+        "start": 96,
+        "end": 180,
+        "label": "DOCUMENT_TITLE"
+      },
+      {
+        "start": 181,
+        "end": 220,
+        "label": "MEDICAMENT"
+      },
+      {
+        "start": 221,
+        "end": 380,
+        "label": "INDICATION"
+      },
+      {
+        "start": 381,
+        "end": 450,
+        "label": "ASSOCIATION_NAME"
+      }
+    ],
+    "relations": [
+      {
+        "head": 3,
+        "tail": 4,
+        "label": "MEDICAMENT_INDICATION"
+      },
+      {
+        "head": 4,
+        "tail": 5,
+        "label": "ASSOCIATION_EVALUATES"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1443 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19784",
+  "evaluation_id": "CT-19784",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19784_OXBRYTA_500mg_AvisDef_CT19784.pdf",
+        "type": "CT",
+        "page_count": 59
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19784_seg_001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L'essentiel",
+      "page_start": 1,
+      "page_end": 1,
+      "heading_text": "L'essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "avis_defavorable",
+        "smr",
+        "asmr"
+      ],
+      "routing_hint": "Synthèse exécutive",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19784_seg_002",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "page_start": 8,
+      "page_end": 13,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "pathologie_description",
+        "epidemiologie",
+        "alternatives_therapeutiques"
+      ],
+      "routing_hint": "Contexte clinique et épidémiologie",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19784_seg_003",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "page_start": 13,
+      "page_end": 14,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_medicamenteux",
+        "comparateurs_non_medicamenteux"
+      ],
+      "routing_hint": "Identification des alternatives",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19784_seg_004",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles - Efficacité : étude de phase III HOPE",
+      "page_start": 15,
+      "page_end": 36,
+      "heading_text": "Efficacité : étude de phase III HOPE",
+      "expected_fields": [
+        "design_etude",
+        "population",
+        "criteres_jugement",
+        "resultats"
+      ],
+      "routing_hint": "Étude pivot HOPE",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19784_seg_005",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "page_start": 36,
+      "page_end": 42,
+      "heading_text": "Tolérance",
+      "expected_fields": [
+        "ei_graves",
+        "ei_frequents",
+        "arrets_traitement"
+      ],
+      "routing_hint": "Profil de sécurité",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19784_seg_006",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "page_start": 49,
+      "page_end": 53,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "position_therapeutique",
+        "alternatives",
+        "population_cible"
+      ],
+      "routing_hint": "Positionnement clinique",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19784_seg_007",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu",
+      "page_start": 53,
+      "page_end": 55,
+      "heading_text": "Service Médical Rendu",
+      "expected_fields": [
+        "smr_enum",
+        "justification_smr"
+      ],
+      "routing_hint": "Conclusion SMR",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19784_seg_008",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "page_start": 55,
+      "page_end": 56,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr_enum",
+        "justification_asmr"
+      ],
+      "routing_hint": "Conclusion ASMR",
+      "label_confidence": 0.99
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19784_prod_001",
+      "evaluation_id": "CT-19784",
+      "produit_nom_commercial": "OXBRYTA",
+      "dci": "Voxelotor",
+      "dosage_concentration": "500 mg",
+      "forme_pharmaceutique": "Comprimés pelliculés",
+      "forme_pharma_enum": "Oral_solid",
+      "titulaire_amm": "Global Blood Therapeutics",
+      "code_atc": "B06AX03",
+      "code_cis": "Non renseigné",
+      "presentations": [
+        {
+          "presentation_id": "CT-19784_pres_001",
+          "forme_pharmaceutique": "Comprimés pelliculés",
+          "dosage_concentration": "500 mg",
+          "code_cip13": "34009302471 5 0",
+          "conditionnement": "Flacon (PEHD) - Boîte de 90 comprimés"
+        }
+      ],
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 1,
+          "s": "OXBRYTA 500 mg",
+          "t": "OXBRYTA 500 mg comprimés pelliculés",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19784",
+      "Num_avis": "CT-19784",
+      "produit_nom": "OXBRYTA",
+      "dci": "Voxelotor",
+      "type_avis_enum": "Inscription",
+      "forme": "Comprimés pelliculés",
+      "dosage": "500 mg",
+      "indication": "Traitement de l'anémie hémolytique causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus, en monothérapie ou en association avec l'hydroxyurée",
+      "classe_ATC": "B06AX03",
+      "pathologie": "Drépanocytose",
+      "maladie_rare": true,
+      "ligne_traitement_enum": "Variable",
+      "sous_groupe_population": "Anémie hémolytique sévère",
+      "cim10_principal": "D57",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Drépanocytose",
+      "source_cim10": "Pathologie",
+      "aire_therapeutique_niveau_1": "Hématologie",
+      "aire_therapeutique_niveau_2": "Maladies du sang",
+      "aire_therapeutique_niveau_3": "Drépanocytose - Anémie hémolytique",
+      "source_aire_therapeutique": "Déduit ATC B06AX03",
+      "design_etude": "Étude de phase III, multicentrique, internationale, randomisée, en double-aveugle, en groupes parallèles, contrôlée versus placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "niveau_preuve_brut": "Étude de phase III randomisée en double-aveugle",
+      "niveau_preuve_interprete": "Niveau_2",
+      "besoin_medical_brut": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles. Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés pour le traitement de l'anémie hémolytique chronique symptomatique ou mal tolérée des patients atteints de drépanocytose.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Hemato_oncologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "12 ans et plus",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Première évaluation - Inscription",
+      "historique_ASMR_comparateurs": "Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+      "concurrence_therapeutique_recente": "Hydroxyurée (SIKLOS, XROMI) et crizanlizumab (ADAKVEO) autorisés uniquement dans la prévention des crises vaso-occlusives",
+      "smr": "Service médical rendu faible uniquement dans le traitement de l'anémie hémolytique sévère",
+      "smr_enum": "Faible",
+      "asmr": "OXBRYTA (voxelotor) n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+      "asmr_enum": "V",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-20",
+      "date_adoption": "2022-06-29",
+      "date_audition": "2022-07-20",
+      "gravite_patho": "La drépanocytose est une maladie d'évolution très variable. Elle est associée à la survenue d'une anémie hémolytique dont les complications aigües et chroniques dégradent fortement la qualité de vie des patients et peuvent engager le pronostic vital à terme.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents âgés de 12 ans et plus",
+      "pertinence_concurrence_therapeutique": "Les transfusions simples et les échanges transfusionnels sont une option thérapeutique non médicamenteuse. L'hydroxyurée et l'érythropoïétine sont utilisées hors AMM.",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au remboursement",
+          "t": "Avis favorable au remboursement uniquement dans le traitement de l'anémie hémolytique sévère causée par la drépanocytose",
+          "c": 0.99
+        },
+        {
+          "f": "F1",
+          "p": 53,
+          "s": "SMR FAIBLE",
+          "t": "SMR FAIBLE uniquement dans le traitement de l'anémie hémolytique sévère, en monothérapie ou en association à l'hydroxyurée",
+          "c": 0.99
+        },
+        {
+          "f": "F1",
+          "p": 55,
+          "s": "ASMR V",
+          "t": "OXBRYTA (voxelotor) n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19784_essai_HOPE",
+      "evaluation_id": "CT-19784",
+      "essai_nom": "HOPE",
+      "nct_number": "NCT03036813",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Utilisation d'hydroxyurée à l'inclusion",
+        "Zone géographique",
+        "Âge"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2018-10-31",
+      "duree_suivi_prevu_mois": 72,
+      "maturite_donnees": "Intermédiaires",
+      "maturite_pct": 72.6,
+      "population_cible": "Patients âgés de 12 à 65 ans atteints de drépanocytose",
+      "nb_patients_inclus": "274 patients randomisés",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "Multicentrique",
+          "nb_patients": "274",
+          "pourcentage": "100%"
+        },
+        {
+          "pays": "France",
+          "nb_patients": "3",
+          "pourcentage": "1.1%"
+        }
+      ],
+      "date_fin_inclusion": "mai 2018",
+      "nb_analyses_intermediaire": 2,
+      "date_analyses_intermediares_mois": [
+        "février 2018",
+        "mai 2018"
+      ],
+      "nb_patients_traitement": 90,
+      "nb_patient_comparateur": 92,
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "analyse_interimaire_plannifiee": true,
+      "qol_instruments": [
+        "SCDSM",
+        "CGIC",
+        "EQ-5D-5L",
+        "VAS"
+      ],
+      "qol_resultats_brut": "Absence de bénéfice du voxelotor 1500 mg par rapport au placebo à 24 semaines",
+      "qol_favorable": false,
+      "qol_difference_cliniquement_pertinente": false,
+      "nb_facteurs_stratification": 3,
+      "age_min_num": 12,
+      "age_max_num": 65,
+      "ligne_traitement_essai_enum": "Variable",
+      "suivi_median_mois": 61,
+      "resultat_global": "Supériorité du voxelotor 1500 mg versus placebo sur le taux de réponse (augmentation Hb > 1 g/dL) à 24 semaines : 51,1% vs 6,5% (p < 0,001)",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 15,
+          "s": "Étude de phase III HOPE",
+          "t": "Étude de phase III, multicentrique, internationale, randomisée, en double-aveugle, en groupes parallèles, contrôlée versus placebo",
+          "c": 0.99
+        },
+        {
+          "f": "F1",
+          "p": 16,
+          "s": "NCT03036813",
+          "t": "N° d'enregistrement : NCT03036813",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_ORR",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "critere_nom": "Taux de réponse (augmentation Hb > 1 g/dL)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "Pourcentage de répondeurs",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Augmentation de l'Hb entre l'inclusion et la valeur moyenne entre les semaines 20 et 24 > 1 g/dL",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.0481,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Cochran-Mantel-Haenszel",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Utilisation de l'hydroxyurée à l'inclusion",
+        "Groupe d'âge",
+        "Région géographique"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "51,1% (n=46/90)",
+      "valeur_groupe_comparateur": "6,5% (n=6/92)",
+      "gain_absolu": "Différence absolue de 45,0%",
+      "gain_absolu_num": 45.0,
+      "gain_relatif": "Réduction relative du risque de non-réponse",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "[33,4% ; 56,7%]",
+      "IC95_low_num": 33.4,
+      "IC95_high_num": 56.7,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "La pertinence clinique discutable du critère principal d'évaluation biologique 'augmentation de l'hémoglobine d'au moins 1 g/dL', son utilisation comme critère de substitution en place d'un critère clinique n'étant à ce jour pas démontrée",
+      "is_primary": true,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 32,
+          "s": "Taux de réponse à la semaine 24",
+          "t": "A la semaine 24, le taux de répondeurs (augmentation de la concentration d'Hb > 1 g/dL depuis l'inclusion) a été de 51,1 % (n=46/90) dans le groupe voxelotor 1 500 mg et de 6,5 % (n=6/92) dans le groupe placebo",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_Hb",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "critere_nom": "Variation absolue de l'hémoglobine",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "g/dL",
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": 2,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Variation entre la semaine 24 et l'inclusion",
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.0481,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 4,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Utilisation de l'hydroxyurée à l'inclusion",
+        "Groupe d'âge",
+        "Région géographique"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "+1,13 g/dL",
+      "valeur_groupe_comparateur": "-0,10 g/dL",
+      "gain_absolu": "Différence de +1,23 g/dL",
+      "gain_absolu_num": 1.23,
+      "gain_relatif": null,
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "[0,86 ; 1,60]",
+      "IC95_low_num": 0.86,
+      "IC95_high_num": 1.6,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "g/dL",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "Amélioration statistiquement significative mais pertinence clinique discutable",
+      "is_primary": false,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "Variation absolue de l'Hb",
+          "t": "Une différence statistiquement significative entre les groupes voxelotor 1500 mg et placebo a été observée en termes de variation de l'hémoglobine entre la semaine 24 et l'inclusion, avec une amélioration en faveur du voxelotor 1500 mg de +1,23 g/dL",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_CVO",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "critere_nom": "Incidence des crises vaso-occlusives",
+      "nature_critere": "Dur",
+      "unite_mesure": "Nombre d'événements par an",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Délai avant la survenue de la première CVO",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": null,
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Kaplan-Meier",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "2,4 événements/an",
+      "valeur_groupe_comparateur": "2,8 événements/an",
+      "gain_absolu": "Réduction de 0,4 événements/an",
+      "gain_absolu_num": -0.4,
+      "gain_relatif": null,
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": null,
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non significatif",
+      "p_value_num": null,
+      "unite_normalisee": "events_per_year",
+      "type_effet": "ARD",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Absence de bénéfice démontré sur les complications cliniques de la maladie telles que les événements vaso-occlusifs",
+      "is_primary": false,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 35,
+          "s": "Incidence des crises vaso-occlusives",
+          "t": "Le taux d'incidence annuel ajusté de CVOs a été de 2,4 événements/an dans le groupe voxelotor 1500 mg et 2,8 événements/an dans le groupe placebo",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19784_essai_HOPE_tol",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "ae_total_pct": 96.6,
+      "ae_total_pct_comparateur": 90.1,
+      "sae_pct": 28.4,
+      "sae_pct_comparateur": 25.3,
+      "discontinuations_ae_pct": 12.5,
+      "discontinuations_ae_pct_comparateur": 7.7,
+      "deaths_ae_n": 2,
+      "deaths_ae_n_comparateur": 2,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": true,
+      "EI_graves": "Incidence des EIG non reliés à la drépanocytose : 28,4% dans le groupe voxelotor 1500 mg vs 25,3% dans le groupe placebo. EIG reliés à la drépanocytose : 52,3% dans le groupe voxelotor 1500 mg vs 52,7% dans le groupe placebo.",
+      "EI_frequents": "Céphalées (31,8%), diarrhée (22,7%), douleur abdominale (22,7%), nausées (19,3%), rashs (14,8%)",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Syndrome thoracique aigu",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 12.5,
+          "incidence_pct_comparateur": 6.6,
+          "n_patients_traitement": 11,
+          "n_patients_comparateur": 6,
+          "issue": "En cours",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 38,
+              "s": "Syndrome thoracique aigu",
+              "t": "Un syndrome thoracique aigu (STA) est apparu avec une incidence plus élevée dans les groupes de traitement par voxelotor que dans le groupe placebo : 13,6% (n=12/88) dans le groupe voxelotor 1 500 mg et 6,6% (n=6/91) dans le groupe placebo",
+              "c": 0.98
+            }
+          ]
+        },
+        {
+          "ei_terme": "Priapisme",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 12.9,
+          "incidence_pct_comparateur": 2.4,
+          "n_patients_traitement": 4,
+          "n_patients_comparateur": 1,
+          "issue": "Récupération",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 38,
+              "s": "Priapisme",
+              "t": "Le priapisme a été plus fréquent dans le groupe voxelotor 1 500 mg (12,9%, n=4/31 hommes) que dans le groupe placebo (2,4%, n=1/42)",
+              "c": 0.98
+            }
+          ]
+        },
+        {
+          "ei_terme": "Hypersensibilité médicamenteuse",
+          "grade": "3",
+          "incidence_pct_traitement": 1.1,
+          "incidence_pct_comparateur": 1.1,
+          "n_patients_traitement": 1,
+          "n_patients_comparateur": 1,
+          "issue": "Récupération",
+          "delai_apparition_median_jours": 40,
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 39,
+              "s": "Hypersensibilité médicamenteuse",
+              "t": "Un patient (1,1 %) a présenté une hypersensibilité médicamenteuse au 40e jour de l'étude. Les symptômes observés comprenaient : rash morbiliforme généralisé, urticaire, essoufflement léger, œdème léger du visage",
+              "c": 0.97
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 31.8,
+          "incidence_pct_comparateur": 25.3,
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 37,
+              "s": "Céphalées",
+              "t": "Céphalées (31,8 % ; n=28/88) dans le groupe voxelotor 1500 mg",
+              "c": 0.98
+            }
+          ]
+        },
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 22.7,
+          "incidence_pct_comparateur": 11.0,
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 37,
+              "s": "Diarrhée",
+              "t": "Diarrhée (22,7 % ; n=20/88) dans le groupe voxelotor 1500 mg",
+              "c": 0.98
+            }
+          ]
+        },
+        {
+          "ei_terme": "Douleur abdominale",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 22.7,
+          "incidence_pct_comparateur": null,
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 37,
+              "s": "Douleur abdominale",
+              "t": "Douleur abdominale (22,7%)",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "deces_detailles": [
+        {
+          "cause_deces": "Anémie drépanocytaire fatale avec crise",
+          "relation_traitement": "Improbable",
+          "delai_survenue_jours": null,
+          "contexte": "Événement lié à la drépanocytose",
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 39,
+              "s": "Décès",
+              "t": "Six patients ont rapporté un total de 9 EIG ayant conduit au décès, deux patients dans chacun des 3 groupes de traitement",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_securite_flag": true,
+      "signal_securite_detailles": [
+        {
+          "type_signal": "Littérature",
+          "date_signal": "Non renseigné",
+          "description": "Risque d'hypoxie tissulaire à long terme lié au mécanisme d'action du voxelotor",
+          "mesures_prises": "Surveillance clinique post-commercialisation",
+          "impact_evaluation": "Incertitudes sur les bénéfices cliniques attendus de l'augmentation du taux d'hémoglobine",
+          "evidence": [
+            {
+              "f": "F1",
+              "p": 48,
+              "s": "Hypoxie tissulaire",
+              "t": "Au mécanisme d'action du voxelotor : des incertitudes ont été soulevées quant aux bénéfices cliniques attendus de l'augmentation du taux d'Hb, compte tenu du mécanisme d'action du voxelotor",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "signal_ansm_flag": false,
+      "ei_grade_max": "3",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 36,
+          "s": "Tolérance",
+          "t": "La majorité des patients de chaque groupe de traitement a présenté au moins un TEAE non relié à la drépanocytose : 90,1% dans le groupe placebo et 96,6% dans le groupe voxelotor 1 500 mg",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19784_essai_HOPE_comp_01",
+      "essai_id": "CT-19784_essai_HOPE",
+      "evaluation_id": "CT-19784",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "nb_patients": 92,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 20,
+          "s": "Groupe placebo",
+          "t": "Groupe placebo : placebo par voie orale une fois par jour (5 gélules ou comprimés de placebo)",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19784_compHAS_01",
+      "evaluation_id": "CT-19784",
+      "nom_comparateur_HAS": "Transfusions simples et échanges transfusionnels",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "BSC",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 13,
+          "s": "Comparateurs cliniquement pertinents",
+          "t": "Les comparateurs cliniquement pertinents de OXBRYTA (voxelotor) dans l'indication AMM évaluée sont les transfusions simples et les échanges transfusionnels",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19784_compHAS_02",
+      "evaluation_id": "CT-19784",
+      "nom_comparateur_HAS": "Hydroxyurée (hors AMM)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 11,
+          "s": "Hydroxyurée hors AMM",
+          "t": "L'hydroxyurée hors AMM : Selon les PNDS de la HAS de 2014, l'hydroxyurée peut être proposée en cas d'anémie",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19784_arg_CT_01",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Supériorité statistiquement significative du voxelotor 1500 mg versus placebo sur le taux de réponse (augmentation Hb > 1 g/dL) à 24 semaines : 51,1% vs 6,5% (p < 0,001), avec une différence absolue de 45,0%",
+      "extrait_textuel": "A la semaine 24, le taux de répondeurs (augmentation de la concentration d'Hb > 1 g/dL depuis l'inclusion) a été de 51,1 % (n=46/90) dans le groupe voxelotor 1 500 mg et de 6,5 % (n=6/92) dans le groupe placebo, soit une différence statistiquement significative de 45,0 %",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 32,
+          "s": "Taux de répondeurs à la semaine 24",
+          "t": "A la semaine 24, le taux de répondeurs (augmentation de la concentration d'Hb > 1 g/dL depuis l'inclusion) a été de 51,1 % (n=46/90) dans le groupe voxelotor 1 500 mg et de 6,5 % (n=6/92)",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_02",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Faible robustesse des résultats compte tenu de la validité interne médiocre de l'étude en termes de contrôle des risques de biais, avec modifications substantielles du protocole après analyses intermédiaires",
+      "extrait_textuel": "La validité interne de l'étude, médiocre en termes de contrôle des risques de biais. On ne peut en effet exclure que le schéma de l'étude ait été 'adapté' aux observations réalisées lors de la seconde analyse intermédiaire, compte tenu des nombreux changements substantiels apportés au protocole après avoir eu connaissance des résultats",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 46,
+          "s": "Validité interne de l'étude",
+          "t": "La validité interne de l'étude, médiocre en termes de contrôle des risques de biais. On ne peut en effet exclure que le schéma de l'étude ait été 'adapté' aux observations réalisées",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_03",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Défavorable",
+      "description": "Absence de bénéfice démontré sur les critères cliniques reflétant la sévérité de la maladie ou le bien-être des patients, notamment nombre de CVOs, symptômes de la maladie, qualité de vie, recours aux transfusions sanguines et utilisation d'opioïdes",
+      "extrait_textuel": "L'absence de bénéfice démontré sur les complications cliniques de la maladie telles que les événements vaso-occlusifs et l'hypertension artérielle pulmonaire, sur la qualité de vie ou sur le recours aux transfusions sanguines ou aux échanges transfusionnels",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 52,
+          "s": "Absence de bénéfice démontré",
+          "t": "L'absence de bénéfice démontré sur les complications cliniques de la maladie telles que les événements vaso-occlusifs et l'hypertension artérielle pulmonaire, sur la qualité de vie",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_04",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "description": "Incidence plus élevée de syndromes thoraciques aigus (12,5% vs 6,6%) et de priapisme (12,9% vs 2,4%) sous voxelotor que sous placebo, avec incertitudes sur le risque d'hyperviscosité sanguine",
+      "extrait_textuel": "Il a été observé une incidence plus élevée de syndromes thoraciques aigus et de priapisme sous voxelotor que sous placebo, dans un contexte où 41,1% des patients de l'étude HOPE traités par voxelotor 1 500 mg ont atteint un taux d'hémoglobine > 10 g/dL à 24 semaines",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 38,
+          "s": "Syndrome thoracique aigu et priapisme",
+          "t": "Un syndrome thoracique aigu (STA) est apparu avec une incidence plus élevée dans les groupes de traitement par voxelotor que dans le groupe placebo : 13,6% (n=12/88) dans le groupe voxelotor 1 500 mg et 6,6% (n=6/91) dans le groupe placebo",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_05",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Population incluse hétérogène et peu représentative d'une population sévère : 42% des patients avec 1 seule CVO, moins de 8% avec Hb < 7 g/dL, exclusion des patients en transfusions chroniques programmées",
+      "extrait_textuel": "La population incluse hétérogène en termes de gravité de la maladie, et globalement peu représentative d'une population sévère : la majorité des patients avait rapporté un faible nombre de crises vaso-occlusives dans l'année précédant l'inclusion (près de 40% des patients 1 seule CVO)",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 47,
+          "s": "Population incluse hétérogène",
+          "t": "La population incluse hétérogène en termes de gravité de la maladie, et globalement peu représentative d'une population sévère",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_06",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "description": "Pertinence clinique discutable du critère principal biologique (augmentation Hb > 1 g/dL) : son utilisation comme critère de substitution en place d'un critère clinique n'est pas démontrée",
+      "extrait_textuel": "La pertinence clinique discutable du critère principal d'évaluation biologique 'augmentation de l'hémoglobine d'au moins 1 g/dL', son utilisation comme critère de substitution en place d'un critère clinique n'étant à ce jour pas démontrée",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 55,
+          "s": "Pertinence clinique discutable",
+          "t": "La pertinence clinique discutable du critère principal d'évaluation biologique 'augmentation de l'hémoglobine d'au moins 1 g/dL'",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_07",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "description": "Incertitudes sur le risque d'hypoxie tissulaire à long terme et de CVOs en cas d'interruption temporaire du traitement, compte tenu du mécanisme d'action du voxelotor",
+      "extrait_textuel": "Le mécanisme d'action du voxelotor est source d'incertitudes quant aux bénéfices cliniques attendus de l'augmentation du taux d'hémoglobine, et aux risques potentiels d'hypoxie tissulaire à long terme et de CVOs en cas d'interruption temporaire du traitement",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 48,
+          "s": "Mécanisme d'action du voxelotor",
+          "t": "Le mécanisme d'action du voxelotor est source d'incertitudes quant aux bénéfices cliniques attendus de l'augmentation du taux d'hémoglobine, et aux risques potentiels d'hypoxie tissulaire à long terme",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_08",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "description": "Absence de schéma de réduction posologique validé en cas d'augmentation trop importante du taux d'hémoglobine, alors que 41,1% des patients ont atteint Hb > 10 g/dL à 24 semaines",
+      "extrait_textuel": "Bien qu'en pratique une réduction de la dose semblerait justifiée, aucun schéma de réduction posologique n'a été validé dans cette situation et seule la posologie fixe de 1 500 mg/jour est recommandée dans le RCP",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 53,
+          "s": "Aucun schéma de réduction posologique",
+          "t": "Bien qu'en pratique une réduction de la dose semblerait justifiée, aucun schéma de réduction posologique n'a été validé dans cette situation",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_09",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical partiellement couvert : aucun médicament n'est actuellement autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+      "extrait_textuel": "Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires. Sa prise en charge repose donc actuellement sur des transfusions simples ou des échanges transfusionnels",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 11,
+          "s": "Aucun médicament n'est autorisé",
+          "t": "Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_10",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Neutre",
+      "description": "Intérêt potentiel sur le parcours de soins des patients transfusés si un bénéfice en matière d'épargne transfusionnelle était avéré, bien que cela ne soit pas encore le cas",
+      "extrait_textuel": "Du fait de sa prise orale, le voxelotor pourrait avoir un intérêt sur le parcours de soins des patients transfusés si un bénéfice en matière d'épargne transfusionnelle était avéré, bien que cela ne soit pas encore le cas",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 52,
+          "s": "Intérêt sur le parcours de soins",
+          "t": "Du fait de sa prise orale, le voxelotor pourrait avoir un intérêt sur le parcours de soins des patients transfusés si un bénéfice en matière d'épargne transfusionnelle était avéré",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19784_ctx",
+    "evaluation_id": "CT-19784",
+    "ISP": "OXBRYTA (voxelotor) n'est pas susceptible d'avoir un intérêt supplémentaire de santé publique",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "ATU_cohorte",
+    "type_acces_precoce_enum": "ATU_cohorte",
+    "date_debut_acces_precoce": "2021-09-13",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": 55,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-02-14",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": true,
+    "designation_orpheline_ema": true,
+    "prime_ema": true,
+    "obligations_post_amm": [
+      "Suivi post-commercialisation des données de pharmacovigilance"
+    ],
+    "nb_obligations_post_amm": 1,
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis",
+      "Allemagne"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "2019-11-25",
+        "reference": "Breakthrough Therapy, Accelerated Approval",
+        "evidence": [
+          {
+            "f": "F1",
+            "p": 14,
+            "s": "AMM aux Etats-Unis",
+            "t": "OXBRYTA (voxelotor) dispose d'une AMM aux Etats-Unis dans l'indication 'Traitement de la drépanocytose chez les adultes et les enfants âgés de 12 ans et plus' depuis 2019",
+            "c": 0.99
+          }
+        ]
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 6500,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Adultes et adolescents âgés de 12 ans et plus atteints de drépanocytose présentant une anémie hémolytique sévère",
+    "population_cible_nombre": 6500,
+    "population_cible_intervalle": [
+      5000,
+      8000
+    ],
+    "source_estimation_population": "Registres français et données épidémiologiques",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": 6500,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude vie réelle",
+    "delai_suivi_mois": 60,
+    "delai_suivi_justification": "Données complémentaires documentant en conditions réelles d'utilisation les caractéristiques des patients traités, l'évolution en termes d'efficacité et de tolérance",
+    "conditions_suivi": "Recueil de données en collaboration étroite avec les centres de référence de la drépanocytose. Opportunité de recourir à la base 'Siclopédie'",
+    "echeance_suivi": "2027-07-20",
+    "impact_si_non_realise": "Réévaluation SMR/ASMR",
+    "delai_soumission_dossier": "2022-03-15",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-07-20",
+    "nb_total_reserves": 0,
+    "nb_total_reserves_mineures": 0,
+    "nb_totales_reserves_importantes": 0,
+    "nb_totales_reserves_majeures": 0,
+    "SMR_avant_audition_enum": "Faible",
+    "SMR_apres_audition_enum": "Faible",
+    "ASMR_avant_audition_enum": "V",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Absence de bénéfice clinique démontré",
+    "valeur_critère": "Augmentation Hb > 1 g/dL sans bénéfice sur CVOs, qualité de vie ou transfusions",
+    "impact_décision": "Maintien SMR Faible et ASMR V",
+    "estimation_mesure_impact": "Pas de changement de conclusion après audition",
+    "evidence": [
+      {
+        "f": "F1",
+        "p": 54,
+        "s": "ISP",
+        "t": "OXBRYTA (voxelotor) n'est pas susceptible d'avoir un intérêt supplémentaire de santé publique",
+        "c": 0.99
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19784",
+    "texte_brut": "OXBRYTA (voxelotor) 500 mg comprimés pelliculés - Avis de la Commission de la Transparence du 20 juillet 2022. Avis favorable au remboursement uniquement dans le traitement de l'anémie hémolytique sévère causée par la drépanocytose, chez les adultes et les adolescents âgés de 12 ans et plus, en monothérapie ou en association avec l'hydroxyurée. Avis défavorable au remboursement dans les autres populations de l'AMM (forme non sévère de l'anémie hémolytique). SMR FAIBLE uniquement dans le traitement de l'anémie hémolytique sévère. ASMR V - n'apporte pas d'amélioration du service médical rendu.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19784_smrasmr_01",
+      "evaluation_id": "CT-19784",
+      "indication_precise": "Traitement de l'anémie hémolytique sévère causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus, en monothérapie ou en association à l'hydroxyurée",
+      "indication_structuree": {
+        "ligne_traitement": "Variable",
+        "biomarqueur": "Aucun",
+        "stade": "Anémie hémolytique sévère",
+        "population_age": "12 ans et plus"
+      },
+      "smr": "Service médical rendu faible",
+      "smr_enum": "Faible",
+      "asmr": "OXBRYTA (voxelotor) n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+      "asmr_enum": "V",
+      "asmr_revendique_enum": "Non_précisé",
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Très_faible",
+      "justification_decisionnelle": "Démonstration peu robuste d'un bénéfice versus placebo sur les taux d'hémoglobine et certains marqueurs de l'hémolyse, sans bénéfice démontré sur des critères cliniques ou sur le recours aux transfusions, dans une population hétérogène en termes de sévérité de la maladie. Données de tolérance limitées au-delà de 72 semaines avec incertitudes sur le risque d'hypoxie tissulaire à long terme et d'hyperviscosité sanguine.",
+      "population_cible_indication": "Adultes et adolescents âgés de 12 ans et plus atteints de drépanocytose présentant une anémie hémolytique sévère",
+      "ligne_traitement_indication": "Variable",
+      "comparateurs_references_indication": [
+        "Transfusions simples",
+        "Échanges transfusionnels",
+        "Hydroxyurée (hors AMM)"
+      ],
+      "comparateur_id_HAS": "CT-19784_compHAS_01",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 55,
+          "s": "SMR FAIBLE",
+          "t": "SMR FAIBLE uniquement dans le traitement de l'anémie hémolytique sévère, en monothérapie ou en association à l'hydroxyurée",
+          "c": 0.99
+        },
+        {
+          "f": "F1",
+          "p": 55,
+          "s": "ASMR V",
+          "t": "OXBRYTA (voxelotor) n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19784_event_AMM_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-02-14",
+      "detail_brut": "Obtention de l'AMM européenne pour OXBRYTA (voxelotor)",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [
+        "EMA",
+        "Global Blood Therapeutics"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "14 février 2022",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 7,
+          "s": "AMM le 14 février 2022",
+          "t": "OXBRYTA (voxelotor) a obtenu l'AMM le 14 février 2022",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19784_event_CT_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Adoption de l'avis par la Commission de la Transparence",
+      "detail_type_specifique": "Avis favorable au remboursement dans le traitement de l'anémie hémolytique sévère",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "29 juin 2022",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 57,
+          "s": "Date d'adoption : 29 juin 2022",
+          "t": "Date d'adoption : 29 juin 2022",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19784_event_AUDITION_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-07-20",
+      "detail_brut": "Audition du laboratoire Global Blood Therapeutics",
+      "detail_type_specifique": "Audition suite à l'adoption de l'avis",
+      "acteurs_impliques": [
+        "Global Blood Therapeutics",
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "20 juillet 2022",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 57,
+          "s": "Date d'audition du laboratoire : 20 juillet 2022",
+          "t": "Date d'audition du laboratoire : 20 juillet 2022",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19784_event_ATU_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2021-09-13",
+      "detail_brut": "Début de l'ATU de cohorte pour voxelotor",
+      "detail_type_specifique": "ATU de cohorte accordée le 30 juin 2021, débutée le 13 septembre 2021",
+      "acteurs_impliques": [
+        "ANSM",
+        "Global Blood Therapeutics"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "30 juin 2021 - 13 septembre 2021",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 7,
+          "s": "ATU de cohorte accordée le 30 juin 2021",
+          "t": "Une ATU de cohorte a été octroyée au voxelotor le 30 juin 2021, dans une indication plus restreinte que celle de l'AMM",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19784",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": 157,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": 157,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_flag_incomplet": false,
+    "evidence": [
+      {
+        "f": "F1",
+        "p": 57,
+        "s": "Calendrier d'évaluation",
+        "t": "Date de validation administrative : 15 mars 2022. Date d'examen : 15 juin 2022. Date d'adoption : 29 juin 2022",
+        "c": 0.98
+      }
+    ]
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19784",
+    "is_orphan": true,
+    "classe_ATC_l2": "B06",
+    "aire_therapeutique": "Hématologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 45.0,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 72,
+    "sae_pct_num": 28.4,
+    "discontinuations_pct_num": 12.5,
+    "critere_principal_description": "Taux de réponse (augmentation Hb > 1 g/dL)",
+    "p_value_log10": 4.0,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": false,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {
+      "nb_votants_missing": true,
+      "rdcr_missing": true,
+      "impact_budget_missing": true
+    }
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19784",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19784_essai_HOPE",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "Critere",
+      "tgt_id": "CT-19784_essai_HOPE_crit_ORR",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "Critere",
+      "tgt_id": "CT-19784_essai_HOPE_crit_Hb",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "Critere",
+      "tgt_id": "CT-19784_essai_HOPE_crit_CVO",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "Comparateur",
+      "tgt_id": "CT-19784_essai_HOPE_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "Tolerance",
+      "tgt_id": "CT-19784_essai_HOPE_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19784",
+      "tgt_type": "SMR_ASMR",
+      "tgt_id": "CT-19784_smrasmr_01",
+      "label": "EVAL_HAS_SMRASMR"
+    }
+  ],
+  "Annotation_View": [
+    {
+      "id": "CT-19784_annot_001",
+      "text": "Avis favorable au remboursement uniquement dans le traitement de l'anémie hémolytique sévère causée par la drépanocytose, chez les adultes et les adolescents âgés de 12 ans et plus, en monothérapie ou en association avec l'hydroxyurée.",
+      "meta": {
+        "doc_id": "CT-19784",
+        "source": "CT",
+        "template": "CT_modern",
+        "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+        "section_label_brut": "L'essentiel",
+        "hierarchie": [
+          "Avis",
+          "Synthèse"
+        ],
+        "page_start": 1,
+        "page_end": 1,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 10,
+          "label": "AVIS_TYPE"
+        },
+        {
+          "start": 50,
+          "end": 95,
+          "label": "INDICATION"
+        },
+        {
+          "start": 100,
+          "end": 150,
+          "label": "POPULATION"
+        }
+      ],
+      "relations": [
+        {
+          "head": 0,
+          "tail": 1,
+          "label": "AVIS_CONCERNE"
+        }
+      ]
+    },
+    {
+      "id": "CT-19784_annot_002",
+      "text": "A la semaine 24, le taux de répondeurs (augmentation de la concentration d'Hb > 1 g/dL depuis l'inclusion) a été de 51,1 % (n=46/90) dans le groupe voxelotor 1 500 mg et de 6,5 % (n=6/92) dans le groupe placebo, soit une différence statistiquement significative de 45,0 %",
+      "meta": {
+        "doc_id": "CT-19784",
+        "source": "CT",
+        "template": "CT_modern",
+        "section_label_normalise": "ETUDES",
+        "section_label_brut": "Efficacité : étude de phase III HOPE",
+        "hierarchie": [
+          "Étude",
+          "Résultats",
+          "Critère principal"
+        ],
+        "page_start": 32,
+        "page_end": 32,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 20,
+          "label": "TIMEPOINT"
+        },
+        {
+          "start": 25,
+          "end": 50,
+          "label": "CRITERE"
+        },
+        {
+          "start": 60,
+          "end": 80,
+          "label": "RESULTAT_TRAITEMENT"
+        },
+        {
+          "start": 85,
+          "end": 100,
+          "label": "RESULTAT_CONTROLE"
+        },
+        {
+          "start": 105,
+          "end": 120,
+          "label": "PVALUE"
+        }
+      ],
+      "relations": [
+        {
+          "head": 1,
+          "tail": 2,
+          "label": "CRITERE_RESULTAT"
+        },
+        {
+          "head": 2,
+          "tail": 4,
+          "label": "RESULTAT_SIGNIFICATIF"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1560 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-22222",
+  "evaluation_id": "CT-22222",
+  "extraction_date": "2022-07-11",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-11",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT_Psoriasis_Biologiques_2022.pdf",
+        "type": "CT",
+        "page_count": 94
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-22222_seg_001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L'essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L'essentiel",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "place_therapeutique"
+      ],
+      "routing_hint": "synthese_executive",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-22222_seg_002",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Quelle place dans la stratégie thérapeutique ?",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 3,
+      "char_start": 500,
+      "char_end": 2500,
+      "heading_text": "Quelle place dans la stratégie thérapeutique ?",
+      "expected_fields": [
+        "place_therapeutique",
+        "comparateurs",
+        "recommandations"
+      ],
+      "routing_hint": "place_therapeutique",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-22222_seg_003",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 10,
+      "char_start": 5000,
+      "char_end": 6000,
+      "heading_text": "02 Indications",
+      "expected_fields": [
+        "indication_amm",
+        "indication_remboursement"
+      ],
+      "routing_hint": "indications",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-22222_seg_004",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 11,
+      "char_start": 6000,
+      "char_end": 7500,
+      "heading_text": "04 Besoin médical",
+      "expected_fields": [
+        "besoin_medical",
+        "prevalence",
+        "impact_qol"
+      ],
+      "routing_hint": "besoin_medical",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-22222_seg_005",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 17,
+      "char_start": 7500,
+      "char_end": 12000,
+      "heading_text": "05 Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs",
+        "tableau_comparateurs"
+      ],
+      "routing_hint": "comparateurs",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-22222_seg_006",
+      "section_label_normalise": "ANALYSE_DONNEES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 27,
+      "page_end": 50,
+      "char_start": 12000,
+      "char_end": 35000,
+      "heading_text": "07 Analyse des données disponibles",
+      "expected_fields": [
+        "essais_cliniques",
+        "efficacite",
+        "tolerance",
+        "metaanalyses"
+      ],
+      "routing_hint": "donnees_cliniques",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-22222_seg_007",
+      "section_label_normalise": "RESUME_DISCUSSION",
+      "section_label_brut": "Résumé et discussion",
+      "template_detecte": "CT_modern",
+      "page_start": 51,
+      "page_end": 56,
+      "char_start": 35000,
+      "char_end": 40000,
+      "heading_text": "08 Résumé et discussion",
+      "expected_fields": [
+        "synthese",
+        "discussion",
+        "psobioteq"
+      ],
+      "routing_hint": "synthese_discussion",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-22222_seg_008",
+      "section_label_normalise": "CONCLUSIONS_COMMISSION",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 58,
+      "page_end": 65,
+      "char_start": 40000,
+      "char_end": 45000,
+      "heading_text": "010 Conclusions de la Commission",
+      "expected_fields": [
+        "smr",
+        "asmr",
+        "isp",
+        "population_cible",
+        "vote"
+      ],
+      "routing_hint": "conclusions",
+      "label_confidence": 0.98
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-22222_prod_001",
+      "produit_nom_commercial": "CIMZIA",
+      "dci": "certolizumab pegol",
+      "dosage_concentration": "200 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_001",
+          "code_cip13": "34009397320 8",
+          "conditionnement": "Boîte de 2 seringues préremplies + 2 tampons alcoolisés",
+          "laboratoire": "UCB PHARMA SA"
+        },
+        {
+          "presentation_id": "CT-22222_pres_002",
+          "code_cip13": "34009300762 6",
+          "conditionnement": "Boîte de 2 stylos préremplis AutoClicks® + 2 tampons alcoolisés",
+          "laboratoire": "UCB PHARMA SA"
+        }
+      ],
+      "classe_ATC": "L04AB05",
+      "titulaire_amm": "UCB PHARMA SA",
+      "date_amm": "2018-06-07",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 67,
+          "s": "CIMZIA 200 mg",
+          "t": "CIMZIA 200 mg, solution injectable en seringue préremplie",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_002",
+      "produit_nom_commercial": "REMSIMA",
+      "dci": "infliximab",
+      "dosage_concentration": "120 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_003",
+          "code_cip13": "34009301993 6",
+          "conditionnement": "1 seringue préremplie avec protège-aiguille automatique + 2 tampons alcoolisés",
+          "laboratoire": "CELLTRION HEALTHCARE FRANCE SAS"
+        }
+      ],
+      "classe_ATC": "L04AB02",
+      "titulaire_amm": "CELLTRION HEALTHCARE FRANCE SAS",
+      "date_amm": "2020-07-24",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 68,
+          "s": "REMSIMA 120 mg",
+          "t": "REMSIMA 120 mg, solution injectable en seringue préremplie",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_003",
+      "produit_nom_commercial": "COSENTYX",
+      "dci": "sécukinumab",
+      "dosage_concentration": "150 mg et 300 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_004",
+          "code_cip13": "34009300106 0",
+          "conditionnement": "1 seringue préremplie avec aiguille",
+          "laboratoire": "NOVARTIS PHARMA SAS"
+        }
+      ],
+      "classe_ATC": "L02BG04",
+      "titulaire_amm": "NOVARTIS PHARMA SAS",
+      "date_amm": "2015-01-15",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 68,
+          "s": "COSENTYX 150 mg",
+          "t": "COSENTYX 150 mg, solution injectable en seringue préremplie",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_004",
+      "produit_nom_commercial": "TALTZ",
+      "dci": "ixekizumab",
+      "dosage_concentration": "80 mg",
+      "forme_pharmaceutique": "solution injectable en stylo prérempli",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_005",
+          "code_cip13": "34009300607 9",
+          "conditionnement": "1 stylo prérempli",
+          "laboratoire": "LILLY FRANCE"
+        }
+      ],
+      "classe_ATC": "L04AC13",
+      "titulaire_amm": "LILLY FRANCE",
+      "date_amm": "2016-04-25",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 69,
+          "s": "TALTZ 80 mg",
+          "t": "TALTZ 80 mg, solution injectable en stylo prérempli",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_005",
+      "produit_nom_commercial": "KYNTHEUM",
+      "dci": "brodalumab",
+      "dosage_concentration": "210 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_006",
+          "code_cip13": "34009301172 6",
+          "conditionnement": "2 seringues préremplies",
+          "laboratoire": "LEO PHARMA FRANCE"
+        }
+      ],
+      "classe_ATC": "L04AC12",
+      "titulaire_amm": "LEO PHARMA FRANCE",
+      "date_amm": "2017-07-17",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 69,
+          "s": "KYNTHEUM 210 mg",
+          "t": "KYNTHEUM 210 mg, solution injectable en seringue préremplie",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_006",
+      "produit_nom_commercial": "TREMFYA",
+      "dci": "guselkumab",
+      "dosage_concentration": "100 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_007",
+          "code_cip13": "34009301227 4",
+          "conditionnement": "1 seringue préremplie",
+          "laboratoire": "JANSSEN-CILAG"
+        }
+      ],
+      "classe_ATC": "L04AC16",
+      "titulaire_amm": "JANSSEN-CILAG",
+      "date_amm": "2017-10-10",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 69,
+          "s": "TREMFYA 100 mg",
+          "t": "TREMFYA 100 mg, solution injectable en seringue préremplie",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_007",
+      "produit_nom_commercial": "SKYRIZI",
+      "dci": "risankizumab",
+      "dosage_concentration": "75 mg et 150 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_008",
+          "code_cip13": "34009301748 3",
+          "conditionnement": "2 seringues préremplies",
+          "laboratoire": "ABBVIE"
+        }
+      ],
+      "classe_ATC": "L04AC18",
+      "titulaire_amm": "ABBVIE",
+      "date_amm": "2019-04-26",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 70,
+          "s": "SKYRIZI 75 mg",
+          "t": "SKYRIZI 75 mg, solution injectable en seringue préremplie",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-22222_prod_008",
+      "produit_nom_commercial": "ILUMETRI",
+      "dci": "tildrakizumab",
+      "dosage_concentration": "100 mg",
+      "forme_pharmaceutique": "solution injectable en seringue préremplie",
+      "forme_pharma_enum": "Injectable_SC",
+      "presentations": [
+        {
+          "presentation_id": "CT-22222_pres_009",
+          "code_cip13": "34009301720 6",
+          "conditionnement": "1 seringue préremplie",
+          "laboratoire": "ALMIRALL"
+        }
+      ],
+      "classe_ATC": "L04AC17",
+      "titulaire_amm": "ALMIRALL",
+      "date_amm": "2018-09-17",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 70,
+          "s": "ILUMETRI 100 mg",
+          "t": "ILUMETRI 100 mg, solution injectable en seringue préremplie",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-22222",
+      "Num_avis": "CT-22222",
+      "date_evaluation": "2022-07-11",
+      "produit_nom": "CIMZIA",
+      "dci": "certolizumab pegol",
+      "type_avis": "Réévaluation",
+      "type_avis_enum": "Réévaluation",
+      "forme": "solution injectable",
+      "dosage": "200 mg",
+      "indication": "Psoriasis en plaques modéré à sévère de l'adulte",
+      "classe_ATC": "L04AB05",
+      "pathologie": "Psoriasis en plaques",
+      "maladie_rare": false,
+      "ligne_traitement": "2e ligne",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "Formes modérées à sévères en échec des traitements systémiques non biologiques",
+      "cim10_principal": "L40.0",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Psoriasis en plaques",
+      "source_cim10": "Avis CT page 4",
+      "aire_therapeutique_niveau_1": "Dermatologie",
+      "aire_therapeutique_niveau_2": "Maladies inflammatoires cutanées",
+      "aire_therapeutique_niveau_3": "Psoriasis en plaques",
+      "source_aire_therapeutique": "Déduit ATC L04AB05",
+      "design_etude": "Essais de phase III randomisés en double aveugle versus placebo et versus comparateurs actifs",
+      "niveau_preuve_brut": "Essais de phase III randomisés en double aveugle",
+      "niveau_preuve_interprete": "Niveau_1",
+      "besoin_medical_brut": "Le besoin thérapeutique reste partiellement couvert. Il persiste un besoin à disposer de nouveaux médicaments efficaces et bien tolérés compte tenu des phénomènes d'échappement, de contre-indications et d'intolérance.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Dermatologie",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "gravite_patho": "Le psoriasis en plaques est une dermatose inflammatoire chronique, le plus souvent bénigne qui peut, dans ses formes modérées à sévères, avoir un retentissement important sur la qualité de vie",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : autres anti-TNFα (etanercept, adalimumab, infliximab), anti-IL12/23 (ustekinumab), anti-IL17 (sécukinumab, ixekizumab), anti-récepteur IL17 (brodalumab), anti-IL23 (guselkumab, risankizumab, tildrakizumab)",
+      "smr": "La Commission considère que le service médical rendu par CIMZIA est important dans l'indication de l'AMM",
+      "smr_enum": "Important",
+      "asmr": "CIMZIA n'apporte pas d'amélioration du service médical rendu (ASMR V) par rapport aux autres traitements systémiques biologiques",
+      "asmr_enum": "V",
+      "ISP": "CIMZIA n'est pas susceptible d'avoir un impact supplémentaire sur la santé publique",
+      "ISP_flag": false,
+      "caracteristique_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_HAS_produit": "Avis du 6 février 2019 : SMR Important, ASMR V",
+      "historique_ASMR_comparateurs": "Anti-TNFα : ASMR III (ENBREL), ASMR V (HUMIRA, REMICADE). Anti-IL17 : ASMR IV (COSENTYX), ASMR V (TALTZ, KYNTHEUM). Anti-IL23 : ASMR IV (TREMFYA, SKYRIZI), ASMR V (ILUMETRI)",
+      "concurrence_therapeutique_recente": "Plusieurs alternatives biologiques disponibles avec profils d'efficacité et de tolérance comparables",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 58,
+          "s": "service médical rendu",
+          "t": "La Commission considère que le service médical rendu par CIMZIA est important",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-22222_essai_CIMPASI1",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "CIMPASI 1",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Efficacité confirmée à long terme (3 ans)",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "qol_flag": true,
+      "qol_instruments": [
+        "Non renseigné"
+      ],
+      "qol_resultats_brut": "Maintien de l'impact sur la qualité de vie",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "CIMPASI 1 CIMPASI 2",
+          "t": "Les études CIMPASI 1 et CIMPASI 2 ont montré que le traitement par certolizumab pegol était efficace",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_CIMPASI2",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "CIMPASI 2",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Efficacité confirmée à long terme (3 ans)",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "qol_flag": true,
+      "qol_instruments": [
+        "Non renseigné"
+      ],
+      "qol_resultats_brut": "Maintien de l'impact sur la qualité de vie",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "CIMPASI 2 efficacité",
+          "t": "Dans CIMPASI 2 : maintien des réponses PASI 75 et PGA 0 ou 1 jusqu'à la semaine 144",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_CIMPACT",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "CIMPACT",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Etanercept et Placebo",
+      "comparateur_type_enum": "Traitement_actif",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Efficacité confirmée versus etanercept",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "qol_flag": true,
+      "qol_instruments": [
+        "Non renseigné"
+      ],
+      "qol_resultats_brut": "Maintien de l'impact sur la qualité de vie",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "CIMPACT etanercept",
+          "t": "Dans CIMPACT : maintien des réponses PASI 75 et PGA 0 ou 1 jusqu'à la semaine 144",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_FEATURE",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "FEATURE",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Supériorité du sécukinumab 300 mg versus placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "qol_flag": true,
+      "qol_instruments": [
+        "Non renseigné"
+      ],
+      "qol_resultats_brut": "Amélioration de la qualité de vie",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 35,
+          "s": "FEATURE JUNCTURE",
+          "t": "Dans les études FEATURE et JUNCTURE, le sécukinumab 300 mg avait montré sa supériorité par rapport au placebo",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_JUNCTURE",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "JUNCTURE",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Supériorité du sécukinumab 300 mg versus placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "qol_flag": true,
+      "qol_instruments": [
+        "Non renseigné"
+      ],
+      "qol_resultats_brut": "Amélioration de la qualité de vie",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 35,
+          "s": "JUNCTURE sécukinumab",
+          "t": "Étude JUNCTURE : sécukinumab 300 mg supérieur au placebo en termes de réponses PASI 75 et IGA 0 ou 1",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_IXORA_R",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "IXORA-R",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "IV",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Guselkumab (TREMFYA)",
+      "comparateur_type_enum": "Traitement_actif",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Supériorité de l'ixekizumab versus guselkumab à semaine 12",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "qol_flag": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_favorable": false,
+      "qol_difference_cliniquement_pertinente": false,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 40,
+          "s": "IXORA-R ixekizumab",
+          "t": "Dans l'étude IXORA-R, l'ixekizumab a été supérieur au guselkumab en termes de répondeurs PASI 100 à la semaine 12",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_UNCOVER1",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "UNCOVER 1",
+      "nct_number": null,
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes ayant un psoriasis en plaques modéré à sévère",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": null,
+      "duree_traitement_moyenne_mois": null,
+      "duree_suivi_prevu_mois": null,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "resultat_global": "Efficacité à long terme maintenue (264 semaines)",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "qol_flag": true,
+      "qol_instruments": [
+        "Non renseigné"
+      ],
+      "qol_resultats_brut": "Maintien de l'efficacité sur la qualité de vie",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 40,
+          "s": "UNCOVER 1 2 3",
+          "t": "Données d'efficacité à long terme (264 semaines) issues des études UNCOVER 1, 2 et 3",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-22222_essai_PSOBIOTEQ2",
+      "evaluation_id": "CT-22222",
+      "essai_nom": "PSOBIOTEQ 2",
+      "nct_number": null,
+      "design": "Observationnel",
+      "design_enum": "Observationnel_prospectif",
+      "phase": null,
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non applicable",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non applicable",
+      "population_cible": "Patients traités en France par sécukinumab, ixekizumab ou brodalumab",
+      "comparateur_utilise": "Aucun",
+      "comparateur_type_enum": "Aucun",
+      "nb_patient_traitement": null,
+      "nb_patients_inclus": "215 (sécukinumab), 113 (ixekizumab), 72 (brodalumab)",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "France",
+          "nb_patients": "400",
+          "pourcentage": "100%"
+        }
+      ],
+      "date_fin_inclusion": "31/12/2017 (sécukinumab, ixekizumab), 31/12/2020 (brodalumab)",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "suivi_median_mois": 36,
+      "duree_traitement_moyenne_mois": 14,
+      "duree_suivi_prevu_mois": 60,
+      "date_cutoff_donnees": "Non renseigné",
+      "maturite_donnees": "Intermédiaires",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "resultat_global": "Données rassurantes sur le respect des conditions de mise sous traitement et la tolérance à long terme",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "qol_flag": true,
+      "qol_instruments": [
+        "DLQI"
+      ],
+      "qol_resultats_brut": "Amélioration de la qualité de vie maintenue à long terme",
+      "qol_favorable": true,
+      "qol_difference_cliniquement_pertinente": true,
+      "nb_facteurs_stratification": null,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 28,
+          "s": "PSOBIOTEQ 2",
+          "t": "Cohorte observationnelle prospective multicentrique française de patients recevant un traitement systémique pour un psoriasis cutané",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-22222_essai_CIMPASI1_crit_PASI75",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_CIMPASI1",
+      "nom_critere": "PASI 75",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "% de répondeurs",
+      "hierarchie_critere": "Principal_hierarchise",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non renseigné",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "66,5% (200 mg) et 75,8% (400 mg) à S16",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "RR",
+      "significativite_statistique": false,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Maintien des réponses PASI 75 jusqu'à la semaine 144",
+      "is_primary": true,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "PASI 75 S16",
+          "t": "PASI 75 : 66,5% (200 mg) et 75,8% (400 mg) à S16, maintien jusqu'à S144",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-22222_essai_CIMPASI1_crit_PGA",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_CIMPASI1",
+      "nom_critere": "PGA 0 ou 1",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "% de répondeurs",
+      "hierarchie_critere": "Principal_hierarchise",
+      "ordre_hierarchie": 2,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non renseigné",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "47,0% (200 mg) et 57,9% (400 mg) à S16",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "RR",
+      "significativite_statistique": false,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Maintien des réponses PGA 0 ou 1 jusqu'à la semaine 144",
+      "is_primary": true,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "PGA 0 ou 1",
+          "t": "PGA 0 ou 1 : 47,0% (200 mg) et 57,9% (400 mg) à S16, maintien jusqu'à S144",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-22222_essai_FEATURE_crit_PASI75",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_FEATURE",
+      "nom_critere": "PASI 75",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "% de répondeurs",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": "FEATURE_JUNCTURE",
+      "condition_test": "Non renseigné",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "75,9% (FEATURE) et 86,7% (JUNCTURE) à S12",
+      "valeur_groupe_comparateur": "0% (FEATURE) et 3,3% (JUNCTURE)",
+      "gain_absolu": "75,9% (FEATURE) et 83,4% (JUNCTURE)",
+      "gain_absolu_num": 75.9,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "p < 0,0001",
+      "p_value_num": 1e-05,
+      "unite_normalisee": "percentage",
+      "type_effet": "RR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Supériorité du sécukinumab 300 mg versus placebo démontrée",
+      "is_primary": true,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 35,
+          "s": "PASI 75 S12",
+          "t": "PASI 75 à S12 : 75,9% (FEATURE) et 86,7% (JUNCTURE) versus 0-3,3% placebo, p < 0,0001",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-22222_essai_IXORA_R_crit_PASI100",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_IXORA_R",
+      "nom_critere": "PASI 100",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "% de répondeurs",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non renseigné",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "41,3% (ixekizumab) à S12",
+      "valeur_groupe_comparateur": "24,9% (guselkumab)",
+      "gain_absolu": "16,4%",
+      "gain_absolu_num": 16.4,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "percentage",
+      "type_effet": "RR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Supériorité de l'ixekizumab versus guselkumab démontrée à S12 mais pas à S24",
+      "is_primary": true,
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 40,
+          "s": "PASI 100 S12",
+          "t": "PASI 100 à S12 : 41,3% (ixekizumab) versus 24,9% (guselkumab), p < 0,001",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-22222_essai_CIMPASI1_tol",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_CIMPASI1",
+      "EI_graves": "EI graves rapportés : 15,5% (EIG), 8,8% arrêts traitement",
+      "sae_pct": 15.5,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 8.8,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": 2,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": true,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Infections graves",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Infections des voies respiratoires",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "deces_detailles": [
+        {
+          "cause_deces": "Comorbidités et facteurs de risque",
+          "relation_traitement": "Possible",
+          "delai_survenue_jours": null,
+          "contexte": "Patients avec nombreuses comorbidités",
+          "evidence": []
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "ei_grade_max": "3",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 33,
+          "s": "EI graves",
+          "t": "15,5% d'EIG, avec une incidence de 7,5 EIG/100 PA, 8,8% d'EI ayant entraîné l'arrêt du traitement",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-22222_essai_FEATURE_tol",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_FEATURE",
+      "EI_graves": "Profil de tolérance comparable à celui des autres anti-interleukines",
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Infections des voies respiratoires hautes",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 17.7,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "ei_grade_max": "2",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 39,
+          "s": "infections voies respiratoires",
+          "t": "Les EI les plus fréquemment rapportés sont des infections des voies respiratoires hautes (17,7%)",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-22222_essai_IXORA_R_tol",
+      "evaluation_id": "CT-22222",
+      "essai_id": "CT-22222_essai_IXORA_R",
+      "EI_graves": "Profil de tolérance comparable entre ixekizumab et guselkumab",
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Infections des voies respiratoires supérieures",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Réactions au site d'injection",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "evidence": []
+        }
+      ],
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "ei_grade_max": "2",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 40,
+          "s": "tolérance IXORA-R",
+          "t": "Les données de tolérance issues de la période de traitement en double aveugle (24 semaines) ont été cohérentes avec les profils de tolérance déjà connus",
+          "c": 0.92
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-22222_arg_CT_01",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Efficacité à long terme confirmée pour tous les médicaments biologiques réévalués, avec maintien des réponses cliniques jusqu'à 3-5 ans de suivi dans les études d'extension",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les données d'efficacité à long terme montrant le maintien de l'efficacité de ces médicaments",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 2,
+          "s": "données d'efficacité",
+          "t": "Les données d'efficacité à long terme montrant le maintien de l'efficacité de ces médicaments",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_02",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Supériorité démontrée de plusieurs anti-interleukines (ixekizumab, risankizumab) versus comparateurs actifs (guselkumab, sécukinumab, adalimumab, ustekinumab) sur critères d'efficacité majeurs",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Supériorité de l'ixekizumab par rapport au guselkumab sur le pourcentage de répondeurs PASI 100 à la semaine 12 avec une quantité d'effet cliniquement pertinente",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 3,
+          "s": "supériorité ixekizumab",
+          "t": "Supériorité de l'ixekizumab par rapport au guselkumab (41,3% vs 24,9%, p < 0,001)",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_03",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Profil de tolérance globalement inchangé et comparable entre les différents anti-interleukines, sans identification de nouveaux signaux de sécurité après 3-5 ans de suivi",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Données actualisées de pharmacovigilance mettant en évidence un profil de tolérance globalement inchangé pour ces médicaments",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 2,
+          "s": "pharmacovigilance",
+          "t": "Données actualisées de pharmacovigilance mettant en évidence un profil de tolérance globalement inchangé",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_04",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Données rassurantes de l'étude observationnelle PSOBIOTEQ 2 confirmant le respect des conditions de mise sous traitement (sévérité, étendue des lésions, impact qualité de vie) et l'absence d'augmentation du risque de tumeurs et infections graves après 3 ans de suivi",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Données rassurantes de l'étude observationnelle PSOBIOTEQ 2 sur le respect des conditions de mise sous traitement en termes de sévérité des symptômes, d'étendue des lésions, d'impact sur la qualité de vie et d'antécédents de traitement",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 2,
+          "s": "PSOBIOTEQ 2",
+          "t": "Données rassurantes de l'étude observationnelle PSOBIOTEQ 2 sur le respect des conditions de mise sous traitement",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_05",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Besoin thérapeutique partiellement couvert malgré l'arsenal thérapeutique disponible, en raison des phénomènes d'échappement thérapeutique, des contre-indications et des intolérance aux traitements systémiques conventionnels",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le besoin thérapeutique reste partiellement couvert. Il persiste donc un besoin à disposer de nouveaux médicaments efficaces et bien tolérés compte tenu des phénomènes d'échappement, de contre-indications et d'intolérance.",
+      "page_source": "Page 11",
+      "section_source": "Besoin médical",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 11,
+          "s": "besoin thérapeutique",
+          "t": "Le besoin thérapeutique reste partiellement couvert. Besoin de nouveaux médicaments efficaces et bien tolérés",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_06",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Reclassement des médicaments biologiques en traitement systémique de 2e ligne (après échec des traitements systémiques non biologiques) plutôt que réservés aux formes les plus sévères, basé sur les données PSOBIOTEQ montrant une utilisation conforme aux critères de sévérité",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission a considéré que désormais ces médicaments étaient des traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques de l'adulte en cas d'échec à une 1re ligne de traitement systémique non biologique",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 2,
+          "s": "traitements systémiques",
+          "t": "Traitements systémiques de 2e ligne dans les formes modérées à sévères du psoriasis en plaques",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_07",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Données de pharmacocinétique et d'équivalence clinique pour REMSIMA 120 mg SC versus infliximab IV dans d'autres indications (polyarthrite rhumatoïde, maladie de Crohn, rectocolite hémorragique), justifiant l'utilisation en sous-cutané dans le psoriasis",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Données de pharmacocinétique ayant démontré l'équivalence entre l'infliximab par voie sous-cutanée (SC) et l'infliximab par voie intraveineuse (IV)",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 2,
+          "s": "pharmacocinétique",
+          "t": "Données de pharmacocinétique ayant démontré l'équivalence entre l'infliximab SC et IV",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-22222_arg_CT_08",
+      "evaluation_id": "CT-22222",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Absence de démonstration de supériorité de TALTZ versus guselkumab à la semaine 24 (dernier critère de jugement secondaire hiérarchisé), limitant la magnitude de l'amélioration du SMR",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "L'absence de démonstration d'une supériorité versus guselkumab à la semaine 24 en termes de pourcentage de répondeurs PASI 100",
+      "page_source": "Page 3",
+      "section_source": "Conclusions de la Commission",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 3,
+          "s": "absence supériorité",
+          "t": "Absence de démonstration d'une supériorité versus guselkumab à la semaine 24",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-22222_ctx",
+    "evaluation_id": "CT-22222",
+    "contexte_evaluation": "Réévaluation de 8 médicaments biologiques (anti-TNFα et anti-interleukines) dans le psoriasis en plaques de l'adulte, basée sur les résultats intermédiaires de l'étude observationnelle PSOBIOTEQ 2 et les nouvelles données cliniques d'efficacité et de tolérance à long terme",
+    "type_evaluation": "Réévaluation",
+    "type_evaluation_enum": "Réévaluation",
+    "motif_evaluation": "Réévaluation au regard des nouvelles données d'efficacité et de tolérance disponibles depuis le précédent examen",
+    "date_evaluation": "2022-07-11",
+    "date_evaluation_format": "11 juillet 2022",
+    "secteurs_activite": [
+      "Ville",
+      "Hôpital"
+    ],
+    "population_cible_france": "Environ 77 350 patients atteints de psoriasis en plaques modéré à sévère en échec des traitements systémiques conventionnels",
+    "population_cible_nombre": 77350,
+    "population_cible_intervalle": [
+      70000,
+      85000
+    ],
+    "source_estimation_population": "Calcul HAS basé sur prévalence psoriasis et taux d'échec traitements conventionnels",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": 77350,
+    "ISP": "Ces spécialités ne sont pas susceptibles d'avoir un impact supplémentaire sur la santé publique",
+    "ISP_flag": false,
+    "acces_precoce": "Non applicable",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM standard",
+    "date_AMM_ema": "2015-2019",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "France (HAS)",
+      "EMA",
+      "Autres pays européens"
+    ],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "evidence": [
+      {
+        "f": "F1",
+        "p": 1,
+        "s": "réévaluation",
+        "t": "Réévaluation des médicaments systémiques biologiques ayant une indication dans le psoriasis en plaques de l'adulte",
+        "c": 0.98
+      }
+    ]
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-22222_smrasmr_01",
+      "evaluation_id": "CT-22222",
+      "indication_precise": "Psoriasis en plaques modéré à sévère de l'adulte en cas d'échec à une 1re ligne de traitement systémique non biologique",
+      "smr": "Important",
+      "smr_enum": "Important",
+      "asmr": "Pas de modification des conclusions précédentes",
+      "asmr_enum": "V",
+      "asmr_revendique_enum": "V",
+      "justification_decisionnelle": "Efficacité à long terme confirmée, profil de tolérance inchangé, données PSOBIOTEQ 2 rassurantes, besoin thérapeutique partiellement couvert",
+      "population_cible_indication": "Adultes ayant un psoriasis en plaques modéré à sévère en échec des traitements systémiques non biologiques",
+      "ligne_traitement_indication": "2e ligne",
+      "comparateurs_references_indication": "Autres anti-TNFα, anti-IL12/23, anti-IL17, anti-récepteur IL17, anti-IL23",
+      "comparateur_id_HAS": [
+        "CT-22222_compHAS_01",
+        "CT-22222_compHAS_02",
+        "CT-22222_compHAS_03"
+      ],
+      "gain_survie_cite": false,
+      "qol_cite": true,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 58,
+          "s": "service médical rendu",
+          "t": "La Commission considère que le service médical rendu par ces spécialités est important",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Tolérance_Globale": {
+    "profil_tolerance_general": "Profil de tolérance globalement inchangé et comparable entre les différents anti-interleukines et anti-TNFα",
+    "ei_graves_prevalence": "4-17% selon le médicament",
+    "sae_pct_global": 12.4,
+    "discontinuations_ae_pct_global": 8.8,
+    "signal_securite_majeur": false,
+    "evidence": []
+  },
+  "Contre_Indications": [
+    {
+      "contre_indication_id": "CT-22222_ci_01",
+      "evaluation_id": "CT-22222",
+      "contre_indication_texte": "Hypersensibilité aux substances actives ou à l'un des excipients",
+      "type_ci": "Absolue",
+      "source_ci": "RCP",
+      "evidence": []
+    },
+    {
+      "contre_indication_id": "CT-22222_ci_02",
+      "evaluation_id": "CT-22222",
+      "contre_indication_texte": "Infections graves (tuberculose active, septicémie)",
+      "type_ci": "Relative",
+      "source_ci": "RCP",
+      "evidence": []
+    }
+  ],
+  "Votes_Commission": [
+    {
+      "vote_id": "CT-22222_vote_01",
+      "evaluation_id": "CT-22222",
+      "type_vote": "SMR",
+      "produit_nom": "CIMZIA",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "resultat_vote": "Favorable",
+      "evidence": []
+    }
+  ]
+}

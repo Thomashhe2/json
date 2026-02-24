@@ -1,0 +1,599 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "Non renseigné",
+  "evaluation_id": "Non renseigné",
+  "extraction_date": "Non renseigné",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "Non renseigné",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "Contribution_VOXELOTOR_OXBRYTA_FMDT_SOS_GLOBI",
+        "type": "CONTRIB",
+        "page_count": 5
+      }
+    }
+  },
+  "template_detecte": "CONTRIB",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CONTRIB_001",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Nom et adresse de l'association",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 150,
+      "heading_text": "Nom et adresse de l'association",
+      "expected_fields": [
+        "nom_association",
+        "type_structure"
+      ],
+      "routing_hint": "Association metadata",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CONTRIB_002",
+      "section_label_normalise": "METHODOLOGIE",
+      "section_label_brut": "Méthode utilisée pour remplir le questionnaire",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 150,
+      "char_end": 800,
+      "heading_text": "1. Méthode utilisée pour remplir le questionnaire",
+      "expected_fields": [
+        "methode_recueil",
+        "nb_participants",
+        "personnes_cles",
+        "aides_externes"
+      ],
+      "routing_hint": "Methodology section",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "CONTRIB_003",
+      "section_label_normalise": "IMPACTS_MALADIE",
+      "section_label_brut": "Impact de la maladie / état de santé",
+      "template_detecte": "CONTRIB",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 800,
+      "char_end": 3500,
+      "heading_text": "2. Impact de la maladie / état de santé",
+      "expected_fields": [
+        "description_impacts",
+        "symptomes",
+        "statistiques",
+        "impacts_psychologiques",
+        "impacts_aidants"
+      ],
+      "routing_hint": "Disease impact section",
+      "label_confidence": 0.93
+    },
+    {
+      "segment_id": "CONTRIB_004",
+      "section_label_normalise": "TRAITEMENTS_ACTUELS",
+      "section_label_brut": "Expérience avec les thérapeutiques actuelles",
+      "template_detecte": "CONTRIB",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": 3500,
+      "char_end": 5200,
+      "heading_text": "3. Expérience avec les thérapeutiques actuelles",
+      "expected_fields": [
+        "traitements_disponibles",
+        "avantages",
+        "inconvenients",
+        "attentes"
+      ],
+      "routing_hint": "Current treatments section",
+      "label_confidence": 0.91
+    },
+    {
+      "segment_id": "CONTRIB_005",
+      "section_label_normalise": "EVALUATION_MEDICAMENT",
+      "section_label_brut": "Expériences avec le médicament évalué",
+      "template_detecte": "CONTRIB",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 5200,
+      "char_end": 5600,
+      "heading_text": "4. Expériences avec le médicament évalué",
+      "expected_fields": [
+        "experience_medicament",
+        "avantages_constates",
+        "inconvenients_constates"
+      ],
+      "routing_hint": "Drug experience section",
+      "label_confidence": 0.94
+    },
+    {
+      "segment_id": "CONTRIB_006",
+      "section_label_normalise": "SYNTHESE",
+      "section_label_brut": "Synthèse de votre contribution",
+      "template_detecte": "CONTRIB",
+      "page_start": 5,
+      "page_end": 5,
+      "char_start": 5600,
+      "char_end": 6000,
+      "heading_text": "6. Synthèse de votre contribution",
+      "expected_fields": [
+        "synthese_generale",
+        "position_association"
+      ],
+      "routing_hint": "Summary section",
+      "label_confidence": 0.96
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_nom_commercial": "OXBRYTA",
+      "dci": "Voxelotor",
+      "forme_pharmaceutique": "Non renseigné",
+      "dosage_concentration": "Non renseigné",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "indication_principale": "Traitement de la drépanocytose chez les adultes et les enfants âgés de 12 ans et plus",
+      "classe_ATC": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "Non renseigné",
+    "contribution_presente": true,
+    "contribution_id": "CONTRIB_001",
+    "association": {
+      "nom_association": "FMDT SOS GLOBI (Fédération des associations de malades drépanocytaires et thalassémiques SOS GLOBI)",
+      "type_structure": "Association_agréée_nationale",
+      "site_internet": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_association",
+          "f": "F1",
+          "p": 1,
+          "s": "FMDT SOS GLOBI",
+          "t": "FMDT SOS GLOBI (Fédération des associations de malades drépanocytaires et thalassémiques SOS GLOBI)",
+          "c": 0.98
+        }
+      ]
+    },
+    "methodologie": {
+      "methode_recueil": "Groupe_de_travail",
+      "description_methode": "Groupe de travail des membres de l'association SOS GLOBI, composé de 2 malades drépanocytaires et de 2 aidants. L'une des malades reçoit le traitement VOXELOTOR en accès précoce depuis 1 mois et demi. La Fédération SOS GLOBI a contribué à l'évaluation du Voxelotor et à la diffusion de l'information à ses membres.",
+      "nb_patients_consultes": 2,
+      "temps_redaction_heures": null,
+      "personnes_cles": [
+        {
+          "nom": "Maryannick LEPETIT",
+          "role": "Présidente de la FMDT SOS GLOBI",
+          "statut": "Patiente (reçoit le voxelotor depuis plus d'un mois)"
+        },
+        {
+          "nom": "Dianaba BÂ",
+          "role": "Directrice opérationnelle de la FMDT SOS GLOBI",
+          "statut": "Patiente"
+        },
+        {
+          "nom": "Christian GODART",
+          "role": "Président d'honneur de la FMDT SOS GLOBI",
+          "statut": "Aidant"
+        },
+        {
+          "nom": "Monique DUCHEL",
+          "role": "Secrétaire-adjointe de la FMDT SOS GLOBI",
+          "statut": "Aidant"
+        }
+      ],
+      "aides_externes": "Professeur Bartolucci de l'APHP a conçu un programme intitulé « hémaprove » qui inclut 30 patients sous Voxelotor. Le but de ce programme est une surveillance accrue des patients sous Voxelotor pour obtenir suffisamment de données et limiter les effets secondaires.",
+      "evidence": [
+        {
+          "field": "methode_recueil",
+          "f": "F1",
+          "p": 1,
+          "s": "Groupe de travail",
+          "t": "Groupe de travail des membres de l'association SOS GLOBI, composé de 2 malades drépanocytaires et de 2 aidants",
+          "c": 0.95
+        },
+        {
+          "field": "nb_patients_consultes",
+          "f": "F1",
+          "p": 1,
+          "s": "2 malades drépanocytaires",
+          "t": "Composé de 2 malades drépanocytaires et de Deux aidants",
+          "c": 0.92
+        }
+      ]
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "La Drépanocytose est une maladie invalidante, malgré le caractère non visible de la plupart des complications qu'elle entraîne. Elle s'exprime différemment d'un individu à l'autre et entraîne des complications aigues et chroniques. On estime que la drépanocytose ampute de 20 ans l'espérance de vie de ceux qui en souffrent. La maladie a différents impacts au quotidien : impact fonctionnel (incapacité à la station debout prolongée, à pratiquer une activité physique intense, à soulever des charges lourdes), fatigue chronique et difficultés de concentration, impact social/relationnel (difficultés à avoir une vie sociale soumise aux crises de douleurs imprévisibles), équilibre familial/relations intimes (difficultés à trouver un partenaire, priapisme, grossesses à risques), impact psychologique (perte de confiance, isolement, découragement).",
+      "symptomes_principaux": [
+        "Crises vaso-occlusives (CVO)",
+        "Douleurs aigues",
+        "Fatigue chronique",
+        "Anémie",
+        "Complications chroniques (osténonécroses, atteintes d'organes vitaux)",
+        "Priapisme",
+        "Syndrome thoracique aigu"
+      ],
+      "statistiques_mentionnees": [
+        {
+          "indicateur": "Espérance de vie réduite",
+          "valeur": "20 ans",
+          "source": "Étude Américaine Lubeck D, et al. JAMA Netw Open. 2019"
+        },
+        {
+          "indicateur": "Prévalence dépression",
+          "valeur": "39%",
+          "source": "Étude internationale Osunkwo I, et al. Am J Hematol. 2021"
+        }
+      ],
+      "impacts_psychologiques": "La drépanocytose peut avoir des répercussions importantes sur la santé mentale. Les épisodes douloureux répétitifs constituent des traumatismes pour le patient. À chaque crise aiguë, la douleur laisse des traces qui influent sur la perception de la douleur et la tolérance du patient à la douleur sur le long terme. Les conséquences peuvent être multiples : perte de confiance par rapport au système de santé, hypervigilance des malades par rapport à la douleur, souhait de prévenir les épisodes douloureux par anticipation. Il n'est ainsi pas rare que les personnes atteintes de drépanocytose souffrent de mal-être psychologique et de dépression.",
+      "impacts_proches_aidants": "La naissance d'un enfant atteint de drépanocytose est une surprise pour la plus grande partie des parents. L'annonce est un moment difficile et stressant. Les Crises Vaso Occlusives (CVO) redoutées, soudaines et spectaculaires plongent les parents dans l'angoisse et une peur qui ne les quitte plus. Les frères et sœurs souffrent également psychologiquement. Plus tard, le conjoint devient aussi un personnel soignant. L'aidant ou la famille subit le même stress que le malade, s'inquiète pour ses hospitalisations, l'accompagne lors des différents examens médicaux. L'aidant reste sur le qui-vive car il porte également l'épée de Damoclès sur ses épaules (réveils nocturnes liés aux CVO). La charge mentale est ainsi considérable pour les patients et leurs proches.",
+      "evidence": [
+        {
+          "field": "description_impacts_patients",
+          "f": "F1",
+          "p": 2,
+          "s": "La Drépanocytose est",
+          "t": "La Drépanocytose est une maladie invalidante, malgré le caractère non visible de la plupart des complications qu'elle entraîne",
+          "c": 0.96
+        },
+        {
+          "field": "statistiques_mentionnees",
+          "f": "F1",
+          "p": 2,
+          "s": "ampute de 20 ans",
+          "t": "On estime que la drépanocytose ampute de 20 ans l'espérance de vie de ceux qui en souffrent",
+          "c": 0.94
+        },
+        {
+          "field": "statistiques_mentionnees",
+          "f": "F1",
+          "p": 3,
+          "s": "39% des personnes",
+          "t": "39% des personnes atteintes de drépanocytose déclarent souffrir ou avoir souffert d'un épisode dépressif",
+          "c": 0.93
+        }
+      ]
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [
+        "Hydroxyurée",
+        "Échange transfusionnel",
+        "Transfusions simples de culots globulaires",
+        "Chélateurs du fer",
+        "Crizanlizumab",
+        "Greffe de cellules souches hématopoïétiques",
+        "Anti-douleurs (palliers 1/2/3)",
+        "Acide folique",
+        "Antibiothérapie",
+        "Vaccination",
+        "Vitamine D",
+        "Anti-hypertenseurs",
+        "Anti-dépresseurs",
+        "EPO",
+        "Rituximab"
+      ],
+      "avantages": "L'hydroxyurée, utilisée depuis plus de 25 ans, a démontré son efficacité sur la prévention et/ou l'atténuation des crises vaso-occlusives (CVO) et des syndromes thoraciques. C'est le traitement de 1ère intention pour prévenir la survenue des complications. Il peut être prescrit dès la survenue du 1er événement vaso-occlusif et est indiqué chez les jeunes enfants grâce à la possibilité d'adapter le dosage. Ce traitement ainsi qu'une prise en charge précoce de la maladie ont permis de réduire la mortalité infantile de manière considérable. Le crizanlizumab permet de réduire la fréquence des crises et est administré 1 fois par mois. La greffe de cellules souches hématopoïétiques est le seul traitement curatif pour la drépanocytose et permet de stopper l'évolution de la maladie.",
+      "inconvenients": "L'utilisation de l'hydroxyurée nécessite des connaissances spécialisées et un suivi pour limiter la survenue d'effets secondaires importants. Les effets secondaires liés à l'hydroxyurée (immunosuppression, infertilité masculine temporaire, alopécie) font que certains patients ne peuvent prendre ce traitement ou refusent de le prendre. Certains patients ont une réponse nulle ou limitée à l'hydroxyurée et continuent à avoir de nombreuses crises vaso-occlusives. L'échange transfusionnel permet une amélioration de l'état général et de la qualité de vie mais de manière temporaire et doit être répété. L'accès à ce traitement peut être limité du fait de la disponibilité de produits sanguins compatibles ou de complications graves comme l'allo immunisation. Les échanges transfusionnels ont des effets secondaires comme la surcharge en fer et l'allo immunisation. Ce traitement nécessite la pose fréquente de voies veineuses qui peut s'avérer complexe. Les chélateurs oraux nécessitent une organisation spécifique et peuvent avoir des effets secondaires importants (vision, ouïe, digestifs). Les chélateurs pris sous forme de perfusions peuvent entraîner des douleurs au point d'injection et nécessitent une organisation importante. La greffe haplo-identique est en cours d'exploration et seuls 25% des patients disposent d'un donneur 100% HLA identique.",
+      "besoins_non_couverts": "Les patients qui ne répondent pas suffisamment bien à la prise de l'hydroxyurée et aux échanges transfusionnels n'ont pas d'autres alternatives de traitement et subissent de plein fouet les complications de la maladie. Les patients attendent un traitement qui pourrait améliorer leur état de santé en général, avec des effets secondaires raisonnables et leur permettrait d'éviter la survenue des CVO, les hospitalisations liées à ces crises, les complications liées à la maladie (comme les AVC, STA, ulcères) et de diminuer les transfusions et les effets secondaires qui en découlent.",
+      "evidence": [
+        {
+          "field": "traitements_disponibles",
+          "f": "F1",
+          "p": 3,
+          "s": "L'hydroxyurée : utilisé",
+          "t": "L'hydroxyurée : utilisé depuis plus de 25 ans dans la drépanocytose, l'hydroxyurée est un médicament qui a démontré son efficacité",
+          "c": 0.94
+        },
+        {
+          "field": "avantages",
+          "f": "F1",
+          "p": 3,
+          "s": "traitement de 1ère",
+          "t": "Il s'agit du traitement de 1ère intention pour prévenir la survenue des complications dans la drépanocytose",
+          "c": 0.93
+        }
+      ]
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": true,
+      "nb_patients_experience": 1,
+      "avantages_constates": "De quelques patients sous protocole en début de traitement sous ATU, il est constaté une excellente réponse de la prise de voxelotor dès J15 à +2 g/dl d'hémoglobine. Sous voxelotor depuis 8 semaines, augmentation du taux d'hémoglobine de 6,6 à 8,4g, se sent plus énergique et moins l'épuisement. Peut réaliser plus de tâches au quotidien.",
+      "inconvenients_constates": "Les effets secondaires plus ou moins supportables : nausées, sensation de « gueule de bois », maux de tête, vertiges, fièvre, asthénie, diarrhées. Ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement.",
+      "attentes_principales": null,
+      "craintes_principales": null,
+      "evidence": [
+        {
+          "field": "experience_avec_medicament",
+          "f": "F1",
+          "p": 5,
+          "s": "Sous voxelotor depuis",
+          "t": "Sous voxelotor depuis 8 semaines, j'ai pu constater également une augmentation de mon taux d'hémoglobine de 6,6 à 8,4g",
+          "c": 0.96
+        },
+        {
+          "field": "inconvenients_constates",
+          "f": "F1",
+          "p": 5,
+          "s": "Nausées, sensation de",
+          "t": "Nausées, sensation de « gueule de bois », Maux de tête, vertiges, Fièvre, asthénie, Diarrhées",
+          "c": 0.94
+        }
+      ]
+    },
+    "indication_demandee": {
+      "indication_adequate": "Oui",
+      "commentaires": "Oxbryta (voxelotor) est un inhibiteur de la polymérisation de l'hémoglobine S indiqué dans le traitement de la drépanocytose chez les adultes et les enfants âgés de 12 ans et plus.",
+      "evidence": [
+        {
+          "field": "indication_demandee",
+          "f": "F1",
+          "p": 1,
+          "s": "Oxbryta (voxelotor)",
+          "t": "Oxbryta (voxelotor) est un inhibiteur de la polymérisation de l'hémoglobine S indiqué dans le traitement de la drépanocytose",
+          "c": 0.97
+        }
+      ]
+    },
+    "position_association": {
+      "position_generale": "Favorable",
+      "justification": "La drépanocytose concerne 30 000 patients en France. C'est une maladie évolutive, dont la prise en charge est complexe et pour laquelle il n'existe qu'un seul traitement curatif dont l'accès est limité (greffe de cellules souches). Les patients qui ne répondent pas suffisamment bien à la prise de l'hydroxyurée et aux échanges transfusionnels n'ont pas d'autres alternatives de traitement et subissent de plein fouet les complications de la maladie. La qualité de vie des patients atteints de drépanocytose est considérablement impactée. Le voxélotor est une alternative très attendue par les patients. Les patients non-répondants ou n'ayant plus d'alternatives de traitement espèrent que ce traitement leur sera bénéfique. Il y a une grande attente des patients et de leurs familles pour les nouveaux traitements.",
+      "arguments_principaux": [
+        "Répond à un besoin médical non couvert pour patients non-répondants à l'hydroxyurée",
+        "Alternative thérapeutique attendue par les patients et leurs familles",
+        "Amélioration de l'hémoglobine démontrée en accès précoce",
+        "Effets secondaires supportables et transitoires (disparaissent après 3 semaines)",
+        "Permet une meilleure qualité de vie et autonomie fonctionnelle"
+      ],
+      "evidence": [
+        {
+          "field": "position_association",
+          "f": "F1",
+          "p": 5,
+          "s": "Le voxélotor est",
+          "t": "Le voxélotor est une alternative très attendue par les patients",
+          "c": 0.95
+        },
+        {
+          "field": "justification",
+          "f": "F1",
+          "p": 5,
+          "s": "La drépanocytose concerne",
+          "t": "La drépanocytose concerne 30 000 patients en France. C'est une maladie évolutive, dont la prise en charge est complexe",
+          "c": 0.94
+        }
+      ]
+    },
+    "synthese_contribution": "La drépanocytose concerne 30 000 patients en France et est une maladie évolutive complexe avec un seul traitement curatif d'accès limité (greffe de cellules souches). Les patients rapportent des impacts majeurs sur la qualité de vie : crises vaso-occlusives imprévisibles et douloureuses, fatigue chronique, complications chroniques (osténonécroses, atteintes d'organes vitaux), impacts psychologiques (39% souffrent de dépression) et impacts sur l'entourage. Les traitements actuels (hydroxyurée, échanges transfusionnels, chélateurs) ont des limitations importantes : certains patients ne répondent pas à l'hydroxyurée, les transfusions sont temporaires et invasives, les effets secondaires sont importants. Le voxelotor représente une alternative très attendue par les patients non-répondants ou sans alternatives. L'expérience en accès précoce montre une excellente réponse avec augmentation de l'hémoglobine (+1,8 g/dl en 8 semaines) et amélioration fonctionnelle, avec des effets secondaires transitoires (disparaissent après 3 semaines). L'association SOS GLOBI soutient favorablement l'évaluation du voxelotor comme réponse à un besoin médical non couvert.",
+    "evidence": [
+      {
+        "field": "synthese_contribution",
+        "f": "F1",
+        "p": 5,
+        "s": "La drépanocytose concerne",
+        "t": "La drépanocytose concerne 30 000 patients en France. C'est une maladie évolutive, dont la prise en charge est complexe",
+        "c": 0.95
+      }
+    ]
+  },
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CONTRIB_arg_CONTRIB_01",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical non couvert pour patients non-répondants à l'hydroxyurée : 30 000 patients en France atteints de drépanocytose, maladie évolutive complexe avec un seul traitement curatif d'accès limité (greffe de cellules souches). Les patients qui ne répondent pas suffisamment bien à l'hydroxyurée et aux échanges transfusionnels n'ont pas d'autres alternatives de traitement.",
+      "extrait_textuel": "La drépanocytose concerne 30 000 patients en France. C'est une maladie évolutive, dont la prise en charge est complexe et pour laquelle il n'existe qu'un seul traitement curatif dont l'accès est limité (greffe de cellules souches). Les patients qui ne répondent pas suffisamment bien à la prise de l'hydroxyurée et aux échanges transfusionnels n'ont pas d'autres alternatives de traitement.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "FMDT SOS GLOBI",
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "La drépanocytose concerne",
+          "t": "La drépanocytose concerne 30 000 patients en France. C'est une maladie évolutive, dont la prise en charge est complexe",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CONTRIB_arg_CONTRIB_02",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Favorable",
+      "description": "Impact majeur de la drépanocytose sur la qualité de vie : crises vaso-occlusives imprévisibles et douloureuses, fatigue chronique, complications chroniques irréversibles (osténonécroses, atteintes d'organes vitaux), impacts psychologiques (39% souffrent de dépression), impacts sociaux et professionnels. Espérance de vie réduite de 20 ans.",
+      "extrait_textuel": "La qualité de vie des patients atteints de drépanocytose est considérablement impactée liée à la chronicité de la maladie, au caractère imprévisible des complications, à la sévérité des symptômes et au peu de solutions disponibles. On estime que la drépanocytose ampute de 20 ans l'espérance de vie. 39% des personnes atteintes de drépanocytose déclarent souffrir ou avoir souffert d'un épisode dépressif.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "FMDT SOS GLOBI",
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 2,
+          "s": "La qualité de vie",
+          "t": "La qualité de vie des patients atteints de drépanocytose est considérablement impactée liée à la chronicité de la maladie",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CONTRIB_arg_CONTRIB_03",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Efficacité démontrée du voxelotor en accès précoce : excellente réponse dès J15 avec augmentation d'hémoglobine de +2 g/dl. Chez une patiente sous traitement depuis 8 semaines, augmentation de l'hémoglobine de 6,6 à 8,4 g/dl avec amélioration fonctionnelle (plus énergique, moins d'épuisement, réalisation de plus de tâches quotidiennes).",
+      "extrait_textuel": "De quelques patients sous protocole en début de traitement sous ATU, il est constaté une excellente réponse de la prise de voxelotor dès J15 à +2 g/dl d'hémoglobine. Sous voxelotor depuis 8 semaines, j'ai pu constater également une augmentation de mon taux d'hémoglobine de 6,6 à 8,4g, je me sens plus énergique et moins l'épuisement. Je peux réaliser plus de tâches au quotidien.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Patiente sous voxelotor",
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "Sous voxelotor depuis",
+          "t": "Sous voxelotor depuis 8 semaines, j'ai pu constater également une augmentation de mon taux d'hémoglobine de 6,6 à 8,4g",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CONTRIB_arg_CONTRIB_04",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Profil de tolérance acceptable avec effets secondaires transitoires : nausées, sensation de « gueule de bois », maux de tête, vertiges, fièvre, asthénie, diarrhées. Tous ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement, ce qui est supportable comparé aux alternatives thérapeutiques.",
+      "extrait_textuel": "Les effets secondaires plus ou moins supportables : Nausées, sensation de « gueule de bois », Maux de tête, vertiges, Fièvre, asthénie, Diarrhées. Ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Patiente sous voxelotor",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "Ces effets secondaires",
+          "t": "Ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CONTRIB_arg_CONTRIB_05",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Voxelotor représente une alternative thérapeutique très attendue par les patients et leurs familles. Grande attente des patients pour les nouveaux traitements. Les patients non-répondants ou n'ayant plus d'alternatives de traitement espèrent que ce traitement leur sera bénéfique. Alternative pour patients en échec des traitements actuels (hydroxyurée, échanges transfusionnels).",
+      "extrait_textuel": "Le voxélotor est une alternative très attendue par les patients. Les patients non-répondants ou n'ayant plus d'alternatives de traitement espèrent que ce traitement leur sera bénéfique. Il y a une grande attente des patients et de leurs familles pour les nouveaux traitements et notre organisation est régulièrement sollicitée par les patients afin d'obtenir des informations sur leur disponibilité.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "FMDT SOS GLOBI",
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "Le voxélotor est",
+          "t": "Le voxélotor est une alternative très attendue par les patients",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CONTRIB_ctx",
+    "evaluation_id": "Non renseigné",
+    "ISP": "Non renseigné",
+    "ISP_flag": null,
+    "ISP_categorie": "Non renseigné",
+    "acces_precoce": "Accès_précoce_en_cours",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": 1,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "type_acces_precoce_enum": "Acces_precoce_pre_AMM",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 30000,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Patients atteints de drépanocytose chez les adultes et les enfants âgés de 12 ans et plus",
+    "population_cible_nombre": 30000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Contribution association patients",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": null,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non renseigné",
+    "SMR_apres_audition_enum": "Non renseigné",
+    "ASMR_avant_audition_enum": "Non renseigné",
+    "ASMR_après_audition_enum": "Non renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "Non renseigné",
+    "texte_brut": "Contribution des associations de patients et d'usagers aux évaluations des médicaments et des dispositifs médicaux. Questionnaire de recueil du point de vue des patients et usagers pour l'évaluation d'un médicament. Evaluation de : VOXELOTOR OXBRYTA. Indication(s) du médicament concernées : Oxbryta (voxelotor) est un inhibiteur de la polymérisation de l'hémoglobine S indiqué dans le traitement de la drépanocytose chez les adultes et les enfants âgés de 12 ans et plus. Association : FMDT SOS GLOBI (Fédération des associations de malades drépanocytaires et thalassémiques SOS GLOBI). Méthode : Groupe de travail des membres de l'association SOS GLOBI, composé de 2 malades drépanocytaires et de 2 aidants. L'une des malades reçoit le traitement VOXELOTOR en accès précoce depuis 1 mois et demi. Personnes clés : Maryannick LEPETIT (Présidente, Patiente), Dianaba BÂ (Directrice opérationnelle, Patiente), Christian GODART (Président d'honneur, Aidant), Monique DUCHEL (Secrétaire-adjointe, Aidant). Aides externes : Professeur Bartolucci de l'APHP a conçu un programme intitulé « hémaprove » qui inclut 30 patients sous Voxelotor. Impact de la maladie : La Drépanocytose est une maladie invalidante. Elle s'exprime différemment d'un individu à l'autre et entraîne des complications aigues et chroniques. On estime que la drépanocytose ampute de 20 ans l'espérance de vie. La maladie a différents impacts au quotidien : impact fonctionnel (incapacité à la station debout prolongée, à pratiquer une activité physique intense), fatigue chronique, impact social/relationnel, équilibre familial, impact psychologique. Les crises vaso-occlusives (CVO) constituent la complication aigue la plus fréquente. La drépanocytose est appelée « maladie de la douleur ». La fatigue est un symptôme largement sous-estimé. La drépanocytose entraîne également des complications chroniques irréversibles. 39% des personnes atteintes de drépanocytose déclarent souffrir ou avoir souffert d'un épisode dépressif. Impact sur l'entourage : La naissance d'un enfant atteint de drépanocytose est une surprise et un moment difficile. Les CVO redoutées plongent les parents dans l'angoisse. Les frères et sœurs souffrent également psychologiquement. L'aidant subit le même stress que le malade. Traitements actuels : Hydroxyurée (traitement de 1ère intention depuis plus de 25 ans), Échange transfusionnel, Transfusions simples, Chélateurs du fer, Crizanlizumab, Greffe de cellules souches hématopoïétiques (seul traitement curatif), Autres traitements prophylactiques. Avantages et inconvénients des traitements : L'hydroxyurée a démontré son efficacité mais nécessite un suivi spécialisé et a des effets secondaires importants. Certains patients ont une réponse nulle ou limitée. L'échange transfusionnel permet une amélioration temporaire mais doit être répété et a des complications graves. Les chélateurs ont des effets secondaires importants. La greffe est le seul traitement curatif mais seuls 25% des patients disposent d'un donneur HLA identique. Attentes des patients : Les patients attendent des traitements leur permettant d'améliorer leur qualité de vie et réduire les symptômes imprévisibles. Ils souhaitent obtenir un traitement qui puisse les soulager des complications (limiter les crises, limiter la fatigue, limiter l'évolution de la maladie). Expérience avec le voxelotor : Conséquences positives : Excellente réponse dès J15 à +2 g/dl d'hémoglobine. Sous voxelotor depuis 8 semaines, augmentation de l'hémoglobine de 6,6 à 8,4g, se sent plus énergique et moins d'épuisement, peut réaliser plus de tâches au quotidien. Inconvénients : Nausées, sensation de « gueule de bois », maux de tête, vertiges, fièvre, asthénie, diarrhées. Ces effets secondaires disparaissent au bout de 3 semaines. Information supplémentaire : Les patients non-répondants ou n'ayant plus d'alternatives de traitement espèrent que ce traitement leur sera bénéfique. Il y a une grande attente des patients et de leurs familles pour les nouveaux traitements. Le voxélotor est une alternative très attendue par les patients. Synthèse : La drépanocytose concerne 30 000 patients en France. C'est une maladie évolutive, dont la prise en charge est complexe et pour laquelle il n'existe qu'un seul traitement curatif dont l'accès est limité. Les patients qui ne répondent pas suffisamment bien à la prise de l'hydroxyurée et aux échanges transfusionnels n'ont pas d'autres alternatives de traitement et subissent de plein fouet les complications de la maladie. La qualité de vie des patients atteints de drépanocytose est considérablement impactée. Les patients souffrant de la drépanocytose souhaiteraient obtenir un traitement qui puisse les soulager des complications. Le voxélotor est une alternative très attendue par les patients.",
+    "embedding": null,
+    "evidence": []
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

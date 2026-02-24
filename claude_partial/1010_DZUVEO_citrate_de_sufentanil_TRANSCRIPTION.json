@@ -1,0 +1,1084 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19789",
+  "evaluation_id": "CT-19789",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19789_DZUVEO_Transcription_14sept2022.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 10
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19789_seg_001",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "En-tête et avertissement",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "DZUVEO 30 µg (sufentanil (citrate de)) (CT-19789) – Observations – Inscription (CT)",
+      "expected_fields": [
+        "evaluation_id",
+        "produit_nom",
+        "type_avis"
+      ],
+      "routing_hint": "Métadonnées document",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19789_seg_002",
+      "section_label_normalise": "PRESENTATION_PRODUIT",
+      "section_label_brut": "Présentation du produit et contexte réglementaire",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 1200,
+      "char_end": 2500,
+      "heading_text": "Présentation DZUVEO par chef de projet HAS",
+      "expected_fields": [
+        "produit_nom",
+        "dci",
+        "forme_pharmaceutique",
+        "dosage",
+        "indication",
+        "date_amm",
+        "conditions_utilisation"
+      ],
+      "routing_hint": "Contexte produit et AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19789_seg_003",
+      "section_label_normalise": "MODIFICATIONS_DEMANDEES",
+      "section_label_brut": "Modifications demandées par le laboratoire",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 2500,
+      "char_end": 4000,
+      "heading_text": "Propositions de modifications SMR/ASMR",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "indication_modifiee",
+        "conditions_utilisation"
+      ],
+      "routing_hint": "Débat modifications",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "CT-19789_seg_004",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat Commission - Traumatologie vs Médecine d'urgence",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 5,
+      "char_start": 4000,
+      "char_end": 6500,
+      "heading_text": "Interventions Francis Bonnet et Albert Trinh Duc",
+      "expected_fields": [
+        "argument_efficacite",
+        "argument_indication",
+        "argument_securite"
+      ],
+      "routing_hint": "Débat clinique",
+      "label_confidence": 0.93
+    },
+    {
+      "segment_id": "CT-19789_seg_005",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat Commission - Pédiatrie et alternatives",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 6,
+      "char_start": 6500,
+      "char_end": 8000,
+      "heading_text": "Intervention Jean-Christophe Mercier",
+      "expected_fields": [
+        "argument_population",
+        "argument_alternatives"
+      ],
+      "routing_hint": "Débat population pédiatrique",
+      "label_confidence": 0.91
+    },
+    {
+      "segment_id": "CT-19789_seg_006",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat Commission - Posologie et durée de traitement",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 8000,
+      "char_end": 9500,
+      "heading_text": "Intervention Clémence Basse",
+      "expected_fields": [
+        "argument_posologie",
+        "argument_tolerance",
+        "argument_relais"
+      ],
+      "routing_hint": "Débat posologie et sécurité",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19789_seg_007",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat Commission - Pharmacologie et métabolites",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": 9500,
+      "char_end": 10200,
+      "heading_text": "Intervention Céline Eiden",
+      "expected_fields": [
+        "argument_pharmacologie"
+      ],
+      "routing_hint": "Débat pharmacologique",
+      "label_confidence": 0.88
+    },
+    {
+      "segment_id": "CT-19789_seg_008",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat Commission - Accès aux soins et organisation hospitalière",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 8,
+      "char_start": 10200,
+      "char_end": 11500,
+      "heading_text": "Intervention Catherine Simonin",
+      "expected_fields": [
+        "argument_acces_soins",
+        "argument_organisation"
+      ],
+      "routing_hint": "Débat contexte santé publique",
+      "label_confidence": 0.89
+    },
+    {
+      "segment_id": "CT-19789_seg_009",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat Commission - Clarifications finales et vote",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 10,
+      "char_start": 11500,
+      "char_end": 13500,
+      "heading_text": "Débat final et vote",
+      "expected_fields": [
+        "indication_finale",
+        "vote_result",
+        "conditions_finales"
+      ],
+      "routing_hint": "Conclusion et vote",
+      "label_confidence": 0.96
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "identifiant_id": "CT-19789_prod_001",
+      "evaluation_id": "CT-19789",
+      "produit_nom_commercial": "DZUVEO",
+      "dci": "sufentanil (citrate de)",
+      "dosage_concentration": "30 µg",
+      "forme_pharmaceutique": "comprimé sublingual",
+      "forme_pharma_enum": "Sublingual",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "presentations": [
+        {
+          "dosage_concentration": "30 µg",
+          "forme_pharmaceutique": "comprimé sublingual",
+          "forme_pharma_enum": "Sublingual",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 3,
+          "s": "DZUVEO 30 microgrammes",
+          "t": "DZUVEO, 30 microgrammes, un comprimé sublingual, c'est à base de sufentanil",
+          "c": 0.98
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 3,
+          "s": "sufentanil opioïde",
+          "t": "c'est à base de sufentanil, opioïde fort",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19789",
+      "Num_avis": "CT-19789",
+      "produit_nom": "DZUVEO 30 µg",
+      "dci": "sufentanil (citrate de)",
+      "type_avis": "Inscription aux Collectivités",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimé sublingual",
+      "dosage": "30 µg",
+      "indication": "traitement des douleurs aiguës, modérées à sévères de l'adulte",
+      "classe_ATC": "N02A (Opioïdes)",
+      "pathologie": "Douleurs aiguës modérées à sévères",
+      "maladie_rare": false,
+      "ligne_traitement": "Traitement des douleurs aiguës insuffisamment soulagées par antalgiques paliers inférieurs",
+      "sous_groupe_population": "Adultes",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Anesthésiologie et analgésie",
+      "aire_therapeutique_niveau_2": "Analgésie post-opératoire et d'urgence",
+      "aire_therapeutique_niveau_3": "Douleurs aiguës modérées à sévères",
+      "source_aire_therapeutique": "Déduit ATC N02A",
+      "design_etude": "Analyse de cohorte monobras",
+      "niveau_preuve_brut": "Cohorte monobras",
+      "niveau_preuve_interprete": "Niveau_4",
+      "besoin_medical_brut": "Douleurs aiguës insuffisamment soulagées par antalgiques paliers inférieurs",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes uniquement",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Observationnel_prospectif",
+      "caracteristique_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "AMM obtenue par procédure centralisée en juin 2018",
+      "historique_ASMR_comparateurs": "Besoin médical couvert par traitements antalgiques disponibles",
+      "concurrence_therapeutique_recente": "PCA intraveineuse à la morphine, sufentanil intra-nasal",
+      "vote_unanimite": true,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-09-14",
+      "transcription_textuelle": "Présente",
+      "extraits_arguments": [
+        "SMR important puisque c'est un opiacé",
+        "ASMR V puisqu'on considérait qu'il y avait un certain nombre de produits qui rendaient des services tout à fait comparables",
+        "Modification traumatologie versus médecine d'urgence est recevable",
+        "Rapidité d'action et forme galénique constituent l'originalité du produit"
+      ],
+      "gravite_patho": "Douleurs aiguës modérées à sévères nécessitant analgésie rapide",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes en douleur aiguë post-opératoire ou d'urgence",
+      "pertinence_concurrence_therapeutique": "Comparateurs pertinents : PCA intraveineuse à la morphine, sufentanil intra-nasal (sans AMM), alternatives limitées en urgence pédiatrique",
+      "evidence": [
+        {
+          "field": "type_avis_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "inscription aux Collectivités",
+          "t": "Il s'agit de l'inscription aux Collectivités de DZUVEO",
+          "c": 0.98
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "s": "traitement des douleurs aiguës",
+          "t": "traitement des douleurs aiguës, modérées à sévères de l'adulte",
+          "c": 0.97
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 14 septembre 2022",
+          "t": "Mercredi 14 septembre 2022",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19789_essai_Cohorte_monobras",
+      "evaluation_id": "CT-19789",
+      "nom_essai": "Analyse de cohorte monobras",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel prospectif",
+      "design_enum": "Observationnel_prospectif",
+      "population_cible": "Patients adultes en douleur aiguë post-opératoire ou d'urgence",
+      "comparateur_utilise": "Aucun (monobras)",
+      "nb_patient_traitement": "Non renseigné",
+      "nb_patient_comparateur": null,
+      "resultat_global": "Données de cohorte monobras sans comparaison directe",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_4",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": "Non renseigné",
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.16,
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non applicable",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Aucun",
+      "efficacite_demontree": false,
+      "magnitude_effet_categorie": "Non_applicable",
+      "maturite_pct": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "design_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "analyse de cohorte monobras",
+          "t": "Il y avait une analyse de cohorte, mais c'était de la cohorte monobras",
+          "c": 0.92
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19789_essai_Cohorte_monobras_tol",
+      "evaluation_id": "CT-19789",
+      "essai_id": "CT-19789_essai_Cohorte_monobras",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Complications potentiellement neurologiques et respiratoires mentionnées. Risque de dépression respiratoire morphinique nécessitant surveillance médicale et équipement d'urgence.",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 3,
+          "s": "dépression respiratoire morphinique",
+          "t": "personnel formé pour identifier et gérer une dépression respiratoire morphinique",
+          "c": 0.95
+        },
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 6,
+          "s": "complications potentiellement neurologiques",
+          "t": "il y avait des complications potentiellement neurologiques et respiratoires",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19789_compHAS_01",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "PCA intraveineuse à la morphine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 4,
+          "s": "PCA intraveineuse à la morphine",
+          "t": "la PCA intraveineuse à la morphine qui est utilisée dans ce contexte",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19789_compHAS_02",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "Sufentanil intra-nasal",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 5,
+          "s": "sufentanil intra-nasal",
+          "t": "le sufentanil intra-nasal qui a un effet immédiat",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19789_compHAS_03",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "Antalgiques paliers inférieurs",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "antalgiques des paliers inférieurs",
+          "t": "douleurs aiguës, insuffisamment soulagé par les antalgiques des paliers inférieurs",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19789_arg_TRANS_01",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "SMR important confirmé car DZUVEO est un opioïde fort avec efficacité antalgique démontrée. ASMR V car besoin médical couvert par traitements antalgiques disponibles (PCA morphine, alternatives).",
+      "extrait_textuel": "On avait voté que c'était un SMR important puisque c'est un opiacé, et une ASMR V, puisqu'on considérait qu'il y avait un certain nombre de produits qui rendaient des services tout à fait comparables.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "SMR important puisque c'est un opiacé",
+          "t": "On avait voté que c'était un SMR important puisque c'est un opiacé, et une ASMR V",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_02",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Originalité du produit réside dans la rapidité d'action et la forme galénique sublinguale, offrant une alternative aux PCA intraveineuses pour analgésie rapide en contexte aigu.",
+      "extrait_textuel": "Ce qui est intéressant pour ce produit, c'est la rapidité d'action. C'est là-dessus que portent l'originalité et la forme galénique.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "rapidité d'action et forme galénique",
+          "t": "Ce qui est intéressant pour ce produit, c'est la rapidité d'action. C'est là-dessus que portent l'originalité et la forme galénique.",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_03",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Élargissement de l'indication de traumatologie à médecine d'urgence est justifié car douleurs aiguës d'urgence ne se limitent pas à traumatologie. Modification cliniquement pertinente.",
+      "extrait_textuel": "Pour la modification traumatologie versus médecine d'urgence, je pense que oui, c'est recevable effectivement, parce qu'il n'y a pas que la traumatologie qui fait mal, si je puis dire, en médecine d'urgence.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "traumatologie versus médecine d'urgence",
+          "t": "Pour la modification traumatologie versus médecine d'urgence, je pense que oui, c'est recevable",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_04",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Données d'essai limitées à cohorte monobras en traumatologie. Élargissement à médecine d'urgence générale repose sur extrapolation sans données spécifiques, ouvrant à niveaux de preuve faibles.",
+      "extrait_textuel": "Il y avait une analyse de cohorte, mais c'était de la cohorte monobras. C'est vrai que je n'avais pas voulu retenir les douleurs abdominales, même si Francis a raison, la morphine soulage les douleurs abdominales, mais c'était ouvrir la porte à des niveaux de preuve relativement faibles.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Albert Trinh Duc",
+      "moment_debat": "Délibération",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 4,
+          "s": "cohorte monobras niveaux de preuve faibles",
+          "t": "Il y avait une analyse de cohorte, mais c'était de la cohorte monobras... ouvrir la porte à des niveaux de preuve relativement faibles",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_05",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Profil de sécurité acceptable avec durée limitée à 48 heures. Risque addiction quasi nul en contexte aigu court terme. Environnement médical supervisé avec équipement d'urgence requis.",
+      "extrait_textuel": "Pour le coup, le risque d'addiction est quasiment nul. Parce qu'on reste dans les 48 heures et pas plus.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Francis Bonnet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 7,
+          "s": "risque d'addiction quasiment nul 48 heures",
+          "t": "Pour le coup, le risque d'addiction est quasiment nul. Parce qu'on reste dans les 48 heures",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_06",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Favorable",
+      "description": "Intérêt particulier pour urgences pédiatriques : alternative à PCA intraveineuse chez enfants drépanocytaires où abord veineux difficile. Sufentanil sublingual offre accès rapide sans ponction veineuse.",
+      "extrait_textuel": "Dans les services de pédiatrie d'urgence... nous avons l'habitude de traiter les enfants drépanocytaires en particulier... par la PCA... Nous sommes en train de rechercher des alternatives à la PCA, telles que le sufentanil intra-nasal... ou le sufentanil, pourquoi pas, avec une posologie adaptée en sublinguale, parce que la PCA nécessite un abord veineux.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "pédiatrie d'urgence enfants drépanocytaires",
+          "t": "Dans les services de pédiatrie d'urgence... nous avons l'habitude de traiter les enfants drépanocytaires... alternatives à la PCA, telles que le sufentanil... en sublinguale",
+          "c": 0.91
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_07",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical en urgences pédiatriques pour alternative à PCA intraveineuse. Indication adulte actuelle mais formes pédiatriques adaptées attendues pour élargir accès.",
+      "extrait_textuel": "J'imagine que des formes galéniques adaptées devrait arriver, ou on restera au sufentanil intra-nasale, qui est beaucoup plus facile.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevée",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 6,
+          "s": "formes galéniques adaptées pédiatrie",
+          "t": "J'imagine que des formes galéniques adaptées devrait arriver",
+          "c": 0.88
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_08",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Contexte_réglementaire",
+      "direction_argument": "Neutre",
+      "description": "Indication actuellement réservée aux adultes. Dose 30 µg trop forte pour enfants. Sufentanil intra-nasal sans AMM reste alternative pédiatrique en attente de régularisation.",
+      "extrait_textuel": "En sachant que l'indication est réservée aux adultes, pour l'instant. Parce que la dose est trop forte pour les enfants. C'est les 15 microgrammes, mais c'est tout de même trop fort pour les enfants.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de projet HAS / Francis Bonnet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 5,
+          "s": "indication réservée adultes dose trop forte enfants",
+          "t": "En sachant que l'indication est réservée aux adultes, pour l'instant. Parce que la dose est trop forte pour les enfants.",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_09",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Contexte_réglementaire",
+      "direction_argument": "Favorable",
+      "description": "Conditions d'utilisation strictement encadrées : 48 heures maximum, environnement médical supervisé, personnel formé, équipement d'urgence requis. Cadre sécurité approprié pour opioïde fort.",
+      "extrait_textuel": "C'est un traitement d'action rapide en sublingual pour une courte période de traitement de moins de 48 heures... il faut la sécurité de l'environnement, donc toujours sous surveillance d'un médecin ou service hospitalier",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Clémence Basse",
+      "moment_debat": "Délibération",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 6,
+          "s": "traitement 48 heures surveillance médecin",
+          "t": "C'est un traitement d'action rapide en sublingual pour une courte période de traitement de moins de 48 heures... toujours sous surveillance d'un médecin",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_TRANS_10",
+      "evaluation_id": "CT-19789",
+      "source_argument": "TRANS",
+      "categorie_argument": "Contexte_réglementaire",
+      "direction_argument": "Favorable",
+      "description": "Indication finalisée : service d'urgence et soins post-opératoires dans cadre 48 heures. Élargissement à médecine d'urgence générale justifié. Restriction à environnement médical supervisé appropriée.",
+      "extrait_textuel": "Service d'urgence et soins post-opératoires dans le cadre des 48 heures, me paraît la bonne option.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pierre Cochat",
+      "moment_debat": "Délibération",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "argument_id",
+          "f": "F1",
+          "p": 9,
+          "s": "Service d'urgence soins post-opératoires 48 heures",
+          "t": "Service d'urgence et soins post-opératoires dans le cadre des 48 heures, me paraît la bonne option.",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19789_ctx",
+    "evaluation_id": "CT-19789",
+    "ISP": "Le produit n'était pas susceptible d'avoir un impact supplémentaire de santé publique",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2018-06-01",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": false,
+    "PSA_flag": false,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Adultes en douleur aiguë post-opératoire ou d'urgence insuffisamment soulagée par antalgiques paliers inférieurs",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "2022-09-14",
+    "nb_total_reserves": 0,
+    "nb_total_reserves_mineures": 0,
+    "nb_totales_reserves_importantes": 0,
+    "nb_totales_reserves_majeures": 0,
+    "SMR_avant_audition_enum": "Important",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "V",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Rapidité d'action et forme galénique",
+    "valeur_critère": "Comprimé sublingual 30 µg avec action rapide",
+    "impact_décision": "Confirmation SMR Important et ASMR V avec modifications indication",
+    "estimation_mesure_impact": "Élargissement indication à médecine d'urgence générale",
+    "evidence": [
+      {
+        "field": "ISP_flag",
+        "f": "F1",
+        "p": 3,
+        "s": "impact supplémentaire santé publique",
+        "t": "D'après la commission, le produit n'était pas susceptible d'avoir un impact",
+        "c": 0.96
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 3,
+        "s": "AMM obtenue juin 2018",
+        "t": "C'est une AMM qui a été obtenue par procédure centralisée en juin 2018",
+        "c": 0.98
+      },
+      {
+        "field": "date_audition",
+        "f": "F1",
+        "p": 1,
+        "s": "Mercredi 14 septembre 2022",
+        "t": "Mercredi 14 septembre 2022",
+        "c": 0.99
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19789",
+    "texte_brut": "Commission de Transparence - DZUVEO 30 µg (sufentanil citrate) - Inscription - 14 septembre 2022. Produit : comprimé sublingual à base de sufentanil, opioïde fort, pour traitement douleurs aiguës modérées à sévères adulte. AMM centralisée juin 2018. Administration par professionnel santé en environnement sous surveillance médicale. Durée maximale 48 heures. Modifications demandées : élargir indication de traumatologie à médecine d'urgence, supprimer restriction salle surveillance post-interventionnelle. Débat Commission : SMR important confirmé (opioïde fort), ASMR V (besoin couvert par alternatives). Originalité : rapidité action et forme galénique. Élargissement médecine d'urgence justifié (douleurs aiguës non limitées traumatologie). Données limitées cohorte monobras. Profil sécurité acceptable 48 heures, risque addiction nul contexte aigu court terme. Intérêt pédiatrie urgence (alternative PCA intraveineuse enfants drépanocytaires). Indication finalisée : service urgence et soins post-opératoires 48 heures. Vote unanime adoption.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19789_smrasmr_01",
+      "evaluation_id": "CT-19789",
+      "indication_precise": "Traitement des douleurs aiguës, modérées à sévères de l'adulte insuffisamment soulagées par antalgiques paliers inférieurs, en post-opératoire et en médecine d'urgence",
+      "smr": "La Commission considère que le service médical rendu est important puisque DZUVEO est un opioïde fort avec efficacité antalgique démontrée",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que le besoin médical est couvert par les traitements antalgiques disponibles (PCA morphine, alternatives). ASMR V.",
+      "asmr_enum": "V",
+      "smr_revendique": "Important",
+      "smr_revendique_enum": "Important",
+      "asmr_revendique_enum": "V",
+      "justification_decisionnelle": "SMR Important : opioïde fort avec efficacité antalgique rapide en contexte aigu. ASMR V : besoin médical couvert par alternatives (PCA intraveineuse morphine, sufentanil intra-nasal). Originalité réside dans rapidité action et forme galénique sublinguale.",
+      "population_cible_indication": "Adultes en douleur aiguë post-opératoire ou d'urgence insuffisamment soulagée par antalgiques paliers inférieurs",
+      "ligne_traitement_indication": "Traitement douleurs aiguës insuffisamment soulagées antalgiques paliers inférieurs",
+      "comparateurs_references_indication": "PCA intraveineuse morphine, sufentanil intra-nasal, antalgiques paliers inférieurs",
+      "comparateur_id_HAS": "CT-19789_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "SMR important opiacé",
+          "t": "On avait voté que c'était un SMR important puisque c'est un opiacé",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 4,
+          "s": "ASMR V produits comparables",
+          "t": "une ASMR V, puisqu'on considérait qu'il y avait un certain nombre de produits qui rendaient des services tout à fait comparables",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19789_event_AMM_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2018-06-01",
+      "detail_brut": "AMM obtenue par procédure centralisée",
+      "source_doc": "F1",
+      "detail_type_specifique": "Procédure centralisée EMA",
+      "acteurs_impliques": [
+        "EMA",
+        "CHMP"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Procédure centralisée",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "AMM obtenue juin 2018",
+          "t": "C'est une AMM qui a été obtenue par procédure centralisée en juin 2018",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19789_event_CT_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-09-14",
+      "detail_brut": "Adoption à l'unanimité par Commission Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Vote unanime",
+      "acteurs_impliques": [
+        "Commission Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Séance 14 septembre 2022",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 10,
+          "s": "Adoption à l'unanimité",
+          "t": "Adoption à l'unanimité",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19789",
+    "delai_amm_ct_jours": 1531,
+    "delai_transcription_ct_jours": 0,
+    "delai_audition_ct_jours": 0,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": [
+      {
+        "field": "delai_amm_ct_jours",
+        "f": "F1",
+        "p": 3,
+        "s": "AMM juin 2018 CT septembre 2022",
+        "t": "AMM obtenue juin 2018... examiné début juillet... 14 septembre 2022",
+        "c": 0.85
+      }
+    ]
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19789",
+    "is_orphan": false,
+    "classe_ATC_l2": "N02A",
+    "aire_therapeutique": "Anesthésiologie et analgésie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non applicable - cohorte monobras",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": true,
+    "nb_votants": null,
+    "voix_pour_pct": 100.0,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": {
+      "essais_cliniques_complets": 0.4,
+      "criteres_jugement_complets": 0.0,
+      "tolerance_complete": 0.3,
+      "arguments_complets": 0.9
+    }
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19789",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19789_essai_Cohorte_monobras",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_Cohorte_monobras",
+      "tgt_type": "Tolerance",
+      "tgt_id": "CT-19789_essai_Cohorte_monobras_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19789",
+      "tgt_type": "Argument",
+      "tgt_id": "CT-19789_arg_TRANS_01",
+      "label": "EVAL_HAS_ARGUMENT"
+    }
+  ],
+  "Annotation_View": [
+    {
+      "id": "CT-19789_annot_001",
+      "text": "On avait voté que c'était un SMR important puisque c'est un opiacé, et une ASMR V, puisqu'on considérait qu'il y avait un certain nombre de produits qui rendaient des services tout à fait comparables.",
+      "meta": {
+        "doc_id": "CT-19789",
+        "source": "TRANSCRIPTION",
+        "template": "TRANSCRIPTION",
+        "section_label_normalise": "SMR_ASMR",
+        "section_label_brut": "Débat SMR/ASMR",
+        "hierarchie": [
+          "Débat",
+          "SMR_ASMR"
+        ],
+        "page_start": 4,
+        "page_end": 4,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 20,
+          "end": 30,
+          "label": "SMR_VALUE"
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "label": "ASMR_VALUE"
+        },
+        {
+          "start": 60,
+          "end": 67,
+          "label": "DRUG_CLASS"
+        }
+      ],
+      "relations": [
+        {
+          "head": 0,
+          "tail": 1,
+          "label": "SMR_DETERMINES_ASMR"
+        }
+      ]
+    },
+    {
+      "id": "CT-19789_annot_002",
+      "text": "Ce qui est intéressant pour ce produit, c'est la rapidité d'action. C'est là-dessus que portent l'originalité et la forme galénique.",
+      "meta": {
+        "doc_id": "CT-19789",
+        "source": "TRANSCRIPTION",
+        "template": "TRANSCRIPTION",
+        "section_label_normalise": "ARGUMENTS_DISCUSSION",
+        "section_label_brut": "Débat efficacité",
+        "hierarchie": [
+          "Débat",
+          "Efficacité"
+        ],
+        "page_start": 4,
+        "page_end": 4,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 35,
+          "end": 52,
+          "label": "EFFICACY_FEATURE"
+        },
+        {
+          "start": 75,
+          "end": 90,
+          "label": "INNOVATION"
+        }
+      ],
+      "relations": []
+    }
+  ]
+}

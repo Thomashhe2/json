@@ -1,0 +1,1374 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19764",
+  "evaluation_id": "CT-19764",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "TRANSCRIPTION_ATGAM_20220720",
+        "type": "TRANSCRIPTION",
+        "page_count": 11
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19764_seg_001",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "En-tête et avertissement",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 1200,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [
+        "date_seance",
+        "type_seance",
+        "produit_nom"
+      ],
+      "routing_hint": "Métadonnées séance",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19764_seg_002",
+      "section_label_normalise": "PRESENTATION_DOSSIER",
+      "section_label_brut": "Présentation du dossier par chef de projet HAS",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 1200,
+      "char_end": 3500,
+      "heading_text": "Présentation ATGAM - Chef de Projet HAS",
+      "expected_fields": [
+        "indication",
+        "smr_precedent",
+        "asmr_precedent",
+        "comparateur"
+      ],
+      "routing_hint": "Contexte évaluation antérieure",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "CT-19764_seg_003",
+      "section_label_normalise": "PRESENTATION_LABO",
+      "section_label_brut": "Présentation du laboratoire PFIZER",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 8,
+      "char_start": 3500,
+      "char_end": 8500,
+      "heading_text": "Présentation PFIZER - Jérôme Mouminoux, Bruno Valtier, Hélène Grand",
+      "expected_fields": [
+        "asmr_revendiquee",
+        "arguments_efficacite",
+        "arguments_tolerance",
+        "arguments_besoin_medical"
+      ],
+      "routing_hint": "Arguments laboratoire pour ASMR III",
+      "label_confidence": 0.94
+    },
+    {
+      "segment_id": "CT-19764_seg_004",
+      "section_label_normalise": "QUESTIONS_COMMISSION",
+      "section_label_brut": "Questions et débat avec la Commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 10,
+      "char_start": 8500,
+      "char_end": 11000,
+      "heading_text": "Questions - Sylvie Chevret, Patrick Niaudet",
+      "expected_fields": [
+        "question_hypothese_essai",
+        "question_fabrication",
+        "reponses_labo"
+      ],
+      "routing_hint": "Débat méthodologique",
+      "label_confidence": 0.91
+    },
+    {
+      "segment_id": "CT-19764_seg_005",
+      "section_label_normalise": "DELIBERATION",
+      "section_label_brut": "Délibération et débat interne Commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 9,
+      "page_end": 11,
+      "char_start": 11000,
+      "char_end": 13500,
+      "heading_text": "Débat interne - Pierre Cochat, Michel Clanet, Jean-Christophe Mercier",
+      "expected_fields": [
+        "arguments_pour_asmr3",
+        "arguments_pour_asmr4",
+        "position_membres"
+      ],
+      "routing_hint": "Débat ASMR III vs IV",
+      "label_confidence": 0.93
+    },
+    {
+      "segment_id": "CT-19764_seg_006",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote final",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 11,
+      "char_start": 13500,
+      "char_end": 13800,
+      "heading_text": "Vote par appel nominatif",
+      "expected_fields": [
+        "nb_votants",
+        "voix_pour",
+        "voix_contre",
+        "resultat"
+      ],
+      "routing_hint": "Résultat vote",
+      "label_confidence": 0.96
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19764_prod_001",
+      "evaluation_id": "CT-19764",
+      "produit_nom_commercial": "ATGAM",
+      "dci": "Globuline antithymocytaire équine",
+      "forme_pharmaceutique": "Solution à diluer pour perfusion",
+      "dosage_concentration": "50 milligrammes par millilitre",
+      "titulaire_amm": "PFIZER",
+      "code_cis": "Non renseigné",
+      "presentations": [
+        {
+          "forme_pharma_enum": "Injectable_IV",
+          "dosage_concentration": "50 mg/ml",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 3,
+          "s": "ATGAM en 50 milligrammes",
+          "t": "ATGAM en 50 milligrammes par millilitre, solution à diluer pour perfusion",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19764",
+      "Num_avis": "CT-19764",
+      "produit_nom": "ATGAM",
+      "dci": "Globuline antithymocytaire équine",
+      "type_avis_enum": "Inscription",
+      "forme": "Solution à diluer pour perfusion",
+      "dosage": "50 mg/ml",
+      "indication": "Traitement immunosuppresseur standard pour formes modérées à sévères d'aplasie médullaire acquise d'étiologie immunologique chez adultes et enfants ≥2 ans non éligibles à greffe",
+      "classe_ATC": "L04AX01",
+      "pathologie": "Aplasie médullaire acquise",
+      "maladie_rare": true,
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "Adultes et enfants ≥2 ans non éligibles à greffe de cellules souches",
+      "cim10_principal": "D61.9",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Aplasie médullaire, sans précision",
+      "source_cim10": "Déduit de pathologie",
+      "aire_therapeutique_niveau_1": "Hématologie",
+      "aire_therapeutique_niveau_2": "Maladies du sang",
+      "aire_therapeutique_niveau_3": "Aplasie médullaire acquise",
+      "source_aire_therapeutique": "Déduit ATC L04AX01",
+      "design_etude": "Étude randomisée de phase 2, prospective, en ouvert",
+      "niveau_preuve_brut": "Étude randomisée versus comparateur cliniquement pertinent",
+      "niveau_preuve_interprete": "Niveau_2",
+      "besoin_medical_brut": "Maladie grave engageant le pronostic vital avec mortalité >80% à 2 ans sans traitement",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Hemato_oncologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "≥2 ans",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": true,
+      "historique_Has_produit": "Avis du 15 juin 2022 : SMR Important, ASMR IV versus thymoglobuline",
+      "historique_ASMR_comparateurs": "Thymoglobuline de lapin : standard de traitement avant 2011, moins utilisée actuellement",
+      "concurrence_therapeutique_recente": "ATGAM est devenu traitement de référence depuis 2011 suite à étude Scheinberg",
+      "vote_unanimite": false,
+      "nb_votants": 15,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 2,
+      "nb_abstentions": 0,
+      "date_evaluation": "2022-07-20",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "s": "traitement immunosuppresseur standard",
+          "t": "traitement immunosuppresseur standard pour le traitement des formes modérées à sévères d'aplasie médullaire acquise d'étiologie immunologique connue ou suspectée chez les adultes et les enfants de 2 ans et plus",
+          "c": 0.97
+        },
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 5,
+          "s": "maladie rare. En France",
+          "t": "Il s'agit par ailleurs d'une maladie rare. En France, on estime qu'environ une petite centaine de patients sont concernés par l'aplasie médullaire acquise.",
+          "c": 0.96
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 5,
+          "s": "mortalité qui peut excéder",
+          "t": "le pronostic est très sévère et défavorable, avec une mortalité qui peut excéder 80 % à 2 ans chez les patients qui ne reçoivent pas le traitement",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19764_essai_Scheinberg2011",
+      "evaluation_id": "CT-19764",
+      "nom_essai": "Scheinberg et al. 2011",
+      "nct_number": "Non renseigné",
+      "design": "Étude randomisée de phase 2, prospective, en ouvert",
+      "design_enum": "Phase_II_RCT_ouvert",
+      "phase": "II",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Adultes et enfants (30% <18 ans) atteints d'aplasie médullaire acquise",
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "comparateur_utilise": "Thymoglobuline de lapin + cyclosporine",
+      "nb_patient_traitement": "Non renseigné",
+      "nb_patient_comparateur": "Non renseigné",
+      "resultat_global": "Supériorité ATGAM + cyclosporine versus thymoglobuline + cyclosporine",
+      "QoL_flag": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Pas d'évaluation QoL dans étude Scheinberg (standards de l'époque)",
+      "qol_favorable": false,
+      "niveau_preuve": "Niveau_2",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": "Non renseigné",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "duree_traitement_moyenne_mois": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": "Non renseigné",
+      "maturite_donnees": "Matures",
+      "maturite_pct": null,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Majeur",
+      "nb_facteurs_stratification": 0,
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 6,
+          "s": "l'étude Scheinberg et al",
+          "t": "l'étude Scheinberg et al., publiée en 2011, sur laquelle nous allons revenir plus en détail par la suite",
+          "c": 0.96
+        },
+        {
+          "field": "design_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "étude de supériorité de phase 2",
+          "t": "l'étude Scheinberg est une étude institutionnelle réalisée par le National Institute of Health. Il s'agit d'une étude de supériorité de phase 2, randomisée, prospective, versus le comparateur cliniquement pertinent",
+          "c": 0.95
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 6,
+          "s": "environ 30 % de sujets",
+          "t": "Cette démonstration clinique incluait des enfants à hauteur d'environ 30 % de sujets de moins de 18 ans.",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19764_essai_RACE2022",
+      "evaluation_id": "CT-19764",
+      "nom_essai": "RACE 2022",
+      "nct_number": "Non renseigné",
+      "design": "Étude de phase 3 comparant ATGAM + cyclosporine avec ou sans eltrombopag",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "ITT",
+      "population_cible": "Patients atteints d'aplasie médullaire acquise",
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "comparateur_utilise": "ATGAM + cyclosporine sans eltrombopag",
+      "nb_patient_traitement": "Non renseigné",
+      "nb_patient_comparateur": "Non renseigné",
+      "resultat_global": "Amélioration significative de la qualité de vie ; survie globale à 2 ans : 85%",
+      "QoL_flag": true,
+      "qol_instruments": [
+        "Questionnaire qualité de vie (non spécifié)"
+      ],
+      "qol_resultats_brut": "Amélioration significative de la qualité de vie au fil du temps dans les deux groupes",
+      "qol_favorable": true,
+      "niveau_preuve": "Niveau_2",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": "24",
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "duree_traitement_moyenne_mois": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": "Non renseigné",
+      "maturite_donnees": "Intermédiaires",
+      "maturite_pct": null,
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "nb_facteurs_stratification": 0,
+      "evidence": [
+        {
+          "field": "nom_essai",
+          "f": "F1",
+          "p": 6,
+          "s": "L'étude RACE, publiée en 2022",
+          "t": "L'étude RACE, publiée en 2022, est l'étude de phase 3 comparant l'association ATGAM et cyclosporine avec ou sans eltrombopag.",
+          "c": 0.95
+        },
+        {
+          "field": "qol_favorable",
+          "f": "F1",
+          "p": 7,
+          "s": "amélioration significative de la qualité",
+          "t": "dans l'étude RACE publiée en 2022, qui évaluait l'association ATGAM et cyclosporine avec et sans eltrombopag, une amélioration significative de la qualité de vie a été observée au fil du temps dans les deux groupes",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19764_essai_Scheinberg2011_crit_RH",
+      "evaluation_id": "CT-19764",
+      "essai_id": "CT-19764_essai_Scheinberg2011",
+      "nom_critere": "Taux de réponse hématologique",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Pourcentage de patients répondeurs",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non applicable",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "Gain absolu de 29% à 3 mois et 31% à 6 mois",
+      "valeur_groupe_comparateur": "Taux de réponse inférieur avec thymoglobuline",
+      "gain_absolu": "29% à 3 mois, 31% à 6 mois",
+      "gain_absolu_num": 30.0,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Significatif",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Critère cliniquement pertinent car réponse hématologique entraîne besoin en transfusions diminué et minimise risque infectieux",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "gain_absolu_num",
+          "f": "F1",
+          "p": 6,
+          "s": "gain absolu de 29 %",
+          "t": "La différence en termes de taux de réponse hématologique est très nettement en faveur du groupe ATGAM et cyclosporine, avec un gain absolu de 29 % à 3 mois et de 31 % à 6 mois.",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19764_essai_Scheinberg2011_crit_OS",
+      "evaluation_id": "CT-19764",
+      "essai_id": "CT-19764_essai_Scheinberg2011",
+      "nom_critere": "Survie globale",
+      "nature_critere": "Dur",
+      "unite_mesure": "Pourcentage de survie",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": 2,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Exploratoire sans gestion multiplicité",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "Kaplan-Meier",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "96% (données censurées à greffe) ou 94% (données non censurées)",
+      "valeur_groupe_comparateur": "76% (données censurées) ou 70% (données non censurées)",
+      "gain_absolu": "20% (données censurées) ou 24% (données non censurées)",
+      "gain_absolu_num": 22.0,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Significatif",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "ARD",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Critère secondaire exploratoire sans gestion multiplicité. Résultat inattendu : hypothèse initiale était de démontrer supériorité thymoglobuline",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "valeur_groupe_traitement",
+          "f": "F1",
+          "p": 7,
+          "s": "Les taux de survie étaient de 96 %",
+          "t": "Les taux de survie étaient de 96 % dans le bras ATGAM + cyclosporine contre 76 % pour le bras thymoglobuline de lapin + cyclosporine, soit une amélioration du taux de survie d'environ 20 %.",
+          "c": 0.95
+        },
+        {
+          "field": "gain_absolu_num",
+          "f": "F1",
+          "p": 7,
+          "s": "amélioration du taux de survie d'environ 20 %",
+          "t": "soit une amélioration du taux de survie d'environ 20 % (données censurées) et 24% (données non censurées)",
+          "c": 0.93
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19764_essai_Scheinberg2011_tol",
+      "evaluation_id": "CT-19764",
+      "essai_id": "CT-19764_essai_Scheinberg2011",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves": "Profil de tolérance connu et jugé acceptable",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Aucun nouveau signal particulier de tolérance identifié",
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [],
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "ei_grade_max": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 7,
+          "s": "profil de tolérance est connu",
+          "t": "en termes de tolérance, le profil de tolérance est connu et jugé acceptable. C'est l'un des avantages du fait d'avoir autant de recul sur la molécule.",
+          "c": 0.94
+        },
+        {
+          "field": "signal_securite",
+          "f": "F1",
+          "p": 7,
+          "s": "Aucun nouveau signal particulier",
+          "t": "Aucun nouveau signal particulier de tolérance n'a été identifié dans la dernière période du PSUR.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19764_essai_Scheinberg2011_comp_01",
+      "evaluation_id": "CT-19764",
+      "essai_id": "CT-19764_essai_Scheinberg2011",
+      "nom_comparateur": "Thymoglobuline de lapin + cyclosporine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_type_enum": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 3,
+          "s": "thymoglobuline qui est considérée",
+          "t": "la thymoglobuline qui est considérée comme un comparateur cliniquement pertinent et qui était le standard de traitement avant l'étude comparative de Scheinberg et al. publiée en 2011",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19764_compHAS_01",
+      "evaluation_id": "CT-19764",
+      "nom_comparateur_HAS": "Thymoglobuline de lapin + cyclosporine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Ancien standard (avant 2011)",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "thymoglobuline était un standard",
+          "t": "la thymoglobuline était un standard de traitement avant l'arrivée d'ATGAM, avant l'étude de 2011 qui a démontré la supériorité d'ATGAM par rapport à la thymoglobuline",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19764_arg_TRANS_01",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Supériorité démontrée d'ATGAM + cyclosporine versus thymoglobuline sur taux de réponse hématologique avec gain absolu important (29-31%), critère cliniquement pertinent car entraîne réduction transfusions et risque infectieux.",
+      "extrait_textuel": "La différence en termes de taux de réponse hématologique est très nettement en faveur du groupe ATGAM et cyclosporine, avec un gain absolu de 29 % à 3 mois et de 31 % à 6 mois.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bruno Valtier",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "gain absolu de 29 %",
+          "t": "La différence en termes de taux de réponse hématologique est très nettement en faveur du groupe ATGAM et cyclosporine, avec un gain absolu de 29 % à 3 mois et de 31 % à 6 mois.",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_02",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Amélioration significative de la survie globale : 96% vs 76% (données censurées) ou 94% vs 70% (données non censurées), soit gain de 20-24%. Résultat cliniquement pertinent malgré caractère exploratoire.",
+      "extrait_textuel": "Les taux de survie étaient de 96 % dans le bras ATGAM + cyclosporine contre 76 % pour le bras thymoglobuline de lapin + cyclosporine, soit une amélioration du taux de survie d'environ 20 %.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Bruno Valtier",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Les taux de survie étaient de 96 %",
+          "t": "Les taux de survie étaient de 96 % dans le bras ATGAM + cyclosporine contre 76 % pour le bras thymoglobuline de lapin + cyclosporine, soit une amélioration du taux de survie d'environ 20 %.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_03",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Maladie rare, grave et mortelle (mortalité >80% à 2 ans sans traitement) avec composante pédiatrique importante (20% patients <18 ans). ATGAM est traitement de référence reconnu au PNDS.",
+      "extrait_textuel": "ATGAM est le traitement d'une maladie très rare, grave et pouvant engager le pronostic vital des patients adultes et aussi des patients pédiatriques. Il s'agit du traitement de référence reconnu dans le PNDS pour les patients atteints d'aplasie médullaire acquise non éligibles à la greffe.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Jérôme Mouminoux",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "maladie très rare, grave",
+          "t": "ATGAM est le traitement d'une maladie très rare, grave et pouvant engager le pronostic vital des patients adultes et aussi des patients pédiatriques.",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_04",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Profil de tolérance connu et jugé acceptable avec recul important (14 440 patients exposés cumulés). Aucun nouveau signal de sécurité identifié dans dernière période PSUR.",
+      "extrait_textuel": "le profil de tolérance est connu et jugé acceptable. C'est l'un des avantages du fait d'avoir autant de recul sur la molécule. Aucun nouveau signal particulier de tolérance n'a été identifié dans la dernière période du PSUR.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bruno Valtier",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "profil de tolérance est connu",
+          "t": "le profil de tolérance est connu et jugé acceptable. C'est l'un des avantages du fait d'avoir autant de recul sur la molécule.",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_05",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Survie globale est critère secondaire exploratoire sans gestion multiplicité des analyses. Hypothèse initiale de l'essai était de démontrer supériorité thymoglobuline, résultat inattendu en sens inverse.",
+      "extrait_textuel": "l'absence de données robustes sur l'amélioration de la survie globale des patients traités, dans la mesure où les résultats en termes de survie globale sont considérés comme exploratoires en l'absence de contrôle du risque alpha du fait de la multiplicité des analyses",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Sylvie Chevret",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 3,
+          "s": "absence de données robustes",
+          "t": "l'absence de données robustes sur l'amélioration de la survie globale des patients traités, dans la mesure où les résultats en termes de survie globale sont considérés comme exploratoires en l'absence de contrôle du risque alpha",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_06",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence de données robustes sur qualité de vie. Étude Scheinberg n'incluait pas évaluation QoL (standards de l'époque). Seule étude RACE 2022 rapporte amélioration QoL.",
+      "extrait_textuel": "l'absence de données sur un éventuel impact sur la qualité de vie",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation_dossier",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 4,
+          "s": "absence de données sur un éventuel impact",
+          "t": "l'absence de données sur un éventuel impact sur la qualité de vie",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_07",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "Selon doctrine HAS, ASMR III réservée à médicaments démontrant supériorité avec efficacité clinique en mortalité/morbidité dans contexte besoin médical insuffisamment couvert. ATGAM répond à ces critères.",
+      "extrait_textuel": "les ASMR III sont réservées à des médicaments qui ont démontré une supériorité associée à une efficacité clinique en termes de mortalité ou bien de morbidité, et ce dans un contexte de besoin médical insuffisamment couvert",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Hélène Grand",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "ASMR III sont réservées",
+          "t": "les ASMR III sont réservées à des médicaments qui ont démontré une supériorité associée à une efficacité clinique en termes de mortalité ou bien de morbidité, et ce dans un contexte de besoin médical insuffisamment couvert",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_08",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Effet sur mortalité est critère dur cliniquement pertinent. Amélioration 20-24% de survie globale est effet important indéniable, même si exploratoire.",
+      "extrait_textuel": "Je voulais insister sur le fait qu'apparemment, il y a un effet quand même sur la mortalité. C'est quand même un critère dur. C'est pour cela que j'étais assez sensible lorsqu'elle a présenté la doctrine entre l'ASMR III et l'ASMR IV.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Jean-Christophe Mercier",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "effet quand même sur la mortalité",
+          "t": "Je voulais insister sur le fait qu'apparemment, il y a un effet quand même sur la mortalité. C'est quand même un critère dur.",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_09",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Survie globale est critère secondaire exploratoire sans gestion multiplicité. En cancérologie, critères exploratoires ne sont pas retenus pour ASMR III. Analogie applicable ici.",
+      "extrait_textuel": "Quand il n'y a pas la survie globale de manière robuste, en général, en cancérologie on reste à l'ASMR IV. Analogiquement, cela me paraît être à peu près la même chose ici.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": "Michel Clanet",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "Quand il n'y a pas la survie",
+          "t": "Quand il n'y a pas la survie globale de manière robuste, en général, en cancérologie on reste à l'ASMR IV. Analogiquement, cela me paraît être à peu près la même chose ici.",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19764_arg_TRANS_10",
+      "evaluation_id": "CT-19764",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "ATGAM est devenu traitement de référence depuis 2011 suite à étude Scheinberg. Thymoglobuline n'est plus standard de traitement, moins utilisée actuellement.",
+      "extrait_textuel": "depuis 2011, ATGAM est devenu un traitement de référence. Du coup, depuis 2011, ATGAM est devenu un traitement de référence.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "depuis 2011, ATGAM est devenu",
+          "t": "depuis 2011, ATGAM est devenu un traitement de référence. Dans leurs observations écrites, ils revendiquent donc une absence de comparateur cliniquement pertinent.",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19764_ctx",
+    "evaluation_id": "CT-19764",
+    "ISP": "ATGAM n'était pas susceptible d'avoir un impact supplémentaire sur la santé publique",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Accès précoce post-AMM autorisé le 1er juin 2022",
+    "type_acces_precoce_enum": "Acces_precoce_pre_AMM",
+    "date_debut_acces_precoce": "2012-01-01",
+    "date_fin_acces_precoce": "2022-06-01",
+    "duree_acces_precoce_mois": 120,
+    "nombre_patients_acces_precoce": 800,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-12-01",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": true,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "nb_obligations_post_amm": 0,
+    "echeance_reexamen_amm": "Non renseigné",
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "Royaume-Uni (2014)",
+      "Allemagne (2020-2021)"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Union Européenne",
+        "organisme": "EMA",
+        "decision": "Recommended",
+        "date_decision": "2021-12-01",
+        "reference": "Procédure décentralisée",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non applicable",
+    "perspective": "Non applicable",
+    "horizon_annees": null,
+    "horizon_justification": "Non applicable",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": false,
+    "PSA_flag": false,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 100,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Environ 100 patients atteints d'aplasie médullaire acquise en France",
+    "population_cible_nombre": 100,
+    "population_cible_intervalle": [
+      80,
+      120
+    ],
+    "source_estimation_population": "Données labo",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": 100,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non applicable",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "2022-06-15",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-07-20",
+    "nb_total_reserves": 0,
+    "nb_total_reserves_mineures": 0,
+    "nb_totales_reserves_importantes": 0,
+    "nb_totales_reserves_majeures": 0,
+    "SMR_avant_audition_enum": "Important",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "IV",
+    "ASMR_après_audition_enum": "IV",
+    "type_critère_justification": "Survie globale",
+    "valeur_critère": "96% vs 76% (gain 20%)",
+    "impact_décision": "Maintien ASMR IV malgré arguments pour ASMR III",
+    "estimation_mesure_impact": "Amélioration survie 20-24% mais critère exploratoire sans gestion multiplicité",
+    "evidence": [
+      {
+        "field": "ISP_flag",
+        "f": "F1",
+        "p": 3,
+        "s": "n'était pas susceptible",
+        "t": "ATGAM n'était pas susceptible d'avoir un impact supplémentaire sur la santé publique",
+        "c": 0.95
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "s": "le 24 janvier 2022",
+        "t": "le 24 janvier 2022, nous avons reçu l'AMM française",
+        "c": 0.96
+      },
+      {
+        "field": "population_cible_nombre",
+        "f": "F1",
+        "p": 5,
+        "s": "environ une petite centaine",
+        "t": "En France, on estime qu'environ une petite centaine de patients sont concernés par l'aplasie médullaire acquise.",
+        "c": 0.94
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19764",
+    "texte_brut": "Commission de Transparence ATGAM – Audition – Inscription (CT) Mercredi 20 juillet 2022. Audition suite à avis du 15 juin 2022 pour demande d'inscription ATGAM 50 mg/ml solution à diluer pour perfusion. Indication : traitement immunosuppresseur standard pour formes modérées à sévères d'aplasie médullaire acquise chez adultes et enfants ≥2 ans non éligibles à greffe. Commission avait octroyé SMR Important et ASMR IV versus thymoglobuline. Laboratoire PFIZER revendique ASMR III. Arguments présentés : (1) Maladie rare, grave, mortelle (>80% mortalité à 2 ans sans traitement) avec composante pédiatrique (20% patients <18 ans). (2) Développement clinique robuste : étude Scheinberg 2011 (phase 2, randomisée, prospective) + étude RACE 2022 (phase 3) + données vie réelle (800 patients ATU). (3) Supériorité démontrée versus thymoglobuline : gain absolu 29-31% sur taux réponse hématologique à 3-6 mois. (4) Survie globale améliorée : 96% vs 76% (gain 20%) ou 94% vs 70% (gain 24%) selon censure greffe. (5) Profil tolérance acceptable avec recul important (14 440 patients exposés). (6) ATGAM est traitement de référence reconnu au PNDS depuis 2011. Questions Commission : (1) Sylvie Chevret : hypothèse initiale essai était de démontrer supériorité thymoglobuline, résultat inattendu en sens inverse. (2) Patrick Niaudet : optimisation process fabrication entre 2014-2018. Débat interne : (1) Survie globale est critère secondaire exploratoire sans gestion multiplicité. (2) En cancérologie, critères exploratoires ne justifient pas ASMR III. (3) Mais effet sur mortalité est critère dur cliniquement pertinent. (4) Absence données robustes QoL. Vote : 15 votants, 13 voix pour maintien ASMR IV, 2 voix contre. Conclusion : Maintien ASMR IV malgré arguments laboratoire pour ASMR III.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19764_smrasmr_01",
+      "evaluation_id": "CT-19764",
+      "indication_precise": "Traitement immunosuppresseur standard pour formes modérées à sévères d'aplasie médullaire acquise d'étiologie immunologique chez adultes et enfants ≥2 ans non éligibles à greffe de cellules souches",
+      "smr": "La Commission considère que le service médical rendu est important",
+      "smr_enum": "Important",
+      "asmr": "ASMR IV : amélioration mineure du service médical rendu par rapport à thymoglobuline",
+      "asmr_enum": "IV",
+      "smr_revendique": "Important",
+      "smr_revendique_enum": "Important",
+      "asmr_revendique": "ASMR III",
+      "asmr_revendique_enum": "III",
+      "justification_decisionnelle": "Supériorité démontrée sur taux réponse hématologique (gain 29-31%) et survie globale (gain 20-24%). Cependant, survie globale est critère secondaire exploratoire sans gestion multiplicité des analyses. Absence données robustes qualité de vie. Profil tolérance acceptable. Maladie rare, grave, mortelle avec besoin médical insuffisamment couvert.",
+      "population_cible_indication": "Adultes et enfants ≥2 ans atteints d'aplasie médullaire acquise non éligibles à greffe",
+      "ligne_traitement_indication": "1ère intention",
+      "comparateurs_references_indication": "Thymoglobuline de lapin + cyclosporine (ancien standard, moins utilisé actuellement)",
+      "comparateur_id_HAS": "CT-19764_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non applicable",
+        "population_age": "Adultes et enfants ≥2 ans"
+      },
+      "gain_survie_cite": true,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "service médical rendu important",
+          "t": "La commission avait octroyé un service médical rendu important",
+          "c": 0.96
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "ASMR IV, par rapport à la",
+          "t": "l'association ATGAM et cyclosporine apportait une amélioration du service médical rendu mineure, donc une ASMR IV, par rapport à la thymoglobuline",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19764_event_ATU_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2012-01-01",
+      "detail_brut": "ATU nominative pour ATGAM",
+      "detail_type_specifique": "ATU nominative",
+      "acteurs_impliques": [
+        "ANSM",
+        "PFIZER"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "ATU nominative depuis 2012",
+          "t": "le produit était disponible pour les patients français, d'abord dans le cadre d'une ATU nominative depuis 2012",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_ATU_02",
+      "evaluation_id": "CT-19764",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2018-01-01",
+      "detail_brut": "ATU de cohorte pour ATGAM",
+      "detail_type_specifique": "ATU de cohorte",
+      "acteurs_impliques": [
+        "ANSM",
+        "PFIZER"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "ATU de cohorte depuis 2018",
+          "t": "puis d'une ATU de cohorte depuis 2018",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_CT_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-15",
+      "detail_brut": "Avis Commission Transparence du 15 juin 2022",
+      "detail_type_specifique": "Avis CT : SMR Important, ASMR IV",
+      "acteurs_impliques": [
+        "Commission de Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Avis du 15 juin 2022",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 3,
+          "s": "avis du 15 juin",
+          "t": "Il s'agit d'une audition qui fait suite à l'avis du 15 juin dans le cadre de la demande d'inscription",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_AUDITION_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-07-20",
+      "detail_brut": "Audition PFIZER devant Commission Transparence",
+      "detail_type_specifique": "Audition laboratoire PFIZER",
+      "acteurs_impliques": [
+        "PFIZER",
+        "Commission de Transparence",
+        "HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Mercredi 20 juillet 2022",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 20 juillet 2022",
+          "t": "Mercredi 20 juillet 2022",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_VOTE_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "VOTE",
+      "event_date": "2022-07-20",
+      "detail_brut": "Vote maintien ASMR IV : 13 voix pour, 2 voix contre",
+      "detail_type_specifique": "Vote par appel nominatif",
+      "acteurs_impliques": [
+        "Commission de Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "15 votants",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 11,
+          "s": "13 voix pour le maintien",
+          "t": "Nous avons 13 voix pour le maintien et 2 voix contre le maintien. C'est donc un maintien des conclusions.",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_AMM_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-12-01",
+      "detail_brut": "AMM européenne en procédure décentralisée",
+      "detail_type_specifique": "AMM EMA",
+      "acteurs_impliques": [
+        "EMA",
+        "Allemagne (pays rapporteur)"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Décembre 2021",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "Au mois de décembre 2021",
+          "t": "Au mois de décembre 2021, nous avons reçu l'approbation de l'AMM européenne en procédure décentralisée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_AMM_FR_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-01-24",
+      "detail_brut": "AMM française",
+      "detail_type_specifique": "AMM France",
+      "acteurs_impliques": [
+        "ANSM"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "24 janvier 2022",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "le 24 janvier 2022",
+          "t": "le 24 janvier 2022, nous avons reçu l'AMM française",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19764_event_ACCES_PRECOCE_01",
+      "evaluation_id": "CT-19764",
+      "event_type": "ACCES_PRECOCE_FIN",
+      "event_date": "2022-06-01",
+      "detail_brut": "Accès précoce post-AMM autorisé par Collège HAS",
+      "detail_type_specifique": "Accès précoce post-AMM",
+      "acteurs_impliques": [
+        "Collège HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "1er juin 2022",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "le 1er juin 2022",
+          "t": "le 1er juin 2022, le Collège de la HAS, suite à votre recommandation favorable, a autorisé l'accès précoce post-AMM d'ATGAM",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Delais_Evaluation": {
+    "evaluation_id": "CT-19764",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": 232,
+    "delai_eval_depuis_transcription_jours": 0,
+    "delai_eval_depuis_evenement_initial_jours": 3650,
+    "nb_clockstops_presumes": 1,
+    "delai_total_clockstops_jours": 2190,
+    "clockstops_details": [
+      {
+        "clockstop_num": 1,
+        "date_demande": "2014-01-01",
+        "date_reponse": "2020-01-01",
+        "duree_jours": 2190,
+        "objet_demande": "200 questions sur sécurité virale et process de fabrication",
+        "evidence": [
+          {
+            "field": "clockstops_details",
+            "f": "F1",
+            "p": 5,
+            "s": "200 questions. Les questions",
+            "t": "Il s'en est suivi une série de 200 questions. Les questions portaient sur la sécurité virale de la molécule",
+            "c": 0.94
+          }
+        ]
+      }
+    ],
+    "delai_eval_flag_incomplet": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19764",
+    "is_orphan": true,
+    "classe_ATC_l2": "L04",
+    "aire_therapeutique": "Hématologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": true,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 2,
+    "n_rct": 2,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 30.0,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 24,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Taux de réponse hématologique",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": false,
+    "nb_votants": 15,
+    "voix_pour_pct": 86.7,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 1,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION"
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19764",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19764_essai_Scheinberg2011",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19764",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19764_essai_RACE2022",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19764_essai_Scheinberg2011",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19764_essai_Scheinberg2011_crit_RH",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19764_essai_Scheinberg2011",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19764_essai_Scheinberg2011_crit_OS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19764_essai_Scheinberg2011",
+      "tgt_type": "Comparateur",
+      "tgt_id": "CT-19764_essai_Scheinberg2011_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19764_essai_Scheinberg2011",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19764_essai_Scheinberg2011_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": [
+    {
+      "id": "CT-19764_annot_001",
+      "text": "Il s'agit d'une audition qui fait suite à l'avis du 15 juin dans le cadre de la demande d'inscription de la spécialité ATGAM en 50 milligrammes par millilitre, solution à diluer pour perfusion, qui est indiquée dans le cadre du traitement immunosuppresseur standard pour le traitement des formes modérées à sévères d'aplasie médullaire acquise d'étiologie immunologique connue ou suspectée chez les adultes et les enfants de 2 ans et plus qui ne peuvent pas recevoir une greffe de cellules souches ou pour lesquels un donneur compatible n'est pas disponible.",
+      "meta": {
+        "doc_id": "CT-19764",
+        "source": "TRANSCRIPTION",
+        "template": "TRANSCRIPTION",
+        "section_label_normalise": "PRESENTATION_DOSSIER",
+        "section_label_brut": "Présentation du dossier par chef de projet HAS",
+        "hierarchie": [
+          "ATGAM",
+          "Indication",
+          "Aplasie médullaire"
+        ],
+        "page_start": 3,
+        "page_end": 3,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 60,
+          "end": 65,
+          "label": "PRODUIT"
+        },
+        {
+          "start": 100,
+          "end": 150,
+          "label": "INDICATION"
+        }
+      ],
+      "relations": [
+        {
+          "head": 0,
+          "tail": 1,
+          "label": "HAS_INDICATION"
+        }
+      ]
+    },
+    {
+      "id": "CT-19764_annot_002",
+      "text": "La différence en termes de taux de réponse hématologique est très nettement en faveur du groupe ATGAM et cyclosporine, avec un gain absolu de 29 % à 3 mois et de 31 % à 6 mois.",
+      "meta": {
+        "doc_id": "CT-19764",
+        "source": "TRANSCRIPTION",
+        "template": "TRANSCRIPTION",
+        "section_label_normalise": "PRESENTATION_LABO",
+        "section_label_brut": "Présentation du laboratoire PFIZER",
+        "hierarchie": [
+          "ATGAM",
+          "Efficacité",
+          "Réponse hématologique"
+        ],
+        "page_start": 6,
+        "page_end": 6,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 50,
+          "end": 80,
+          "label": "CRITERE_JUGEMENT"
+        },
+        {
+          "start": 120,
+          "end": 145,
+          "label": "RESULTAT_EFFICACITE"
+        }
+      ],
+      "relations": [
+        {
+          "head": 0,
+          "tail": 1,
+          "label": "CRIT_HAS_METRIC"
+        }
+      ]
+    }
+  ]
+}

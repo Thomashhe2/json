@@ -1,0 +1,474 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "Non renseigné",
+  "evaluation_id": "Non renseigné",
+  "extraction_date": "Non renseigné",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "Non renseigné",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "Transcription_11_juillet_2022_psoriasis.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 18
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "SEG_001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Présentation générale - Évaluation des médicaments du psoriasis",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "heading_text": "Évaluation d'un ensemble de traitements systémiques biologiques dans l'indication du psoriasis en plaques",
+      "expected_fields": [
+        "indication",
+        "médicaments_évalués",
+        "contexte_réévaluation"
+      ],
+      "routing_hint": "Présentation initiale des produits et contexte",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "SEG_002",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Résultats de l'étude PSOBIOTEQ et données cliniques",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 10,
+      "heading_text": "Présentation détaillée par Bernard Guillot des résultats d'efficacité et tolérance",
+      "expected_fields": [
+        "efficacité",
+        "tolérance",
+        "données_long_terme",
+        "qualité_de_vie"
+      ],
+      "routing_hint": "Données cliniques principales",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "SEG_003",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et débats de la Commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 14,
+      "heading_text": "Débat entre Pierre Cochat et Bernard Guillot sur le positionnement thérapeutique",
+      "expected_fields": [
+        "positionnement_TALTZ",
+        "changement_ligne",
+        "comparateurs",
+        "ASMR"
+      ],
+      "routing_hint": "Débat décisionnel",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "SEG_004",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Votes de la Commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 16,
+      "page_end": 18,
+      "heading_text": "Procédure de vote sur le maintien SMR/ASMR et changement de ligne",
+      "expected_fields": [
+        "vote_unanimite",
+        "nb_votants",
+        "résultats_vote"
+      ],
+      "routing_hint": "Votes finaux",
+      "label_confidence": 0.95
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_01",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Maintien de l'efficacité à long terme confirmé pour tous les anti-IL17 et anti-IL23 : PASI 75, PASI 90 et PASI 100 se maintiennent chez les patients répondeurs à 52 semaines, avec 81,1% pour PASI 75 et 62% pour PASI 90 à 5 ans.",
+      "extrait_textuel": "À 5 ans, donc vraiment à long terme, la réponse PASI 75, PASI 90 ou PASI 100 se maintient chez les patients qui étaient partiellement répondeurs ou répondeurs à la semaine 52 dans les études. Il y a 81,1 % des répondeurs pour le PASI 75, 62 % pour le PASI 90 et 35 % pour le PASI 100.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 6,
+          "s": "À 5 ans donc vraiment",
+          "t": "À 5 ans, donc vraiment à long terme, la réponse PASI 75, PASI 90 ou PASI 100 se maintient chez les patients qui étaient partiellement répondeurs ou répondeurs à la semaine 52 dans les études.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_02",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Favorable",
+      "description": "Profil de tolérance maintenu tout au long du suivi avec absence de nouveaux signaux de sécurité détectés malgré 20 ans de recul et diffusion large de la prescription de ces médicaments.",
+      "extrait_textuel": "Aucun signal nouveau de tolérance n'a été mis en évidence avec le recul et avec la diffusion de la prescription de ces médicaments dont je vous rappelle que les premiers ont maintenant vingt ans.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 10,
+          "s": "Aucun signal nouveau",
+          "t": "Aucun signal nouveau de tolérance n'a été mis en évidence avec le recul et avec la diffusion de la prescription de ces médicaments dont je vous rappelle que les premiers ont maintenant vingt ans.",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_03",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Favorable",
+      "description": "Amélioration cliniquement pertinente de la qualité de vie documentée : 44% des patients COSENTYX et 75% des patients TALTZ montrent baisse d'au moins 5 points sur échelle QDV à 1-3 ans.",
+      "extrait_textuel": "L'échelle de qualité de vie, sur une étude observationnelle avec toutes les limites que cela peut avoir, montrait quand même une baisse d'au moins 5 points, c'est-à-dire cliniquement pertinente, chez 44 % des patients à 1 an pour COSENTYX et chez 75 % des malades à 36 mois pour TALTZ.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 7,
+          "s": "L'échelle de qualité",
+          "t": "L'échelle de qualité de vie, sur une étude observationnelle avec toutes les limites que cela peut avoir, montrait quand même une baisse d'au moins 5 points, c'est-à-dire cliniquement pertinente, chez 44 % des patients à 1 an.",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_04",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Recommandations françaises 2019 (consensus DELPHI) soutiennent positionnement en 2ème ligne : guselkumab (91%), risankizumab (85%), ixekizumab (83%) et secukinumab (82%) recommandés par experts après échec traitement systémique conventionnel.",
+      "extrait_textuel": "En cas d'échec ou d'intolérance au traitement systémique conventionnel, le guselkumab, un anti-IL23, le risankizumab, un autre anti-IL23, l'ixekizumab, un anti-IL17 et le secukinumab, un autre anti-IL17, étaient recommandés par respectivement 91 %, 85 %, 83 % et 82 % des experts.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 10,
+          "s": "En cas d'échec ou",
+          "t": "En cas d'échec ou d'intolérance au traitement systémique conventionnel, le guselkumab, un anti-IL23, le risankizumab, un autre anti-IL23, l'ixekizumab, un anti-IL17 et le secukinumab, un autre anti-IL17, étaient recommandés par respectivement 91 %, 85 %, 83 % et 82 % des experts.",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_05",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Données PSOBIOTEQ confirment conformité à l'AMM et efficacité en pratique réelle : prescriptions conformes dans 91% des cas COSENTYX, PASI 75 à 1 an de 85% et PASI 90 de 69%, comparables aux études pivots.",
+      "extrait_textuel": "Les prescriptions étaient conformes à l'AMM dans 91 % des cas. C'est-à-dire que c'était des psoriasis modérés à sévères, voire très sévères, et qui avaient déjà été traités antérieurement par des traitements systémiques non-biothérapie. Le PASI 75 à 1 an était de 85 % et le PASI 90 de 69 %.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 6,
+          "s": "Les prescriptions étaient",
+          "t": "Les prescriptions étaient conformes à l'AMM dans 91 % des cas. Le PASI 75 à 1 an était de 85 % et le PASI 90 de 69 %.",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_06",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence d'effet rebond confirmée mais données observationnelles PSOBIOTEQ limitées par pertes de vue importantes et limites méthodologiques inhérentes aux études observationnelles.",
+      "extrait_textuel": "Pour ce qui est des résultats d'efficacité, on ne pouvait pas en tenir compte puisqu'il y avait un grand nombre de patients perdus de vue au cours de l'étude.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Chef de Projet HAS",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 5,
+          "s": "Pour ce qui est",
+          "t": "Pour ce qui est des résultats d'efficacité, on ne pouvait pas en tenir compte puisqu'il y avait un grand nombre de patients perdus de vue au cours de l'étude.",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_07",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Changement de ligne de traitement justifié : passage de 2ème ligne (après 2+ traitements systémiques non biologiques) à 2ème ligne (après 1 traitement systémique) basé sur données d'efficacité en pratique réelle et recommandations d'experts.",
+      "extrait_textuel": "Dans les données de PSOBIOTEQ, très clairement, sur PSOBIOTEQ 1, on montrait bien que les patients étaient traités après généralement une ligne de traitement systémique non biologique. Là, dans les données de PSOBIOTEQ 2, c'est aussi le cas. Dans les données des études pivots, les patients avaient la plupart du temps, mais pas toujours, déjà eu une ligne de traitement non systémique.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 11,
+          "s": "Dans les données",
+          "t": "Dans les données de PSOBIOTEQ, très clairement, sur PSOBIOTEQ 1, on montrait bien que les patients étaient traités après généralement une ligne de traitement systémique non biologique.",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_08",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison_alternatives",
+      "direction_argument": "Favorable",
+      "description": "Anti-IL17 et anti-IL23 démontrés supérieurs aux anti-TNF historiques et anti-IL12/23 : méta-analyse Cochrane 2021 montre TALTZ supérieur pour PASI 90 vs traitements conventionnels et anti-TNF.",
+      "extrait_textuel": "TALTZ est associé à une plus grande probabilité d'atteindre le PASI 90 que les traitements conventionnels, que les anti-TNF, que les anti-IL12/23 et les anti-IL23, dont le guselkumab.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 9,
+          "s": "TALTZ est associé",
+          "t": "TALTZ est associé à une plus grande probabilité d'atteindre le PASI 90 que les traitements conventionnels, que les anti-TNF, que les anti-IL12/23 et les anti-IL23.",
+          "c": 0.92
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_09",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "Maintien du SMR Important justifié pour tous les anti-IL17 et anti-IL23 : données long terme et observationnelles confirment efficacité et tolérance sans dégradation du profil bénéfice-risque.",
+      "extrait_textuel": "Il n'y a pas de données nouvelles qui justifieraient une amélioration ni une dégradation des SMR ni des ASMR de ces médicaments.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Présentation_rapport",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 10,
+          "s": "Il n'y a pas",
+          "t": "Il n'y a pas de données nouvelles qui justifieraient une amélioration ni une dégradation des SMR ni des ASMR de ces médicaments.",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "Non_renseigné_arg_TRANS_10",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Positionnement TALTZ en ASMR IV dans la stratégie jugé inadapté par rapporteur : manque démonstration claire de supériorité vs tous les autres anti-IL17/IL23, argument de méta-analyse considéré comme fragile.",
+      "extrait_textuel": "Une ASMR IV dans la stratégie me paraît tout à fait inadaptée. Ce serait mettre en avant ce produit sans avoir la démonstration claire qu'il est meilleur que tous les autres. Il y a les arguments de la méta-analyse, je veux bien, mais je ne pense pas que l'on puisse s'appuyer sur la méta-analyse pour mettre en tête de gondole ce produit par rapport aux autres.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Bernard Guillot",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 11,
+          "s": "Une ASMR IV",
+          "t": "Une ASMR IV dans la stratégie me paraît tout à fait inadaptée. Ce serait mettre en avant ce produit sans avoir la démonstration claire qu'il est meilleur que tous les autres.",
+          "c": 0.91
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "Non_renseigné_vote_01",
+      "evaluation_id": "Non renseigné",
+      "sujet_vote": "Maintien SMR/ASMR et changement de ligne (tous produits sauf TALTZ)",
+      "date_vote": "2022-07-11",
+      "nb_votants": 13,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "vote_unanimite": true,
+      "resultat_vote": "Unanime - Maintien SMR/ASMR et changement de ligne approuvés",
+      "details_vote": "Vote sur le maintien du SMR et de l'ASMR pour tous les produits (sauf TALTZ) et changement de ligne de traitement de 2ème ligne (après 2+ traitements) à 2ème ligne (après 1 traitement systémique).",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 17,
+          "s": "Nous avons 13",
+          "t": "Nous avons 13 votants sur ce vote. Nous avons 13 voix pour le maintien et 13 voix pour le changement de ligne.",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "vote_id": "Non_renseigné_vote_02",
+      "evaluation_id": "Non renseigné",
+      "sujet_vote": "TALTZ - SMR, ASMR et changement de ligne",
+      "date_vote": "2022-07-11",
+      "nb_votants": 13,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 0,
+      "vote_unanimite": true,
+      "resultat_vote": "Unanime - Maintien SMR, changement de ligne approuvé, ASMR à déterminer",
+      "details_vote": "Vote séparé pour TALTZ : maintien SMR Important, changement de ligne approuvé, ASMR à voter (V vs IV par rapport à guselkumab).",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": 18,
+          "s": "Nous avons 13",
+          "t": "Nous avons 13 votants sur ce vote. Nous avons 13 voix pour le maintien et 13 voix pour le changement de ligne.",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "Non_renseigné_ctx",
+    "evaluation_id": "Non renseigné",
+    "type_avis_enum": "Réévaluation",
+    "type_avis": "Réévaluation SMR et ASMR",
+    "contexte_evaluation": "Réévaluation de 8 médicaments biologiques pour le psoriasis en plaques : anti-TNF (CIMZIA, REMSIMA), anti-IL17 (COSENTYX, TALTZ, KYNTHEUM), anti-IL23 (TREMFYA, ILUMETRI, SKYRIZI). Première réévaluation depuis 20 ans de biothérapies du psoriasis. Commission avait restreint remboursement à psoriasis sévère après 2+ traitements systémiques non biologiques. Laboratoires demandent élargissement au périmètre complet de l'AMM.",
+    "historique_Has_produit": "Évaluation initiale de ces médicaments remonte à 20 ans. Commission avait restreint le périmètre de remboursement au psoriasis en plaques chronique sévère défini par échec à au moins deux traitements parmi les traitements systémiques non biologiques et la photothérapie, avec forme étendue et/ou retentissement psychosocial important.",
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_vie_réelle",
+    "conditions_suivi": "Étude PSOBIOTEQ réalisée conjointement pour l'ensemble des spécialités selon une méthodologie et un protocole similaires. Objectifs : vérifier caractéristiques patients, respect du périmètre de remboursement, évaluation long terme de l'efficacité et tolérance, impact sur qualité de vie, évaluation des phénomènes d'échappement thérapeutique et d'effet rebond.",
+    "resultats_suivi": "PSOBIOTEQ 1 (4 médicaments) : résultats intermédiaires à 3 ans sur 5 ans montrent instauration conforme à l'AMM, gravité associée à forme étendue avec retentissement QDV modéré à important, majorité en échec des traitements systémiques conventionnels, profil de tolérance maintenu. PSOBIOTEQ 2 (3 médicaments) : données à 3 ans pour COSENTYX et TALTZ, données à 1 an pour KYNTHEUM, confirment conformité à l'AMM et efficacité en pratique réelle.",
+    "date_audition": "2022-07-11",
+    "SMR_avant_audition_enum": "Important",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "V",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Données long terme et observationnelles PSOBIOTEQ",
+    "valeur_critère": "PASI 75 85%, PASI 90 69% à 1 an en pratique réelle; maintien efficacité à 5 ans en études pivots",
+    "impact_décision": "Maintien SMR Important et ASMR V pour tous les produits sauf TALTZ; changement de ligne de traitement approuvé",
+    "estimation_mesure_impact": "Élargissement du périmètre de remboursement de psoriasis sévère après 2+ traitements à psoriasis modéré à sévère après 1 traitement systémique",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "Non renseigné",
+    "texte_brut": "Commission de Transparence - Lundi 11 juillet 2022. Évaluation de 8 médicaments biologiques pour le psoriasis en plaques : CIMZIA (certolizumab pegol, anti-TNF), KYNTHEUM (brodalumab, anti-IL17 récepteur), REMSIMA (infliximab sous-cutané, anti-TNF), COSENTYX (secukinumab, anti-IL17), TALTZ (ixekizumab, anti-IL17), TREMFYA (guselkumab, anti-IL23), ILUMETRI (tildrakizumab, anti-IL23), SKYRIZI (risankizumab, anti-IL23). Réévaluation SMR et ASMR après 20 ans de recul. Présentation par Bernard Guillot des résultats de l'étude PSOBIOTEQ et données cliniques long terme. Débat sur le positionnement thérapeutique, notamment TALTZ. Vote unanime (13/13) pour maintien SMR/ASMR et changement de ligne de traitement.",
+    "embedding": null
+  },
+  "SegmentIndex_Détaillé": [
+    {
+      "segment_id": "SEG_001_INTRO",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Présentation générale et contexte",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 2500,
+      "heading_text": "Évaluation d'un ensemble de traitements systémiques biologiques dans l'indication du psoriasis en plaques",
+      "contenu_resume": "Présentation des 8 médicaments évalués (anti-TNF, anti-IL17, anti-IL23), contexte de réévaluation après 20 ans, demandes des laboratoires pour élargissement du périmètre de remboursement.",
+      "expected_fields": [
+        "indication",
+        "médicaments_évalués",
+        "contexte_réévaluation",
+        "demandes_laboratoires"
+      ],
+      "routing_hint": "Présentation initiale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "SEG_002_PSOBIOTEQ",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Résultats PSOBIOTEQ et données cliniques",
+      "page_start": 4,
+      "page_end": 10,
+      "char_start": 2500,
+      "char_end": 8000,
+      "heading_text": "Présentation détaillée par Bernard Guillot des résultats d'efficacité et tolérance",
+      "contenu_resume": "Résultats PSOBIOTEQ 1 et 2, données long terme des études pivots, efficacité maintenue, tolérance, qualité de vie, absence d'effet rebond, données de pharmacovigilance.",
+      "expected_fields": [
+        "efficacité",
+        "tolérance",
+        "données_long_terme",
+        "qualité_de_vie",
+        "pharmacovigilance"
+      ],
+      "routing_hint": "Données cliniques principales",
+      "label_confidence": 0.92
+    },
+    {
+      "segment_id": "SEG_003_DEBAT",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et débats de la Commission",
+      "page_start": 11,
+      "page_end": 14,
+      "char_start": 8000,
+      "char_end": 12000,
+      "heading_text": "Débat entre Pierre Cochat et Bernard Guillot",
+      "contenu_resume": "Questions sur positionnement TALTZ, changement de ligne, comparateurs, interchangeabilité des anti-IL17/IL23, recommandations d'experts, développements futurs.",
+      "expected_fields": [
+        "positionnement_TALTZ",
+        "changement_ligne",
+        "comparateurs",
+        "ASMR",
+        "recommandations"
+      ],
+      "routing_hint": "Débat décisionnel",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "SEG_004_VOTE",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Procédure de vote",
+      "page_start": 16,
+      "page_end": 18,
+      "char_start": 12000,
+      "char_end": 14000,
+      "heading_text": "Votes de la Commission",
+      "contenu_resume": "Vote unanime (13/13) sur maintien SMR/ASMR et changement de ligne pour tous les produits sauf TALTZ. Vote séparé pour TALTZ.",
+      "expected_fields": [
+        "vote_unanimite",
+        "nb_votants",
+        "résultats_vote"
+      ],
+      "routing_hint": "Votes finaux",
+      "label_confidence": 0.95
+    }
+  ]
+}

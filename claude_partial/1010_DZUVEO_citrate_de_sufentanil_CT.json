@@ -1,0 +1,1499 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19789",
+  "evaluation_id": "CT-19789",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "CT-19789_DZUVEO_sufentanil_Avis_Definitif.pdf",
+        "type": "CT",
+        "page_count": 35
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19789_seg_001",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L'essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L'essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "indication",
+        "smr",
+        "asmr"
+      ],
+      "routing_hint": "Synthèse exécutive",
+      "label_confidence": 0.98
+    },
+    {
+      "segment_id": "CT-19789_seg_002",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication concernée",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 1200,
+      "char_end": 1800,
+      "heading_text": "Motif de l'examen",
+      "expected_fields": [
+        "indication",
+        "type_avis"
+      ],
+      "routing_hint": "Indication et motif",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19789_seg_003",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "SMR",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 1800,
+      "char_end": 2200,
+      "heading_text": "SMR",
+      "expected_fields": [
+        "smr_enum",
+        "justification_smr"
+      ],
+      "routing_hint": "Service Médical Rendu",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19789_seg_004",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "ASMR",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": 2200,
+      "char_end": 3200,
+      "heading_text": "ASMR",
+      "expected_fields": [
+        "asmr_enum",
+        "justification_asmr"
+      ],
+      "routing_hint": "Amélioration du Service Médical Rendu",
+      "label_confidence": 0.99
+    },
+    {
+      "segment_id": "CT-19789_seg_005",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 8,
+      "char_start": 4500,
+      "char_end": 7000,
+      "heading_text": "04 BESOIN MEDICAL",
+      "expected_fields": [
+        "besoin_medical_brut",
+        "besoin_medical_interprete"
+      ],
+      "routing_hint": "Analyse du besoin médical",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19789_seg_006",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 8,
+      "page_end": 12,
+      "char_start": 7000,
+      "char_end": 10000,
+      "heading_text": "05 COMPARATEURS CLINIQUEMENT PERTINENTS",
+      "expected_fields": [
+        "comparateurs_list",
+        "justification_comparateurs"
+      ],
+      "routing_hint": "Analyse comparateurs",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19789_seg_007",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 12,
+      "page_end": 29,
+      "char_start": 10000,
+      "char_end": 25000,
+      "heading_text": "07 ANALYSE DES DONNEES DISPONIBLES",
+      "expected_fields": [
+        "essais_cliniques",
+        "efficacite",
+        "tolerance"
+      ],
+      "routing_hint": "Données cliniques et études",
+      "label_confidence": 0.97
+    },
+    {
+      "segment_id": "CT-19789_seg_008",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 25,
+      "page_end": 28,
+      "char_start": 20000,
+      "char_end": 24000,
+      "heading_text": "07.3 Tolérance",
+      "expected_fields": [
+        "ei_graves",
+        "ei_frequents",
+        "sae_pct"
+      ],
+      "routing_hint": "Profil de sécurité",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19789_seg_009",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 30,
+      "page_end": 33,
+      "char_start": 24000,
+      "char_end": 27000,
+      "heading_text": "08 PLACE DANS LA STRATEGIE THERAPEUTIQUE",
+      "expected_fields": [
+        "place_therapeutique",
+        "population_cible"
+      ],
+      "routing_hint": "Positionnement thérapeutique",
+      "label_confidence": 0.96
+    },
+    {
+      "segment_id": "CT-19789_seg_010",
+      "section_label_normalise": "CONCLUSIONS_COMMISSION",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 33,
+      "page_end": 35,
+      "char_start": 27000,
+      "char_end": 29000,
+      "heading_text": "09 CONCLUSIONS DE LA COMMISSION",
+      "expected_fields": [
+        "smr_final",
+        "asmr_final",
+        "avis_favorable"
+      ],
+      "routing_hint": "Conclusions et avis final",
+      "label_confidence": 0.99
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19789_prod_001",
+      "evaluation_id": "CT-19789",
+      "produit_nom_commercial": "DZUVEO",
+      "dci": "sufentanil",
+      "dosage_concentration": "30 µg",
+      "forme_pharmaceutique": "comprimé sublingual",
+      "forme_pharma_enum": "Sublingual",
+      "voie_administration": "sublinguale",
+      "conditionnement": "applicateur unidose à usage unique",
+      "cip13": "3400955076018",
+      "code_atc": "N01AH03",
+      "titulaire_amm": "AGUETTANT",
+      "date_amm": "2018-06-26",
+      "procedure_amm": "centralisée",
+      "statut_amm": "AMM_standard",
+      "statut_commercialisation": "commercialisé",
+      "medicament_stupefiant": true,
+      "reserve_hospitaliere": true,
+      "prescription_limite_jours": 2,
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "DZUVEO 30 µg",
+          "t": "DZUVEO 30 µg, comprimé sublingual",
+          "c": 0.99
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "sufentanil",
+          "t": "sufentanil DZUVEO 30 µg, comprimé sublingual",
+          "c": 0.99
+        },
+        {
+          "field": "cip13",
+          "f": "F1",
+          "p": 35,
+          "s": "CIP : 3400955076018",
+          "t": "CIP : 3400955076018",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19789",
+      "Num_avis": "CT-19789",
+      "produit_nom": "DZUVEO",
+      "dci": "sufentanil",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimé sublingual",
+      "dosage": "30 µg",
+      "indication": "Traitement des douleurs aiguës modérées à sévères chez l'adulte",
+      "classe_ATC": "N01AH03",
+      "pathologie": "Douleurs aiguës",
+      "maladie_rare": false,
+      "ligne_traitement_enum": "3L",
+      "sous_groupe_population": "Patients en soins post-opératoires ou en service d'urgence",
+      "cim10_principal": "R07.9",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Douleur thoracique, sans précision",
+      "source_cim10": "Déduit de pathologie",
+      "aire_therapeutique_niveau_1": "Système nerveux",
+      "aire_therapeutique_niveau_2": "Analgésiques",
+      "aire_therapeutique_niveau_3": "Opioïdes",
+      "source_aire_therapeutique": "Déduit ATC N01AH03",
+      "design_etude": "Études de phase II et III, randomisées, double-aveugle, versus placebo",
+      "niveau_preuve_brut": "Études contrôlées versus placebo en douleur post-opératoire",
+      "niveau_preuve_interprete": "Niveau_2",
+      "besoin_medical_brut": "Le besoin médical est actuellement couvert par les antalgiques et anesthésiques disponibles",
+      "besoin_medical_interprete": "Couvert",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "gravite_patho": "La douleur aiguë est adaptative en ce sens qu'elle a une fonction d'alerte et de sauvegarde de l'intégrité de l'organisme. Elle est de courte durée (généralement quelques semaines au maximum) et diminue avec la guérison de la blessure ou de la maladie sous-jacente.",
+      "gravite_patho_enum": [
+        "Modérée"
+      ],
+      "type_population_cible": "Adultes en soins post-opératoires ou en service d'urgence",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : antalgiques opioïdes forts (morphine, oxycodone, fentanyl) utilisés dans les douleurs aiguës intenses et/ou rebelles aux antalgiques de niveau inférieur",
+      "smr": "Important dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence",
+      "smr_enum": "Important",
+      "asmr": "DZUVEO 30 µg, comprimé sublingual n'apporte pas d'amélioration du service médical rendu (ASMR V) dans la prise en charge des douleurs aiguës modérées à sévères",
+      "asmr_enum": "V",
+      "ISP": "DZUVEO n'est pas susceptible d'avoir un impact supplémentaire sur la santé publique",
+      "ISP_flag": false,
+      "ISP_categorie": "Pas_ISP",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "ZALVISO 15 µg (sufentanil), comprimé sublingual inscrit le 28/04/2016 avec SMR Important et ASMR V, arrêt de commercialisation déclaré le 12/05/2021",
+      "historique_ASMR_comparateurs": "Morphine (ASMR V), Oxycodone (ASMR V), Fentanyl (ASMR V)",
+      "concurrence_therapeutique_recente": "Nombreuses alternatives médicamenteuses disponibles dans l'indication",
+      "vote_unanimite": false,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-09-14",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR IMPORTANT",
+          "t": "IMPORTANT dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence",
+          "c": 0.99
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "ASMR V",
+          "t": "DZUVEO 30 µg, comprimé sublingual n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+          "c": 0.99
+        },
+        {
+          "field": "ISP_flag",
+          "f": "F1",
+          "p": 3,
+          "s": "ISP",
+          "t": "DZUVEO n'est pas susceptible d'avoir un impact supplémentaire sur la santé publique",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19789_essai_SAP202",
+      "evaluation_id": "CT-19789",
+      "essai_nom": "SAP202",
+      "nct_number": "NCT01710345",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "II",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "2:2:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Age (18-64 ans et 65-80 ans)"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 0.2,
+      "maturite_donnees": "Matures",
+      "population_cible": "Patients âgés de 18-80 ans programmés pour une bunionectomie primaire, unilatérale du premier métatarsien seule ou associée à une correction d'orteil en marteau du même côté, avec sédation IV et analgésie locale par bloc de Mayo",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 80,
+      "nb_patient_comparateur": 20,
+      "nb_patients_inclus": "101",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "États-Unis",
+          "nb_patients": "101",
+          "pourcentage": "100%"
+        }
+      ],
+      "date_fin_inclusion": "février 2013",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "resultat_global": "Supériorité du sufentanil 30 µg versus placebo sur le critère principal SPID12 (p=0,003)",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_2",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 0.2,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 1,
+      "age_min_num": 18,
+      "age_max_num": 80,
+      "ligne_traitement_essai_enum": "3L",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "duree_traitement_moyenne_mois": 0.2,
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "SAP202",
+          "t": "étude de phase II (SAP202, Singla) réalisée chez 101 patients traités par sufentanil 20 µg, sufentanil 30 µg ou placebo, comprimés sublinguaux",
+          "c": 0.98
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 14,
+          "s": "NCT01710345",
+          "t": "N° d'enregistrement : NCT01710345",
+          "c": 0.99
+        },
+        {
+          "field": "nb_patients_inclus",
+          "f": "F1",
+          "p": 16,
+          "s": "101 patients",
+          "t": "Parmi les 179 patients sélectionnés dans l'étude, 101 patients ont été randomisés : sufentanil 20 µg (n=41), sufentanil 30 µg (n=40), placebo (n=20)",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19789_essai_SAP301",
+      "evaluation_id": "CT-19789",
+      "essai_nom": "SAP301",
+      "nct_number": "NCT02356588",
+      "design": "RCT",
+      "design_enum": "Phase_III_RCT_DB",
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "2:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "Sexe"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 2,
+      "maturite_donnees": "Matures",
+      "population_cible": "Patients âgés de 18-80 ans programmés pour l'une des interventions suivantes sous anesthésie générale ou rachidienne ne comprenant pas d'opioïdes intrathécaux : abdominoplastie, hernioplastie inguinale ouverte ou chirurgie abdominale laparoscopique",
+      "comparateur_utilise": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "nb_patient_traitement": 109,
+      "nb_patient_comparateur": 54,
+      "nb_patients_inclus": "163",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "États-Unis",
+          "nb_patients": "163",
+          "pourcentage": "100%"
+        }
+      ],
+      "date_fin_inclusion": "juin 2015",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "resultat_global": "Supériorité du sufentanil 30 µg versus placebo sur le critère principal SPID12 (p<0,001)",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_2",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 2,
+      "arret_premature_flag": false,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": false,
+      "qol_favorable": false,
+      "nb_facteurs_stratification": 1,
+      "age_min_num": 18,
+      "age_max_num": 80,
+      "ligne_traitement_essai_enum": "3L",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": 100,
+      "duree_traitement_moyenne_mois": 2,
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 19,
+          "s": "SAP301",
+          "t": "étude de phase III (SAP301, Minkowitz), réalisée chez 163 patients traités par sufentanil 30 µg ou placebo, comprimés sublinguaux",
+          "c": 0.98
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 19,
+          "s": "NCT02356588",
+          "t": "N° d'enregistrement : NCT02356588",
+          "c": 0.99
+        },
+        {
+          "field": "nb_patients_inclus",
+          "f": "F1",
+          "p": 21,
+          "s": "163 patients",
+          "t": "Parmi les 212 patients sélectionnés dans l'étude, 163 patients ont été randomisés : sufentanil 30 µg (n=109), placebo (n=54)",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19789_essai_SAP302",
+      "evaluation_id": "CT-19789",
+      "essai_nom": "SAP302",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel",
+      "design_enum": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 0.07,
+      "maturite_donnees": "Préliminaires",
+      "population_cible": "Patients adultes se présentant aux urgences avec une douleur modérée à sévère (≥ 4 sur l'échelle d'évaluation numérique) liée à un traumatisme ou une blessure",
+      "comparateur_utilise": "Aucun",
+      "comparateur_type_enum": "Aucun",
+      "nb_patient_traitement": 76,
+      "nb_patient_comparateur": 0,
+      "nb_patients_inclus": "76",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "États-Unis",
+          "nb_patients": "76",
+          "pourcentage": "100%"
+        }
+      ],
+      "date_fin_inclusion": "juin 2016",
+      "resultat_global": "Efficacité démontrée en douleur aiguë d'urgence, SPID1 moyen de 2,11 (IC95% [1,63 ; 2,59])",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_4",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 0.07,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.07,
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 24,
+          "s": "SAP302",
+          "t": "L'étude SAP302 (octobre 2015 - juin 2016) multicentrique a été réalisée en ouvert dans 3 centres aux Etats-Unis",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19789_essai_SAP303",
+      "evaluation_id": "CT-19789",
+      "essai_nom": "SAP303",
+      "nct_number": "Non renseigné",
+      "design": "Observationnel",
+      "design_enum": "Observationnel_prospectif",
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 0.2,
+      "maturite_donnees": "Préliminaires",
+      "population_cible": "Patients adultes âgés de plus de 40 ans ayant subi une intervention chirurgicale sous anesthésie générale ou anesthésie rachidienne n'incluant pas d'opioïdes intrathécaux",
+      "comparateur_utilise": "Aucun",
+      "comparateur_type_enum": "Aucun",
+      "nb_patient_traitement": 140,
+      "nb_patient_comparateur": 0,
+      "nb_patients_inclus": "140",
+      "nb_patients_inclus_par_pays": [
+        {
+          "pays": "États-Unis",
+          "nb_patients": "140",
+          "pourcentage": "100%"
+        }
+      ],
+      "date_fin_inclusion": "août 2016",
+      "resultat_global": "Efficacité démontrée en douleur post-opératoire, SPID12 moyen de 36,0 (IC95% [31,65 ; 40,43])",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_4",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 0.2,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.2,
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 24,
+          "s": "SAP303",
+          "t": "L'étude SAP303 (mars 2016 - août 2016) est une étude multicentrique, mono-bras, réalisée en ouvert dans 9 centres aux Etats-Unis",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19789_essai_SAP202_crit_SPID12",
+      "essai_id": "CT-19789_essai_SAP202",
+      "evaluation_id": "CT-19789",
+      "critere_nom": "SPID12 (Somme des différences des scores d'intensité de la douleur sur 12 heures)",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Score numérique",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non applicable",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "ANCOVA",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Centre",
+        "Intensité de la douleur de base"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "Sufentanil 30 µg : LSM -7,12 (SE 3,64) [IC95% -14,35 ; 0,11]",
+      "valeur_groupe_comparateur": "Placebo : LSM -7,12 (SE 3,64) [IC95% -14,35 ; 0,11]",
+      "gain_absolu": "Différence vs placebo : 13,66 (IC95% [4,79 ; 22,52])",
+      "gain_absolu_num": 13.66,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "[4,79 ; 22,52]",
+      "IC95_low_num": 4.79,
+      "IC95_high_num": 22.52,
+      "p_value": "p = 0,003",
+      "p_value_num": 0.003,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Supériorité du sufentanil 30 µg versus placebo démontrée sur le critère principal SPID12",
+      "primaire_ou_secondaire": "Primaire",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 15,
+          "s": "SPID12",
+          "t": "SPID2112 (Somme des différences des scores d'intensité de la douleur par rapport aux scores de base sur 12 heures, pondérée par les intervalles de temps entre les points d'évaluation)",
+          "c": 0.98
+        },
+        {
+          "field": "p_value_num",
+          "f": "F1",
+          "p": 17,
+          "s": "p = 0,003",
+          "t": "Diff vs placebo [IC 95%] 13,66 (4,47) [4,79 ;22,52] p 0,003",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19789_essai_SAP301_crit_SPID12",
+      "essai_id": "CT-19789_essai_SAP301",
+      "evaluation_id": "CT-19789",
+      "critere_nom": "SPID12 (Somme des différences des scores d'intensité de la douleur sur 12 heures)",
+      "nature_critere": "Intermédiaire",
+      "unite_mesure": "Score numérique",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": "Non applicable",
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 1,
+      "test_statistique_utilise": "ANCOVA",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "Centre",
+        "Intensité de la douleur de base"
+      ],
+      "analyse_stratifiee": true,
+      "valeur_groupe_traitement": "Sufentanil 30 µg : LSM 25,84 (SE 1,71) [IC95% 22,46 ; 29,22]",
+      "valeur_groupe_comparateur": "Placebo : LSM 13,14 (SE 2,35) [IC95% 8,50 ; 17,79]",
+      "gain_absolu": "Différence vs placebo : 12,70 (IC95% [7,16 ; 18,23])",
+      "gain_absolu_num": 12.7,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non applicable",
+      "HR_RR_OR_num": null,
+      "IC95": "[7,16 ; 18,23]",
+      "IC95_low_num": 7.16,
+      "IC95_high_num": 18.23,
+      "p_value": "p < 0,001",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Supériorité du sufentanil 30 µg versus placebo démontrée sur le critère principal SPID12 avec p<0,001",
+      "primaire_ou_secondaire": "Primaire",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "critere_nom",
+          "f": "F1",
+          "p": 20,
+          "s": "SPID23",
+          "t": "SPID2312 (Somme des différences des scores d'intensité de la douleur par rapport aux scores de base sur 12 heures, pondérée par les intervalles de temps entre les points d'évaluation)",
+          "c": 0.98
+        },
+        {
+          "field": "p_value_num",
+          "f": "F1",
+          "p": 23,
+          "s": "p < 0,001",
+          "t": "Diiff vs placebo [IC 95%] 12,70 (2,80) [7,16 ; 18,23] p < 0,001",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19789_essai_SAP202_tol",
+      "evaluation_id": "CT-19789",
+      "essai_id": "CT-19789_essai_SAP202",
+      "ae_total_pct": 80.0,
+      "ae_total_pct_comparateur": 15.0,
+      "sae_pct": 2.5,
+      "sae_pct_comparateur": 0.0,
+      "discontinuations_ae_pct": 5.0,
+      "discontinuations_ae_pct_comparateur": 0.0,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": false,
+      "EI_graves": "EI sévère : 1 patient (2,5%) dans le groupe sufentanil 30 µg. EI grave (non fatal) : 2 patients (5%) dans le groupe sufentanil 20 µg (non relié au traitement par l'investigateur - complications infectieuses survenues après les 12 heures)",
+      "EI_frequents": "Nausées (35% sufentanil 20 µg, 62,5% sufentanil 30 µg, 0% placebo), Vomissements (15%, 27,5%, 0%), Étourdissements (12,5%, 20%, 5%), Somnolence (5%, 22,5%, 0%), Prurit (12,5%, 10%, 0%)",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 62.5,
+          "incidence_pct_comparateur": 0.0,
+          "n_patients_traitement": 25,
+          "n_patients_comparateur": 0,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 26,
+              "s": "nausées",
+              "t": "nausées (35%, 62,5%, 0%)",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Vomissements",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 27.5,
+          "incidence_pct_comparateur": 0.0,
+          "n_patients_traitement": 11,
+          "n_patients_comparateur": 0,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 26,
+              "s": "vomissements",
+              "t": "vomissements (15%, 27,5% et 0%)",
+              "c": 0.95
+            }
+          ]
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 62.5,
+          "incidence_pct_comparateur": 0.0,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Somnolence",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 22.5,
+          "incidence_pct_comparateur": 0.0,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "3",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 26,
+          "s": "Au moins un EI",
+          "t": "Au moins un EI 23 (57,5) 32 (80) 3 (15)",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-19789_essai_SAP301_tol",
+      "evaluation_id": "CT-19789",
+      "essai_id": "CT-19789_essai_SAP301",
+      "ae_total_pct": 57.9,
+      "ae_total_pct_comparateur": 63.0,
+      "sae_pct": 0.0,
+      "sae_pct_comparateur": 3.7,
+      "discontinuations_ae_pct": 0.9,
+      "discontinuations_ae_pct_comparateur": 3.7,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": false,
+      "deaths_reported": false,
+      "EI_graves": "EI sévère : 5 patients (4,7%) dans le groupe sufentanil 30 µg, 1 patient (1,9%) dans le groupe placebo. EI grave (non fatal) : 0 dans le groupe sufentanil, 2 patients (3,7%) dans le groupe placebo (syncope, hémiparésie sévère)",
+      "EI_frequents": "Nausées (32,7% sufentanil 30 µg vs 29,6% placebo), Céphalées (19,6% vs 18,5%), Vomissements (7,5% vs 1,9%), Étourdissements (5,6% vs 3,7%), Somnolence (2,8% vs 3,7%), Prurit (1,9% vs 3,7%), Hypotension (4,7% vs 3,7%)",
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 32.7,
+          "incidence_pct_comparateur": 29.6,
+          "n_patients_traitement": 35,
+          "n_patients_comparateur": 16,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": [
+            {
+              "field": "EI_graves_detailles",
+              "f": "F1",
+              "p": 26,
+              "s": "nausées",
+              "t": "nausées (32,7% vs 29,6%)",
+              "c": 0.95
+            }
+          ]
+        },
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 19.6,
+          "incidence_pct_comparateur": 18.5,
+          "n_patients_traitement": 21,
+          "n_patients_comparateur": 10,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 32.7,
+          "incidence_pct_comparateur": 29.6,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "4",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 26,
+          "s": "Au moins un EI",
+          "t": "Au moins un EI 62 (57,9) 34 (63)",
+          "c": 0.97
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19789_essai_SAP202_comp_01",
+      "essai_id": "CT-19789_essai_SAP202",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "famille_comparateur": "Placebo",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19789_essai_SAP301_comp_01",
+      "essai_id": "CT-19789_essai_SAP301",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_type_enum": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "famille_comparateur": "Placebo",
+      "evidence": []
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19789_compHAS_01",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "Morphine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19789_compHAS_02",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "Oxycodone",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19789_compHAS_03",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "Fentanyl",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Chimiotherapie",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19789_compHAS_04",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "Anesthésiques locaux",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    },
+    {
+      "comparateur_id": "CT-19789_compHAS_05",
+      "evaluation_id": "CT-19789",
+      "nom_comparateur_HAS": "AINS",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": []
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19789_arg_CT_01",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Démonstration de l'efficacité du sufentanil 30 µg versus placebo dans la douleur aiguë post-opératoire modérée à sévère avec supériorité statistiquement significative sur le critère principal SPID12 (p=0,003 dans SAP202 et p<0,001 dans SAP301)",
+      "extrait_textuel": "Comme attendu, l'analyse des données d'efficacité a montré un effet antalgique opiacé du sufentanil supérieur à celui du placebo dans ces deux études contrôlées",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 29,
+          "s": "effet antalgique",
+          "t": "l'analyse des données d'efficacité a montré un effet antalgique opiacé du sufentanil supérieur à celui du placebo",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_02",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "description": "Profil de tolérance préoccupant avec taux élevé d'effets indésirables : 80% des patients dans SAP202 et 58% dans SAP301 ont rapporté au moins un EI, notamment nausées (30-58%), vomissements (6-28%), somnolence (20%), et risque de dépression respiratoire",
+      "extrait_textuel": "Les effets indésirables du sufentanil sont bien connus, notamment ses effets dépresseurs respiratoires et ses effets gastro-intestinaux. Au cours des études contrôlées, les pourcentages de patients ayant rapporté au moins un EI dans les groupes sufentanil 30 µg ont été de 80% dans l'étude SAP202 et de 58% au cours de l'étude SAP301",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 29,
+          "s": "effets indésirables",
+          "t": "Les pourcentages de patients ayant rapporté au moins un EI dans les groupes sufentanil 30 µg ont été de 80% dans l'étude SAP202 et de 58% au cours de l'étude SAP301",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_03",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence d'étude contrôlée versus comparateurs actifs (morphine, oxycodone, fentanyl) et incertitudes majeures sur la transposabilité des résultats à la pratique clinique française. Les études ont été réalisées avec des protocoles anesthésiques qui ne correspondent pas nécessairement aux protocoles français",
+      "extrait_textuel": "Aucune étude contrôlée versus comparateur actif n'a été réalisée avec la spécialité. Il persiste des incertitudes sur la transposabilité des résultats des études menées dans l'analgésie post-opératoire (SAP202, SAP301). Ces études ont été réalisées entre 2012 et 2015 aux Etats-Unis dans le cadre de protocoles d'anesthésie qui ne correspondent pas nécessairement aux protocoles chirurgicaux pratiqués en France",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 30,
+          "s": "Aucune étude contrôlée",
+          "t": "Aucune étude contrôlée versus comparateur actif n'a été réalisée avec la spécialité",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_04",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Défavorable",
+      "description": "Le besoin médical est actuellement couvert par les antalgiques et anesthésiques disponibles. Il existe de nombreuses alternatives médicamenteuses dans l'indication, notamment les antalgiques opioïdes forts (morphine, oxycodone) et les techniques d'analgésie multimodale",
+      "extrait_textuel": "Le besoin médical est actuellement couvert par les antalgiques et anesthésiques disponibles. Il existe de nombreuses alternatives médicamenteuses dans l'indication",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 30,
+          "s": "besoin médical",
+          "t": "Le besoin médical est actuellement couvert par les antalgiques et anesthésiques disponibles",
+          "c": 0.97
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_05",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Défavorable",
+      "description": "Limitations importantes à l'utilisation de DZUVEO : restriction des modalités d'administration excluant l'analgésie contrôlée par le patient (ACP) pourtant préconisée dans de nombreuses situations, et inconvénients des morphiniques (efficacité moindre sur douleur à la mobilisation, effets indésirables notables, prolongation iléus post-opératoire)",
+      "extrait_textuel": "Les limites à l'utilisation de DZUVEO dans les douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs portent principalement sur la restriction des modalités d'administration, qui exclut l'analgésie contrôlée par le patient pourtant préconisée dans de nombreuses situations",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 30,
+          "s": "restriction des modalités",
+          "t": "Les limites à l'utilisation de DZUVEO portent principalement sur la restriction des modalités d'administration, qui exclut l'analgésie contrôlée par le patient",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_06",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "SMR Important reconnu dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence, justifié par l'efficacité démontrée versus placebo et le rapport efficacité/effets indésirables important",
+      "extrait_textuel": "Le rapport efficacité/effets indésirables de la spécialité évalué versus placebo dans les douleurs post-opératoires est important. DZUVEO est à réserver au traitement des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence, chez des patients pouvant bénéficier d'une surveillance rapprochée",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 33,
+          "s": "SMR Important",
+          "t": "le service médical rendu par DZUVEO 30 µg, comprimé sublingual est important dans la prise en charge multimodale des douleurs aiguës",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_07",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "description": "ASMR V (absence d'amélioration du service médical rendu) justifiée par l'absence d'étude versus comparateurs actifs, les incertitudes sur la transposabilité, le besoin médical couvert par les traitements disponibles, le profil de tolérance des opioïdes forts, et la volonté de privilégier l'analgésie contrôlée par le patient",
+      "extrait_textuel": "la Commission de la Transparence considère que DZUVEO 30 µg, comprimé sublingual n'apporte pas d'amélioration du service médical rendu (ASMR V) dans la prise en charge des douleurs aiguës modérées à sévères",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 34,
+          "s": "ASMR V",
+          "t": "DZUVEO 30 µg, comprimé sublingual n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+          "c": 0.99
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19789_arg_CT_08",
+      "evaluation_id": "CT-19789",
+      "source_argument": "CT",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Défavorable",
+      "description": "Absence d'évaluation de la qualité de vie dans les études cliniques déposées et absence de démonstration d'impact supplémentaire sur la morbidité ou la qualité de vie",
+      "extrait_textuel": "Aucune évaluation de la qualité de vie n'était prévue dans les études déposées. Compte tenu des données d'efficacité et de tolérance et des limites relatives à la transposabilité des données, l'impact supplémentaire sur la morbidité ou sur la qualité de vie n'est à ce jour pas démontré",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "intervenant": null,
+      "moment_debat": null,
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 25,
+          "s": "qualité de vie",
+          "t": "Aucune évaluation de la qualité de vie n'était prévue dans les études déposées",
+          "c": 0.96
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19789_ctx",
+    "evaluation_id": "CT-19789",
+    "ISP": "DZUVEO n'est pas susceptible d'avoir un impact supplémentaire sur la santé publique",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2018-06-26",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [
+      "Étude de suivi sur l'utilisation réelle de DZUVEO pour évaluer si le personnel soignant a suivi les conseils fournis dans le matériel de formation"
+    ],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 1,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Approved",
+        "date_decision": "2018-11-01",
+        "reference": "Commercialisé aux États-Unis sous le nom DSUVIA depuis novembre 2018",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": false,
+    "PSA_flag": false,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 200000,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "La population qui bénéficierait d'un traitement antalgique opioïde fort en milieu hospitalier peut être estimée à environ 200 000 patients, dans 50% des cas pour des douleurs aiguës. Compte tenu de l'existence des différents protocoles chirurgicaux, des différentes situations rencontrées en médecine d'urgence, la population des patients susceptibles de bénéficier de DZUVEO 30 µg, comprimé sublingual est plus restreinte et reste à déterminer",
+    "population_cible_nombre": 200000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Données ANSM février 2019",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "2022-03-18",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": 0,
+    "nb_total_reserves_mineures": 0,
+    "nb_totales_reserves_importantes": 0,
+    "nb_totales_reserves_majeures": 0,
+    "SMR_avant_audition_enum": "Important",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "V",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Absence d'étude versus comparateurs actifs et incertitudes sur transposabilité",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Maintien ASMR V",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19789",
+    "texte_brut": "DZUVEO (sufentanil) 30 µg, comprimé sublingual. Première évaluation. Avis favorable au remboursement dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence. Pas de progrès dans la prise en charge des douleurs aiguës modérées à sévères. La prise en charge actuelle des douleurs aiguës modérées à sévères repose sur une approche multimodale de l'analgésie qui consiste à associer des molécules et des techniques ayant des mécanismes d'action différents et complémentaires, afin d'améliorer l'analgésie et de réduire les risques d'effets indésirables, notamment en réduisant la consommation d'opioïdes. DZUVEO doit être administré par un professionnel de santé dans un environnement sous surveillance médicale. Cet environnement doit disposer de l'équipement nécessaire et d'un personnel formé pour identifier et gérer une dépression respiratoire morphinique. Ce médicament ne doit pas être utilisé durant plus de 48 heures. DZUVEO est à réserver au traitement des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence, chez des patients pouvant bénéficier d'une surveillance rapprochée.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19789_smrasmr_01",
+      "evaluation_id": "CT-19789",
+      "indication_precise": "Traitement des douleurs aiguës modérées à sévères chez l'adulte en soins post-opératoires ou en service d'urgence",
+      "smr": "Important dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence",
+      "smr_enum": "Important",
+      "asmr": "DZUVEO 30 µg, comprimé sublingual n'apporte pas d'amélioration du service médical rendu (ASMR V) dans la prise en charge des douleurs aiguës modérées à sévères",
+      "asmr_enum": "V",
+      "smr_revendique": "Important",
+      "asmr_revendique_enum": "Non_précisé",
+      "justification_decisionnelle": "Compte tenu de la démonstration de l'efficacité versus placebo du sufentanil 30 µg dans la douleur aiguë modérée à sévère post-opératoire, mais eu égard à l'absence d'étude contrôlée versus comparateur(s) actif(s), aux incertitudes sur la transposabilité à la pratique clinique des résultats des études, au besoin médical couvert par les traitements antalgiques disponibles, au profil de tolérance des opioïdes forts, et à la volonté de privilégier une analgésie contrôlée par le patient dans de nombreuses situations cliniques",
+      "population_cible_indication": "Adultes en soins post-opératoires ou en service d'urgence",
+      "ligne_traitement_indication": "3L",
+      "comparateurs_references_indication": "Morphine, Oxycodone, Fentanyl, Anesthésiques locaux, AINS",
+      "comparateur_id_HAS": "CT-19789_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "3L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR IMPORTANT",
+          "t": "IMPORTANT dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs",
+          "c": 0.99
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "ASMR V",
+          "t": "DZUVEO 30 µg, comprimé sublingual n'apporte pas d'amélioration du service médical rendu (ASMR V)",
+          "c": 0.99
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19789_event_AMM_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2018-06-26",
+      "detail_brut": "Obtention de l'AMM dans l'indication par procédure centralisée",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM standard obtenue le 26 juin 2018",
+      "acteurs_impliques": [
+        "EMA",
+        "AGUETTANT"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Procédure centralisée",
+      "evidence": []
+    },
+    {
+      "event_id": "CT-19789_event_CT_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-20",
+      "detail_brut": "Examen et adoption de l'avis par la Commission de la Transparence",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis favorable à l'inscription sur la liste des spécialités agréées à l'usage des collectivités",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "CT-19789",
+      "evidence": []
+    },
+    {
+      "event_id": "CT-19789_event_DOSSIER_01",
+      "evaluation_id": "CT-19789",
+      "event_type": "DOSSIER_DEPOT_HAS",
+      "event_date": "2022-03-18",
+      "detail_brut": "Date de validation administrative du dossier",
+      "source_doc": "F1",
+      "detail_type_specifique": "Dossier d'inscription validé administrativement",
+      "acteurs_impliques": [
+        "HAS",
+        "AGUETTANT"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": []
+    }
+  ],
+  "DELAIS_EVALUATION": {
+    "evaluation_id": "CT-19789",
+    "delai_eval_depuis_chmp_jours": null,
+    "delai_eval_depuis_amm_ema_jours": 1515,
+    "delai_eval_depuis_transcription_jours": null,
+    "delai_eval_depuis_evenement_initial_jours": 1515,
+    "nb_clockstops_presumes": 0,
+    "delai_total_clockstops_jours": null,
+    "clockstops_details": [],
+    "delai_eval_flag_incomplet": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19789",
+    "is_orphan": false,
+    "classe_ATC_l2": "N01AH",
+    "aire_therapeutique": "Analgésiques opioïdes",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 3,
+    "is_rct": true,
+    "n_essais": 4,
+    "n_rct": 2,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 12.7,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 2,
+    "sae_pct_num": 0.0,
+    "discontinuations_pct_num": 0.9,
+    "critere_principal_description": "SPID12 (Somme des différences des scores d'intensité de la douleur sur 12 heures)",
+    "p_value_log10": 3.0,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": false,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {}
+  },
+  "Relations": [
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19789",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19789_essai_SAP202",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Evaluation",
+      "src_id": "CT-19789",
+      "tgt_type": "Essai",
+      "tgt_id": "CT-19789_essai_SAP301",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_SAP202",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19789_essai_SAP202_crit_SPID12",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_SAP301",
+      "tgt_type": "Critère",
+      "tgt_id": "CT-19789_essai_SAP301_crit_SPID12",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_SAP202",
+      "tgt_type": "Comparateur",
+      "tgt_id": "CT-19789_essai_SAP202_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_SAP301",
+      "tgt_type": "Comparateur",
+      "tgt_id": "CT-19789_essai_SAP301_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_SAP202",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19789_essai_SAP202_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "Essai",
+      "src_id": "CT-19789_essai_SAP301",
+      "tgt_type": "Tolérance",
+      "tgt_id": "CT-19789_essai_SAP301_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": [
+    {
+      "id": "CT-19789_annot_001",
+      "text": "DZUVEO 30 µg, comprimé sublingual. Première évaluation. Avis favorable au remboursement dans la prise en charge multimodale des douleurs aiguës insuffisamment soulagées par les antalgiques des paliers inférieurs, en soins post-opératoires ou en service d'urgence.",
+      "meta": {
+        "doc_id": "CT-19789",
+        "source": "CT",
+        "template": "CT_modern",
+        "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+        "section_label_brut": "L'essentiel",
+        "hierarchie": [
+          "Synthèse"
+        ],
+        "page_start": 1,
+        "page_end": 1,
+        "split": "train",
+        "guidelines_version": "3.3.8"
+      },
+      "entities": [
+        {
+          "start": 0,
+          "end": 35,
+          "label": "PRODUIT"
+        },
+        {
+          "start": 60,
+          "end": 75,
+          "label": "TYPE_AVIS"
+        }
+      ],
+      "relations": []
+    }
+  ]
+}
