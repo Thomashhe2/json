@@ -1,0 +1,625 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19784",
+  "evaluation_id": "CT-19784",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_2_oxbryta_20072022_transcription_ct19784.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 21
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19784_trans_seg_01",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Audition - Présentation laboratoire et experts",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "OXBRYTA – Audition – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Présentation du laboratoire GBT et des experts cliniques",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_trans_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et réponses de la commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 14,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "OXBRYTA – Audition – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Débat avec les membres de la commission",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_trans_seg_03",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Délibération et votes de la commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 14,
+      "page_end": 21,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "OXBRYTA – Audition – Inscription (CT)",
+      "expected_fields": [
+        "Votes_Commission_Transcription",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Délibération interne et votes sur SMR/ASMR",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19784_produit_01",
+      "evaluation_id": "CT-19784",
+      "produit_nom_commercial": "OXBRYTA",
+      "dci": "voxelotor",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "GLOBAL BLOOD THERAPEUTICS",
+      "presentations": [],
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19784_arg_TRANS_01",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Le laboratoire GBT sollicite un SMR modéré et ASMR V en association avec l'hydroxyurée, et un SMR important et ASMR IV en monothérapie pour les patients intolérants ou non éligibles à l'hydroxyurée.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Nous sollicitons, dans le traitement de l'anémie hémolytique sévère... un SMR modéré et une absence d'ASMR — donc une ASMR V — dans la stratégie thérapeutique en association avec l'hydroxyurée, et un SMR important et une ASMR mineure, de niveau IV, dans la stratégie thérapeutique en monothérapie chez les patients intolérants ou non éligibles à l'hydroxyurée.",
+      "page_source": "Partie 3/20 - Page 4",
+      "section_source": "Présentation du laboratoire",
+      "intervenant": "Philippe Gredy (GBT)",
+      "moment_debat": "Présentation_labo",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Nous sollicitons, dans le traitement",
+          "t": "Nous sollicitons, dans le traitement de l'anémie hémolytique sévère causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus, un SMR modéré et une absence d'ASMR — donc une ASMR V — dans la stratégie thérapeutique en association avec l'hydroxyurée, et un SMR important et une ASMR mineure, de niveau IV, dans la stratégie thérapeutique en monothérapie chez les patients intolérants ou non éligibles à l'hydroxyurée.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_02",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Données d'efficacité de l'étude HOPE : taux de réponse de 51,1% sous voxelotor 1500 mg vs 6,5% sous placebo sur l'augmentation de l'hémoglobine >1 g/dL, mais absence d'effet démontré sur les transfusions et tendance non significative sur les crises vaso-occlusives.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Sur le critère principal... la supériorité du voxelotor a été observée avec un taux de 51,1 % de répondeurs... versus 6,5 % dans le groupe placebo... le nombre de patients transfusés était absolument identique... il n'y a pas d'effet sur les mean cumulative vaso-occlusive events.",
+      "page_source": "Partie 4/20 - Page 4 et Partie 12/20 - Page 12",
+      "section_source": "Présentation HAS et questions commission",
+      "intervenant": "Chef de projet HAS et Jean-Christophe Mercier",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Sur le critère principal",
+          "t": "Sur le critère principal, qui pour rappel était le taux de réponse défini par une augmentation de l'hémoglobine supérieure à 1 gramme par décilitre entre l'inclusion et la moyenne des semaines S20 et S24, la supériorité du voxelotor a été observée avec un taux de 51,1 % de répondeurs dans le groupe voxelotor 1 500 milligrammes versus 6,5 % dans le groupe placebo.",
+          "m": "manual",
+          "c": 0.97
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "le nombre de patients transfusés",
+          "t": "le nombre de patients transfusés était absolument identique, à 33 % si mes souvenirs sont exacts, entre le groupe traité à 1 500 milligrammes, le groupe traité à 900 milligrammes et le groupe placebo... il n'y a pas d'effet sur les mean cumulative vaso-occlusive events.",
+          "m": "manual",
+          "c": 0.96
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_03",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Présentation d'un case report d'arrêt brutal du voxelotor associé à une défaillance multi-organe et hypertension artérielle pulmonaire, soulevant des préoccupations sur la sécurité à l'arrêt et la balance bénéfice/risque.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "Cette publication parle de 'multi-organ dysfunction secondary to abrupt discontinuation of voxelotor'... l'arrêt brutal de voxelotor à deux reprises a donné une défaillance d'organe, et en particulier une hypertension artérielle pulmonaire.",
+      "page_source": "Partie 13/20 - Page 13",
+      "section_source": "Questions commission",
+      "intervenant": "Jean-Christophe Mercier (membre CT)",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Cette publication parle de",
+          "t": "Cette publication parle de 'multi-organ dysfunction secondary to abrupt discontinuation of voxelotor'... l'arrêt brutal de voxelotor à deux reprises a donné une défaillance d'organe, et en particulier une hypertension artérielle pulmonaire.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_04",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Critiques sur la qualité de la démonstration : essai avec amendements multiples, changement du critère principal, et population incluse peu représentative des patients sévères.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Il me semble que notre avis avait été aussi pas mal basé sur la qualité de la démonstration. Je vous rappelle qu'il y a un essai où il y a eu de multiples amendements en cours d'étude, des changements du critère principal... la population incluse était peu représentative de patients avec une anémie hémolytique sévère.",
+      "page_source": "Partie 11/20 - Page 11 et Partie 3/20 - Page 3",
+      "section_source": "Délibération commission",
+      "intervenant": "Sylvie Chevret (membre CT) et Chef de projet HAS",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Il me semble que notre avis",
+          "t": "Il me semble que notre avis avait été aussi pas mal basé sur la qualité de la démonstration. Je vous rappelle qu'il y a un essai où il y a eu de multiples amendements en cours d'étude, des changements du critère principal, et un critère principal qui nous avait posé question aussi sur la baisse de 1 gramme d'hémoglobine, etc.",
+          "m": "manual",
+          "c": 0.94
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "la population incluse",
+          "t": "la population incluse était peu représentative de patients avec une anémie hémolytique sévère",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_05",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "description": "Débat sur la nécessité de distinguer monothérapie et bithérapie avec l'hydroxyurée, car la problématique diffère (patients sans alternative en monothérapie vs association).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Il y a aussi quelque chose qui me paraît plus pertinent. C'est qu'ils ont voulu dissocier la bithérapie avec l'hydroxyurée et la monothérapie... en monothérapie, par définition, on n'a pas d'autre alternative thérapeutique que le voxelotor.",
+      "page_source": "Partie 11/20 - Page 11 et Partie 15/20 - Page 15",
+      "section_source": "Délibération commission",
+      "intervenant": "Pierre Cochat (Président)",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Il y a aussi quelque chose",
+          "t": "Il y a aussi quelque chose qui me paraît plus pertinent. C'est qu'ils ont voulu dissocier la bithérapie avec l'hydroxyurée et la monothérapie.",
+          "m": "manual",
+          "c": 0.96
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "en monothérapie, par définition",
+          "t": "en monothérapie, par définition, on n'a pas d'autre alternative thérapeutique que le voxelotor.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_06",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison_alternatives",
+      "description": "Point soulevé sur le statut de l'hydroxyurée qui n'a pas d'AMM dans l'indication de l'anémie hémolytique sévère, contrairement au voxelotor, créant une incohérence.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ce qui est dingue, c'est que le médicament 'roi' dans la drépanocytose n'a pas d'élément suffisant pour l'AMM, mais le voxelotor, qui a des éléments un peu fragiles, dispose de l'AMM.",
+      "page_source": "Partie 15/20 - Page 15",
+      "section_source": "Délibération commission",
+      "intervenant": "Jean-Christophe Mercier (membre CT)",
+      "moment_debat": "Délibération",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 15,
+          "s": "Ce qui est dingue, c'est",
+          "t": "Ce qui est dingue, c'est que le médicament 'roi' dans la drépanocytose n'a pas d'élément suffisant pour l'AMM, mais le voxelotor, qui a des éléments un peu fragiles, dispose de l'AMM.",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_07",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Incertitudes sur le risque d'hyperviscosité sanguine avec augmentation de l'hémoglobine sous voxelotor, malgré les arguments du laboratoire sur le mécanisme d'action différent.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Nous avons considéré que globalement nous n'avions pas de données à l'heure actuelle pour exclure cela. C'est d'ailleurs ce qu'a dit le Professeur Galacteros, qui a dit que l'hyperviscosité restait malgré tout une préoccupation.",
+      "page_source": "Partie 17/20 - Page 17",
+      "section_source": "Délibération commission",
+      "intervenant": "Chef de projet HAS",
+      "moment_debat": "Délibération",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 17,
+          "s": "Nous avons considéré que globalement",
+          "t": "Nous avons considéré que globalement nous n'avions pas de données à l'heure actuelle pour exclure cela. C'est d'ailleurs ce qu'a dit le Professeur Galacteros, qui a dit que l'hyperviscosité restait malgré tout une préoccupation.",
+          "m": "manual",
+          "c": 0.93
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {},
+  "Données_Textuelles": {},
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": [],
+  "Features_Modele": {},
+  "Relations": [],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19784_interv_01",
+      "evaluation_id": "CT-19784",
+      "intervenant_nom": "Philippe Gredy",
+      "role_intervenant": "Directeur général GBT France",
+      "moment_intervention": "Présentation_labo",
+      "resume_intervention": "Présentation des revendications du laboratoire : SMR modéré et ASMR V en association avec hydroxyurée ; SMR important et ASMR IV en monothérapie pour patients intolérants/non éligibles à l'hydroxyurée.",
+      "extrait_textuel": "Nous sollicitons, dans le traitement de l'anémie hémolytique sévère... un SMR modéré et une absence d'ASMR — donc une ASMR V — dans la stratégie thérapeutique en association avec l'hydroxyurée, et un SMR important et une ASMR mineure, de niveau IV, dans la stratégie thérapeutique en monothérapie chez les patients intolérants ou non éligibles à l'hydroxyurée.",
+      "page_source": "Partie 3/20 - Page 4",
+      "evidence": [
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 4,
+          "s": "Nous sollicitons, dans le traitement",
+          "t": "Nous sollicitons, dans le traitement de l'anémie hémolytique sévère causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus, un SMR modéré et une absence d'ASMR — donc une ASMR V — dans la stratégie thérapeutique en association avec l'hydroxyurée, et un SMR important et une ASMR mineure, de niveau IV, dans la stratégie thérapeutique en monothérapie chez les patients intolérants ou non éligibles à l'hydroxyurée.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19784_interv_02",
+      "evaluation_id": "CT-19784",
+      "intervenant_nom": "Frédéric Galacteros",
+      "role_intervenant": "Responsable centre de référence drépanocytose",
+      "moment_intervention": "Présentation_labo",
+      "resume_intervention": "Explications sur le mécanisme d'action du voxelotor, absence d'effet délétère sur la libération d'oxygène, et tendance à la diminution des crises vaso-occlusives.",
+      "extrait_textuel": "Il est très intéressant de comprendre que le voxelotor se recombine à l'hémoglobine... on ne peut pas observer d'effet délétère... on a une tendance à une diminution du nombre de crises vaso-occlusives sur la période de 72 semaines.",
+      "page_source": "Partie 4/20 - Page 4 et Partie 5/20 - Page 6",
+      "evidence": [
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 4,
+          "s": "Il est très intéressant de comprendre",
+          "t": "Il est très intéressant de comprendre que le voxelotor se recombine à l'hémoglobine et crée un composant qui est moins disponible pour relarguer de l'oxygène. Néanmoins, le fonctionnement est très particulier... on ne peut pas observer d'effet délétère du voxelotor chez les sujets sains comme chez les sujets drépanocytaires en matière de capacité d'exercice, de degré de dyspnée d'effort...",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 6,
+          "s": "on a une tendance à une diminution",
+          "t": "on a une tendance à une diminution du nombre de crises vaso-occlusives sur la période de 72 semaines, qui est indexé pour une large part sur la dose utilisée chez les patients, mais également sur le taux d'hémoglobine, les deux choses étant naturellement liées.",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19784_interv_03",
+      "evaluation_id": "CT-19784",
+      "intervenant_nom": "Laure Joseph",
+      "role_intervenant": "Médecin hématologue, Hôpital Necker",
+      "moment_intervention": "Présentation_labo",
+      "resume_intervention": "Retour d'expérience clinique sur l'ATU de voxelotor : amélioration de la qualité de vie, augmentation de l'hémoglobine, et absence d'augmentation des crises vaso-occlusives.",
+      "extrait_textuel": "Nous avons observé cette efficacité chez les patients qui avaient l'hydroxyurée ou qui ne l'avaient pas... Le taux d'hémoglobine était augmenté entre 0,7 et 2 grammes... Nous n'avons pas eu... d'augmentation du nombre d'événements vaso-occlusifs.",
+      "page_source": "Partie 6/20 - Page 6 et Partie 7/20 - Page 7",
+      "evidence": [
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 6,
+          "s": "Nous avons observé cette efficacité",
+          "t": "Nous avons observé cette efficacité chez les patients qui avaient l'hydroxyurée ou qui ne l'avaient pas. Pour ces patients, j'ai mis quelques exemples. On avait une amélioration de la qualité de vie ressentie, avec surtout une diminution de la fatigabilité...",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 7,
+          "s": "Le taux d'hémoglobine était augmenté",
+          "t": "Le taux d'hémoglobine était augmenté entre 0,7 et 2 grammes chez les patients traités au sein de cette cohorte... Nous n'avons pas eu, même si nous avons vu le taux d'hémoglobine augmenter chez ces patients, d'augmentation du nombre d'événements vaso-occlusifs, et en particulier il n'y a pas eu de crise vaso-occlusive hospitalisée ni de syndrome thoracique aigu.",
+          "m": "manual",
+          "c": 0.94
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19784_point_01",
+      "evaluation_id": "CT-19784",
+      "theme_discussion": "Dissociation efficacité biologique / clinique",
+      "description": "Question sur la dissociation entre l'amélioration de l'hémoglobine et l'absence d'effet sur les transfusions et les crises vaso-occlusives.",
+      "intervenants_impliques": [
+        "Jean-Christophe Mercier",
+        "Frédéric Galacteros"
+      ],
+      "extrait_textuel": "Comment peut-on expliquer ce contraste entre une amélioration de l'hémoglobine et le fait que ces patients sont transfusés avec le même pourcentage entre les trois groupes ?... Comment peut-on expliquer l'effet sur l'hémolyse, qui est réel, et l'absence d'effet sur la qualité de vie d'une part et sur le nombre de crises vaso-occlusives d'autre part ?",
+      "page_source": "Partie 8/20 - Page 8 et Partie 9/20 - Page 9",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Comment peut-on expliquer ce contraste",
+          "t": "Comment peut-on expliquer ce contraste entre une amélioration de l'hémoglobine et le fait que ces patients sont transfusés avec le même pourcentage entre les trois groupes ?",
+          "m": "manual",
+          "c": 0.96
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Comment peut-on expliquer l'effet",
+          "t": "Comment peut-on expliquer l'effet sur l'hémolyse, qui est réel, et l'absence d'effet sur la qualité de vie d'une part et sur le nombre de crises vaso-occlusives d'autre part ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19784_point_02",
+      "evaluation_id": "CT-19784",
+      "theme_discussion": "Risque à l'arrêt du traitement",
+      "description": "Débat sur le risque potentiel de crise vaso-occlusive ou d'effets indésirables à l'arrêt brutal du voxelotor, avec présentation d'un case report.",
+      "intervenants_impliques": [
+        "Jean-Christophe Mercier",
+        "Frédéric Galacteros",
+        "Laure Joseph",
+        "Ousmane Alfa Cissé"
+      ],
+      "extrait_textuel": "Est-ce qu'éventuellement, lorsqu'il y a une rupture de traitement de quelques jours, il peut y avoir des effets indésirables observés ?... Cette publication parle de 'multi-organ dysfunction secondary to abrupt discontinuation of voxelotor'... Nous n'avons pas de signal de pharmacovigilance particulier.",
+      "page_source": "Partie 9/20 - Page 9 et Partie 10/20 - Page 10-11 et Partie 13/20 - Page 13",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Est-ce qu'éventuellement, lorsqu'il y a",
+          "t": "Est-ce qu'éventuellement, lorsqu'il y a une rupture de traitement de quelques jours, il peut y avoir des effets indésirables observés ?",
+          "m": "manual",
+          "c": 0.94
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Cette publication parle de",
+          "t": "Cette publication parle de 'multi-organ dysfunction secondary to abrupt discontinuation of voxelotor'.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19784_point_03",
+      "evaluation_id": "CT-19784",
+      "theme_discussion": "Données en monothérapie vs bithérapie",
+      "description": "Discussion sur les données d'efficacité en sous-groupes (monothérapie vs bithérapie) et leur robustesse pour justifier une différenciation des SMR/ASMR.",
+      "intervenants_impliques": [
+        "Pierre Cochat",
+        "Sylvie Chevret",
+        "Chef de projet HAS"
+      ],
+      "extrait_textuel": "Ce sont des analyses en sous-groupes qui suggéraient une efficacité supérieure en bithérapie mais sans test d'interaction... Les données dont nous disposons dans cet essai ne plaident pas pour scinder les deux et donner des SMR aussi importants, vu les résultats.",
+      "page_source": "Partie 14/20 - Page 14 et Partie 16/20 - Page 16",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "Ce sont des analyses en sous-groupes",
+          "t": "Ce sont des analyses en sous-groupes qui suggéraient une efficacité supérieure en bithérapie mais sans test d'interaction, donc j'avais quand même interrogé le laboratoire parce que pour moi, vu le forest plot, on pouvait se poser la question.",
+          "m": "manual",
+          "c": 0.93
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "Les données dont nous disposons",
+          "t": "Les données dont nous disposons dans cet essai ne plaident pas pour scinder les deux et donner des SMR aussi importants, vu les résultats.",
+          "m": "manual",
+          "c": 0.92
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19784_vote_01",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "Maintien de l'indication en bithérapie avec hydroxyurée (SMR faible, ASMR V, SMR insuffisant en miroir)",
+      "resultat_vote": "Maintien",
+      "nb_votants": 16,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "details": "Vote par appel nominatif sur le maintien de l'évaluation précédente pour la bithérapie.",
+      "page_source": "Partie 18/20 - Page 18",
+      "evidence": [
+        {
+          "field": "resultat_vote",
+          "f": "F1",
+          "p": 18,
+          "s": "Nous avons 16 votants sur ce vote",
+          "t": "Nous avons 16 votants sur ce vote. Nous avons 15 voix pour le maintien et 1 abstention. C'est donc un maintien pour cette indication.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19784_vote_02",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "ISP pour l'indication en monothérapie",
+      "resultat_vote": "Absence d'ISP",
+      "nb_votants": 16,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "details": "Vote sur l'impact supplémentaire de santé publique (ISP) en monothérapie : absence d'ISP retenue.",
+      "page_source": "Partie 18/20 - Page 18",
+      "evidence": [
+        {
+          "field": "resultat_vote",
+          "f": "F1",
+          "p": 18,
+          "s": "Nous avons 16 votants sur ce vote",
+          "t": "Nous avons 16 votants sur ce vote. Nous avons 15 voix pour l'absence d'ISP.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19784_vote_03",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "SMR pour l'indication en monothérapie (revendication SMR important)",
+      "resultat_vote": "SMR faible",
+      "nb_votants": 16,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "details": "Vote sur le SMR en monothérapie : SMR faible retenu contre la revendication SMR important du laboratoire.",
+      "page_source": "Partie 18/20 - Page 18-19",
+      "evidence": [
+        {
+          "field": "resultat_vote",
+          "f": "F1",
+          "p": 18,
+          "s": "Je vais maintenant passer au vote sur le SMR",
+          "t": "Je vais maintenant passer au vote sur le SMR dans cette indication en monothérapie. La revendication du laboratoire était un SMR important. Nous avons 16 votants sur ce vote. Nous avons 15 voix pour un SMR faible.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19784_vote_04",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "ASMR pour l'indication en monothérapie (revendication ASMR IV)",
+      "resultat_vote": "ASMR V",
+      "nb_votants": 16,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "details": "Vote sur l'ASMR en monothérapie : ASMR V retenue contre la revendication ASMR IV du laboratoire.",
+      "page_source": "Partie 19/20 - Page 19",
+      "evidence": [
+        {
+          "field": "resultat_vote",
+          "f": "F1",
+          "p": 19,
+          "s": "Je vais maintenant passer au vote de l'ASMR",
+          "t": "Je vais maintenant passer au vote de l'ASMR. La revendication du laboratoire était une ASMR IV. Nous avons 16 votants et 15 voix en faveur d'une ASMR V.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19784_vote_05",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "SMR insuffisant en miroir pour le reste de l'indication (anémies non sévères)",
+      "resultat_vote": "SMR insuffisant",
+      "nb_votants": 16,
+      "nb_voix_pour": 15,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "vote_unanimite": false,
+      "details": "Vote sur le SMR miroir pour les anémies hémolytiques non sévères : SMR insuffisant retenu.",
+      "page_source": "Partie 19/20 - Page 19",
+      "evidence": [
+        {
+          "field": "resultat_vote",
+          "f": "F1",
+          "p": 19,
+          "s": "Le dernier vote porte sur le SMR miroir",
+          "t": "Le dernier vote porte sur le SMR miroir dans le reste de l'indication. Nous avons 16 votants et 15 voix en faveur d'un SMR insuffisant en miroir.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ]
+}

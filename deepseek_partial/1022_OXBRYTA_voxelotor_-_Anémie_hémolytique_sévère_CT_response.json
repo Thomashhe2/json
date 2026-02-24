@@ -1,0 +1,1034 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19784",
+  "evaluation_id": "CT-19784",
+  "extraction_date": "2022-06-29",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-29",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19784_OXBRYTA_INS_PIC_AvisDef_CT19784.pdf",
+        "type": "CT",
+        "page_count": 1
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19784_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Avis commission",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Extraction partielle",
+      "expected_fields": [
+        "document_type",
+        "medicament",
+        "avis_commission",
+        "contexte_therapeutique",
+        "place_medicament",
+        "evaluation_complete",
+        "recommandations",
+        "informations_administratives"
+      ],
+      "routing_hint": "CT",
+      "label_confidence": 0.9
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "identifiant_produit": "Non renseigné",
+      "type_identifiant": "CIP13",
+      "valeur_identifiant": "Non renseigné",
+      "produit_nom_commercial": "OXBRYTA",
+      "dci": "Voxelotor",
+      "titulaire_amm": "Non renseigné",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "comprimés pelliculés",
+          "dosage_concentration": "500 mg",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19784",
+      "Num_avis": "CT-19784",
+      "produit_nom": "OXBRYTA",
+      "dci": "Voxelotor",
+      "type_avis": "Inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "comprimés pelliculés",
+      "dosage": "500 mg",
+      "indication": "traitement de l'anémie hémolytique causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus, en monothérapie ou en association avec l'hydroxyurée",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Drépanocytose avec anémie hémolytique",
+      "maladie_rare": true,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": null,
+      "sous_groupe_population": "adultes et adolescents âgés de 12 ans et plus avec anémie hémolytique sévère",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Hématologie",
+      "aire_therapeutique_niveau_2": "Maladies du sang",
+      "aire_therapeutique_niveau_3": "Drépanocytose",
+      "source_aire_therapeutique": "Déduit de pathologie",
+      "design_etude": "Étude HOPE, étude de faible niveau de preuve",
+      "niveau_preuve_brut": "faible niveau de preuve",
+      "niveau_preuve_interprete": "Niveau_3",
+      "besoin_medical_brut": "Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Hemato_oncologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "12 ans et plus",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "caractere_innovant_reconnu": true,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-29",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "L'anémie hémolytique sévère causée par la drépanocytose est une condition grave avec impact sur la qualité de vie",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et adolescents âgés de 12 ans et plus",
+      "evidence": [
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 1,
+          "s": "Médicament orphelin (date octroi du statut : 18/11/2016)",
+          "t": "Médicament orphelin (date octroi du statut : 18/11/2016)",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "OXBRYTA est indiqué dans le traitement de l'anémie hémolytique causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus",
+          "t": "OXBRYTA est indiqué dans le traitement de l'anémie hémolytique causée par la drépanocytose chez les adultes et les adolescents âgés de 12 ans et plus, en monothérapie ou en association avec l'hydroxyurée",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 1,
+          "s": "Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+          "t": "Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+          "c": 0.95
+        },
+        {
+          "field": "niveau_preuve_brut",
+          "f": "F1",
+          "p": 1,
+          "s": "étude de faible niveau de preuve",
+          "t": "étude de faible niveau de preuve",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19784_essai_HOPE",
+      "evaluation_id": "CT-19784",
+      "essai_nom": "HOPE",
+      "nct_number": null,
+      "design": "RCT contrôlé placebo",
+      "design_enum": "Phase_III_RCT_DB",
+      "population_cible": "adultes et adolescents âgés de 12 ans et plus avec anémie hémolytique sévère causée par la drépanocytose",
+      "comparateur_utilise": "placebo",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Augmentation de l'hémoglobine et réduction de certains marqueurs de l'hémolyse à court terme (24 semaines) démontrée versus placebo",
+      "QoL_flag": false,
+      "niveau_preuve": "Faible",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 6,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "1L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "étude HOPE, étude de faible niveau de preuve",
+          "t": "étude HOPE, étude de faible niveau de preuve",
+          "c": 0.95
+        },
+        {
+          "field": "resultat_global",
+          "f": "F1",
+          "p": 1,
+          "s": "A ce jour, seul un bénéfice sur l'augmentation de l'hémoglobine et la réduction de certains marqueurs de l'hémolyse à court terme (24 semaines) a été démontré versus placebo dans l'étude HOPE",
+          "t": "A ce jour, seul un bénéfice sur l'augmentation de l'hémoglobine et la réduction de certains marqueurs de l'hémolyse à court terme (24 semaines) a été démontré versus placebo dans l'étude HOPE",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_hémoglobine",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "nom_critere": "Augmentation de l'hémoglobine",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "points de pourcentage ou niveaux",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Augmentation démontrée",
+      "valeur_groupe_comparateur": "Placebo",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Bénéfice sur l'augmentation de l'hémoglobine démontré versus placebo",
+      "is_primary": true,
+      "type_critere_enum": "Biomarqueur",
+      "primaire_ou_secondaire": "Primaire",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 1,
+          "s": "bénéfice sur l'augmentation de l'hémoglobine",
+          "t": "bénéfice sur l'augmentation de l'hémoglobine",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_marqueurs_hémolyse",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "nom_critere": "Réduction des marqueurs de l'hémolyse",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "points de pourcentage ou niveaux",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Réduction démontrée",
+      "valeur_groupe_comparateur": "Placebo",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "percentage",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modéré",
+      "commentaire_has_resultat": "Réduction de certains marqueurs de l'hémolyse démontrée versus placebo",
+      "is_primary": false,
+      "type_critere_enum": "Biomarqueur",
+      "primaire_ou_secondaire": "Secondaire",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 1,
+          "s": "réduction de certains marqueurs de l'hémolyse",
+          "t": "réduction de certains marqueurs de l'hémolyse",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_CVOs",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "nom_critere": "Nombre de crises vaso-occlusives (CVOs)",
+      "nature_critere": "Dur",
+      "unite_mesure": "nombre d'événements",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Non démontré bénéfice",
+      "valeur_groupe_comparateur": "Placebo",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "Autre",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Absente",
+      "commentaire_has_resultat": "Il n'a pas été démontré de bénéfice versus placebo sur le nombre de CVOs",
+      "is_primary": false,
+      "type_critere_enum": "Symptomatique",
+      "primaire_ou_secondaire": "Secondaire",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 1,
+          "s": "nombre de CVOs, symptômes de la maladie",
+          "t": "il n'a pas été démontré de bénéfice versus placebo sur des critères cliniques reflétant la sévérité de la maladie ou le bien-être des patients (notamment nombre de CVOs)",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19784_essai_HOPE_crit_QdV",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "nom_critere": "Qualité de vie",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "scores",
+      "hierarchie_critere": "Secondaire_standard",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Non démontré bénéfice",
+      "valeur_groupe_comparateur": "Placebo",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Absente",
+      "commentaire_has_resultat": "Il n'a pas été démontré de bénéfice versus placebo sur la qualité de vie",
+      "is_primary": false,
+      "type_critere_enum": "QoL",
+      "primaire_ou_secondaire": "Secondaire",
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 1,
+          "s": "qualité de vie",
+          "t": "il n'a pas été démontré de bénéfice versus placebo sur des critères cliniques reflétant la sévérité de la maladie ou le bien-être des patients (notamment qualité de vie)",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19784_essai_HOPE_tol",
+      "evaluation_id": "CT-19784",
+      "essai_id": "CT-19784_essai_HOPE",
+      "ae_total_pct": null,
+      "ae_total_pct_comparateur": null,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Syndromes thoraciques aigus",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Priapisme",
+          "grade": "3-4",
+          "incidence_pct_traitement": null,
+          "incidence_pct_comparateur": null,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [],
+      "ei_grade_max": "3-4",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Il a été observé une incidence plus élevée de syndromes thoraciques aigus et de priapisme dans le groupe voxelotor que sous placebo",
+      "EI_frequents": "Non renseigné",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "EI_graves",
+          "f": "F1",
+          "p": 1,
+          "s": "incidence plus élevée de syndromes thoraciques aigus et de priapisme dans le groupe voxelotor",
+          "t": "Il a été observé une incidence plus élevée de syndromes thoraciques aigus et de priapisme dans le groupe voxelotor que sous placebo",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19784_essai_HOPE_comp_01",
+      "essai_id": "CT-19784_essai_HOPE",
+      "nom_comparateur": "placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 1,
+          "s": "versus placebo dans l'étude HOPE",
+          "t": "versus placebo dans l'étude HOPE",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19784_compHAS_01",
+      "evaluation_id": "CT-19784",
+      "nom_comparateur_HAS": "hydroxyurée (SIKLOS et XROMI)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 1,
+          "s": "hydroxyurée (SIKLOS et XROMI) et crizanlizumab (ADAKVEO)",
+          "t": "hydroxyurée (SIKLOS et XROMI) et crizanlizumab (ADAKVEO)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19784_compHAS_02",
+      "evaluation_id": "CT-19784",
+      "nom_comparateur_HAS": "crizanlizumab (ADAKVEO)",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Immunotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 1,
+          "s": "crizanlizumab (ADAKVEO)",
+          "t": "crizanlizumab (ADAKVEO)",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19784_arg_CT_01",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Efficacité démontrée sur l'augmentation de l'hémoglobine et la réduction des marqueurs de l'hémolyse à court terme (24 semaines) versus placebo dans l'étude HOPE, mais pas de bénéfice sur les critères cliniques (CVOs, qualité de vie).",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "A ce jour, seul un bénéfice sur l'augmentation de l'hémoglobine et la réduction de certains marqueurs de l'hémolyse à court terme (24 semaines) a été démontré versus placebo dans l'étude HOPE, étude de faible niveau de preuve. Dans l'étude HOPE, il n'a pas été démontré de bénéfice versus placebo sur des critères cliniques reflétant la sévérité de la maladie ou le bien-être des patients.",
+      "page_source": "Page 1",
+      "section_source": "Place du médicament",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "seul un bénéfice sur l'augmentation de l'hémoglobine et la réduction de certains marqueurs de l'hémolyse",
+          "t": "A ce jour, seul un bénéfice sur l'augmentation de l'hémoglobine et la réduction de certains marqueurs de l'hémolyse à court terme (24 semaines) a été démontré versus placebo dans l'étude HOPE",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_02",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "description": "Besoin médical non couvert : premier médicament ayant une AMM spécifique dans le traitement de l'anémie hémolytique des patients drépanocytaires, sans alternative autorisée auparavant.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "OXBRYTA (voxelotor) est le premier médicament ayant une AMM spécifique dans le traitement de l'anémie hémolytique des patients drépanocytaires. Aucun médicament n'est à ce jour autorisé spécifiquement dans le traitement de l'anémie hémolytique des patients drépanocytaires.",
+      "page_source": "Page 1",
+      "section_source": "Place du médicament et contexte thérapeutique",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "premier médicament ayant une AMM spécifique dans le traitement de l'anémie hémolytique",
+          "t": "OXBRYTA (voxelotor) est le premier médicament ayant une AMM spécifique dans le traitement de l'anémie hémolytique des patients drépanocytaires",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_03",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Risques potentiels : hyperviscosité sanguine, incidence plus élevée de syndromes thoraciques aigus et de priapisme, et préoccupations sur l'adhésion au traitement, notamment chez les adolescents-jeunes adultes.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Le voxelotor pourrait conduire à une augmentation trop importante du taux d'hémoglobine chez certains patients, avec un risque d'hyperviscosité sanguine et de complications associées. Il a été observé une incidence plus élevée de syndromes thoraciques aigus et de priapisme dans le groupe voxelotor que sous placebo.",
+      "page_source": "Page 1",
+      "section_source": "Place du médicament",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "risque d'hyperviscosité sanguine et de complications associées",
+          "t": "Le voxelotor pourrait conduire à une augmentation trop importante du taux d'hémoglobine chez certains patients, avec un risque d'hyperviscosité sanguine et de complications associées",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_04",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Données limitées : étude HOPE de faible niveau de preuve, absence de schéma de réduction posologique évalué, et manque de données en conditions réelles d'utilisation.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "étude de faible niveau de preuve. La Commission regrette qu'aucun schéma de réduction posologique n'ait été évalué au cours des essais cliniques en cas d'augmentation trop importante du taux d'hémoglobine. La Commission souhaite disposer de données complémentaires documentant en conditions réelles d'utilisation.",
+      "page_source": "Page 1",
+      "section_source": "Place du médicament et recommandations",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "étude de faible niveau de preuve",
+          "t": "étude de faible niveau de preuve",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_CT_05",
+      "evaluation_id": "CT-19784",
+      "source_argument": "CT",
+      "categorie_argument": "Population_cible",
+      "description": "Population cible restreinte à l'anémie hémolytique sévère, avec définition non consensuelle, nécessitant prescription par un spécialiste au jugement clinique et biologique.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "La prescription d'OXBRYTA (voxelotor) doit être réservée au traitement de l'anémie hémolytique sévère. La définition de l'anémie hémolytique sévère n'étant actuellement pas consensuelle, la prescription se fera donc au jugement et à l'expérience du prescripteur spécialiste.",
+      "page_source": "Page 1",
+      "section_source": "Place du médicament",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "prescription doit être réservée au traitement de l'anémie hémolytique sévère",
+          "t": "La prescription d'OXBRYTA (voxelotor) doit être réservée au traitement de l'anémie hémolytique sévère",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19784_ctx",
+    "evaluation_id": "CT-19784",
+    "ISP": "OXBRYTA (voxelotor) n'est pas susceptible d'avoir un intérêt supplémentaire de santé publique",
+    "acces_precoce": "ATU_cohorte",
+    "date_debut_acces_precoce": "2021-06-30",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "ATU_cohorte",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-02-14",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": true,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": 0,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": 0,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "La population cible d'OXBRYTA (voxelotor) pourrait être estimée entre 5 000 et 8 000 patients",
+    "population_cible_nombre": 6500,
+    "population_cible_intervalle": [
+      5000,
+      8000
+    ],
+    "source_estimation_population": "Extrapolation",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": 6500,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_vie_réelle",
+    "delai_suivi_mois": 60,
+    "delai_suivi_justification": "Ces résultats sont attendus dans un délai maximal de 5 ans",
+    "conditions_suivi": "Données complémentaires documentant en conditions réelles d'utilisation : caractéristiques des patients traités, évolution sous traitement, critères d'arrêt",
+    "echeance_suivi": "2027-06-29",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-07-20",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 1,
+        "s": "OXBRYTA (voxelotor) n'est pas susceptible d'avoir un intérêt supplémentaire de santé publique",
+        "t": "OXBRYTA (voxelotor) n'est pas susceptible d'avoir un intérêt supplémentaire de santé publique",
+        "c": 0.95
+      },
+      {
+        "field": "acces_precoce",
+        "f": "F1",
+        "p": 1,
+        "s": "ATU de cohorte accordée le 30/06/2021",
+        "t": "ATU de cohorte accordée le 30/06/2021",
+        "c": 0.95
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 1,
+        "s": "amm_date: 14 février 2022",
+        "t": "amm_date: 14 février 2022",
+        "c": 0.95
+      },
+      {
+        "field": "population_cible_france",
+        "f": "F1",
+        "p": 1,
+        "s": "La population cible d'OXBRYTA (voxelotor) pourrait être estimée entre 5 000 et 8 000 patients",
+        "t": "La population cible d'OXBRYTA (voxelotor) pourrait être estimée entre 5 000 et 8 000 patients",
+        "c": 0.9
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19784",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19784_smrasmr_01",
+      "evaluation_id": "CT-19784",
+      "indication_precise": "traitement de l'anémie hémolytique sévère causée par la drépanocytose, chez les adultes et adolescents âgés de 12 ans et plus, en monothérapie ou en association avec l'hydroxyurée",
+      "smr": "SMR faible uniquement dans le traitement de l'anémie hémolytique sévère, en monothérapie ou en association à l'hydroxyurée",
+      "asmr": "ASMR V (n'apporte pas d'amélioration du service médical rendu) dans la stratégie thérapeutique de traitement de l'anémie hémolytique sévère causée par la drépanocytose, chez les adultes et adolescents âgés de 12 ans et plus, en monothérapie ou en association à l'hydroxyurée",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Bénéfice sur l'hémoglobine et marqueurs de l'hémolyse à court terme, mais pas sur les critères cliniques ; besoin médical non couvert ; risques potentiels.",
+      "population_cible_indication": "Adultes et adolescents âgés de 12 ans et plus avec anémie hémolytique sévère causée par la drépanocytose",
+      "ligne_traitement_indication": "Non renseigné",
+      "comparateurs_references_indication": [
+        "hydroxyurée",
+        "placebo"
+      ],
+      "comparateur_id_HAS": [
+        "CT-19784_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Sévère",
+        "population_age": "≥12 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Faible",
+      "asmr_revendique_enum": "Non_renseigné",
+      "smr_enum": "Faible",
+      "asmr_enum": "V",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 1,
+          "s": "SMR faible uniquement dans le traitement de l'anémie hémolytique sévère",
+          "t": "SMR faible uniquement dans le traitement de l'anémie hémolytique sévère, en monothérapie ou en association à l'hydroxyurée",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 1,
+          "s": "ASMR V (n'apporte pas d'amélioration du service médical rendu)",
+          "t": "ASMR V (n'apporte pas d'amélioration du service médical rendu) dans la stratégie thérapeutique de traitement de l'anémie hémolytique sévère causée par la drépanocytose, chez les adultes et adolescents âgés de 12 ans et plus, en monothérapie ou en association à l'hydroxyurée",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19784_event_AMM_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-02-14",
+      "detail_brut": "AMM accordée",
+      "source_doc": "F1",
+      "detail_type_specifique": "Date AMM",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "amm_date: 14 février 2022",
+          "t": "amm_date: 14 février 2022",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19784_event_ACCES_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "ACCES_PRECOCE_DEBUT",
+      "event_date": "2021-06-30",
+      "detail_brut": "ATU de cohorte accordée",
+      "source_doc": "F1",
+      "detail_type_specifique": "ATU de cohorte",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "ATU de cohorte accordée le 30/06/2021",
+          "t": "ATU de cohorte accordée le 30/06/2021",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19784_event_CT_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-06-29",
+      "detail_brut": "Date d'adoption de l'avis",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption avis CT",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "date_adoption: 29 juin 2022",
+          "t": "date_adoption: 29 juin 2022",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19784_event_AUDITION_01",
+      "evaluation_id": "CT-19784",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-07-20",
+      "detail_brut": "Date d'audition du laboratoire",
+      "source_doc": "F1",
+      "detail_type_specifique": "Audition laboratoire",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "date_audition_laboratoire: 20 juillet 2022",
+          "t": "date_audition_laboratoire: 20 juillet 2022",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19784",
+    "delai_amm_ct_jours": 134,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": 21,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19784",
+    "is_orphan": true,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Hématologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": true,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 6,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Augmentation de l'hémoglobine",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": null,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19784",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19784_essai_HOPE",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19784_essai_HOPE_crit_hémoglobine",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19784_essai_HOPE_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19784_essai_HOPE",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19784_essai_HOPE_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19784",
+      "tgt_type": "SMR_ASMR",
+      "tgt_id": "CT-19784_smrasmr_01",
+      "label": "EVAL_HAS_SMRASMR"
+    }
+  ],
+  "Annotation_View": []
+}

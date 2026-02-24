@@ -1,0 +1,580 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_2_verzenios_14092022_transcription_ct19830.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 12
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19830_seg_01",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Commission de Transparence - VERZENIOS - Audition",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "VERZENIOS 50 - 100 - 150 mg (CT-19830) – Audition – Extension d'indication",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Introduction de la séance",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_02",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Présentation du laboratoire",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Présentation du laboratoire",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Présentation du laboratoire sur VERZENIOS",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_03",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Questions et réponses",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 10,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Questions des membres de la commission",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Points_Discussion_Specifiques",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Débat entre la commission et le laboratoire",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_04",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "Vote et conclusion",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 10,
+      "page_end": 11,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Vote de la commission",
+      "expected_fields": [
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Vote final sur le maintien de l'avis",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_TRANS_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Laboratoire défend un bénéfice clinique pertinent avec réduction relative risque rechute 25-30% et delta IDFS 3.5 points à 2 ans vs 1.8 points initial.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "delta à deux ans de 3,5 points... une réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+      "page_source": "5",
+      "section_source": "Présentation laboratoire",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "delta à deux ans de 3,5 points",
+          "t": "delta à deux ans de 3,5 points... une réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Laboratoire souligne que les résultats dans la cohorte 1 (AMM) montrent un bénéfice plus marqué : delta IDFS 5,7 points à 3 ans, RRR 32%.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "bénéfice est de même ordre de grandeur... delta de taux d'IDFS de 5,7 points à trois ans, et une réduction relative du risque de rechute de 32 %",
+      "page_source": "6",
+      "section_source": "Présentation laboratoire",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "delta de taux d'IDFS de 5,7 points à trois ans",
+          "t": "bénéfice est de même ordre de grandeur... delta de taux d'IDFS de 5,7 points à trois ans, et une réduction relative du risque de rechute de 32 %",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Pr Campone : effets secondaires connus (diarrhée liée à inhibition cycline 9, toxicité hématologique faible), maîtrisables et transitoires.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "effets secondaires, ils sont connus, maîtrisables et transitoires",
+      "page_source": "7",
+      "section_source": "Présentation laboratoire",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "effets secondaires, ils sont connus",
+          "t": "effets secondaires, ils sont connus, maîtrisables et transitoires",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Sylvie Chevert critique l'absence de test statistique sur l'amélioration de l'effet dans le temps et l'absence d'intervalles de confiance.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?",
+      "page_source": "7",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "si vous pensez vraiment que l'effet augmente avec le temps",
+          "t": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Statisticienne du labo (Mme André) : pas de violation de l'hypothèse de proportionnalité, effet maintenu numériquement.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+      "page_source": "8",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle",
+          "t": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Julien Peron interroge la pertinence clinique : démontrer guérison, survie globale ou qualité de vie, pas seulement IDFS.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+      "page_source": "9",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes",
+          "t": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_07",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Pr Campone : abemaciclib modifie l'histoire naturelle en rapprochant courbes des patientes à haut risque de celles à faible risque.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "on modifie l'histoire naturelle de ces patientes... ces deux courbes se rapprochent",
+      "page_source": "9",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "on modifie l'histoire naturelle de ces patientes",
+          "t": "on modifie l'histoire naturelle de ces patientes... ces deux courbes se rapprochent",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_08",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Sylvie Chevert et Julien Peron jugent la présentation du laboratoire maladroite sur l'augmentation de l'effet dans le temps, avec suivi modeste.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Ils sont maladroits... donner des estimations ponctuelles à deux ans, à trois ans sans intervalle de confiance",
+      "page_source": "10",
+      "section_source": "Délibération",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "Ils sont maladroits... donner des estimations ponctuelles",
+          "t": "Ils sont maladroits... donner des estimations ponctuelles à deux ans, à trois ans sans intervalle de confiance",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_09",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Laboratoire sollicite un SMR important et une ASMR V, mais la commission maintient l'avis initial (SMR insuffisant).",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Nous sollicitons un SMR important et une ASMR V... Maintien à l'unanimité",
+      "page_source": "7, 11",
+      "section_source": "Présentation laboratoire et Vote",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Nous sollicitons un SMR important et une ASMR V",
+          "t": "Nous sollicitons un SMR important et une ASMR V",
+          "c": 0.95
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "Maintien à l'unanimité",
+          "t": "Maintien à l'unanimité",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19830_interv_01",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Pierre Cochat",
+      "role_intervenant": "Président",
+      "type_intervention": "Animation",
+      "resume_intervention": "Ouvre et ferme la séance, donne la parole, gère le temps.",
+      "extrait_textuel": "On passe à la dernière audition qui est VERZENIOS... Très bien. Merci beaucoup, notamment pour le respect du temps.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 3,
+          "s": "On passe à la dernière audition qui est VERZENIOS",
+          "t": "On passe à la dernière audition qui est VERZENIOS... Très bien. Merci beaucoup, notamment pour le respect du temps.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_02",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "M. Mouredia",
+      "role_intervenant": "Responsable accès marché, Lilly",
+      "type_intervention": "Présentation",
+      "resume_intervention": "Présente l'équipe et la stratégie pour défendre VERZENIOS, insiste sur la taille d'effet et la cohorte 1.",
+      "extrait_textuel": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique en première intention... Nous sollicitons un SMR important et une ASMR V.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique",
+          "t": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique en première intention... Nous sollicitons un SMR important et une ASMR V.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_03",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Pr Campone",
+      "role_intervenant": "Investigateur principal MonarchE",
+      "type_intervention": "Présentation",
+      "resume_intervention": "Explique différences entre CDK4/6, facteurs pronostics, résultats MonarchE et tolérance.",
+      "extrait_textuel": "L’abemaciclib a démontré une réduction relative du risque de rechute aux alentours de 25 %... effets secondaires, ils sont connus, maîtrisables et transitoires.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "L’abemaciclib a démontré une réduction relative du risque de rechute",
+          "t": "L’abemaciclib a démontré une réduction relative du risque de rechute aux alentours de 25 %... effets secondaires, ils sont connus, maîtrisables et transitoires.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_04",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Sylvie Chevert",
+      "role_intervenant": "Membre CT",
+      "type_intervention": "Question",
+      "resume_intervention": "Questionne sur l'analyse statistique : absence d'intervalles de confiance et tests de proportionnalité.",
+      "extrait_textuel": "si vous voulez que l'on précise que l'on utilise une variation d'un taux d'évènement... c'est important de lui associer un intervalle de confiance.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "si vous voulez que l'on précise que l'on utilise une variation",
+          "t": "si vous voulez que l'on précise que l'on utilise une variation d'un taux d'évènement... c'est important de lui associer un intervalle de confiance.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_05",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Mme André",
+      "role_intervenant": "Statisticienne, Lilly",
+      "type_intervention": "Réponse",
+      "resume_intervention": "Répond aux questions statistiques : pas de violation de l'hypothèse de proportionnalité, effet maintenu numériquement.",
+      "extrait_textuel": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 8,
+          "s": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle",
+          "t": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_06",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Hugues Blondon",
+      "role_intervenant": "Membre CT",
+      "type_intervention": "Question",
+      "resume_intervention": "Interroge sur le risque de résistance chez les patientes exposées sans bénéfice immédiat.",
+      "extrait_textuel": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance à cette classe thérapeutique ?",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 8,
+          "s": "A-t-on des données pour savoir s'il n'y avait pas chez elles",
+          "t": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance à cette classe thérapeutique ?",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_07",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Julien Peron",
+      "role_intervenant": "Membre CT",
+      "type_intervention": "Question",
+      "resume_intervention": "Demande de démontrer l'amélioration en guérison, survie globale ou qualité de vie, pas seulement IDFS.",
+      "extrait_textuel": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 9,
+          "s": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes",
+          "t": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19830_point_01",
+      "evaluation_id": "CT-19830",
+      "sujet": "Analyse statistique et interprétation des courbes",
+      "description": "Débat sur la méthode d'analyse (Kaplan-Meier vs proportions), nécessité d'intervalles de confiance et tests de proportionnalité.",
+      "intervenants": [
+        "Sylvie Chevert",
+        "Mme André"
+      ],
+      "extrait_textuel": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?... il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 7,
+          "s": "si vous pensez vraiment que l'effet augmente avec le temps",
+          "t": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?... il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_02",
+      "evaluation_id": "CT-19830",
+      "sujet": "Risque de résistance et bénéfice pour patientes non répondeuses",
+      "description": "Question sur le risque d'exposer des patientes sans bénéfice immédiat et potentiel de résistance future.",
+      "intervenants": [
+        "Hugues Blondon",
+        "Pr Campone"
+      ],
+      "extrait_textuel": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance... Aujourd'hui, il n'existe pas de données sur les mécanismes de résistance",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 8,
+          "s": "A-t-on des données pour savoir s'il n'y avait pas chez elles",
+          "t": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance... Aujourd'hui, il n'existe pas de données sur les mécanismes de résistance",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_03",
+      "evaluation_id": "CT-19830",
+      "sujet": "Pertinence clinique des résultats (guérison, survie, QDV)",
+      "description": "Discussion sur ce qui constitue un bénéfice clinique pertinent : guérison, survie globale, qualité de vie vs IDFS.",
+      "intervenants": [
+        "Julien Peron",
+        "Pr Campone"
+      ],
+      "extrait_textuel": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes... on modifie l'histoire naturelle de ces patientes",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 9,
+          "s": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes",
+          "t": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes... on modifie l'histoire naturelle de ces patientes",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_04",
+      "evaluation_id": "CT-19830",
+      "sujet": "Évaluation de la présentation du laboratoire",
+      "description": "Critiques des membres sur la maladresse de la présentation statistique et le suivi modeste.",
+      "intervenants": [
+        "Sylvie Chevert",
+        "Julien Peron",
+        "Clémence Basse"
+      ],
+      "extrait_textuel": "Ils sont maladroits... Surtout que le suivi reste modeste.",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 10,
+          "s": "Ils sont maladroits... Surtout que le suivi reste modeste",
+          "t": "Ils sont maladroits... Surtout que le suivi reste modeste.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19830_vote_01",
+      "evaluation_id": "CT-19830",
+      "type_vote": "Maintien_avis",
+      "objet_vote": "Maintien de l'avis (SMR insuffisant) adopté le 20 juillet",
+      "resultat": "Adopté",
+      "vote_unanimite": true,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details": "Vote par appel nominatif : maintien à l'unanimité. L'avis initial était 19 pour, 1 contre (selon Michel Clanet).",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 11,
+          "s": "Maintien à l'unanimité",
+          "t": "Maintien à l'unanimité",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {},
+  "Données_Textuelles": {},
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {},
+  "Features_Modele": {},
+  "Relations": [],
+  "Annotation_View": []
+}

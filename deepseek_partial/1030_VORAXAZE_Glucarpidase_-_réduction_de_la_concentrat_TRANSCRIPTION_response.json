@@ -1,0 +1,666 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19744",
+  "evaluation_id": "CT-19744",
+  "extraction_date": "2022-05-11",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_1_voraxaze_11052022_transcription_ct19744.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 19
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19744_seg_01",
+      "section_label_normalise": "AVERTISSEMENT",
+      "section_label_brut": "AVERTISSEMENT",
+      "page_start": 1,
+      "page_end": 2,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [],
+      "routing_hint": "Méta-informations sur la transcription",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19744_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Présentation du dossier par le chef de projet",
+      "page_start": 3,
+      "page_end": 4,
+      "heading_text": "VORAXAZE - Examen – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Présentation des données d'efficacité et tolérance",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19744_seg_03",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Interventions des experts",
+      "page_start": 4,
+      "page_end": 8,
+      "heading_text": "VORAXAZE - Examen – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Débat sur l'efficacité, la tolérance, le besoin médical, la qualité des données",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19744_seg_04",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Débat sur les comparateurs et l'ASMR",
+      "page_start": 8,
+      "page_end": 15,
+      "heading_text": "VORAXAZE - Examen – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Discussion sur l'acide folinique comme CCP, la dialyse, l'ASMR, l'ISP",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19744_seg_05",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote de la commission",
+      "page_start": 15,
+      "page_end": 19,
+      "heading_text": "VORAXAZE - Examen – Inscription (CT)",
+      "expected_fields": [
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Vote sur le CCP, l'ISP, le SMR, l'ASMR",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19744_arg_TRANS_01",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Efficacité biologique démontrée : réduction rapide de la méthotrexatémie (de plus de 98% en 15 minutes) chez 61,5% des patients, mais absence de données cliniques sur la morbimortalité.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Sur ces 169 patients, 104 patients, soit 61,5 %, avaient atteint une réduction cliniquement significative de la concentration de méthotrexate.",
+      "page_source": "Page 3",
+      "section_source": "Présentation du chef de projet",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Sur ces 169 patients, 104 patients, soit 61,5 %",
+          "t": "Sur ces 169 patients, 104 patients, soit 61,5 %, avaient atteint une réduction cliniquement significative de la concentration de méthotrexate.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_02",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Données issues d'études compassionnelles non randomisées de faible qualité : nombreuses données manquantes (jusqu'à 85%), hétérogénéité des critères, patients inclus à tort.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "Vous aviez relevé pas mal de limites dans ces études, notamment le faible nombre de patients, de très nombreuses données manquantes, des patients inclus à tort, et surtout la forte hétérogénéité entre ces études.",
+      "page_source": "Page 4",
+      "section_source": "Présentation du chef de projet",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Vous aviez relevé pas mal de limites dans ces études",
+          "t": "Vous aviez relevé pas mal de limites dans ces études, notamment le faible nombre de patients, de très nombreuses données manquantes, des patients inclus à tort, et surtout la forte hétérogénéité entre ces études.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_03",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "description": "Besoin médical important : intoxication au méthotrexate potentiellement mortelle, situation rare mais non exceptionnelle, alternatives limitées (acide folinique, dialyse peu efficace).",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le besoin médical est donc quand même assez important dans ce contexte. L'élimination retardée et la toxicité du méthotrexate est quelque chose de rare, mais qui n'est pas exceptionnel.",
+      "page_source": "Page 6",
+      "section_source": "Intervention d'Étienne Lengliné",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Le besoin médical est donc quand même assez important",
+          "t": "Le besoin médical est donc quand même assez important dans ce contexte. L'élimination retardée et la toxicité du méthotrexate est quelque chose de rare, mais qui n'est pas exceptionnel.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_04",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Profil de sécurité acceptable : effets indésirables liés chez 11% des patients (paresthésies, bouffées congestives), pas de risque majeur identifié.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "En termes de tolérance, des effets indésirables apparus sous traitement et considérés comme étant potentiellement liés à la glucarpidase ont été rapportés chez 11 % des patients.",
+      "page_source": "Page 4",
+      "section_source": "Présentation du chef de projet",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "En termes de tolérance, des effets indésirables",
+          "t": "En termes de tolérance, des effets indésirables apparus sous traitement et considérés comme étant potentiellement liés à la glucarpidase ont été rapportés chez 11 % des patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_05",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison_alternatives",
+      "description": "L'acide folinique est considéré comme un comparateur cliniquement pertinent (CCP) par vote majoritaire, malgré des mécanismes d'action différents.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "S’agissant de la question de savoir si le produit a comme CCP l’acide folinique, nous avons 16 voix pour, 4 voix contre et 1 abstention, donc l’acide folinique est considéré comme un CCP.",
+      "page_source": "Page 19",
+      "section_source": "Vote de la commission",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "S’agissant de la question de savoir si le produit a comme CCP",
+          "t": "S’agissant de la question de savoir si le produit a comme CCP l’acide folinique, nous avons 16 voix pour, 4 voix contre et 1 abstention, donc l’acide folinique est considéré comme un CCP.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_06",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "description": "ASMR V jugée justifiée (18 voix pour) plutôt que III revendiqué, en raison de la faible qualité des données et de l'absence de démonstration clinique robuste.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "S’agissant de l’ASMR, nous avons 18 voix pour une ASMR V dans la stratégie thérapeutique et 3 voix pour une ASMR IV. C’est donc un SMR important et une ASMR V.",
+      "page_source": "Page 19",
+      "section_source": "Vote de la commission",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "S’agissant de l’ASMR, nous avons 18 voix pour une ASMR V",
+          "t": "S’agissant de l’ASMR, nous avons 18 voix pour une ASMR V dans la stratégie thérapeutique et 3 voix pour une ASMR IV. C’est donc un SMR important et une ASMR V.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_07",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "description": "SMR important (18 voix pour) justifié par le besoin médical et l'efficacité biologique, malgré les limites des données.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Au niveau du SMR, nous avons 18 voix pour un SMR important, 2 voix pour un SMR modéré et 1 voix pour un SMR faible.",
+      "page_source": "Page 19",
+      "section_source": "Vote de la commission",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 19,
+          "s": "Au niveau du SMR, nous avons 18 voix pour un SMR important",
+          "t": "Au niveau du SMR, nous avons 18 voix pour un SMR important, 2 voix pour un SMR modéré et 1 voix pour un SMR faible.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_08",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Impact sur la fonction rénale non clair : la créatininémie continue à monter pendant 3 jours après l'administration, récupération incomplète, contredisant les affirmations du laboratoire.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Ce qui est montré, c’est que le taux de créatininémie continue à monter pendant trois jours après administration du médicament.",
+      "page_source": "Page 8",
+      "section_source": "Intervention de Patrick Niaudet",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Ce qui est montré, c’est que le taux de créatininémie",
+          "t": "Ce qui est montré, c’est que le taux de créatininémie continue à monter pendant trois jours après administration du médicament.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_09",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Dialyse non retenue comme CCP : technique peu disponible, inefficace avec rebond, largement remplacée par VORAXAZE en pratique.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Depuis qu’il y a le VORAXAZE, on ne les dialyse plus.",
+      "page_source": "Page 16",
+      "section_source": "Intervention d'Étienne Lengliné",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 16,
+          "s": "Depuis qu’il y a le VORAXAZE, on ne les dialyse plus",
+          "t": "Depuis qu’il y a le VORAXAZE, on ne les dialyse plus.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_10",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANS",
+      "categorie_argument": "Contexte_réglementaire",
+      "description": "AMM accordée sous circonstances exceptionnelles en raison de l'impossibilité d'obtenir des données exhaustives, avec obligation d'études post-AMM (registre).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "L’AMM sous circonstances exceptionnelles a été octroyée du fait de l’impossibilité d’obtenir des données exhaustives d’efficacité et de sécurité dans des conditions normales d’utilisation.",
+      "page_source": "Page 10",
+      "section_source": "Intervention du chef de projet",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "L’AMM sous circonstances exceptionnelles a été octroyée",
+          "t": "L’AMM sous circonstances exceptionnelles a été octroyée du fait de l’impossibilité d’obtenir des données exhaustives d’efficacité et de sécurité dans des conditions normales d’utilisation.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19744_ctx",
+    "evaluation_id": "CT-19744",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "date_audition": "Non renseigné",
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19744",
+    "texte_brut": "Transcription complète de la séance du 11 mai 2022, 19 pages."
+  },
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19744",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19744",
+    "is_orphan": null,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Non renseigné",
+    "type_avis_enum": "Non renseigné",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": null,
+    "n_rct": null,
+    "presence_qol": null,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 21,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": null,
+    "comparateur_placebo": null,
+    "comparateur_soc": null,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": "Q2",
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "expert_nom": "Patrick Niaudet",
+      "role": "membre de la CT",
+      "interventions_summary": "Intervient sur la pharmacologie du méthotrexate, les limites des études (données manquantes, hétérogénéité), l'impact sur la fonction rénale, et propose ASMR V.",
+      "evidence": [
+        {
+          "field": "expert_nom",
+          "f": "F1",
+          "p": 4,
+          "s": "Patrick Niaudet, membre de la CT",
+          "t": "Patrick Niaudet, membre de la CT.- Je veux bien commencer, si vous voulez.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "expert_nom": "Étienne Lengliné",
+      "role": "Vice-Président",
+      "interventions_summary": "Discute du besoin médical, de l'historique d'utilisation, de la qualité des données, propose ASMR V ou VI, et défend l'acide folinique comme CCP.",
+      "evidence": [
+        {
+          "field": "expert_nom",
+          "f": "F1",
+          "p": 6,
+          "s": "Étienne Lengliné, Vice-Président",
+          "t": "Étienne Lengliné, Vice-Président.- Je n’ai pas grand-chose à ajouter, surtout que nous avions déjà discuté de ce dossier à la CT précédente dans le cadre de l’accès précoce.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "expert_nom": "Clara Locher",
+      "role": "membre de la CT",
+      "interventions_summary": "Résume les points, favorable au remboursement avec ASMR V, note les données manquantes importantes.",
+      "evidence": [
+        {
+          "field": "expert_nom",
+          "f": "F1",
+          "p": 7,
+          "s": "Clara Locher, membre de la CT",
+          "t": "Clara Locher, membre de la CT.- Je ne sais pas si nous allons pouvoir ajouter grand-chose. Globalement, je pense que tout a été dit.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "expert_nom": "Pierre Cochat",
+      "role": "Président",
+      "interventions_summary": "Anime le débat, pose des questions sur l'acide folinique et la fonction rénale, organise les votes.",
+      "evidence": [
+        {
+          "field": "expert_nom",
+          "f": "F1",
+          "p": 3,
+          "s": "Pierre Cochat, Président",
+          "t": "Pierre Cochat, Président.-  Nous passons à VORAXAZE.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "expert_nom": "Hugues Blondon",
+      "role": "membre de la CT",
+      "interventions_summary": "Questionne sur la possibilité d'études randomisées et l'impact sur l'ASMR.",
+      "evidence": [
+        {
+          "field": "expert_nom",
+          "f": "F1",
+          "p": 8,
+          "s": "Hugues Blondon, membre de la CT",
+          "t": "Hugues Blondon, membre de la CT.- L’une des difficultés de ce dossier, vous l’avez tous souligné, est la mauvaise qualité des données.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "expert_nom": "Michel Clanet",
+      "role": "Vice-Président",
+      "interventions_summary": "Argumente sur la stratégie thérapeutique et la pertinence des comparateurs (acide folinique et dialyse).",
+      "evidence": [
+        {
+          "field": "expert_nom",
+          "f": "F1",
+          "p": 12,
+          "s": "Michel Clanet, Vice-Président",
+          "t": "Michel Clanet, Vice-Président.- Si je peux me permettre un commentaire, Pierre, la question est de savoir si nous évaluons une stratégie ou si nous évaluons chaque médicament de manière isolée.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19744_point_01",
+      "sujet": "Définition du comparateur cliniquement pertinent (CCP)",
+      "description": "Débat intense pour déterminer si l'acide folinique (et éventuellement la dialyse) doit être considéré comme un CCP. Vote final : acide folinique oui, dialyse non.",
+      "positions_divergentes": [
+        "Pour : majorité des membres (16 voix)",
+        "Contre : 4 voix"
+      ],
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "La question est la suivante. « L’acide folinique est-il un CCP ? »",
+          "t": "La question est la suivante. « L’acide folinique est-il un CCP ? »",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19744_point_02",
+      "sujet": "Qualité des données et justification de l'ASMR V",
+      "description": "Consensus sur la faible qualité des données (études compassionnelles, données manquantes) justifiant une ASMR V plutôt que III revendiquée.",
+      "positions_divergentes": [
+        "ASMR V : 18 voix",
+        "ASMR IV : 3 voix"
+      ],
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Si éthiquement on ne peut pas faire d’étude comparative, c’est que ce médicament a une présomption forte d’efficacité et d’utilité. Est-ce que l’ASMR V est justifiée ?",
+          "t": "Si éthiquement on ne peut pas faire d’étude comparative, c’est que ce médicament a une présomption forte d’efficacité et d’utilité. Est-ce que l’ASMR V est justifiée ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19744_point_03",
+      "sujet": "Impact sur la fonction rénale",
+      "description": "Discussion sur l'évolution de la créatininémie après administration : augmentation pendant 3 jours, récupération incomplète, corrélation avec la méthotrexatémie non démontrée.",
+      "positions_divergentes": [
+        "Patrick Niaudet : impact limité",
+        "Pierre Cochat : besoin de plus de données"
+      ],
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Considères-tu qu’il y a un parallèle possible entre la baisse de la créatininémie sous VORAXAZE et la baisse de la méthotrexatémie",
+          "t": "Considères-tu qu’il y a un parallèle possible entre la baisse de la créatininémie sous VORAXAZE et la baisse de la méthotrexatémie sous VORAXAZE chez les patients pour lesquels nous avons les données, puisque nous ne les avons pas pour tous ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19744_vote_01",
+      "sujet_vote": "L'acide folinique est-il un comparateur cliniquement pertinent (CCP) ?",
+      "resultat": "Adopté",
+      "nb_voix_pour": 16,
+      "nb_voix_contre": 4,
+      "nb_abstentions": 1,
+      "details": "16 voix pour, 4 contre, 1 abstention",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "S’agissant de la question de savoir si le produit a comme CCP",
+          "t": "S’agissant de la question de savoir si le produit a comme CCP l’acide folinique, nous avons 16 voix pour, 4 voix contre et 1 abstention, donc l’acide folinique est considéré comme un CCP.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_02",
+      "sujet_vote": "Impact supplémentaire de santé publique (ISP)",
+      "resultat": "Rejeté",
+      "nb_voix_pour": 0,
+      "nb_voix_contre": 21,
+      "nb_abstentions": 0,
+      "details": "21 voix contre",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "Concernant l’ISP, nous avons 21 voix contre",
+          "t": "Concernant l’ISP, nous avons 21 voix contre.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_03",
+      "sujet_vote": "Service Médical Rendu (SMR)",
+      "resultat": "Important",
+      "nb_voix_pour": 18,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details": "18 voix pour important, 2 modéré, 1 faible",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "Au niveau du SMR, nous avons 18 voix pour un SMR important",
+          "t": "Au niveau du SMR, nous avons 18 voix pour un SMR important, 2 voix pour un SMR modéré et 1 voix pour un SMR faible.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_04",
+      "sujet_vote": "Amélioration du Service Médical Rendu (ASMR)",
+      "resultat": "V",
+      "nb_voix_pour": 18,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details": "18 voix pour ASMR V, 3 voix pour ASMR IV",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 19,
+          "s": "S’agissant de l’ASMR, nous avons 18 voix pour une ASMR V",
+          "t": "S’agissant de l’ASMR, nous avons 18 voix pour une ASMR V dans la stratégie thérapeutique et 3 voix pour une ASMR IV.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {}
+}

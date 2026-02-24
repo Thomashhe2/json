@@ -1,0 +1,682 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-07-06",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-06",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_1_verzenios_06072022_transcription_ct19830_ctap95.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 14
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19830_seg_01",
+      "section_label_normalise": "Arguments_Discussion",
+      "section_label_brut": "TRANSCRIPTION",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "PARTIE 1/14 - Introduction et avertissement",
+      "expected_fields": [
+        "avertissement",
+        "date_seance"
+      ],
+      "routing_hint": "Meta",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19830_seg_02",
+      "section_label_normalise": "Arguments_Discussion",
+      "section_label_brut": "TRANSCRIPTION",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 14,
+      "char_start": 1501,
+      "char_end": 10000,
+      "heading_text": "PARTIES 2-14 - Débats sur VERZENIOS extension d'indication",
+      "expected_fields": [
+        "arguments",
+        "interventions",
+        "votes"
+      ],
+      "routing_hint": "Debats",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19830_produit_01",
+      "evaluation_id": "CT-19830",
+      "produit_nom_commercial": "VERZENIOS",
+      "dci": "abémaciclib",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "Non renseigné",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "VERZENIOS – Examen – Extension d’indication / VERZENIOS - Examen",
+          "t": "VERZENIOS – Examen – Extension d’indication / VERZENIOS - Examen",
+          "c": 0.95
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 2,
+          "s": "VERZENIOS, qui est l’abémaciclib",
+          "t": "VERZENIOS, qui est l’abémaciclib, un anti-CDK4/6",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19830",
+      "Num_avis": "CT-19830",
+      "produit_nom": "VERZENIOS",
+      "dci": "abémaciclib",
+      "type_avis": "Extension d’indication / Examen — Post-AMM — Première demande",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Non renseigné",
+      "dosage": "Non renseigné",
+      "indication": "Extension d’indication dans le cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Cancer du sein",
+      "maladie_rare": false,
+      "ligne_traitement": "Non renseigné",
+      "ligne_traitement_enum": null,
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Non renseigné",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": null,
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": null,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "caractere_innovant_reconnu": null,
+      "perte_de_chance_citee": null,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": 20,
+      "nb_voix_pour": 19,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "date_evaluation": "2022-07-06",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Non renseigné",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "VERZENIOS – Examen – Extension d’indication",
+          "t": "VERZENIOS – Examen – Extension d’indication / VERZENIOS - Examen — Post-AMM — Première demande",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "qui est indiqué en association avec une hormonothérapie chez les patients adultes en traitement adjuvant du cancer du sein précoce RH+/HER2-",
+          "t": "indiqué en association avec une hormonothérapie chez les patients adultes en traitement adjuvant du cancer du sein précoce RH+/HER2-, avec atteinte ganglionnaire et haut risque de rechute",
+          "c": 0.95
+        },
+        {
+          "field": "vote_unanimite",
+          "f": "F1",
+          "p": 13,
+          "s": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "t": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "c": 0.95
+        },
+        {
+          "field": "nb_votants",
+          "f": "F1",
+          "p": 13,
+          "s": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "t": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_TRANS_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Bénéfice en survie sans récidive invasive démontré mais de faible ampleur (3-5% à 2 ans) et incertitude sur le gain en guérison.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "il y a un bénéfice qui me semble démontré en termes de survie sans récidive invasive. Son ampleur d’effet... pourrait être considérée comme cliniquement pertinente... mais il me semble vraiment très hasardeux d’imaginer que cette ampleur d’effet de 3 % à 5 % permette de conclure qu’il s’agit d’une proportion de guérisons en plus.",
+      "page_source": "Page 6-7",
+      "section_source": "Intervention expert Julien Peron",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "il y a un bénéfice qui me semble démontré en termes de survie sans récidive invasive",
+          "t": "il y a un bénéfice qui me semble démontré en termes de survie sans récidive invasive. Son ampleur d’effet, si l’on est enthousiaste, pourrait être considérée comme cliniquement pertinente... Là, on est vraiment sur la démonstration plutôt d’un décalage en temps du moment de la récidive.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Charge toxique non négligeable : 40% d'EI grade 3-4 liés au traitement, 7% d'arrêts définitifs pour EI, principalement diarrhées et fatigue.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "il y a des données de tolérance qui ne sont pas anodines... La proportion de patients avec au moins un événement indésirable de grade 3 ou 4 relié au traitement passe de 3 % à 40 %",
+      "page_source": "Page 6",
+      "section_source": "Intervention expert Julien Peron",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "il y a des données de tolérance qui ne sont pas anodines",
+          "t": "il y a des données de tolérance qui ne sont pas anodines. Il y a 7 % des patients qui ont arrêté de façon définitive l’abémaciclib pour événement indésirable, essentiellement du fait de diarrhées et de fatigue... La proportion de patients avec au moins un événement indésirable de grade 3 ou 4 relié au traitement passe de 3 % à 40 %",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Analyse précoce avec suivi médian court (15,5 mois) inférieur à la durée du traitement (2 ans), limitant l'interprétation du bénéfice à long terme.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Le suivi médian est donc inférieur à la durée d’administration de l’abémaciclib... il me semble vraiment très hasardeux d’imaginer que cette ampleur d’effet... permette de conclure qu’il s’agit d’une proportion de guérisons en plus.",
+      "page_source": "Page 5-6",
+      "section_source": "Intervention expert Julien Peron",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "L’analyse finalement considérée comme finale de l’IDFS correspondait à une analyse prévue intermédiaire réalisée après un suivi médian très court, de 15,5 mois",
+          "t": "L’analyse finalement considérée comme finale de l’IDFS correspondait à une analyse prévue intermédiaire réalisée après un suivi médian très court, de 15,5 mois. Je vous rappelle que l’abémaciclib était donné pour 2 ans. Le suivi médian est donc inférieur à la durée d’administration de l’abémaciclib.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Comparaison_alternatives",
+      "description": "Discordance avec les essais négatifs du palbociclib en situation adjuvante, soulevant des questions sur la reproductibilité de l'effet de la classe.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "je trouve assez difficile d’expliquer la discordance entre l’essai avec l’abémaciclib et les deux essais avec le palbociclib",
+      "page_source": "Page 7",
+      "section_source": "Intervention expert Julien Peron",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "il est à noter quelque chose qui participe à mon évaluation personnelle, à savoir la connaissance des deux effets négatifs du palbociclib",
+          "t": "il est à noter quelque chose qui participe à mon évaluation personnelle, à savoir la connaissance des deux effets négatifs du palbociclib. Certes, c’est une molécule différente, mais nous avions une assez forte reproductibilité des effets thérapeutiques à la phase métastatique. Là, en situation adjuvante, je trouve assez difficile d’expliquer la discordance",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "description": "Débat sur la définition de la population à haut risque qui bénéficierait réellement, avec difficulté à identifier un sous-groupe clair à partir des données.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "soit nous essayons de définir une population un peu artificiellement à très haut risque de récidive, mais c’est compliqué à faire parce que le dossier n’est pas présenté ainsi et nous n’avons pas d’argument fort de sous-groupe",
+      "page_source": "Page 11",
+      "section_source": "Intervention expert Julien Peron",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "soit nous essayons de définir une population un peu artificiellement à très haut risque de récidive",
+          "t": "soit nous essayons de définir une population un peu artificiellement à très haut risque de récidive, mais c’est compliqué à faire parce que le dossier n’est pas présenté ainsi et nous n’avons pas d’argument fort de sous-groupe",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANS",
+      "categorie_argument": "Impact_patient_QDV",
+      "description": "Contribution patients : attente d'un traitement innovant réduisant le risque de récidive, mais préoccupations sur les effets indésirables et besoin de soins de support.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Dans 100 % des cas, les deux personnes sont d’accord pour prendre un traitement innovant diminuant de façon significative le risque de récidive... Il y en a une qui n’est pas prête à faire face à des effets indésirables supplémentaires.",
+      "page_source": "Page 9",
+      "section_source": "Contribution association Patients en Réseau",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Dans 100 % des cas, les deux personnes sont d’accord pour prendre un traitement innovant diminuant de façon significative le risque de récidive",
+          "t": "Dans 100 % des cas, les deux personnes sont d’accord pour prendre un traitement innovant diminuant de façon significative le risque de récidive. Elles sont prêtes à faire des efforts. Il y en a une qui n’est pas prête à faire face à des effets indésirables supplémentaires.",
+          "c": 0.9
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19830_ctx",
+    "evaluation_id": "CT-19830",
+    "ISP": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "acces_precoce": "Acces_precoce_pre_AMM",
+    "type_acces_precoce_enum": "Acces_precoce_pre_AMM",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "acces_precoce",
+        "f": "F1",
+        "p": 2,
+        "s": "Nous allons d’abord faire le droit commun puis l’accès précoce post-AMM",
+        "t": "Nous allons d’abord faire le droit commun puis l’accès précoce post-AMM",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19830",
+    "texte_brut": "Transcription complète de la séance du 6 juillet 2022 sur VERZENIOS.",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19830_smrasmr_01",
+      "evaluation_id": "CT-19830",
+      "indication_precise": "Extension d'indication dans le cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "smr": "SMR insuffisant selon le vote de la commission",
+      "smr_enum": "Insuffisant",
+      "asmr": "Non renseigné",
+      "asmr_enum": null,
+      "smr_revendique": "SMR important revendiqué par le laboratoire",
+      "asmr_revendique": "ASMR IV revendiquée par le laboratoire",
+      "asmr_revendique_enum": "IV",
+      "justification_decisionnelle": "Bénéfice clinique limité et incertain, toxicité significative, discordance avec autres inhibiteurs CDK4/6.",
+      "population_cible_indication": "Patients adultes avec cancer du sein précoce RH+/HER2-, atteinte ganglionnaire et haut risque de rechute",
+      "ligne_traitement_indication": "Adjuvant",
+      "comparateurs_references_indication": "Hormonothérapie seule",
+      "comparateur_id_HAS": "Non renseigné",
+      "indication_structuree": {
+        "ligne_traitement": "Adjuvant",
+        "biomarqueur": "RH+/HER2-",
+        "stade": "Localisé",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Faible",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 13,
+          "s": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "t": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "c": 0.95
+        },
+        {
+          "field": "smr_revendique",
+          "f": "F1",
+          "p": 2,
+          "s": "Pour ce dossier, le laboratoire revendique un SMR important",
+          "t": "Pour ce dossier, le laboratoire revendique un SMR important, une ASMR IV et un intérêt de santé publique",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19830_event_CT_01",
+      "evaluation_id": "CT-19830",
+      "event_type": "AUDITION_LABO",
+      "event_date": "2022-07-06",
+      "detail_brut": "Séance de la Commission de Transparence du 6 juillet 2022",
+      "source_doc": "Transcription",
+      "detail_type_specifique": "Examen extension d'indication VERZENIOS",
+      "acteurs_impliques": [
+        "Pierre Cochat",
+        "Julien Peron",
+        "Sylvie Chevret",
+        "Jean-Pierre Thierry",
+        "Hugues Blondon",
+        "Albert Trinh Duc",
+        "Michel Clanet",
+        "Alexandre Beaufils",
+        "Alice Desbiolles",
+        "Patrick Niaudet",
+        "Étienne Lengliné"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Mercredi 6 juillet 2022",
+          "t": "Mercredi 6 juillet 2022",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19830",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": [
+      {
+        "field": "audition_realisee",
+        "f": "F1",
+        "p": 1,
+        "s": "Mercredi 6 juillet 2022 Commission de Transparence",
+        "t": "Mercredi 6 juillet 2022 Commission de Transparence",
+        "c": 0.95
+      }
+    ]
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19830",
+    "is_orphan": null,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnu": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": null,
+    "n_rct": null,
+    "presence_qol": null,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 20,
+    "voix_pour_pct": 95.0,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": null,
+    "comparateur_soc": null,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVALUATION",
+      "src_id": "CT-19830",
+      "tgt_type": "ARGUMENT",
+      "tgt_id": "CT-19830_arg_TRANS_01",
+      "label": "EVAL_HAS_ARGUMENT"
+    },
+    {
+      "src_type": "EVALUATION",
+      "src_id": "CT-19830",
+      "tgt_type": "PRODUIT",
+      "tgt_id": "CT-19830_produit_01",
+      "label": "EVAL_HAS_PRODUIT"
+    }
+  ],
+  "Annotation_View": [],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19830_vote_01",
+      "evaluation_id": "CT-19830",
+      "type_vote": "SMR",
+      "objet_vote": "Service Médical Rendu pour l'extension d'indication",
+      "date_vote": "2022-07-06",
+      "resultat": "Insuffisant",
+      "nb_votants": 20,
+      "nb_voix_pour": 19,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "details": "Vote par appel nominatif sur le SMR dans le cadre du droit commun",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 13,
+          "s": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "t": "Nous avons 20 votants. Nous avons 19 voix pour un SMR insuffisant et 1 abstention",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19830_vote_02",
+      "evaluation_id": "CT-19830",
+      "type_vote": "ACCES_PRECOCE",
+      "objet_vote": "Critères d'accès précoce post-AMM",
+      "date_vote": "2022-07-06",
+      "resultat": "Refusé",
+      "nb_votants": 20,
+      "nb_voix_pour": 0,
+      "nb_voix_contre": 20,
+      "nb_abstentions": 0,
+      "details": "Vote sur quatre critères : maladie grave (20 pour), pas de traitement approprié (20 contre), innovation (12 contre/8 pour), mise en place non différée (20 contre). Refus global.",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 14,
+          "s": "C’est donc un refus d’accès précoce",
+          "t": "C’est donc un refus d’accès précoce",
+          "c": 0.95
+        },
+        {
+          "field": "details",
+          "f": "F1",
+          "p": 14,
+          "s": "Dans le cadre de ce vote d’accès précoce, au premier critère",
+          "t": "Dans le cadre de ce vote d’accès précoce, au premier critère, « la spécialité est destinée à traiter une maladie grave, rare ou invalidante », nous avions 20 votants et 20 votes pour. Pour le deuxième critère, « il n’existe pas de traitement approprié », il y avait 20 votants et 20 votes contre. Pour le troisième critère, « la spécialité est susceptible d’être innovante », il y avait 12 votes contre et 8 votes pour. Enfin, sur le critère « la mise en place du traitement ne peut pas être différée », il y avait 20 votes contre.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19830_point_01",
+      "evaluation_id": "CT-19830",
+      "theme": "Différence d'efficacité entre abémaciclib et palbociclib en adjuvant",
+      "description": "Débat sur la discordance entre les résultats positifs de l'abémaciclib (essai MonarchE) et les essais négatifs du palbociclib (PALLAS, PENELOPE-B) en situation adjuvante, malgré une reproductibilité en phase métastatique.",
+      "intervenants": [
+        "Julien Peron",
+        "Albert Trinh Duc"
+      ],
+      "conclusion": "Différences pharmacologiques et taux d'arrêts précoces possibles, mais explication incertaine.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "Julien Peron, membre de la CT.- Non, c’était aussi pendant plusieurs années, et même pendant trois ans, pour le palbociclib",
+          "t": "Julien Peron, membre de la CT.- Non, c’était aussi pendant plusieurs années, et même pendant trois ans, pour le palbociclib. S’agissant des différences, qui ont été largement débattues dans les congrès, il y avait premièrement le fait qu’il y avait un taux d’arrêts précoces du traitement dans les essais palbociclib qui était plus important...",
+          "c": 0.9
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_02",
+      "evaluation_id": "CT-19830",
+      "theme": "Définition de la population à haut risque pour un éventuel accès précoce",
+      "description": "Discussion sur la possibilité de limiter l'utilisation aux stades 3 ou aux maladies quasiment métastatiques, mais manque de données de sous-groupe robustes pour justifier une telle restriction.",
+      "intervenants": [
+        "Étienne Lengliné",
+        "Pierre Cochat",
+        "Julien Peron",
+        "Michel Clanet"
+      ],
+      "conclusion": "Impossible de définir une sous-population claire à partir des données disponibles.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Étienne Lengliné, Vice-Président.- En réalité, l’indication où je serais tenté de l’utiliser en tant que clinicien, ce sont vraiment les maladies quasiment métastatiques",
+          "t": "Étienne Lengliné, Vice-Président.- En réalité, l’indication où je serais tenté de l’utiliser en tant que clinicien, ce sont vraiment les maladies quasiment métastatiques, c’est-à-dire les M3 avec des atteintes ganglionnaires à distance, les envahissements axillaires absolument massifs.",
+          "c": 0.9
+        }
+      ]
+    }
+  ]
+}

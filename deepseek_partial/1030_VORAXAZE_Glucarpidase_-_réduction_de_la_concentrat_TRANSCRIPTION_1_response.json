@@ -1,0 +1,777 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19744",
+  "evaluation_id": "CT-19744",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-07-20",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_2_voraxaze_20072022_transcription_ct19744.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 18
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19744_seg_01",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "VORAXAZE – Audition – Inscription (CT) – Partie 1",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Mercredi 20 juillet 2022 Commission de Transparence VORAXAZE – Audition – Inscription (CT)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Début de l'audition",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19744_seg_02",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "VORAXAZE – Audition – Inscription (CT) – Partie 2-4",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Présentation du chef de projet HAS et du laboratoire",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Contexte, demande du laboratoire",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19744_seg_03",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "VORAXAZE – Audition – Inscription (CT) – Partie 5-8",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 8,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Intervention du Pr Chatelut et arguments du laboratoire",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Explication mécanisme, données d'efficacité",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19744_seg_04",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "VORAXAZE – Audition – Inscription (CT) – Partie 9-12",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 9,
+      "page_end": 12,
+      "char_start": 0,
+      "char_end": 2500,
+      "heading_text": "Questions et débats de la commission",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Points_Discussion_Specifiques",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Échanges sur comparateur, études, population",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19744_seg_05",
+      "section_label_normalise": "TRANSCRIPTION",
+      "section_label_brut": "VORAXAZE – Audition – Inscription (CT) – Partie 13-18",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 13,
+      "page_end": 18,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "Délibération et vote de la commission",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Votes_Commission_Transcription",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Discussion interne, vote ASMR et comparateur",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19744_prod_01",
+      "evaluation_id": "CT-19744",
+      "nom_commercial": "VORAXAZE",
+      "dci": "glucarpidase",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "titulaire_amm": "SERB",
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19744_arg_TRANS_01",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "La glucarpidase réduit rapidement les concentrations plasmatiques toxiques de méthotrexate d'un facteur 10 chez les patients avec élimination retardée ou insuffisance rénale, permettant à une majorité de patients de passer sous le seuil toxique.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Vous voyez là l'effet important, puisqu'on diminue d'un facteur 10 les concentrations.",
+      "page_source": "Partie 5/18",
+      "section_source": "Intervention du Pr Chatelut",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Vous voyez là l'effet important",
+          "t": "Vous voyez là l'effet important, puisqu'on diminue d'un facteur 10 les concentrations.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_02",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Comparaison_alternatives",
+      "description": "L'acide folinique n'est pas un comparateur cliniquement pertinent car il est administré à tous les patients sous haute dose de méthotrexate à titre préventif, et il n'est pas efficace pour réduire les concentrations plasmatiques élevées.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "l'acide folinique n'est pas un comparateur cliniquement pertinent, d'abord pour une première raison qui est que sa place dans la stratégie thérapeutique est tout à fait différente.",
+      "page_source": "Partie 7/18",
+      "section_source": "Intervention du laboratoire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "l'acide folinique n'est pas un comparateur cliniquement pertinent",
+          "t": "l'acide folinique n'est pas un comparateur cliniquement pertinent, d'abord pour une première raison qui est que sa place dans la stratégie thérapeutique est tout à fait différente.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_03",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Les données disponibles proviennent d'études non randomisées, non comparatives, avec de nombreuses données manquantes, une forte hétérogénéité et un faible suivi, ce qui limite l'interprétation des résultats et l'appréciation de la quantité d'effet.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "Cette appréciation considérait également les limites de ces études qui limitent l'interprétabilité des résultats et l'appréciation de la quantité d'effet",
+      "page_source": "Partie 2/18",
+      "section_source": "Présentation du chef de projet HAS",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Cette appréciation considérait également les limites",
+          "t": "Cette appréciation considérait également les limites de ces études qui limitent l'interprétabilité des résultats et l'appréciation de la quantité d'effet",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_04",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "La glucarpidase est utilisée chez environ 3% des patients sous haute dose de méthotrexate, en situation d'urgence vitale avec insuffisance rénale associée, remplaçant la dialyse qui était inefficace en raison d'effets rebonds.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les patients précédemment traités par dialyse sont aujourd'hui pris en charge par le médicament VORAXAZE",
+      "page_source": "Partie 8/18",
+      "section_source": "Intervention du laboratoire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Les patients précédemment traités par dialyse",
+          "t": "Les patients précédemment traités par dialyse sont aujourd'hui pris en charge par le médicament VORAXAZE",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_05",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population_cible",
+      "description": "La population cible est restreinte aux patients avec concentrations toxiques de méthotrexate ET altération de la fonction rénale ou preuve d'élimination retardée, soit environ 192 patients par an en France, dont le pronostic vital est engagé.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ces 192 patients éligibles à VORAXAZE, nous l'avons vu ensemble, sont des patients dont le pronostic vital est engagé",
+      "page_source": "Partie 7/18",
+      "section_source": "Intervention du laboratoire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Ces 192 patients éligibles à VORAXAZE",
+          "t": "Ces 192 patients éligibles à VORAXAZE, nous l'avons vu ensemble, sont des patients dont le pronostic vital est engagé",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_06",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Le profil de tolérance est acceptable avec 11% d'effets indésirables liés au VORAXAZE, majoritairement non graves (paresthésies, bouffées congestives), mais difficile à évaluer en raison de la pathologie cancéreuse sous-jacente.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "11 % des patients avaient des effets indésirables considérés comme liés au VORAXAZE, dont la majorité étaient non graves, principalement des paresthésies et bouffées congestives.",
+      "page_source": "Partie 3/18",
+      "section_source": "Présentation du chef de projet HAS",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "11 % des patients avaient des effets indésirables",
+          "t": "11 % des patients avaient des effets indésirables considérés comme liés au VORAXAZE, dont la majorité étaient non graves, principalement des paresthésies et bouffées congestives.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_07",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Comparaison_alternatives",
+      "description": "Certains membres de la commission estiment que l'acide folinique reste un comparateur cliniquement pertinent car il est systématiquement administré en cas de retard d'élimination, selon les préconisations de l'ANSM.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Selon la définition d'un comparateur cliniquement pertinent selon la doctrine de la commission de transparence, l'acide folinique, pour moi, est un comparateur cliniquement pertinent.",
+      "page_source": "Partie 14/18",
+      "section_source": "Intervention d'Étienne Lengliné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "Selon la définition d'un comparateur cliniquement pertinent",
+          "t": "Selon la définition d'un comparateur cliniquement pertinent selon la doctrine de la commission de transparence, l'acide folinique, pour moi, est un comparateur cliniquement pertinent.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19744_arg_TRANS_08",
+      "evaluation_id": "CT-19744",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "L'absence d'études comparatives randomisées s'explique par des raisons éthiques, car les cliniciens refusent de comparer la glucarpidase à la dialyse ou à l'augmentation d'acide folinique, considérant l'efficacité enzymatique comme évidente.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "personne ne s'engage dans cette étude au vu de ce qu'il observe maintenant grâce à glucarpidase par rapport à ce qu'il se passait avant.",
+      "page_source": "Partie 10/18",
+      "section_source": "Intervention du Pr Chatelut",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "personne ne s'engage dans cette étude",
+          "t": "personne ne s'engage dans cette étude au vu de ce qu'il observe maintenant grâce à glucarpidase par rapport à ce qu'il se passait avant.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19744_ctx",
+    "evaluation_id": "CT-19744",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "20/07/2022",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19744",
+    "texte_brut": "Transcription de l'audition HAS pour VORAXAZE (glucarpidase) le 20 juillet 2022, incluant présentation du laboratoire, interventions du Pr Chatelut, questions de la commission et vote.",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19744",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19744",
+    "is_orphan": null,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Non renseigné",
+    "type_avis_enum": "Non renseigné",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": null,
+    "n_rct": null,
+    "presence_qol": null,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 18,
+    "voix_pour_pct": 61.1,
+    "association_patient_intervenue": null,
+    "comparateur_placebo": null,
+    "comparateur_soc": null,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19744_interv_01",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Pierre Cochat",
+      "role": "Président de la CT",
+      "affiliation": "HAS",
+      "type_intervention": "Animation, questions, conclusion",
+      "extrait_representatif": "Nous nous retrouvons pour le dossier VORAXAZE en audition avec le laboratoire SERB.",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 3,
+          "s": "Pierre Cochat, Président.- Nous nous retrouvons",
+          "t": "Pierre Cochat, Président.- Nous nous retrouvons pour le dossier VORAXAZE en audition avec le laboratoire SERB.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_02",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Chef de Projet HAS",
+      "role": "Présentation du dossier",
+      "affiliation": "HAS",
+      "type_intervention": "Exposé des éléments de l'avis précédent",
+      "extrait_representatif": "Il s'agit d'une audition qui fait suite à l'avis du 1er juin...",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 2,
+          "s": "Un Chef de Projet, pour la HAS.- Bonjour.",
+          "t": "Un Chef de Projet, pour la HAS.- Bonjour. Il s'agit d'une audition qui fait suite à l'avis du 1er juin...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_03",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Antoine Bernasconi",
+      "role": "Directeur général du laboratoire SERB",
+      "affiliation": "SERB",
+      "type_intervention": "Présentation, arguments",
+      "extrait_representatif": "Nous souhaitions revenir sur la population cible du médicament...",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 3,
+          "s": "Antoine Bernasconi.- Merci beaucoup.",
+          "t": "Antoine Bernasconi.- Merci beaucoup. Monsieur le Président, Messieurs les Vice-Présidents...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_04",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Étienne Chatelut",
+      "role": "Pharmacologue, expert",
+      "affiliation": "Oncopole de Toulouse",
+      "type_intervention": "Explications scientifiques, données d'expérience",
+      "extrait_representatif": "Pour bien comprendre l'intérêt de la glucarpidase...",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 5,
+          "s": "Étienne Chatelut.- Bonjour, Mesdames et Messieurs.",
+          "t": "Étienne Chatelut.- Bonjour, Mesdames et Messieurs. Je suis responsable du secteur pharmacologie...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_05",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Jean-Christophe Mercier",
+      "role": "Membre de la CT",
+      "affiliation": "HAS",
+      "type_intervention": "Question",
+      "extrait_representatif": "J'ai observé qu'il y avait une nette différence dans la toxicité rénale aiguë entre les adultes traités et les enfants.",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 9,
+          "s": "Jean-Christophe Mercier, membre de la CT.- J'ai observé",
+          "t": "Jean-Christophe Mercier, membre de la CT.- J'ai observé qu'il y avait une nette différence dans la toxicité rénale aiguë entre les adultes traités et les enfants.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_06",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Patrick Niaudet",
+      "role": "Membre de la CT",
+      "affiliation": "HAS",
+      "type_intervention": "Questions",
+      "extrait_representatif": "Pourquoi n'avez-vous pas fait une étude versus acide folinique?",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 10,
+          "s": "Patrick Niaudet, membre de la CT.- Pourquoi n'avez-vous pas fait",
+          "t": "Patrick Niaudet, membre de la CT.- Pourquoi n'avez-vous pas fait une étude versus acide folinique?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_07",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Sylvie Chevret",
+      "role": "Membre de la CT",
+      "affiliation": "HAS",
+      "type_intervention": "Question",
+      "extrait_representatif": "Pourquoi ne pas avoir essayé de faire des comparaisons indirectes?",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 10,
+          "s": "Sylvie Chevret, membre de la CT.- Pourquoi ne pas avoir essayé",
+          "t": "Sylvie Chevret, membre de la CT.- Pourquoi ne pas avoir essayé de faire des comparaisons indirectes?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19744_interv_08",
+      "evaluation_id": "CT-19744",
+      "nom_intervenant": "Étienne Lengliné",
+      "role": "Vice-Président de la CT",
+      "affiliation": "HAS",
+      "type_intervention": "Analyse, réserves",
+      "extrait_representatif": "En fait, dans les données qui ont été collectées... ce qui n'est pas clair, c'est le moment auquel il faut l'administrer.",
+      "evidence": [
+        {
+          "field": "nom_intervenant",
+          "f": "F1",
+          "p": 13,
+          "s": "Étienne Lengliné, Vice-Président.- Je peux peut-être prendre la parole.",
+          "t": "Étienne Lengliné, Vice-Président.- Je peux peut-être prendre la parole. Pour aller un peu dans le sens de ce que vient de dire Pierre...",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19744_point_01",
+      "evaluation_id": "CT-19744",
+      "theme": "Comparateur cliniquement pertinent",
+      "description": "Débat sur la pertinence de l'acide folinique comme comparateur : le laboratoire argue qu'il n'est pas pertinent car administré à tous les patients et inefficace pour réduire les concentrations, tandis que certains membres de la CT le considèrent pertinent car il fait partie de la stratégie standard.",
+      "controverses": "Divergence entre le laboratoire et plusieurs membres de la commission.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 14,
+          "s": "Selon la définition d'un comparateur cliniquement pertinent",
+          "t": "Selon la définition d'un comparateur cliniquement pertinent selon la doctrine de la commission de transparence, l'acide folinique, pour moi, est un comparateur cliniquement pertinent.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19744_point_02",
+      "evaluation_id": "CT-19744",
+      "theme": "Possibilité d'études comparatives",
+      "description": "Discussion sur l'absence d'études randomisées : le Pr Chatelut explique que des tentatives ont été faites mais rejetées pour raisons éthiques, tandis que des membres questionnent la possibilité d'études versus acide folinique ou de comparaisons indirectes.",
+      "controverses": "Questionnement sur la justification de l'absence d'études robustes.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "Patrick Niaudet, membre de la CT.- Pourquoi n'avez-vous pas fait",
+          "t": "Patrick Niaudet, membre de la CT.- Pourquoi n'avez-vous pas fait une étude versus acide folinique?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19744_point_03",
+      "evaluation_id": "CT-19744",
+      "theme": "Population cible et moment d'administration",
+      "description": "Débat sur la définition précise de la population (insuffisance rénale vs simple retard d'élimination) et le moment optimal d'administration de la glucarpidase, avec des réserves sur le manque de données pour guider cette décision.",
+      "controverses": "Flou sur les critères d'utilisation en pratique.",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "En fait, dans les données qui ont été collectées",
+          "t": "En fait, dans les données qui ont été collectées... ce qui n'est pas clair, c'est le moment auquel il faut l'administrer.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19744_vote_01",
+      "evaluation_id": "CT-19744",
+      "type_vote": "ASMR",
+      "objet_vote": "Niveau d'ASMR pour VORAXAZE",
+      "resultat": "ASMR IV",
+      "nb_votants": 18,
+      "nb_voix_pour": 11,
+      "nb_voix_contre": 7,
+      "nb_abstentions": 0,
+      "details": "11 voix pour ASMR IV, 7 voix pour ASMR V.",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 17,
+          "s": "Nous avons 11 voix pour une ASMR IV et 7 voix pour une ASMR V.",
+          "t": "Nous avons 11 voix pour une ASMR IV et 7 voix pour une ASMR V. C'est donc une ASMR IV pour ce produit.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19744_vote_02",
+      "evaluation_id": "CT-19744",
+      "type_vote": "Comparateur cliniquement pertinent",
+      "objet_vote": "Maintien de l'acide folinique comme comparateur cliniquement pertinent",
+      "resultat": "Maintenu",
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details": "Pas de vote formel, décision de garder l'acide folinique comme CCP.",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 18,
+          "s": "Si nous le gardons, nous ne passons pas les observations",
+          "t": "Si nous le gardons, nous ne passons pas les observations parce qu'elles vont dans le sens où l'acide folinique était un CCP.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19744",
+    "contribution_presente": false,
+    "contribution_id": "CT-19744_contrib_1",
+    "association": {
+      "nom_association": "Non renseigné",
+      "type_structure": "Non renseigné",
+      "site_internet": null
+    },
+    "methodologie": {
+      "methode_recueil": "Non renseigné",
+      "description_methode": "Non renseigné",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "Non renseigné",
+      "symptomes_principaux": [],
+      "statistiques_mentionnees": [],
+      "impacts_psychologiques": null,
+      "impacts_proches_aidants": null
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [],
+      "avantages": null,
+      "inconvenients": null,
+      "besoins_non_couverts": null
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": false,
+      "nb_patients_experience": null,
+      "avantages_constates": null,
+      "inconvenients_constates": null,
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": null
+    },
+    "position_association": {
+      "position_generale": "Non_exprimée",
+      "justification": "Non renseigné",
+      "arguments_principaux": []
+    },
+    "synthese_contribution": "Non renseigné",
+    "evidence": []
+  }
+}

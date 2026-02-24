@@ -1,0 +1,544 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19759",
+  "evaluation_id": "CT-19759",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_2_libtayo_14092022_transcription_ct19759.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 14
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19759_seg_01",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Avertissement et ouverture de séance",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "AVERTISSEMENT et introduction",
+      "expected_fields": [
+        "date_seance",
+        "produit",
+        "indication"
+      ],
+      "routing_hint": "Metadonnées de la séance",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Présentation du chef de projet HAS",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Synthèse du dossier par la HAS",
+      "expected_fields": [
+        "resume_avis_precedent",
+        "donnees_etude"
+      ],
+      "routing_hint": "Résumé de l'avis de juin 2022",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_03",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Présentation du laboratoire et de l'expert",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 4,
+      "page_end": 8,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Audition Sanofi et Pr Meyer",
+      "expected_fields": [
+        "besoin_medical",
+        "justification_developpement",
+        "resultats_etude",
+        "demande_SMR_ASMR"
+      ],
+      "routing_hint": "Arguments du laboratoire et de l'expert clinicien",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_04",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et réponses",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 11,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Questions des membres de la CT",
+      "expected_fields": [
+        "questions_methodologie",
+        "questions_donnees",
+        "reponses_laboratoire"
+      ],
+      "routing_hint": "Débat entre la commission et le laboratoire",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_05",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Délibération de la commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 11,
+      "page_end": 13,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Délibération après le départ du laboratoire",
+      "expected_fields": [
+        "discussion_smr_asmr",
+        "vote"
+      ],
+      "routing_hint": "Débat interne à la commission avant le vote",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_06",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote et conclusion",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 13,
+      "page_end": 14,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Vote et index",
+      "expected_fields": [
+        "resultat_vote",
+        "index_terms"
+      ],
+      "routing_hint": "Résultat du vote et fin de document",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19759_arg_TRANS_01",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Absence de solution thérapeutique en deuxième ligne après échec des inhibiteurs de la voie Hedgehog : désert thérapeutique absolu.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Contributeur_majeur",
+      "extrait_textuel": "Dans cette situation clinique très avancée, aujourd'hui, il n'y a pas de solution thérapeutique. Nous sommes vraiment dans une impasse thérapeutique absolue.",
+      "page_source": "Page 4",
+      "section_source": "Présentation du laboratoire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Dans cette situation clinique très avancée",
+          "t": "Dans cette situation clinique très avancée, aujourd'hui, il n'y a pas de solution thérapeutique. Nous sommes vraiment dans une impasse thérapeutique absolue.",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_02",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Taux de réponse objective (critère principal) de 24,1% (métastatique) et 28,6% (localement avancé) avec des réponses durables ; signal d'activité clinique dans un contexte de vide thérapeutique.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modérée",
+      "impact_decision": "Contributeur",
+      "extrait_textuel": "Le taux de réponse globale [...] a montré un taux de réponse globale de 24,1 % dans la cohorte métastatique et de 28,6 % dans la cohorte localement avancé.",
+      "page_source": "Page 3-4",
+      "section_source": "Présentation HAS",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Le taux de réponse globale, qui était le critère principal",
+          "t": "Le taux de réponse globale, qui était le critère principal de cette étude, [...] a montré un taux de réponse globale de 24,1 % dans la cohorte métastatique et de 28,6 % dans la cohorte localement avancé.",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_03",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Impact_patient_QDV",
+      "description": "Amélioration concrète de la qualité de vie des patients : réduction du volume tumoral permettant un allègement des pansements, une réduction des antalgiques et une resocialisation.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modérée",
+      "impact_decision": "Contributeur",
+      "extrait_textuel": "Ce taux de réponse, même sur une réponse partielle, est une réponse qui a une signification. [...] on peut autoriser un allégement des protocoles de pansement, une réduction de la consommation de soins de support, des antalgiques, une resocialisation du patient.",
+      "page_source": "Page 6",
+      "section_source": "Intervention Pr Meyer",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Ce taux de réponse, même sur une réponse partielle",
+          "t": "Ce taux de réponse, même sur une réponse partielle, est une réponse qui a une signification. [...] on peut autoriser un allégement des protocoles de pansement, une réduction de la consommation de soins de support, des antalgiques, une resocialisation du patient.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_04",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Étude de phase II non comparative monobras ; taux de réponse observés non statistiquement significatifs par rapport aux valeurs historiques retenues (15% et 20%). Hypothèses initiales peut-être trop optimistes.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "impact_decision": "Contributeur_majeur",
+      "extrait_textuel": "Ces valeurs, les 24 % et les 28 %, ne sont pas statistiquement significatives par rapport aux valeurs historiques retenues dans le calcul d'effectifs qui étaient dans le protocole, respectivement fixés à 15 % et 20 %.",
+      "page_source": "Page 3",
+      "section_source": "Présentation HAS",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Ces valeurs, les 24 % et les 28 %",
+          "t": "Ces valeurs, les 24 % et les 28 %, ne sont pas statistiquement significatives par rapport aux valeurs historiques retenues dans le calcul d'effectifs qui étaient dans le protocole, respectivement fixés à 15 % et 20 %.",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_05",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Population_cible",
+      "description": "Maladie rare (carcinome basocellulaire localement avancé/métastatique) avec difficulté de recrutement pour des essais de phase III, justifiant un développement en monobras.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Mentionné",
+      "extrait_textuel": "C'est-à-dire qu'aujourd'hui, le carcinome basocellulaire en situation localement avancée [...] ce sont des situations rares. [...] un essai de phase III [...] me semble être soumis à une échéance d'évaluation scientifique qui n'arrivera pas avant plusieurs années.",
+      "page_source": "Page 8",
+      "section_source": "Intervention Pr Meyer",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "C'est-à-dire qu'aujourd'hui, le carcinome basocellulaire",
+          "t": "C'est-à-dire qu'aujourd'hui, le carcinome basocellulaire en situation localement avancée [...] ce sont des situations rares. [...] un essai de phase III [...] me semble être soumis à une échéance d'évaluation scientifique qui n'arrivera pas avant plusieurs années.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_06",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Profil de tolérance conforme à celui des anti-PD1, sans signal de toxicité spécifique inquiétant. Arrêts de traitement pour EI : 7,4% (métastatique) et 16,7% (localement avancé).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Mentionné",
+      "extrait_textuel": "En termes de tolérance, on cite les points suivants : les arrêts de traitement pour évènements indésirables ont concerné 7,4 % des patients de la cohorte métastatique et 16,7 % de la cohorte localement avancé.",
+      "page_source": "Page 3",
+      "section_source": "Présentation HAS",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "En termes de tolérance, on cite les points suivants",
+          "t": "En termes de tolérance, on cite les points suivants : les arrêts de traitement pour évènements indésirables ont concerné 7,4 % des patients de la cohorte métastatique et 16,7 % de la cohorte localement avancé.",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_07",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Demande du laboratoire : SMR important et ASMR IV. Avis précédent de la CT : SMR modéré et ASMR V. Délibération sur un possible rehaussement du SMR.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Déterminant",
+      "extrait_textuel": "Nous sollicitons pour LIBTAYO dans cette indication, un SMR important et une ASMR IV [...] la commission a donné l'aval pour le remboursement de ce produit. Elle a attribué un SMR modéré pour cette spécialité et une absence d'ASMR, donc une ASMR V.",
+      "page_source": "Page 4 et 13",
+      "section_source": "Présentation laboratoire et délibération",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Nous sollicitons pour LIBTAYO dans cette indication",
+          "t": "Nous sollicitons pour LIBTAYO dans cette indication, un SMR important et une ASMR IV dans la stratégie thérapeutique.",
+          "c": 0.98
+        },
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Je propose qu'on vote sur le maintien ou non de l'avis précédent, qui était modéré, V.",
+          "t": "Je propose qu'on vote sur le maintien ou non de l'avis précédent, qui était modéré, V.",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19759_ctx",
+    "evaluation_id": "CT-19759",
+    "date_audition": "2022-09-14",
+    "SMR_avant_audition_enum": "Modéré",
+    "SMR_apres_audition_enum": "Modéré",
+    "ASMR_avant_audition_enum": "V",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Maintien de l'avis précédent (SMR modéré, ASMR V)",
+    "estimation_mesure_impact": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19759",
+    "texte_brut": "Non renseigné"
+  },
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19759",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19759",
+    "is_orphan": null,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Non renseigné",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": null,
+    "n_rct": null,
+    "presence_qol": null,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 20,
+    "voix_pour_pct": 55.0,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19759_interv_01",
+      "evaluation_id": "CT-19759",
+      "nom_intervenant": "Pr Nicolas Meyer",
+      "role": "Onco-dermatologue, investigateur de l'essai",
+      "affiliation": "Oncopôle de Toulouse",
+      "resume_intervention": "Décrit la maladie (carcinome basocellulaire localement avancé/métastatique) comme rare, avec un besoin médical important et une impasse thérapeutique en 2ème ligne. Présente les résultats de l'essai RGN1620 et leur pertinence clinique (amélioration qualité de vie). Justifie la méthodologie monobras par la rareté de la maladie.",
+      "page_reference": "5-8",
+      "evidence": [
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 5,
+          "s": "Le carcinome basocellulaire localement avancé",
+          "t": "Le carcinome basocellulaire localement avancé, métastatique sont, d'une part, des maladies rares, mais également [...] ce sont deux maladies différentes [...] La grande particularité [...] c'est une situation paradoxale [...] avec une mortalité très tardive, 7,3 ans [...] l'ensemble du paysage thérapeutique est vierge.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19759_interv_02",
+      "evaluation_id": "CT-19759",
+      "nom_intervenant": "Mme Massuel (Sanofi)",
+      "role": "Directrice accès marché immunologie onco-hématologie",
+      "affiliation": "Sanofi",
+      "resume_intervention": "Présente la justification du développement clinique (étude monobras) par l'absence de comparateur pertinent et la rareté de la maladie. Souligne l'impasse thérapeutique et le parallèle avec le développement des inhibiteurs de Hedgehog en 1ère ligne.",
+      "page_reference": "4-5",
+      "evidence": [
+        {
+          "field": "resume_intervention",
+          "f": "F1",
+          "p": 4,
+          "s": "Concernant le développement clinique de LIBTAYO",
+          "t": "Concernant le développement clinique de LIBTAYO, ce développement repose sur une (inaudible). Cette méthodologie a semblé justifiée aussi bien aux spécialistes qu'aux instances réglementaires. [...] Dans cette situation clinique très avancée, aujourd'hui, il n'y a pas de solution thérapeutique. Nous sommes vraiment dans une impasse thérapeutique absolue.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19759_point_01",
+      "evaluation_id": "CT-19759",
+      "sujet": "Faisabilité et nécessité d'un essai de phase III randomisé",
+      "description": "Débat sur la possibilité et l'intérêt de réaliser un essai de phase III randomisé compte tenu de la rareté de la maladie et du recrutement difficile. Un membre estime que la taille d'effet permettrait un essai avec un effectif raisonnable, tandis que l'expert et le laboratoire soulignent la rareté et la lenteur du recrutement.",
+      "intervenants_impliques": [
+        "Jean-Christophe Lega",
+        "Pr Nicolas Meyer",
+        "Mme Lansac (Sanofi)"
+      ],
+      "page_reference": "8-9",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Si vous pensez que la molécule a un potentiel",
+          "t": "Jean-Christophe Lega : Si vous pensez que la molécule a un potentiel, avez-vous débuté une phase III au sens habituel du terme ? [...] Monsieur Meyer : [...] C'est-à-dire qu'aujourd'hui [...] ce sont des situations rares. [...] Jean-Christophe Lega : Si vous avez entre 0 % de réponses [...] versus 30 %, [...] il ne faut pas tant de patients pour faire une différence significative.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19759_point_02",
+      "evaluation_id": "CT-19759",
+      "sujet": "Interprétation des hypothèses et de la significativité statistique de l'étude",
+      "description": "Controverse sur le choix des hypothèses (valeurs historiques de 15% et 20%) pour le calcul d'effectif. Un membre souligne que les taux observés (24-28%) sont proches de ces hypothèses et non significativement différents, ce qui va dans le sens d'un effet insatisfaisant. L'expert défend le signal d'activité clinique observé.",
+      "intervenants_impliques": [
+        "Sylvie Chevert",
+        "Pr Nicolas Meyer",
+        "Mme Lansac (Sanofi)"
+      ],
+      "page_reference": "9-11",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Je voulais vous féliciter, puisque vous aviez fait un calcul d'effectifs",
+          "t": "Sylvie Chevert : [...] Vous aviez postulé des bénéfices beaucoup plus importants que ceux que vous avez pu observer. [...] les taux que vous avez observés avec votre traitement sont proches de ceux que vous postuliez pour les traitements disponibles. Cela a plutôt tendance à aller dans une interprétation sur un effet insatisfaisant par rapport à l'existant.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19759_point_03",
+      "evaluation_id": "CT-19759",
+      "sujet": "Données de qualité de vie",
+      "description": "Question sur l'absence de données formelles de qualité de vie dans l'étude, alors que l'amélioration de la qualité de vie est un argument clinique majeur avancé par le laboratoire et l'expert.",
+      "intervenants_impliques": [
+        "Clémence Basse"
+      ],
+      "page_reference": "11",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 11,
+          "s": "Pourquoi n'y avait-il pas de données de qualité de vie ?",
+          "t": "Clémence Basse : Pourquoi n'y avait-il pas de données de qualité de vie ? [...] ils se sont beaucoup appuyés sur la qualité de vie, la diminution des soins et des plaies.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19759_point_04",
+      "evaluation_id": "CT-19759",
+      "sujet": "Évaluation du SMR et de l'ASMR lors de la délibération",
+      "description": "Discussion entre membres sur la possibilité de rehausser le SMR de modéré à important, compte tenu de la vacuité thérapeutique, tout en maintenant l'ASMR V (absence d'amélioration) faute de comparaison.",
+      "intervenants_impliques": [
+        "Serge Kouzan",
+        "Pierre Cochat (Président)"
+      ],
+      "page_reference": "12-13",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "Je voulais juste faire le commentaire en relisant le rapport",
+          "t": "Serge Kouzan : [...] Il n'était pas choqué qu'il y ait un SMR important compte tenu finalement de la vacuité thérapeutique. [...] je me posais la question de savoir si passer de modéré à important n'était pas finalement une option non délirante. Sachant que le IV, comme il y a zéro comparaison, cela me semble être trop surévalué. Pierre Cochat : Je ne suis pas complètement choqué par ta proposition. Majorer le SMR, pourquoi pas. L’ASMR, non, sûrement pas.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19759_vote_01",
+      "evaluation_id": "CT-19759",
+      "objet_du_vote": "Maintien ou non de l'avis précédent (SMR modéré, ASMR V)",
+      "date_vote": "2022-09-14",
+      "nb_votants": 20,
+      "nb_voix_pour": 11,
+      "nb_voix_contre": 9,
+      "nb_abstentions": 0,
+      "resultat": "Maintien de l'avis précédent",
+      "details": "Vote par appel nominatif suite à la délibération.",
+      "page_reference": "13",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 13,
+          "s": "Il est procédé au vote par appel nominatif",
+          "t": "Maintien : 11 voix / Non-maintien : 9 voix. [...] C’est donc maintien.",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19759",
+    "contribution_presente": false
+  }
+}

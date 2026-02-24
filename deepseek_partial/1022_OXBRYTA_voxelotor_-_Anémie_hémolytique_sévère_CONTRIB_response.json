@@ -1,0 +1,282 @@
+{
+  "schema_version": "3.3.8",
+  "doc_id": "Non renseigné",
+  "evaluation_id": "Non renseigné",
+  "extraction_date": "2017-09-30",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2017-09-30",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "contrib_1_oxbryta_dc_contribution_fmdt_sos_globi.pdf",
+        "type": "CONTRIB",
+        "page_count": 9
+      }
+    }
+  },
+  "template_detecte": "CONTRIB",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "Non renseigné_seg_01",
+      "section_label_normalise": "CONTRIBUTION_PATIENTS",
+      "section_label_brut": "Questionnaire de recueil du point de vue des patients et usagers",
+      "template_detecte": "CONTRIB",
+      "page_start": 1,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": 9000,
+      "heading_text": "Contribution des associations de patients et d’usagers aux évaluations des médicaments et des dispositifs médicaux",
+      "expected_fields": [
+        "Contribution_Patients"
+      ],
+      "routing_hint": "CONTRIB",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_01",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "description": "La drépanocytose a un impact majeur sur la qualité de vie : douleurs intenses, fatigue chronique, complications organiques et espérance de vie réduite de 20 ans.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Drépanocytose est une maladie invalidante... On estime que la drépanocytose ampute de 20 ans l’espérance de vie de ceux qui en souffrent.",
+      "page_source": "Partie 2/9",
+      "section_source": "Impact de la maladie",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 2,
+          "s": "La Drépanocytose est une maladie invalidante",
+          "t": "La Drépanocytose est une maladie invalidante, malgré le caractère non visible de la plupart des complications qu’elle entraine. On estime que la drépanocytose ampute de 20 ans l’espérance de vie de ceux qui en souffrent",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_02",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "description": "Besoin médical non couvert pour les patients ne répondant pas à l'hydroxyurée et aux échanges transfusionnels, avec peu d'alternatives.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les patients qui ne répondent pas suffisamment bien à la prise de l’hydroxyurée et aux échanges transfusionnels, n’ont pas d’autres alternatives de traitement",
+      "page_source": "Partie 9/9",
+      "section_source": "Synthèse de votre contribution",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "Les patients qui ne répondent pas suffisamment",
+          "t": "Les patients qui ne répondent pas suffisamment bien à la prise de l’hydroxyurée et aux échanges transfusionnels, n’ont pas d’autres alternatives de traitement",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_03",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Expérience positive avec le voxelotor : augmentation de l'hémoglobine (+2 g/dl chez certains patients, +1,8 g/dl chez une patiente), amélioration de l'énergie et de la capacité à réaliser des tâches quotidiennes.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "De quelques patients sous protocole en début de traitement sous ATU, il est constaté une excellente réponse de la prise de voxelotor dès J15 à +2 g/dl d’hémoglobine. Sous voxelotor depuis 8 semaines, j’ai pu constater également une augmentation de mon taux d’hémoglobine de 6,6 à 8,4g, je me sens plus énergique et moins l’épuisement.",
+      "page_source": "Partie 8/9",
+      "section_source": "Expériences avec le médicament évalué",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "De quelques patients sous protocole en début",
+          "t": "De quelques patients sous protocole en début de traitement sous ATU, il est constaté une excellente réponse de la prise de voxelotor dès J15 à +2 g/dl d’hémoglobine. Sous voxelotor depuis 8 semaines, j’ai pu constater également une augmentation de mon taux d’hémoglobine de 6,6 à 8,4g, je me sens plus énergique et moins l’épuisement.",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_04",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Effets secondaires du voxelotor (nausées, maux de tête, fièvre, diarrhées) mais transitoires (disparaissent en 3 semaines).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le plus grand inconvénient est sans nul doute, les effets secondaires plus ou moins supportables : Nausées, sensation de « gueule de bois », Maux de tête, vertiges, Fièvre, asthénie, Diarrhées. Ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement.",
+      "page_source": "Partie 8/9",
+      "section_source": "Expériences avec le médicament évalué",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "Le plus grand inconvénient est sans nul doute",
+          "t": "Le plus grand inconvénient est sans nul doute, les effets secondaires plus ou moins supportables : Nausées, sensation de « gueule de bois », Maux de tête, vertiges, Fièvre, asthénie, Diarrhées. Ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement.",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "Non renseigné_arg_CONTRIB_05",
+      "evaluation_id": "Non renseigné",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "description": "Attentes des patients : traitement améliorant la qualité de vie, limitant les crises et la fatigue, permettant plus d'autonomie et d'insertion sociale.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les patients souffrant de la drépanocytose souhaiteraient obtenir un traitement qui puissent les soulager des complications de la drépanocytose (limiter les crises, limiter la fatigue, limiter l’évolution de la maladie). Ils espèrent que les nouvelles thérapeutiques leur permettent de moins souffrir, d’avoir une autonomie plus importante notamment aux efforts physiques, de limiter et contrôler leurs crises, d’accéder à une meilleure insertion sociale.",
+      "page_source": "Partie 7/9",
+      "section_source": "Attentes vis-à-vis d’une nouvelle thérapeutique",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Les patients souffrant de la drépanocytose souhaiteraient",
+          "t": "Les patients souffrant de la drépanocytose souhaiteraient obtenir un traitement qui puissent les soulager des complications de la drépanocytose (limiter les crises, limiter la fatigue, limiter l’évolution de la maladie). Ils espèrent que les nouvelles thérapeutiques leur permettent de moins souffrir, d’avoir une autonomie plus importante notamment aux efforts physiques, de limiter et contrôler leurs crises, d’accéder à une meilleure insertion sociale.",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {},
+  "Données_Textuelles": {},
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {},
+  "Features_Modele": {},
+  "Relations": [],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "Non renseigné",
+    "contribution_presente": true,
+    "contribution_id": "Non renseigné_contrib_1",
+    "association": {
+      "nom_association": "FMDT SOS GLOBI (Fédération des associations de malades drépanocytaires et thalassémiques SOS GLOBI)",
+      "type_structure": "Non renseigné",
+      "site_internet": "Non renseigné"
+    },
+    "methodologie": {
+      "methode_recueil": "Groupe de travail",
+      "description_methode": "Groupe de travail des membres de l’association SOS GLOBI, Composé, de 2 malades drépanocytaires, et de Deux aidants. L’une des malades, reçoit le traitement VOXELOTOR, en accès précoce depuis 1mois et demi. La Fédération SOS GLOBI a contribué à l’évaluation du Voxelotor, et à la diffusion de l’information à ses membres.",
+      "nb_patients_consultes": null,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": false,
+    "impacts_maladie": {
+      "description_impacts_patients": "La Drépanocytose est une maladie invalidante, malgré le caractère non visible de la plupart des complications qu’elle entraine. Elle s’exprime différemment d’un individu à l’autre et entraine des complications aigues et chroniques. Il n’existe qu’un seul traitement « curatif » qui est la greffe de moelle osseuse, dont seul un nombre limité de patients peut bénéficier. On estime que la drépanocytose ampute de 20 ans l’espérance de vie de ceux qui en souffrent. La maladie a différents impacts au quotidien : Impact fonctionnel : incapacité à la station debout prolongée, à pratiquer une activité physique intense, à soulever des charges lourdes, à rester dans un endroit mal ou trop aéré, sec, froid ou trop chaud. Fatigue chronique et difficultés de concentration dues aux traitements. Impact social / relationnel : Difficultés à avoir une vie sociale soumise aux Crises de douleurs imprévisibles (sorties activités sportifs limitées, activités de plein air limités, (ski), vacances à la montagne à proscrire. Equilibre familial/ relation intimes : Difficultés à trouver un(e) partenaire au vu de la méconnaissance de la maladie et de sa lourdeur au quotidien. Priapisme (symptôme masculin), pour certains, difficultés pour l’acte sexuel. Grossesses à risques, et surveillance accrue de la grossesse. Impact psychologique : perte de confiance, isolement, remplis sur soi, découragement.",
+      "symptomes_principaux": [
+        "Crises vaso-occlusives (douleurs)",
+        "Fatigue chronique",
+        "Anémie",
+        "Complications organiques (rein, poumon, cœur, cerveau)",
+        "Priapisme"
+      ],
+      "statistiques_mentionnees": [
+        {
+          "indicateur": "Espérance de vie réduite",
+          "valeur": "20 ans",
+          "source": "étude Américaine. Lubeck D, et al. Estimated Life Expectancy and Income of Patients With Sickle Cell Disease Compared With Those Without Sickle Cell Disease. JAMA Netw Open. 2019 Nov"
+        },
+        {
+          "indicateur": "Épisode dépressif",
+          "valeur": "39%",
+          "source": "étude internationale (Osunkwo I, et al. Impact of sickle cell disease on patients' daily lives, symptoms reported, and disease management strategies: Results from the international Sickle Cell World Assessment Survey (SWAY). Am J Hematol. 2021 Apr)"
+        }
+      ],
+      "impacts_psychologiques": "perte de confiance, isolement, remplis sur soi, découragement, hypervigilance par rapport à la douleur, mal-être psychologique et dépression",
+      "impacts_proches_aidants": "La naissance d’un enfant atteint de drépanocytose est une surprise pour la plus grande partie des parents. L’annonce est un moment difficile et stressant. La surveillance quotidienne de l’enfant demande un niveau de compréhension important. Les Crises Vaso Occlusives (CVO) redoutées, soudaines et spectaculaires plongent les parents dans l’angoisse et une peur qui ne les quitte plus. Les frères, les sœurs souffrent également psychologiquement. Leur place dans la famille est réduite par l’imposante prise en charge de l’enfant malade qui dicte le rythme de la vie familiale. Plus tard, le conjoint, la conjointe est aussi un personnel soignant, palliant les faiblesses physiques et s’impliquant plus fortement dans la vie sociale. L’aidant ou la famille subit le même stress que le malade, il s’inquiète pour ses hospitalisations, l’accompagne lors des différents examens médicaux. L’aidant reste sur le qui-vive car il porte également l’épée de Damoclès sur ses épaules (réveils nocturnes liés aux CVO qui surviennent de façon inopinée.) Changement de thymie à cause de la fatigue, et dans certains cas, l’aidant est aussi l’infirmier de la personne, qui en crise, ne peut s’habiller, se mouvoir, ou faire sa toilette seule. Les relations sexuelles sont parfois compliquées à cause de la survenue de crise (pendant ou après l’acte) culpabilité de la compagne ou du compagnon."
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [
+        "Hydroxyurée",
+        "Échange transfusionnel",
+        "Transfusions simples de culots globulaires",
+        "Chélateurs du fer",
+        "Crizanlizumab",
+        "Greffe de cellules souches hématopoïétiques",
+        "Anti-douleurs",
+        "Acide folique",
+        "Antibiothérapie",
+        "Vaccination",
+        "Vitamine D",
+        "Anti-hypertenseurs",
+        "Anti-dépresseurs",
+        "EPO",
+        "Rituximab"
+      ],
+      "avantages": "L’hydroxyurée est un médicament qui a démontré son efficacité sur la prévention et/ou l'atténuation des crises vaso-occlusives (CVO) et des syndromes thoraciques dans la drépanocytose. Il s’agit du traitement de 1ère intention pour prévenir la survenue des complications dans la drépanocytose. Il peut être prescrit dès la survenue du 1er évènement vaso-occlusif et est indiqué chez les jeunes enfants grâce à la possibilité d’adapter le dosage du traitement en fonction du poids (spécialité Siklos). Ce traitement ainsi qu’une prise en charge précoce de la maladie avec une prophylaxie adaptée (prévention des infections, programme de vaccination, suivi dans les centres experts) ont permis de réduire la mortalité infantile de manière considérable et la morbidité liée à la maladie. L'échange transfusionnel permet une amélioration de l’état général et de la qualité de vie mais de manière temporaire. Les chélateurs du fer permettent de réduire voire d’annuler la surcharge en fer. Le crizanlizumab permet de réduire la fréquence des crises et est administré 1 fois par mois. La greffe de cellules souches hématopoïétiques est le seul traitement curatif pour la drépanocytose.",
+      "inconvenients": "Hydroxyurée : effets secondaires (immunosuppression, infertilité masculine temporaire, alopécie), réponse nulle ou limitée chez certains patients, effet limité dans le temps. Échange transfusionnel : accès limité (disponibilité produits sanguins, allo immunisation), effets secondaires (surcharge en fer, allo immunisation), nécessite pose fréquente de voies veineuses. Chélateurs du fer : effets secondaires importants (vision, ouïe, digestifs), organisation contraignante. Crizanlizumab : nécessite un capital veineux en bon état. Greffe de cellules souches : seulement 25% des patients disposent d’un donneur 100% HLA identique, effets secondaires lourds (maladies immunitaires, rejet).",
+      "besoins_non_couverts": "Les patients souffrant de la drépanocytose souhaiteraient obtenir un traitement qui puissent les soulager des complications de la drépanocytose (limiter les crises, limiter la fatigue, limiter l’évolution de la maladie). Ils espèrent que les nouvelles thérapeutiques leur permettent de moins souffrir, d’avoir une autonomie plus importante notamment aux efforts physiques, de limiter et contrôler leurs crises, d’accéder à une meilleure insertion sociale."
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": true,
+      "nb_patients_experience": null,
+      "avantages_constates": "De quelques patients sous protocole en début de traitement sous ATU, il est constaté une excellente réponse de la prise de voxelotor dès J15 à +2 g/dl d’hémoglobine. Sous voxelotor depuis 8 semaines, j’ai pu constater également une augmentation de mon taux d’hémoglobine de 6,6 à 8,4g, je me sens plus énergique et moins l’épuisement. Je peux réaliser plus de tâches au quotidien.",
+      "inconvenients_constates": "Le plus grand inconvénient est sans nul doute, les effets secondaires plus ou moins supportables : Nausées, sensation de « gueule de bois », Maux de tête, vertiges, Fièvre, asthénie, Diarrhées. Ces effets secondaires disparaissent au bout de 3 semaines de prise du traitement.",
+      "attentes_principales": "Les patients non-répondants ou n’ayant plus d’alternatives de traitement espèrent que ce traitement leur sera bénéfique. Il y a une grande attente des patients et de leurs familles pour les nouveaux traitements. En l’absence de traitements curatifs de la drépanocytose, les patients attendent un traitement qui pourrait améliorer leur état de santé en général, avec des effets secondaires raisonnables et leur permettrait d’éviter la survenue des CVO, et les hospitalisations liées à ces crises, d’éviter les complications liées à la maladie (comme les AVC, STA, ulcères) et de diminuer les transfusions et les effets secondaires qui en découlent.",
+      "craintes_principales": "Non renseigné"
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": "Non renseigné"
+    },
+    "position_association": {
+      "position_generale": "Favorable",
+      "justification": "La drépanocytose, concerne 30 000 patients en France. C’est une maladie évolutive, dont la prise en charge est complexe et pour laquelle il n’existe qu’un seul traitement curatif dont l’accès est limité (greffe de cellules souches). Les patients qui ne répondent pas suffisamment bien à la prise de l’hydroxyurée et aux échanges transfusionnels, n’ont pas d’autres alternatives de traitement, et subissent de plein fouet les complications de la maladie qui ont un impact sur la scolarité, la vie professionnelle et la vie sociale. La qualité de vie des patients atteints de drépanocytose est considérablement impactée liée à la chronicité de la maladie, au caractère imprévisible des complications, à la sévérité des symptômes et au peu de solutions disponibles. Les patients souffrant de la drépanocytose souhaiteraient obtenir un traitement qui puissent les soulager des complications de la drépanocytose (limiter les crises, limiter la fatigue, limiter l’évolution de la maladie). Le voxélotor est une alternative très attendue par les patients.",
+      "arguments_principaux": [
+        "Impact majeur de la maladie sur la qualité de vie",
+        "Alternatives thérapeutiques limitées",
+        "Expérience positive avec le voxelotor (augmentation Hb, énergie)",
+        "Effets secondaires transitoires",
+        "Grande attente des patients"
+      ]
+    },
+    "synthese_contribution": "La contribution de l'association FMDT SOS GLOBI décrit l'impact sévère de la drépanocytose sur la qualité de vie (douleurs, fatigue, complications, espérance de vie réduite). Les traitements actuels ont des limites (effets secondaires, réponse insuffisante). L'expérience avec le voxelotor est positive (augmentation de l'hémoglobine, amélioration de l'énergie) avec des effets secondaires transitoires. L'association souligne le besoin médical non couvert et soutient le voxelotor comme alternative attendue.",
+    "evidence": [
+      {
+        "field": "Contribution_Patients",
+        "f": "F1",
+        "p": 1,
+        "s": "Nom et adresse de l’association",
+        "t": "FMDT SOS GLOBI (Fédération des associations de malades drépanocytaires et thalassémiques SOS GLOBI)",
+        "c": 1.0
+      },
+      {
+        "field": "Contribution_Patients",
+        "f": "F1",
+        "p": 1,
+        "s": "Groupe de travail des membres de l’association",
+        "t": "Groupe de travail des membres de l’association SOS GLOBI, Composé, de 2 malades drépanocytaires, et de Deux aidants. L’une des malades, reçoit le traitement VOXELOTOR, en accès précoce depuis 1mois et demi.",
+        "c": 1.0
+      }
+    ]
+  }
+}

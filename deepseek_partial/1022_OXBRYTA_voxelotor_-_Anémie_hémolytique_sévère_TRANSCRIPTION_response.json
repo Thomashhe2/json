@@ -1,0 +1,704 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19784",
+  "evaluation_id": "CT-19784",
+  "extraction_date": "2022-06-15",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-15",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_1_oxbryta_15062022_transcription_ct19784.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 17
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19784_seg_01",
+      "section_label_normalise": "AVERTISSEMENT",
+      "section_label_brut": "AVERTISSEMENT",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "AVERTISSEMENT",
+      "expected_fields": [],
+      "routing_hint": "Informations générales sur la transcription",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-19784_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Introduction et présentation du dossier",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "1. Examen d’inscription : OXBRYTA 500 mg (voxélotor) (CT-19784)",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Présentation du dossier par la chef de projet HAS",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_seg_03",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Intervention du Pr Hot",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 5,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Intervention du Pr Hot",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Expert clinique discutant de l'efficacité, de la population cible et des expériences réelles",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_seg_04",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Lecture du rapport d'Alexandra Gauthier-Vasserot",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 7,
+      "page_end": 8,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Lecture du rapport d'Alexandra Gauthier-Vasserot",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts"
+      ],
+      "routing_hint": "Rapport écrit de l'experte pédiatre, lu par la chef de projet",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_seg_05",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Intervention du Pr Chevret",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 8,
+      "page_end": 9,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Intervention du Pr Chevret",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Expertise méthodologique sur les biais de l'étude",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_seg_06",
+      "section_label_normalise": "POINT_DE_VUE_PATIENT",
+      "section_label_brut": "Contribution d'association de patients",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 9,
+      "page_end": 10,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Contribution d'association de patients",
+      "expected_fields": [
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Présentation de la contribution de SOS GLOBI",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_seg_07",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Questions et débats",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 10,
+      "page_end": 17,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Questions et débats",
+      "expected_fields": [
+        "Arguments_Decisionnels",
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "Débats entre membres de la commission sur l'efficacité, la population cible, les risques",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19784_seg_08",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote de la commission",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 17,
+      "page_end": 17,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Vote de la commission",
+      "expected_fields": [
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "Résultats des votes sur le SMR et l'ASMR",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19784_prod_01",
+      "evaluation_id": "CT-19784",
+      "produit_nom_commercial": "OXBRYTA",
+      "dci": "voxélotor",
+      "titulaire_amm": "GLOBAL BLOOD THERAPEUTICS FRANCE SAS",
+      "code_cis": "Non renseigné",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "comprimé",
+          "forme_pharma_enum": "Oral",
+          "dosage_concentration": "500 mg",
+          "code_cip13": "Non renseigné"
+        }
+      ],
+      "evidence": []
+    }
+  ],
+  "Evaluations_HAS": [],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19784_arg_TRANS_01",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Validité interne médiocre de l'étude HOPE due à de nombreux amendements de protocole après analyses intermédiaires, impactant objectifs et critères.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "La validité interne de l’étude est médiocre liée à de nombreux amendements au protocole, notamment un amendement majeur venu impacter différents éléments de l’étude et qui est survenu après la réalisation de la deuxième analyse intermédiaire, dont le laboratoire avait connaissance des résultats.",
+      "page_source": "Page 5",
+      "section_source": "Présentation par la chef de projet",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "La validité interne de l’étude est médiocre",
+          "t": "La validité interne de l’étude est médiocre liée à de nombreux amendements au protocole, notamment un amendement majeur venu impacter différents éléments de l’étude et qui est survenu après la réalisation de la deuxième analyse intermédiaire",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_02",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Critère principal biologique (augmentation de 1 g/dl d'hémoglobine) sans démonstration d'effet sur les crises vaso-occlusives, bénéfice clinique incertain.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "L’absence de bénéfices sur un critère clinique. La pertinence du critère principal de jugement biologique.",
+      "page_source": "Page 5",
+      "section_source": "Présentation par la chef de projet",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "L’absence de bénéfices sur un critère clinique",
+          "t": "L’absence de bénéfices sur un critère clinique. La pertinence du critère principal de jugement biologique.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_03",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Risque théorique d'hypoxie tissulaire à long terme dû au mécanisme d'action, mais aucun signal identifié dans les études cliniques.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Le risque d’hypoxie tissulaire à long terme. Néanmoins, aucun signal n’a été identifié dans les études cliniques.",
+      "page_source": "Page 5",
+      "section_source": "Présentation par la chef de projet",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Le risque d’hypoxie tissulaire à long terme",
+          "t": "Le risque d’hypoxie tissulaire à long terme. Néanmoins, aucun signal n’a été identifié dans les études cliniques.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_04",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Population_cible",
+      "description": "Population cible restreinte aux patients avec anémie hémolytique sévère non répondant à l'hydroxyurée, nécessitant une définition précise pour éviter les risques d'hyperviscosité.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Si je rédigeais l’indication, je dirais anémie hémolytique sévère ne répondant pas à un traitement bien conduit par hydroxycarbamide ou HYDREA et nécessitant un apport transfusionnel.",
+      "page_source": "Page 12",
+      "section_source": "Intervention du Pr Hot",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "Si je rédigeais l’indication",
+          "t": "Si je rédigeais l’indication, je dirais anémie hémolytique sévère ne répondant pas à un traitement bien conduit par hydroxycarbamide ou HYDREA et nécessitant un apport transfusionnel.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_05",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Risque d'hyperviscosité et d'aggravation des syndromes thoraciques si hémoglobine dépasse 10 g/dl, contre-indiquant le traitement chez ces patients.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Chez les malades qui ont plus de 10 gr, cela ne sert strictement à rien. C’est même contre-indiqué.",
+      "page_source": "Page 13",
+      "section_source": "Intervention du Pr Hot",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 13,
+          "s": "Chez les malades qui ont plus de 10 gr",
+          "t": "Chez les malades qui ont plus de 10 gr, cela ne sert strictement à rien. C’est même contre-indiqué.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_06",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Positionnement en bithérapie avec l'hydroxyurée plutôt qu'en monothérapie, pour une meilleure efficacité et réduction des transfusions.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Sauf cas exceptionnel de malades qui seraient allergiques à l’hydroxycarbamide, on ne peut pas admettre que ce soit en monothérapie. Il faut les mettre en biothérapie.",
+      "page_source": "Page 6",
+      "section_source": "Intervention du Pr Hot",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Sauf cas exceptionnel de malades",
+          "t": "Sauf cas exceptionnel de malades qui seraient allergiques à l’hydroxycarbamide, on ne peut pas admettre que ce soit en monothérapie. Il faut les mettre en biothérapie.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_07",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Besoin_médical",
+      "description": "Besoin médical non couvert pour l'anémie hémolytique chronique sévère dans la drépanocytose, notamment en pédiatrie pour la croissance et les apprentissages.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ce besoin médical essentiel, notamment en pédiatrie pour garantir une croissance staturo-pondérale, un développement pubertaire et des apprentissages corrects, est actuellement non couvert par les thérapeutiques à notre disposition.",
+      "page_source": "Page 8",
+      "section_source": "Lecture du rapport de Gauthier-Vasserot",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Ce besoin médical essentiel",
+          "t": "Ce besoin médical essentiel, notamment en pédiatrie pour garantir une croissance staturo-pondérale, un développement pubertaire et des apprentissages corrects, est actuellement non couvert par les thérapeutiques à notre disposition.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19784_arg_TRANS_08",
+      "evaluation_id": "CT-19784",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Données limitées à long terme sur l'impact clinique et la qualité de vie, avec des incertitudes sur le transfert d'oxygène et la réversibilité à l'arrêt du traitement.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "Il est mentionné qu’on ne sait pas encore clairement dans quelle mesure le voxélotor améliorera les symptômes cliniques et la qualité de vie à long terme.",
+      "page_source": "Page 5",
+      "section_source": "Présentation par la chef de projet",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Il est mentionné qu’on ne sait pas encore",
+          "t": "Il est mentionné qu’on ne sait pas encore clairement dans quelle mesure le voxélotor améliorera les symptômes cliniques et la qualité de vie à long terme",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19784_interv_01",
+      "evaluation_id": "CT-19784",
+      "expert_nom": "Pr Arnaud Hot",
+      "role": "Expert clinique",
+      "propos_principaux": "Critique la validité interne de l'étude HOPE, discute de la population cible (anémie sévère avec hémoglobine <10 g/dl), recommande la bithérapie avec hydroxyurée, souligne le bénéfice potentiel sur la réduction des transfusions et les risques d'hyperviscosité.",
+      "page_source": "Pages 5-7, 10-13",
+      "evidence": [
+        {
+          "field": "propos_principaux",
+          "f": "F1",
+          "p": 5,
+          "s": "M. le Pr HOT.- Bonjour à tous",
+          "t": "Les biais méthodologiques, on en reparlera, mais ils sont liés au fait que quand la molécule est sortie initialement, elle était présentée comme un traitement qui allait réduire les crises vaso-occlusives.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19784_interv_02",
+      "evaluation_id": "CT-19784",
+      "expert_nom": "Pr Alexandra Gauthier-Vasserot",
+      "role": "Experte pédiatre",
+      "propos_principaux": "Souligne le besoin médical non couvert dans l'anémie hémolytique sévère, en particulier en pédiatrie. Juge le critère d'augmentation de 1 g/dl d'hémoglobine cliniquement pertinent. Exprime des inquiétudes sur le transfert d'oxygène et la réversibilité à l'arrêt du traitement.",
+      "page_source": "Pages 7-8",
+      "evidence": [
+        {
+          "field": "propos_principaux",
+          "f": "F1",
+          "p": 7,
+          "s": "Une chef de projet, pour la HAS.- Je reprends les principaux points.",
+          "t": "Dans l’analyse critique des études, elle décrit les données. Elle évoque le critère de jugement principal. Pour elle, l’augmentation de 1gr/dl d’hémoglobine est un critère cliniquement pertinent, qui peut nettement améliorer la qualité de vie des patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19784_interv_03",
+      "evaluation_id": "CT-19784",
+      "expert_nom": "Pr Sylvie Chevret",
+      "role": "Experte méthodologique",
+      "propos_principaux": "Critique les nombreuses modifications de protocole après analyses intermédiaires, entraînant une validité interne médiocre. Remet en question la pertinence du critère principal biologique et l'absence d'effet sur les crises vaso-occlusives.",
+      "page_source": "Pages 8-9",
+      "evidence": [
+        {
+          "field": "propos_principaux",
+          "f": "F1",
+          "p": 8,
+          "s": "Mme le Pr CHEVRET, pour la HAS.- Sur le plan méthodologique",
+          "t": "Sur le plan méthodologique, comme l’a déjà dit le premier expert, énormément de modifications du protocole sont intervenues après les deux premières analyses intermédiaires concernant des changements sur le schéma de l’étude, sur l’objectif, sur la définition de la population d’études, sur les critères de jugement.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19784_point_01",
+      "evaluation_id": "CT-19784",
+      "sujet": "Définition de la population cible et indication restreinte",
+      "description": "Débat sur la nécessité de restreindre l'indication aux formes sévères d'anémie hémolytique ne répondant pas à l'hydroxyurée, avec un seuil d'hémoglobine à ne pas dépasser (10 g/dl) pour éviter l'hyperviscosité.",
+      "intervenants": [
+        "Pr Hot",
+        "Dr Trinh-Duc",
+        "Pr Cochat"
+      ],
+      "page_source": "Pages 12-15",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "M. le Dr TRINH-DUC.- Merci",
+          "t": "Est-ce qu’il faut entendre dans vos propos que l’indication proposée n’est pas la bonne ou qu’elle est beaucoup trop large ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19784_point_02",
+      "evaluation_id": "CT-19784",
+      "sujet": "Pertinence clinique du critère principal biologique",
+      "description": "Discussion sur le manque de traduction clinique de l'augmentation de 1 g/dl d'hémoglobine, notamment sur les crises vaso-occlusives, la qualité de vie et la croissance staturo-pondérale.",
+      "intervenants": [
+        "Pr Mercier",
+        "Pr Hot"
+      ],
+      "page_source": "Pages 10-11",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 10,
+          "s": "M. le Pr MERCIER.- Ce qui est frappant dans ce dossier",
+          "t": "Actuellement, le critère est celui d’un critère biologique. On remonte l’hémoglobine de 1 gr/dl. Est-ce que ceci se traduit par des conséquences cliniques ?",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19784_point_03",
+      "evaluation_id": "CT-19784",
+      "sujet": "Risque d'hyperviscosité et contre-indications",
+      "description": "Échange sur le risque d'aggravation des syndromes thoraciques et des crises vaso-occlusives si l'hémoglobine dépasse 10 g/dl, conduisant à une recommandation de ne pas traiter ces patients.",
+      "intervenants": [
+        "Pr Bonnet",
+        "Pr Hot",
+        "Dr Blondon"
+      ],
+      "page_source": "Pages 12-13",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 12,
+          "s": "M. le Pr BONNET.- Dans le prolongement",
+          "t": "est-ce qu’il faut faire un warning sur les patients qui ont des syndromes thoraciques et des syndromes inclusifs fréquents ? J’ai cru comprendre qu’il y avait un risque accru.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19784_vote_01",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "SMR dans l'indication restreinte (anémie hémolytique sévère ne répondant pas à l'hydroxyurée)",
+      "nb_votants": 18,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": 5,
+      "nb_abstentions": 0,
+      "resultat": "SMR suffisant",
+      "details": "13 voix pour un SMR suffisant, 5 voix pour un SMR insuffisant.",
+      "page_source": "Page 17",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 17,
+          "s": "Mme KELLEY.- 18 votants pour ce vote",
+          "t": "13 voix pour un SMR suffisant dans cette indication restreinte ; 5 voix pour un SMR insuffisant.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19784_vote_02",
+      "evaluation_id": "CT-19784",
+      "objet_vote": "SMR, ASMR, ISP et SMR miroir dans le reste de l'indication",
+      "nb_votants": 18,
+      "nb_voix_pour_smr_modere": 13,
+      "nb_voix_pour_smr_faible": 15,
+      "nb_voix_pour_asmr_v": 16,
+      "nb_voix_pour_asmr_iv": 2,
+      "nb_voix_pour_isp": 0,
+      "nb_voix_pour_smr_insuffisant": 18,
+      "resultat": "SMR modéré (13 voix), faible (15 voix), ASMR V (16 voix), absence d'ISP (18 voix), SMR insuffisant (18 voix)",
+      "details": "Vote miroir pour le reste de l'AMM : SMR modéré (13), faible (15), ASMR V (16), ASMR IV (2), absence d'ISP (18), SMR insuffisant (18).",
+      "page_source": "Page 17",
+      "evidence": [
+        {
+          "field": "resultat",
+          "f": "F1",
+          "p": 17,
+          "s": "Mme KELLEY.- 18 votants",
+          "t": "13 voix pour un SMR modéré ; 15 voix pour un SMR faible. Dans l’indication restreinte : 16 voix pour une ASMR V ; 2 voix pour une ASMR IV ; 18 voix pour une absence de ISP ; 18 voix pour un SMR insuffisant.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19784_ctx",
+    "evaluation_id": "CT-19784",
+    "ISP": "Non renseigné",
+    "acces_precoce": "ATU_cohorte",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "type_acces_precoce_enum": "ATU_cohorte",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": true,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": true,
+    "date_audition": "2022-06-15",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19784",
+    "texte_brut": "Transcription complète de la séance du 15 juin 2022 sur OXBRYTA (voxélotor) - CT-19784",
+    "embedding": null,
+    "evidence": []
+  },
+  "SMR_ASMR_Par_Indication": [],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19784",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": true,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19784",
+    "is_orphan": true,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Non renseigné",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": null,
+    "perte_de_chance_citee": null,
+    "ligne_traitement_num": null,
+    "is_rct": null,
+    "n_essais": null,
+    "n_rct": null,
+    "presence_qol": null,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": null,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 18,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": null,
+    "comparateur_soc": null,
+    "nb_clockstops": null,
+    "annee_ct": 2022,
+    "trimestre_ct": "Q2",
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

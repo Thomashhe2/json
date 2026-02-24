@@ -1,0 +1,722 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19759",
+  "evaluation_id": "CT-19759",
+  "extraction_date": "2022-06-15",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-06-15",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "trans_1_libtayo_15062022_transcription_ct19759.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 7
+      }
+    }
+  },
+  "template_detecte": "TRANSCRIPTION",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19759_seg_01",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Présentation et discussion",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Examen extension d’indication : LIBTAYO 350 mg (CBCla ou CBCm) (CT-19759) SANOFI-AVENTIS FRANCE",
+      "expected_fields": [
+        "Interventions_Experts",
+        "Points_Discussion_Specifiques"
+      ],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_02",
+      "section_label_normalise": "ARGUMENTS_DISCUSSION",
+      "section_label_brut": "Discussion sur les données et la méthodologie",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 2,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Discussion sur les données",
+      "expected_fields": [
+        "Points_Discussion_Specifiques",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19759_seg_03",
+      "section_label_normalise": "VOTE",
+      "section_label_brut": "Vote et conclusion",
+      "template_detecte": "TRANSCRIPTION",
+      "page_start": 6,
+      "page_end": 7,
+      "char_start": 0,
+      "char_end": null,
+      "heading_text": "Vote",
+      "expected_fields": [
+        "Votes_Commission_Transcription"
+      ],
+      "routing_hint": "TRANSCRIPTION",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19759_prod_01",
+      "evaluation_id": "CT-19759",
+      "produit_nom_commercial": "LIBTAYO",
+      "dci": "cémipimab",
+      "forme_pharmaceutique": "Non renseigné",
+      "dosage": "350 mg",
+      "titulaire_amm": "SANOFI-AVENTIS FRANCE",
+      "code_cis": "Non renseigné",
+      "code_cip13": "Non renseigné",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "Examen extension d’indication : LIBTAYO 350 mg",
+          "t": "Examen extension d’indication : LIBTAYO 350 mg (CBCla ou CBCm) (CT-19759) SANOFI-AVENTIS FRANCE",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19759",
+      "Num_avis": "CT-19759",
+      "produit_nom": "LIBTAYO",
+      "dci": "cémipimab",
+      "type_avis": "Extension d’indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "Non renseigné",
+      "dosage": "350 mg",
+      "indication": "carcinome basocellulaire localement avancé ou métastatique, ayant progressé ou présentant une intolérance à un inhibiteur de la voie Hedgehog",
+      "classe_ATC": "Non renseigné",
+      "pathologie": "Carcinome basocellulaire",
+      "maladie_rare": false,
+      "ligne_traitement": "Deuxième ligne après inhibiteur de la voie Hedgehog",
+      "ligne_traitement_enum": "2L",
+      "sous_groupe_population": "Non renseigné",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Oncologie cutanée",
+      "aire_therapeutique_niveau_3": "Carcinome basocellulaire",
+      "source_aire_therapeutique": "Déduit de pathologie",
+      "design_etude": "Étude de phase II non comparative",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Besoin non couvert pour ces patients rares basocellulaires localement avancés ou métastatiques, en échec de nos traitements par inhibiteur Sonic-Hedgehog.",
+      "besoin_medical_interprete": "Non_couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "Non renseigné",
+      "design_enum": "Phase_II_single_arm",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": 18,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-06-15",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Non renseigné",
+      "pertinence_concurrence_therapeutique": "Non renseigné",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "L’extension d’indications porte sur le carcinome basocellulaire localement avancé ou métastatique, ayant progressé ou présentant une intolérance à un inhibiteur de la voie Hedgehog.",
+          "t": "L’extension d’indications porte sur le carcinome basocellulaire localement avancé ou métastatique, ayant progressé ou présentant une intolérance à un inhibiteur de la voie Hedgehog.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19759_arg_TRANS_01",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin non couvert pour les patients atteints de carcinome basocellulaire localement avancé ou métastatique en échec ou intolérant aux inhibiteurs de la voie Hedgehog, pathologie rare pouvant entraîner des délabrements majeurs.",
+      "extrait_textuel": "Nous avons un besoin non couvert pour ces patients rares basocellulaires localement avancés ou métastatiques, en échec de nos traitements par inhibiteur Sonic-Hedgehog.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_expert",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Nous avons un besoin non couvert pour ces patients rares basocellulaires localement avancés ou métastatiques, en échec de nos traitements par inhibiteur Sonic-Hedgehog.",
+          "t": "Nous avons un besoin non couvert pour ces patients rares basocellulaires localement avancés ou métastatiques, en échec de nos traitements par inhibiteur Sonic-Hedgehog.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_02",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Efficacité démontrée avec des taux de réponse objective de 24% (métastatique) et 28% (localement avancé), permettant dans certains cas de rendre les patients opérables.",
+      "extrait_textuel": "Les métastatiques, le taux de réponse objective est de 24 %, un peu plus élevé pour les localement avancés, 28 %... Cela permettra de rendre opérables ces patients qui ne l’étaient pas auparavant.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_expert",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "Les métastatiques, le taux de réponse objective est de 24 %, un peu plus élevé pour les localement avancés, 28 %.",
+          "t": "Les métastatiques, le taux de réponse objective est de 24 %, un peu plus élevé pour les localement avancés, 28 %.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_03",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Neutre",
+      "description": "Tolérance similaire aux autres inhibiteurs de PD1, avec des effets immunomédiés connus, sans nouveau signal particulier. Aucun décès attribué au traitement.",
+      "extrait_textuel": "Sur la tolérance, on a exactement ce qu’on connaît avec la cémiplimab. C’est un inhibiteur de PD1. On a des effets immunomédiés. On n’a pas de nouveau signaux particuliers... Six malades sont décédés pendant la durée de l’étude, mais aucun n’est décédé à cause du cémiplimab.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_expert",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 5,
+          "s": "Sur la tolérance, on a exactement ce qu’on connaît avec la cémiplimab. C’est un inhibiteur de PD1.",
+          "t": "Sur la tolérance, on a exactement ce qu’on connaît avec la cémiplimab. C’est un inhibiteur de PD1. On a des effets immunomédiés. On n’a pas de nouveau signaux particuliers... Six malades sont décédés pendant la durée de l’étude, mais aucun n’est décédé à cause du cémiplimab.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_04",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Étude de phase II non comparative, considérée comme faible et non robuste, avec une démonstration statistique insuffisante selon certains membres.",
+      "extrait_textuel": "L’étude est une étude ouverte de phase II, donc vous allez un peu tiquer. C’est un peu léger... Le dossier est faiblard.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "intervenant": "Pr GUILLOT",
+      "moment_debat": "Présentation_expert",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "L’étude est une étude ouverte de phase II, donc vous allez un peu tiquer. C’est un peu léger.",
+          "t": "L’étude est une étude ouverte de phase II, donc vous allez un peu tiquer. C’est un peu léger.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_05",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence de démonstration statistique significative des hypothèses de calcul d'effectif, avec des tests non significatifs (p ≈ 0.056-0.08).",
+      "extrait_textuel": "Aucun des deux tests n’arrive avec un test de comparaison à ce qu’ils ont demandé... Si on fait deux tests, on a un P à 0,08 ou à 0,056, donc ce n’est pas une démonstration statistique.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Pr CHEVRET",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Aucun des deux tests n’arrive avec un test de comparaison à ce qu’ils ont demandé, 15 % du premier côté et 20 % de l’autre.",
+          "t": "Aucun des deux tests n’arrive avec un test de comparaison à ce qu’ils ont demandé, 15 % du premier côté et 20 % de l’autre. Si on fait deux tests, on a un P à 0,08 ou à 0,056, donc ce n’est pas une démonstration statistique de ce qu’ils voulaient.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_06",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Mitigé",
+      "description": "Taux de réponse partielle de 20-22% avec une significativité clinique incertaine, bien que pouvant conduire à l'opérabilité, mais non démontrée dans l'étude.",
+      "extrait_textuel": "20 % de réponses partielles, soit une diminution de 30 % de la taille des lésions, les bénéfices cliniques ne sont pas super évidents... J’imagine que les critères d’opérabilité ne sont pas toujours très univoques.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "intervenant": "Dr LENGLINÉ",
+      "moment_debat": "Questions_commission",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "20 % de réponses partielles, soit une diminution de 30 % de la taille des lésions, les bénéfices cliniques ne sont pas super évidents.",
+          "t": "20 % de réponses partielles, soit une diminution de 30 % de la taille des lésions, les bénéfices cliniques ne sont pas super évidents. Merci.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19759_arg_TRANS_07",
+      "evaluation_id": "CT-19759",
+      "source_argument": "TRANS",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "description": "Données très faibles justifiant un SMR modéré plutôt qu'important, et une ASMR V plutôt que IV, selon les votes de la commission.",
+      "extrait_textuel": "Les données sont très faibles... Je serai plutôt pour un SMR modéré au minimum et une ASMR au maximum.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "intervenant": "Pr CLANET",
+      "moment_debat": "Délibération",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Les données sont très faibles, d’une part. Deuxièmement, je pense que ce médicament est peut-être important pour les personnes qui pourraient être opérées, mais il n’y en a aucun dans le dossier. Je serai plutôt pour un SMR modéré au minimum et une ASMR au maximum.",
+          "t": "Les données sont très faibles, d’une part. Deuxièmement, je pense que ce médicament est peut-être important pour les personnes qui pourraient être opérées, mais il n’y en a aucun dans le dossier. Je serai plutôt pour un SMR modéré au minimum et une ASMR au maximum.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19759_ctx",
+    "evaluation_id": "CT-19759",
+    "ISP": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Non renseigné",
+    "acces_precoce": "Non renseigné",
+    "type_acces_precoce_enum": "Non renseigné",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "Non renseigné",
+    "date_AMM_ema": "Non renseigné",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non renseigné",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non renseigné",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": []
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19759",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19759_smrasmr_01",
+      "evaluation_id": "CT-19759",
+      "indication_precise": "carcinome basocellulaire localement avancé ou métastatique, ayant progressé ou présentant une intolérance à un inhibiteur de la voie Hedgehog",
+      "smr": "SMR modéré selon vote de la commission.",
+      "smr_enum": "Modéré",
+      "asmr": "ASMR V selon vote de la commission.",
+      "asmr_enum": "V",
+      "smr_revendique": "Important",
+      "asmr_revendique": "IV",
+      "asmr_revendique_enum": "IV",
+      "justification_decisionnelle": "Données de l'étude de phase II non comparative considérées comme faibles, mais répondant à un besoin non couvert.",
+      "population_cible_indication": "Patients adultes avec carcinome basocellulaire localement avancé ou métastatique après échec ou intolérance à un inhibiteur de la voie Hedgehog.",
+      "ligne_traitement_indication": "Deuxième ligne",
+      "comparateurs_references_indication": "Inhibiteurs de la voie Hedgehog (vismodegib, sonidegib)",
+      "comparateur_id_HAS": "Non renseigné",
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Non renseigné",
+        "stade": "Localement_avancé",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Faible",
+      "evidence": [
+        {
+          "field": "smr_revendique",
+          "f": "F1",
+          "p": 2,
+          "s": "Ils sollicitent cette inscription aux collectivités avec une demande d’un SMR important",
+          "t": "Ils sollicitent cette inscription aux collectivités avec une demande d’un SMR important, une ASMR IV dans la stratégie thérapeutique et une absence de ISP.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19759",
+    "delai_amm_ct_jours": null,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19759",
+    "is_orphan": false,
+    "classe_ATC_l2": "Non renseigné",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": false,
+    "nb_votants": 18,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 2,
+    "template_ere": "TRANSCRIPTION",
+    "missingness_indicators": "Non renseigné"
+  },
+  "Relations": [],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19759_int_01",
+      "evaluation_id": "CT-19759",
+      "intervenant": "Pr GUILLOT",
+      "role": "Expert",
+      "contenu": "Présentation des résultats de l'étude et de la place du cémipimab dans la stratégie thérapeutique.",
+      "page_reference": 3,
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 3,
+          "s": "M. le Pr GUILLOT.- Merci pour ta représentation bien complète sur le produit.",
+          "t": "M. le Pr GUILLOT.- Merci pour ta représentation bien complète sur le produit. Le cémiplimab, effectivement, vous l’avez déjà vu.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19759_int_02",
+      "evaluation_id": "CT-19759",
+      "intervenant": "Pr CHEVRET",
+      "role": "Membre HAS",
+      "contenu": "Commentaire sur l'absence de significativité statistique des tests de l'étude.",
+      "page_reference": 6,
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 6,
+          "s": "Mme le Pr CHEVRET, pour la HAS.- Je veux juste faire un commentaire.",
+          "t": "Mme le Pr CHEVRET, pour la HAS.- Je veux juste faire un commentaire. Pour moi, ce n’est pas démontré parce qu’ils ont posé des hypothèses de départ pour justifier les calculs d’effectif dans les deux sous-populations, mais ce n’est pas significatif.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19759_int_03",
+      "evaluation_id": "CT-19759",
+      "intervenant": "Dr LENGLINÉ",
+      "role": "Membre HAS",
+      "contenu": "Question sur la significativité clinique des réponses partielles et l'opérabilité des patients.",
+      "page_reference": 6,
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 6,
+          "s": "M. le Dr LENGLINÉ, pour la HAS.- J’avais aussi une question sur la significativité clinique d’avoir 20 % de réponses partielles.",
+          "t": "M. le Dr LENGLINÉ, pour la HAS.- J’avais aussi une question sur la significativité clinique d’avoir 20 % de réponses partielles. Tu as dit plusieurs fois que cela permettrait éventuellement d’opérer les patients.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19759_int_04",
+      "evaluation_id": "CT-19759",
+      "intervenant": "Pr CLANET",
+      "role": "Vice-Président",
+      "contenu": "Opinion sur la faiblesse des données et préférence pour un SMR modéré et une ASMR V.",
+      "page_reference": 7,
+      "evidence": [
+        {
+          "field": "contenu",
+          "f": "F1",
+          "p": 7,
+          "s": "M. le Pr CLANET, Vice-Président.- Justement, je n’étais pas au bureau ce jour-là.",
+          "t": "M. le Pr CLANET, Vice-Président.- Justement, je n’étais pas au bureau ce jour-là. Je trouve que les données sont très faibles, d’une part. Deuxièmement, je pense que ce médicament est peut-être important pour les personnes qui pourraient être opérées, mais il n’y en a aucun dans le dossier. Je serai plutôt pour un SMR modéré au minimum et une ASMR au maximum.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19759_point_01",
+      "evaluation_id": "CT-19759",
+      "sujet": "Significativité statistique des résultats",
+      "description": "Débat sur le fait que les tests statistiques de l'étude ne sont pas significatifs (p ≈ 0.056-0.08), remettant en cause la démonstration des hypothèses de calcul d'effectif.",
+      "intervenants_impliques": [
+        "Pr CHEVRET",
+        "Pr GUILLOT"
+      ],
+      "page_reference": 6,
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "Aucun des deux tests n’arrive avec un test de comparaison à ce qu’ils ont demandé",
+          "t": "Aucun des deux tests n’arrive avec un test de comparaison à ce qu’ils ont demandé, 15 % du premier côté et 20 % de l’autre. Si on fait deux tests, on a un P à 0,08 ou à 0,056, donc ce n’est pas une démonstration statistique de ce qu’ils voulaient.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19759_point_02",
+      "evaluation_id": "CT-19759",
+      "sujet": "Significativité clinique des réponses partielles et opérabilité",
+      "description": "Discussion sur la pertinence clinique d'une réponse partielle (20-22%) et si elle conduit réellement à l'opérabilité des patients, non démontrée dans l'étude.",
+      "intervenants_impliques": [
+        "Dr LENGLINÉ",
+        "Pr GUILLOT"
+      ],
+      "page_reference": 6,
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 6,
+          "s": "20 % de réponses partielles, soit une diminution de 30 % de la taille des lésions, les bénéfices cliniques ne sont pas super évidents",
+          "t": "20 % de réponses partielles, soit une diminution de 30 % de la taille des lésions, les bénéfices cliniques ne sont pas super évidents. Merci.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19759_point_03",
+      "evaluation_id": "CT-19759",
+      "sujet": "Faiblesse des données et justification du SMR/ASMR",
+      "description": "Débat sur la faiblesse des données de l'étude de phase II non comparative et son impact sur le niveau de SMR et d'ASMR attribué.",
+      "intervenants_impliques": [
+        "Pr CLANET",
+        "Pr COCHAT"
+      ],
+      "page_reference": 7,
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 7,
+          "s": "Les données sont très faibles, d’une part. Deuxièmement, je pense que ce médicament est peut-être important pour les personnes qui pourraient être opérées, mais il n’y en a aucun dans le dossier.",
+          "t": "Les données sont très faibles, d’une part. Deuxièmement, je pense que ce médicament est peut-être important pour les personnes qui pourraient être opérées, mais il n’y en a aucun dans le dossier. Je serai plutôt pour un SMR modéré au minimum et une ASMR au maximum.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19759_vote_01",
+      "evaluation_id": "CT-19759",
+      "type_vote": "SMR",
+      "demande_laboratoire": "Important",
+      "resultat_vote": "Modéré",
+      "nb_votants": 18,
+      "nb_voix_pour": 13,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details_voix": "4 voix pour un SMR important, 13 voix pour un SMR modéré, 1 voix pour un SMR faible",
+      "page_reference": 7,
+      "evidence": [
+        {
+          "field": "details_voix",
+          "f": "F1",
+          "p": 7,
+          "s": "4 voix pour un SMR important, 13 voix pour un SMR modéré, 1 voix pour un SMR faible.",
+          "t": "4 voix pour un SMR important, 13 voix pour un SMR modéré, 1 voix pour un SMR faible.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "vote_id": "CT-19759_vote_02",
+      "evaluation_id": "CT-19759",
+      "type_vote": "ASMR",
+      "demande_laboratoire": "IV",
+      "resultat_vote": "V",
+      "nb_votants": 18,
+      "nb_voix_pour": 17,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "details_voix": "17 voix pour une ASMR V dans la strate et 1 voix pour une ASMR IV",
+      "page_reference": 7,
+      "evidence": [
+        {
+          "field": "details_voix",
+          "f": "F1",
+          "p": 7,
+          "s": "17 voix pour une ASMR V dans la strate et 1 voix pour une ASMR IV.",
+          "t": "17 voix pour une ASMR V dans la strate et 1 voix pour une ASMR IV.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19759",
+    "contribution_presente": false,
+    "contribution_id": null
+  }
+}
