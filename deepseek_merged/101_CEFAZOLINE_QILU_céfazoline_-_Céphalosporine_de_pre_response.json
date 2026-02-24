@@ -1,0 +1,697 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-21446",
+  "evaluation_id": "CT-21446",
+  "extraction_date": "2025-08-27",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2025-08-27",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-21446_CEFAZOLINE_QILU_PIS_INS_AvisDef_CT21446.pdf",
+        "type": "CT",
+        "page_count": 4
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-21446_seg_1",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse de l’avis",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "Synthèse de l’avis",
+      "expected_fields": [
+        "type_avis",
+        "smr_enum",
+        "asmr_enum",
+        "conclusion"
+      ],
+      "routing_hint": "synthèse",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21446_seg_2",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "produit_nom",
+        "dci",
+        "type_avis",
+        "presentations",
+        "indications",
+        "laboratoire",
+        "date_amm"
+      ],
+      "routing_hint": "admin",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21446_seg_3",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission de la Transparence",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Conclusions de la Commission de la Transparence",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "arguments_smr",
+        "population_cible"
+      ],
+      "routing_hint": "smr",
+      "label_confidence": 1.0
+    },
+    {
+      "segment_id": "CT-21446_seg_4",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Autres recommandations de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": 0,
+      "char_end": 200,
+      "heading_text": "Autres recommandations de la Commission",
+      "expected_fields": [
+        "conditionnements"
+      ],
+      "routing_hint": "place",
+      "label_confidence": 1.0
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "evaluation_id": "CT-21446",
+      "produit_nom_commercial": "CEFAZOLINE QILU",
+      "dci": "céfazoline",
+      "code_atc": "J01DB04",
+      "presentations": [
+        {
+          "forme_pharmaceutique": "poudre pour solution injectable/pour perfusion",
+          "dosage": "1 g",
+          "code_cip13": "34009 301 545 9 5"
+        },
+        {
+          "forme_pharmaceutique": "poudre pour solution injectable/pour perfusion",
+          "dosage": "2 g",
+          "code_cip13": "34009 301 546 1 8"
+        }
+      ],
+      "titulaire_amm": "ZENTIVA (Exploitant)",
+      "evidence": [
+        {
+          "field": "presentations",
+          "f": "F1",
+          "p": 2,
+          "s": "CEFAZOLINE QILU 1 g, poudre pour",
+          "t": "CEFAZOLINE QILU 1 g, poudre pour solution injectable/pour perfusion − 10 flacons en verre de 10 ml (CIP : 34009 301 545 9 5)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-21446",
+      "Num_avis": "CT-21446",
+      "produit_nom": "CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion",
+      "dci": "céfazoline",
+      "type_avis": "Inscription : Primo-inscription",
+      "type_avis_enum": "Inscription",
+      "forme": "poudre pour solution injectable/pour perfusion",
+      "dosage": "1 g et 2 g",
+      "indication": "Infections de la peau et des tissus mous, infections des os et des articulations, prophylaxie des infections péri-opératoires",
+      "classe_ATC": "J01DB04",
+      "pathologie": "Infections bactériennes",
+      "maladie_rare": false,
+      "ligne_traitement": "traitement de première intention",
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "Adulte / Adolescent / Enfant / Nourrissons à partir d’un mois",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Anti-infectieux",
+      "aire_therapeutique_niveau_2": "Antibactériens à usage systémique",
+      "aire_therapeutique_niveau_3": "Céphalosporines et autres bêta-lactamines",
+      "source_aire_therapeutique": "Déduit ATC J01DB04",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Infectiologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "à partir d’un mois",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "gravite_patho": "Les infections concernées par ces spécialités sont sévères.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adulte / Adolescent / Enfant / Nourrissons à partir d’un mois",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Pour rappel, la Commission de la Transparence a déjà évalué d’autres spécialités à base de céfazoline injectables, et leur a octroyé un SMR important dans les indications de l’AMM.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2025-08-27",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "Inscription : Primo-inscription",
+          "t": "Inscription : Primo-inscription",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 2,
+          "s": "Indications de l’AMM :",
+          "t": "La céfazoline est un agent antibactérien indiqué dans le traitement des infections suivantes chez les adultes et chez les enfants âgés de plus d’un mois, causées par des micro-organismes sensibles à la céfazoline : − Infections de la peau et des tissus mous − Infections des os et des articulations − Prophylaxie des infections péri-opératoires",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 1,
+          "s": "Ce document ainsi que sa référence",
+          "t": "Pas de mention de maladie rare.",
+          "m": "rule",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": {
+    "tolerance_id": "Non renseigné",
+    "evaluation_id": "CT-21446",
+    "essai_id": null,
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "EI_graves": "Non renseigné",
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": []
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-21446_compHAS_01",
+      "evaluation_id": "CT-21446",
+      "nom_comparateur_HAS": "spécialités à base de céfazoline injectable déjà disponibles",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Céphalosporines",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 1,
+          "s": "Pas de progrès par rapport aux",
+          "t": "Pas de progrès par rapport aux spécialités à base de céfazoline injectable déjà disponibles.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-21446_compHAS_02",
+      "evaluation_id": "CT-21446",
+      "nom_comparateur_HAS": "CEFAZOLINE PANPHARMA 1 g et 2 g, poudre pour solution injectable/pour perfusion",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Céphalosporines",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "CEFAZOLINE PANPHARMA 1 g et 2 g",
+          "t": "Ce sont les mêmes que ceux identifiés pour l'euro-générique CEFAZOLINE PANPHARMA 1 g et 2 g, poudre pour solution injectable/pour perfusion",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-21446_arg_CT_01",
+      "evaluation_id": "CT-21446",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Favorable",
+      "description": "Service médical rendu important dans les indications de l'AMM : infections sévères, traitement curatif ou préventif, rapport efficacité/effets indésirables important, traitement de première intention.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission considère que le service médical rendu par CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, est important dans les indications de l’AMM.",
+      "page_source": "Page 3",
+      "section_source": "Service Médical Rendu",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "Service Médical Rendu",
+          "t": "➔ Les infections concernées par ces spécialités sont sévères. ➔ Il s’agit d’un médicament à visée curative ou préventive selon l’indication. ➔ Le rapport efficacité/effets indésirables est important. ➔ Il existe des alternatives thérapeutiques. ➔ Il s’agit d’un traitement de première intention.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21446_arg_CT_02",
+      "evaluation_id": "CT-21446",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "direction_argument": "Défavorable",
+      "description": "Pas d'amélioration du service médical rendu (ASMR V) par rapport aux spécialités déjà inscrites.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ces spécialités sont des euro-génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités déjà inscrites.",
+      "page_source": "Page 3",
+      "section_source": "Amélioration du Service Médical Rendu",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "Amélioration du Service Médical Rendu",
+          "t": "Ces spécialités sont des euro-génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités déjà inscrites.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21446_arg_CT_03",
+      "evaluation_id": "CT-21446",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Euro-générique de spécialités de référence (KEFZOL) déjà évaluées avec SMR important ; équivalence thérapeutique établie.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Ces spécialités, conformément à la procédure prévue à l’article R.5121-29-1 du code de la santé publique, sont des euro-génériques des spécialités de référence KEFZOL 1 g, trockenstechampullen et KEFZOL 2 g, Trockensubstanz zur Infusionsbereitung autorisées uniquement en Autriche (AMM abrogées en France le 11/02/2008).",
+      "page_source": "Page 2",
+      "section_source": "Contexte",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 2,
+          "s": "Ces spécialités, conformément",
+          "t": "Ces spécialités, conformément à la procédure prévue à l’article R.5121-29-1 du code de la santé publique, sont des euro-génériques des spécialités de référence KEFZOL 1 g, trockenstechampullen et KEFZOL 2 g, Trockensubstanz zur Infusionsbereitung autorisées uniquement en Autriche (AMM abrogées en France le 11/02/2008).",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21446_arg_CT_04",
+      "evaluation_id": "CT-21446",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison_alternatives",
+      "direction_argument": "Neutre",
+      "description": "Comparateurs cliniquement pertinents nombreux et incluent des spécialités princeps et génériques, identiques à ceux de l'euro-générique CEFAZOLINE PANPHARMA.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les comparateurs cliniquement pertinents de CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, sont nombreux et comprennent des spécialités princeps et génériques. Ce sont les mêmes que ceux identifiés pour l'euro-générique CEFAZOLINE PANPHARMA 1 g et 2 g, poudre pour solution injectable/pour perfusion.",
+      "page_source": "Page 3",
+      "section_source": "Comparateurs cliniquement pertinents",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "Les comparateurs cliniquement",
+          "t": "Les comparateurs cliniquement pertinents de CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, sont nombreux et comprennent des spécialités princeps et génériques. Ce sont les mêmes que ceux identifiés pour l'euro-générique CEFAZOLINE PANPHARMA 1 g et 2 g, poudre pour solution injectable/pour perfusion.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21446_arg_CT_05",
+      "evaluation_id": "CT-21446",
+      "source_argument": "CT",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Neutre",
+      "description": "Pas d'impact supplémentaire sur la santé publique par rapport aux spécialités déjà inscrites.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion, ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités déjà inscrites.",
+      "page_source": "Page 3",
+      "section_source": "Intérêt de santé publique",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "CEFAZOLINE QILU 1 g et 2 g",
+          "t": "CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion, ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités déjà inscrites.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-21446_arg_CT_06",
+      "evaluation_id": "CT-21446",
+      "source_argument": "CT",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Neutre",
+      "description": "Population cible correspond aux patients ayant les infections concernées par les indications de l'AMM ; introduction du générique ne modifie pas la population cible.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La population cible correspondant à l’utilisation de CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, est représentée par les patients ayant les infections concernées par les indications de l’AMM. L’introduction de ces spécialités dans la stratégie thérapeutique n’est pas de nature à modifier la population cible des patients relevant d’un traitement par céfazoline.",
+      "page_source": "Page 3-4",
+      "section_source": "Population cible",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 3,
+          "s": "La population cible correspondant",
+          "t": "La population cible correspondant à l’utilisation de CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, est représentée par les patients ayant les infections concernées par les indications de l’AMM.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-21446_ctx",
+    "evaluation_id": "CT-21446",
+    "ISP": "Non renseigné",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2018-07-30",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP_flag",
+        "f": "F1",
+        "p": 3,
+        "s": "CEFAZOLINE QILU 1 g et 2 g",
+        "t": "CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion, ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités déjà inscrites.",
+        "m": "manual",
+        "c": 1.0
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 2,
+        "s": "AMM (Autorisa- tion de mise sur le marché) 30/07/2018",
+        "t": "30/07/2018 (procédure décentralisée)",
+        "m": "manual",
+        "c": 1.0
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-21446",
+    "texte_brut": "HAS • CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion • août 2025  1  ÉVALUER LES TECHNOLOGIES DE SANTÉ AVIS SUR LES  MÉDICAMENTS  céfazoline  CEFAZOLINE QILU 1 g et  2 g,  poudre pour solution injectable/pour perfusion   Inscription : Primo-inscription            Eurogénérique   Adopté par la Commission de la transparence le 27 août 2025   Synthèse de l’avis   Avis favorable au remboursement dans les indications de l’AMM (cf. RCP).   Pas de progrès par rapport aux spécialités à base de céfazoline injectable déjà disponibles.   ➔ Céphalosporines de première génération  ➔ Adulte / Adolescent / Enfant / Nourrissons à partir d’un mois  ➔ Secteur : Hôpital   Ce document ainsi que sa référence bibliographique sont téléchargeables sur  www.has-sante.fr   Le présent avis est publié sous réserve des droits de propriété intellectuelle   Haute Autorité de santé – Service communication et information  5 avenue du Stade de France – 93218 SAINT-DENIS LA PLAINE CEDEX. Tél. : +33 (0)1 55 93 70 00  © Haute Autorité de santé – Août 2025          HAS • CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion • août 2025   2  Contexte   Résumé du motif  d’évaluation   Inscription   Précisions   Ces spécialités, conformément à la procédure prévue à l’article R.5121-29-1  du code de la santé publique, sont des euro-génériques des spécialités de ré-  férence KEFZOL 1 g, trockenstechampullen et KEFZOL 2 g, Trockensubstanz  zur Infusionsbereitung autorisées uniquement en Autriche (AMM abrogées en  France le 11/02/2008).   Pour rappel, la Commission de la Transparence a déjà évalué d’autres spécia-  lités à base de céfazoline injectables, et leur a octroyé un SMR important dans  les indications de l’AMM (cf. rubrique 2.1).   Indication con-  cernée par l’éva-  luation   Indications de l’AMM :  « La céfazoline est un agent antibactérien indiqué dans le traitement des infec-  tions suivantes chez les adultes et chez les enfants âgés de plus d’un mois,  causées par des micro-organismes sensibles à la céfazoline :  − Infections de la peau et des tissus mous  − Infections des os et des articulations  − Prophylaxie des infections péri-opératoires  L’utilisation de la céfazoline doit être limitée aux cas pour lesquels le traitement  par voie parentérale est nécessaire.  Il convient de tenir compte des recommandations officielles concernant l’utili-  sation appropriée des antibactériens. »   DCI (code ATC)  Présentations   concernées*   céfazoline (J01DB04)  CEFAZOLINE QILU 1 g, poudre pour solution injectable/pour perfusion   − 10 flacons en verre de 10 ml (CIP : 34009 301 545 9 5)  CEFAZOLINE QILU 2 g, poudre pour solution injectable/pour perfusion   − 10 flacons en verre de 10 ml (CIP : 34009 301 546 1 8)  Liste concernée   Collectivités (article L.5123-2 du CSP)  Laboratoire   ZENTIVA (Exploitant)  AMM (Autorisa-  tion de mise sur  le marché)  30/07/2018 (procédure décentralisée)   Date des modifications (désignation d’un exploitant) : 28/04/2025   Plan d’investigation pédiatrique associé à l’AMM : Non  Conditions et  statuts   Conditions de prescription et de délivrance  − Liste I  Evaluation par la  Commission   − Calendrier d’évaluation :  • Date d’examen et d’adoption : 27 août 2025.   HAS • CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion • août 2025   3  Conclusions de la Commission de la Transparence   Considérant l’ensemble de ces informations, la Commission estime :   Comparateurs cliniquement pertinents   Les comparateurs cliniquement pertinents de CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour  solution injectable/pour perfusion, sont nombreux et comprennent des spécialités princeps et géné-  riques. Ce sont les mêmes que ceux identifiés pour l’euro-générique CEFAZOLINE PANPHARMA 1 g  et 2 g, poudre pour solution injectable/pour perfusion (cf. avis de la Commission de la Transparence  du 21/06/20231).   Service Médical Rendu  ➔ Les infections concernées par ces spécialités sont sévères.  ➔ Il s’agit d’un médicament à visée curative ou préventive selon l’indication.  ➔ Le rapport efficacité/effets indésirables est important.  ➔ Il existe des alternatives thérapeutiques.  ➔ Il s’agit d’un traitement de première intention.   ➔ Intérêt de santé publique   CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion, ne sont pas susceptibles  d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités déjà inscrites.   La Commission considère que le service médical rendu par CEFAZOLINE QILU 1 g et 2 g (céfa-  zoline), poudre pour solution injectable/pour perfusion, est important dans les indications de  l’AMM.   La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à  l’usage des collectivités dans les indications et aux posologies de l’AMM.   Amélioration du Service Médical Rendu   Ces spécialités sont des euro-génériques qui n’apportent pas d’amélioration du service mé-  dical rendu (ASMR V) par rapport aux spécialités déjà inscrites.   Population cible   La population cible correspondant à l’utilisation de CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre  pour solution injectable/pour perfusion, est représentée par les patients ayant les infections  1 CEFAZOLINE PANPHARMA 1 g et 2 g,   HAS • CEFAZOLINE QILU 1 g et 2 g, poudre pour solution injectable/pour perfusion • août 2025   4  CEFAZOLINE QILU 1 g et 2 g, 27 août 2025       Toutes nos publications sont téléchargeables sur www.has-sante.fr   concernées par les indications de l’AMM. L’introduction de ces spécialités dans la stratégie thérapeu-  tique n’est pas de nature à modifier la population cible des patients relevant d’un traitement par céfa-  zoline.   Autres recommandations de la Commission  ➔ Conditionnements   Ils sont adaptés aux conditions de prescription selon l’indication, la posologie et la durée de traitement.   © Haute Autorité de santé – août 2025",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-21446_smrasmr_01",
+      "evaluation_id": "CT-21446",
+      "indication_precise": "Infections de la peau et des tissus mous, infections des os et des articulations, prophylaxie des infections péri-opératoires",
+      "smr": "La Commission considère que le service médical rendu par CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, est important dans les indications de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Ces spécialités sont des euro-génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Les infections concernées sont sévères, traitement curatif ou préventif, rapport efficacité/effets indésirables important, alternatives existantes, traitement de première intention.",
+      "population_cible_indication": "Adultes et enfants à partir d'un mois",
+      "ligne_traitement_indication": "Première intention",
+      "comparateurs_references_indication": "spécialités à base de céfazoline injectable déjà disponibles",
+      "comparateur_id_HAS": [
+        "CT-21446_compHAS_01"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "à partir d’un mois"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "La Commission considère que",
+          "t": "La Commission considère que le service médical rendu par CEFAZOLINE QILU 1 g et 2 g (céfazoline), poudre pour solution injectable/pour perfusion, est important dans les indications de l’AMM.",
+          "m": "manual",
+          "c": 1.0
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 3,
+          "s": "Amélioration du Service Médical Rendu",
+          "t": "Ces spécialités sont des euro-génériques qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités déjà inscrites.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-21446_event_AMM_01",
+      "evaluation_id": "CT-21446",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2018-07-30",
+      "detail_brut": "30/07/2018 (procédure décentralisée)",
+      "source_doc": "F1",
+      "detail_type_specifique": "Autorisation de mise sur le marché",
+      "acteurs_impliques": [
+        "ZENTIVA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "AMM (Autorisa- tion de mise sur",
+          "t": "30/07/2018 (procédure décentralisée)",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "event_id": "CT-21446_event_CT_01",
+      "evaluation_id": "CT-21446",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2025-08-27",
+      "detail_brut": "Date d'examen et d'adoption : 27 août 2025.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption par la Commission de la Transparence",
+      "acteurs_impliques": [
+        "Commission de la Transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Date d'examen et d'adoption :",
+          "t": "Date d'examen et d'adoption : 27 août 2025.",
+          "m": "manual",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-21446",
+    "delai_amm_ct_jours": 2590,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-21446",
+    "is_orphan": false,
+    "classe_ATC_l2": "J01D",
+    "aire_therapeutique": "Anti-infectieux",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2025,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": null,
+    "_meta": {}
+  },
+  "Relations": [],
+  "Annotation_View": []
+}

@@ -1,0 +1,2245 @@
+{
+  "schema_version": "3.3.7-production",
+  "doc_id": "CT-19830",
+  "evaluation_id": "CT-19830",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19830_VERZENIOS_PIC_EI_AvisDef_CT19830.pdf",
+        "type": "CT",
+        "page_count": 29
+      },
+      "F2": {
+        "file_name": "trans_2_verzenios_14092022_transcription_ct19830.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 12
+      },
+      "F3": {
+        "file_name": "trans_1_verzenios_06072022_transcription_ct19830_ctap95.pdf",
+        "type": "TRANSCRIPTION",
+        "page_count": 14
+      },
+      "F4": {
+        "file_name": "contrib_1_verzenios_contribution_association_patients_en_reseau_ct19830.pdf",
+        "type": "CONTRIB",
+        "page_count": 7
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19830_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_defavorable",
+        "indication",
+        "progres",
+        "place_strategie"
+      ],
+      "routing_hint": "Section introductive résumant l'avis.",
+      "label_confidence": 0.95,
+      "char_start": 0,
+      "char_end": 500
+    },
+    {
+      "segment_id": "CT-19830_seg_02",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Synthèse des conclusions",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 4,
+      "heading_text": "Synthèse des conclusions",
+      "expected_fields": [
+        "motif_examen",
+        "indication",
+        "SMR",
+        "ASMR",
+        "ISP",
+        "place_strategie",
+        "population_cible"
+      ],
+      "routing_hint": "Tableau synthétique des conclusions.",
+      "label_confidence": 0.95,
+      "char_start": 0,
+      "char_end": 1500
+    },
+    {
+      "segment_id": "CT-19830_seg_03",
+      "section_label_normalise": "CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 5,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "demande_inscription",
+        "historique_evaluations",
+        "classe_therapeutique"
+      ],
+      "routing_hint": "Description de la demande et contexte.",
+      "label_confidence": 0.9,
+      "char_start": 0,
+      "char_end": 2000
+    },
+    {
+      "segment_id": "CT-19830_seg_04",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 5,
+      "page_end": 6,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "indications_AMM"
+      ],
+      "routing_hint": "Liste des indications AMM.",
+      "label_confidence": 0.95,
+      "char_start": 0,
+      "char_end": 800
+    },
+    {
+      "segment_id": "CT-19830_seg_05",
+      "section_label_normalise": "POSOLOGIE",
+      "section_label_brut": "Posologie",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "heading_text": "Posologie",
+      "expected_fields": [
+        "posologie",
+        "duree_traitement",
+        "adaptations"
+      ],
+      "routing_hint": "Posologie recommandée.",
+      "label_confidence": 0.95,
+      "char_start": 0,
+      "char_end": 0
+    },
+    {
+      "segment_id": "CT-19830_seg_06",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 8,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "epidemiologie",
+        "prise_en_charge",
+        "besoin_non_couvert"
+      ],
+      "routing_hint": "Analyse du besoin médical et des alternatives.",
+      "label_confidence": 0.9,
+      "char_start": 0,
+      "char_end": 0
+    },
+    {
+      "segment_id": "CT-19830_seg_07",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 9,
+      "page_end": 10,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_medicamenteux",
+        "comparateurs_non_medicamenteux"
+      ],
+      "routing_hint": "Liste des comparateurs pertinents.",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_08",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 11,
+      "page_end": 29,
+      "heading_text": "Analyse des données disponibles",
+      "expected_fields": [
+        "efficacite",
+        "qualite_vie",
+        "tolerance",
+        "resume_discussion"
+      ],
+      "routing_hint": "Analyse détaillée de l'étude pivot et autres données.",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_09",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 31,
+      "page_end": 32,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "contexte_prise_en_charge",
+        "place_verzenios"
+      ],
+      "routing_hint": "Positionnement du produit dans la stratégie.",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19830_seg_10",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 32,
+      "page_end": 34,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "SMR",
+        "ISP",
+        "avis_defavorable"
+      ],
+      "routing_hint": "Conclusions finales et décision.",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19830_seg_11",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 35,
+      "page_end": 35,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "calendrier_evaluation",
+        "presentations",
+        "demandeur",
+        "AMM",
+        "conditions_prescription"
+      ],
+      "routing_hint": "Métadonnées administratives.",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19830_prod_01",
+      "evaluation_id": "CT-19830",
+      "nom_commercial": "VERZENIOS",
+      "dci": "abémaciclib",
+      "forme_pharmaceutique": "comprimés pelliculés",
+      "dosage": "50 mg",
+      "code_cip13": "34009 301 629 6 5",
+      "titulaire": "Lilly France",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 35,
+          "s": "VERZENIOS 50 mg, comprimés pelliculés",
+          "t": "VERZENIOS 50 mg, comprimés pelliculés − B/56 comprimés (CIP : 34009 301 629 6 5)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19830_prod_02",
+      "evaluation_id": "CT-19830",
+      "nom_commercial": "VERZENIOS",
+      "dci": "abémaciclib",
+      "forme_pharmaceutique": "comprimés pelliculés",
+      "dosage": "100 mg",
+      "code_cip13": "34009 301 629 8 9",
+      "titulaire": "Lilly France",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 35,
+          "s": "VERZENIOS 100 mg, comprimés pelliculés",
+          "t": "VERZENIOS 100 mg, comprimés pelliculés − B/56 comprimés (CIP : 34009 301 629 8 9)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19830_prod_03",
+      "evaluation_id": "CT-19830",
+      "nom_commercial": "VERZENIOS",
+      "dci": "abémaciclib",
+      "forme_pharmaceutique": "comprimés pelliculés",
+      "dosage": "150 mg",
+      "code_cip13": "34009 301 630 0 9",
+      "titulaire": "Lilly France",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 35,
+          "s": "VERZENIOS 150 mg, comprimés pelliculés",
+          "t": "VERZENIOS 150 mg, comprimés pelliculés − B/56 comprimés (CIP : 34009 301 630 0 9)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "produit_nom_commercial": "VERZENIOS",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "Non renseigné"
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19830",
+      "Num_avis": "CT-19830",
+      "produit_nom": "VERZENIOS",
+      "dci": "abémaciclib",
+      "type_avis": "Extension d’indication",
+      "type_avis_enum": "Extension_indication",
+      "forme": "comprimés pelliculés",
+      "dosage": "50, 100 et 150 mg",
+      "indication": "VERZENIOS en association avec une hormonothérapie est indiqué chez les patients adultes en traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux (RH) positifs, récepteurs du facteur de croissance épidermique humain 2 (HER2) négatifs, avec atteinte ganglionnaire et haut risque de rechute. Chez les femmes en pré/périménopause, le traitement par un inhibiteur de l’aromatase comme hormonothérapie doit être associé à un agoniste de l’hormone de libération de la lutéinostimuline (LHRH).",
+      "classe_ATC": "L01EF03",
+      "pathologie": "Cancer du sein",
+      "maladie_rare": false,
+      "ligne_traitement": "Adjuvant",
+      "ligne_traitement_enum": "Adjuvant",
+      "sous_groupe_population": "Adultes, femmes en pré/périménopause ou ménopausées, avec atteinte ganglionnaire",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Cancer du sein",
+      "aire_therapeutique_niveau_3": "Cancer du sein RH+/HER2- précoce",
+      "source_aire_therapeutique": "Déduit ATC L01EF03",
+      "design_etude": "Étude de phase III, randomisée, en ouvert",
+      "niveau_preuve_brut": "Essai pivot MonarchE de phase III",
+      "niveau_preuve_interprete": "Niveau_1",
+      "besoin_medical_brut": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase). Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la prise en charge du cancer du sein précoce RH+/HER2-.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Évalué par la CT en 2018 et 2021 dans le cancer du sein localement avancé et métastatique, avec SMR important dans certaines indications.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": false,
+      "nb_votants": 20,
+      "nb_voix_pour": 19,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "date_evaluation": "2022-09-14",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": false,
+      "age_restriction_detail": "Adultes (≥18 ans)",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "gravite_patho": "Le cancer du sein précoce RH+/HER2- est une affection grave qui engage le pronostic vital.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes (hommes et femmes) avec cancer du sein précoce RH+/HER2-, avec atteinte ganglionnaire et haut risque de rechute.",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : inhibiteurs de l’aromatase (anastrozole, létrozole, exémestane) et tamoxifène.",
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "Nouvelle indication",
+          "t": "Nouvelle indication",
+          "m": "manual",
+          "c": 0.95
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "VERZENIOS (abémaciclib) en association",
+          "t": "VERZENIOS (abémaciclib) en association avec une hormonothérapie est indiqué chez les patients adultes en traitement adjuvant du cancer du sein précoce avec récepteurs hormonaux (RH) positifs, récepteurs du facteur de croissance épidermique humaine 2 (HER2) négatifs, avec atteinte ganglionnaire et haut risque de rechute.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 35,
+          "s": "Code ATC L01EF03",
+          "t": "Code ATC L01EF03",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "essai_nom": "MonarchE",
+      "nct_number": "NCT03155997",
+      "design": "Étude de phase III, randomisée, en ouvert, multicentrique",
+      "design_enum": "Phase_III_RCT_ouvert",
+      "population_cible": "Patients adultes avec cancer du sein précoce RH+/HER2- invasif, réséqué, avec atteinte ganglionnaire et haut risque de rechute, ayant complété un traitement locorégional, avec ou sans chimiothérapie adjuvante ou néoadjuvante.",
+      "comparateur_utilise": "hormonothérapie standard seule",
+      "nb_patient_traitement": 2808,
+      "nb_patient_comparateur": 2829,
+      "resultat_global": "Supériorité statistiquement significative de l'abémaciclib + HT vs HT seule sur l'IDFS, mais pas de différence sur la survie globale à l'analyse intermédiaire.",
+      "QoL_flag": true,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": 27.1,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 23.7,
+      "phase": "III",
+      "aveugle": "Ouvert",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1",
+      "stratification_flag": true,
+      "stratification_facteurs": [
+        "traitement antérieur",
+        "statut ménopausique",
+        "région"
+      ],
+      "population_analyse_principale": "ITT",
+      "date_cutoff_donnees": "2021-04-01",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Intermédiaires",
+      "age_min_num": 18,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Adjuvant",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Faible",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": true,
+      "qol_instruments": [
+        "FACT-B",
+        "FACT-ES",
+        "FACIT",
+        "EQ-5D-5L"
+      ],
+      "qol_resultats_brut": "Aucun résultat robuste ne peut être retenu en raison du caractère ouvert de l'étude et de l'absence de gestion de la multiplicité.",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": 3,
+      "nb_patients_inclus": "5637",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": 3,
+      "date_analyses_intermediares_mois": [
+        "M15",
+        "M19",
+        "M27"
+      ],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 11,
+          "s": "Etude MonarchE",
+          "t": "Etude MonarchE",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 12,
+          "s": "Clinicaltrials.gov N° d’enregistrement : NCT03155997",
+          "t": "Clinicaltrials.gov N° d’enregistrement : NCT03155997",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_IDFS",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "critere_nom": "Survie sans maladie invasive (IDFS)",
+      "type_critere_enum": "Composite",
+      "primaire_ou_secondaire": "Primaire",
+      "valeur_groupe_traitement": "95,2%",
+      "valeur_groupe_comparateur": "93,4%",
+      "gain_absolu": "1,8 points",
+      "gain_absolu_num": 1.8,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "HR = 0,747",
+      "HR_RR_OR_num": 0.747,
+      "IC95": "[0,598 ; 0,932]",
+      "IC95_low_num": 0.598,
+      "IC95_high_num": 0.932,
+      "p_value": "0,00957",
+      "p_value_num": 0.00957,
+      "unite_normalisee": "HR",
+      "type_effet": "HR",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Faible",
+      "commentaire_has_resultat": "La démonstration, bien que statistiquement significative de la supériorité de l’abémaciclib en association à une hormonothérapie standard par rapport à l’hormonothérapie standard seule sur la survie sans maladie invasive, qui présente des limites quant à la taille de l’effet qui reste cliniquement faible sur ce critère en termes de gain absolu (95,2 % vs 93,4 % ; Δ = 1,8 points).",
+      "is_primary": true,
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Lan_Demets_OBrien_Fleming",
+      "alpha_ajuste": 0.0264,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Log-rank",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": true,
+      "evidence": [
+        {
+          "field": "p_value",
+          "f": "F1",
+          "p": 22,
+          "s": "HR = 0,747 ; IC95% [0,598 ; 0,932] et p = 0,00957",
+          "t": "HR = 0,747 ; IC95% [0,598 ; 0,932] et p = 0,00957",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19830_essai_MonarchE_crit_OS",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "evaluation_id": "CT-19830",
+      "critere_nom": "Survie globale (OS)",
+      "type_critere_enum": "OS",
+      "primaire_ou_secondaire": "Secondaire",
+      "valeur_groupe_traitement": "Non atteinte",
+      "valeur_groupe_comparateur": "Non atteinte",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "HR = 1,091",
+      "HR_RR_OR_num": 1.091,
+      "IC95": "[0,818 ; 1,455]",
+      "IC95_low_num": 0.818,
+      "IC95_high_num": 1.455,
+      "p_value": "NS",
+      "p_value_num": null,
+      "unite_normalisee": "HR",
+      "type_effet": "HR",
+      "significativite_statistique": false,
+      "critere_atteint": false,
+      "degre_signification": "Non_significatif",
+      "pertinence_clinique": "Absente",
+      "commentaire_has_resultat": "Absence de données sur la survie globale compte-tenu de la durée de l’étude.",
+      "is_primary": false,
+      "hierarchie_critere": "Secondaire_cle",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": false,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": false,
+      "evidence": [
+        {
+          "field": "HR_RR_OR",
+          "f": "F1",
+          "p": 23,
+          "s": "HR = 1,091 ; IC95% [0,818 ; 1,455] ; p = NS",
+          "t": "HR = 1,091 ; IC95% [0,818 ; 1,455] ; p = NS",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19830_essai_MonarchE_tol",
+      "evaluation_id": "CT-19830",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "ae_total_pct": "98,4%",
+      "ae_total_pct_num": 98.4,
+      "ae_total_pct_comparateur": "88,8%",
+      "ae_total_pct_comparateur_num": 88.8,
+      "sae_pct": "15,2%",
+      "sae_pct_num": 15.2,
+      "sae_pct_comparateur": "8,8%",
+      "sae_pct_comparateur_num": 8.8,
+      "discontinuations_ae_pct": "6,5%",
+      "discontinuations_ae_pct_num": 6.5,
+      "discontinuations_ae_pct_comparateur": "1,1%",
+      "discontinuations_ae_pct_comparateur_num": 1.1,
+      "deaths_ae_n": 24,
+      "deaths_ae_n_comparateur": 14,
+      "sae_data_available": true,
+      "sae_superieur_comparateur": true,
+      "deaths_reported": true,
+      "EI_graves_detailles": [
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "3-4",
+          "incidence_pct_traitement": 7.8,
+          "incidence_pct_comparateur": 0.2,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Neutropénie",
+          "grade": "3-4",
+          "incidence_pct_traitement": 19.6,
+          "incidence_pct_comparateur": 0.8,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Leucopénie",
+          "grade": "3-4",
+          "incidence_pct_traitement": 11.4,
+          "incidence_pct_comparateur": 0.4,
+          "n_patients_traitement": null,
+          "n_patients_comparateur": null,
+          "issue": "Non renseigné",
+          "delai_apparition_median_jours": null,
+          "evidence": []
+        }
+      ],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Diarrhée",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 83.5,
+          "incidence_pct_comparateur": 8.6,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Fatigue",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 40.6,
+          "incidence_pct_comparateur": 17.8,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Nausées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 29.5,
+          "incidence_pct_comparateur": 9.0,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "5",
+      "deces_detailles": [
+        {
+          "cause_deces": "Cardiovasculaire",
+          "relation_traitement": "Non renseigné",
+          "delai_survenue_jours": null,
+          "contexte": "Patients avec antécédents cardiovasculaires",
+          "evidence": []
+        },
+        {
+          "cause_deces": "Infections (COVID-19)",
+          "relation_traitement": "Possible",
+          "delai_survenue_jours": null,
+          "contexte": "Infection au COVID-19",
+          "evidence": []
+        }
+      ],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Les événements indésirables graves les plus fréquents correspondaient à des infections et infestations, des troubles thrombo-emboliques et des troubles gastro-intestinaux.",
+      "EI_frequents": "Diarrhées (83,5%), neutropénie (45,8%), fatigue (40,6%), leucopénie (37,6%), douleurs abdominales (35,5%), nausées (29,5%).",
+      "deces": "95 décès dans le groupe abémaciclib + HT (3,4%) et 89 dans le groupe HT (3,2%).",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 24,
+          "s": "Patients avec ≥ 1 EI",
+          "t": "Patients avec ≥ 1 EI : 2745 (98,4%) dans le groupe abémaciclib + HT vs 2486 (88,8%) dans le groupe HT",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19830_essai_MonarchE_comp_01",
+      "essai_id": "CT-19830_essai_MonarchE",
+      "nom_comparateur": "hormonothérapie standard seule",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 13,
+          "s": "Groupe hormonothérapie standard seule",
+          "t": "Groupe hormonothérapie standard seule (HT) : Hormonothérapie standard adjuvante, au choix de l’investigateur",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19830_compHAS_01",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "ARIMIDEX (anastrozole) et ses génériques",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "ARIMIDEX (anastrozole)",
+          "t": "ARIMIDEX (anastrozole) AstraZeneca Et ses génériques",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19830_compHAS_02",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "FEMARA (létrozole) et ses génériques",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 9,
+          "s": "FEMARA (létrozole)",
+          "t": "FEMARA (létrozole) Novartis Pharma Et ses génériques",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19830_compHAS_03",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "AROMASIN (exémestane) et ses génériques",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "AROMASIN (exémestane)",
+          "t": "AROMASIN (exémestane) Pfizer Et ses génériques",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19830_compHAS_04",
+      "evaluation_id": "CT-19830",
+      "nom_comparateur_HAS": "NOLVADEX (tamoxifène) et ses génériques",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Hormonotherapie",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 10,
+          "s": "NOLVADEX (tamoxifène)",
+          "t": "NOLVADEX (tamoxifène) AstraZeneca Et ses génériques",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19830_arg_CT_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "description": "Démonstration d'une supériorité statistiquement significative mais avec une taille d'effet cliniquement faible sur l'IDFS (gain absolu de 1,8 points : 95,2% vs 93,4%).",
+      "extrait_textuel": "la démonstration, bien que statistiquement significative de la supériorité de l’abémaciclib en association à une hormonothérapie standard par rapport à l’hormonothérapie standard seule sur la survie sans maladie invasive, qui présente des limites quant à la taille de l’effet qui reste cliniquement faible sur ce critère en termes de gain absolu (95,2 % vs 93,4 % ; Δ = 1,8 points)",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "la démonstration, bien que statistiquement significative",
+          "t": "la démonstration, bien que statistiquement significative de la supériorité de l’abémaciclib en association à une hormonothérapie standard par rapport à l’hormonothérapie standard seule sur la survie sans maladie invasive, qui présente des limites quant à la taille de l’effet qui reste cliniquement faible sur ce critère en termes de gain absolu (95,2 % vs 93,4 % ; Δ = 1,8 points)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "description": "Impossibilité de considérer l'IDFS comme un critère substitutif de la survie globale en l'état actuel des connaissances, et absence de données sur la survie globale compte tenu de la durée de l'étude.",
+      "extrait_textuel": "l’impossibilité de considérer ce critère comme un critère substitutif de la survie globale en l’état actuel des connaissances ; de l’absence de données sur la survie globale compte-tenu de la durée de l’étude",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "l’impossibilité de considérer ce critère",
+          "t": "l’impossibilité de considérer ce critère comme un critère substitutif de la survie globale en l’état actuel des connaissances ; de l’absence de données sur la survie globale compte-tenu de la durée de l’étude",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "description": "Profil de tolérance marqué par des troubles gastro-intestinaux, des événements thromboemboliques et des infections, similaire à celui connu dans le cancer du sein avancé, mais avec une acceptabilité plus faible dans le contexte adjuvant précoce.",
+      "extrait_textuel": "du profil de tolérance, marqué par des troubles gastro-intestinaux, des événements thromboemboliques et des infections, similaire à celui connu dans le cancer du sein avancé. Cependant, l'acceptabilité des effets indésirables est plus faible dans ce contexte de traitement adjuvant au stade précoce",
+      "page_source": "Page 2",
+      "section_source": "Place dans la stratégie thérapeutique",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "du profil de tolérance, marqué par des troubles",
+          "t": "du profil de tolérance, marqué par des troubles gastro-intestinaux, des événements thromboemboliques et des infections, similaire à celui connu dans le cancer du sein avancé. Cependant, l'acceptabilité des effets indésirables est plus faible dans ce contexte de traitement adjuvant au stade précoce",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "description": "Design de l'étude en ouvert avec biais d'évaluation potentiel, alors que le double-aveugle était faisable.",
+      "extrait_textuel": "son caractère ouvert et la surveillance laissée au choix des investigateurs et des pratiques locales, entrainant un biais d’évaluation et de suivi, alors que le double-aveugle était faisable",
+      "page_source": "Page 30",
+      "section_source": "Résumé & discussion",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "son caractère ouvert et la surveillance",
+          "t": "son caractère ouvert et la surveillance laissée au choix des investigateurs et des pratiques locales, entrainant un biais d’évaluation et de suivi, alors que le double-aveugle était faisable",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "description": "Durée de suivi insuffisante (environ 2 ans) au regard de l'évolution naturelle de la pathologie et de la durée de traitement recommandée de 2 ans, ne permettant pas d'apprécier l'évolution après l'arrêt du traitement.",
+      "extrait_textuel": "la durée de suivi insuffisante (environ 2 ans) au regard de : l’évolution naturelle de la pathologie à ce stade, car les récidives dans le cancer du sein RH+/HER2- précoce chez les patientes à haut risque peuvent survenir dans les dix années après la prise en charge ; la durée de traitement recommandée de 2 ans de l’abémaciclib, ne permettant pas d’apprécier l’évolution de l’efficacité après l’arrêt du traitement",
+      "page_source": "Page 30",
+      "section_source": "Résumé & discussion",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "la durée de suivi insuffisante",
+          "t": "la durée de suivi insuffisante (environ 2 ans) au regard de : l’évolution naturelle de la pathologie à ce stade, car les récidives dans le cancer du sein RH+/HER2- précoce chez les patientes à haut risque peuvent survenir dans les dix années après la prise en charge ; la durée de traitement recommandée de 2 ans de l’abémaciclib, ne permettant pas d’apprécier l’évolution de l’efficacité après l’arrêt du traitement",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Population_cible",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Inclusion dans l'étude de 10% de patients (cohorte 2) non considérés à haut risque selon l'AMM, ce qui limite la généralisation des résultats à la population cible.",
+      "extrait_textuel": "de l’étude en raison de l’inclusion de 10 % de patients (cohorte 2) n’étant pas considéré à haut risque selon l’AMM",
+      "page_source": "Page 30",
+      "section_source": "Résumé & discussion",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 30,
+          "s": "de l’étude en raison de l’inclusion",
+          "t": "de l’étude en raison de l’inclusion de 10 % de patients (cohorte 2) n’étant pas considéré à haut risque selon l’AMM",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CT_07",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "description": "Besoin médical partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l'aromatase), mais persistance d'un besoin à disposer de médicaments efficaces et bien tolérés.",
+      "extrait_textuel": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase). Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la prise en charge du cancer du sein précoce RH+/HER2-.",
+      "page_source": "Page 8",
+      "section_source": "Besoin médical",
+      "impact_decision": "Contexte",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 8,
+          "s": "Le besoin médical est actuellement partiellement couvert",
+          "t": "Le besoin médical est actuellement partiellement couvert par les alternatives disponibles (tamoxifène et inhibiteurs de l’aromatase). Néanmoins, il persiste un besoin médical à disposer de médicaments efficaces et bien tolérés dans la prise en charge du cancer du sein précoce RH+/HER2-.",
+          "m": "manual",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Laboratoire défend un bénéfice clinique pertinent avec réduction relative risque rechute 25-30% et delta IDFS 3.5 points à 2 ans vs 1.8 points initial.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "delta à deux ans de 3,5 points... une réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+      "page_source": "5",
+      "section_source": "Présentation laboratoire",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 5,
+          "s": "delta à deux ans de 3,5 points",
+          "t": "delta à deux ans de 3,5 points... une réduction relative du risque de rechute de l'ordre de 25 à 30 %",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Laboratoire souligne que les résultats dans la cohorte 1 (AMM) montrent un bénéfice plus marqué : delta IDFS 5,7 points à 3 ans, RRR 32%.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "bénéfice est de même ordre de grandeur... delta de taux d'IDFS de 5,7 points à trois ans, et une réduction relative du risque de rechute de 32 %",
+      "page_source": "6",
+      "section_source": "Présentation laboratoire",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 6,
+          "s": "delta de taux d'IDFS de 5,7 points à trois ans",
+          "t": "bénéfice est de même ordre de grandeur... delta de taux d'IDFS de 5,7 points à trois ans, et une réduction relative du risque de rechute de 32 %",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Pr Campone : effets secondaires connus (diarrhée liée à inhibition cycline 9, toxicité hématologique faible), maîtrisables et transitoires.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "effets secondaires, ils sont connus, maîtrisables et transitoires",
+      "page_source": "7",
+      "section_source": "Présentation laboratoire",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "effets secondaires, ils sont connus",
+          "t": "effets secondaires, ils sont connus, maîtrisables et transitoires",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Sylvie Chevert critique l'absence de test statistique sur l'amélioration de l'effet dans le temps et l'absence d'intervalles de confiance.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?",
+      "page_source": "7",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "si vous pensez vraiment que l'effet augmente avec le temps",
+          "t": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Statisticienne du labo (Mme André) : pas de violation de l'hypothèse de proportionnalité, effet maintenu numériquement.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+      "page_source": "8",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 8,
+          "s": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle",
+          "t": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_06",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Julien Peron interroge la pertinence clinique : démontrer guérison, survie globale ou qualité de vie, pas seulement IDFS.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+      "page_source": "9",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes",
+          "t": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_07",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Pr Campone : abemaciclib modifie l'histoire naturelle en rapprochant courbes des patientes à haut risque de celles à faible risque.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "on modifie l'histoire naturelle de ces patientes... ces deux courbes se rapprochent",
+      "page_source": "9",
+      "section_source": "Questions et réponses",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 9,
+          "s": "on modifie l'histoire naturelle de ces patientes",
+          "t": "on modifie l'histoire naturelle de ces patientes... ces deux courbes se rapprochent",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_08",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "Qualité_des_données",
+      "description": "Sylvie Chevert et Julien Peron jugent la présentation du laboratoire maladroite sur l'augmentation de l'effet dans le temps, avec suivi modeste.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Ils sont maladroits... donner des estimations ponctuelles à deux ans, à trois ans sans intervalle de confiance",
+      "page_source": "10",
+      "section_source": "Délibération",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 10,
+          "s": "Ils sont maladroits... donner des estimations ponctuelles",
+          "t": "Ils sont maladroits... donner des estimations ponctuelles à deux ans, à trois ans sans intervalle de confiance",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_TRANS_09",
+      "evaluation_id": "CT-19830",
+      "source_argument": "TRANSCRIPTION",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Laboratoire sollicite un SMR important et une ASMR V, mais la commission maintient l'avis initial (SMR insuffisant).",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Nous sollicitons un SMR important et une ASMR V... Maintien à l'unanimité",
+      "page_source": "7, 11",
+      "section_source": "Présentation laboratoire et Vote",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 7,
+          "s": "Nous sollicitons un SMR important et une ASMR V",
+          "t": "Nous sollicitons un SMR important et une ASMR V",
+          "c": 0.95
+        },
+        {
+          "field": "Arguments_Decisionnels",
+          "f": "F1",
+          "p": 11,
+          "s": "Maintien à l'unanimité",
+          "t": "Maintien à l'unanimité",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_01",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "L'association souligne l'angoisse liée au risque élevé de récidive et le besoin de réduire ce risque avec un traitement adjuvant efficace, malgré le fardeau thérapeutique supplémentaire.",
+      "extrait_textuel": "L’annonce d’un risque plus élevé de récidive est en soi un facteur d’angoisse et d’anxiété. L’ajout d’une thérapie ciblée anti CDK4/6 pourra répondre à un besoin de réduire ce risque même s’il ne faut pas oublier que le fardeau du traitement adjuvant sera plus important.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Contributeur",
+      "page_source": "PARTIE 2/7",
+      "section_source": "2. Impact de la maladie / état de santé",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 2/7",
+          "s": "L’annonce d’un risque plus élevé de récidive",
+          "t": "L’annonce d’un risque plus élevé de récidive est en soi un facteur d’angoisse et d’anxiété. L’ajout d’une thérapie ciblée anti CDK4/6 pourra répondre à un besoin de réduire ce risque même s’il ne faut pas oublier que le fardeau du traitement adjuvant sera plus important.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_02",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Mitigé",
+      "description": "Les patientes rapportent une qualité de vie assez bonne à bonne sous abémaciclib, mais avec des effets indésirables gênants (fatigue, perturbations sanguines, troubles digestifs) impactant le quotidien.",
+      "extrait_textuel": "Leur qualité de vie est jugée assez bonne pour 50 % et bonne pour 50% d’entre elles. Fatigue : 100%, Perturbations sanguines : 100%, Diarrhées : 50%, Nausées : 50%.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Contributeur",
+      "page_source": "PARTIE 5/7 - PARTIE 6/7",
+      "section_source": "4. Expériences avec le médicament évalué",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 5/7",
+          "s": "Leur qualité de vie est jugée assez bonne",
+          "t": "Leur qualité de vie est jugée assez bonne pour 50 % et bonne pour 50% d’entre elles. Fatigue : 100%, Perturbations sanguines : 100%, Diarrhées : 50%, Nausées : 50%.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_03",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Neutre",
+      "description": "Les effets indésirables de l'abémaciclib (fatigue, perturbations sanguines, troubles digestifs) sont gérés par réduction de dose ou arrêt temporaire, sans nécessiter d'hospitalisation.",
+      "extrait_textuel": "La réduction de la dose ou l’arrêt temporaire permettent la résolution des effets indésirables dans 50% des cas respectivement. De plus, aucune hospitalisation n’a été nécessaire pour la prise en charge des effets indésirables.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Contributeur",
+      "page_source": "PARTIE 6/7",
+      "section_source": "4. Expériences avec le médicament évalué",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 6/7",
+          "s": "La réduction de la dose ou l’arrêt temporaire",
+          "t": "La réduction de la dose ou l’arrêt temporaire permettent la résolution des effets indésirables dans 50% des cas respectivement. De plus, aucune hospitalisation n’a été nécessaire pour la prise en charge des effets indésirables.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_04",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "Le traitement oral d'abémaciclib est jugé facile à suivre et à obtenir en pharmacie de ville, avec un suivi médical rapproché satisfaisant permettant d'adapter les doses.",
+      "extrait_textuel": "Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre. Le suivi médical rapproché est jugé satisfaisant et permet d’adapter les doses en fonction des effets indésirables.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Contributeur",
+      "page_source": "PARTIE 7/7",
+      "section_source": "6. Synthèse de votre contribution",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 7/7",
+          "s": "Ce traitement par voie orale pouvant être dispensé",
+          "t": "Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre. Le suivi médical rapproché est jugé satisfaisant et permet d’adapter les doses en fonction des effets indésirables.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19830_arg_CONTRIB_05",
+      "evaluation_id": "CT-19830",
+      "source_argument": "CONTRIB",
+      "categorie_argument": "Impact_patient_QDV",
+      "direction_argument": "Favorable",
+      "description": "Les patientes sont prêtes à modifier leur mode de vie et à accepter des effets indésirables pour réduire le risque de récidive, montrant une forte adhésion au traitement adjuvant.",
+      "extrait_textuel": "Afin de réduire le risque de récidive, les répondantes sont prêtes à : Prendre un traitement innovant diminuant de façon significative le risque de récidive, Changer ses habitudes alimentaires, Faire plus d’activité physique, Réduire son stress, Prendre soin de son sommeil.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "impact_decision": "Contributeur",
+      "page_source": "PARTIE 4/7",
+      "section_source": "2. Impact de la maladie / état de santé",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 4/7",
+          "s": "Afin de réduire le risque de récidive",
+          "t": "Afin de réduire le risque de récidive, les répondantes sont prêtes à : Prendre un traitement innovant diminuant de façon significative le risque de récidive, Changer ses habitudes alimentaires, Faire plus d’activité physique, Réduire son stress, Prendre soin de son sommeil.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19830_ctx",
+    "evaluation_id": "CT-19830",
+    "ISP": "VERZENIOS (abémaciclib) n’est pas susceptible d’avoir un intérêt supplémentaire de santé publique.",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-04-01",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": 0,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "AMM avec libellé non-superposable (Ki-67≥20%)",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": true,
+    "nature_suivi_post_inscription": "Étude_vie_réelle",
+    "delai_suivi_mois": 60,
+    "delai_suivi_justification": "Suivi à 5 ans de l'étude MonarchE prévu en 2025.",
+    "conditions_suivi": "Soumission des résultats du suivi à 5 ans de l'étude MonarchE.",
+    "echeance_suivi": "2025-12-31",
+    "impact_si_non_realise": "Réévaluation SMR/ASMR",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Insuffisant",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 5,
+        "s": "VERZENIOS (abémaciclib) a obtenu l’autorisation",
+        "t": "VERZENIOS (abémaciclib) a obtenu l’autorisation de mise sur le marché (AMM) dans cette indication le 1er avril 2022.",
+        "m": "manual",
+        "c": 0.98
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19830",
+    "texte_brut": "Document CT complet non reproduit ici pour concision.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19830_smrasmr_01",
+      "evaluation_id": "CT-19830",
+      "indication_precise": "Cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute, en association avec une hormonothérapie",
+      "smr": "INSUFFISANT pour justifier d’une prise en charge par la solidarité nationale",
+      "smr_enum": "Insuffisant",
+      "asmr": "Sans objet",
+      "asmr_enum": null,
+      "smr_revendique": "SMR important revendiqué par le laboratoire",
+      "asmr_revendique": "ASMR IV revendiquée par le laboratoire",
+      "justification_decisionnelle": "Démonstration d'une faible taille d'effet sur l'IDFS, impossibilité de considérer l'IDFS comme substitut de la survie globale, absence de données sur la survie globale, profil de tolérance avec acceptabilité plus faible dans le contexte adjuvant.",
+      "population_cible_indication": "Patients adultes avec cancer du sein précoce RH+/HER2- avec atteinte ganglionnaire et haut risque de rechute",
+      "ligne_traitement_indication": "Adjuvant",
+      "comparateurs_references_indication": "Inhibiteurs de l'aromatase (anastrozole, létrozole, exémestane) et tamoxifène",
+      "comparateur_id_HAS": [
+        "CT-19830_compHAS_01",
+        "CT-19830_compHAS_02",
+        "CT-19830_compHAS_03",
+        "CT-19830_compHAS_04"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "Adjuvant",
+        "biomarqueur": "Aucun",
+        "stade": "Localisé",
+        "population_age": "Adultes"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": false,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 3,
+          "s": "SMR INSUFFISANT pour justifier",
+          "t": "SMR INSUFFISANT pour justifier d’une prise en charge par la solidarité nationale",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19830_event_AMM_01",
+      "evaluation_id": "CT-19830",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-04-01",
+      "detail_brut": "AMM obtenue pour l'extension d'indication dans le cancer du sein précoce.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Extension d'indication",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 5,
+          "s": "VERZENIOS (abémaciclib) a obtenu l’autorisation",
+          "t": "VERZENIOS (abémaciclib) a obtenu l’autorisation de mise sur le marché (AMM) dans cette indication le 1er avril 2022.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19830_event_CT_01",
+      "evaluation_id": "CT-19830",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-09-14",
+      "detail_brut": "Avis adopté par la Commission de la transparence.",
+      "source_doc": "F1",
+      "detail_type_specifique": "Avis défavorable",
+      "acteurs_impliques": [
+        "Commission de la transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté par la Commission de la transparence le 14 septembre 2022",
+          "t": "Adopté par la Commission de la transparence le 14 septembre 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19830",
+    "delai_amm_ct_jours": 166,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19830",
+    "is_orphan": false,
+    "classe_ATC_l2": "L01",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Extension_indication",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": true,
+    "n_essais": 1,
+    "n_rct": 1,
+    "presence_qol": true,
+    "effet_principal_magnitude_num": 0.747,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 27.1,
+    "sae_pct_num": 15.2,
+    "discontinuations_pct_num": 6.5,
+    "critere_principal_description": "Survie sans maladie invasive (IDFS)",
+    "p_value_log10": 2.019,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": true,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": "Q3",
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Données complètes pour l'essai pivot.",
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVALUATIONS_HAS",
+      "src_id": "CT-19830",
+      "tgt_type": "ESSAIS_CLINIQUES",
+      "tgt_id": "CT-19830_essai_MonarchE",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "ESSAIS_CLINIQUES",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "CRITERES_JUGEMENT",
+      "tgt_id": "CT-19830_essai_MonarchE_crit_IDFS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "ESSAIS_CLINIQUES",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "CRITERES_JUGEMENT",
+      "tgt_id": "CT-19830_essai_MonarchE_crit_OS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "ESSAIS_CLINIQUES",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "COMPARATEURS_ESSAI",
+      "tgt_id": "CT-19830_essai_MonarchE_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "ESSAIS_CLINIQUES",
+      "src_id": "CT-19830_essai_MonarchE",
+      "tgt_type": "TOLERANCE",
+      "tgt_id": "CT-19830_essai_MonarchE_tol",
+      "label": "TRIAL_HAS_TOL"
+    },
+    {
+      "src_type": "EVALUATION",
+      "src_id": "CT-19830",
+      "tgt_type": "ARGUMENT",
+      "tgt_id": "CT-19830_arg_TRANS_01",
+      "label": "EVAL_HAS_ARGUMENT"
+    },
+    {
+      "src_type": "EVALUATION",
+      "src_id": "CT-19830",
+      "tgt_type": "PRODUIT",
+      "tgt_id": "CT-19830_produit_01",
+      "label": "EVAL_HAS_PRODUIT"
+    }
+  ],
+  "Annotation_View": [],
+  "Interventions_Experts": [
+    {
+      "intervention_id": "CT-19830_interv_01",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Pierre Cochat",
+      "role_intervenant": "Président",
+      "type_intervention": "Animation",
+      "resume_intervention": "Ouvre et ferme la séance, donne la parole, gère le temps.",
+      "extrait_textuel": "On passe à la dernière audition qui est VERZENIOS... Très bien. Merci beaucoup, notamment pour le respect du temps.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 3,
+          "s": "On passe à la dernière audition qui est VERZENIOS",
+          "t": "On passe à la dernière audition qui est VERZENIOS... Très bien. Merci beaucoup, notamment pour le respect du temps.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_02",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "M. Mouredia",
+      "role_intervenant": "Responsable accès marché, Lilly",
+      "type_intervention": "Présentation",
+      "resume_intervention": "Présente l'équipe et la stratégie pour défendre VERZENIOS, insiste sur la taille d'effet et la cohorte 1.",
+      "extrait_textuel": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique en première intention... Nous sollicitons un SMR important et une ASMR V.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique",
+          "t": "Nous considérons que VERZENIOS a une place dans la stratégie thérapeutique en première intention... Nous sollicitons un SMR important et une ASMR V.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_03",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Pr Campone",
+      "role_intervenant": "Investigateur principal MonarchE",
+      "type_intervention": "Présentation",
+      "resume_intervention": "Explique différences entre CDK4/6, facteurs pronostics, résultats MonarchE et tolérance.",
+      "extrait_textuel": "L’abemaciclib a démontré une réduction relative du risque de rechute aux alentours de 25 %... effets secondaires, ils sont connus, maîtrisables et transitoires.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "L’abemaciclib a démontré une réduction relative du risque de rechute",
+          "t": "L’abemaciclib a démontré une réduction relative du risque de rechute aux alentours de 25 %... effets secondaires, ils sont connus, maîtrisables et transitoires.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_04",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Sylvie Chevert",
+      "role_intervenant": "Membre CT",
+      "type_intervention": "Question",
+      "resume_intervention": "Questionne sur l'analyse statistique : absence d'intervalles de confiance et tests de proportionnalité.",
+      "extrait_textuel": "si vous voulez que l'on précise que l'on utilise une variation d'un taux d'évènement... c'est important de lui associer un intervalle de confiance.",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 7,
+          "s": "si vous voulez que l'on précise que l'on utilise une variation",
+          "t": "si vous voulez que l'on précise que l'on utilise une variation d'un taux d'évènement... c'est important de lui associer un intervalle de confiance.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_05",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Mme André",
+      "role_intervenant": "Statisticienne, Lilly",
+      "type_intervention": "Réponse",
+      "resume_intervention": "Répond aux questions statistiques : pas de violation de l'hypothèse de proportionnalité, effet maintenu numériquement.",
+      "extrait_textuel": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 8,
+          "s": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle",
+          "t": "il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_06",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Hugues Blondon",
+      "role_intervenant": "Membre CT",
+      "type_intervention": "Question",
+      "resume_intervention": "Interroge sur le risque de résistance chez les patientes exposées sans bénéfice immédiat.",
+      "extrait_textuel": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance à cette classe thérapeutique ?",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 8,
+          "s": "A-t-on des données pour savoir s'il n'y avait pas chez elles",
+          "t": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance à cette classe thérapeutique ?",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "intervention_id": "CT-19830_interv_07",
+      "evaluation_id": "CT-19830",
+      "nom_intervenant": "Julien Peron",
+      "role_intervenant": "Membre CT",
+      "type_intervention": "Question",
+      "resume_intervention": "Demande de démontrer l'amélioration en guérison, survie globale ou qualité de vie, pas seulement IDFS.",
+      "extrait_textuel": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+      "evidence": [
+        {
+          "field": "Interventions_Experts",
+          "f": "F1",
+          "p": 9,
+          "s": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes",
+          "t": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes, soit qu'on améliore leur survie globale",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Points_Discussion_Specifiques": [
+    {
+      "point_id": "CT-19830_point_01",
+      "evaluation_id": "CT-19830",
+      "sujet": "Analyse statistique et interprétation des courbes",
+      "description": "Débat sur la méthode d'analyse (Kaplan-Meier vs proportions), nécessité d'intervalles de confiance et tests de proportionnalité.",
+      "intervenants": [
+        "Sylvie Chevert",
+        "Mme André"
+      ],
+      "extrait_textuel": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?... il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 7,
+          "s": "si vous pensez vraiment que l'effet augmente avec le temps",
+          "t": "si vous pensez vraiment que l'effet augmente avec le temps, pourquoi ne pas le tester ?... il n'y a pas d'évidence que l'hypothèse des hasard proportionnelle avec le temps est violée",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_02",
+      "evaluation_id": "CT-19830",
+      "sujet": "Risque de résistance et bénéfice pour patientes non répondeuses",
+      "description": "Question sur le risque d'exposer des patientes sans bénéfice immédiat et potentiel de résistance future.",
+      "intervenants": [
+        "Hugues Blondon",
+        "Pr Campone"
+      ],
+      "extrait_textuel": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance... Aujourd'hui, il n'existe pas de données sur les mécanismes de résistance",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 8,
+          "s": "A-t-on des données pour savoir s'il n'y avait pas chez elles",
+          "t": "A-t-on des données pour savoir s'il n'y avait pas chez elles, un risque de résistance... Aujourd'hui, il n'existe pas de données sur les mécanismes de résistance",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_03",
+      "evaluation_id": "CT-19830",
+      "sujet": "Pertinence clinique des résultats (guérison, survie, QDV)",
+      "description": "Discussion sur ce qui constitue un bénéfice clinique pertinent : guérison, survie globale, qualité de vie vs IDFS.",
+      "intervenants": [
+        "Julien Peron",
+        "Pr Campone"
+      ],
+      "extrait_textuel": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes... on modifie l'histoire naturelle de ces patientes",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 9,
+          "s": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes",
+          "t": "le but, in fine, c'est de démontrer soit qu'on guérit plus de patientes... on modifie l'histoire naturelle de ces patientes",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "point_id": "CT-19830_point_04",
+      "evaluation_id": "CT-19830",
+      "sujet": "Évaluation de la présentation du laboratoire",
+      "description": "Critiques des membres sur la maladresse de la présentation statistique et le suivi modeste.",
+      "intervenants": [
+        "Sylvie Chevert",
+        "Julien Peron",
+        "Clémence Basse"
+      ],
+      "extrait_textuel": "Ils sont maladroits... Surtout que le suivi reste modeste.",
+      "evidence": [
+        {
+          "field": "Points_Discussion_Specifiques",
+          "f": "F1",
+          "p": 10,
+          "s": "Ils sont maladroits... Surtout que le suivi reste modeste",
+          "t": "Ils sont maladroits... Surtout que le suivi reste modeste.",
+          "c": 0.95
+        }
+      ],
+      "theme": "Différence d'efficacité entre abémaciclib et palbociclib en adjuvant",
+      "conclusion": "Différences pharmacologiques et taux d'arrêts précoces possibles, mais explication incertaine."
+    }
+  ],
+  "Votes_Commission_Transcription": [
+    {
+      "vote_id": "CT-19830_vote_01",
+      "evaluation_id": "CT-19830",
+      "type_vote": "Maintien_avis",
+      "objet_vote": "Maintien de l'avis (SMR insuffisant) adopté le 20 juillet",
+      "resultat": "Adopté",
+      "vote_unanimite": true,
+      "nb_votants": 20,
+      "nb_voix_pour": 19,
+      "nb_voix_contre": 0,
+      "nb_abstentions": 1,
+      "details": "Vote par appel nominatif : maintien à l'unanimité. L'avis initial était 19 pour, 1 contre (selon Michel Clanet).",
+      "evidence": [
+        {
+          "field": "Votes_Commission_Transcription",
+          "f": "F1",
+          "p": 11,
+          "s": "Maintien à l'unanimité",
+          "t": "Maintien à l'unanimité",
+          "c": 0.95
+        }
+      ],
+      "date_vote": "2022-07-06"
+    }
+  ],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19830",
+    "contribution_presente": true,
+    "contribution_id": "CT-19830_contrib_1",
+    "association": {
+      "nom_association": "Association Patients en Réseau – PeR",
+      "type_structure": "Non renseigné",
+      "site_internet": "Non renseigné"
+    },
+    "methodologie": {
+      "methode_recueil": "Enquête_patients",
+      "description_methode": "L’association a rédigé un questionnaire en se basant sur les points abordés dans le « Questionnaire de recueil du point de vue des patients » proposé par la HAS. Ce questionnaire a été mis en ligne sur « Mon réseau Cancer du Sein », la page Facebook de Mon réseau Cancer du Sein entre le 10 juin et le 21 juin 2022.",
+      "nb_patients_consultes": 9,
+      "temps_redaction_heures": null
+    },
+    "demande_audition": null,
+    "impacts_maladie": {
+      "description_impacts_patients": "Le cancer du sein est le cancer féminin le plus fréquent en France. L'introduction de l'hormonothérapie est parfois vécue très difficilement à cause des effets secondaires qui peuvent être contraignants et de la durée du traitement sur plusieurs années. L'annonce d'un risque plus élevé de récidive est un facteur d'angoisse et d'anxiété. L'ajout d'une thérapie ciblée anti CDK4/6 pourra répondre à un besoin de réduire ce risque mais le fardeau du traitement adjuvant sera plus important. Le retour à une vie plus normale va être décalé.",
+      "symptomes_principaux": [
+        "Fatigue",
+        "Douleurs articulaires",
+        "Nausées",
+        "Diarrhées",
+        "Alopécie",
+        "Ménopause précoce",
+        "Atrophie vaginale"
+      ],
+      "statistiques_mentionnees": [
+        {
+          "indicateur": "Nouveaux cas cancer du sein en France (2018)",
+          "valeur": "58 459",
+          "source": "INCA, 2018"
+        },
+        {
+          "indicateur": "Décès cancer du sein en France (2018)",
+          "valeur": "12 146",
+          "source": "INCA, 2018"
+        },
+        {
+          "indicateur": "Récidive à 10 ans malgré traitement local",
+          "valeur": "30%",
+          "source": "Référence BIG 1-98 Trial"
+        }
+      ],
+      "impacts_psychologiques": "Peur de l'avenir, peur de la récidive, baisse de moral, fatigue, émotivité, anxiété, sentiment d'incompréhension des proches.",
+      "impacts_proches_aidants": "Beaucoup de patientes déclarent un décalage entre les proches qui les enjoignent à reprendre leur vie d’avant, comme si rien ne s’était passé, et leur réalité souvent bien différente tant en terme d’énergie que de projets de vie."
+    },
+    "traitements_actuels": {
+      "traitements_disponibles": [
+        "Hormonothérapie (anti-aromatases, agonistes LHRH)",
+        "Thérapies ciblées anti-kinases orales"
+      ],
+      "avantages": "Les nouvelles thérapies ciblées anti-kinases orales associées aux hormonothérapies ont été une formidable avancée dans le cancer du sein hormonodépendant métastatique et dans le cancer du sein précoce à risque élevé de rechute. Elles apportent régulièrement des nouvelles données d’efficacité.",
+      "inconvenients": "Des hormonorésistances sont à l’origine de rechute à moins de deux ans et de rechute tardive. La connaissance de leurs tolérances en vie réelle est un enjeu pour une adhésion réelle au traitement.",
+      "besoins_non_couverts": "Un traitement qui permet de vivre plus longtemps dans de bonnes conditions avec le minimum d'impact sur la qualité de vie, avec administration par voie orale et accès en pharmacie de ville. Un suivi rapproché avec examens de contrôle plus fréquents pour diminuer la crainte de récidive. Un accompagnement adapté (suivi psychologique, soins de support, activité physique adaptée, échanges avec d'autres patients)."
+    },
+    "evaluation_medicament": {
+      "experience_avec_medicament": true,
+      "nb_patients_experience": 2,
+      "avantages_constates": "Le plan de prise de l’abémaciclib est jugé facile à suivre. La qualité de vie est jugée assez bonne à bonne. Diminue les récidives, prise orale.",
+      "inconvenients_constates": "Effets indésirables : fatigue (100%), perturbations sanguines (100%), diarrhées (50%), nausées (50%), douleurs articulaires (50%), alopécie (50%). Ces effets indésirables impactent le quotidien.",
+      "attentes_principales": null,
+      "craintes_principales": null
+    },
+    "indication_demandee": {
+      "indication_adequate": "Non_commenté",
+      "commentaires": "Au vu de la réduction significative du risque de récidive invasive à 3 ans, la consultation de suivi et d’annonce du traitement en adjuvant par abémaciclib en association avec une hormonothérapie nous parait un enjeu-clé pour la prise de décision du patient."
+    },
+    "position_association": {
+      "position_generale": "Mitigée",
+      "justification": "Le traitement est efficace, pratique et facile à suivre, avec une qualité de vie satisfaisante, mais les effets secondaires sont gênants. Un accompagnement adapté est nécessaire pour cette combinaison de traitement.",
+      "arguments_principaux": [
+        "Traitement oral facile à suivre et à obtenir en pharmacie de ville",
+        "Suivi médical rapproché satisfaisant permettant d'adapter les doses",
+        "Effets indésirables gênants mais gérables par réduction de dose ou arrêt temporaire",
+        "Accompagnement et soins de support importants pour l'observance"
+      ]
+    },
+    "synthese_contribution": "Contribution de l'association Patients en Réseau sur l'abémaciclib (Verzenios) dans le cancer du sein précoce à haut risque de rechute. Basée sur une enquête auprès de 9 patientes (2 conservées). L'association souligne l'angoisse liée au risque de récidive et le besoin de traitements efficaces. Les patientes sous abémaciclib rapportent une qualité de vie assez bonne à bonne mais avec des effets indésirables fréquents (fatigue, perturbations sanguines, troubles digestifs) gérés par adaptation posologique. Le traitement oral est apprécié pour sa facilité d'utilisation. L'association insiste sur l'importance d'un accompagnement personnalisé et de soins de support pour améliorer l'observance et la qualité de vie.",
+    "evidence": [
+      {
+        "f": "F1",
+        "p": "PARTIE 1/7",
+        "s": "L’association a rédigé un questionnaire",
+        "t": "L’association a rédigé un questionnaire en se basant sur les points abordés dans le « Questionnaire de recueil du point de vue des patients » proposé par la HAS. Ce questionnaire a été mis en ligne sur « Mon réseau Cancer du Sein », la page Facebook de Mon réseau Cancer du Sein entre le 10 juin et le 21 juin 2022.",
+        "c": 0.95
+      },
+      {
+        "f": "F1",
+        "p": "PARTIE 2/7",
+        "s": "L’annonce d’un risque plus élevé",
+        "t": "L’annonce d’un risque plus élevé de récidive est en soi un facteur d’angoisse et d’anxiété. L’ajout d’une thérapie ciblée anti CDK4/6 pourra répondre à un besoin de réduire ce risque même s’il ne faut pas oublier que le fardeau du traitement adjuvant sera plus important.",
+        "c": 0.95
+      },
+      {
+        "f": "F1",
+        "p": "PARTIE 5/7",
+        "s": "Leur qualité de vie est jugée",
+        "t": "Leur qualité de vie est jugée assez bonne pour 50 % et bonne pour 50% d’entre elles.",
+        "c": 0.95
+      },
+      {
+        "f": "F1",
+        "p": "PARTIE 7/7",
+        "s": "Ce traitement par voie orale",
+        "t": "Ce traitement par voie orale pouvant être dispensé en pharmacie de ville est facile à utiliser et à suivre. Le suivi médical rapproché est jugé satisfaisant et permet d’adapter les doses en fonction des effets indésirables.",
+        "c": 0.95
+      }
+    ]
+  },
+  "Temoignages_Patients": [
+    {
+      "temoignage_id": "CT-19830_tem_01",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Sidération, angoisse au départ puis soulagement lors de la mise en route du traitement (…).",
+      "theme": "Impact de l’annonce",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Sidération, angoisse au départ",
+          "t": "Sidération, angoisse au départ puis soulagement lors de la mise en route du traitement (…).",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_02",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "De grosses variations de fatigues",
+      "theme": "Impact sur la vie quotidienne",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "De grosses variations de fatigues",
+          "t": "De grosses variations de fatigues",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_03",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Je supporte bien le verzenios ® à 100mg",
+      "theme": "Impact sur la vie quotidienne",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Je supporte bien le verzenios",
+          "t": "Je supporte bien le verzenios ® à 100mg",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_04",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Je fais beaucoup de sport",
+      "theme": "Mobilité",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Je fais beaucoup de sport",
+          "t": "Je fais beaucoup de sport",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_05",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "J'ai peur de la fatigue à la reprise du travail. Le niveau de concentration me paraît correct.",
+      "theme": "Vie professionnelle",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "J'ai peur de la fatigue",
+          "t": "J'ai peur de la fatigue à la reprise du travail. Le niveau de concentration me paraît correct.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_06",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Difficile de se projeter dans mon travail.",
+      "theme": "Vie professionnelle",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Difficile de se projeter",
+          "t": "Difficile de se projeter dans mon travail.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_07",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Disparition d'une vie sexuelle, douleurs lors des rapports malgré un traitement par mucogyne. Ma vie affective est stable",
+      "theme": "Vie affective / sexuelle",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Disparition d'une vie sexuelle",
+          "t": "Disparition d'une vie sexuelle, douleurs lors des rapports malgré un traitement par mucogyne. Ma vie affective est stable",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_08",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Reprise très lente de la sexualité. La lubrification est revenue avec les gels internes et probiotiques. Très très peur de l’atrophie vaginale.",
+      "theme": "Vie affective / sexuelle",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Reprise très lente de la sexualité",
+          "t": "Reprise très lente de la sexualité. La lubrification est revenue avec les gels internes et probiotiques. Très très peur de l’atrophie vaginale.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_09",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Émotivité",
+      "theme": "Vie sociale",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Émotivité",
+          "t": "Émotivité",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_10",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Moral fluctuant",
+      "theme": "Vie sociale",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Moral fluctuant",
+          "t": "Moral fluctuant",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_11",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Actuellement, les cheveux repoussent, pas de gros changement physique hormis l'absence de sein bien caché avec la prothèse externe",
+      "theme": "Aspects physiques",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Actuellement, les cheveux repoussent",
+          "t": "Actuellement, les cheveux repoussent, pas de gros changement physique hormis l'absence de sein bien caché avec la prothèse externe",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_12",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "La ménopause précoce.",
+      "theme": "Aspects physiques",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "La ménopause précoce",
+          "t": "La ménopause précoce.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_13",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Peur de l'avenir, peur de la récidive, pas de dépression, bon moral",
+      "theme": "Aspects psychologiques",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Peur de l'avenir, peur",
+          "t": "Peur de l'avenir, peur de la récidive, pas de dépression, bon moral",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_14",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Baisse de moral, fatigue, émotivité",
+      "theme": "Aspects psychologiques",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 3/7",
+          "s": "Baisse de moral, fatigue",
+          "t": "Baisse de moral, fatigue, émotivité",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_15",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Neutropénie, fatigue, anémie",
+      "theme": "Effets indésirables",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 6/7",
+          "s": "Neutropénie, fatigue, anémie",
+          "t": "Neutropénie, fatigue, anémie",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_16",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Problèmes digestifs. Estomac fragile avec de la nourriture compliquée. Fatigue",
+      "theme": "Effets indésirables",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 6/7",
+          "s": "Problèmes digestifs. Estomac fragile",
+          "t": "Problèmes digestifs. Estomac fragile avec de la nourriture compliquée. Fatigue",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_17",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Je me sens chanceuse de pouvoir en bénéficier. J’aimerais connaître les résultats connus sur les récidives (je sais qu’il est utilisé depuis des années en Allemagne et en Croatie par exemple)",
+      "theme": "Information supplémentaire",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 6/7",
+          "s": "Je me sens chanceuse de pouvoir",
+          "t": "Je me sens chanceuse de pouvoir en bénéficier. J’aimerais connaître les résultats connus sur les récidives (je sais qu’il est utilisé depuis des années en Allemagne et en Croatie par exemple)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "temoignage_id": "CT-19830_tem_18",
+      "evaluation_id": "CT-19830",
+      "extrait_textuel": "Diminue les récidives, prise orale",
+      "theme": "Synthèse",
+      "evidence": [
+        {
+          "f": "F1",
+          "p": "PARTIE 7/7",
+          "s": "Diminue les récidives, prise",
+          "t": "Diminue les récidives, prise orale",
+          "c": 0.95
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,835 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19855",
+  "evaluation_id": "CT-19855",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_paracetamol_zentiva_lab_20072022_avis_ct19855.pdf",
+        "type": "CT",
+        "page_count": 2
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19855_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "Évaluer les technologies de santé",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "ÉVALUER LES TECHNOLOGIES DE SANTÉ",
+      "expected_fields": [
+        "produit_nom",
+        "avis_favorable",
+        "smr_enum",
+        "asmr_enum"
+      ],
+      "routing_hint": "header",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19855_seg_02",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "indication"
+      ],
+      "routing_hint": "summary",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19855_seg_03",
+      "section_label_normalise": "DONNEES_CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "type_avis",
+        "contexte_evaluation"
+      ],
+      "routing_hint": "context",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19855_seg_04",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication_precise",
+        "population_cible"
+      ],
+      "routing_hint": "indication",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19855_seg_05",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_has"
+      ],
+      "routing_hint": "comparators",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19855_seg_06",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "avis_favorable",
+        "taux_remboursement"
+      ],
+      "routing_hint": "conclusion",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19855_seg_07",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "dates_evaluation",
+        "presentations",
+        "demandeur",
+        "code_atc"
+      ],
+      "routing_hint": "admin",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19855_prod_01",
+      "evaluation_id": "CT-19855",
+      "nom_commercial": "PARACETAMOL ZENTIVA LAB",
+      "dci": "paracétamol",
+      "forme_pharmaceutique": "comprimé sécable",
+      "dosage": "500 mg",
+      "code_cip13": "34009 302 485 9 1",
+      "titulaire_amm": "ZENTIVA FRANCE",
+      "code_atc": "N02BE01",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 2,
+          "s": "PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable",
+          "t": "PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable 16 comprimés sous plaquettes (CIP : 34009 302 485 9 1)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "produit_id": "CT-19855_prod_02",
+      "evaluation_id": "CT-19855",
+      "nom_commercial": "PARACETAMOL ZENTIVA LAB",
+      "dci": "paracétamol",
+      "forme_pharmaceutique": "comprimé",
+      "dosage": "1 g",
+      "code_cip13": "34009 302 486 0 7",
+      "titulaire_amm": "ZENTIVA FRANCE",
+      "code_atc": "N02BE01",
+      "evidence": [
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 2,
+          "s": "PARACETAMOL ZENTIVA LAB 1 g, comprimé",
+          "t": "PARACETAMOL ZENTIVA LAB 1 g, comprimé 8 comprimés sous plaquettes (CIP : 34009 302 486 0 7)",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19855",
+      "Num_avis": "CT-19855",
+      "produit_nom": "PARACETAMOL ZENTIVA LAB",
+      "dci": "paracétamol",
+      "type_avis": "Inscription",
+      "forme": "comprimé sécable et comprimé",
+      "dosage": "500 mg et 1 g",
+      "indication": "Traitement symptomatique de courte durée de la douleur légère à modérée et/ou de la fièvre.",
+      "classe_ATC": "N02BE01",
+      "pathologie": "Douleur, Fièvre",
+      "maladie_rare": false,
+      "ligne_traitement": null,
+      "sous_groupe_population": null,
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Système nerveux",
+      "aire_therapeutique_niveau_2": "Analgésiques",
+      "aire_therapeutique_niveau_3": "Autres analgésiques et antipyrétiques",
+      "source_aire_therapeutique": "Déduit ATC N02BE01",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Non renseigné",
+      "besoin_medical_interprete": "Non renseigné",
+      "pathologie_categorie_enum": "Autre",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "500 mg : >21 kg (≥6 ans); 1 g : >50 kg (≥15 ans)",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Non renseigné",
+      "type_avis_enum": "Inscription",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-20",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Non renseigné",
+      "gravite_patho_enum": [],
+      "type_population_cible": "Adultes, adolescents, enfants selon poids/âge",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : spécialités princeps et génériques à base de paracétamol déjà remboursables.",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "500 mg : Traitement symptomatique",
+          "t": "500 mg : Traitement symptomatique de courte durée de la douleur légère à modérée et/ou de la fièvre.",
+          "c": 0.95
+        },
+        {
+          "field": "maladie_rare",
+          "f": "F1",
+          "p": 1,
+          "s": "Il s’agit d’une demande",
+          "t": "Il s’agit d’une demande d’inscription sur la liste des spécialités remboursables...",
+          "c": 0.9
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté par la Commission",
+          "t": "Adopté par la Commission de la transparence le 20 juillet 2022",
+          "c": 0.95
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 2,
+          "s": "Code ATC N02BE01",
+          "t": "Code ATC N02BE01",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19855_essai_Usage_etabli",
+      "evaluation_id": "CT-19855",
+      "essai_nom": "Usage médical bien établi",
+      "nct_number": null,
+      "design": "Non renseigné",
+      "design_enum": "Non renseigné",
+      "population_cible": "Non renseigné",
+      "comparateur_utilise": "Non renseigné",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Non renseigné",
+      "QoL_flag": null,
+      "niveau_preuve": "Non renseigné",
+      "pooling_flag": null,
+      "population_dedoublée": null,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non renseigné",
+      "randomisation_flag": null,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": null,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": null,
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Non renseigné",
+      "comparateur_type_enum": "Non renseigné",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": null,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 1,
+          "s": "Ces spécialités sont des",
+          "t": "Ces spécialités sont des génériques des spécialités de référence...",
+          "c": 0.9
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19855_compHAS_01",
+      "evaluation_id": "CT-19855",
+      "nom_comparateur_HAS": "Spécialités princeps et génériques à base de paracétamol déjà remboursables",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Analgésiques",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 1,
+          "s": "Les comparateurs cliniquement",
+          "t": "Les comparateurs cliniquement pertinents de PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable, et PARACETAMOL ZENTIVA LAB 1 g, comprimé sont nombreux et comprennent les spécialités princeps et génériques à base de paracétamol actuellement remboursables.",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19855_arg_CT_01",
+      "evaluation_id": "CT-19855",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Avis favorable au remboursement dans le traitement symptomatique des douleurs d'intensité légère à modérée et/ou des états fébriles.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Avis favorable au remboursement dans le traitement symptomatique des douleurs d’intensité légère à modérée et/ou des états fébriles.",
+      "page_source": "Page 1",
+      "section_source": "L’essentiel",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au remboursement",
+          "t": "Avis favorable au remboursement dans le traitement symptomatique des douleurs d’intensité légère à modérée et/ou des états fébriles.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19855_arg_CT_02",
+      "evaluation_id": "CT-19855",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Service médical rendu important dans l'indication de l'AMM.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission considère que le service médical rendu par PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable et PARACETAMOL ZENTIVA LAB 1 g, comprimé est IMPORTANT dans l’indication de l’AMM.",
+      "page_source": "Page 1",
+      "section_source": "Conclusions de la Commission",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "La Commission considère que",
+          "t": "La Commission considère que le service médical rendu par PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable et PARACETAMOL ZENTIVA LAB 1 g, comprimé est IMPORTANT dans l’indication de l’AMM.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19855_arg_CT_03",
+      "evaluation_id": "CT-19855",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Pas de progrès par rapport aux autres spécialités déjà inscrites (ASMR V).",
+      "direction_argument": "Neutre",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Pas de progrès par rapport aux autres spécialités déjà inscrites. Ces spécialités sont des génériques qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de paracétamol déjà inscrites.",
+      "page_source": "Pages 1-2",
+      "section_source": "L’essentiel et Amélioration du Service Médical Rendu",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "Pas de progrès par",
+          "t": "Pas de progrès par rapport aux autres spécialités déjà inscrites.",
+          "c": 0.95
+        },
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 2,
+          "s": "Ces spécialités sont des",
+          "t": "Ces spécialités sont des génériques qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de paracétamol déjà inscrites.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19855_arg_CT_04",
+      "evaluation_id": "CT-19855",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Pas d'impact supplémentaire sur la santé publique par rapport aux spécialités à base de paracétamol déjà inscrites.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "PARACETAMOL ZENTIVA LAB 500 mg et PARACETAMOL ZENTIVA LAB 1 g ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités à base de paracétamol déjà inscrites.",
+      "page_source": "Page 1",
+      "section_source": "Intérêt de santé publique",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 1,
+          "s": "PARACETAMOL ZENTIVA LAB 500",
+          "t": "PARACETAMOL ZENTIVA LAB 500 mg et PARACETAMOL ZENTIVA LAB 1 g ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités à base de paracétamol déjà inscrites.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19855_arg_CT_05",
+      "evaluation_id": "CT-19855",
+      "source_argument": "CT",
+      "categorie_argument": "Population_cible",
+      "description": "Population cible non modifiée par l'introduction de ces génériques.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "L’introduction de PARACETAMOL ZENTIVA LAB 500 mg et PARACETAMOL ZENTIVA LAB 1 g dans la stratégie thérapeutique n’est pas de nature à modifier la population des patients relevant d’un traitement par paracétamol.",
+      "page_source": "Page 2",
+      "section_source": "Population cible",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "L’introduction de PARACETAMOL",
+          "t": "L’introduction de PARACETAMOL ZENTIVA LAB 500 mg et PARACETAMOL ZENTIVA LAB 1 g dans la stratégie thérapeutique n’est pas de nature à modifier la population des patients relevant d’un traitement par paracétamol.",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19855_arg_CT_06",
+      "evaluation_id": "CT-19855",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "description": "Conditionnements adaptés aux conditions de prescription selon l'indication, la posologie et la durée de traitement.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Mineur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les conditionnements sont adaptés aux conditions de prescription selon l’indication, la posologie et la durée de traitement.",
+      "page_source": "Page 2",
+      "section_source": "Recommandations de la Commission",
+      "impact_decision": "Mentionné",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 2,
+          "s": "Les conditionnements sont",
+          "t": "Les conditionnements sont adaptés aux conditions de prescription selon l’indication, la posologie et la durée de traitement.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19855_ctx",
+    "evaluation_id": "CT-19855",
+    "ISP": "PARACETAMOL ZENTIVA LAB 500 mg et PARACETAMOL ZENTIVA LAB 1 g ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités à base de paracétamol déjà inscrites.",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Aucun",
+    "type_acces_precoce_enum": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-02-24",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Non renseigné",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Non renseigné",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 1,
+        "s": "PARACETAMOL ZENTIVA LAB 500",
+        "t": "PARACETAMOL ZENTIVA LAB 500 mg et PARACETAMOL ZENTIVA LAB 1 g ne sont pas susceptibles d’avoir un impact supplémentaire sur la santé publique par rapport aux spécialités à base de paracétamol déjà inscrites.",
+        "c": 0.95
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 2,
+        "s": "AMM Date initiale",
+        "t": "Date initiale (procédure décentralisée) : 24/02/2022",
+        "c": 0.95
+      },
+      {
+        "field": "suivi_post_inscription",
+        "f": "F1",
+        "p": 1,
+        "s": "Il s’agit d’une demande",
+        "t": "Il s’agit d’une demande d’inscription...",
+        "c": 0.9
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19855",
+    "texte_brut": "[Le texte complet du document CT fourni en deux parties]",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19855_smrasmr_01",
+      "evaluation_id": "CT-19855",
+      "indication_precise": "Traitement symptomatique de courte durée de la douleur légère à modérée et/ou de la fièvre.",
+      "smr": "La Commission considère que le service médical rendu par PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable et PARACETAMOL ZENTIVA LAB 1 g, comprimé est IMPORTANT dans l’indication de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "Ces spécialités sont des génériques qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de paracétamol déjà inscrites.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "Avis favorable à l'inscription sur la liste des spécialités remboursables aux assurés sociaux et sur la liste des spécialités agréées à l’usage des collectivités dans l’indication et aux posologies de l’AMM.",
+      "population_cible_indication": "500 mg : adultes, adolescents et enfants pesant plus de 21 kg (âgés de 6 ans et plus); 1 g : adultes et adolescents pesant plus de 50 kg (âgés de 15 ans et plus).",
+      "ligne_traitement_indication": null,
+      "comparateurs_references_indication": "Spécialités princeps et génériques à base de paracétamol déjà remboursables.",
+      "comparateur_id_HAS": "CT-19855_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Variable selon dosage"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Non renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 1,
+          "s": "La Commission considère que",
+          "t": "La Commission considère que le service médical rendu par PARACETAMOL ZENTIVA LAB 500 mg, comprimé sécable et PARACETAMOL ZENTIVA LAB 1 g, comprimé est IMPORTANT dans l’indication de l’AMM.",
+          "c": 0.95
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 2,
+          "s": "Ces spécialités sont des",
+          "t": "Ces spécialités sont des génériques qui n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux spécialités à base de paracétamol déjà inscrites.",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19855_event_CT_01",
+      "evaluation_id": "CT-19855",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-20",
+      "detail_brut": "Adopté par la Commission de la transparence le 20 juillet 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Adoption avis CT",
+      "acteurs_impliques": [
+        "Commission de la transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté par la Commission",
+          "t": "Adopté par la Commission de la transparence le 20 juillet 2022",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19855_event_VALID_01",
+      "evaluation_id": "CT-19855",
+      "event_type": "DOSSIER_DEPOT_HAS",
+      "event_date": "2022-05-13",
+      "detail_brut": "Date de validation administrative : 13 mai 2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "Validation administrative dossier",
+      "acteurs_impliques": [
+        "HAS"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Date de validation administrative",
+          "t": "Date de validation administrative* : 13 mai 2022",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19855_event_AMM_01",
+      "evaluation_id": "CT-19855",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-02-24",
+      "detail_brut": "Date initiale (procédure décentralisée) : 24/02/2022",
+      "source_doc": "F1",
+      "detail_type_specifique": "AMM procédure décentralisée",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": null,
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 2,
+          "s": "Date initiale (procédure décentralisée)",
+          "t": "Date initiale (procédure décentralisée) : 24/02/2022",
+          "c": 0.95
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19855",
+    "delai_amm_ct_jours": 146,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19855",
+    "is_orphan": false,
+    "classe_ATC_l2": "N02B",
+    "aire_therapeutique": "Analgésiques",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19855",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19855_essai_Usage_etabli",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19855",
+      "tgt_type": "COMPARATEUR_HAS",
+      "tgt_id": "CT-19855_compHAS_01",
+      "label": "EVAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "SMR_ASMR",
+      "src_id": "CT-19855_smrasmr_01",
+      "tgt_type": "COMPARATEUR_HAS",
+      "tgt_id": "CT-19855_compHAS_01",
+      "label": "SMR_HAS_COMPARATOR"
+    }
+  ],
+  "Annotation_View": [],
+  "Contribution_Patients": {
+    "evaluation_id": "CT-19855",
+    "contribution_presente": false,
+    "contribution_id": null
+  }
+}

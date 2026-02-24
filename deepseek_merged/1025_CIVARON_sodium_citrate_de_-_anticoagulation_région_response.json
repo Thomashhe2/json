@@ -1,0 +1,1208 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19846",
+  "evaluation_id": "CT-19846",
+  "extraction_date": "2022-07-20",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19846_CIVARON_PIS_INS_Avisdef_CT19865.pdf",
+        "type": "CT",
+        "page_count": 11
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19846_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "avis_favorable",
+        "progres_therapeutique"
+      ],
+      "routing_hint": "Conclusion synthétique",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 1,
+          "s": "L’essentiel Avis favorable au remboursement",
+          "t": "L’essentiel Avis favorable au remboursement dans les indications de l’AMM. Quel progrès ? Pas de progrès par rapport au dispositif médical solution de citrate de sodium 4% et par rapport à la spécialité REGIOCIT à base de chlorure de sodium et citrate de sodium.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_02",
+      "section_label_normalise": "CONTEXTE",
+      "section_label_brut": "Contexte",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Contexte",
+      "expected_fields": [
+        "contexte_evaluation",
+        "description_technologie"
+      ],
+      "routing_hint": "Description du médicament et de son contexte d'utilisation",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte Il s’agit d’une demande d’inscription",
+          "t": "Contexte Il s’agit d’une demande d’inscription sur la liste des spécialités agréées à l’usage des collectivités de CIVARON 136mmol/L, solution pour perfusion à base de citrate de sodium dans son indication d’AMM.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_03",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication_precise",
+        "population_cible"
+      ],
+      "routing_hint": "Indications thérapeutiques de l'AMM",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "Indication « CIVARON est utilisé pour l’anticoagulation",
+          "t": "Indication « CIVARON est utilisé pour l’anticoagulation régionale au citrate (ARC) dans le cadre d’une hémodialyse veino-veineuse continue (continuous venovenous haemodialysis, CVVHD), d’une hémodiafiltration veino-veineuse continue (continuous venovenous haemodiafiltration, CVVHDF), d’une dialyse (quotidienne) prolongée à efficacité réduite (sustained low efficiency [daily] dialysis, SLEDD) et d’un échange plasmatique thérapeutique (EPT) via la séparation de la membrane plasmique. CIVARON est indiqué chez l’adulte et chez l’enfant de tout âge (à l’exception du prématuré). »",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_04",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_medicamenteux",
+        "comparateurs_non_medicamenteux"
+      ],
+      "routing_hint": "Liste des comparateurs identifiés par la HAS",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs cliniquement pertinents L’identification des comparateurs",
+          "t": "Comparateurs cliniquement pertinents L’identification des comparateurs cliniquement pertinents (CCP) a été faite dans le champ de l’AMM. Les CCP de CIVARON 136mmol/L, solution pour perfusion sont les médicaments ou toute autre thérapeutique utilisés pour l’anticoagulation régionale au citrate dans le traitement d’une CVVHD, d’une CVVHDF, d’une SLEDD et d’un EPT via la séparation de la membrane plasmique.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_05",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "avis_favorable"
+      ],
+      "routing_hint": "Conclusions sur le SMR et l'ASMR",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 6,
+          "s": "Conclusions de la Commission Considérant l’ensemble de ces",
+          "t": "Conclusions de la Commission Considérant l’ensemble de ces données et informations et après débat et vote, la Commission estime : Service Médical Rendu La Commission considère que le service médical rendu par CIVARON 136mmol/L (citrate de sodium) est important dans l’indication de l’AMM. La Commission donne un avis favorable à l'inscription sur la liste des spécialités agréées à l’usage des collectivités dans l’indication et aux posologies de l’AMM. Amélioration du Service Médical Rendu La Commission considère que CIVARON n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique par rapport à la solution de citrate de sodium 4% classée comme dispositif médical et par rapport à la spécialité REGIOCIT (chlorure de sodium et citrate de sodium), solution pour hémofiltration.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_06",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible_nombre",
+        "estimation_patients"
+      ],
+      "routing_hint": "Estimation de la population cible",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Population cible La population cible de CIVARON correspond",
+          "t": "Population cible La population cible de CIVARON correspond aux patients qui nécessitent la mise en place d’un traitement CVVHD, CVVHDF, SLEDD ou EPT sous anticoagulation au citrate. En l’absence de données épidémiologiques précises, la population cible peut être approchée à partir des données de population rejointe, issues de la base de données PMSI MCO (enquête fournie par le laboratoire), malgré les limites inhérentes à l’utilisation de cette base de données. L’analyse de la base nationale de données MSI MCO (médecine, chirurgie, obstétrique) a permis d’identifier sur l’année 2020, la réalisation de 190 000 actes d'EER pour IRA (adultes et enfants), tous services confondus. Parmi eux, 116 000 actes EERC ont été réalisés. Selon le PMSI 2020, ces 116 000 actes ont été réalisés au cours de 17 356 séjours, soit une moyenne de 6,6 actes par séjour. En l’absence d’étude spécifique et avec l’hypothèse que 60% des actes EERC sont réalisés sous anticoagulation au citrate, le nombre de patients traités par EERC sous anticoagulation au citrate a été estimé à 11 500 patients par an en France. ➔ Conclusion : Compte tenu de ces éléments, la population cible de CIVARON peut être estimée au maximum à environ 11 500 patients.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_07",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 7,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "presentations",
+        "code_atc"
+      ],
+      "routing_hint": "Informations administratives du dossier",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 7,
+          "s": "Informations administratives et réglementaires Calendrier d’évaluation",
+          "t": "Informations administratives et réglementaires Calendrier d’évaluation Date de validation administrative* : 5 mai 2022 Date d’examen et d’adoption : 20 juillet 2022 Présentations concernées CIVARON 136 mmol/L, solution pour perfusion − 8 poches (polypropylène/élastomère) de 1 500 mL avec système de connecteur SecuNect (CIP : 34009 550 863 8 3) − 8 poches (polypropylène/élastomère) de 1 500 mL avec système de connecteur Safe-Lock (CIP : 34009 550 863 9 0) Demandeur FRESENIUS MEDICAL CARE Listes concernées Collectivités (CSP L.5123-2) AMM Date initiale (procédure décentralisée) : 09/12/2021 (DCP DE/H/6388/001/DC) Conditions de prescription et de délivrance / statut particulier Liste I Médicament en réserve hospitalière (RH) Médicament à prescription hospitalière (PH) Médicament à prescription initiale hospitalière (PIH) Code ATC B05ZB Solutions pour hémofiltration",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "segment_id": "CT-19846_seg_08",
+      "section_label_normalise": "TOLERANCE",
+      "section_label_brut": "Tolérance",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "char_start": null,
+      "char_end": null,
+      "heading_text": "Tolérance",
+      "expected_fields": [
+        "effets_indesirables",
+        "incidence_ei"
+      ],
+      "routing_hint": "Données de sécurité du médicament",
+      "label_confidence": 0.95,
+      "evidence": [
+        {
+          "field": "section_label_brut",
+          "f": "F1",
+          "p": 4,
+          "s": "Concernant la tolérance, d’après la rubrique 4.8",
+          "t": "Concernant la tolérance, d’après la rubrique 4.8 du RCP : « Des effets indésirables peuvent résulter de I'utilisation de la solution de CIVARON ou du traitement de dialyse. Les effets indésirables très fréquents (≥ 1/10) attendus avec l’utilisation de CIVARON dans le cadre des différentes procédures thérapeutiques sont : l’hypocalcémie (< 1,1 mmol/L), l’hypernatrémie (> 145 mmol/L) et l’alcalose métabolique (pH > 7,45). »",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19846_produit_01",
+      "evaluation_id": "CT-19846",
+      "produit_nom_commercial": "CIVARON 136mmol/L, solution pour perfusion",
+      "dci": "citrate de sodium",
+      "titulaire_amm": "FRESENIUS MEDICAL CARE",
+      "code_atc": "B05ZB",
+      "presentations": [
+        {
+          "presentation_id": "CT-19846_pres_01",
+          "forme_pharmaceutique": "solution pour perfusion",
+          "dosage_concentration": "136 mmol/L",
+          "volume": "1500 mL",
+          "code_cip13": "34009 550 863 8 3",
+          "conditionnement": "8 poches (polypropylène/élastomère) avec système de connecteur SecuNect"
+        },
+        {
+          "presentation_id": "CT-19846_pres_02",
+          "forme_pharmaceutique": "solution pour perfusion",
+          "dosage_concentration": "136 mmol/L",
+          "volume": "1500 mL",
+          "code_cip13": "34009 550 863 9 0",
+          "conditionnement": "8 poches (polypropylène/élastomère) avec système de connecteur Safe-Lock"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "Citrate de sodium CIVARON 136mmol/L",
+          "t": "Citrate de sodium CIVARON 136mmol/L, Solution pour perfusion",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "dci",
+          "f": "F1",
+          "p": 1,
+          "s": "Citrate de sodium CIVARON 136mmol/L",
+          "t": "Citrate de sodium",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "titulaire_amm",
+          "f": "F1",
+          "p": 7,
+          "s": "Demandeur FRESENIUS MEDICAL CARE",
+          "t": "Demandeur FRESENIUS MEDICAL CARE",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "code_atc",
+          "f": "F1",
+          "p": 7,
+          "s": "Code ATC B05ZB Solutions pour hémofiltration",
+          "t": "Code ATC B05ZB Solutions pour hémofiltration",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "presentations",
+          "f": "F1",
+          "p": 7,
+          "s": "Présentations concernées CIVARON 136 mmol/L",
+          "t": "CIVARON 136 mmol/L, solution pour perfusion − 8 poches (polypropylène/élastomère) de 1 500 mL avec système de connecteur SecuNect (CIP : 34009 550 863 8 3) − 8 poches (polypropylène/élastomère) de 1 500 mL avec système de connecteur Safe-Lock (CIP : 34009 550 863 9 0)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19846",
+      "Num_avis": "CT-19846",
+      "produit_nom": "CIVARON 136mmol/L, solution pour perfusion",
+      "dci": "citrate de sodium",
+      "type_avis": "Demande d'inscription sur la liste des spécialités agréées à l'usage des collectivités",
+      "type_avis_enum": "Inscription",
+      "forme": "Solution pour perfusion",
+      "dosage": "136 mmol/L",
+      "indication": "Anticoagulation régionale au citrate (ARC) dans le cadre d'une CVVHD, CVVHDF, SLEDD ou EPT",
+      "classe_ATC": "B05ZB",
+      "pathologie": "Insuffisance rénale aiguë, nécessitant une épuration extra-rénale continue avec anticoagulation régionale au citrate",
+      "maladie_rare": false,
+      "ligne_traitement": "Traitement de première intention",
+      "ligne_traitement_enum": "1L",
+      "sous_groupe_population": "Adultes et enfants de tout âge (à l'exception du prématuré)",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Néphrologie",
+      "aire_therapeutique_niveau_2": "Épuration extra-rénale",
+      "aire_therapeutique_niveau_3": "Anticoagulation régionale au citrate",
+      "source_aire_therapeutique": "Déduit ATC B05ZB et indication",
+      "design_etude": "Usage médical bien établi basé sur des données bibliographiques",
+      "design_enum": "Observationnel_prospectif",
+      "niveau_preuve_brut": "Données d'usage médical bien établi",
+      "niveau_preuve_interprete": "Niveau_4",
+      "besoin_medical_brut": "Le besoin médical est couvert par des alternatives existantes",
+      "besoin_medical_interprete": "Couvert",
+      "pathologie_categorie_enum": "Nephrologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "Enfants de tout âge sauf prématuré",
+      "biomarqueur_requis": "Aucun",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Première évaluation",
+      "historique_ASMR_comparateurs": "REGIOCIT a une ASMR V par rapport au dispositif médical PRISMOCITRATE 18/0",
+      "concurrence_therapeutique_recente": "Disponibilité de dispositifs médicaux (citrate de sodium 4%) et de la spécialité REGIOCIT",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-07-20",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les situations cliniques nécessitant une hémodialyse veino-veineuse continue (CVVHD), une hémodiafiltration veino-veineuse continue (CVVHDF), une dialyse prolongée à efficacité réduite (SLEDD) et un échange plasmatique thérapeutique (EPT) via la séparation de la membrane plasmique sont graves et susceptibles d’engager le pronostic vital des patients.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes et enfants de tout âge (à l'exception du prématuré) nécessitant une épuration extra-rénale continue avec anticoagulation au citrate",
+      "pertinence_concurrence_therapeutique": "Comparateurs cliniquement pertinents : solution de citrate de sodium 4% (dispositif médical), REGIOCIT (chlorure de sodium et citrate de sodium), et d'autres dispositifs médicaux",
+      "smr_enum": "Important",
+      "asmr_enum": "V",
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 2,
+          "s": "Contexte Il s’agit d’une demande d’inscription",
+          "t": "Il s’agit d’une demande d’inscription sur la liste des spécialités agréées à l’usage des collectivités",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 3,
+          "s": "Indication « CIVARON est utilisé pour l’anticoagulation",
+          "t": "CIVARON est utilisé pour l’anticoagulation régionale au citrate (ARC) dans le cadre d’une hémodialyse veino-veineuse continue (continuous venovenous haemodialysis, CVVHD), d’une hémodiafiltration veino-veineuse continue (continuous venovenous haemodiafiltration, CVVHDF), d’une dialyse (quotidienne) prolongée à efficacité réduite (sustained low efficiency [daily] dialysis, SLEDD) et d’un échange plasmatique thérapeutique (EPT) via la séparation de la membrane plasmique.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "sous_groupe_population",
+          "f": "F1",
+          "p": 3,
+          "s": "CIVARON est indiqué chez l’adulte et chez",
+          "t": "CIVARON est indiqué chez l’adulte et chez l’enfant de tout âge (à l’exception du prématuré).",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "ligne_traitement",
+          "f": "F1",
+          "p": 6,
+          "s": "Conclusions de la Commission Il s’agit d’un traitement",
+          "t": "Il s’agit d’un traitement de première intention.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "gravite_patho",
+          "f": "F1",
+          "p": 6,
+          "s": "Service Médical Rendu ➔ Les situations cliniques nécessitant",
+          "t": "Les situations cliniques nécessitant une hémodialyse veino-veineuse continue (CVVHD), une hémodiafiltration veino-veineuse continue (CVVHDF), une dialyse prolongée à efficacité réduite (SLEDD) et un échange plasmatique thérapeutique (EPT) via la séparation de la membrane plasmique sont graves et susceptibles d’engager le pronostic vital des patients.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "smr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission considère que le service médical rendu",
+          "t": "La Commission considère que le service médical rendu par CIVARON 136mmol/L (citrate de sodium) est important dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr_enum",
+          "f": "F1",
+          "p": 6,
+          "s": "Amélioration du Service Médical Rendu La Commission considère",
+          "t": "La Commission considère que CIVARON n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique par rapport à la solution de citrate de sodium 4% classée comme dispositif médical et par rapport à la spécialité REGIOCIT (chlorure de sodium et citrate de sodium), solution pour hémofiltration.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "date_evaluation",
+          "f": "F1",
+          "p": 7,
+          "s": "Calendrier d’évaluation Date d’examen et d’adoption",
+          "t": "Date d’examen et d’adoption : 20 juillet 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19846_essai_Usage_medical_bien_etabli",
+      "evaluation_id": "CT-19846",
+      "essai_nom": "Usage médical bien établi",
+      "nct_number": null,
+      "design": "Données bibliographiques étayant l'usage médical bien établi",
+      "design_enum": "Observationnel_prospectif",
+      "population_cible": "Patients adultes et pédiatriques nécessitant une anticoagulation régionale au citrate pour des procédures d'épuration extra-rénale continue",
+      "comparateur_utilise": "Dispositifs médicaux (solution de citrate de sodium 4%) et héparines",
+      "nb_patient_traitement": null,
+      "nb_patient_comparateur": null,
+      "resultat_global": "Efficacité démontrée par l'usage bien établi",
+      "QoL_flag": false,
+      "niveau_preuve": "Usage bien établi",
+      "pooling_flag": false,
+      "population_dedoublée": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": null,
+      "phase": "Non renseigné",
+      "aveugle": "Non_applicable",
+      "randomisation_flag": false,
+      "randomisation_ratio": "Non renseigné",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "Non renseigné",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Matures",
+      "age_min_num": null,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "Variable",
+      "comparateur_type_enum": "Traitement_actif",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "Non renseigné",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "references_bibliographiques": [
+        "27 études fournies en annexe couvrant différentes populations et procédures"
+      ],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 4,
+          "s": "S’agissant d’un médicament enregistré sur la base",
+          "t": "S’agissant d’un médicament enregistré sur la base d’un « usage médical bien établi » conformément à l'article 10(a) de la directive 2001/83/CE, aucune nouvelle donnée clinique récente n’a été soumise. Afin d’appuyer sa demande, le laboratoire a argumenté son rationnel clinique sur de nombreuses données bibliographiques étayant l’usage médical bien établi du citrate de sodium pour la réalisation de l’anticoagulation régionale au citrate. Ainsi, le laboratoire a fourni 27 études qui ne seront pas détaillées compte tenu de leur caractère ancien et majoritairement prospectif (cf Annexes).",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "population_cible",
+          "f": "F1",
+          "p": 4,
+          "s": "Dans la plupart des études, l’objectif était d’établir",
+          "t": "Dans la plupart des études, l’objectif était d’établir des protocoles thérapeutiques d’anticoagulation. Certaines études ont comparé l’intérêt de l’anticoagulation régionale au citrate dans les différentes situations cliniques et dans différentes populations (pédiatrique et adulte), notamment versus les héparines.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19846_essai_Usage_medical_bien_etabli_crit_anticoagulation_efficace",
+      "evaluation_id": "CT-19846",
+      "essai_id": "CT-19846_essai_Usage_medical_bien_etabli",
+      "nom_critere": "Anticoagulation efficace",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "Diminution du taux de calcium ionisé à moins de 0,3 mmol/l",
+      "hierarchie_critere": "Non renseigné",
+      "ordre_hierarchie": null,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": false,
+      "methode_ajustement_alpha": "Non applicable",
+      "alpha_ajuste": null,
+      "alpha_global_famille": null,
+      "nombre_tests_famille": null,
+      "test_statistique_utilise": "Non renseigné",
+      "modele_ajuste": null,
+      "facteurs_ajustement": [],
+      "analyse_stratifiee": null,
+      "valeur_groupe_traitement": "Anticoagulation efficace obtenue par addition de 4 à 5 mmol de citrate par litre de sang",
+      "valeur_groupe_comparateur": "Non renseigné",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "Non renseigné",
+      "p_value_num": null,
+      "unite_normalisee": "Autre",
+      "type_effet": "Autre",
+      "significativite_statistique": false,
+      "critere_atteint": true,
+      "degre_signification": "Non_teste",
+      "pertinence_clinique": "Majeur",
+      "commentaire_has_resultat": "Non renseigné",
+      "is_primary": false,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 2,
+          "s": "L’anticoagulation au citrate nécessite le maintien",
+          "t": "Une anticoagulation efficace est obtenue par addition de 4 à 5 mmol de citrate par litre de sang, permettant de diminuer le taux de calcium ionisé à moins de 0,3 mmol/l.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Tolérance": {
+    "tolerance_id": "CT-19846_essai_Usage_medical_bien_etabli_tol",
+    "evaluation_id": "CT-19846",
+    "essai_id": "CT-19846_essai_Usage_medical_bien_etabli",
+    "ae_total_pct": null,
+    "ae_total_pct_comparateur": null,
+    "sae_pct": null,
+    "sae_pct_comparateur": null,
+    "discontinuations_ae_pct": null,
+    "discontinuations_ae_pct_comparateur": null,
+    "deaths_ae_n": null,
+    "deaths_ae_n_comparateur": null,
+    "sae_data_available": false,
+    "sae_superieur_comparateur": null,
+    "deaths_reported": false,
+    "EI_graves_detailles": [
+      {
+        "ei_terme": "Hypocalcémie",
+        "grade": "Tous grades",
+        "incidence_pct_traitement": null,
+        "incidence_pct_comparateur": null,
+        "n_patients_traitement": null,
+        "n_patients_comparateur": null,
+        "issue": "Non renseigné",
+        "delai_apparition_median_jours": null,
+        "evidence": [
+          {
+            "field": "EI_graves_detailles",
+            "f": "F1",
+            "p": 4,
+            "s": "Les effets indésirables très fréquents (≥ 1/10) attendus",
+            "t": "l’hypocalcémie (< 1,1 mmol/L)",
+            "m": "manual",
+            "c": 0.98
+          }
+        ]
+      },
+      {
+        "ei_terme": "Hypernatrémie",
+        "grade": "Tous grades",
+        "incidence_pct_traitement": null,
+        "incidence_pct_comparateur": null,
+        "n_patients_traitement": null,
+        "n_patients_comparateur": null,
+        "issue": "Non renseigné",
+        "delai_apparition_median_jours": null,
+        "evidence": [
+          {
+            "field": "EI_graves_detailles",
+            "f": "F1",
+            "p": 4,
+            "s": "Les effets indésirables très fréquents (≥ 1/10) attendus",
+            "t": "l’hypernatrémie (> 145 mmol/L)",
+            "m": "manual",
+            "c": 0.98
+          }
+        ]
+      },
+      {
+        "ei_terme": "Alcalose métabolique",
+        "grade": "Tous grades",
+        "incidence_pct_traitement": null,
+        "incidence_pct_comparateur": null,
+        "n_patients_traitement": null,
+        "n_patients_comparateur": null,
+        "issue": "Non renseigné",
+        "delai_apparition_median_jours": null,
+        "evidence": [
+          {
+            "field": "EI_graves_detailles",
+            "f": "F1",
+            "p": 4,
+            "s": "Les effets indésirables très fréquents (≥ 1/10) attendus",
+            "t": "l’alcalose métabolique (pH > 7,45)",
+            "m": "manual",
+            "c": 0.98
+          }
+        ]
+      }
+    ],
+    "EI_frequents_detailles": [],
+    "ei_grade_max": "Non renseigné",
+    "deces_detailles": [],
+    "signal_securite_flag": false,
+    "signal_securite_detailles": [],
+    "signal_ansm_flag": false,
+    "EI_graves": "Hypocalcémie, hypernatrémie, alcalose métabolique",
+    "EI_frequents": "Non renseigné",
+    "deces": "Non renseigné",
+    "signal_securite": "Non renseigné",
+    "evidence": [
+      {
+        "field": "EI_graves",
+        "f": "F1",
+        "p": 4,
+        "s": "Les effets indésirables très fréquents (≥ 1/10) attendus",
+        "t": "Les effets indésirables très fréquents (≥ 1/10) attendus avec l’utilisation de CIVARON dans le cadre des différentes procédures thérapeutiques sont : l’hypocalcémie (< 1,1 mmol/L), l’hypernatrémie (> 145 mmol/L) et l’alcalose métabolique (pH > 7,45).",
+        "m": "manual",
+        "c": 0.98
+      }
+    ],
+    "_meta": {}
+  },
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19846_compHAS_01",
+      "evaluation_id": "CT-19846",
+      "nom_comparateur_HAS": "REGIOCIT (chlorure de sodium et citrate de sodium), solution pour hémofiltration",
+      "type_comparateur": "Médicament",
+      "comparateur_standard_soin": "Solution de substitution pour la thérapie d'épuration extra-rénale continue (EERC) utilisant l'anticoagulation régionale au citrate",
+      "famille_comparateur": "Solutions pour hémofiltration",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Médicaments NOM (dci) Laboratoire CPT*",
+          "t": "REGIOCIT (chlorure de sodium et citrate de sodium), solution pour hémofiltration",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19846_compHAS_02",
+      "evaluation_id": "CT-19846",
+      "nom_comparateur_HAS": "Solution ACD-A",
+      "type_comparateur": "Dispositif médical",
+      "comparateur_standard_soin": "Solution pour anticoagulation régionale au citrate",
+      "famille_comparateur": "Dispositif médical",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs non médicamenteux Il existe également des",
+          "t": "Solution ACD-A (Fabricant: Fresenius KABI AG, classe IIb, CE0123)",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "comparateur_id": "CT-19846_compHAS_03",
+      "evaluation_id": "CT-19846",
+      "nom_comparateur_HAS": "Citrate trisodique 4% w/v Solution pour traitement sanguin extracorporel",
+      "type_comparateur": "Dispositif médical",
+      "comparateur_standard_soin": "Destinée à l'anticoagulation régionale dans le cadre de l'épuration extra-rénale continue (EERC) chez l'adulte",
+      "famille_comparateur": "Dispositif médical",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 3,
+          "s": "Comparateurs non médicamenteux Il existe également des",
+          "t": "Citrate trisodique 4% w/v Solution pour traitement sanguin extracorporel (Fabricant : Fresenius Medical Care AG & Co. ; classe IIb, CE0123) est destinée à l’anticoagulation régionale dans le cadre de l’épuration extra-rénale continue (EERC) chez l’adulte : Hémodialyse veino-veineuse continue (CVVHD Ci-Ca®) et Hémodiafiltration continue veino-veineuse post-dilution (CVVHDF post Ci-Ca®).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19846_arg_CT_01",
+      "evaluation_id": "CT-19846",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "description": "Efficacité basée sur un usage médical bien établi du citrate de sodium pour l'anticoagulation régionale au citrate, avec des données bibliographiques soutenant son utilisation dans différentes procédures d'épuration extra-rénale.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "L’efficacité de CIVARON est évaluée sur la base d’un usage bien établi dans ces indications.",
+      "page_source": "Page 4",
+      "section_source": "Résumé des données cliniques disponibles",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 4,
+          "s": "L’efficacité de CIVARON est évaluée sur la base",
+          "t": "L’efficacité de CIVARON est évaluée sur la base d’un usage bien établi dans ces indications.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19846_arg_CT_02",
+      "evaluation_id": "CT-19846",
+      "source_argument": "CT",
+      "categorie_argument": "SMR_ASMR",
+      "description": "Service médical rendu (SMR) jugé important en raison de la gravité des situations cliniques nécessitant une anticoagulation régionale au citrate, mais absence d'amélioration du service médical rendu (ASMR V) par rapport aux comparateurs existants.",
+      "direction_argument": "Mitigé",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "La Commission considère que le service médical rendu par CIVARON 136mmol/L (citrate de sodium) est important dans l’indication de l’AMM. La Commission considère que CIVARON n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique par rapport à la solution de citrate de sodium 4% classée comme dispositif médical et par rapport à la spécialité REGIOCIT.",
+      "page_source": "Page 6",
+      "section_source": "Conclusions de la Commission",
+      "impact_decision": "Déterminant",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission considère que le service médical rendu",
+          "t": "La Commission considère que le service médical rendu par CIVARON 136mmol/L (citrate de sodium) est important dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 6,
+          "s": "Amélioration du Service Médical Rendu La Commission considère",
+          "t": "La Commission considère que CIVARON n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique par rapport à la solution de citrate de sodium 4% classée comme dispositif médical et par rapport à la spécialité REGIOCIT (chlorure de sodium et citrate de sodium), solution pour hémofiltration.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19846_arg_CT_03",
+      "evaluation_id": "CT-19846",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "description": "Profil de tolérance acceptable avec des effets indésirables très fréquents connus (hypocalcémie, hypernatrémie, alcalose métabolique) mais gérables, et absence de signal de sécurité majeur.",
+      "direction_argument": "Neutre",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Les effets indésirables très fréquents (≥ 1/10) attendus avec l’utilisation de CIVARON dans le cadre des différentes procédures thérapeutiques sont : l’hypocalcémie (< 1,1 mmol/L), l’hypernatrémie (> 145 mmol/L) et l’alcalose métabolique (pH > 7,45).",
+      "page_source": "Page 4",
+      "section_source": "Tolérance",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 4,
+          "s": "Les effets indésirables très fréquents (≥ 1/10) attendus",
+          "t": "Les effets indésirables très fréquents (≥ 1/10) attendus avec l’utilisation de CIVARON dans le cadre des différentes procédures thérapeutiques sont : l’hypocalcémie (< 1,1 mmol/L), l’hypernatrémie (> 145 mmol/L) et l’alcalose métabolique (pH > 7,45).",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19846_arg_CT_04",
+      "evaluation_id": "CT-19846",
+      "source_argument": "CT",
+      "categorie_argument": "Comparaison_alternatives",
+      "description": "Existence de comparateurs cliniquement pertinents (dispositifs médicaux et spécialité REGIOCIT) avec une équivalence en termes de composition, dosage et administration, conduisant à une ASMR V.",
+      "direction_argument": "Défavorable",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Pas de progrès par rapport au dispositif médical solution de citrate de sodium 4% et par rapport à la spécialité REGIOCIT à base de chlorure de sodium et citrate de sodium.",
+      "page_source": "Page 1",
+      "section_source": "L’essentiel",
+      "impact_decision": "Important",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 1,
+          "s": "Quel progrès ? Pas de progrès par rapport",
+          "t": "Pas de progrès par rapport au dispositif médical solution de citrate de sodium 4% et par rapport à la spécialité REGIOCIT à base de chlorure de sodium et citrate de sodium.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19846_arg_CT_05",
+      "evaluation_id": "CT-19846",
+      "source_argument": "CT",
+      "categorie_argument": "Population_cible",
+      "description": "Population cible estimée à environ 11 500 patients par an en France, couvrant des situations cliniques graves nécessitant une anticoagulation régionale au citrate, avec un besoin médical couvert par des alternatives.",
+      "direction_argument": "Favorable",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "Compte tenu de ces éléments, la population cible de CIVARON peut être estimée au maximum à environ 11 500 patients.",
+      "page_source": "Page 7",
+      "section_source": "Population cible",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "extrait_textuel",
+          "f": "F1",
+          "p": 7,
+          "s": "Compte tenu de ces éléments, la population cible",
+          "t": "Compte tenu de ces éléments, la population cible de CIVARON peut être estimée au maximum à environ 11 500 patients.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19846_ctx",
+    "evaluation_id": "CT-19846",
+    "ISP": "CIVARON 136mmol/L, solution pour perfusion n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "acces_precoce": "Aucun",
+    "type_acces_precoce_enum": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-10-27",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "26 pays de l'Union Européenne"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "Union Européenne",
+        "organisme": "EMA",
+        "decision": "Recommended",
+        "date_decision": "2021-10-27",
+        "reference": "AMM européenne octroyée le 27/10/2021",
+        "evidence": [
+          {
+            "field": "decisions_internationales",
+            "f": "F1",
+            "p": 4,
+            "s": "Informations sur le médicament au niveau international A ce",
+            "t": "A ce jour, ce produit n’est pris en charge dans aucun pays, il a l’AMM dans 26 pays de l’Union Européenne. L’AMM européenne ayant été octroyée le 27/10/2021",
+            "m": "manual",
+            "c": 0.98
+          }
+        ]
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Patients nécessitant une EERC sous anticoagulation au citrate",
+    "population_cible_nombre": 11500,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Données labo",
+    "incertitude_population": "Modérée",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Important",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 6,
+        "s": "Intérêt de santé publique Compte tenu de",
+        "t": "CIVARON 136mmol/L, solution pour perfusion n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique.",
+        "m": "manual",
+        "c": 0.98
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 4,
+        "s": "L’AMM européenne ayant été octroyée le 27/10/2021",
+        "t": "L’AMM européenne ayant été octroyée le 27/10/2021",
+        "m": "manual",
+        "c": 0.98
+      },
+      {
+        "field": "population_cible_nombre",
+        "f": "F1",
+        "p": 7,
+        "s": "le nombre de patients traités par EERC sous",
+        "t": "le nombre de patients traités par EERC sous anticoagulation au citrate a été estimé à 11 500 patients par an en France.",
+        "m": "manual",
+        "c": 0.98
+      }
+    ],
+    "_meta": {}
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19846",
+    "texte_brut": "Document complet non reproduit ici par souci de concision.",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19846_smrasmr_01",
+      "evaluation_id": "CT-19846",
+      "indication_precise": "Anticoagulation régionale au citrate (ARC) dans le cadre d'une hémodialyse veino-veineuse continue (CVVHD), d'une hémodiafiltration veino-veineuse continue (CVVHDF), d'une dialyse (quotidienne) prolongée à efficacité réduite (SLEDD) et d'un échange plasmatique thérapeutique (EPT) via la séparation de la membrane plasmique chez l'adulte et l'enfant de tout âge (à l'exception du prématuré).",
+      "smr": "La Commission considère que le service médical rendu par CIVARON 136mmol/L (citrate de sodium) est important dans l’indication de l’AMM.",
+      "smr_enum": "Important",
+      "asmr": "La Commission considère que CIVARON n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique par rapport à la solution de citrate de sodium 4% classée comme dispositif médical et par rapport à la spécialité REGIOCIT.",
+      "asmr_enum": "V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "justification_decisionnelle": "SMR important en raison de la gravité des situations cliniques, mais ASMR V en l'absence de progrès par rapport aux comparateurs existants.",
+      "population_cible_indication": "Adultes et enfants de tout âge (à l'exception du prématuré) nécessitant une CVVHD, CVVHDF, SLEDD ou EPT sous anticoagulation au citrate.",
+      "ligne_traitement_indication": "Première intention",
+      "comparateurs_references_indication": "Solution de citrate de sodium 4% (dispositif médical), REGIOCIT (chlorure de sodium et citrate de sodium)",
+      "comparateur_id_HAS": [
+        "CT-19846_compHAS_01",
+        "CT-19846_compHAS_02",
+        "CT-19846_compHAS_03"
+      ],
+      "indication_structuree": {
+        "ligne_traitement": "1L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "Tous âges sauf prématuré"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 6,
+          "s": "La Commission considère que le service médical rendu",
+          "t": "La Commission considère que le service médical rendu par CIVARON 136mmol/L (citrate de sodium) est important dans l’indication de l’AMM.",
+          "m": "manual",
+          "c": 0.98
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 6,
+          "s": "Amélioration du Service Médical Rendu La Commission considère",
+          "t": "La Commission considère que CIVARON n’apporte pas d’amélioration du service médical rendu (ASMR V) dans la stratégie thérapeutique par rapport à la solution de citrate de sodium 4% classée comme dispositif médical et par rapport à la spécialité REGIOCIT (chlorure de sodium et citrate de sodium), solution pour hémofiltration.",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19846_event_AMM_01",
+      "evaluation_id": "CT-19846",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-10-27",
+      "detail_brut": "AMM européenne octroyée le 27/10/2021",
+      "source_doc": "F1 page 4",
+      "detail_type_specifique": "AMM basée sur l'usage médical bien établi",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "L’AMM européenne ayant été octroyée le 27/10/2021",
+          "t": "L’AMM européenne ayant été octroyée le 27/10/2021",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    },
+    {
+      "event_id": "CT-19846_event_CT_01",
+      "evaluation_id": "CT-19846",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-07-20",
+      "detail_brut": "Adopté par la Commission de la transparence le 20 juillet 2022",
+      "source_doc": "F1 page 1 et 7",
+      "detail_type_specifique": "Avis favorable à l'inscription",
+      "acteurs_impliques": [
+        "Commission de la transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté par la Commission de la transparence le 20 juillet 2022",
+          "t": "Adopté par la Commission de la transparence le 20 juillet 2022",
+          "m": "manual",
+          "c": 0.98
+        }
+      ],
+      "_meta": {}
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19846",
+    "delai_amm_ct_jours": 266,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": [],
+    "_meta": {}
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19846",
+    "is_orphan": false,
+    "classe_ATC_l2": "B05",
+    "aire_therapeutique": "Néphrologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 1,
+    "is_rct": false,
+    "n_essais": 1,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Anticoagulation efficace",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": 0,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": {},
+    "_meta": {}
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS_TRIAL",
+      "src_id": "CT-19846",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19846_essai_Usage_medical_bien_etabli",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL_HAS_CRIT",
+      "src_id": "CT-19846_essai_Usage_medical_bien_etabli",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19846_essai_Usage_medical_bien_etabli_crit_anticoagulation_efficace",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL_HAS_TOL",
+      "src_id": "CT-19846_essai_Usage_medical_bien_etabli",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19846_essai_Usage_medical_bien_etabli_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": []
+}

@@ -1,0 +1,1321 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19715",
+  "evaluation_id": "CT-19715",
+  "extraction_date": "2022-08-31",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-08-31",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19715_RYALTRIS_INS_PIS_AvisDef_CT19715.pdf",
+        "type": "CT",
+        "page_count": 35
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19715_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 2,
+      "char_start": 0,
+      "char_end": 500,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "indication"
+      ],
+      "routing_hint": "Résumé de l'avis",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19715_seg_02",
+      "section_label_normalise": "SYNTHESE_DES_CONCLUSIONS",
+      "section_label_brut": "Synthèse des conclusions",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 5,
+      "char_start": 0,
+      "char_end": 1000,
+      "heading_text": "Synthèse des conclusions",
+      "expected_fields": [
+        "Motif de l’examen",
+        "SMR",
+        "ASMR",
+        "ISP",
+        "Place dans la stratégie",
+        "Population cible"
+      ],
+      "routing_hint": "Conclusions détaillées de la Commission",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19715_seg_03",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 35,
+      "page_end": 35,
+      "char_start": 0,
+      "char_end": 800,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_AMM_ema",
+        "titulaire_amm",
+        "presentations"
+      ],
+      "routing_hint": "Détails administratifs",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19715_seg_04",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indications",
+      "template_detecte": "CT_modern",
+      "page_start": 6,
+      "page_end": 6,
+      "char_start": 0,
+      "char_end": 300,
+      "heading_text": "Indications",
+      "expected_fields": [
+        "indication"
+      ],
+      "routing_hint": "Indication AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19715_seg_05",
+      "section_label_normalise": "BESOIN_MEDICAL",
+      "section_label_brut": "Besoin médical",
+      "template_detecte": "CT_modern",
+      "page_start": 7,
+      "page_end": 9,
+      "char_start": 0,
+      "char_end": 1500,
+      "heading_text": "Besoin médical",
+      "expected_fields": [
+        "besoin_medical_brut",
+        "besoin_medical_interprete"
+      ],
+      "routing_hint": "Contexte de la maladie et prise en charge",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19715_seg_06",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 10,
+      "page_end": 15,
+      "char_start": 0,
+      "char_end": 3000,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Liste des comparateurs",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19715_seg_07",
+      "section_label_normalise": "ETUDES",
+      "section_label_brut": "Analyse des données disponibles",
+      "template_detecte": "CT_modern",
+      "page_start": 16,
+      "page_end": 28,
+      "char_start": 0,
+      "char_end": 8000,
+      "heading_text": "Analyse des données disponibles",
+      "expected_fields": [
+        "Essais_Cliniques",
+        "Critères_Jugement",
+        "Resultats_Efficacite",
+        "Tolérance"
+      ],
+      "routing_hint": "Détails des études cliniques",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19715_seg_08",
+      "section_label_normalise": "PLACE_DANS_LA_STRATEGIE",
+      "section_label_brut": "Place dans la stratégie thérapeutique",
+      "template_detecte": "CT_modern",
+      "page_start": 29,
+      "page_end": 31,
+      "char_start": 0,
+      "char_end": 2000,
+      "heading_text": "Place dans la stratégie thérapeutique",
+      "expected_fields": [
+        "place_strategie"
+      ],
+      "routing_hint": "Positionnement thérapeutique",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19715_seg_09",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Conclusions de la Commission",
+      "template_detecte": "CT_modern",
+      "page_start": 31,
+      "page_end": 34,
+      "char_start": 0,
+      "char_end": 2500,
+      "heading_text": "Conclusions de la Commission",
+      "expected_fields": [
+        "SMR",
+        "ASMR",
+        "ISP",
+        "Arguments_Decisionnels"
+      ],
+      "routing_hint": "Conclusions finales et vote",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19715_produit_01",
+      "evaluation_id": "CT-19715",
+      "nom_commercial": "RYALTRIS",
+      "dci": "chlorhydrate d’olopatadine / furoate de mométasone",
+      "code_cip13": "34009 302 405 9 5",
+      "forme_pharmaceutique": "suspension pour pulvérisation nasale",
+      "dosage": "600µg/25µg/dose",
+      "titulaire_amm": "MENARINI France",
+      "evidence": [
+        {
+          "field": "nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "RYALTRIS 600µg/25µg/dose, suspension pour pulvérisation nasale",
+          "t": "RYALTRIS 600µg/25µg/dose, suspension pour pulvérisation nasale",
+          "c": 0.98
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 35,
+          "s": "CIP : 34009 302 405 9 5",
+          "t": "CIP : 34009 302 405 9 5",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19715",
+      "Num_avis": "CT-19715",
+      "produit_nom": "RYALTRIS",
+      "dci": "chlorhydrate d’olopatadine/furoate de mométasone",
+      "type_avis": "Inscription",
+      "forme": "suspension pour pulvérisation nasale",
+      "dosage": "600µg/25µg/dose",
+      "indication": "chez les adultes et les adolescents âgés de 12 ans et plus, pour le traitement des symptômes nasaux modérés à sévères de la rhinite allergique",
+      "classe_ATC": "R01AD59",
+      "pathologie": "Rhinite allergique",
+      "maladie_rare": false,
+      "ligne_traitement": "2L",
+      "sous_groupe_population": "Adultes et adolescents ≥ 12 ans",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Non renseigné",
+      "aire_therapeutique_niveau_2": "Non renseigné",
+      "aire_therapeutique_niveau_3": "Non renseigné",
+      "source_aire_therapeutique": "Non renseigné",
+      "design_etude": "Études randomisées contrôlées en double aveugle",
+      "niveau_preuve_brut": "Données issues de deux études de phase III",
+      "niveau_preuve_interprete": "Niveau_1",
+      "besoin_medical_brut": "Le besoin est partiellement couvert ; il persiste donc un besoin à disposer de médicaments plus efficaces et mieux tolérés dans le traitement de la rhinite allergique.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Immunologie",
+      "age_restriction_flag": true,
+      "age_restriction_detail": "≥ 12 ans",
+      "biomarqueur_requis": "Aucun",
+      "design_enum": "Phase_III_RCT_DB",
+      "type_avis_enum": "Inscription",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_HAS_produit": "Non renseigné",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-08-31",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "gravite_patho": "Les rhinites allergiques sont des affections bénignes mais elles peuvent entraîner une dégradation significative de la qualité de vie",
+      "gravite_patho_enum": [
+        "Faible"
+      ],
+      "type_population_cible": "Adultes et adolescents âgés de 12 ans et plus",
+      "evidence": [
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au remboursement chez les adultes et les adolescents âgés de 12 ans et plus",
+          "t": "chez les adultes et les adolescents âgés de 12 ans et plus, pour le traitement des symptômes nasaux modérés à sévères de la rhinite allergique",
+          "c": 0.98
+        },
+        {
+          "field": "classe_ATC",
+          "f": "F1",
+          "p": 35,
+          "s": "Code ATC R01AD59",
+          "t": "Code ATC R01AD59",
+          "c": 0.95
+        },
+        {
+          "field": "besoin_medical_brut",
+          "f": "F1",
+          "p": 9,
+          "s": "Compte tenu de ces éléments, le besoin est partiellement couvert",
+          "t": "Le besoin est partiellement couvert ; il persiste donc un besoin à disposer de médicaments plus efficaces et mieux tolérés dans le traitement de la rhinite allergique.",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [
+    {
+      "essai_id": "CT-19715_essai_GSP301301",
+      "evaluation_id": "CT-19715",
+      "essai_nom": "GSP 301-301",
+      "nct_number": "NCT02631551",
+      "design": "Étude de phase III, de supériorité, multicentrique, randomisée, en double aveugle, en groupe parallèle, contrôlée versus comparateurs actifs et placebo",
+      "population_cible": "Patients âgés ≥ 12 ans présentant une rhinite allergique saisonnière (RAS) modérée à sévère aux allergènes printaniers",
+      "comparateur_utilise": "placebo, chlorhydrate d’olopatadine, furoate de mométasone",
+      "nb_patient_traitement": 299,
+      "nb_patient_comparateur": "Non renseigné",
+      "resultat_global": "Supériorité de RYALTRIS vs placebo et chlorhydrate d’olopatadine sur rTNSS ; non significatif vs furoate de mométasone",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublee": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.5,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1:1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "1180",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 16,
+          "s": "Étude GSP 301-301 et GSP 301-304",
+          "t": "Étude GSP 301-301",
+          "c": 0.98
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 17,
+          "s": "Clinicaltrials.gov NCT02631551",
+          "t": "NCT02631551",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19715_essai_GSP301304",
+      "evaluation_id": "CT-19715",
+      "essai_nom": "GSP 301-304",
+      "nct_number": "NCT02870205",
+      "design": "Étude de phase III, de supériorité, multicentrique, randomisée, en double aveugle, en groupe parallèle, contrôlée versus comparateurs actifs et placebo",
+      "population_cible": "Patients âgés ≥ 12 ans présentant une rhinite allergique saisonnière (RAS) modérée à sévère aux allergènes automnaux",
+      "comparateur_utilise": "placebo, chlorhydrate d’olopatadine, furoate de mométasone",
+      "nb_patient_traitement": 291,
+      "nb_patient_comparateur": "Non renseigné",
+      "resultat_global": "Supériorité de RYALTRIS vs placebo, chlorhydrate d’olopatadine et furoate de mométasone sur rTNSS",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_1",
+      "pooling_flag": false,
+      "population_dedoublee": false,
+      "suivi_median_mois": null,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 0.5,
+      "phase": "III",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "1:1:1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": null,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": true,
+      "magnitude_effet_categorie": "Modéré",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "1176",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 16,
+          "s": "Étude GSP 301-301 et GSP 301-304",
+          "t": "Étude GSP 301-304",
+          "c": 0.98
+        },
+        {
+          "field": "nct_number",
+          "f": "F1",
+          "p": 17,
+          "s": "Clinicaltrials.gov NCT02870205",
+          "t": "NCT02870205",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "essai_id": "CT-19715_essai_GSP301303",
+      "evaluation_id": "CT-19715",
+      "essai_nom": "GSP 301-303",
+      "nct_number": null,
+      "design": "Étude de tolérance à long terme",
+      "population_cible": "Patients âgés ≥ 12 ans présentant une rhinite allergique perannuelle (RAP)",
+      "comparateur_utilise": "placebo pH 3,7, placebo pH 7,0",
+      "nb_patient_traitement": 393,
+      "nb_patient_comparateur": "Non renseigné",
+      "resultat_global": "Étude de tolérance sur 52 semaines",
+      "QoL_flag": false,
+      "niveau_preuve": "Niveau_4",
+      "pooling_flag": false,
+      "population_dedoublee": false,
+      "suivi_median_mois": 12,
+      "arret_premature_flag": false,
+      "duree_traitement_moyenne_mois": 12,
+      "phase": "Non renseigné",
+      "aveugle": "Double_aveugle",
+      "randomisation_flag": true,
+      "randomisation_ratio": "4:1:1",
+      "stratification_flag": false,
+      "stratification_facteurs": [],
+      "population_analyse_principale": "FAS",
+      "date_cutoff_donnees": "Non renseigné",
+      "duree_suivi_prevu_mois": 12,
+      "maturite_donnees": "Non renseigné",
+      "age_min_num": 12,
+      "age_max_num": null,
+      "ligne_traitement_essai_enum": "2L",
+      "comparateur_type_enum": "Placebo",
+      "efficacite_demontree": null,
+      "magnitude_effet_categorie": "Non renseigné",
+      "maturite_pct": null,
+      "arret_premature_raison": "Non applicable",
+      "arret_premature_date": "Non renseigné",
+      "analyse_interimaire_plannifiee": false,
+      "qol_instruments": [],
+      "qol_resultats_brut": "Non renseigné",
+      "qol_difference_cliniquement_pertinente": null,
+      "qol_favorable": null,
+      "nb_facteurs_stratification": null,
+      "nb_patients_inclus": "601",
+      "nb_patients_inclus_par_pays": [],
+      "date_fin_inclusion": "Non renseigné",
+      "nb_analyses_intermediaire": null,
+      "date_analyses_intermediares_mois": [],
+      "evidence": [
+        {
+          "field": "essai_nom",
+          "f": "F1",
+          "p": 23,
+          "s": "Résultats de l’étude 301-303 (à 52 semaines)",
+          "t": "étude 301-303",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Critères_Jugement": [
+    {
+      "critere_id": "CT-19715_essai_GSP301301_crit_rTNSS",
+      "evaluation_id": "CT-19715",
+      "essai_id": "CT-19715_essai_GSP301301",
+      "nom_critere": "rTNSS (Reflective Total Nasal Symptom Score)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score sur 12",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.05,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 5,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "traitement",
+        "site",
+        "score rTNSS à la randomisation",
+        "jour de traitement"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "-3,48 points",
+      "valeur_groupe_comparateur": "Placebo: -2,50 points ; Chlorhydrate d’olopatadine: -2,87 points ; Furoate de mométasone: -3,09 points",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "p < 0,0001 (vs placebo) ; p = 0,0029 (vs chlorhydrate d’olopatadine) ; NS (vs furoate de mométasone)",
+      "p_value_num": 0.0001,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Tres_significatif",
+      "pertinence_clinique": "Modérée",
+      "commentaire_has_resultat": "La Commission considère que la quantité d’effet est modeste",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 17,
+          "s": "critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS)",
+          "t": "critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "critere_id": "CT-19715_essai_GSP301304_crit_rTNSS",
+      "evaluation_id": "CT-19715",
+      "essai_id": "CT-19715_essai_GSP301304",
+      "nom_critere": "rTNSS (Reflective Total Nasal Symptom Score)",
+      "nature_critere": "Substitutif",
+      "unite_mesure": "score sur 12",
+      "hierarchie_critere": "Principal_primaire",
+      "ordre_hierarchie": 1,
+      "critere_co_primaire_groupe": null,
+      "condition_test": null,
+      "ajustement_alpha_realise": true,
+      "methode_ajustement_alpha": "Sequentiel_hierarchique",
+      "alpha_ajuste": 0.05,
+      "alpha_global_famille": 0.05,
+      "nombre_tests_famille": 5,
+      "test_statistique_utilise": "MMRM",
+      "modele_ajuste": true,
+      "facteurs_ajustement": [
+        "traitement",
+        "site",
+        "score rTNSS à la randomisation",
+        "jour de traitement"
+      ],
+      "analyse_stratifiee": false,
+      "valeur_groupe_traitement": "-3,52 points",
+      "valeur_groupe_comparateur": "Placebo: -2,44 points ; Chlorhydrate d’olopatadine: -3,08 points ; Furoate de mométasone: -3,05 points",
+      "gain_absolu": "Non renseigné",
+      "gain_absolu_num": null,
+      "gain_relatif": "Non renseigné",
+      "gain_relatif_num": null,
+      "HR_RR_OR": "Non renseigné",
+      "HR_RR_OR_num": null,
+      "IC95": "Non renseigné",
+      "IC95_low_num": null,
+      "IC95_high_num": null,
+      "p_value": "p < 0,001 (vs placebo) ; p = 0,028 (vs chlorhydrate d’olopatadine) ; p = 0,019 (vs furoate de mométasone)",
+      "p_value_num": 0.001,
+      "unite_normalisee": "score",
+      "type_effet": "Autre",
+      "significativite_statistique": true,
+      "critere_atteint": true,
+      "degre_signification": "Significatif",
+      "pertinence_clinique": "Modérée",
+      "commentaire_has_resultat": "La Commission considère que la quantité d’effet est modeste",
+      "is_primary": true,
+      "evidence": [
+        {
+          "field": "nom_critere",
+          "f": "F1",
+          "p": 17,
+          "s": "critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS)",
+          "t": "critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS)",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Tolérance": [
+    {
+      "tolerance_id": "CT-19715_essai_GSP301301_tol",
+      "evaluation_id": "CT-19715",
+      "essai_id": "CT-19715_essai_GSP301301",
+      "ae_total_pct": 12.9,
+      "ae_total_pct_comparateur": 9.4,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Dysgueusie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 3.3,
+          "incidence_pct_comparateur": 0.7,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Épistaxis",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 1.3,
+          "incidence_pct_comparateur": 0.3,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Dysgueusie (3,3%), épistaxis (1,3%), toux (1,0%)",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 23,
+          "s": "Patient avec ≥ 1 EI 39 (12,9%)",
+          "t": "Patient avec ≥ 1 EI 39 (12,9%)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-19715_essai_GSP301304_tol",
+      "evaluation_id": "CT-19715",
+      "essai_id": "CT-19715_essai_GSP301304",
+      "ae_total_pct": 15.6,
+      "ae_total_pct_comparateur": 9.5,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": null,
+      "discontinuations_ae_pct_comparateur": null,
+      "deaths_ae_n": null,
+      "deaths_ae_n_comparateur": null,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Dysgueusie",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 3.7,
+          "incidence_pct_comparateur": 0,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Dysgueusie (3,7%), gêne nasale (1,0%), épistaxis (0,7%)",
+      "deces": "Non renseigné",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 23,
+          "s": "Patient avec ≥ 1 EI 46 (15,6%)",
+          "t": "Patient avec ≥ 1 EI 46 (15,6%)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "tolerance_id": "CT-19715_essai_GSP301303_tol",
+      "evaluation_id": "CT-19715",
+      "essai_id": "CT-19715_essai_GSP301303",
+      "ae_total_pct": 51.7,
+      "ae_total_pct_comparateur": 41.4,
+      "sae_pct": null,
+      "sae_pct_comparateur": null,
+      "discontinuations_ae_pct": 3.8,
+      "discontinuations_ae_pct_comparateur": 2.0,
+      "deaths_ae_n": 0,
+      "deaths_ae_n_comparateur": 0,
+      "sae_data_available": false,
+      "sae_superieur_comparateur": null,
+      "deaths_reported": false,
+      "EI_graves_detailles": [],
+      "EI_frequents_detailles": [
+        {
+          "ei_terme": "Infection des voies respiratoires supérieures",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 6.4,
+          "incidence_pct_comparateur": 6.1,
+          "evidence": []
+        },
+        {
+          "ei_terme": "Céphalées",
+          "grade": "Tous grades",
+          "incidence_pct_traitement": 4.1,
+          "incidence_pct_comparateur": 3.0,
+          "evidence": []
+        }
+      ],
+      "ei_grade_max": "Non renseigné",
+      "deces_detailles": [],
+      "signal_securite_flag": false,
+      "signal_securite_detailles": [],
+      "signal_ansm_flag": false,
+      "EI_graves": "Non renseigné",
+      "EI_frequents": "Infection des voies respiratoires supérieures (6,4%), céphalées (4,1%), rhinopharyngite (3,1%), gêne nasale (2,8%), épistaxis (4,6%)",
+      "deces": "Aucun décès",
+      "signal_securite": "Non renseigné",
+      "evidence": [
+        {
+          "field": "ae_total_pct",
+          "f": "F1",
+          "p": 24,
+          "s": "Nombre de patients (population de tolérance) avec ≥ 1 EI 203 (51,7%)",
+          "t": "Nombre de patients (population de tolérance) avec ≥ 1 EI 203 (51,7%)",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_Essai": [
+    {
+      "comparateur_id": "CT-19715_essai_GSP301301_comp_01",
+      "essai_id": "CT-19715_essai_GSP301301",
+      "nom_comparateur": "Placebo",
+      "type_comparateur": "Placebo",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Placebo",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 18,
+          "s": "Groupe placebo : placebo, 2 pulvérisations par narine",
+          "t": "Groupe placebo : placebo, 2 pulvérisations par narine, 2 fois par jour matin et soir",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19715_essai_GSP301301_comp_02",
+      "essai_id": "CT-19715_essai_GSP301301",
+      "nom_comparateur": "Chlorhydrate d’olopatadine",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Non",
+      "comparateur_standard_enum": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 18,
+          "s": "Groupe chlorhydrate d’olopatadine : chlorhydrate d’olopatadine 665 µg",
+          "t": "Groupe chlorhydrate d’olopatadine : chlorhydrate d’olopatadine 665 µg, 2 pulvérisations par narine, 2 fois par jour matin et soir",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19715_essai_GSP301301_comp_03",
+      "essai_id": "CT-19715_essai_GSP301301",
+      "nom_comparateur": "Furoate de mométasone",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "comparateur_standard_enum": "Autre",
+      "evidence": [
+        {
+          "field": "nom_comparateur",
+          "f": "F1",
+          "p": 18,
+          "s": "Groupe furoate de mométasone : furoate de mométasone 25 µg",
+          "t": "Groupe furoate de mométasone : furoate de mométasone 25 µg, 2 pulvérisations par narine, 2 fois par jour matin et soir",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19715_compHAS_01",
+      "evaluation_id": "CT-19715",
+      "nom_comparateur_HAS": "DYMISTA",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 12,
+          "s": "DYMISTA 137/50 µg/dose",
+          "t": "DYMISTA 137/50 µg/dose (chlorhydrate d'azélastine / propionate de fluticasone)",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "comparateur_id": "CT-19715_compHAS_02",
+      "evaluation_id": "CT-19715",
+      "nom_comparateur_HAS": "Associations d’un anti-histaminique et d’un corticoïde intranasal",
+      "type_comparateur": "Traitement_actif",
+      "comparateur_standard_soin": "Oui",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 1,
+          "s": "Pas de progrès par rapport aux associations d’un anti-histaminique et d’un corticoïde intranasal",
+          "t": "associations d’un anti-histaminique et d’un corticoïde intranasal",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [
+    {
+      "argument_id": "CT-19715_arg_CT_01",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Démonstration d'une supériorité de RYALTRIS versus placebo et chlorhydrate d'olopatadine sur le score rTNSS dans la rhinite allergique saisonnière, avec une quantité d'effet modeste.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "la démonstration d’une supériorité de RYALTRIS versus placebo et au chlorhydrate d’olopatadine, dans le traitement symptomatique de la rhinite allergique saisonnière, chez les adultes et adolescents à partir de 12 ans, en termes d’amélioration sur le critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS), avec une quantité d’effet modeste",
+      "page_source": "Page 3",
+      "section_source": "Synthèse des conclusions",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "la démonstration d’une supériorité de RYALTRIS versus placebo et au chlorhydrate d’olopatadine",
+          "t": "la démonstration d’une supériorité de RYALTRIS versus placebo et au chlorhydrate d’olopatadine, dans le traitement symptomatique de la rhinite allergique saisonnière, chez les adultes et adolescents à partir de 12 ans, en termes d’amélioration sur le critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS), avec une quantité d’effet modeste",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19715_arg_CT_02",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Efficacité_clinique",
+      "direction_argument": "Favorable",
+      "description": "Supériorité de RYALTRIS versus furoate de mométasone dans la rhinite saisonnière aux allergènes automnaux sur le score rTNSS, avec une quantité d'effet modeste.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "la démonstration d’une supériorité de RYALTRIS versus furoate de mométasone, dans le traitement symptomatique de la rhinite saisonnière associées aux allergènes automnaux, chez les adultes et adolescents à partir de 12 ans, en termes d’amélioration sur le critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS), avec une quantité d’effet modeste",
+      "page_source": "Page 3",
+      "section_source": "Synthèse des conclusions",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "la démonstration d’une supériorité de RYALTRIS versus furoate de mométasone",
+          "t": "la démonstration d’une supériorité de RYALTRIS versus furoate de mométasone, dans le traitement symptomatique de la rhinite saisonnière associées aux allergènes automnaux, chez les adultes et adolescents à partir de 12 ans, en termes d’amélioration sur le critère de jugement principal ayant évalué les principaux symptômes nasaux (score rTNSS), avec une quantité d’effet modeste",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19715_arg_CT_03",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence de comparaison versus la prise concomitante d'un antihistaminique H1 et d'un corticoïde intranasal, limitant l'évaluation de l'amélioration du service médical rendu.",
+      "importance_argument": "Majeur",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "l’absence de comparaison versus la prise concomitante d’un antihistaminique H1 et d’un corticoïde intranasal",
+      "page_source": "Page 3",
+      "section_source": "Synthèse des conclusions",
+      "impact_decision": "Contributeur_majeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "l’absence de comparaison versus la prise concomitante d’un antihistaminique H1 et d’un corticoïde intranasal",
+          "t": "l’absence de comparaison versus la prise concomitante d’un antihistaminique H1 et d’un corticoïde intranasal",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19715_arg_CT_04",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Qualité_des_données",
+      "direction_argument": "Défavorable",
+      "description": "Absence de donnée d'efficacité dans la rhinite allergique perannuelle et de données de qualité de vie, réduisant la robustesse des conclusions.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Élevé",
+      "extrait_textuel": "l’absence de donnée d’efficacité dans la rhinite allergique perannuelle ; l’absence de données de qualité de vie",
+      "page_source": "Page 3",
+      "section_source": "Synthèse des conclusions",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "l’absence de donnée d’efficacité dans la rhinite allergique perannuelle",
+          "t": "l’absence de donnée d’efficacité dans la rhinite allergique perannuelle ; l’absence de données de qualité de vie",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19715_arg_CT_05",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Tolérance_sécurité",
+      "direction_argument": "Défavorable",
+      "description": "Risques en termes de ralentissement de la croissance des enfants et d'effets indésirables liés au passage systémique dans le cas d'un traitement prolongé.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Modéré",
+      "extrait_textuel": "des risques en termes de ralentissement de la croissance des enfants et d’effets indésirables liés au passage systémique dans le cas d’un traitement prolongé",
+      "page_source": "Page 3",
+      "section_source": "Synthèse des conclusions",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 3,
+          "s": "des risques en termes de ralentissement de la croissance des enfants",
+          "t": "des risques en termes de ralentissement de la croissance des enfants et d’effets indésirables liés au passage systémique dans le cas d’un traitement prolongé",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19715_arg_CT_06",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Place_thérapeutique",
+      "direction_argument": "Favorable",
+      "description": "RYALTRIS constitue une alternative thérapeutique en deuxième intention lorsque une monothérapie par antihistaminique ou corticoïde intranasal n'est pas suffisante.",
+      "importance_argument": "Important",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "RYALTRIS (association chlorhydrate d’olopatadine/furoate de mométasone) constitue une alternative thérapeutique dans le traitement des rhinites allergiques saisonnières et perannuelles d’intensité modérée à sévère lorsque l’éviction de l’allergène et une monothérapie par antihistaminique ou par corticoïde intranasal ne sont pas considérées comme suffisantes",
+      "page_source": "Page 4",
+      "section_source": "Synthèse des conclusions",
+      "impact_decision": "Contributeur",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 4,
+          "s": "RYALTRIS constitue une alternative thérapeutique",
+          "t": "RYALTRIS (association chlorhydrate d’olopatadine/furoate de mométasone) constitue une alternative thérapeutique dans le traitement des rhinites allergiques saisonnières et perannuelles d’intensité modérée à sévère lorsque l’éviction de l’allergène et une monothérapie par antihistaminique ou par corticoïde intranasal ne sont pas considérées comme suffisantes",
+          "c": 0.95
+        }
+      ]
+    },
+    {
+      "argument_id": "CT-19715_arg_CT_07",
+      "evaluation_id": "CT-19715",
+      "source_argument": "CT",
+      "categorie_argument": "Besoin_médical",
+      "direction_argument": "Favorable",
+      "description": "Besoin médical partiellement couvert dans la rhinite allergique modérée à sévère, justifiant une option supplémentaire en deuxième intention.",
+      "importance_argument": "Modéré",
+      "niveau_incertitude": "Faible",
+      "extrait_textuel": "Le besoin est partiellement couvert ; il persiste donc un besoin à disposer de médicaments plus efficaces et mieux tolérés dans le traitement de la rhinite allergique",
+      "page_source": "Page 9",
+      "section_source": "Besoin médical",
+      "impact_decision": "Secondaire",
+      "evidence": [
+        {
+          "field": "description",
+          "f": "F1",
+          "p": 9,
+          "s": "Le besoin est partiellement couvert",
+          "t": "Le besoin est partiellement couvert ; il persiste donc un besoin à disposer de médicaments plus efficaces et mieux tolérés dans le traitement de la rhinite allergique",
+          "c": 0.95
+        }
+      ]
+    }
+  ],
+  "Données_Contexte": {
+    "contexte_id": "CT-19715_ctx",
+    "evaluation_id": "CT-19715",
+    "ISP": "RYALTRIS (chlorhydrate d’olopatadine/furoate de mométasone) n’est pas susceptible d’avoir d’intérêt supplémentaire de santé publique.",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2021-10-26",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": false,
+    "designation_orpheline_ema": false,
+    "prime_ema": false,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Oui",
+    "pays_evaluations": [
+      "États-Unis"
+    ],
+    "decisions_internationales": [
+      {
+        "pays": "États-Unis",
+        "organisme": "FDA",
+        "decision": "Recommended",
+        "date_decision": "Non renseigné",
+        "reference": "AMM avec libellé similaire",
+        "evidence": []
+      }
+    ],
+    "nb_decisions_internationales": 1,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": 3920000,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": false,
+    "population_cible_france": "Adultes et adolescents âgés de 12 ans et plus, pour le traitement des symptômes nasaux modérés à sévères de la rhinite allergique, en deuxième intention",
+    "population_cible_nombre": 3920000,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Extrapolation",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": 3920000,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": false,
+    "dates_complement_demande": [],
+    "delai_audition": false,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Modéré",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "V",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 6,
+        "s": "a obtenu une autorisation de mise sur le marché (AMM) le 26 octobre 2021",
+        "t": "a obtenu une autorisation de mise sur le marché (AMM) le 26 octobre 2021",
+        "c": 0.98
+      },
+      {
+        "field": "population_cible_nombre",
+        "f": "F1",
+        "p": 33,
+        "s": "La population cible de RYALTRIS est estimée à 3 920 000 patients",
+        "t": "La population cible de RYALTRIS (association chlorhydrate d’olopatadine/furoate de mométasone) est estimée à 3 920 000 patients au maximum",
+        "c": 0.95
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19715",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19715_smrasmr_01",
+      "evaluation_id": "CT-19715",
+      "indication_precise": "chez les adultes et les adolescents âgés de 12 ans et plus, pour le traitement des symptômes nasaux modérés à sévères de la rhinite allergique, en deuxième intention, lorsqu’une monothérapie par antihistaminique ou par corticoïde intranasal n’est pas considérée comme suffisante",
+      "smr": "Service médical rendu modéré",
+      "asmr": "ASMR V",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Compte tenu de la démonstration d’une supériorité de RYALTRIS versus placebo et chlorhydrate d’olopatadine avec une quantité d’effet modeste, de l’absence de comparaison versus association anti-H1 + corticoïde intranasal, de l’absence de données robustes dans la rhinite perannuelle et de qualité de vie, et des risques systémiques.",
+      "population_cible_indication": "Adultes et adolescents âgés de 12 ans et plus",
+      "ligne_traitement_indication": "2L",
+      "comparateurs_references_indication": "Associations d’un anti-histaminique et d’un corticoïde intranasal",
+      "comparateur_id_HAS": "CT-19715_compHAS_02",
+      "indication_structuree": {
+        "ligne_traitement": "2L",
+        "biomarqueur": "Aucun",
+        "stade": "Non renseigné",
+        "population_age": "≥ 12 ans"
+      },
+      "gain_survie_cite": false,
+      "qol_cite": false,
+      "tolerance_acceptable": true,
+      "evidence_robustesse": "Modérée",
+      "asmr_revendique_enum": "Non_renseigné",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 32,
+          "s": "la Commission considère que le service médical rendu par RYALTRIS est : modéré uniquement chez les adultes et les adolescents âgés de 12 ans et plus",
+          "t": "la Commission considère que le service médical rendu par RYALTRIS (association chlorhydrate d’olopatadine/furoate de mométasone), suspension pour pulvérisation nasale, est : modéré uniquement chez les adultes et les adolescents âgés de 12 ans et plus, pour le traitement des symptômes nasaux modérés à sévères de la rhinite allergique, uniquement en deuxième intention, lorsqu’une monothérapie par antihistaminique ou par corticoïde intranasal n’est pas considérée comme suffisante",
+          "c": 0.98
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 33,
+          "s": "la commission de la Transparence considère que RYALTRIS n’apporte pas d’amélioration du service médical rendu (ASMR V)",
+          "t": "la commission de la Transparence considère que RYALTRIS (association chlorhydrate d’olopatadine/furoate de mométasone) n’apporte pas d’amélioration du service médical rendu (ASMR V) par rapport aux associations d’un anti-histaminique et d’un corticoïde intranasal",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19715_event_AMM_01",
+      "evaluation_id": "CT-19715",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2021-10-26",
+      "detail_brut": "AMM obtenue le 26 octobre 2021",
+      "source_doc": "F1 page 6",
+      "detail_type_specifique": "AMM standard",
+      "acteurs_impliques": [
+        "EMA"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 6,
+          "s": "a obtenu une autorisation de mise sur le marché (AMM) le 26 octobre 2021",
+          "t": "a obtenu une autorisation de mise sur le marché (AMM) le 26 octobre 2021",
+          "c": 0.98
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19715_event_CT_01",
+      "evaluation_id": "CT-19715",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-08-31",
+      "detail_brut": "Adopté par la Commission de la transparence le 31 août 2022",
+      "source_doc": "F1 page 1",
+      "detail_type_specifique": "Avis définitif",
+      "acteurs_impliques": [
+        "Commission de la transparence"
+      ],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté par la Commission de la transparence le 31 août 2022",
+          "t": "Adopté par la Commission de la transparence le 31 août 2022",
+          "c": 0.98
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19715",
+    "delai_amm_ct_jours": 309,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": false,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19715",
+    "is_orphan": false,
+    "classe_ATC_l2": "R01",
+    "aire_therapeutique": "Immunologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": 2,
+    "is_rct": true,
+    "n_essais": 3,
+    "n_rct": 2,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": 0.44,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": 12,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": 3.8,
+    "critere_principal_description": "rTNSS (score symptômes nasaux)",
+    "p_value_log10": 3.0,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": false,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": true,
+    "comparateur_soc": true,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": "Q3",
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné"
+  },
+  "Relations": [
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19715",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19715_essai_GSP301301",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "EVAL_HAS",
+      "src_id": "CT-19715",
+      "tgt_type": "TRIAL",
+      "tgt_id": "CT-19715_essai_GSP301304",
+      "label": "EVAL_HAS_TRIAL"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19715_essai_GSP301301",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19715_essai_GSP301301_crit_rTNSS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19715_essai_GSP301304",
+      "tgt_type": "CRIT",
+      "tgt_id": "CT-19715_essai_GSP301304_crit_rTNSS",
+      "label": "TRIAL_HAS_CRIT"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19715_essai_GSP301301",
+      "tgt_type": "COMPARATOR",
+      "tgt_id": "CT-19715_essai_GSP301301_comp_01",
+      "label": "TRIAL_HAS_COMPARATOR"
+    },
+    {
+      "src_type": "TRIAL",
+      "src_id": "CT-19715_essai_GSP301301",
+      "tgt_type": "TOL",
+      "tgt_id": "CT-19715_essai_GSP301301_tol",
+      "label": "TRIAL_HAS_TOL"
+    }
+  ],
+  "Annotation_View": []
+}

@@ -1,0 +1,530 @@
+{
+  "schema_version": "3.3.8-production",
+  "doc_id": "CT-19935",
+  "evaluation_id": "CT-19935",
+  "extraction_date": "2022-09-14",
+  "extraction_metadata": {
+    "processing_version": "auto",
+    "extraction_date": "2022-09-14",
+    "parser": "auto",
+    "annotateur_default": "auto",
+    "niveau_confiance_default": 4,
+    "source_files": {
+      "F1": {
+        "file_name": "ct_CT-19935_RADELUMIN_PIS_CG_AvisDef_CT19935.pdf",
+        "type": "CT",
+        "page_count": 4
+      }
+    }
+  },
+  "template_detecte": "CT_modern",
+  "section_taxonomy_version": "1.0",
+  "SegmentIndex": [
+    {
+      "segment_id": "CT-19935_seg_01",
+      "section_label_normalise": "SYNTHESE_DE_L_AVIS",
+      "section_label_brut": "L’essentiel",
+      "template_detecte": "CT_modern",
+      "page_start": 1,
+      "page_end": 1,
+      "heading_text": "L’essentiel",
+      "expected_fields": [
+        "smr_enum",
+        "asmr_enum",
+        "indication_precise"
+      ],
+      "routing_hint": "SMR/ASMR et indication principale",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19935_seg_02",
+      "section_label_normalise": "INDICATIONS_THERAPEUTIQUES",
+      "section_label_brut": "Indication",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "heading_text": "Indication",
+      "expected_fields": [
+        "indication_precise"
+      ],
+      "routing_hint": "Texte AMM",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19935_seg_03",
+      "section_label_normalise": "COMPARATEURS_PERTINENTS",
+      "section_label_brut": "Comparateurs cliniquement pertinents",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "heading_text": "Comparateurs cliniquement pertinents",
+      "expected_fields": [
+        "comparateurs_HAS"
+      ],
+      "routing_hint": "Référence à avis antérieur",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19935_seg_04",
+      "section_label_normalise": "SERVICE_MEDICAL_RENDU",
+      "section_label_brut": "Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 2,
+      "page_end": 2,
+      "heading_text": "Service Médical Rendu",
+      "expected_fields": [
+        "smr_enum",
+        "smr"
+      ],
+      "routing_hint": "Justification SMR",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19935_seg_05",
+      "section_label_normalise": "AMELIORATION_SMR",
+      "section_label_brut": "Amélioration du Service Médical Rendu",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "heading_text": "Amélioration du Service Médical Rendu",
+      "expected_fields": [
+        "asmr_enum",
+        "asmr"
+      ],
+      "routing_hint": "ASMR V",
+      "label_confidence": 0.95
+    },
+    {
+      "segment_id": "CT-19935_seg_06",
+      "section_label_normalise": "POPULATION_CIBLE",
+      "section_label_brut": "Population cible",
+      "template_detecte": "CT_modern",
+      "page_start": 3,
+      "page_end": 3,
+      "heading_text": "Population cible",
+      "expected_fields": [
+        "population_cible"
+      ],
+      "routing_hint": "Non quantifiable",
+      "label_confidence": 0.9
+    },
+    {
+      "segment_id": "CT-19935_seg_07",
+      "section_label_normalise": "INFORMATIONS_ADMINISTRATIVES",
+      "section_label_brut": "Informations administratives et réglementaires",
+      "template_detecte": "CT_modern",
+      "page_start": 4,
+      "page_end": 4,
+      "heading_text": "Informations administratives et réglementaires",
+      "expected_fields": [
+        "date_evaluation",
+        "presentations",
+        "titulaire_amm",
+        "code_ATC"
+      ],
+      "routing_hint": "Tableau administratif",
+      "label_confidence": 0.95
+    }
+  ],
+  "Identifiants_Produits_Liaison": [
+    {
+      "produit_id": "CT-19935_produit_01",
+      "evaluation_id": "CT-19935",
+      "produit_nom_commercial": "RADELUMIN",
+      "dci": "[18F]PSMA-1007",
+      "forme_pharmaceutique": "Solution injectable",
+      "dosage_concentration": "2000 MBq/mL",
+      "code_cip13": "34009 550 897 4 2",
+      "code_cip13_2": "34009 550 897 5 9",
+      "code_cip13_3": "34009 550 897 6 6",
+      "code_cis": "Non renseigné",
+      "titulaire_amm": "ABX GMBH",
+      "statut_prescription": "Liste I, Médicament à prescription hospitalière (PH), Médicament de prescription réservée à certains médecins spécialistes (PRS) - spécialistes autorisés radiopharmaceutiques",
+      "code_ATC": "V09IX17",
+      "evidence": [
+        {
+          "field": "produit_nom_commercial",
+          "f": "F1",
+          "p": 1,
+          "s": "ÉVALUER LES TECHNOLOGIES DE SANTÉ AVIS SUR LES MEDICAMENTS",
+          "t": "RADELUMIN 2000 MBq/mL, Solution injectable",
+          "c": 1.0
+        },
+        {
+          "field": "code_cip13",
+          "f": "F1",
+          "p": 4,
+          "s": "Présentations concernées RADELUMIN 2000 MBq/mL",
+          "t": "10 mL en flacon (verre) (CIP : 34009 550 897 4 2)",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Evaluations_HAS": [
+    {
+      "evaluation_id": "CT-19935",
+      "Num_avis": "CT-19935",
+      "produit_nom": "RADELUMIN 2000 MBq/mL, Solution injectable",
+      "dci": "[18F]PSMA-1007",
+      "type_avis": "Inscription de nouvelles présentations",
+      "type_avis_enum": "Inscription",
+      "forme": "Solution injectable",
+      "dosage": "2000 MBq/mL",
+      "indication": "Tomographie par émission de positons (TEP) chez un patient en récidive biologique d’un cancer de la prostate, traité initialement de façon radicale, avec réaugmentation de la concentration sérique d'antigène spécifique de la prostate (PSA)",
+      "classe_ATC": "V09IX17",
+      "pathologie": "Cancer de la prostate",
+      "maladie_rare": false,
+      "ligne_traitement": "Diagnostic",
+      "ligne_traitement_enum": null,
+      "sous_groupe_population": "Patients en récidive biologique après traitement radical avec réaugmentation du PSA",
+      "cim10_principal": "Non renseigné",
+      "cim10_secondaires": [],
+      "libelle_cim10": "Non renseigné",
+      "source_cim10": "Non renseigné",
+      "aire_therapeutique_niveau_1": "Oncologie",
+      "aire_therapeutique_niveau_2": "Urologie",
+      "aire_therapeutique_niveau_3": "Cancer de la prostate",
+      "source_aire_therapeutique": "Déduit ATC V09IX17 et texte avis",
+      "design_etude": "Non renseigné",
+      "niveau_preuve_brut": "Non renseigné",
+      "niveau_preuve_interprete": "Non renseigné",
+      "besoin_medical_brut": "Le cancer de la prostate est une maladie grave qui engage le pronostic vital, surtout en cas de récidive. Il existe des méthodes diagnostiques alternatives.",
+      "besoin_medical_interprete": "Partiellement_couvert",
+      "pathologie_categorie_enum": "Oncologie_solide",
+      "age_restriction_flag": null,
+      "age_restriction_detail": "Non renseigné",
+      "biomarqueur_requis": "PSA (antigène spécifique de la prostate)",
+      "design_enum": "Non renseigné",
+      "gravite_patho": "Le cancer de la prostate est une maladie grave qui engage le pronostic vital, surtout en cas de récidive.",
+      "gravite_patho_enum": [
+        "Grave"
+      ],
+      "type_population_cible": "Adultes (homme) en récidive biologique d'un cancer de la prostate traité initialement de façon radicale",
+      "pertinence_concurrence_therapeutique": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour les autres présentations de RADELUMIN ([18F]PSMA-1007) (cf. avis de l’inter-Commission du 8 juin 2022).",
+      "caractere_innovant_reconnu": false,
+      "perte_de_chance_citee": false,
+      "historique_Has_produit": "Pour rappel, dans son avis du 8 juin 2022, l’inter-Commission a octroyé à RADELUMIN ([18F]PSMA-1007), 1300 MBq/mL, solution injectable, un service médical rendu important.",
+      "historique_ASMR_comparateurs": "Non renseigné",
+      "concurrence_therapeutique_recente": "Non renseigné",
+      "vote_unanimite": null,
+      "nb_votants": null,
+      "nb_voix_pour": null,
+      "nb_voix_contre": null,
+      "nb_abstentions": null,
+      "date_evaluation": "2022-09-14",
+      "transcription_textuelle": "Non renseigné",
+      "extraits_arguments": [],
+      "evidence": [
+        {
+          "field": "type_avis",
+          "f": "F1",
+          "p": 1,
+          "s": "Mise à disposition de nouvelles présentations",
+          "t": "Mise à disposition de nouvelles présentations",
+          "c": 1.0
+        },
+        {
+          "field": "indication",
+          "f": "F1",
+          "p": 1,
+          "s": "Avis favorable au remboursement dans l’imagerie par",
+          "t": "chez un patient en récidive biologique d’un cancer de la prostate, traité initialement de façon radicale, avec réaugmentation de la concentration sérique d'antigène spécifique de la prostate (PSA).",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Essais_Cliniques": [],
+  "Critères_Jugement": [],
+  "Tolérance": [],
+  "Comparateurs_Essai": [],
+  "Comparateurs_HAS": [
+    {
+      "comparateur_id": "CT-19935_compHAS_01",
+      "evaluation_id": "CT-19935",
+      "nom_comparateur_HAS": "Comparateurs identifiés pour les autres présentations de RADELUMIN",
+      "type_comparateur": "Non renseigné",
+      "comparateur_standard_soin": "Non renseigné",
+      "famille_comparateur": "Non renseigné",
+      "evidence": [
+        {
+          "field": "nom_comparateur_HAS",
+          "f": "F1",
+          "p": 2,
+          "s": "Comparateurs cliniquement pertinents Les comparateurs",
+          "t": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour les autres présentations de RADELUMIN ([18F]PSMA-1007) (cf. avis de l’inter-Commission du 8 juin 2022).",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Arguments_Decisionnels": [],
+  "Données_Contexte": {
+    "contexte_id": "CT-19935_ctx",
+    "evaluation_id": "CT-19935",
+    "ISP": "RADELUMIN ([18F]PSMA-1007) 2000 MBq/mL, solution injectable, n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport aux présentations déjà inscrites.",
+    "acces_precoce": "Aucun",
+    "date_debut_acces_precoce": "Non renseigné",
+    "date_fin_acces_precoce": "Non renseigné",
+    "duree_acces_precoce_mois": null,
+    "nombre_patients_acces_precoce": null,
+    "conditions_arret_acces_precoce": "Non renseigné",
+    "ISP_flag": false,
+    "ISP_categorie": "Pas_ISP",
+    "type_acces_precoce_enum": "Aucun",
+    "statut_reglementaire_ema": "AMM_standard",
+    "date_AMM_ema": "2022-06-17",
+    "date_avis_chmp": "Non renseigné",
+    "innovation_therapeutique_ema": null,
+    "designation_orpheline_ema": null,
+    "prime_ema": null,
+    "obligations_post_amm": [],
+    "echeance_reexamen_amm": "Non renseigné",
+    "nb_obligations_post_amm": null,
+    "evaluation_internationale": "Non renseigné",
+    "pays_evaluations": [],
+    "decisions_internationales": [],
+    "nb_decisions_internationales": null,
+    "RDCR": "Non renseigné",
+    "RDCR_num": null,
+    "RDCR_intervalle": null,
+    "RDCR_vs_seuil": "Non_applicable",
+    "model_type": "Non renseigné",
+    "perspective": "Non renseigné",
+    "horizon_annees": null,
+    "horizon_justification": "Non renseigné",
+    "discount_rate_costs": null,
+    "discount_rate_qalys": null,
+    "DSA_flag": null,
+    "PSA_flag": null,
+    "scenario_analyses": [],
+    "major_reserves": [],
+    "nb_reserves_majeures": null,
+    "impact_budgetaire_prevu": "Non renseigné",
+    "impact_budgetaire_annee_1": null,
+    "impact_budgetaire_annee_5": null,
+    "impact_budgetaire_horizon": null,
+    "hypothese_population_cible": null,
+    "hypothese_penetration_marche_pct": null,
+    "reserves_impact_budgetaire": [],
+    "reserves_majeures": null,
+    "population_cible_france": "Non quantifiée",
+    "population_cible_nombre": null,
+    "population_cible_intervalle": null,
+    "source_estimation_population": "Non renseigné",
+    "incertitude_population": "Élevée",
+    "population_cible_mediane": null,
+    "suivi_post_inscription": false,
+    "nature_suivi_post_inscription": "Non renseigné",
+    "delai_suivi_mois": null,
+    "delai_suivi_justification": "Non renseigné",
+    "conditions_suivi": "Non renseigné",
+    "echeance_suivi": "Non renseigné",
+    "impact_si_non_realise": "Non précisé",
+    "delai_soumission_dossier": "Non renseigné",
+    "delai_complement_demande": null,
+    "dates_complement_demande": [],
+    "delai_audition": null,
+    "date_audition": "Non renseigné",
+    "nb_total_reserves": null,
+    "nb_total_reserves_mineures": null,
+    "nb_totales_reserves_importantes": null,
+    "nb_totales_reserves_majeures": null,
+    "SMR_avant_audition_enum": "Non_renseigné",
+    "SMR_apres_audition_enum": "Non_renseigné",
+    "ASMR_avant_audition_enum": "Non_renseigné",
+    "ASMR_après_audition_enum": "Non_renseigné",
+    "type_critère_justification": "Non renseigné",
+    "valeur_critère": "Non renseigné",
+    "impact_décision": "Non renseigné",
+    "estimation_mesure_impact": "Non renseigné",
+    "evidence": [
+      {
+        "field": "ISP",
+        "f": "F1",
+        "p": 3,
+        "s": "Intérêt de santé publique RADELUMIN",
+        "t": "RADELUMIN ([18F]PSMA-1007) 2000 MBq/mL, solution injectable, n’est pas susceptible d’avoir un impact supplémentaire sur la santé publique par rapport aux présentations déjà inscrites.",
+        "c": 1.0
+      },
+      {
+        "field": "date_AMM_ema",
+        "f": "F1",
+        "p": 4,
+        "s": "AMM RADELUMIN 2000 MBq/mL solution injectable",
+        "t": "AMM le 17/06/2022 (procédure nationale)",
+        "c": 1.0
+      }
+    ]
+  },
+  "Données_Textuelles": {
+    "evaluation_id": "CT-19935",
+    "texte_brut": "Non renseigné",
+    "embedding": null
+  },
+  "SMR_ASMR_Par_Indication": [
+    {
+      "smr_asmr_id": "CT-19935_smrasmr_01",
+      "evaluation_id": "CT-19935",
+      "indication_precise": "Tomographie par émission de positons (TEP) chez un patient en récidive biologique d’un cancer de la prostate, traité initialement de façon radicale, avec réaugmentation de la concentration sérique d'antigène spécifique de la prostate (PSA)",
+      "smr": "La Commission considère que le service médical rendu par RADELUMIN ([18F]PSMA-1007) est important dans l’indication de l’AMM.",
+      "asmr": "Ces spécialités sont un complément de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+      "smr_revendique": "Non renseigné",
+      "asmr_revendique": "Non renseigné",
+      "justification_decisionnelle": "Le cancer de la prostate est une maladie grave qui engage le pronostic vital, surtout en cas de récidive. La spécialité RADELUMIN ([18F]PSMA-1007) est un médicament à visée diagnostique. Le rapport efficacité/effets indésirables est important. Il existe des méthodes diagnostiques alternatives. La TEP au [18F]PSMA-1007 est un examen de 1ère intention dans l’indication de l’AMM.",
+      "population_cible_indication": "Patient en récidive biologique d’un cancer de la prostate, traité initialement de façon radicale, avec réaugmentation de la concentration sérique d'antigène spécifique de la prostate (PSA). Non quantifiable.",
+      "ligne_traitement_indication": "Diagnostic",
+      "comparateurs_references_indication": "Les comparateurs cliniquement pertinents sont les mêmes que ceux identifiés pour les autres présentations de RADELUMIN ([18F]PSMA-1007) (cf. avis de l’inter-Commission du 8 juin 2022).",
+      "comparateur_id_HAS": "CT-19935_compHAS_01",
+      "indication_structuree": {
+        "ligne_traitement": "Non renseigné",
+        "biomarqueur": "PSA",
+        "stade": "Rechute",
+        "population_age": "Non renseigné"
+      },
+      "gain_survie_cite": null,
+      "qol_cite": null,
+      "tolerance_acceptable": null,
+      "evidence_robustesse": "Non renseigné",
+      "asmr_revendique_enum": "Non_renseigné",
+      "smr_enum": "Important",
+      "asmr_enum": "V",
+      "evidence": [
+        {
+          "field": "smr",
+          "f": "F1",
+          "p": 2,
+          "s": "Conclusions de la Commission Considérant",
+          "t": "La Commission considère que le service médical rendu par RADELUMIN ([18F]PSMA-1007) est important dans l’indication de l’AMM.",
+          "c": 1.0
+        },
+        {
+          "field": "asmr",
+          "f": "F1",
+          "p": 3,
+          "s": "Amélioration du Service Médical Rendu Ces",
+          "t": "Ces spécialités sont un complément de gamme qui n’apportent pas d’amélioration du service médical rendu (ASMR V) par rapport aux présentations déjà inscrites.",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Timeline_Evenements": [
+    {
+      "event_id": "CT-19935_event_AMM_01",
+      "evaluation_id": "CT-19935",
+      "event_type": "AMM_EMA_DECISION",
+      "event_date": "2022-06-17",
+      "detail_brut": "AMM le 17/06/2022 (procédure nationale)",
+      "source_doc": "F1 page 4",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "AMM RADELUMIN 2000 MBq/mL solution injectable",
+          "t": "AMM le 17/06/2022 (procédure nationale)",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19935_event_CT_01",
+      "evaluation_id": "CT-19935",
+      "event_type": "ADOPTION_CT",
+      "event_date": "2022-09-14",
+      "detail_brut": "Adopté par la Commission de la transparence le 14 septembre 2022",
+      "source_doc": "F1 page 1",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 1,
+          "s": "Adopté par la Commission de la transparence le",
+          "t": "Adopté par la Commission de la transparence le 14 septembre 2022",
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "event_id": "CT-19935_event_VAL_01",
+      "evaluation_id": "CT-19935",
+      "event_type": "DOSSIER_DEPOT_HAS",
+      "event_date": "2022-08-02",
+      "detail_brut": "Date de validation administrative* : 2 août 2022",
+      "source_doc": "F1 page 4",
+      "detail_type_specifique": "Non renseigné",
+      "acteurs_impliques": [],
+      "duree_evenement_jours": null,
+      "reference_externe": "Non renseigné",
+      "evidence": [
+        {
+          "field": "event_date",
+          "f": "F1",
+          "p": 4,
+          "s": "Date de validation administrative* : 2 août 2022",
+          "t": "Date de validation administrative* : 2 août 2022",
+          "c": 1.0
+        }
+      ]
+    }
+  ],
+  "Timeline_Delais": {
+    "evaluation_id": "CT-19935",
+    "delai_amm_ct_jours": 89,
+    "delai_transcription_ct_jours": null,
+    "delai_audition_ct_jours": null,
+    "complement_demande_mentionne": false,
+    "audition_realisee": null,
+    "evidence": []
+  },
+  "Features_Modele": {
+    "evaluation_id": "CT-19935",
+    "is_orphan": false,
+    "classe_ATC_l2": "V09I",
+    "aire_therapeutique": "Oncologie",
+    "type_avis_enum": "Inscription",
+    "innovation_reconnue": false,
+    "perte_de_chance_citee": false,
+    "ligne_traitement_num": null,
+    "is_rct": false,
+    "n_essais": 0,
+    "n_rct": 0,
+    "presence_qol": false,
+    "effet_principal_magnitude_num": null,
+    "critere_principal_dur": false,
+    "suivi_median_mois_max": null,
+    "sae_pct_num": null,
+    "discontinuations_pct_num": null,
+    "critere_principal_description": "Non renseigné",
+    "p_value_log10": null,
+    "ceesp_present": false,
+    "rdcr_num": null,
+    "rdcr_log": null,
+    "impact_budget_cat": "Non renseigné",
+    "reserves_majeures": null,
+    "nb_reserves_majeures": null,
+    "vote_unanimite": null,
+    "nb_votants": null,
+    "voix_pour_pct": null,
+    "association_patient_intervenue": false,
+    "comparateur_placebo": false,
+    "comparateur_soc": false,
+    "nb_clockstops": 0,
+    "annee_ct": 2022,
+    "trimestre_ct": 3,
+    "template_ere": "CT_modern",
+    "missingness_indicators": "Non renseigné"
+  },
+  "Relations": [],
+  "Annotation_View": []
+}
